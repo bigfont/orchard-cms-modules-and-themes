@@ -86,7 +86,9 @@
       <Name>Orchard.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="ListShapeProvider.cs" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Content.cshtml" />
     <Content Include="Views\Layout.cshtml" />
