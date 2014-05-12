@@ -1,0 +1,9 @@
+<ul class="list-group">
+    @{
+        var items = Model.Items;    
+    }
+    @foreach(var item in items)
+    {
+        <li class="list-group-item">@Display(item)</li>
+    }
+</ul>
