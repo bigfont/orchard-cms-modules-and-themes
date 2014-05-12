@@ -1,0 +1,112 @@
+/*
+Theme: Bootstrap 3.1.1 Simple Blog
+Author: Shaun Luttin @ www.bigfont.ca
+Copyright: N/A
+*/
+
+/* Colors Palette
+Background: #fff
+Border: silver
+Text: #434343
+Main Accent: #999
+Links: #443444
+
+*/
+
+/* Reset
+***************************************************************/
+
+/* Bootstrap 3 already has a reset. */
+
+/* Clearing Float
+***************************************************************/
+group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.group {
+    display: inline-block;
+}
+/* for IE/Mac */
+
+/* Typography (Optional)
+***************************************************************/
+@import url(http://yui.yahooapis.com/2.8.1/build/fonts/fonts-min.css);
+
+
+/* General
+***************************************************************/
+body {
+}
+
+a {
+}
+
+a:link {
+}
+
+a:hover {
+}
+
+a:visited {
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+/* Structure
+***************************************************************/
+#container {
+}
+
+#header {
+}
+
+#logo {
+}
+
+#footer {
+    border-top: thin solid silver;
+    margin-top: 100px;
+    padding: 40px;    
+}
+
+/* Main
+***************************************************************/
+
+/* content article header */
+div.zone-content > article > header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid silver;
+}
+
+/* content article img */
+div.zone-content > article.blog-post > p > a > img {
+    border: 1px solid silver;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+/* Secondary
+***************************************************************/
+
+/* Forms
+***************************************************************/
+
+/* Misc
+***************************************************************/
+
+/*Tags*/
+ul.tag-cloud
+{
+    overflow:hidden;
+}
+ul.tag-cloud > li
+{
+    width:200px;
+}

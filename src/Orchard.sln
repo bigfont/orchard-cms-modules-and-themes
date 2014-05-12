@@ -240,7 +240,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Caching", "Orchard.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchard.Azure.MediaServices", "Orchard.Web\Modules\Orchard.Azure.MediaServices\Orchard.Azure.MediaServices.csproj", "{14A96B1A-9DC9-44C8-A675-206329E15263}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap.311.SimpleBlog", "Orchard.Web\Themes\Bootstrap.311.SimpleBlog\Bootstrap.311.SimpleBlog.csproj", "{0DDC9994-8420-45C2-B92A-991FCB16A6F5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap.SimpleBlog", "Orchard.Web\Themes\Bootstrap.SimpleBlog\Bootstrap.SimpleBlog.csproj", "{0DDC9994-8420-45C2-B92A-991FCB16A6F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
