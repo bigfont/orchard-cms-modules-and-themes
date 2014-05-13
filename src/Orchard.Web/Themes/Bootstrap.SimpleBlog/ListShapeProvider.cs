@@ -10,8 +10,17 @@ namespace Bootstrap.SimpleBlog
     {
         public void Discover(ShapeTableBuilder builder)
         {
-            System.Diagnostics.Debugger.Break();
-            // implementation here
+            builder.Describe("List").OnDisplaying(displaying =>
+            {
+                displaying.ShapeMetadata.Alternates.Add(
+                    "List__Bootstrap__ListGroup");
+            });
+
+            builder.Describe("Parts_Blogs_BlogPost_List").OnDisplaying(displaying =>
+            {
+                displaying.ShapeMetadata.Alternates.Add(
+                    "List__Bootstrap__ListGroup");
+            });
         }
     }
 }
