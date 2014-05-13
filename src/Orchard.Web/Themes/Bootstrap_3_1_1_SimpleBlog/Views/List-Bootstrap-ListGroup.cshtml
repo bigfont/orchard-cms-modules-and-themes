@@ -2,6 +2,8 @@
 
 @functions
 {
+    // Get items from the model.
+    // Use a variety of techniques to handle different shapes.
     List<object> GetItemsFromModel()
     {
         List<object> items;
@@ -22,7 +24,7 @@
         }
         else
         {
-            // List shape, e.g. Pager
+            // List shape
             // @Model.Items
             items = Model.Items;
         }
