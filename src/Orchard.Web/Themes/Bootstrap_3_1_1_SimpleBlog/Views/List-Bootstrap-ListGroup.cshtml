@@ -1,6 +1,18 @@
 @using Orchard.DisplayManagement.Shapes;
 @{
-    var items = Model.Items;
+    List<object> items;
+    
+    // retrieve the items
+    var list = Model.ContentItems;
+    if (list != null)
+    {
+        items = list.Items;
+    }
+    else
+    {
+        items = Model.Items;
+    }
+                
     var count = items.Count;
     var listTag = Tag(Model, "ul");
     listTag.AddCssClass("list-group");
