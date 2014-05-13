@@ -1,23 +1,43 @@
 @using Orchard.DisplayManagement.Shapes;
-@{
-    List<object> items;
-    
-    // retrieve the items
-    var list = Model.ContentItems;
-    if (list != null)
+
+@functions
+{
+    List<object> GetItemsFromModel()
     {
-        items = list.Items;
+        List<object> items;
+        if (Model.ContentItems != null)
+        {
+            if (Model.ContentItems.ContentItems != null)
+            {
+                // Parts_Blogs_RecentBlogPosts shape
+                // @Model.ContentItems.ContentItems.Items
+                items = Model.ContentItems.ContentItems.Items;
+            }
+            else
+            {
+                // Parts_Blogs_BlogPost_List shape
+                // @Model.ContentItems.Items
+                items = Model.ContentItems.Items;
+            }
+        }
+        else
+        {
+            // List shape
+            // @Model.Items
+            items = Model.Items;
+        }
+        return items;
     }
-    else
-    {
-        items = Model.Items;
-    }
-                
+}
+
+@{        
+    var items = GetItemsFromModel();                           
     var count = items.Count;
     var listTag = Tag(Model, "ul");
     listTag.AddCssClass("list-group");
     var index = 0;
 }
+
 @listTag.StartElement
 @foreach (var item in items)
 {
