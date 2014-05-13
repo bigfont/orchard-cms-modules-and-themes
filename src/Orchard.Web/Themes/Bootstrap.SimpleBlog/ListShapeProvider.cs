@@ -10,16 +10,19 @@ namespace Bootstrap.SimpleBlog
     {
         public void Discover(ShapeTableBuilder builder)
         {
-            builder.Describe("List").OnDisplaying(displaying =>
-            {
-                displaying.ShapeMetadata.Alternates.Add(
-                    "List__Bootstrap__ListGroup");
-            });
+            this.AddAlternateShapeOnFrontEnd(builder, "List", "List__Bootstrap__ListGroup");
+            this.AddAlternateShapeOnFrontEnd(builder, "Parts_Blogs_BlogPost_List", "List__Bootstrap__ListGroup");
+        }
 
-            builder.Describe("Parts_Blogs_BlogPost_List").OnDisplaying(displaying =>
+        private void AddAlternateShapeOnFrontEnd(ShapeTableBuilder builder, string shapeName, string alternateName)
+        {
+            builder.Describe(shapeName).OnDisplaying(displaying =>
             {
-                displaying.ShapeMetadata.Alternates.Add(
-                    "List__Bootstrap__ListGroup");
+                // make sure we are on the front end
+                if (!displaying.ShapeMetadata.DisplayType.Contains("Admin"))
+                {
+                    displaying.ShapeMetadata.Alternates.Add(alternateName);                
+                }
             });
         }
     }
