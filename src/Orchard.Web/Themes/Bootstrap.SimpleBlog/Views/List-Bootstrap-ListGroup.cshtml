@@ -1,9 +1,19 @@
-<ul class="list-group">
-    @{
-        var items = Model.Items;
-    }
-    @foreach (var item in items)
-    {
-        <li class="list-group-item">@Display(item)</li>
-    }
-</ul>
+@using Orchard.DisplayManagement.Shapes;
+@{
+    var items = Model.Items;
+    var count = items.Count;
+    var listTag = Tag(Model, "ul");
+    listTag.AddCssClass("list-group");
+    var index = 0;
+}
+@listTag.StartElement
+@foreach (var item in items)
+{
+    var itemTag = Tag(item, "li");
+    itemTag.AddCssClass("list-group-item");
+    @itemTag.StartElement
+    @Display(item)
+    @itemTag.EndElement
+    ++index;
+}
+@listTag.EndElement
