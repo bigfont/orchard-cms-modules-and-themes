@@ -12,62 +12,62 @@ Level   Format
 
 */
 
-div.zone-content > article.blog-post header h1, 
-div.zone-content > article.blog-post header h2, 
-div.zone-content > article.blog-post header h3 {
+article.blog-post header h1, 
+article.blog-post header h2, 
+article.blog-post header h3 {
     text-align:left;
     font-size:1.2em;
 }
 
-div.zone-content > article.blog-post h1, 
-div.zone-content > article.blog-post h2, 
-div.zone-content > article.blog-post h3, 
-div.zone-content > article.blog-post h4, 
-div.zone-content > article.blog-post h5 {
+article.blog-post h1, 
+article.blog-post h2, 
+article.blog-post h3, 
+article.blog-post h4, 
+article.blog-post h5 {
     font-size:1em;
 }
 
-div.zone-content > article.blog-post h3, 
-div.zone-content > article.blog-post h4, 
-div.zone-content > article.blog-post h5,
-div.zone-content > article.blog-post h3 + p, 
-div.zone-content > article.blog-post h4 + p, 
-div.zone-content > article.blog-post h5 + p {
+article.blog-post h3, 
+article.blog-post h4, 
+article.blog-post h5,
+article.blog-post h3 + p, 
+article.blog-post h4 + p, 
+article.blog-post h5 + p {
     display: inline;
     margin-top: 20px;
 }
 
-div.zone-content > article.blog-post h1, 
-div.zone-content > article.blog-post h2, 
-div.zone-content > article.blog-post h3, 
-div.zone-content > article.blog-post h4 {
+article.blog-post h1, 
+article.blog-post h2, 
+article.blog-post h3, 
+article.blog-post h4 {
     font-weight: bold;
 }
 
-div.zone-content > article.blog-post h1 {
+article.blog-post h1 {
     text-align: center;
 }
 
-div.zone-content > article.blog-post h2, 
-div.zone-content > article.blog-post h3, 
-div.zone-content > article.blog-post h4, 
-div.zone-content > article.blog-post h5 {
+article.blog-post h2, 
+article.blog-post h3, 
+article.blog-post h4, 
+article.blog-post h5 {
     text-align: left;
 }
 
-div.zone-content > article.blog-post h3, 
-div.zone-content > article.blog-post h4, 
-div.zone-content > article.blog-post h5 {
+article.blog-post h3, 
+article.blog-post h4, 
+article.blog-post h5 {
     margin-left: 25px;
 }
 
-    div.zone-content > article.blog-post h3::after, 
-    div.zone-content > article.blog-post h4::after, 
-    div.zone-content > article.blog-post h5::after {
+    article.blog-post h3::after, 
+    article.blog-post h4::after, 
+    article.blog-post h5::after {
         content: ".";
     }
 
-div.zone-content > article.blog-post h4, 
-div.zone-content > article.blog-post h5 {
+article.blog-post h4, 
+article.blog-post h5 {
     font-style: italic;
 }
