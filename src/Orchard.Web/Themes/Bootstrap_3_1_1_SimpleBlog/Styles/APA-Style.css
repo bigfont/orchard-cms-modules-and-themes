@@ -12,45 +12,45 @@ Level   Format
 
 */
 
-article header h1, 
-article header h2, 
-article header h3 {
+article.blog-post.blog-post header h1, 
+article.blog-post header h2, 
+article.blog-post header h3 {
 
     text-align:left;
     font-size:1.2em;
 
 }
 
-article h1, article h2, article h3, article h4, article h5 {
+article.blog-post h1, article.blog-post h2, article.blog-post h3, article.blog-post h4, article.blog-post h5 {
     font-size:1em;
 }
 
-article h3, article h4, article h5,
-article h3 + p, article h4 + p, article h5 + p {
+article.blog-post h3, article.blog-post h4, article.blog-post h5,
+article.blog-post h3 + p, article.blog-post h4 + p, article.blog-post h5 + p {
     display: inline;
     margin-top: 20px;
 }
 
-article h1, article h2, article h3, article h4 {
+article.blog-post h1, article.blog-post h2, article.blog-post h3, article.blog-post h4 {
     font-weight: bold;
 }
 
-article h1 {
+article.blog-post h1 {
     text-align: center;
 }
 
-article h2, article h3, article h4, article h5 {
+article.blog-post h2, article.blog-post h3, article.blog-post h4, article.blog-post h5 {
     text-align: left;
 }
 
-article h3, article h4, article h5 {
+article.blog-post h3, article.blog-post h4, article.blog-post h5 {
     margin-left: 25px;
 }
 
-    article h3::after, article h4::after, article h5::after {
+    article.blog-post h3::after, article.blog-post h4::after, article.blog-post h5::after {
         content: ".";
     }
 
-article h4, article h5 {
+article.blog-post h4, article.blog-post h5 {
     font-style: italic;
 }
