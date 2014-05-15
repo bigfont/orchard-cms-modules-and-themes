@@ -1,0 +1,56 @@
+﻿/* APA Style Headings
+
+CSS styles for the American Psychological Association headings.
+See also: https://owl.english.purdue.edu/owl/resource/560/16/
+
+Level   Format
+  1     Centered, Boldface, Uppercase and Lowercase Headings
+  2     Left-aligned, Boldface, Uppercase and Lowercase Heading
+  3     Indented, boldface, lowercase heading with a period. Begin body text after the period.
+  4     Indented, boldface, italicized, lowercase heading with a period. Begin body text after the period.
+  5     Indented, italicized, lowercase heading with a period. Begin body text after the period.
+
+*/
+
+article header h1, 
+article header h2, 
+article header h3 {
+
+    text-align:left;
+    font-size:1.2em;
+
+}
+
+article h1, article h2, article h3, article h4, article h5 {
+    font-size:1em;
+}
+
+article h3, article h4, article h5,
+article h3 + p, article h4 + p, article h5 + p {
+    display: inline;
+    margin-top: 20px;
+}
+
+article h1, article h2, article h3, article h4 {
+    font-weight: bold;
+}
+
+article h1 {
+    text-align: center;
+}
+
+article h2, article h3, article h4, article h5 {
+    text-align: left;
+}
+
+article h3, article h4, article h5 {
+    margin-left: 25px;
+}
+
+    article h3::after, article h4::after, article h5::after {
+        content: ".";
+    }
+
+article h4, article h5 {
+    font-style: italic;
+}
