@@ -1,12 +1,19 @@
 ﻿@{
+    
+    /* Responsive Design Metas
+    ***************************************************************/
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     /* Global includes for the theme
-    ***************************************************************/    
+    ***************************************************************/
 
     Script.Require("ShapesBase");
 
     Script.Include("//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js").AtHead().UseCondition("lt ie 9");
     Script.Include("//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js").AtHead().UseCondition("lt ie 9");
-    
+
     Style.Include("//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css");
     Style.Include("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
     Style.Include("Site.css");
@@ -15,8 +22,8 @@
     /* Some useful shortcuts or settings
     ***************************************************************/
 
-    // Zone as an alias for Display to help make it obvious when we're displaying zones    
-    Func<dynamic, dynamic> Zone = x => Display(x); 
+    // Zone as an alias for Display to help make it obvious when we're displaying zones
+    Func<dynamic, dynamic> Zone = x => Display(x);
 
     /* Inserting some ad hoc shapes
     ***************************************************************/
@@ -26,11 +33,11 @@
 
     /* Last bit of code to prep the layout wrapper
     ***************************************************************/
-    
+
     Model.Id = "layout-wrapper";
 
     // using Tag so the layout div gets the classes, id and other attributes added to the Model
-    var tag = Tag(Model, "div"); 
+    var tag = Tag(Model, "div");
 }
 @tag.StartElement
 

@@ -35,7 +35,8 @@ group:after {
 
 /* Typography (Optional)
 ***************************************************************/
-@import url(http://yui.yahooapis.com/2.8.1/build/fonts/fonts-min.css);
+
+/* Included in Layout.cshtml. */
 
 
 /* General
@@ -98,11 +99,9 @@ div.zone-content > article.blog-post > p > a > img {
 /* Forms
 ***************************************************************/
 
-
 /* Misc
 ***************************************************************/
 
-/*Tags*/
 ul.tag-cloud
 {
     overflow:hidden;
