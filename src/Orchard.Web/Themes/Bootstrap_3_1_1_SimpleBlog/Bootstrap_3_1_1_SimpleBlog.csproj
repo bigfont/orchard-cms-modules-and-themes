@@ -67,6 +67,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Instructions.txt" />
     <Content Include="Styles\APA-Style.css" />
     <Content Include="Styles\Site.css" />
     <Content Include="Web.config" />

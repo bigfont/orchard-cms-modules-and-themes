@@ -18,11 +18,13 @@ Level   Format
 .blog-post h4,
 .blog-post h5,
 .blog-post p,
-.blog-post blockquote {
-    margin: 0;
+.blog-post ol,
+.blog-post ul,
+.blog-post blockquote,
+.blog-post pre {
+    margin: 10px 0;
     padding: 0;
     font-family: arial;
-    margin-bottom: 20px;
     font-size: 1em;
     text-align: left;
     border: none;
@@ -75,9 +77,16 @@ Level   Format
     margin-right: 20px;
 }
 
+.blog-post pre {
+    border:thin dashed black;
+    padding:15px;
+    font-family:'Courier New';
+}
+
 .blog-post ol,
 .blog-post ul {
-    padding-left:15px;
+    /* Override to 40px bootstrap padding b/c it's too wide for portrait mobile. */
+    padding-left:20px;
 }
 
 
