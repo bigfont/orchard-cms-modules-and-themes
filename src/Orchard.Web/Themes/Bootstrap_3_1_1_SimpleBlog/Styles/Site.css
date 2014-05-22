@@ -108,7 +108,15 @@ ul.tag-cloud > li {
     /*one line each*/
     display: block;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden;    
+}
+
+/*#endregion*/
+
+/*#region cursor*/
+
+.cursor-pointer {
+    cursor:pointer;    
 }
 
 /*#endregion*/
