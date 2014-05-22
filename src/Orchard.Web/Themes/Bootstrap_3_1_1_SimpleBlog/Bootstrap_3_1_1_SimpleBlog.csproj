@@ -68,8 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Instructions.txt" />
+    <Content Include="Scripts\APA-Style.js" />
+    <Content Include="Scripts\LiveWriter.js" />
     <Content Include="Styles\APA-Style.css" />
     <Content Include="Styles\Site.css" />
+    <Content Include="Todo.txt" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -90,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ListShapeProvider.cs" />
+    <Compile Include="ResourceManifest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Content.cshtml" />

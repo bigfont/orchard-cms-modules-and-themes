@@ -2,7 +2,8 @@
 
 @helper Content(string name, int count)
 {
-    var href = Url.Action(controllerName: "Home", actionName: "Search", routeValues: new {
+    var href = Url.Action(controllerName: "Home", actionName: "Search", routeValues: new
+    {
         area = "Orchard.Tags",
         tagName = name
     });
@@ -10,20 +11,29 @@
     <a href="@href"><span class="badge">@count</span> @name</a>
 }
 
-<div class="well well-sm">
-    <ul class="tag-cloud list-unstyled list-inline">
+<div class="panel panel-info">
 
-        @{        
-            //Sort by tag count
-            Model.TagCounts.Sort((Comparison<dynamic>)((tag1, tag2) => tag2.Count - tag1.Count));
-        }
+    <div class="panel-heading">
+        <a data-toggle="collapse" href="#tags">Show/Hide Topics</a>
+    </div>
 
-        @for(int i = 0; i < Model.TagCounts.Count; i += 1)
-        {
-            <li>
-                @Content(Model.TagCounts[i].TagName, Model.TagCounts[i].Count)
-            </li>
-        }
+    <div id="tags" class="panel-collapse collapse in">
+        <div class="panel-body">
+            <ul class="tag-cloud list-unstyled list-inline">
 
-    </ul>
+                @{
+                    //Sort by tag count
+                    Model.TagCounts.Sort((Comparison<dynamic>)((tag1, tag2) => tag2.Count - tag1.Count));
+                }
+
+                @for (int i = 0; i < Model.TagCounts.Count; i += 1)
+                {
+                    <li>
+                        @Content(Model.TagCounts[i].TagName, Model.TagCounts[i].Count)
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
 </div>

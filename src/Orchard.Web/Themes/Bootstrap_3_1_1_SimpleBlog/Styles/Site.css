@@ -47,14 +47,14 @@ body {
 a {
 }
 
-a:link {
-}
+    a:link {
+    }
 
-a:hover {
-}
+    a:hover {
+    }
 
-a:visited {
-}
+    a:visited {
+    }
 
 h1, h2, h3, h4, h5, h6 {
 }
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 #footer {
     border-top: thin solid silver;
     margin-top: 100px;
-    padding: 40px;    
+    padding: 40px 0;
 }
 
 /* Main
@@ -102,11 +102,13 @@ div.zone-content > article.blog-post > p > a > img {
 /* Misc
 ***************************************************************/
 
-ul.tag-cloud
-{
-    overflow:hidden;
+/*#region Tag Cloud*/
+
+ul.tag-cloud > li {
+    /*one line each*/
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
 }
-ul.tag-cloud > li
-{
-    width:200px;
-}
+
+/*#endregion*/

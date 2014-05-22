@@ -21,7 +21,8 @@ Level   Format
 .blog-post ol,
 .blog-post ul,
 .blog-post blockquote,
-.blog-post pre {
+.blog-post pre, 
+.blog-post div.run-in {
     margin: 10px 0;
     padding: 0;
     font-family: arial;

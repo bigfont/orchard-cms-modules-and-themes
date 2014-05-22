@@ -14,14 +14,15 @@
     ***************************************************************/
 
     Script.Require("ShapesBase");
-
-    Script.Include("//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js").AtHead().UseCondition("lt ie 9");
-    Script.Include("//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js").AtHead().UseCondition("lt ie 9");
-
-    Style.Include("//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css");
-    Style.Include("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css");
-    Style.Include("Site.css");
-    Style.Include("APA-Style.css"); // optional
+    Script.Require("APA-Style"); // optional
+    Script.Require("html5shiv").AtHead().UseCondition("lt ie 9");
+    Script.Require("respondJS").AtHead().UseCondition("lt ie 9");
+    Script.Require("Bootstrap");
+    
+    Style.Require("Bootstrap");
+    Style.Require("FontAwesome");
+    Style.Require("Site");
+    Style.Require("APA-Style"); // optional
 
     /* Some useful shortcuts or settings
     ***************************************************************/
