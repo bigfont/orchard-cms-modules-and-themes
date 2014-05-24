@@ -1,6 +1,0 @@
-﻿
-# Package the Theme
-
-cd "C:\Users\Shaun\Documents\GitHub\orchard-cms-modules-and-themes\src\Orchard.Web\bin"
-orchard.exe
-package create Bootstrap_3_1_1_SimpleBlog c:\temp

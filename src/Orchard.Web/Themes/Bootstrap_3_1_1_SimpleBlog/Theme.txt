@@ -1,7 +1,0 @@
-Name: Bootstrap 3.1.1 - Simple Blog
-Description: A simple, mobile-first blog using Bootstrap 3.1.1 and optional APA Style blog-post formatting. Tested on FF, Chrome, IE, WinPhone 8.
-Version: 1.5.6
-Author: Shaun Luttin @ bigfont.ca
-Website: http://www.muddlingthru.ca
-Tags: Bootstrap, Blog
-Zones: AsideFirst, Content, Footer

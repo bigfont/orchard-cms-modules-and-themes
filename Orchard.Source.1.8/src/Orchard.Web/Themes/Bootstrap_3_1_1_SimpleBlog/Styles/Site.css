@@ -1,0 +1,75 @@
+/*
+Theme: Bootstrap 3.1.1 Simple Blog
+Author: Shaun Luttin @ www.bigfont.ca
+Copyright: N/A
+*/
+
+/* Reset
+***************************************************************/
+
+/* Bootstrap 3 already has a reset. */
+
+/* Clearing Float
+***************************************************************/
+
+/* Typography (Optional)
+***************************************************************/
+
+/* Included in Layout.cshtml. */
+
+/* General
+***************************************************************/
+
+/* Structure
+***************************************************************/
+
+#footer {
+    border-top: thin solid silver;
+    margin-top: 100px;
+    padding: 40px 0;
+}
+
+/* Main
+***************************************************************/
+
+/* content article header */
+div.zone-content > article > header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid silver;
+}
+
+/* content article img */
+div.zone-content > article.blog-post > p > a > img {
+    border: 1px solid silver;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+/* Secondary
+***************************************************************/
+
+/* Forms
+***************************************************************/
+
+/* Misc
+***************************************************************/
+
+/*#region Tag Cloud*/
+
+ul.tag-cloud > li {
+    /*one line each*/
+    width:140px;    
+    white-space: nowrap;
+    overflow: hidden;     
+}
+
+/*#endregion*/
+
+/*#region Cursor*/
+
+.cursor-pointer {
+    cursor:pointer;    
+}
+
+/*#endregion*/
