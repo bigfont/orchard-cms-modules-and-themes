@@ -1,0 +1,8 @@
+Name: Bootstrap 3.1.1 - KongwaHill
+Author: Shaun Luttin @ bigfont.ca
+Website: http://www.slopeofkongwahill.com
+Description: Todo
+Version: 1.0
+BaseTheme: TheThemeMachine
+Tags: Classic, Serif
+Zones: Navigation, Featured, AsideFirst, AfterMain, Footer

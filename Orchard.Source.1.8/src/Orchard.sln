@@ -244,6 +244,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_3_1_1_SimpleBlog"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contoso", "Orchard.Web\Themes\Contoso\Contoso.csproj", "{8AAE181B-B6F0-41C5-AB48-0672A7F07CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_3_1_1_GardenFaire", "Orchard.Web\Themes\Bootstrap_3_1_1_GardenFaire\Bootstrap_3_1_1_GardenFaire.csproj", "{0C14B300-087B-4E10-9C84-F90FB2BED6BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_3_1_1_KongwaHill", "Orchard.Web\Themes\Bootstrap_3_1_1_KongwaHill\Bootstrap_3_1_1_KongwaHill.csproj", "{1B88A457-06E5-4E49-8198-E00DC1000623}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1022,6 +1026,20 @@ Global
 		{8AAE181B-B6F0-41C5-AB48-0672A7F07CCB}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{8AAE181B-B6F0-41C5-AB48-0672A7F07CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AAE181B-B6F0-41C5-AB48-0672A7F07CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B88A457-06E5-4E49-8198-E00DC1000623}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{1B88A457-06E5-4E49-8198-E00DC1000623}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{1B88A457-06E5-4E49-8198-E00DC1000623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B88A457-06E5-4E49-8198-E00DC1000623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B88A457-06E5-4E49-8198-E00DC1000623}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{1B88A457-06E5-4E49-8198-E00DC1000623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B88A457-06E5-4E49-8198-E00DC1000623}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1102,5 +1120,7 @@ Global
 		{14A96B1A-9DC9-44C8-A675-206329E15263} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 		{0DDC9994-8420-45C2-B92A-991FCB16A6F5} = {74492CBC-7201-417E-BC29-28B4C25A58B0}
 		{8AAE181B-B6F0-41C5-AB48-0672A7F07CCB} = {74492CBC-7201-417E-BC29-28B4C25A58B0}
+		{0C14B300-087B-4E10-9C84-F90FB2BED6BE} = {74492CBC-7201-417E-BC29-28B4C25A58B0}
+		{1B88A457-06E5-4E49-8198-E00DC1000623} = {74492CBC-7201-417E-BC29-28B4C25A58B0}
 	EndGlobalSection
 EndGlobal

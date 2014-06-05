@@ -67,6 +67,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Readme\ChangeLog.txt" />
     <Content Include="Readme\Instructions.txt" />
     <Content Include="Readme\KnownIssues.txt" />
     <Content Include="Scripts\APA-Style.js" />
@@ -102,6 +103,9 @@
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\List-Bootstrap-ListGroup.cshtml" />
     <Content Include="Views\Parts.TagCloud.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OrchardGalleryImages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

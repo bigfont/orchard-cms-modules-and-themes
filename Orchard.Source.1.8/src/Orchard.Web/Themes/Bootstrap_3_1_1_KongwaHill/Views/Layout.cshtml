@@ -1,0 +1,67 @@
+﻿@{
+
+
+    /* Responsive Design Metas
+    ***************************************************************/
+
+    //
+    // Notes:
+    // <meta charset="utf-8" /> is defined in Document.cshtml
+    //
+
+    SetMeta(name: "", content: "IE=edge", httpEquiv: "X-UA-Compatible", charset: "");
+    SetMeta(name: "viewport", content: "width=device-width, initial-scale=1.0", httpEquiv: "", charset: "");
+
+    /* Global includes for the theme
+    ***************************************************************/
+
+    Script.Require("ShapesBase");
+    Script.Require("IE-10");
+    Script.Require("html5shiv").AtHead().UseCondition("lt ie 9");
+    Script.Require("respondJS").AtHead().UseCondition("lt ie 9");
+    Script.Require("Bootstrap");
+    
+    Style.Require("Bootstrap");
+    Style.Require("FontAwesome");
+    Style.Require("Site");
+    Style.Require("IE-10");
+
+    /* Some useful shortcuts or settings
+    ***************************************************************/
+
+    // Zone as an alias for Display to help make it obvious when we're displaying zones
+    Func<dynamic, dynamic> Zone = x => Display(x);
+
+    /* Inserting some ad hoc shapes
+    ***************************************************************/
+
+    // Login and dashboard links
+    WorkContext.Layout.Footer.Add(New.User(), "10");
+
+    /* Last bit of code to prep the layout wrapper
+    ***************************************************************/
+
+    Model.Id = "layout-wrapper";
+
+    // using Tag so the layout div gets the classes, id and other attributes added to the Model
+    var tag = Tag(Model, "div");
+}
+@tag.StartElement
+
+<div class="container">
+
+    @Zone(Model.Navigation)
+
+    @Zone(Model.Featured)
+
+    @Zone(Model.AsideFirst)
+
+    @Zone(Model.Content)
+
+    @Zone(Model.AfterMain)
+
+    @Zone(Model.Footer)
+
+</div>
+
+@tag.EndElement
