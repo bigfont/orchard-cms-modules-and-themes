@@ -1,0 +1,17 @@
+﻿# Must have
+
+- Image gallery module.
+- Website backup.
+- Database backup.
+
+# Should have
+
+- Share theme in Orchard Gallery.
+- Share modules (x2) in Orchard gallery.
+
+# Nice to have
+
+- Footer with Emelda's image.
+- humans.txt file.
+- Affix on on the AsideFirst.
+- Recipe to install the default modules.
