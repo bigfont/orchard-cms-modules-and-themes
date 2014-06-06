@@ -155,6 +155,7 @@ div.zone-featured > article.widget-featured {
 
     #myCarousel ol.carousel-indicators {
         bottom:-40px;
+        display:none; /*for now*/
     }
 
     #myCarousel a.carousel-control {
