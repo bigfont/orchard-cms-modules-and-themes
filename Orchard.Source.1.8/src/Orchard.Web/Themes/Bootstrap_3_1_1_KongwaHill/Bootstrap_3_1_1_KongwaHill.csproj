@@ -67,6 +67,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Readme\Todo.txt" />
     <Content Include="Scripts\IE-10.js" />
     <Content Include="Styles\IE-10.css" />
     <Content Include="Styles\Site.css" />
