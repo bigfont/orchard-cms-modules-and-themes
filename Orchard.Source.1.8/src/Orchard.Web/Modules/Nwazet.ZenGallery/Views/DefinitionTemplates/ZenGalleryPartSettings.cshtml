@@ -1,0 +1,7 @@
+﻿@model Nwazet.ZenGallery.Settings.ZenGalleryPartSettings
+
+<fieldset><label>@T("Path Pattern:")</label>
+    @Html.TextBoxFor(m => m.PathPattern, new { @class = "tokenized text-box textMedium" })
+    <span class="hint">@T("The pattern used to determine what media folder is used for each content item")</span>
+    @Display.TokenHint()
+</fieldset>

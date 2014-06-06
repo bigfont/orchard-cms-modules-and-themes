@@ -1,0 +1,25 @@
+﻿@model Contrib.RecentContent.ViewModels.RecentContentWidgetViewModel
+
+<fieldset>
+    <div>
+        @Html.LabelFor(m => m.Part.ForContentPart, T("For Content Part"))
+        <select id="@Html.FieldIdFor(m => m.Part.ForContentPart)" name="@Html.FieldNameFor(m => m.Part.ForContentPart)">
+        @foreach(var part in Model.ContentPartNames) {
+            @Html.SelectOption(Model.Part.ForContentPart, part, part)
+        }
+        </select>
+        <span class="hint">@T("Select which Content Part you want to display the recent posts for")</span>
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Part.Count, T("Count"))
+        @Html.TextBoxFor(m => m.Part.Count)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Part.OrderBy, T("Order By"))
+        <select id="@Html.FieldIdFor(m => m.Part.OrderBy)" name="@Html.FieldNameFor(m => m.Part.OrderBy)">
+            <option value="Created">@T("recently created")</option>
+            <option value="Published">@T("recently published")</option>
+            <option value="Modified">@T("recently modified")</option>
+        </select>
+    </div>
+</fieldset>

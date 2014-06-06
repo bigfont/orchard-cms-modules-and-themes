@@ -20,7 +20,7 @@
     Script.Require("html5shiv").AtHead().UseCondition("lt ie 9");
     Script.Require("respondJS").AtHead().UseCondition("lt ie 9");
     Script.Require("Bootstrap");
-    
+
     Style.Require("Bootstrap");
     Style.Require("FontAwesome");
     Style.Require("Site");
@@ -54,9 +54,21 @@
 
     @Zone(Model.Featured)
 
-    @Zone(Model.AsideFirst)
+    <div class="row">
 
-    @Zone(Model.Content)
+        <div class="col-md-6">
+
+            @Zone(Model.AsideFirst)
+
+        </div>
+
+        <div class="col-md-6">
+
+            @Zone(Model.Content)
+
+        </div>
+
+    </div>
 
     @Zone(Model.AfterMain)
 

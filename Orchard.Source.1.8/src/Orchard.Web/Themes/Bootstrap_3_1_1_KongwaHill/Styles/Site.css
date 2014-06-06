@@ -1,75 +1,204 @@
-/*
-Theme: Bootstrap 3.1.1 Simple Blog
-Author: Shaun Luttin @ www.bigfont.ca
-Copyright: N/A
-*/
-
-/* Reset
-***************************************************************/
-
-/* Bootstrap 3 already has a reset. */
-
-/* Clearing Float
-***************************************************************/
-
-/* Typography (Optional)
-***************************************************************/
-
-/* Included in Layout.cshtml. */
-
-/* General
-***************************************************************/
-
-/* Structure
-***************************************************************/
-
-#footer {
-    border-top: thin solid silver;
-    margin-top: 100px;
-    padding: 40px 0;
+* {
+    color:white
 }
 
-/* Main
-***************************************************************/
-
-/* content article header */
-div.zone-content > article > header {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid silver;
+html {
+    background-image: url("../../../Media/Default/cssimgs/homepage-background-section.JPG");
+    background-repeat: repeat;
 }
 
-/* content article img */
-div.zone-content > article.blog-post > p > a > img {
-    border: 1px solid silver;
-    padding: 4px;
-    border-radius: 5px;
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 0;
+    margin-top: 40px;
 }
 
-/* Secondary
-***************************************************************/
-
-/* Forms
-***************************************************************/
-
-/* Misc
-***************************************************************/
-
-/*#region Tag Cloud*/
-
-ul.tag-cloud > li {
-    /*one line each*/
-    width:140px;    
-    white-space: nowrap;
-    overflow: hidden;     
+div.zone {
+    background-color: rgba(0, 0, 0, 0);
 }
 
-/*#endregion*/
-
-/*#region Cursor*/
-
-.cursor-pointer {
-    cursor:pointer;    
+div.navbar div.navbar-inner div.container-fluid .btn-navbar {
+    font-family: Georgia,"Times New Roman",Times,serif;
 }
 
-/*#endregion*/
+    div.navbar div.navbar-inner div.container-fluid .btn-navbar > span {
+        float: left;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    div.navbar div.navbar-inner div.container-fluid .btn-navbar > div {
+        float: right;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+
+div.zone-featured {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+    div.zone-featured > article.widget-featured {
+        background-color: #986120;
+        background-image: linear-gradient(to bottom, #CC9933, #490E03);
+        background-repeat: repeat-x;
+        border-bottom: thin solid #490E03;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+        div.zone-featured > article.widget-featured > h1 {
+            color: #FFFFFF;
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+            div.zone-featured > article.widget-featured > h1 > em {
+                color: #FFCC99;
+                font-size: 54px;
+                font-style: normal;
+                line-height: 54px;
+            }
+
+        div.zone-featured > article.widget-featured > p {
+            color: #FFFFFF;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        div.zone-featured > article.widget-featured > h2 {
+            color: #FFFFFF;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    
+
+div.zone > article div.affix-top {
+}
+
+
+div.zone > article div.affix {
+    left: 25%;
+    margin-left: -175px;
+    position: fixed;
+    top: 39px;
+}
+
+
+div.zone > article div.affix-bottom {
+}
+
+div.zone > article div > #myCarousel {
+
+    
+}
+
+div.zone > article div > #myCarousel {
+    margin: 50px auto;
+    padding: 55px 0 0;
+    width: 350px;
+}
+
+    div.zone > article div > #myCarousel div.carousel-inner {
+        margin: auto;
+    }
+
+        div.zone > article div > #myCarousel div.carousel-inner div.item {
+            background: none repeat scroll 0 0 #FFFFFF;
+            border: 2.5px solid #A97727;
+            margin: auto;
+            padding: 10px;
+            width: auto;
+        }
+
+            div.zone > article div > #myCarousel div.carousel-inner div.item img {
+                background: none repeat scroll 0 0 #A97727;
+                border: 1px solid #000000;
+                margin: auto;
+                padding: 1px;
+                width: 321px;
+            }
+
+    div.zone > article div > #myCarousel ol.carousel-indicators {
+        display: none;
+    }
+
+    div.zone > article div > #myCarousel a.carousel-control {
+        border: 2.5px solid #C7973A;
+        border-radius: 0;
+        color: #FFFFFF;
+        height: 50px;
+        margin: 0;
+        top: 0;
+        width: 170px;
+    }
+
+        div.zone > article div > #myCarousel a.carousel-control.left {
+            left: 0;
+        }
+
+        div.zone > article div > #myCarousel a.carousel-control.right {
+            right: 0;
+        }*/
+
+        
+
+div.zone > article > p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+    div.zone > article > p > img {
+        box-shadow: 0 0 5px 5px #A1A2B9;
+        margin: 20px auto;
+        width: 95%;
+    }
+
+div.zone-content {
+}
+
+footer#footer {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+    footer#footer hr {
+        display: none;
+    }
+
+    footer#footer div.container-fluid {
+        padding: 0;
+    }
+
+    footer#footer div.zone-footer {
+        text-align: center;
+    }
+
+        footer#footer div.zone-footer > .widget-sticky-footer {
+            background-image: url("../../../Media/Default/cssimgs/footer.PNG");
+            background-origin: border-box;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            border-bottom: 15px solid #000000;
+            height: 200px;
+        }
+
+        footer#footer div.zone-footer > div {
+            margin: 5px auto auto;
+            width: 90%;
+        }
+
+div.well {
+    background-color: rgba(0, 0, 0, 0);
+    border: medium none;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+em {
+    color: #C89431;
+    font-weight: 900;
+}
