@@ -8,6 +8,8 @@
 
 - Share theme in Orchard Gallery.
 - Share modules (x2) in Orchard gallery.
+- Categorize the modules
+- Categories the themes.
 
 # Nice to have
 
