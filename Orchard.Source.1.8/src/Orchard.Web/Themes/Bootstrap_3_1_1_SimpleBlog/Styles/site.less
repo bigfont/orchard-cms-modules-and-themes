@@ -6,7 +6,7 @@ Copyright: N/A
 
 @import 'font-awesome-4.1.0/less/font-awesome.less';
 @import 'bootstrap-3.1.1/bootstrap.less';
-@import 'site/ie-10.less'; 
+@import 'site/ie-10.less';
 @import 'site/apa-style.less'; // optional
 
 /* Reset
@@ -28,54 +28,95 @@ Copyright: N/A
 /* Structure
 ***************************************************************/
 
-#footer {
-    border-top: thin solid silver;
-    margin-top: 100px;
-    padding: 40px 0;    
+#layout-wrapper > [id^="layout-"] {
+    .container;
 }
 
 /* Main
 ***************************************************************/
 
-/* content article header */
+#layout-main {
+    .make-row;
+}
 
+aside {
+    .make-md-column(3);
+}
+
+#layout-content {
+    .make-md-column(12);
+}
+
+#layout-wrapper {
+
+    &.aside-2, &.aside-1 {
+        #layout-content {
+            .make-md-column(9);
+        }
+    }
+
+    &.aside-12 {
+        #layout-content {
+            .make-md-column(6);
+        }
+    }
+}
+
+/* Secondary
+***************************************************************/
+/* Forms
+***************************************************************/
+fieldset {
+    .form-group;
+}
+
+input,
+textarea {
+    .form-control;
+}
+
+textarea {
+    height: auto; // to override the form-control height
+}
+
+button {
+    .btn;
+    .btn-default;
+}
+
+ol {
+    .list-unstyled;
+}
+/* Misc
+***************************************************************/
+/*#region Tag Cloud*/
+ul.tag-cloud > li {
+    /*one line each*/
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*#endregion*/
+/*#region Cursor*/
+.cursor-pointer {
+    cursor: pointer;
+}
+/*#endregion*/
+/*#region content article header */
 div.zone-content > article > header {
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid silver;
 }
-
 /* content article img */
 div.zone-content > article.blog-post > p > a > img {
     border: 1px solid silver;
     padding: 4px;
     border-radius: 5px;
 }
-
-/* Secondary
-***************************************************************/
-
-/* Forms
-***************************************************************/
-
-/* Misc
-***************************************************************/
-
-/*#region Tag Cloud*/
-
-ul.tag-cloud > li {
-    /*one line each*/
-    width:140px;    
-    white-space: nowrap;
-    overflow: hidden;     
-}
-
 /*#endregion*/
-
-/*#region Cursor*/
-
-.cursor-pointer {
-    cursor:pointer;    
+#footer {
+    border-top: thin solid silver;
+    margin-top: 100px;
+    padding: 40px 0;
 }
-
-/*#endregion*/

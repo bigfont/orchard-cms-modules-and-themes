@@ -76,7 +76,7 @@ Level   Format
 .blog-post ol,
 .blog-post ul {
   /* Override to 40px bootstrap padding b/c it's too wide for portrait mobile. */
-  padding-left: 20px;
+  padding-left: 0px;
 }
 /*#region Overides for .blog-post summary displays */
 .list-group-item * {

@@ -70,6 +70,7 @@
     <Content Include="Readme\ChangeLog.txt" />
     <Content Include="Readme\Instructions.txt" />
     <Content Include="Readme\KnownIssues.txt" />
+    <Content Include="Readme\package-theme.txt" />
     <Content Include="Scripts\APA-Style.js" />
     <Content Include="Scripts\IE-10.js" />
     <Content Include="packages.config" />
@@ -165,7 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Content.cshtml" />
-    <Content Include="Views\Layout.cshtml" />
+    <Content Include="Views\--Layout.cshtml" />
     <Content Include="Views\List-Bootstrap-ListGroup.cshtml" />
     <Content Include="Views\Parts.TagCloud.cshtml" />
   </ItemGroup>
@@ -190,6 +191,9 @@
     <Content Include="Styles\font-awesome-4.1.0\less\spinning.less" />
     <Content Include="Styles\font-awesome-4.1.0\less\stacked.less" />
     <Content Include="Styles\font-awesome-4.1.0\less\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Layout.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
