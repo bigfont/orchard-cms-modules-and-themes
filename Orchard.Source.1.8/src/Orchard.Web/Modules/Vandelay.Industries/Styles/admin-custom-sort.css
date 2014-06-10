@@ -1,4 +1,4 @@
-﻿#results > li,
+#results > li,
 #pinned-items > li {
   display: inline-block;
   position: relative;

@@ -72,17 +72,75 @@
     <Content Include="Readme\KnownIssues.txt" />
     <Content Include="Scripts\APA-Style.js" />
     <Content Include="Scripts\IE-10.js" />
-    <Content Include="Styles\APA-Style.css" />
-    <Content Include="Styles\IE-10.css" />
-    <Content Include="Styles\Site.css" />
+    <Content Include="packages.config" />
+    <Content Include="Styles\site\apa-style.css">
+      <DependentUpon>apa-style.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\site\apa-style.min.css">
+      <DependentUpon>apa-style.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\site\ie-10.css">
+      <DependentUpon>ie-10.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\site\ie-10.min.css">
+      <DependentUpon>ie-10.css</DependentUpon>
+    </Content>
+    <Content Include="Styles\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\site.min.css">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
     <Content Include="Readme\Todo.txt" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
-    <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
     <Content Include="Placement.info" />
+    <Content Include="Styles\bootstrap-3.1.1\alerts.less" />
+    <Content Include="Styles\bootstrap-3.1.1\badges.less" />
+    <Content Include="Styles\bootstrap-3.1.1\bootstrap.less" />
+    <Content Include="Styles\bootstrap-3.1.1\breadcrumbs.less" />
+    <Content Include="Styles\bootstrap-3.1.1\button-groups.less" />
+    <Content Include="Styles\bootstrap-3.1.1\buttons.less" />
+    <Content Include="Styles\bootstrap-3.1.1\carousel.less" />
+    <Content Include="Styles\bootstrap-3.1.1\close.less" />
+    <Content Include="Styles\bootstrap-3.1.1\code.less" />
+    <Content Include="Styles\bootstrap-3.1.1\component-animations.less" />
+    <Content Include="Styles\bootstrap-3.1.1\dropdowns.less" />
+    <Content Include="Styles\bootstrap-3.1.1\forms.less" />
+    <Content Include="Styles\bootstrap-3.1.1\glyphicons.less" />
+    <Content Include="Styles\bootstrap-3.1.1\grid.less" />
+    <Content Include="Styles\bootstrap-3.1.1\input-groups.less" />
+    <Content Include="Styles\bootstrap-3.1.1\jumbotron.less" />
+    <Content Include="Styles\bootstrap-3.1.1\labels.less" />
+    <Content Include="Styles\bootstrap-3.1.1\list-group.less" />
+    <Content Include="Styles\bootstrap-3.1.1\media.less" />
+    <Content Include="Styles\bootstrap-3.1.1\mixins.less" />
+    <Content Include="Styles\bootstrap-3.1.1\modals.less" />
+    <Content Include="Styles\bootstrap-3.1.1\navbar.less" />
+    <Content Include="Styles\bootstrap-3.1.1\navs.less" />
+    <Content Include="Styles\bootstrap-3.1.1\normalize.less" />
+    <Content Include="Styles\bootstrap-3.1.1\pager.less" />
+    <Content Include="Styles\bootstrap-3.1.1\pagination.less" />
+    <Content Include="Styles\bootstrap-3.1.1\panels.less" />
+    <Content Include="Styles\bootstrap-3.1.1\popovers.less" />
+    <Content Include="Styles\bootstrap-3.1.1\print.less" />
+    <Content Include="Styles\bootstrap-3.1.1\progress-bars.less" />
+    <Content Include="Styles\bootstrap-3.1.1\responsive-utilities.less" />
+    <Content Include="Styles\bootstrap-3.1.1\scaffolding.less" />
+    <Content Include="Styles\bootstrap-3.1.1\tables.less" />
+    <Content Include="Styles\bootstrap-3.1.1\theme.less" />
+    <Content Include="Styles\bootstrap-3.1.1\thumbnails.less" />
+    <Content Include="Styles\bootstrap-3.1.1\tooltip.less" />
+    <Content Include="Styles\bootstrap-3.1.1\type.less" />
+    <Content Include="Styles\bootstrap-3.1.1\utilities.less" />
+    <Content Include="Styles\bootstrap-3.1.1\variables.less" />
+    <Content Include="Styles\bootstrap-3.1.1\wells.less" />
+    <Content Include="Styles\site.less" />
+    <Content Include="Styles\site\apa-style.less" />
+    <Content Include="Styles\site\ie-10.less" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
