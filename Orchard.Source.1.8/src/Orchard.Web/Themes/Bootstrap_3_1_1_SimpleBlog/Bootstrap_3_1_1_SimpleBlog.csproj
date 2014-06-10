@@ -73,6 +73,13 @@
     <Content Include="Scripts\APA-Style.js" />
     <Content Include="Scripts\IE-10.js" />
     <Content Include="packages.config" />
+    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Styles\font-awesome-4.1.0\less\variables.css">
+      <DependentUpon>variables.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\font-awesome-4.1.0\less\variables.min.css">
+      <DependentUpon>variables.css</DependentUpon>
+    </Content>
     <Content Include="Styles\site\apa-style.css">
       <DependentUpon>apa-style.less</DependentUpon>
     </Content>
@@ -164,6 +171,25 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="OrchardGalleryImages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Styles\font-awesome-4.1.0\fonts\FontAwesome.otf" />
+    <Content Include="Styles\font-awesome-4.1.0\less\bordered-pulled.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\core.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\fixed-width.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\font-awesome.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\icons.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\larger.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\list.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\mixins.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\path.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\rotated-flipped.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\spinning.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\stacked.less" />
+    <Content Include="Styles\font-awesome-4.1.0\less\variables.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
