@@ -4,9 +4,9 @@
 {
     // Get items from the model.
     // Use a variety of techniques to handle different shapes.
-    List<object> GetItemsFromModel()
+    List<dynamic> GetItemsFromModel()
     {
-        List<object> items;
+        dynamic items;
         if (Model.ContentItems != null)
         {
             if (Model.ContentItems.ContentItems != null)
@@ -32,8 +32,8 @@
     }
 }
 
-@{        
-    var items = GetItemsFromModel();                           
+@{
+    var items = GetItemsFromModel();
     var count = items.Count;
     var listTag = Tag(Model, "ul");
     listTag.AddCssClass("list-group");
