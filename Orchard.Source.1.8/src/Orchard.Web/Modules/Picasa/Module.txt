@@ -1,0 +1,11 @@
+Name: Picasa
+AntiForgery: enabled
+Author: Rickard Pettersson @ www.RickardP.se
+Website: http://www.RickardP.se
+Version: 0.1
+OrchardVersion: 1.2.41
+Description: A widget that shows Picasa albums and pictures with jquery functionality
+Features:
+    Picasa:
+        Description: A widget that shows Picasa albums and pictures with jquery functionality
+		Category: Widget
