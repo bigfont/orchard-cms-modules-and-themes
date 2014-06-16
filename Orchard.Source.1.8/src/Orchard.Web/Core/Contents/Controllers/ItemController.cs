@@ -7,12 +7,10 @@ using Orchard.Themes;
 
 namespace Orchard.Core.Contents.Controllers {
     [Themed]
-    public class ItemController : Controller
-    {
+    public class ItemController : Controller {
         private readonly IContentManager _contentManager;
 
-        public ItemController(IContentManager contentManager, IShapeFactory shapeFactory, IOrchardServices services)
-        {
+        public ItemController(IContentManager contentManager, IShapeFactory shapeFactory, IOrchardServices services) {
             _contentManager = contentManager;
             Shape = shapeFactory;
             Services = services;
@@ -24,16 +22,13 @@ namespace Orchard.Core.Contents.Controllers {
         public Localizer T { get; set; }
 
         // /Contents/Item/Display/72
-        [MyDemoAttribute]
-        public ActionResult Display(int id)
-        {
+        public ActionResult Display(int id) {
             var contentItem = _contentManager.Get(id, VersionOptions.Published);
 
             if (contentItem == null)
                 return HttpNotFound();
 
-            if (!Services.Authorizer.Authorize(Permissions.ViewContent, contentItem, T("Cannot view content")))
-            {
+            if (!Services.Authorizer.Authorize(Permissions.ViewContent, contentItem, T("Cannot view content"))) {
                 return new HttpUnauthorizedResult();
             }
 
@@ -43,8 +38,7 @@ namespace Orchard.Core.Contents.Controllers {
 
         // /Contents/Item/Preview/72
         // /Contents/Item/Preview/72?version=5
-        public ActionResult Preview(int id, int? version)
-        {
+        public ActionResult Preview(int id, int? version) {
             var versionOptions = VersionOptions.Latest;
 
             if (version != null)
@@ -54,51 +48,16 @@ namespace Orchard.Core.Contents.Controllers {
             if (contentItem == null)
                 return HttpNotFound();
 
-            if (!Services.Authorizer.Authorize(Permissions.ViewContent, contentItem, T("Cannot preview content")))
-            {
+            if (!Services.Authorizer.Authorize(Permissions.ViewContent, contentItem, T("Cannot preview content"))) {
                 return new HttpUnauthorizedResult();
             }
 
-            if (!Services.Authorizer.Authorize(Permissions.EditContent, contentItem, T("Cannot preview content")))
-            {
+            if (!Services.Authorizer.Authorize(Permissions.EditContent, contentItem, T("Cannot preview content"))) {
                 return new HttpUnauthorizedResult();
             }
 
             var model = _contentManager.BuildDisplay(contentItem);
             return View(model);
-        }
-
-        protected override System.IAsyncResult BeginExecute(System.Web.Routing.RequestContext requestContext, System.AsyncCallback callback, object state)
-        {
-            return base.BeginExecute(requestContext, callback, state);
-        }
-
-        protected override void OnActionExecuted(ActionExecutedContext filterContext)
-        {
-            base.OnActionExecuted(filterContext);
-        }
-    }
-
-    public class MyDemoAttribute : ActionFilterAttribute
-    {
-        public override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-            base.OnActionExecuting(filterContext);
-        }
-
-        public override void OnActionExecuted(ActionExecutedContext filterContext)
-        {
-            base.OnActionExecuted(filterContext);
-        }
-
-        public override void OnResultExecuted(ResultExecutedContext filterContext)
-        {
-            base.OnResultExecuted(filterContext);
-        }
-
-        public override void OnResultExecuting(ResultExecutingContext filterContext)
-        {
-            base.OnResultExecuting(filterContext);
         }
     }
 }

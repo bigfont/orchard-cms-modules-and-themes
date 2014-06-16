@@ -1,0 +1,4 @@
+<RecipeStep>
+  <Name>Feature</Name>
+  <Feature enable="Vandelay.SplashScreen" />
+</RecipeStep>
