@@ -166,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Content.cshtml" />
-    <Content Include="Views\--Layout.cshtml" />
     <Content Include="Views\List-Bootstrap-ListGroup.cshtml" />
     <Content Include="Views\Parts.TagCloud.cshtml" />
   </ItemGroup>
