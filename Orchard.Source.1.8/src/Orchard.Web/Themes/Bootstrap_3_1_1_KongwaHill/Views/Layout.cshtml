@@ -56,17 +56,29 @@
 
     <div class="row">
 
-        <div class="col-md-6">
+        @if (Model.AsideFirst != null)
+        {
+            <div class="col-md-6">
 
-            @Zone(Model.AsideFirst)
+                @Zone(Model.AsideFirst)
 
-        </div>
+            </div>
 
-        <div class="col-md-6">
+            <div class="col-md-6">
 
-            @Zone(Model.Content)
+                @Zone(Model.Content)
 
-        </div>
+            </div>
+        }
+        else
+        {
+            <div class="col-md-12">
+
+                @Zone(Model.Content)
+
+            </div>
+        }
+
 
     </div>
 

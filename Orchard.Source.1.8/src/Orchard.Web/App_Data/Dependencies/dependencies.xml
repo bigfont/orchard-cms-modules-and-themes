@@ -26,8 +26,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1_SimpleBlog</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/bin/Bootstrap_3_1_1_SimpleBlog.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/Bootstrap_3_1_1_SimpleBlog.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Bootstrap.SimpleBlog</Name>
@@ -1227,6 +1227,18 @@
     <ModuleName>Orchard.Warmup</ModuleName>
     <VirtualPath>~/Modules/Orchard.Warmup/bin/Orchard.Warmup.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Picasa</ModuleName>
+    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
