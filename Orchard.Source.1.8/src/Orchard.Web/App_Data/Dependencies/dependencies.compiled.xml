@@ -14,9 +14,9 @@
   </Dependency>
   <Dependency>
     <ExtensionId>Bootstrap_3_1_1_SimpleBlog</ExtensionId>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/bin/Bootstrap_3_1_1_SimpleBlog.dll</VirtualPath>
-    <Hash>dbef8f587e882cc6</Hash>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/Bootstrap_3_1_1_SimpleBlog.csproj</VirtualPath>
+    <Hash>b6633c348b161082</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Contoso</ExtensionId>
@@ -371,6 +371,12 @@
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Orchard.Workflows/bin/Orchard.Workflows.dll</VirtualPath>
     <Hash>6e6703b3f83901ea</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Picasa</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
+    <Hash>900408f7631f39d2</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>
