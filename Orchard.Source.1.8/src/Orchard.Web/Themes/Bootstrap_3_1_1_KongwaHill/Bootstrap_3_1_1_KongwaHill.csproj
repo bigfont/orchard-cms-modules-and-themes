@@ -71,6 +71,7 @@
     <Content Include="Scripts\IE-10.js" />
     <Content Include="Styles\IE-10.css" />
     <Content Include="Styles\Site.css" />
+    <Content Include="Styles\variables.css" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -107,7 +108,127 @@
     <Content Include="Views\MenuItemLink.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\Less\Site.less" />
+    <Content Include="Styles\Site\Site.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\alerts.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\badges.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\bootstrap.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\breadcrumbs.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\button-groups.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\buttons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\carousel.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\close.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\code.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\component-animations.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\dropdowns.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\forms.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\glyphicons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\grid.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\input-groups.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\jumbotron.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\labels.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\list-group.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\media.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\modals.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\navbar.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\navs.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\normalize.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\pager.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\pagination.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\panels.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\popovers.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\print.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\progress-bars.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\responsive-utilities.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\scaffolding.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\tables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\theme.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\thumbnails.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\tooltip.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\type.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\utilities.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\bootstrap-3.1.1\wells.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
