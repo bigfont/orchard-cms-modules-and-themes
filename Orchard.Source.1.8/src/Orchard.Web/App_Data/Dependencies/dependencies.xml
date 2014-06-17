@@ -1,6 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ModuleName>Orchard.Tokens</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.MediaLibrary</ModuleName>
+    <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Tokens</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Bootstrap_3_1_1.Carousel</ModuleName>
+    <VirtualPath>~/Modules/Bootstrap_3_1_1.Carousel/Bootstrap_3_1_1.Carousel.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.MediaLibrary</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Tokens</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>Bootstrap_3_1_1_GardenFaire</ModuleName>
     <VirtualPath>~/Themes/Bootstrap_3_1_1_GardenFaire/bin/Bootstrap_3_1_1_GardenFaire.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -14,8 +65,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1_KongwaHill</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_KongwaHill/bin/Bootstrap_3_1_1_KongwaHill.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap_3_1_1_KongwaHill/Bootstrap_3_1_1_KongwaHill.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -62,18 +113,6 @@
   <Dependency>
     <ModuleName>Orchard.Alias</ModuleName>
     <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>System.Configuration</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Tokens</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
@@ -320,23 +359,6 @@
         <Name>WindowsAzureTelemetryEvents</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Azure/bin/WindowsAzureTelemetryEvents.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>System.Configuration</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.MediaLibrary</ModuleName>
-    <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Tokens</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>System.Configuration</Name>
