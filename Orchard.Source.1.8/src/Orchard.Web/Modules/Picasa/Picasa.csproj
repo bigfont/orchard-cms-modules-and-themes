@@ -75,7 +75,6 @@
     <Content Include="Scripts\jquery.pwi-min.js" />
     <Content Include="Styles\pwi.css" />
     <Content Include="Web.config" />
-    <Content Include="Views\Web.config" />
     <Content Include="Styles\Web.config" />
     <Content Include="Properties\AssemblyInfo.cs" />
     <Content Include="Module.txt" />
