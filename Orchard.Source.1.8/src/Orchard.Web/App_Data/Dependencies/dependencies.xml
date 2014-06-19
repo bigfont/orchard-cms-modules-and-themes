@@ -1259,8 +1259,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Picasa</ModuleName>
-    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Picasa/bin/Picasa.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
