@@ -380,9 +380,9 @@
   </Dependency>
   <Dependency>
     <ExtensionId>Picasa</ExtensionId>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
-    <Hash>90040ada4031f0f6</Hash>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Picasa/bin/Picasa.dll</VirtualPath>
+    <Hash>924ae452ceee7a08</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>SysCache</ExtensionId>
