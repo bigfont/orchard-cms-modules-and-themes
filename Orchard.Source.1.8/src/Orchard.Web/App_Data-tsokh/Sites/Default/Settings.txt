@@ -1,0 +1,12 @@
+Name: Default
+DataProvider: SqlServer
+DataConnectionString: Server=tcp:my6wvevkhg.database.windows.net,1433;Database=tsokh_db5_test;User ID=bigfont@my6wvevkhg;Password=673W&7zqyhFt!F;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;
+DataTablePrefix: null
+RequestUrlHost: null
+RequestUrlPrefix: null
+EncryptionAlgorithm: AES
+EncryptionKey: 637B3B2FF1F253738A674F7BB871F0A21E2BAF3F5D26950DDCB5550B9F1AB949
+HashAlgorithm: HMACSHA256
+HashKey: 4BC431094BD733C74B624756F1D3F337417CAEEB125A4CAA0E0A8F22A40BEE152EE0A3A8F60EC70FB68EF06181CBA4AE8AD2A7EA99D39447F9EE25DEC01837D8
+State: Running
+Themes: 
