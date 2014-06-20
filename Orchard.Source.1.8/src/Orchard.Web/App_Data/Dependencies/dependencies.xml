@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ModuleName>BigFont.FingerPrint</ModuleName>
+    <VirtualPath>~/Modules/BigFont.FingerPrint/bin/BigFont.FingerPrint.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Tokens</ModuleName>
     <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -77,8 +89,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1_SimpleBlog</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/Bootstrap_3_1_1_SimpleBlog.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/bin/Bootstrap_3_1_1_SimpleBlog.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Bootstrap.SimpleBlog</Name>
@@ -1259,13 +1271,112 @@
   </Dependency>
   <Dependency>
     <ModuleName>Picasa</ModuleName>
-    <VirtualPath>~/Modules/Picasa/bin/Picasa.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Piedone.HelpfulLibraries</ModuleName>
+    <VirtualPath>~/Modules/Piedone.HelpfulLibraries/Piedone.HelpfulLibraries.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Piedone.Combinator</ModuleName>
+    <VirtualPath>~/Modules/Piedone.Combinator/Piedone.Combinator.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>dotless.Core</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/dotless/dotless.Core.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>EcmaScript.NET</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/EcmaScript.NET.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>ExCSS</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/ExCSS.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>IronRuby</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting.Dlr/bin/IronRuby.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>IronRuby.Libraries</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting.Dlr/bin/IronRuby.Libraries.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Microsoft.Dynamic</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting.Dlr/bin/Microsoft.Dynamic.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Microsoft.Scripting</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting.Dlr/bin/Microsoft.Scripting.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Microsoft.Scripting.Metadata</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting.Dlr/bin/Microsoft.Scripting.Metadata.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>NAnt.Core</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/NAnt.Core.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>SassAndCoffee.Core</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/SassAndCoffee/SassAndCoffee.Core.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>SassAndCoffee.Ruby</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/SassAndCoffee/SassAndCoffee.Ruby.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Yahoo.Yui.Compressor</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/Yahoo.Yui.Compressor.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Yahoo.Yui.Compressor.Build.MsBuild</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/Yahoo.Yui.Compressor.Build.MsBuild.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Yahoo.Yui.Compressor.Build.Nant</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/Yahoo.Yui.Compressor.Build.Nant.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Piedone.HelpfulLibraries</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.HelpfulLibraries/Piedone.HelpfulLibraries.csproj</VirtualPath>
       </Reference>
     </References>
   </Dependency>
