@@ -2,8 +2,8 @@
 <Dependencies>
   <Dependency>
     <ModuleName>BigFont.FingerPrint</ModuleName>
-    <VirtualPath>~/Modules/BigFont.FingerPrint/bin/BigFont.FingerPrint.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/BigFont.FingerPrint/BigFont.FingerPrint.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -43,8 +43,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1.Carousel</ModuleName>
-    <VirtualPath>~/Modules/Bootstrap_3_1_1.Carousel/Bootstrap_3_1_1.Carousel.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Bootstrap_3_1_1.Carousel/bin/Bootstrap_3_1_1.Carousel.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Orchard.MediaLibrary</Name>
@@ -77,8 +77,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1_KongwaHill</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_KongwaHill/Bootstrap_3_1_1_KongwaHill.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap_3_1_1_KongwaHill/bin/Bootstrap_3_1_1_KongwaHill.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -89,8 +89,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1_SimpleBlog</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/bin/Bootstrap_3_1_1_SimpleBlog.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/Bootstrap_3_1_1_SimpleBlog.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Bootstrap.SimpleBlog</Name>
@@ -1271,8 +1271,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Picasa</ModuleName>
-    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Picasa/bin/Picasa.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
