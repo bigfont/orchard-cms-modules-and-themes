@@ -1,8 +1,8 @@
-Name: Bootstrap_3_1_1_GardenFaire
+Name: Bootstrap 3.1.1 - Base Theme
 Author: The Orchard Team
 Website: http://www.orchardproject.net
 Description: Description for the theme
 Version: 1.0
-BaseTheme: Bootstrap_3_1_1_BaseTheme
+BaseTheme: TheThemeMachine
 # todo: provide tags
 # Tags: Classic, Serif
