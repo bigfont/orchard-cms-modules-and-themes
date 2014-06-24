@@ -43,12 +43,6 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Bootstrap</ModuleName>
-    <VirtualPath>~/Theme/Bootstrap</VirtualPath>
-    <LoaderName>RawThemeExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>Orchard.Tokens</ModuleName>
     <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -100,16 +94,10 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Bootstrap_3_1_1_GardenFaire</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_GardenFaire/bin/Bootstrap_3_1_1_GardenFaire.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>System.Configuration</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
-      </Reference>
-    </References>
+    <ModuleName>Bootstrap_3_1_1_BaseTheme</ModuleName>
+    <VirtualPath>~/Theme/Bootstrap_3_1_1_BaseTheme</VirtualPath>
+    <LoaderName>RawThemeExtensionLoader</LoaderName>
+    <References />
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1_KongwaHill</ModuleName>
