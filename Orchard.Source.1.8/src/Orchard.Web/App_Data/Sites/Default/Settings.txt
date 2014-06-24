@@ -1,13 +1,12 @@
-State: Running
-Themes: 
-Modules: 
 Name: Default
-DataProvider: SqlCe
-DataConnectionString: null
-DataTablePrefix: null
+DataProvider: SqlServer
+DataConnectionString: Server=tcp:my6wvevkhg.database.windows.net,1433;Database=Copy_gardenfaire_db;User ID=bigfont@my6wvevkhg;Password=673W&7zqyhFt!F;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;
+DataPrefix: null
 RequestUrlHost: null
 RequestUrlPrefix: null
+State: Running
 EncryptionAlgorithm: AES
-EncryptionKey: F3FD523DDBC13F9F9BF8343D6B83E5FFCB7844C22FE93C4F1535E0DE433AA10E
+EncryptionKey: EE88CF33DE24CF25BD8AA44576A8E25654E14727ABAAEB1491B2BAFF55E154FE
 HashAlgorithm: HMACSHA256
-HashKey: DDB3F840A991B24142440AFF5BBA1575E027F659D588C42A8180A7B1FD72CD60BA29E608D2950222B752A301487F8D6D8B2BB6725EC44B0F84085910B055EC38
+HashKey: 8714BB8C694CE7112DC41A3A942736F055775B094AED8319DCAAA09653ABB620E288DFED7C5BBD63BEFD144AD99B2BD7837E53EE02AA14DF70A1223964DD2FB3
+Themes: 
