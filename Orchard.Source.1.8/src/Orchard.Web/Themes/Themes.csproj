@@ -61,6 +61,16 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Web.config" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Scripts\Web.config" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Web.config" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Content\Web.config" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Theme.txt" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Theme.png" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Placement.info" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="ThemeWithoutProject\Web.config" />
     <Content Include="ThemeWithoutProject\Scripts\Web.config" />
     <Content Include="ThemeWithoutProject\Styles\Web.config" />
@@ -81,40 +91,6 @@
     <Content Include="BigFont.GardenFaire\Styles\bigfont.min.css" />
     <Content Include="BigFont.GardenFaire\Theme.png" />
     <Content Include="BigFont.GardenFaire\Theme.txt" />
-    <Content Include="Bootstrap\Content\alpha.png" />
-    <Content Include="Bootstrap\Content\glyphicons-halflings-white.png" />
-    <Content Include="Bootstrap\Content\glyphicons-halflings.png" />
-    <Content Include="Bootstrap\Content\hue.png" />
-    <Content Include="Bootstrap\Content\saturation.png" />
-    <Content Include="Bootstrap\Scripts\bootbox.js" />
-    <Content Include="Bootstrap\Scripts\bootbox.min.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-affix.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-alert.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-button.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-carousel.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-collapse.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-colorpicker.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-datepicker.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-dropdown.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-modal.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-popover.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-scrollspy.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-tab.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-tooltip.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-transition.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap-typeahead.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap.js" />
-    <Content Include="Bootstrap\Scripts\bootstrap.min.js" />
-    <Content Include="Bootstrap\Styles\bootstrap-responsive.css" />
-    <Content Include="Bootstrap\Styles\bootstrap-responsive.min.css" />
-    <Content Include="Bootstrap\Styles\bootstrap.css" />
-    <Content Include="Bootstrap\Styles\bootstrap.min.css" />
-    <Content Include="Bootstrap\Styles\colorpicker.css" />
-    <Content Include="Bootstrap\Styles\datepicker.css" />
-    <Content Include="Bootstrap\Styles\responsive-bootstrap.min.css" />
-    <Content Include="Bootstrap\Styles\site.css" />
-    <Content Include="Bootstrap\Theme.png" />
-    <Content Include="Bootstrap\Theme.txt" />
     <Content Include="BigFont.GardenFaire\Web.config" />
     <Content Include="TheAdmin\Scripts\admin.js" />
     <Content Include="TheAdmin\Styles\ie.css" />
@@ -222,85 +198,6 @@
     <Content Include="TheAdmin\Views\ErrorPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap\Content\Web.config" />
-    <Content Include="Bootstrap\Placement.info" />
-    <Content Include="Bootstrap\Scripts\Web.config" />
-    <Content Include="Bootstrap\Styles\less\accordion.less" />
-    <Content Include="Bootstrap\Styles\less\alerts.less" />
-    <Content Include="Bootstrap\Styles\less\bootstrap.less" />
-    <Content Include="Bootstrap\Styles\less\breadcrumbs.less" />
-    <Content Include="Bootstrap\Styles\less\button-groups.less" />
-    <Content Include="Bootstrap\Styles\less\buttons.less" />
-    <Content Include="Bootstrap\Styles\less\carousel.less" />
-    <Content Include="Bootstrap\Styles\less\close.less" />
-    <Content Include="Bootstrap\Styles\less\code.less" />
-    <Content Include="Bootstrap\Styles\less\colorpicker.less" />
-    <Content Include="Bootstrap\Styles\less\component-animations.less" />
-    <Content Include="Bootstrap\Styles\less\datepicker.less" />
-    <Content Include="Bootstrap\Styles\less\dropdowns.less" />
-    <Content Include="Bootstrap\Styles\less\forms.less" />
-    <Content Include="Bootstrap\Styles\less\grid.less" />
-    <Content Include="Bootstrap\Styles\less\hero-unit.less" />
-    <Content Include="Bootstrap\Styles\less\labels-badges.less" />
-    <Content Include="Bootstrap\Styles\less\layouts.less" />
-    <Content Include="Bootstrap\Styles\less\media.less" />
-    <Content Include="Bootstrap\Styles\less\mixins.less" />
-    <Content Include="Bootstrap\Styles\less\modals.less" />
-    <Content Include="Bootstrap\Styles\less\navbar.less" />
-    <Content Include="Bootstrap\Styles\less\navs.less" />
-    <Content Include="Bootstrap\Styles\less\pager.less" />
-    <Content Include="Bootstrap\Styles\less\pagination.less" />
-    <Content Include="Bootstrap\Styles\less\popovers.less" />
-    <Content Include="Bootstrap\Styles\less\progress-bars.less" />
-    <Content Include="Bootstrap\Styles\less\reset.less" />
-    <Content Include="Bootstrap\Styles\less\responsive-1200px-min.less" />
-    <Content Include="Bootstrap\Styles\less\responsive-767px-max.less" />
-    <Content Include="Bootstrap\Styles\less\responsive-768px-979px.less" />
-    <Content Include="Bootstrap\Styles\less\responsive-navbar.less" />
-    <Content Include="Bootstrap\Styles\less\responsive-utilities.less" />
-    <Content Include="Bootstrap\Styles\less\responsive.less" />
-    <Content Include="Bootstrap\Styles\less\scaffolding.less" />
-    <Content Include="Bootstrap\Styles\less\sprites.less" />
-    <Content Include="Bootstrap\Styles\less\tables.less" />
-    <Content Include="Bootstrap\Styles\less\thumbnails.less" />
-    <Content Include="Bootstrap\Styles\less\tooltip.less" />
-    <Content Include="Bootstrap\Styles\less\type.less" />
-    <Content Include="Bootstrap\Styles\less\utilities.less" />
-    <Content Include="Bootstrap\Styles\less\variables.less" />
-    <Content Include="Bootstrap\Styles\less\Web.config" />
-    <Content Include="Bootstrap\Styles\less\wells.less" />
-    <Content Include="Bootstrap\Styles\Web.config" />
-    <Content Include="Bootstrap\Views\BadgeOfHonor.cshtml" />
-    <Content Include="Bootstrap\Views\Branding.cshtml" />
-    <Content Include="Bootstrap\Views\CommentMetadata.cshtml" />
-    <Content Include="Bootstrap\Views\Content.cshtml" />
-    <Content Include="Bootstrap\Views\Content.Summary.cshtml" />
-    <Content Include="Bootstrap\Views\Layout-fluid.cshtml" />
-    <Content Include="Bootstrap\Views\Layout.cshtml" />
-    <Content Include="Bootstrap\Views\ListOfComments.cshtml" />
-    <Content Include="Bootstrap\Views\LogOn.cshtml" />
-    <Content Include="Bootstrap\Views\Menu.cshtml" />
-    <Content Include="Bootstrap\Views\MenuItem.cshtml" />
-    <Content Include="Bootstrap\Views\MenuItemLink.cshtml" />
-    <Content Include="Bootstrap\Views\MenuItemLinkdd.cshtml" />
-    <Content Include="Bootstrap\Views\Message.cshtml" />
-    <Content Include="Bootstrap\Views\Pager.CurrentPage.cshtml" />
-    <Content Include="Bootstrap\Views\Pager.First.cshtml" />
-    <Content Include="Bootstrap\Views\Pager.Last.cshtml" />
-    <Content Include="Bootstrap\Views\Pager.Next.cshtml" />
-    <Content Include="Bootstrap\Views\Pager.Previous.cshtml" />
-    <Content Include="Bootstrap\Views\Parts.Comments.Count.cshtml" />
-    <Content Include="Bootstrap\Views\Parts.Comments.cshtml" />
-    <Content Include="Bootstrap\Views\Parts.Common.Body.Summary.cshtml" />
-    <Content Include="Bootstrap\Views\Parts.Common.Metadata.cshtml" />
-    <Content Include="Bootstrap\Views\Parts.Common.Metadata.Summary.cshtml" />
-    <Content Include="Bootstrap\Views\Parts.Title_Summary.cshtml" />
-    <Content Include="Bootstrap\Views\Parts\Tags.ShowTags.cshtml" />
-    <Content Include="Bootstrap\Views\Register.cshtml" />
-    <Content Include="Bootstrap\Views\SearchNav.cshtml" />
-    <Content Include="Bootstrap\Views\User.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="BigFont.GardenFaire\Content\Web.config" />
     <Content Include="BigFont.GardenFaire\Placement.info" />
     <Content Include="BigFont.GardenFaire\Scripts\Web.config" />
@@ -311,7 +208,12 @@
     <Content Include="BigFont.GardenFaire\Views\Widget.cshtml" />
     <Content Include="BigFont.GardenFaire\Views\Widget.Wrapper.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Site.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
