@@ -412,7 +412,7 @@
     <ExtensionId>ThemeWithProject</ExtensionId>
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/ThemeWithProject/ThemeWithProject.csproj</VirtualPath>
-    <Hash>926d9079db4d000e</Hash>
+    <Hash>db3ea941bf609e0e</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>TinyMce</ExtensionId>
@@ -425,11 +425,5 @@
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Upgrade/bin/Upgrade.dll</VirtualPath>
     <Hash>6fb33e815867f7aa</Hash>
-  </Dependency>
-  <Dependency>
-    <ExtensionId>WithProject</ExtensionId>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <VirtualPath>~/Themes/WithProject/WithProject.csproj</VirtualPath>
-    <Hash>db2e113110211c3f</Hash>
   </Dependency>
 </Dependencies>

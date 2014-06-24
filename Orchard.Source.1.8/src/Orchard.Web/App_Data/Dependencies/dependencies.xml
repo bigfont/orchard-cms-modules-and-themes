@@ -238,12 +238,6 @@
     <References />
   </Dependency>
   <Dependency>
-    <ModuleName>NoProject</ModuleName>
-    <VirtualPath>~/Theme/NoProject</VirtualPath>
-    <LoaderName>RawThemeExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>Orchard.AntiSpam</ModuleName>
     <VirtualPath>~/Modules/Orchard.AntiSpam/bin/Orchard.AntiSpam.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -1452,6 +1446,12 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>ThemeWithoutProject</ModuleName>
+    <VirtualPath>~/Theme/ThemeWithoutProject</VirtualPath>
+    <LoaderName>RawThemeExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>ThemeWithProject</ModuleName>
     <VirtualPath>~/Themes/ThemeWithProject/ThemeWithProject.csproj</VirtualPath>
     <LoaderName>DynamicExtensionLoader</LoaderName>
@@ -1536,18 +1536,6 @@
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Workflows/bin/Orchard.Workflows.dll</VirtualPath>
       </Reference>
-      <Reference>
-        <Name>System.Configuration</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>WithProject</ModuleName>
-    <VirtualPath>~/Themes/WithProject/WithProject.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
       <Reference>
         <Name>System.Configuration</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
