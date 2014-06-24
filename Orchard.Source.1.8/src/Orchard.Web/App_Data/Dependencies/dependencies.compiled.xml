@@ -1,10 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ExtensionId>BigFont.ContactUs</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/BigFont.ContactUs/BigFont.ContactUs.csproj</VirtualPath>
+    <Hash>fe8548cab366f362</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>BigFont.FingerPrint</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/BigFont.FingerPrint/bin/BigFont.FingerPrint.dll</VirtualPath>
     <Hash>92755883930cce23</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>BigFont.Maps</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/BigFont.Maps/BigFont.Maps.csproj</VirtualPath>
+    <Hash>d8e88f77f8ccf963</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Bootstrap_3_1_1.Carousel</ExtensionId>

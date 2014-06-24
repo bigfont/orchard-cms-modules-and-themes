@@ -1,0 +1,16 @@
+Name: BigFont Maps
+AntiForgery: enabled
+Author: Shaun Luttin at BigFont.ca
+Website: http://www.bigfont.ca
+Version: 1.0
+OrchardVersion: 1.6
+Description:  A Google Map with longitude and latitude markers.
+Category: Geolocation
+
+Features:
+    BigFont Maps Multiple Markers:
+        Description: Adds a Google Map with multiple latLong markers.
+        Category: Geolocation
+	BigFont Maps Single Marker:
+        Description: Adds a Google Map with one latLong markers.
+        Category: Geolocation
