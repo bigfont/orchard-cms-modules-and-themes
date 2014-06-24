@@ -2,8 +2,8 @@
 <Dependencies>
   <Dependency>
     <ModuleName>BigFont.ContactUs</ModuleName>
-    <VirtualPath>~/Modules/BigFont.ContactUs/BigFont.ContactUs.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/BigFont.ContactUs/bin/BigFont.ContactUs.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -32,8 +32,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>BigFont.Maps</ModuleName>
-    <VirtualPath>~/Modules/BigFont.Maps/BigFont.Maps.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/BigFont.Maps/bin/BigFont.Maps.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -257,18 +257,23 @@
   </Dependency>
   <Dependency>
     <ModuleName>Mello.ImageGallery</ModuleName>
-    <VirtualPath>~/Modules/Mello.ImageGallery/Mello.ImageGallery.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Mello.ImageGallery/bin/Mello.ImageGallery.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>ICSharpCode.SharpZipLib</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Mello.ImageGallery/lib/ICSharpCode.SharpZipLib.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Mello.ImageGallery/bin/ICSharpCode.SharpZipLib.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>Orchard.MediaLibrary</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>System.Net.Http</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Mello.ImageGallery/bin/System.Net.Http.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>System.Configuration</Name>
@@ -626,7 +631,7 @@
       <Reference>
         <Name>System.Net.Http</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Workflows/bin/System.Net.Http.dll</VirtualPath>
+        <VirtualPath>~/Modules/Mello.ImageGallery/bin/System.Net.Http.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>System.Configuration</Name>
@@ -1591,18 +1596,18 @@
   </Dependency>
   <Dependency>
     <ModuleName>Vandelay.Industries</ModuleName>
-    <VirtualPath>~/Modules/Vandelay.Industries/Vandelay.Industries.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Vandelay.Industries/bin/Vandelay.Industries.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Fluent.IO</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Vandelay.Industries/Libraries/Fluent.IO.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Vandelay.Industries/bin/Fluent.IO.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>Fluent.Zip</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Vandelay.Industries/Libraries/Fluent.Zip.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Vandelay.Industries/bin/Fluent.Zip.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>HtmlAgilityPack</Name>
@@ -1620,9 +1625,19 @@
         <VirtualPath>~/Modules/Markdown/bin/MarkdownSharp.dll</VirtualPath>
       </Reference>
       <Reference>
+        <Name>Orchard.Alias</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
+      </Reference>
+      <Reference>
         <Name>Orchard.Autoroute</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Forms</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Forms/bin/Orchard.Forms.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>Orchard.MediaLibrary</Name>
@@ -1643,6 +1658,11 @@
         <Name>Orchard.Themes</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Tokens</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
       </Reference>
     </References>
   </Dependency>
