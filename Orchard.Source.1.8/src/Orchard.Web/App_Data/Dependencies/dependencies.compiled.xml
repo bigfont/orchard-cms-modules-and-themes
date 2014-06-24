@@ -25,12 +25,6 @@
     <Hash>2538d58514be4c3d</Hash>
   </Dependency>
   <Dependency>
-    <ExtensionId>Bootstrap_3_1_1_GardenFaire</ExtensionId>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_GardenFaire/bin/Bootstrap_3_1_1_GardenFaire.dll</VirtualPath>
-    <Hash>928a98a0363620cc</Hash>
-  </Dependency>
-  <Dependency>
     <ExtensionId>Bootstrap_3_1_1_KongwaHill</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Themes/Bootstrap_3_1_1_KongwaHill/bin/Bootstrap_3_1_1_KongwaHill.dll</VirtualPath>
