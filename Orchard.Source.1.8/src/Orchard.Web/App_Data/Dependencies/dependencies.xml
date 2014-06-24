@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dependencies>
   <Dependency>
+    <ModuleName>BigFont.ContactUs</ModuleName>
+    <VirtualPath>~/Modules/BigFont.ContactUs/BigFont.ContactUs.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>BigFont.FingerPrint</ModuleName>
     <VirtualPath>~/Modules/BigFont.FingerPrint/bin/BigFont.FingerPrint.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -17,6 +29,18 @@
     <VirtualPath>~/Theme/BigFont.GardenFaire</VirtualPath>
     <LoaderName>RawThemeExtensionLoader</LoaderName>
     <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>BigFont.Maps</ModuleName>
+    <VirtualPath>~/Modules/BigFont.Maps/BigFont.Maps.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap</ModuleName>

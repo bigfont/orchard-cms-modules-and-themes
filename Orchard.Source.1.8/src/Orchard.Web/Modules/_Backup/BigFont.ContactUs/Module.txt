@@ -1,0 +1,13 @@
+﻿Name: BigFont ContactUs
+AntiForgery: enabled
+Author: Shaun Luttin at BigFont.ca
+Website: http://www.bigfont.ca
+Version: 1.0
+OrchardVersion: 1.6
+Description: Simple Widgets for showing contact information to the end user.
+Category: Content
+
+Features:
+    BigFont ContactUs <li>:
+        Description: A series of list items <li> that show contact info to end users. Emded the widget into a <ul>.
+		Category: Content
