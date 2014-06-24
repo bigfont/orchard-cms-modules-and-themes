@@ -1,0 +1,610 @@
+
+<!DOCTYPE html> 
+<html lang="en-US" class="static detail-page contents"> 
+<head> 
+    <meta charset="utf-8" />
+    <title>Garden Faire - Welcome!</title> 
+    <link href="/Media/Default/Modules/Piedone/Combinator/Styles/646839596-1.css?timestamp=130480297490000000" rel="stylesheet" type="text/css" />
+<script src="/Modules/Orchard.jQuery/scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="/Core/Shapes/scripts/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta content="Orchard" name="generator" />
+<meta content="IE=edge,chrome=1" name="X-UA-Compatible" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+<link href="/modules/orchard.themes/Content/orchard.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+        });
+    </script>
+
+
+    <script>(function(d){d.className="dyn"+d.className.substring(6,d.className.length);})(document.documentElement);</script> 
+</head> 
+<body>
+
+
+<div class="aside-12" id="layout-wrapper">
+    <!--start: Navigation -->
+    <div id="layout-navigation" class="navbar navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse collapse">
+                    <div class="zone zone-navigation">
+<a class="brand" href="/">Garden Faire</a>
+    <div id="theSignIn">
+        <a id="showSignIn" class="pull-right"><i class="icon-user icon-white"></i>&nbsp;Show Sign In</a>
+        <div id="doSignIn">
+<form action="/Users/Account/LogOn" class="navbar-form pull-right" method="post"><input autofocus="autofocus" class="span2" id="username-email" name="userNameOrEmail" placeholder="Email" type="text" value="" /><input class="span2" id="password" name="password" placeholder="Password" type="password" value="" />        <button class="btn" type="submit">Sign in</button>
+<input name="__RequestVerificationToken" type="hidden" value="XmmH9seGSSi00QPilzS3u1YoHGXEjFU3RXTm4bJg8E-940K26aMNoJHHy4UqaBjHYL13kJJOa74jI8JinjW346tKaO4yTG5-tt2b6uInEcI1" /></form>        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end: Navigation -->
+<!--start: Container -->
+<div id="layout-content" class="container">
+            <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
+        <div id="layout-featured" class="hero-unit">
+            <div class="zone zone-featured">
+<article class="widget-featured-image widget-featured widget-html-widget widget">
+    <p><img src="/Media/Default/OtherImages/gardenfaire_logo.jpg" alt="" height="299" width="225" /></p>
+</article>
+<article class="widget-feature-message widget-featured widget-html-widget widget">
+    <h1>Garden Faire Campground</h1>
+<p>Come camp with us and feel that 'old forest comfort' in an authentic West Coast setting... right across from the Rainbow Road Indoor Pool!</p>
+</article></div>
+        </div>
+        <!-- end: Hero Unit -->
+        <!--start: Row -->
+    <div class="row">
+            <div class="span3 affix-container">
+                <nav id="sub-nav" data-offset-top="425" data-spy="affix">
+                    <ul class="nav nav-list nav-stacked">
+
+                        
+
+<li class="contact-info"><a href="mailto:gardenfaire@saltspring.com"><i class="icon-envelope"></i>gardenfaire@saltspring.com</a></li>
+<li class="contact-info"><a href="tel:1-250-537-4346"><i class="icon-bell"></i>250-537-4346</a></li>
+<li class="contact-info">
+    <address>
+        305 Rainbow Road<br />
+        Salt Spring Island, BC<br />
+        Canada, V8K 2M3
+    </address>
+</li>
+
+                        
+
+
+
+                            <li class=""><a href="#find-us">Find Us</a></li>
+                            <li class=""><a href="#rates">Rates</a></li>
+                            <li class=""><a href="#video">Video</a></li>
+                            <li class=""><a href="#campground-photos">Campground Photos</a></li>
+                            <li class=""><a href="#world-wide-visitors">World Wide Visitors</a></li>
+                            <li class=""><a href="#mouat-park-trail">Mouat Park Trail</a></li>
+                            <li class=""><a href="#links">Links</a></li>
+
+                        <li class="visible-phone"><a href="#testimonials">Testimonials</a></li>
+                        <li class="hidden-phone"><a href="#">Return to Top</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <div class="span6">
+                                        <div>
+                    <div class="zone zone-content">
+<article class="post post-page content-item page">
+    <header>
+        
+
+<h1>Welcome!</h1>
+    </header>
+    <p>Beautifully situated campsites in an old growth forest connecting to the 'off leash' Mouat Park Trails, just a 10-minute walk to all the amenities in downtown Ganges. All the walk-in tent sites and the camper/RV sites have fire rings. The water throughout the campground is good for drinking and there are water and electric hook-ups in the camper/RV sites. We are well supervised, and we welcome both children and camping friendly dogs.</p>
+<p>Miss our previous website? Find it <a href="http://buddha.cloudapp.net/PreviousWebsite/index.html">here</a>. </p>
+    </article>
+</div>
+                </div>
+                            <div>
+                    <div class="zone zone-after-content">
+<article class="widget-quote-1 widget-after-content widget-html-widget widget aside-quote">
+    <p><em>"Salt Spring's Best Private Campground."</em><br />-Exploring the Best Magazine</p>
+</article>
+<article class="widget-after-content widget-big-font-map-single-marker-widget widget">
+    <header id="find-us">
+        <h1>Find Us</h1>        
+                
+    </header>
+    
+
+
+
+
+
+<input id="latitude" type="hidden" value="48.854176" />
+<input id="longitude" type="hidden" value="-123.514332" />
+
+
+
+<p>On the left, just a 2-3 min. drive from town on Rainbow Rd, at the foot of Atkins Rd. The front of the property is a Perennial Display Nursery.</p>
+<div class="img-polaroid img-rounded">
+    <div class="bigfont-map" id="map-single-marker-canvas"></div>
+</div>
+
+
+
+</article>
+<article class="widget-quote-2 widget-after-content widget-html-widget widget aside-quote">
+    <p><em>The coolest hot shower I've ever seen!</em></p>
+</article>
+<article class="widget-after-content widget-html-widget widget">
+    <header id="rates">
+        <h1>Rates</h1>        
+                
+    </header>
+    <table class="table table-bordered">
+<thead>
+<tr><th></th><th>Summer</th><th>Winter</th></tr>
+</thead>
+<tbody>
+<tr><th>Tent Sites</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="info">
+<td>Walk-In</td>
+<td>$25</td>
+<td>$20</td>
+</tr>
+<tr><th>R.V.'s</th>
+<td></td>
+<td></td>
+</tr>
+<tr class="info">
+<td>Unserviced</td>
+<td>$30</td>
+<td>$25</td>
+</tr>
+<tr class="info">
+<td>Serviced</td>
+<td>$35</td>
+<td>$30</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="3">Tax inc.</td>
+</tr>
+</tfoot>
+</table>
+<ul>
+<li>Rates inc. one tent or one RV and two adults.</li>
+<li>Serviced R.V. rates inc. 15 amp power and water.</li>
+<li>Extra people are $8 per night.</li>
+<li>Children under 14 are free.</li>
+<li>WIFI is included.</li>
+<li>Three day reservations are required for long weekends for drive in sites.</li>
+</ul>
+</article>
+<article class="widget-YouTubeVideo widget-after-content widget-html-widget widget">
+    <header id="video">
+        <h1>Video</h1>        
+                
+    </header>
+    <h3>Campers havin' fun on Salt Spring Island!</h3>
+<p><iframe width="420" height="315" src="//www.youtube.com/embed/KsctnBc_Uak" frameborder="0" allowfullscreen=""></iframe></p>
+</article>
+<article class="widget-quote-3 widget-after-content widget-html-widget widget aside-quote">
+    <p><em>The only campground in town!</em></p>
+</article>
+<article class="widget-after-content widget-image-gallery-widget widget">
+    <header id="campground-photos">
+        <h1>Campground Photos</h1>        
+                
+    </header>
+    
+
+
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/a.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/a.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/b.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/b.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/d.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/d.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/e.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/e.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/ee.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/ee.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/f.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/f.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/g.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/g.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/h.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/h.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/i.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/i.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/j.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/j.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/l.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/l.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/m.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/m.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/n.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/n.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/x.jpg" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/x.jpg" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/y.JPG" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/y.JPG" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Campground/z.png" ><img src="/Media/Default/ImageGalleries/Campground/Thumbnails/z.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+
+
+
+</article>
+<article class="widget-quote-4 widget-after-content widget-html-widget widget aside-quote">
+    <p><em>Open year round!</em></p>
+</article>
+<article class="widget-after-content widget-big-font-map-multiple-markers-widget widget">
+    <header id="world-wide-visitors">
+        <h1>World Wide Visitors</h1>        
+                
+    </header>
+    
+
+<ul class="bigfont-location-list" id="location-list">
+</ul>
+<div class="img-polaroid img-rounded">
+    <div class="bigfont-map" id="map-multiple-markers-canvas"></div>
+</div>
+
+
+
+</article>
+<article class="widget-after-content widget-html-widget widget">
+    <header id="mouat-park-trail">
+        <h1>Mouat Park Trail</h1>        
+                
+    </header>
+    <p>Enjoy a beautiful walk to town, through the Mouat Park trails, which connect directly to our campground.</p>
+<p>For information on all of our Parks and Trail maps go to <a href="http://www.crd.bc.ca/ssiparc" target="_blank">www.crd.bc.ca/ssiparc/</a>.</p>
+<p>And we are just a block away from the fairgrounds, where the annual, 100+ year old <a href="http://ssifi.org/fall-fair">Fall Fair</a> is held each September.</p>
+<p><img alt="" src="/Media/Default/OtherImages/mouat_park_trails_600x400.png" height="400" width="600" /></p>
+</article>
+<article class="widget-after-content widget-image-gallery-widget widget">
+    
+
+
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/a.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/a.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/aa.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/aa.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/b.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/b.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/d.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/d.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/e.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/e.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/ee.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/ee.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/f.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/f.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/g.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/g.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/h.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/h.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/i.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/i.png" alt="" title="" /></a></li>
+            </ul>
+        </div>
+        <div class="row-fluid">
+            <ul class="thumbnails">
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/j.png" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/j.png" alt="" title="" /></a></li>
+    <li class="span6"><a class="thumbnail" href="/Media/Default/ImageGalleries/Mouat/k.JPG" ><img src="/Media/Default/ImageGalleries/Mouat/Thumbnails/k.JPG" alt="" title="" /></a></li>
+            </ul>
+        </div>
+
+
+
+</article>
+<article class="widget-after-content widget-html-widget widget">
+    <header id="links">
+        <h1>Links</h1>        
+                
+    </header>
+    <p>...to transportation, things to do and see while on Salt Spring Island.</p>
+<p><a href="http://hellosaltspring.com/">Hello, Salt Spring</a> details activities to do on the island.</p>
+<p><a href="http://www.toursaltspring.com">Western Splendour Tour Company</a> is a tour company located on Salt Spring Island.</p>
+<p><a href="http://gulfislandsdriftwood.com/">Gulf Islands Driftwood</a> weekly newspaper. Coverage of local news as well as 7 day events calendar.</p>
+<p><a href="http://www.saltspringtoday.com/">Salt Spring Island Chamber of Commerce</a> - Discover an island paradise... Salt Spring Island, BC.</p>
+<p><a href="http://www.crd.bc.ca/ssiparc/activity/rainbowroad/index.htm">Rainbow Road Indoor Pool</a> - Admission fees, opening times and special programs - Phone 250-537-1402.</p>
+<p><a href="http://www.bcferries.com/schedules/">BC Ferries Schedule</a> - Look up Salt Spring Island and choose your point of arrival: Vesuvius, Fulford or Long Harbour.</p>
+<p><a href="http://www.saltspringair.com">Salt Spring Air</a>, <a href="http://www.harbour-air.com">HarbourAir</a> and <a href="http://www.seairseaplanes.com">SeaAir</a>: If you choose to fly in, there are three airlines offering float plane service to the island.</p>
+<p><a href="http://www.bctransit.com/regions/ssi/schedules/">Bus Service</a> - operates between ferry terminals and Ganges, and around the village of Ganges... with a bike carrier.</p>
+<p><a href="http://www.lorenda.ca/">L'Orenda Sailing Charters</a> - Cruise the beautiful Gulf Islands onboard a classic North Sea gaff-rigged yawl.</p>
+<p><a href="http://www.islandescapades.com/">Island Escapades</a> - Eco-adventures in the Gulf Islands since 1991. Two hour to full day kayak.</p>
+<p><a href="HTTP://www.crd.bc.ca/ssiparc/.">Parks and Trail Maps</a>&nbsp;- Information on all of our Parks and Trail maps.</p>
+<p><a href="http://ssifi.org/fall-fair">Fall Fair</a>&nbsp;-&nbsp;100+ year old Fall Fair is held each September.</p>
+</article></div>
+                </div>          
+        </div>
+            <div class="span3">
+                <div class="well">
+                    <div class="zone zone-aside-second">
+<article class="widget-testimonials widget-aside-second widget-html-widget widget">
+    <p><em>"I challenge all you home-bodies to check out this campground and let your senses feel what nature can do for the soul!"</em></p>
+<p>Kamloops, B.C.</p>
+<p><em>"It&rsquo;s very &lsquo;zen.&rsquo;"</em></p>
+<p>Bill Nash, Salt Spring Island</p>
+<p><em>"The many secluded tent sites are great for bicycle tourers, and you can leave your cars at the ferries!"</em></p>
+<p>Chilliwack, B.C.</p>
+<p><em>"What a wonderful gift to the world! Thank you."</em></p>
+<p>Martin, Switzerland</p>
+<p><em>"Beautiful, quiet campground."</em></p>
+<p>Morton &amp; Julia, Norway</p>
+<p><em>"The most beautiful, private campground that we've ever been to! Keep it up!"</em></p>
+<p>Chad &amp; Candice Granger, AB</p>
+<p><em>"Thank you for this 'FOREST RETREAT.'"</em></p>
+<p>Vancouver</p>
+<p><em>"2nd time here. Excited to be back."</em></p>
+<p>Lindsey &amp; Theresa, Edmonton, AB</p>
+<p><em>"A grand spot. Very &lsquo;homey.'"</em></p>
+<p>Anonymous</p>
+<p><em>"A little piece of heaven."</em></p>
+<p>David &amp; Jim Paige, Victoria, BC</p>
+<p><em>"A nice jewel of a campground."</em></p>
+<p>Dan Moore</p>
+<p><em>"A real &lsquo;groovy&rsquo; place."</em></p>
+<p>Anonymous</p>
+<p><em>"A relaxed, chilled out place. Thanks."</em></p>
+<p>Marzeu &amp; Marxen, Germany</p>
+<p><em>"Absolutely beautiful."</em></p>
+<p>Kevin, North Van.,BC</p>
+<p><em>"Accommodating people &amp; beautiful place!"</em></p>
+<p>Karen, Jason &amp; Kevin, Western Canada Wilderness Committee</p>
+<p><em>"Ah, shade! Sweet&hellip;"</em></p>
+<p>Anonymous</p>
+<p><em>"Ahh&hellip;peaceful."</em></p>
+<p>Kellie Betts, Dawson Creek., BC</p>
+<p><em>"Always a good time!"</em></p>
+<p>Ananda Relph, Errington, BC</p>
+<p><em>"Amazing time, everyone is so helpful, especially Bill, the campground host."</em></p>
+<p>Tracy Walker, Burnaby, BC</p>
+<p><em>"Amazing. So beautiful. Thank you."</em></p>
+<p>Stephen, North Van</p>
+<p><em>"An Oasis for a bike tourer."</em></p>
+<p>G. Borgstrom, Onanole, Manitoba</p>
+<p><em>"Beautiful campsites in the towering trees!!"</em></p>
+<p>Gord &amp; Naureen &amp; Anna, Pender Is., BC</p>
+<p><em>"Beautiful Island- Ireland with Sunshine!"</em></p>
+<p>Des Kerr, N. Ireland</p>
+<p><em>"Beautiful place. Kid &amp; pet friendly."</em></p>
+<p>Anonymous</p>
+<p><em>"Best outhouse I&rsquo;ve ever seen! Very nice places."</em></p>
+<p>Peter Pardell, Victoria, BC</p>
+<p><em>"Clean campground, cool and shady."</em></p>
+<p>Alan Rohr, Port Coquitlam, BC</p>
+<p><em>"Close to everything, but far enough away to feel the forest."</em></p>
+<p>Michael &amp; Matthew</p>
+<p><em>"Cool sites. Great place to listen to the birds and read. Thanks."</em></p>
+<p>Susanne, Rocky Rapids, AB</p>
+<p><em>"Creative and eclectic gardens. Nicest outhouse in Canada!"</em></p>
+<p>Nick Phelps &amp; Benny Martin, Montreal, QC</p>
+<p><em>"Don&rsquo;t ever change a thing. Keep it unique &amp; abundance will follow. This is a magical place."</em></p>
+<p>Phillip Tafler, Nanaimo, BC</p>
+<p><em>"Don&rsquo;t want to leave."</em></p>
+<p>Steve Sully, Errington, BC</p>
+<p><em>"Fantastic. After a night in a bed, the ground is good."</em></p>
+<p>Bryan Webster</p>
+<p><em>"Funky place."</em></p>
+<p>The Fishers, Kamloops, BC</p>
+<p><em>"Garden Faire is a feast for the senses! Nourishment in every way, especially the magical trails and the wise ole trees! Many thanks and I&rsquo;ll see you again soon."</em></p>
+<p>Bharani</p>
+<p><em>"Georgeous place. Very welcoming!"</em></p>
+<p>Anna Czolpinski, Victoria, BC</p>
+<p><em>"Glad you are here."</em></p>
+<p>Anonymous</p>
+<p><em>"God Damn!!"</em></p>
+<p>Big Ol&rsquo; Bad Ass Bob (the cattle rustler), Texas</p>
+<p><em>"Good to be here. Thanks for the lovely stay. Very unique."</em></p>
+<p>Kitchener, Ont</p>
+<p><em>"Great place to stay. Very central."</em></p>
+<p>Adam Miller-Warrnambool, Australia</p>
+<p><em>"Great to stay in a tended environment."</em></p>
+<p>Art Collier, Dartmouth, Nova Scotia</p>
+<p><em>"Heaven on Earth!"</em></p>
+<p>Victoria, BC</p>
+<p><em>"Hi Dad &amp; Shirley. We&rsquo;re having fun. Thanks."</em></p>
+<p>Love Ananda, Jacob &amp; Karen, Parksville &amp; Victoria</p>
+<p><em>"I haven&rsquo;t been here for 2 yrs. You are inspired. My God. Beautiful!"</em></p>
+<p>Carol Almero-Belleville, Washington</p>
+<p><em>"I love this place to death! Friendly and close!"</em></p>
+<p>Anonymous</p>
+<p><em>"Idyllic!"</em></p>
+<p>The Tacoma Wheelmen Bicycle Club</p>
+<p><em>"If I were a fairy, I&rsquo;d want to live here!"</em></p>
+<p>Anonymous</p>
+<p><em>"It&rsquo;s great to hear the owls."</em></p>
+<p>Amy Hill, Barrie, Ontario</p>
+<p><em>"It&rsquo;s like Nova Scotia, but opposite.Nova Scotia."</em></p>
+<p>Anonymous</p>
+<p><em>"Kind staff. Comfortable sites."</em></p>
+<p>Kelly &amp; Gavin, Victoria</p>
+<p><em>"Left, checked out other options, came back!"</em></p>
+<p>Java, Slocan Valley, BC</p>
+<p><em>"Long life to this campground!"</em></p>
+<p>Christine Poirier, Quebec</p>
+<p><em>"Lovely, will highly recommend."</em></p>
+<p>Tom, Janet, Baby Emma &amp; Rosie the Lab, Seattle, Washington</p>
+<p><em>"Merci. Emerveillement. Muchas Gracias!"</em></p>
+<p>Anonymous</p>
+<p><em>"Mmmm so sweet. Beautiful, Magical &amp; full of fairies."</em></p>
+<p>Norquay, SK</p>
+<p><em>"Nice campsite on our way to South Argentina by bike. Thanks."</em></p>
+<p>Sara &amp; Sebastien, France</p>
+<p><em>"Nice gardens. Tears of happiness for the complete beauty, trust and &lsquo;realness&rsquo; in your space."</em></p>
+<p>Celine, Dianna &amp; Marc, Toronto, Ont</p>
+<p><em>"Nice private sites, nice place to relax."</em></p>
+<p>Don &amp; Sheila, Qualicum Beach, BC</p>
+<p><em>"Nice, calm &amp; beautiful sites. One of the best I&rsquo;ve seen so far. Thank you."</em></p>
+<p>Christine &ndash; Montreal, QC</p>
+<p><em>"Nice, Nice place! Oh happy day!"</em></p>
+<p>Marilyn Jensen, Wales</p>
+<p><em>"Oh, My, God!!"</em></p>
+<p>Shaunn McMow, Salmon Arm, BC</p>
+<p><em>"One of the &lsquo;coolest&rsquo; campgrounds I&rsquo;ve ever seen"</em></p>
+<p>Deborah Schanz</p>
+<p><em>"Perfect for cyclists!"</em></p>
+<p>Diana &amp; Rob</p>
+<p><em>"Perfect site and friendly environment. Keep up the good work!"</em></p>
+<p>Owen &amp; Greg Moore, High River, AB</p>
+<p><em>"Private, quiet, a &lsquo;roof of foliage&rsquo;. Beautiful."</em></p>
+<p>Natasha Vandenberg, Van</p>
+<p><em>"Pure nature! Thanks very much."</em></p>
+<p>Johanna &amp; Mattias</p>
+<p><em>"Really confident place. Looks like a good way of thinking. Another world is possible!"</em></p>
+<p>Valerie &amp; Claudia</p>
+<p><em>"Shirley, thank you for being such a good hostess. We&rsquo;ll definitely give you a call if we camp on Saltspring Island again. Hope you enjoy the cookies!"</em></p>
+<p>2nd New-West Pathfinders</p>
+<p><em>"Super cute place!"</em></p>
+<p>Julie, Kitsiland, BC</p>
+<p><em>"Sweeeeeettt&hellip;"</em></p>
+<p>Patrick McCoubrey, Van., BC</p>
+<p><em>"Thank heavens for the shade of the trees."</em></p>
+<p>Emma &amp; Toby, UK</p>
+<p><em>"Thanks a bunch. I love this place. It&rsquo;s spiritual."</em></p>
+<p>Don</p>
+<p><em>"Thanks for maintaining this wonderful place and providing a nice &lsquo;home for travellers.'"</em></p>
+<p>Anonymous</p>
+<p><em>"Thanks for providing a sweet oasis. We love the outhouse and trail to town."</em></p>
+<p>Sarah &amp; Alice Kennedy, Santa Cruz &amp; San Francisco, CA</p>
+<p><em>"Thanks for sharing the beauty."</em></p>
+<p>Anonymous</p>
+<p><em>"Thanks so much. Biking to Mexico!"</em></p>
+<p>Andrew Bass, Houston, Texas</p>
+<p><em>"Thanks. It was spectacular. Loved it!"</em></p>
+<p>Leasa Fisher, Leslieville, AB</p>
+<p><em>"The campground is 'enchanting.' What a wonderful gift to the community."</em></p>
+<p>Yantra, Saltspring Island</p>
+<p><em>"The place is amazing!"</em></p>
+<p>Myriam Broye-Montreal QC</p>
+<p><em>"This is a lovely place for a retreat."</em></p>
+<p>Paula, Vancouver</p>
+<p><em>"This is one of the best campsites we have ever visited."</em></p>
+<p>Richard &amp; Christine, North Van, BC</p>
+<p><em>"This is quite a place you&rsquo;ve got here!"</em></p>
+<p>AA Rally</p>
+<p><em>"This is such a nice campground, in the middle of an amazing forest! Thanks, And I&rsquo;ll recommend you."</em></p>
+<p>Luise Wonneberger, Leiptig, Germany</p>
+<p><em>"Trails out back are fantastic. I love the big old trees."</em></p>
+<p>Paul, Edmonton</p>
+<p><em>"Very natural and wonderful."</em></p>
+<p>Joy &amp; Mike</p>
+<p><em>"Very nice. Top notch. Thanks."</em></p>
+<p>Merritt, BC</p>
+<p><em>"Very special place to camp. We love the wooded walk to town and the great Ideas for our future dream on Hornby. Thanks &amp; we will see you soon."</em></p>
+<p>Michele &amp; Olivia</p>
+<p><em>"Very special place to camp. We love the wooded walk to town."</em></p>
+<p>Michelle &amp; Olivia</p>
+<p><em>"Very unique. You are on to a good thing. We love this place."</em></p>
+<p>Craig &amp; Karen Regan, White Rock, BC</p>
+<p><em>"We have spent years camping and Rv&rsquo;ing, but this is a first! Never before in a nursery. Very earthy!"</em></p>
+<p>Parksville, B.C</p>
+<p><em>"We love that there are huckleberries and we love the big trees."</em></p>
+<p>Julia Boles, North Van., BC</p>
+<p><em>"We searched, my friend and I, many a mile to find the perfect campsite, and alas! We have found it."</em></p>
+<p>Christine, Quebec</p>
+<p><em>"We walked here from Nanaimo en route to Victoria. Thanks."</em></p>
+<p>Georgia Colton</p>
+<p><em>"What a wonderful transformation, working with nature at its best."</em></p>
+<p>Anonymous</p>
+<p><em>"Wicked site. So close to the skate park."</em></p>
+<p>Loryn Faulk, North Van</p>
+<p><em>"Wonderful campground, organized &amp; tidy."</em></p>
+<p>Anonymous</p>
+<p><em>"Wow, so peaceful."</em></p>
+<p>Corina Von Siemens, Armstrong, BC</p>
+<p><em>"Wow, Wow, Wow! What a treat!"</em></p>
+<p>Anonymous</p>
+<p><em>"You guys are eternally blessed! My prayers and thoughts are with you into a Bright &amp; prosperous future. Mucho amour. xoxo"</em></p>
+<p>Ken</p>
+<p><em>"You&rsquo;ve done amazing things here. Thanks."</em></p>
+<p>Roger Walco</p>
+<p><em>"Paradise!"</em></p>
+<p>Zuzana Belikova, Czech Republic</p>
+</article></div>
+                </div>
+            </div>
+    </div>
+    <!-- end: Row -->
+    <hr />
+    </div>
+<div id="push"></div>
+<!--end: Container-->
+</div>
+<!-- start: Footer -->
+<footer id="footer">
+            <!-- start: Container -->
+        <div class="container">
+            <!-- start: Row -->
+            <div class="row">
+                <div class="span9 offset3">
+                    <div class="zone zone-footer"><span>Website by <a href="http://www.bigfont.ca">BigFont</a>.</span>
+<span>Built lovingly with &#169; Bootstrap 2012.</span>
+<span>Powered by <a href="http://www.orchardproject.net">Orchard</a>.</span>
+<span>Forest Photo by National Park Service Digital Image Archives [Public domain]</span></div>
+                </div>
+            </div>
+            <!-- end: Row -->
+        </div>
+        <!-- end: Container -->
+</footer>
+<!-- end: Footer -->
+<div>
+</div>
+
+<script src="/Themes/BigFont.GardenFaire/scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="/Themes/BigFont.GardenFaire/scripts/bigfont.min.js" type="text/javascript"></script>
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="/Modules/BigFont.Maps/scripts/BigFontMap_SingleMarker.min.js" type="text/javascript"></script>
+<script src="/Modules/BigFont.Maps/scripts/BigFontMap_MultipleMarkers.min.js" type="text/javascript"></script>
+
+</body>
+</html>
