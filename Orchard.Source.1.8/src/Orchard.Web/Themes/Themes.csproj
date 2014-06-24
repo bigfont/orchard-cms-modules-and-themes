@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Theme.css" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Web.config" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Scripts\Web.config" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Web.config" />
@@ -71,6 +72,9 @@
     <Content Include="Bootstrap_3_1_1_BaseTheme\Placement.info" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.css" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Theme.png" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Theme.txt" />
     <Content Include="ThemeWithoutProject\Web.config" />
     <Content Include="ThemeWithoutProject\Scripts\Web.config" />
     <Content Include="ThemeWithoutProject\Styles\Web.config" />
@@ -210,9 +214,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Site.less" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Web.config" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Theme.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
