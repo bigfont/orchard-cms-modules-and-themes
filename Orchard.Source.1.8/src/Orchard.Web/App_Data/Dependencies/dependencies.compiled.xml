@@ -386,9 +386,9 @@
   </Dependency>
   <Dependency>
     <ExtensionId>Picasa</ExtensionId>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <VirtualPath>~/Modules/Picasa/bin/Picasa.dll</VirtualPath>
-    <Hash>924ae56c0422452b</Hash>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
+    <Hash>90041553ba7ebf02</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Piedone.Combinator</ExtensionId>
@@ -409,6 +409,12 @@
     <Hash>dbc9d61f6ceb7544</Hash>
   </Dependency>
   <Dependency>
+    <ExtensionId>ThemeWithProject</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/ThemeWithProject/ThemeWithProject.csproj</VirtualPath>
+    <Hash>926d9079db4d000e</Hash>
+  </Dependency>
+  <Dependency>
     <ExtensionId>TinyMce</ExtensionId>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/TinyMce/bin/TinyMce.dll</VirtualPath>
@@ -419,5 +425,11 @@
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Upgrade/bin/Upgrade.dll</VirtualPath>
     <Hash>6fb33e815867f7aa</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>WithProject</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/WithProject/WithProject.csproj</VirtualPath>
+    <Hash>db2e113110211c3f</Hash>
   </Dependency>
 </Dependencies>

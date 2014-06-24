@@ -1,0 +1,7 @@
+Name: BigFont.GardenFaire
+Author: Shaun Luttin @ BigFont.ca
+Website: http://www.bigfont.ca
+Description: Complements the Bootstrap theme with Affix subnavigation, a more discrete user sign in, and a return to top button. Modify the original Bootstrap variables.less file to change colors, font-sizes, et cetera. 
+Version: 1.0
+BaseTheme: Bootstrap
+Tags: Bootstrap, responsive, affix
