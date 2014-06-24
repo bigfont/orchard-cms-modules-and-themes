@@ -13,6 +13,18 @@
     </References>
   </Dependency>
   <Dependency>
+    <ModuleName>BigFont.GardenFaire</ModuleName>
+    <VirtualPath>~/Theme/BigFont.GardenFaire</VirtualPath>
+    <LoaderName>RawThemeExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Bootstrap</ModuleName>
+    <VirtualPath>~/Theme/Bootstrap</VirtualPath>
+    <LoaderName>RawThemeExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.Tokens</ModuleName>
     <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -223,6 +235,12 @@
     <ModuleName>Navigation</ModuleName>
     <VirtualPath>~/Core/Navigation</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>NoProject</ModuleName>
+    <VirtualPath>~/Theme/NoProject</VirtualPath>
+    <LoaderName>RawThemeExtensionLoader</LoaderName>
     <References />
   </Dependency>
   <Dependency>
@@ -1271,8 +1289,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Picasa</ModuleName>
-    <VirtualPath>~/Modules/Picasa/bin/Picasa.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Picasa/Picasa.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -1434,6 +1452,18 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>ThemeWithProject</ModuleName>
+    <VirtualPath>~/Themes/ThemeWithProject/ThemeWithProject.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>TheThemeMachine</ModuleName>
     <VirtualPath>~/Theme/TheThemeMachine</VirtualPath>
     <LoaderName>RawThemeExtensionLoader</LoaderName>
@@ -1506,6 +1536,18 @@
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Workflows/bin/Orchard.Workflows.dll</VirtualPath>
       </Reference>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>WithProject</ModuleName>
+    <VirtualPath>~/Themes/WithProject/WithProject.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
       <Reference>
         <Name>System.Configuration</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
