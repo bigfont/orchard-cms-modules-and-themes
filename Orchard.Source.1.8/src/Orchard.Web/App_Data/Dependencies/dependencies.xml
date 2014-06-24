@@ -256,33 +256,6 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Mello.ImageGallery</ModuleName>
-    <VirtualPath>~/Modules/Mello.ImageGallery/bin/Mello.ImageGallery.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>ICSharpCode.SharpZipLib</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Mello.ImageGallery/bin/ICSharpCode.SharpZipLib.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.MediaLibrary</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>System.Net.Http</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Mello.ImageGallery/bin/System.Net.Http.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>System.Configuration</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
     <ModuleName>Navigation</ModuleName>
     <VirtualPath>~/Core/Navigation</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
@@ -631,7 +604,7 @@
       <Reference>
         <Name>System.Net.Http</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Mello.ImageGallery/bin/System.Net.Http.dll</VirtualPath>
+        <VirtualPath>~/Modules/Orchard.Workflows/bin/System.Net.Http.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>System.Configuration</Name>
