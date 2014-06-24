@@ -2,8 +2,8 @@
 <Dependencies>
   <Dependency>
     <ModuleName>BigFont.FingerPrint</ModuleName>
-    <VirtualPath>~/Modules/BigFont.FingerPrint/BigFont.FingerPrint.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/BigFont.FingerPrint/bin/BigFont.FingerPrint.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -101,8 +101,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Bootstrap_3_1_1_SimpleBlog</ModuleName>
-    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/Bootstrap_3_1_1_SimpleBlog.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/Bootstrap_3_1_1_SimpleBlog/bin/Bootstrap_3_1_1_SimpleBlog.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Bootstrap.SimpleBlog</Name>
@@ -228,6 +228,28 @@
         <Name>MarkdownSharp</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Markdown/bin/MarkdownSharp.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>Mello.ImageGallery</ModuleName>
+    <VirtualPath>~/Modules/Mello.ImageGallery/Mello.ImageGallery.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>ICSharpCode.SharpZipLib</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Mello.ImageGallery/lib/ICSharpCode.SharpZipLib.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.MediaLibrary</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>System.Configuration</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
       </Reference>
     </References>
   </Dependency>
@@ -1295,8 +1317,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>Piedone.HelpfulLibraries</ModuleName>
-    <VirtualPath>~/Modules/Piedone.HelpfulLibraries/Piedone.HelpfulLibraries.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Piedone.HelpfulLibraries/bin/Piedone.HelpfulLibraries.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
@@ -1307,23 +1329,23 @@
   </Dependency>
   <Dependency>
     <ModuleName>Piedone.Combinator</ModuleName>
-    <VirtualPath>~/Modules/Piedone.Combinator/Piedone.Combinator.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Piedone.Combinator/bin/Piedone.Combinator.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>dotless.Core</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/dotless/dotless.Core.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/dotless.Core.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>EcmaScript.NET</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/EcmaScript.NET.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/EcmaScript.NET.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>ExCSS</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/ExCSS.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/ExCSS.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>IronRuby</Name>
@@ -1352,43 +1374,43 @@
       </Reference>
       <Reference>
         <Name>NAnt.Core</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/NAnt.Core.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/NAnt.Core.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Piedone.HelpfulLibraries</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.HelpfulLibraries/bin/Piedone.HelpfulLibraries.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>SassAndCoffee.Core</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/SassAndCoffee/SassAndCoffee.Core.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/SassAndCoffee.Core.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>SassAndCoffee.Ruby</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/SassAndCoffee/SassAndCoffee.Ruby.dll</VirtualPath>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/SassAndCoffee.Ruby.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Yahoo.Yui.Compressor.Build.MsBuild</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/Yahoo.Yui.Compressor.Build.MsBuild.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Yahoo.Yui.Compressor.Build.Nant</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/Yahoo.Yui.Compressor.Build.Nant.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Yahoo.Yui.Compressor</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Piedone.Combinator/bin/Yahoo.Yui.Compressor.dll</VirtualPath>
       </Reference>
       <Reference>
         <Name>System.Configuration</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Email/bin/System.Configuration.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Yahoo.Yui.Compressor</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/Yahoo.Yui.Compressor.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Yahoo.Yui.Compressor.Build.MsBuild</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/Yahoo.Yui.Compressor.Build.MsBuild.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Yahoo.Yui.Compressor.Build.Nant</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.Combinator/Libs/YUICompressor/Yahoo.Yui.Compressor.Build.Nant.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Piedone.HelpfulLibraries</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Piedone.HelpfulLibraries/Piedone.HelpfulLibraries.csproj</VirtualPath>
       </Reference>
     </References>
   </Dependency>
@@ -1453,8 +1475,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>ThemeWithProject</ModuleName>
-    <VirtualPath>~/Themes/ThemeWithProject/ThemeWithProject.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Themes/ThemeWithProject/bin/ThemeWithProject.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>System.Configuration</Name>
