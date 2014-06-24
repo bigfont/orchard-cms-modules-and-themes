@@ -1590,6 +1590,63 @@
     </References>
   </Dependency>
   <Dependency>
+    <ModuleName>Vandelay.Industries</ModuleName>
+    <VirtualPath>~/Modules/Vandelay.Industries/Vandelay.Industries.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Fluent.IO</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Vandelay.Industries/Libraries/Fluent.IO.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Fluent.Zip</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Vandelay.Industries/Libraries/Fluent.Zip.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>HtmlAgilityPack</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Azure.MediaServices/bin/HtmlAgilityPack.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Ionic.Zip</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Fields/bin/Ionic.Zip.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>MarkdownSharp</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Markdown/bin/MarkdownSharp.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Autoroute</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Autoroute/bin/Orchard.Autoroute.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.MediaLibrary</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Projections</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Projections/bin/Orchard.Projections.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Tags</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Tags/bin/Orchard.Tags.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Themes</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>XmlRpc</ModuleName>
     <VirtualPath>~/Core/XmlRpc</VirtualPath>
     <LoaderName>CoreExtensionLoader</LoaderName>
