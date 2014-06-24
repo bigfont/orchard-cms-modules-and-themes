@@ -16,7 +16,7 @@
     <ExtensionId>BigFont.Maps</ExtensionId>
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/BigFont.Maps/BigFont.Maps.csproj</VirtualPath>
-    <Hash>d8e88f77f8ccf963</Hash>
+    <Hash>21b9a83fdce09763</Hash>
   </Dependency>
   <Dependency>
     <ExtensionId>Bootstrap_3_1_1.Carousel</ExtensionId>
@@ -443,5 +443,11 @@
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <VirtualPath>~/Modules/Upgrade/bin/Upgrade.dll</VirtualPath>
     <Hash>6fb3605d220885c6</Hash>
+  </Dependency>
+  <Dependency>
+    <ExtensionId>Vandelay.Industries</ExtensionId>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/Vandelay.Industries/Vandelay.Industries.csproj</VirtualPath>
+    <Hash>af863677d22338c</Hash>
   </Dependency>
 </Dependencies>
