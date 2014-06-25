@@ -1,0 +1,30 @@
+﻿@model BigFont.ContactUs.Models.BigFontContactUsPart
+
+<style type="text/css">
+/* Google Pagespeed recommends to inline small CSS */
+
+    fieldset#contact-info input {
+        width:400px;
+    }
+
+</style>
+
+<fieldset id="contact-info">
+    <legend>Contact Us</legend>
+
+    <div class="editor-label">@Html.LabelFor(model => model.EmailAddress, @T("Email Address"))</div>
+    <div class="editor-field">@Html.TextBoxFor(model => model.EmailAddress)@Html.ValidationMessageFor(model => model.EmailAddress)</div>
+    <div class="editor-label">@Html.LabelFor(model => model.PhoneNumber, @T("Phone Number"))</div>
+    <div class="editor-field">@Html.TextBoxFor(model => model.PhoneNumber)@Html.ValidationMessageFor(model => model.PhoneNumber)</div>
+    <div class="editor-label">@Html.LabelFor(model => model.StreetAddress, @T("Street Address"))</div>
+    <div class="editor-field">@Html.TextBoxFor(model => model.StreetAddress)@Html.ValidationMessageFor(model => model.StreetAddress)</div>
+    <div class="editor-label">@Html.LabelFor(model => model.City)</div>
+    <div class="editor-field">@Html.TextBoxFor(model => model.City)@Html.ValidationMessageFor(model => model.City)</div>
+    <div class="editor-label">@Html.LabelFor(model => model.Province)</div>
+    <div class="editor-field">@Html.TextBoxFor(model => model.Province)@Html.ValidationMessageFor(model => model.Province)</div>
+    <div class="editor-label">@Html.LabelFor(model => model.Country)</div>
+    <div class="editor-field">@Html.TextBoxFor(model => model.Country)@Html.ValidationMessageFor(model => model.Country)</div>
+    <div class="editor-label">@Html.LabelFor(model => model.PostalCode, @T("Postal Code"))</div>
+    <div class="editor-field">@Html.TextBoxFor(model => model.PostalCode)@Html.ValidationMessageFor(model => model.PostalCode)</div>
+
+</fieldset>

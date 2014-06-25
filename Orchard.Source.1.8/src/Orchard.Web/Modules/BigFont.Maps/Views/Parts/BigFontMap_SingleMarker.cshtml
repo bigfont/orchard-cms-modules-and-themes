@@ -1,0 +1,23 @@
+﻿@*Javascript and CSS
+-------------------------*@
+
+@{ 
+Script.Require("BigFontMap_SingleMarker"); 
+Style.Require("BigFontMaps");
+}
+
+@*Hidden fields
+------------------*@
+
+<input id="latitude" type="hidden" value="@Model.Latitude" />
+<input id="longitude" type="hidden" value="@Model.Longitude" />
+
+@*Directions and the map
+--------------------------*@
+
+<p>@Model.TextDirections</p>
+<div class="img-polaroid img-rounded">
+    <div class="bigfont-map" id="map-single-marker-canvas" />
+</div>
+
+
