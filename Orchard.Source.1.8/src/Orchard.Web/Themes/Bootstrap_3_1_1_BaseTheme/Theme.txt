@@ -1,8 +1,8 @@
 Name: Bootstrap 3.1.1 - Base Theme
-Author: The Orchard Team
-Website: http://www.orchardproject.net
-Description: Description for the theme
+Author: Shaun @ bigfont.ca
+Website: http://bootstrap-3-1-1-base-theme.azurewebsite.net
+Description: The Bootstrap 3.1.1 - Base Theme leaves TheThemeMachine's markup unchanged while adding the Bootstrap responsive grid through LESS Mixins.
 Version: 1.0
 BaseTheme: TheThemeMachine
-# todo: provide tags
-# Tags: Classic, Serif
+Zones: Header
+Tags: Bootstrap

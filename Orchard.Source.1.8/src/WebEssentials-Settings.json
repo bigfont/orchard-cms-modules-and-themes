@@ -3,7 +3,7 @@
     "CssIgnorePatterns": "bootstrap*; reset.css; normalize.css; jquery*; toastr*; foundation*; animate*; inuit*; elements*; ratchet*; hint*; flat-ui*; 960*; skeleton*",
     "EnableMenu": true,
     "EnablePixelPushing": true,
-    "ShowMenu": true
+    "ShowMenu": false
   },
   "CodeGen": {
     "AddTypeScriptReferencePath": true,
@@ -40,7 +40,9 @@
     "ValidateStarSelector": true,
     "ValidateVendorSpecifics": true,
     "ValidateZeroUnit": true,
-    "ValidationLocation": "Messages"
+    "ValidationLocation": "Messages",
+    "Autoprefix": false,
+    "AutoprefixerBrowsers": null
   },
   "General": {
     "AllMessagesToOutputWindow": false,
@@ -129,7 +131,7 @@
     "GenerateSourceMaps": true,
     "MinifyInPlace": false,
     "OutputDirectory": null,
-    "OutputStyle": "expanded",
+    "OutputStyle": "Expanded",
     "ProcessSourceMapsForEditorEnhancements": true,
     "ShowPreviewPane": true
   },

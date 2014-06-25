@@ -5,7 +5,7 @@ Website: http://www.bigfont.ca
 Version: 1.0
 OrchardVersion: 1.6
 Description:  A Google Map with longitude and latitude markers.
-Category: Geolocation
+Category: Geolocation, Widgets
 
 Features:
     BigFont Maps Multiple Markers:
