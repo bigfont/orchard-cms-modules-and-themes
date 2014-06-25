@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<Orchard>
+  <Recipe>
+    <Name>TheThemeMachineDesigner</Name>
+    <Description>A reciple that helps with extending the TheThemeMachine.</Description>
+    <Author>Shaun @ bigfont.ca</Author>
+    <WebSite>http://www.bigfont.ca</WebSite>
+    <Tags>developer</Tags>
+    <Version>1.0</Version>
+  </Recipe>
+
+  <Feature enable="Orchard.Alias,Orchard.Autoroute,TinyMce,
+                   Orchard.jQuery,Orchard.Widgets,Orchard.ContentTypes,
+                   Orchard.Scripting,Orchard.Scripting.Lightweight,PackagingServices,Orchard.Packaging,
+                   Orchard.Projections,Orchard.Fields,Orchard.OutputCache,Orchard.Taxonomies,Orchard.Workflows,
+                   TheThemeMachine" />
+
+  <Metadata />
+
+  <Settings />
+
+  <Migration features="*" />
+
+  <Command>
+    <!--Commands from the Default recipe.-->
+    layer create Default /LayerRule:"true" /Description:"The widgets in this layer are displayed on all pages"
+    site setting set baseurl
+    menu create /MenuName:"Main Menu"
+    page create /Slug:"welcome-to-orchard" /Title:"Welcome to Orchard!" /Path:"welcome-to-orchard" /Homepage:true /Publish:true /UseWelcomeText:true
+    menuitem create /MenuPosition:"0" /MenuText:"Home" /Url:"~/" /MenuName:"Main Menu"
+    widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
+    theme activate "The Theme Machine"
+    <!--Create a widget for each zone.-->
+    widget create HtmlWidget /Title:"Header" /Zone:"Header" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"Navigation" /Zone:"Navigation" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"Featured" /Zone:"Featured" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"BeforeMain" /Zone:"BeforeMain" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"AsideFirst" /Zone:"AsideFirst" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"AsideSecond" /Zone:"AsideSecond" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"Messages" /Zone:"Messages" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"BeforeContent" /Zone:"BeforeContent" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"Content" /Zone:"Content" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"AfterContent" /Zone:"AfterContent" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"AfterMain" /Zone:"AfterMain" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"TripelFirst" /Zone:"TripelFirst" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"TripelSecond" /Zone:"TripelSecond" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"TripelThird" /Zone:"TripelThird" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"FooterQuadFirst" /Zone:"FooterQuadFirst" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"FooterQuadSecond" /Zone:"FooterQuadSecond" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"FooterQuadThird" /Zone:"FooterQuadThird" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"FooterQuadFourth" /Zone:"FooterQuadFourth" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"Footer" /Zone:"Footer" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"" /Zone:"" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+  </Command>
+</Orchard>
