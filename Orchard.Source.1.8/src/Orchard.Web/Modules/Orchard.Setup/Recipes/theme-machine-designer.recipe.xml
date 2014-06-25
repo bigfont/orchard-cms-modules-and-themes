@@ -31,25 +31,25 @@
     widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
     theme activate "The Theme Machine"
     <!--Create a widget for each zone.-->
-    widget create HtmlWidget /Title:"Header" /Zone:"Header" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"Navigation" /Zone:"Navigation" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"Featured" /Zone:"Featured" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"BeforeMain" /Zone:"BeforeMain" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"AsideFirst" /Zone:"AsideFirst" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"AsideSecond" /Zone:"AsideSecond" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"Messages" /Zone:"Messages" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"BeforeContent" /Zone:"BeforeContent" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"Content" /Zone:"Content" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"AfterContent" /Zone:"AfterContent" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"AfterMain" /Zone:"AfterMain" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"TripelFirst" /Zone:"TripelFirst" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"TripelSecond" /Zone:"TripelSecond" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"TripelThird" /Zone:"TripelThird" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"FooterQuadFirst" /Zone:"FooterQuadFirst" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"FooterQuadSecond" /Zone:"FooterQuadSecond" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"FooterQuadThird" /Zone:"FooterQuadThird" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"FooterQuadFourth" /Zone:"FooterQuadFourth" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"Footer" /Zone:"Footer" /Layer:"Default" /UseLoremIpsumText:false /Position:1
-    widget create HtmlWidget /Title:"" /Zone:"" /Layer:"Default" /UseLoremIpsumText:false /Position:1
+    widget create HtmlWidget /Title:"Header" /Zone:"Header" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Navigation" /Zone:"Navigation" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Featured" /Zone:"Featured" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"BeforeMain" /Zone:"BeforeMain" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"AsideFirst" /Zone:"AsideFirst" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"AsideSecond" /Zone:"AsideSecond" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Messages" /Zone:"Messages" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"BeforeContent" /Zone:"BeforeContent" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Content" /Zone:"Content" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"AfterContent" /Zone:"AfterContent" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"AfterMain" /Zone:"AfterMain" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"TripelFirst" /Zone:"TripelFirst" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"TripelSecond" /Zone:"TripelSecond" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"TripelThird" /Zone:"TripelThird" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"FooterQuadFirst" /Zone:"FooterQuadFirst" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"FooterQuadSecond" /Zone:"FooterQuadSecond" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"FooterQuadThird" /Zone:"FooterQuadThird" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"FooterQuadFourth" /Zone:"FooterQuadFourth" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Footer" /Zone:"Footer" /Layer:"Default" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"" /Zone:"" /Layer:"Default" /UseLoremIpsumText:true /Position:1
   </Command>
 </Orchard>
