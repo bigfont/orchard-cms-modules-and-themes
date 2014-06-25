@@ -9,10 +9,13 @@
     <Version>1.0</Version>
   </Recipe>
 
+  <Theme packageId="TheThemeMachineDesigner" current="true" />
+
   <Feature enable="Orchard.Alias,Orchard.Autoroute,TinyMce,
                    Orchard.jQuery,Orchard.Widgets,Orchard.ContentTypes,
                    Orchard.Scripting,Orchard.Scripting.Lightweight,PackagingServices,Orchard.Packaging,
                    Orchard.Projections,Orchard.Fields,Orchard.OutputCache,Orchard.Taxonomies,Orchard.Workflows,
+                   Orchard.CodeGeneration,
                    TheThemeMachine" />
 
   <Metadata />
@@ -28,8 +31,7 @@
     menu create /MenuName:"Main Menu"
     page create /Slug:"welcome-to-orchard" /Title:"Welcome to Orchard!" /Path:"welcome-to-orchard" /Homepage:true /Publish:true /UseWelcomeText:true
     menuitem create /MenuPosition:"0" /MenuText:"Home" /Url:"~/" /MenuName:"Main Menu"
-    widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
-    theme activate "The Theme Machine"
+    widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"    
     <!--Create a widget for each zone.-->
     widget create HtmlWidget /Title:"Header" /Zone:"Header" /Layer:"Default" /UseLoremIpsumText:true /Position:1
     widget create HtmlWidget /Title:"Navigation" /Zone:"Navigation" /Layer:"Default" /UseLoremIpsumText:true /Position:1

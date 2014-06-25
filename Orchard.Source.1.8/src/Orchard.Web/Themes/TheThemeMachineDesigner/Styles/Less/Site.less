@@ -1,0 +1,66 @@
+﻿@import 'TheThemeMachine-Original.less';
+
+@element-spacing:10px;
+
+[id*="layout-"],
+.zone {
+    // vertical reset
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border:none !important;
+}
+
+body {
+    background: lighten(black, 0);
+    color: yellow;
+}
+
+div#layout-wrapper {
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    span,
+    .metadata,
+    .copyright,
+    .poweredby {
+        display: none;
+    }
+
+    [id*="layout-"], .zone {
+        display: block;
+    }
+
+    &, [id*="layout-"], .zone, .widget {
+
+        &:before {
+            content: "#"attr(id)"."attr(class);
+            display: block;
+            padding: @element-spacing;
+        }
+    }
+    // topography
+    background: lighten(black, 20);
+
+    [id*="layout-"] {
+        background: lighten(black, 40);
+        margin-bottom: @element-spacing;
+    }
+
+    .zone {
+        background: lighten(black, 60);
+        margin-bottom: @element-spacing;
+    }
+
+    .widget {
+        background-color: lighten(black, 80);
+        margin-bottom: @element-spacing;
+    }
+}
