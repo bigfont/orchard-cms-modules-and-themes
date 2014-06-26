@@ -1,11 +1,13 @@
-﻿
-/*
+﻿/*
 Theme: The Theme Machine Designer
 Author: shaun @ bigfont.ca
 */
 
+@topology-base: black;
 @element-spacing: 10px;
 @font-color: yellow;
+@link-color: blue;
+@link-background: white;
 
 [id*="layout-"],
 .zone {
@@ -18,11 +20,12 @@ Author: shaun @ bigfont.ca
 }
 
 body {
-    background: lighten(black, 0);
+    // part of the topology
+    background: lighten(@topology-base, 0);
 }
 
 div#layout-wrapper {
-
+    /*#region Hide irrelevant elements*/
     p,
     h1,
     h2,
@@ -34,60 +37,111 @@ div#layout-wrapper {
     span,
     .metadata,
     .copyright,
-    .poweredby {
+    .poweredby,
+    .credits {
         display: none;
     }
-    // hack: display the main navigation
+    /*#endregion*/
+    /*#region Display relevant elements */
+    h1#branding {
+        display: block;
+    }
+
     .widget-navigation:first-child {
         height: 60px;
 
         ul.menu.menu-main-menu {
             display: block;
+        }
+    }
 
-            li, a  {
-                background:transparent;
-                color:blue;
-                border:none;
-                text-decoration:underline;
+    div.user-display span.user-actions:nth-child(2) {
+        color: @font-color;
+
+        &, a {
+            display: inline-block;
+            line-height: 24px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    a,
+    li > a,
+    h1 > a {
+        color: @link-color;
+        text-decoration: underline;
+        display: block;
+        background: @link-background;
+
+        &:hover {
+            background: @font-color;
+        }
+    }
+    /*#endregion*/
+    /*#region Show id and class names for key structural elements*/
+    &,
+    div,
+    article,
+    header,
+    aside,
+    footer {
+        display: block;
+
+        &[id],
+        &[class] {
+            &:before {
+                content: "#"attr(id)"."attr(class);
+                padding: @element-spacing;
+                display: block;
+                color: @font-color;
+            }
+        }
+    }
+    /*#endregion*/
+    /*#region Show topography */
+    & {
+        background: lighten(@topology-base, 10);
+
+        > [id],
+        > [class] {
+            background: lighten(@topology-base, 20);
+
+            > [id],
+            > [class] {
+                background: lighten(@topology-base, 30);
+
+                > [id],
+                > [class] {
+                    background: lighten(@topology-base, 40);
+
+                    > [id],
+                    > [class] {
+                        background: lighten(@topology-base, 50);
+
+                        > [id],
+                        > [class] {
+                            background: lighten(@topology-base, 60);
+
+                            > [id],
+                            > [class] {
+                                background: lighten(@topology-base, 70);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
-    [id*="layout-"], .zone {
-        display: block;
-    }
-
-    &, [id*="layout-"], .zone, .widget {
-
-        &:before {
-            content: "#"attr(id)"."attr(class);
-            padding: @element-spacing;
-            display: block;
-            color: @font-color;
-        }
-    }
-    /* topography */
-    background: lighten(black, 20);
-
-    [id*="layout-"] {
-        background: lighten(black, 40);
-        margin-bottom: @element-spacing;
-    }
-
     .zone {
-        background: lighten(black, 60);
         margin-bottom: @element-spacing;
-    }
 
-    .widget {
-        background-color: lighten(black, 80);
-        margin-bottom: @element-spacing;
-    }
-
-    div.user-display span.user-actions {
-        &, a, span {
-            display: inline-block;
-            color: @font-color;
+        .widget,
+        .content-item {
+            margin-bottom: @element-spacing;
+            border: thin dashed red;
         }
+        /*#endregion*/
     }
 }

@@ -1054,8 +1054,14 @@ body {
   background: #000000;
 }
 div#layout-wrapper {
-  /* topography */
-  background: #333333;
+  /*#region Hide irrelevant elements*/
+  /*#endregion*/
+  /*#region Display relevant elements */
+  /*#endregion*/
+  /*#region Show id and class names for key structural elements*/
+  /*#endregion*/
+  /*#region Show topography */
+  background: #1a1a1a;
 }
 div#layout-wrapper p,
 div#layout-wrapper h1,
@@ -1068,8 +1074,12 @@ div#layout-wrapper ul,
 div#layout-wrapper span,
 div#layout-wrapper .metadata,
 div#layout-wrapper .copyright,
-div#layout-wrapper .poweredby {
+div#layout-wrapper .poweredby,
+div#layout-wrapper .credits {
   display: none;
+}
+div#layout-wrapper h1#branding {
+  display: block;
 }
 div#layout-wrapper .widget-navigation:first-child {
   height: 60px;
@@ -1077,41 +1087,198 @@ div#layout-wrapper .widget-navigation:first-child {
 div#layout-wrapper .widget-navigation:first-child ul.menu.menu-main-menu {
   display: block;
 }
-div#layout-wrapper .widget-navigation:first-child ul.menu.menu-main-menu li,
-div#layout-wrapper .widget-navigation:first-child ul.menu.menu-main-menu a {
-  background: transparent;
-  color: blue;
-  border: none;
-  text-decoration: underline;
+div#layout-wrapper div.user-display span.user-actions:nth-child(2) {
+  color: #ffff00;
 }
-div#layout-wrapper [id*="layout-"],
-div#layout-wrapper .zone {
+div#layout-wrapper div.user-display span.user-actions:nth-child(2),
+div#layout-wrapper div.user-display span.user-actions:nth-child(2) a {
+  display: inline-block;
+  line-height: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+div#layout-wrapper a,
+div#layout-wrapper li > a,
+div#layout-wrapper h1 > a {
+  color: #0000ff;
+  text-decoration: underline;
+  display: block;
+  background: #ffffff;
+}
+div#layout-wrapper a:hover,
+div#layout-wrapper li > a:hover,
+div#layout-wrapper h1 > a:hover {
+  background: #ffff00;
+}
+div#layout-wrapper,
+div#layout-wrapper div,
+div#layout-wrapper article,
+div#layout-wrapper header,
+div#layout-wrapper aside,
+div#layout-wrapper footer {
   display: block;
 }
-div#layout-wrapper:before,
-div#layout-wrapper [id*="layout-"]:before,
-div#layout-wrapper .zone:before,
-div#layout-wrapper .widget:before {
+div#layout-wrapper[id]:before,
+div#layout-wrapper div[id]:before,
+div#layout-wrapper article[id]:before,
+div#layout-wrapper header[id]:before,
+div#layout-wrapper aside[id]:before,
+div#layout-wrapper footer[id]:before,
+div#layout-wrapper[class]:before,
+div#layout-wrapper div[class]:before,
+div#layout-wrapper article[class]:before,
+div#layout-wrapper header[class]:before,
+div#layout-wrapper aside[class]:before,
+div#layout-wrapper footer[class]:before {
   content: "#" attr(id) "." attr(class);
   padding: 10px;
   display: block;
   color: #ffff00;
 }
-div#layout-wrapper [id*="layout-"] {
+div#layout-wrapper > [id],
+div#layout-wrapper > [class] {
+  background: #333333;
+}
+div#layout-wrapper > [id] > [id],
+div#layout-wrapper > [class] > [id],
+div#layout-wrapper > [id] > [class],
+div#layout-wrapper > [class] > [class] {
+  background: #4d4d4d;
+}
+div#layout-wrapper > [id] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [class] {
   background: #666666;
-  margin-bottom: 10px;
+}
+div#layout-wrapper > [id] > [id] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [id] > [id],
+div#layout-wrapper > [class] > [class] > [id] > [id],
+div#layout-wrapper > [id] > [id] > [class] > [id],
+div#layout-wrapper > [class] > [id] > [class] > [id],
+div#layout-wrapper > [id] > [class] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [id] > [class],
+div#layout-wrapper > [class] > [class] > [id] > [class],
+div#layout-wrapper > [id] > [id] > [class] > [class],
+div#layout-wrapper > [class] > [id] > [class] > [class],
+div#layout-wrapper > [id] > [class] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [class] > [class] {
+  background: #808080;
+}
+div#layout-wrapper > [id] > [id] > [id] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [id] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [id] > [id] > [id],
+div#layout-wrapper > [class] > [class] > [id] > [id] > [id],
+div#layout-wrapper > [id] > [id] > [class] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [class] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [class] > [id] > [id],
+div#layout-wrapper > [class] > [class] > [class] > [id] > [id],
+div#layout-wrapper > [id] > [id] > [id] > [class] > [id],
+div#layout-wrapper > [class] > [id] > [id] > [class] > [id],
+div#layout-wrapper > [id] > [class] > [id] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [id] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [class] > [class] > [id],
+div#layout-wrapper > [class] > [id] > [class] > [class] > [id],
+div#layout-wrapper > [id] > [class] > [class] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [class] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [id] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [id] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [id] > [id] > [class],
+div#layout-wrapper > [class] > [class] > [id] > [id] > [class],
+div#layout-wrapper > [id] > [id] > [class] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [class] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [class] > [id] > [class],
+div#layout-wrapper > [class] > [class] > [class] > [id] > [class],
+div#layout-wrapper > [id] > [id] > [id] > [class] > [class],
+div#layout-wrapper > [class] > [id] > [id] > [class] > [class],
+div#layout-wrapper > [id] > [class] > [id] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [id] > [class] > [class],
+div#layout-wrapper > [id] > [id] > [class] > [class] > [class],
+div#layout-wrapper > [class] > [id] > [class] > [class] > [class],
+div#layout-wrapper > [id] > [class] > [class] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [class] > [class] > [class] {
+  background: #999999;
+}
+div#layout-wrapper > [id] > [id] > [id] > [id] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [id] > [id] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [id] > [id] > [id] > [id],
+div#layout-wrapper > [class] > [class] > [id] > [id] > [id] > [id],
+div#layout-wrapper > [id] > [id] > [class] > [id] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [class] > [id] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [class] > [id] > [id] > [id],
+div#layout-wrapper > [class] > [class] > [class] > [id] > [id] > [id],
+div#layout-wrapper > [id] > [id] > [id] > [class] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [id] > [class] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [id] > [class] > [id] > [id],
+div#layout-wrapper > [class] > [class] > [id] > [class] > [id] > [id],
+div#layout-wrapper > [id] > [id] > [class] > [class] > [id] > [id],
+div#layout-wrapper > [class] > [id] > [class] > [class] > [id] > [id],
+div#layout-wrapper > [id] > [class] > [class] > [class] > [id] > [id],
+div#layout-wrapper > [class] > [class] > [class] > [class] > [id] > [id],
+div#layout-wrapper > [id] > [id] > [id] > [id] > [class] > [id],
+div#layout-wrapper > [class] > [id] > [id] > [id] > [class] > [id],
+div#layout-wrapper > [id] > [class] > [id] > [id] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [id] > [id] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [class] > [id] > [class] > [id],
+div#layout-wrapper > [class] > [id] > [class] > [id] > [class] > [id],
+div#layout-wrapper > [id] > [class] > [class] > [id] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [class] > [id] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [id] > [class] > [class] > [id],
+div#layout-wrapper > [class] > [id] > [id] > [class] > [class] > [id],
+div#layout-wrapper > [id] > [class] > [id] > [class] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [id] > [class] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [class] > [class] > [class] > [id],
+div#layout-wrapper > [class] > [id] > [class] > [class] > [class] > [id],
+div#layout-wrapper > [id] > [class] > [class] > [class] > [class] > [id],
+div#layout-wrapper > [class] > [class] > [class] > [class] > [class] > [id],
+div#layout-wrapper > [id] > [id] > [id] > [id] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [id] > [id] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [id] > [id] > [id] > [class],
+div#layout-wrapper > [class] > [class] > [id] > [id] > [id] > [class],
+div#layout-wrapper > [id] > [id] > [class] > [id] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [class] > [id] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [class] > [id] > [id] > [class],
+div#layout-wrapper > [class] > [class] > [class] > [id] > [id] > [class],
+div#layout-wrapper > [id] > [id] > [id] > [class] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [id] > [class] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [id] > [class] > [id] > [class],
+div#layout-wrapper > [class] > [class] > [id] > [class] > [id] > [class],
+div#layout-wrapper > [id] > [id] > [class] > [class] > [id] > [class],
+div#layout-wrapper > [class] > [id] > [class] > [class] > [id] > [class],
+div#layout-wrapper > [id] > [class] > [class] > [class] > [id] > [class],
+div#layout-wrapper > [class] > [class] > [class] > [class] > [id] > [class],
+div#layout-wrapper > [id] > [id] > [id] > [id] > [class] > [class],
+div#layout-wrapper > [class] > [id] > [id] > [id] > [class] > [class],
+div#layout-wrapper > [id] > [class] > [id] > [id] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [id] > [id] > [class] > [class],
+div#layout-wrapper > [id] > [id] > [class] > [id] > [class] > [class],
+div#layout-wrapper > [class] > [id] > [class] > [id] > [class] > [class],
+div#layout-wrapper > [id] > [class] > [class] > [id] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [class] > [id] > [class] > [class],
+div#layout-wrapper > [id] > [id] > [id] > [class] > [class] > [class],
+div#layout-wrapper > [class] > [id] > [id] > [class] > [class] > [class],
+div#layout-wrapper > [id] > [class] > [id] > [class] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [id] > [class] > [class] > [class],
+div#layout-wrapper > [id] > [id] > [class] > [class] > [class] > [class],
+div#layout-wrapper > [class] > [id] > [class] > [class] > [class] > [class],
+div#layout-wrapper > [id] > [class] > [class] > [class] > [class] > [class],
+div#layout-wrapper > [class] > [class] > [class] > [class] > [class] > [class] {
+  background: #b3b3b3;
 }
 div#layout-wrapper .zone {
-  background: #999999;
   margin-bottom: 10px;
+  /*#endregion*/
 }
-div#layout-wrapper .widget {
-  background-color: #cccccc;
+div#layout-wrapper .zone .widget,
+div#layout-wrapper .zone .content-item {
   margin-bottom: 10px;
-}
-div#layout-wrapper div.user-display span.user-actions,
-div#layout-wrapper div.user-display span.user-actions a,
-div#layout-wrapper div.user-display span.user-actions span {
-  display: inline-block;
-  color: #ffff00;
+  border: thin dashed red;
 }
