@@ -2,6 +2,6 @@ Name: The Theme Machine Designer
 Author: Shaun @ bigfont.ca
 Website: http://orchard-theme-machine-designer.azurewebsites.net
 Description: A starter theme to help people understand and extend the The Theme Machine. It hides all content except for layout elements, and shows the layout element ids and classes. Use it as a reference when extending The Theme Machine. 
-Version: 1.3
+Version: 1.4
 BaseTheme:TheThemeMachine
 Tags: Developer Designer Learning

@@ -1,0 +1,25 @@
+﻿@import 'Bootstrap/variables.less';
+@import 'Bootstrap/grid.less';
+@import 'Bootstrap/mixins.less';
+
+#layout-wrapper {
+    .container;
+
+    > .group {
+        .make-row();
+
+        .zone {
+            .make-md-column(12);
+            background: white;
+        }
+    }
+}
+
+#layout-main-container > .group {
+
+    .make-row();
+
+    background:red !important;
+    padding-top:10px;
+    padding-bottom:10px;
+}

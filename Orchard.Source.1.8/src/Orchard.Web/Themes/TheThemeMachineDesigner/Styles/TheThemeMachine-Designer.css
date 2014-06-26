@@ -1,0 +1,64 @@
+﻿/*
+Theme: The Theme Machine Designer
+Author: shaun @ bigfont.ca
+*/
+[id*="layout-"],
+.zone {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none !important;
+}
+body {
+  background: #000000;
+}
+div#layout-wrapper {
+  /* topography */
+  background: #333333;
+}
+div#layout-wrapper p,
+div#layout-wrapper h1,
+div#layout-wrapper h2,
+div#layout-wrapper h3,
+div#layout-wrapper h4,
+div#layout-wrapper h5,
+div#layout-wrapper h6,
+div#layout-wrapper ul,
+div#layout-wrapper span,
+div#layout-wrapper .metadata,
+div#layout-wrapper .copyright,
+div#layout-wrapper .poweredby {
+  display: none;
+}
+div#layout-wrapper [id*="layout-"],
+div#layout-wrapper .zone {
+  display: block;
+}
+div#layout-wrapper:before,
+div#layout-wrapper [id*="layout-"]:before,
+div#layout-wrapper .zone:before,
+div#layout-wrapper .widget:before {
+  content: "#" attr(id) "." attr(class);
+  padding: 10px;
+  display: block;
+  color: #ffff00;
+}
+div#layout-wrapper [id*="layout-"] {
+  background: #666666;
+  margin-bottom: 10px;
+}
+div#layout-wrapper .zone {
+  background: #999999;
+  margin-bottom: 10px;
+}
+div#layout-wrapper .widget {
+  background-color: #cccccc;
+  margin-bottom: 10px;
+}
+div#layout-wrapper div.user-display span.user-actions,
+div#layout-wrapper div.user-display span.user-actions a,
+div#layout-wrapper div.user-display span.user-actions span {
+  display: inline-block;
+  color: #ffff00;
+}
