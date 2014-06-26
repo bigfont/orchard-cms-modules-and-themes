@@ -7,19 +7,20 @@
 
     > .group {
         .make-row();
+        background: pink !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
 
         .zone {
             .make-md-column(12);
-            background: white;
         }
     }
 }
 
-#layout-main-container > .group {
-
+#layout-main-container > .group,
+#layout-tripel-container > .group {
     .make-row();
-
-    background:red !important;
-    padding-top:10px;
-    padding-bottom:10px;
+    background: red !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
