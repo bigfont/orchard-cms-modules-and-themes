@@ -63,7 +63,6 @@
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\TheThemeMachine-Bootstrap-Scaffolding.css" />
-    <Content Include="TheThemeMachineDesigner\Recipes\theme-machine-designer.recipe.xml" />
     <Content Include="TheThemeMachineDesigner\Styles\Site.css" />
     <Content Include="TheThemeMachineDesigner\Styles\TheThemeMachine-Designer.css" />
     <Content Include="TheThemeMachineDesigner\Styles\TheThemeMachine-Original.css" />

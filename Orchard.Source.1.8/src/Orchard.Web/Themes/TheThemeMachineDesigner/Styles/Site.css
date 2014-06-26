@@ -1071,6 +1071,19 @@ div#layout-wrapper .copyright,
 div#layout-wrapper .poweredby {
   display: none;
 }
+div#layout-wrapper .widget-navigation:first-child {
+  height: 60px;
+}
+div#layout-wrapper .widget-navigation:first-child ul.menu.menu-main-menu {
+  display: block;
+}
+div#layout-wrapper .widget-navigation:first-child ul.menu.menu-main-menu li,
+div#layout-wrapper .widget-navigation:first-child ul.menu.menu-main-menu a {
+  background: transparent;
+  color: blue;
+  border: none;
+  text-decoration: underline;
+}
 div#layout-wrapper [id*="layout-"],
 div#layout-wrapper .zone {
   display: block;

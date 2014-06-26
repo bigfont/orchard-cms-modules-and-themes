@@ -8,27 +8,82 @@
     - avoid nesting containers
 */
 
-@row-background-color: red;
-
+/*container*/
 #layout-wrapper {
     .container;
+}
 
+/*rows*/
+#layout-wrapper,
+[id$="-container"],
+#footer {
     > .group {
         .make-row();
-        background: @row-background-color !important;
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-        .zone {
-            .make-md-column(12);
-        }
     }
 }
 
-#layout-main-container > .group,
-#layout-tripel-container > .group {
-    .make-row();
-    background: @row-background-color !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+/*columns*/
+#layout-wrapper > .group > div,
+.zone-footer {
+    .make-md-column(12);
+}
+
+[id^="aside"],
+#footer-quad > div {
+    .make-md-column(3);
+}
+
+#layout-content {
+    .make-md-column(6);
+}
+
+#layout-tripel > div {
+    .make-md-column(4);
+}
+
+#layout-main-container {
+    .clearfix;
+}
+
+//
+// Switches
+// --------------------------------------------------
+
+/*switch: layout-main*/
+#layout-wrapper {
+    &.aside-12 {
+    }
+
+    &.aside-1 {
+    }
+
+    &.aside-2 {
+    }
+}
+
+/*switch: layout-tripel*/
+#layout-wrapper {
+    &.tripel-123 {
+    }
+
+    &.tripel-12 {
+    }
+
+    &.tripel-1 {
+    }
+}
+
+/*switch: footer-quad*/
+#layout-wrapper.split-1234 {
+    &.split-1234 {
+    }
+
+    &.split-123 {
+    }
+
+    &.split-12 {
+    }
+
+    &.split-1 {
+    }
 }

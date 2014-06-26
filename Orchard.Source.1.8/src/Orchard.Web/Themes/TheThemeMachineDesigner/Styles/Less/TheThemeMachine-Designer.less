@@ -37,6 +37,21 @@ div#layout-wrapper {
     .poweredby {
         display: none;
     }
+    // hack: display the main navigation
+    .widget-navigation:first-child {
+        height: 60px;
+
+        ul.menu.menu-main-menu {
+            display: block;
+
+            li, a  {
+                background:transparent;
+                color:blue;
+                border:none;
+                text-decoration:underline;
+            }
+        }
+    }
 
     [id*="layout-"], .zone {
         display: block;

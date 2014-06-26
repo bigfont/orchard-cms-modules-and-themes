@@ -670,6 +670,7 @@
     - columns must be within rows
     - avoid nesting containers
 */
+/*container*/
 #layout-wrapper {
   margin-right: auto;
   margin-left: auto;
@@ -691,30 +692,74 @@
     width: 1170px;
   }
 }
-#layout-wrapper > .group {
+/*rows*/
+#layout-wrapper > .group,
+[id$="-container"] > .group,
+#footer > .group {
   margin-left: -15px;
   margin-right: -15px;
-  background: #ff0000 !important;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
-#layout-wrapper > .group .zone {
+/*columns*/
+#layout-wrapper > .group > div,
+.zone-footer {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-wrapper > .group .zone {
+  #layout-wrapper > .group > div,
+  .zone-footer {
     float: left;
     width: 100%;
   }
 }
-#layout-main-container > .group,
-#layout-tripel-container > .group {
-  margin-left: -15px;
-  margin-right: -15px;
-  background: #ff0000 !important;
-  padding-top: 10px;
-  padding-bottom: 10px;
+[id^="aside"],
+#footer-quad > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
+@media (min-width: 992px) {
+  [id^="aside"],
+  #footer-quad > div {
+    float: left;
+    width: 25%;
+  }
+}
+#layout-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-content {
+    float: left;
+    width: 50%;
+  }
+}
+#layout-tripel > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-tripel > div {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+#layout-main-container:before,
+#layout-main-container:after {
+  content: " ";
+  display: table;
+}
+#layout-main-container:after {
+  clear: both;
+}
+/*switch: layout-main*/
+/*switch: layout-tripel*/
+/*switch: footer-quad*/
