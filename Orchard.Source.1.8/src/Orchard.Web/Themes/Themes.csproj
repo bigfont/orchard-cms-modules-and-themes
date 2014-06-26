@@ -61,6 +61,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TheThemeMachineDesigner\Recipes\theme-machine-designer.recipe.xml" />
     <Content Include="TheThemeMachineDesigner\Styles\Site.css" />
     <Content Include="TheThemeMachineDesigner\Styles\TheThemeMachine-Original.css" />
     <Content Include="TheThemeMachineDesigner\Web.config" />

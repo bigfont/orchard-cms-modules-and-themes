@@ -1038,6 +1038,10 @@ button:focus,
 .tag-cloud-tag-5 {
   font-size: 1.5em;
 }
+/*
+Theme: The Theme Machine Designer
+Author: shaun @ bigfont.ca
+*/
 [id*="layout-"],
 .zone {
   margin-top: 0;
@@ -1048,9 +1052,9 @@ button:focus,
 }
 body {
   background: #000000;
-  color: yellow;
 }
 div#layout-wrapper {
+  /* topography */
   background: #333333;
 }
 div#layout-wrapper p,
@@ -1076,8 +1080,9 @@ div#layout-wrapper [id*="layout-"]:before,
 div#layout-wrapper .zone:before,
 div#layout-wrapper .widget:before {
   content: "#" attr(id) "." attr(class);
-  display: block;
   padding: 10px;
+  display: block;
+  color: #ffff00;
 }
 div#layout-wrapper [id*="layout-"] {
   background: #666666;
@@ -1090,4 +1095,10 @@ div#layout-wrapper .zone {
 div#layout-wrapper .widget {
   background-color: #cccccc;
   margin-bottom: 10px;
+}
+div#layout-wrapper div.user-display span.user-actions,
+div#layout-wrapper div.user-display span.user-actions a,
+div#layout-wrapper div.user-display span.user-actions span {
+  display: inline-block;
+  color: #ffff00;
 }

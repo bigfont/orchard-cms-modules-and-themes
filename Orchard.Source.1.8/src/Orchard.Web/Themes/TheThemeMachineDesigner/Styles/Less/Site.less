@@ -1,6 +1,12 @@
 ﻿@import 'TheThemeMachine-Original.less';
 
-@element-spacing:10px;
+/*
+Theme: The Theme Machine Designer
+Author: shaun @ bigfont.ca
+*/
+
+@element-spacing: 10px;
+@font-color: yellow;
 
 [id*="layout-"],
 .zone {
@@ -9,12 +15,11 @@
     margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
-    border:none !important;
+    border: none !important;
 }
 
 body {
     background: lighten(black, 0);
-    color: yellow;
 }
 
 div#layout-wrapper {
@@ -42,11 +47,12 @@ div#layout-wrapper {
 
         &:before {
             content: "#"attr(id)"."attr(class);
-            display: block;
             padding: @element-spacing;
+            display: block;
+            color: @font-color;
         }
     }
-    // topography
+    /* topography */
     background: lighten(black, 20);
 
     [id*="layout-"] {
@@ -62,5 +68,12 @@ div#layout-wrapper {
     .widget {
         background-color: lighten(black, 80);
         margin-bottom: @element-spacing;
+    }
+
+    div.user-display span.user-actions {
+        &, a, span {
+            display: inline-block;
+            color: @font-color;
+        }
     }
 }
