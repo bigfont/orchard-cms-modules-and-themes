@@ -665,6 +665,11 @@
     margin-left: 0%;
   }
 }
+/*
+    - content must be within columns
+    - columns must be within rows
+    - avoid nesting containers
+*/
 #layout-wrapper {
   margin-right: auto;
   margin-left: auto;

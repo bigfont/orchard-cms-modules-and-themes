@@ -2,7 +2,13 @@
 @import 'Bootstrap/grid.less';
 @import 'Bootstrap/mixins.less';
 
-@row-background-color:red;
+/*
+    - content must be within columns
+    - columns must be within rows
+    - avoid nesting containers
+*/
+
+@row-background-color: red;
 
 #layout-wrapper {
     .container;

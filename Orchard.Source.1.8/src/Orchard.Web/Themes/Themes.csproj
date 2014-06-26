@@ -61,6 +61,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\TheThemeMachine-Bootstrap-Scaffolding.css" />
     <Content Include="TheThemeMachineDesigner\Recipes\theme-machine-designer.recipe.xml" />
     <Content Include="TheThemeMachineDesigner\Styles\Site.css" />
@@ -75,7 +76,6 @@
     <Content Include="TheThemeMachineDesigner\Placement.info" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Theme.css" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Web.config" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Scripts\Web.config" />
