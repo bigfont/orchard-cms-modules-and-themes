@@ -754,7 +754,7 @@ div#layout-wrapper div.user-display span.user-actions span {
 #layout-wrapper > .group {
   margin-left: -15px;
   margin-right: -15px;
-  background: pink !important;
+  background: #ff0000 !important;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -774,7 +774,7 @@ div#layout-wrapper div.user-display span.user-actions span {
 #layout-tripel-container > .group {
   margin-left: -15px;
   margin-right: -15px;
-  background: red !important;
+  background: #ff0000 !important;
   padding-top: 10px;
   padding-bottom: 10px;
 }

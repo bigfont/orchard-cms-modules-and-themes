@@ -2,12 +2,14 @@
 @import 'Bootstrap/grid.less';
 @import 'Bootstrap/mixins.less';
 
+@row-background-color:red;
+
 #layout-wrapper {
     .container;
 
     > .group {
         .make-row();
-        background: pink !important;
+        background: @row-background-color !important;
         padding-top: 10px;
         padding-bottom: 10px;
 
@@ -20,7 +22,7 @@
 #layout-main-container > .group,
 #layout-tripel-container > .group {
     .make-row();
-    background: red !important;
+    background: @row-background-color !important;
     padding-top: 10px;
     padding-bottom: 10px;
 }
