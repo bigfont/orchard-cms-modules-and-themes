@@ -1,6 +1,6 @@
 ﻿/*
 Theme: Bootstrap 3.1.1 Simple Blog
-Author: Shaun Luttin @ www.bigfont.ca
+Author: Shaun Luttin, bigfont.ca
 Copyright: N/A
 */
 /*External Libs*/
@@ -7352,7 +7352,6 @@ button.close {
     display: none !important;
   }
 }
-/*Internal Libs*/
 /* APA Style Headings
 
 CSS styles for the American Psychological Association headings.
@@ -7800,3 +7799,46 @@ ul.tag-cloud li {
 /*Print*/
 /* Print
 ***************************************************************/
+.super-hide {
+  margin: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+}
+@media print {
+  html,
+  body,
+  div,
+  article,
+  header,
+  footer,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: 100% !important;
+  }
+  form,
+  .comment-count,
+  .comment-form-beacon,
+  ins.adsbygoogle,
+  #layout-wrapper > .group,
+  #layout-main > aside {
+    margin: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    display: none !important;
+    visibility: hidden !important;
+  }
+  div#layout-content.group {
+    width: 100% !important;
+  }
+  div#layout-content.group article.blog-post.content-item {
+    border: none !important;
+    margin: 0.5in !important;
+    margin: 0 !important;
+  }
+}

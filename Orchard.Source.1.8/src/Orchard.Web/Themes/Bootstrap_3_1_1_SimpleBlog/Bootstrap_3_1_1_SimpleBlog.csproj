@@ -76,18 +76,6 @@
     <Content Include="packages.config" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="Readme\Todo.txt" />
-    <Content Include="Styles\less\site\apa-style.css">
-      <DependentUpon>apa-style.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\less\site\clearing-float.css">
-      <DependentUpon>clearing-float.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\less\site\general.css">
-      <DependentUpon>general.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\less\site\reset.css">
-      <DependentUpon>reset.less</DependentUpon>
-    </Content>
     <Content Include="Styles\Site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
@@ -137,8 +125,8 @@
     <Content Include="Styles\less\bootstrap-3.1.1\utilities.less" />
     <Content Include="Styles\less\bootstrap-3.1.1\variables.less" />
     <Content Include="Styles\less\bootstrap-3.1.1\wells.less" />
-    <Content Include="Styles\less\site\apa-style.less" />
-    <Content Include="Styles\less\site\ie-10.less" />
+    <Content Include="Styles\less\bigfont\_apa-style.less" />
+    <Content Include="Styles\less\bigfont\_ie-10.less" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -186,34 +174,37 @@
     <Content Include="Views\BadgeOfHonor.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\reset.less" />
+    <Content Include="Styles\less\orchard\_reset.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\clearing-float.less" />
+    <Content Include="Styles\less\orchard\_clearing-float.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\typography.less" />
+    <Content Include="Styles\less\orchard\_typography.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\general.less" />
+    <Content Include="Styles\less\orchard\_general.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\structure.less" />
+    <Content Include="Styles\less\orchard\_structure.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\_main.less" />
+    <Content Include="Styles\less\orchard\_main.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\_secondary.less" />
+    <Content Include="Styles\less\orchard\_secondary.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\_forms.less" />
+    <Content Include="Styles\less\orchard\_forms.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\_misc.less" />
+    <Content Include="Styles\less\orchard\_misc.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\site\_print.less" />
+    <Content Include="Styles\less\bigfont\_print.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bigfont\_responsive-adwords.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

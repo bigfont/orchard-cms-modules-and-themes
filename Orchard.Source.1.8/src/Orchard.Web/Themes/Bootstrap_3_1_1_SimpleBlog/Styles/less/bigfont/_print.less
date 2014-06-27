@@ -1,27 +1,42 @@
 ﻿/* Print
 ***************************************************************/
+
+.super-hide {
+    margin: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    display: none !important;
+    visibility: hidden !important;
+}
+
 @media print {
 
-    div#layout-wrapper.aside-1 ins.adsbygoogle.ad-sense-02-responsive,
-    #layout-header,
-    ins,
-    adsbygoogle, 
-    form,
-    iframe,
-    aside {
-        display: none !important;
-        visibility: hidden !important;
-        height: 0 !important;
+    html,
+    body,
+    div,
+    article,
+    header,
+    footer,
+    h1, h2, h3, h4, h5, h6 {
+        max-width: 100% !important;
     }
 
-    article.blog-post.content-item {
-        margin: 0;
-        padding: 0;
-        border: none;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        background: white;
-        z-index: 1000000;
+    form,
+    .comment-count,
+    .comment-form-beacon,
+    ins.adsbygoogle,
+    #layout-wrapper > .group,
+    #layout-main > aside {
+        .super-hide();
+    }
+
+    div#layout-content.group {
+        width: 100% !important;
+
+        article.blog-post.content-item {
+            border: none !important;            
+            margin: 0.5in !important;
+            margin: 0 !important;
+        }
     }
 }
