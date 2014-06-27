@@ -81,37 +81,37 @@
     menuitem create /MenuPosition:"14" /MenuText:"Quad-2" /Url:"~/Quad-2" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-3" /Title:"Quad-3" /Path:"Quad-3" /Homepage:false /Publish:true /Text:"Welcome To Quad-3"
-    menuitem create /MenuPosition:"1" /MenuText:"Quad-3" /Url:"~/Quad-3" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"15" /MenuText:"Quad-3" /Url:"~/Quad-3" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-4" /Title:"Quad-4" /Path:"Quad-4" /Homepage:false /Publish:true /Text:"Welcome To Quad-4"
-    menuitem create /MenuPosition:"15" /MenuText:"Quad-4" /Url:"~/Quad-4" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"16" /MenuText:"Quad-4" /Url:"~/Quad-4" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-12" /Title:"Quad-12" /Path:"Quad-12" /Homepage:false /Publish:true /Text:"Welcome To Quad-12"
-    menuitem create /MenuPosition:"16" /MenuText:"Quad-12" /Url:"~/Quad-12" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"17" /MenuText:"Quad-12" /Url:"~/Quad-12" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-13" /Title:"Quad-13" /Path:"Quad-13" /Homepage:false /Publish:true /Text:"Welcome To Quad-13"
-    menuitem create /MenuPosition:"17" /MenuText:"Quad-13" /Url:"~/Quad-13" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"18" /MenuText:"Quad-13" /Url:"~/Quad-13" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-14" /Title:"Quad-14" /Path:"Quad-14" /Homepage:false /Publish:true /Text:"Welcome To Quad-14"
-    menuitem create /MenuPosition:"18" /MenuText:"Quad-14" /Url:"~/Quad-14" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"19" /MenuText:"Quad-14" /Url:"~/Quad-14" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-23" /Title:"Quad-23" /Path:"Quad-23" /Homepage:false /Publish:true /Text:"Welcome To Quad-23"
-    menuitem create /MenuPosition:"19" /MenuText:"Quad-23" /Url:"~/Quad-23" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"20" /MenuText:"Quad-23" /Url:"~/Quad-23" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-24" /Title:"Quad-24" /Path:"Quad-24" /Homepage:false /Publish:true /Text:"Welcome To Quad-24"
-    menuitem create /MenuPosition:"20" /MenuText:"Quad-24" /Url:"~/Quad-24" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"21" /MenuText:"Quad-24" /Url:"~/Quad-24" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-34" /Title:"Quad-34" /Path:"Quad-34" /Homepage:false /Publish:true /Text:"Welcome To Quad-34"
-    menuitem create /MenuPosition:"21" /MenuText:"Quad-34" /Url:"~/Quad-34" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"22" /MenuText:"Quad-34" /Url:"~/Quad-34" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-123" /Title:"Quad-123" /Path:"Quad-123" /Homepage:false /Publish:true /Text:"Welcome To Quad-123"
-    menuitem create /MenuPosition:"22" /MenuText:"Quad-123" /Url:"~/Quad-123" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"23" /MenuText:"Quad-123" /Url:"~/Quad-123" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-234" /Title:"Quad-234" /Path:"Quad-234" /Homepage:false /Publish:true /Text:"Welcome To Quad-234"
-    menuitem create /MenuPosition:"23" /MenuText:"Quad-234" /Url:"~/Quad-234" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"24" /MenuText:"Quad-234" /Url:"~/Quad-234" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-1234" /Title:"Quad-1234" /Path:"Quad-1234" /Homepage:false /Publish:true /Text:"Welcome To Quad-1234"
-    menuitem create /MenuPosition:"24" /MenuText:"Quad-1234" /Url:"~/Quad-1234" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"25" /MenuText:"Quad-1234" /Url:"~/Quad-1234" /MenuName:"Main Menu"
 
     <!--
     page create /Slug:"ReplaceMe" /Title:"ReplaceMe" /Path:"ReplaceMe" /Homepage:false /Publish:true /Text:"Welcome To ReplaceMe"
