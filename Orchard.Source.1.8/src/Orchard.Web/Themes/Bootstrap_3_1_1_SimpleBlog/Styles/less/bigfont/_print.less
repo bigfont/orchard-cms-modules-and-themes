@@ -1,0 +1,27 @@
+﻿/* Print
+***************************************************************/
+@media print {
+
+    div#layout-wrapper.aside-1 ins.adsbygoogle.ad-sense-02-responsive,
+    #layout-header,
+    ins,
+    adsbygoogle, 
+    form,
+    iframe,
+    aside {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+    }
+
+    article.blog-post.content-item {
+        margin: 0;
+        padding: 0;
+        border: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background: white;
+        z-index: 1000000;
+    }
+}
