@@ -1156,6 +1156,9 @@ div#layout-wrapper footer[class]:before {
   display: block;
   padding: 10px;
 }
+div#layout-wrapper[id]:before {
+  text-decoration: underline;
+}
 div#layout-wrapper > [id],
 div#layout-wrapper > [class] {
   background: #262626;

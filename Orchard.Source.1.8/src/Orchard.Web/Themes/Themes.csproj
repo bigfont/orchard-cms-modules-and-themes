@@ -63,9 +63,9 @@
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\TheThemeMachine-Bootstrap-Scaffolding.css" />
-    <Content Include="TheThemeMachineDesigner\Styles\Site.css" />
-    <Content Include="TheThemeMachineDesigner\Styles\TheThemeMachine-Designer.css" />
-    <Content Include="TheThemeMachineDesigner\Styles\TheThemeMachine-Original.css" />
+    <Content Include="TheThemeMachineDesigner\Styles\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
     <Content Include="TheThemeMachineDesigner\Web.config" />
     <Content Include="TheThemeMachineDesigner\Scripts\Web.config" />
     <Content Include="TheThemeMachineDesigner\Styles\Web.config" />
@@ -256,10 +256,10 @@
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\TheThemeMachine-Original.less" />
-    <Content Include="TheThemeMachineDesigner\Styles\Less\TheThemeMachine-Original.less" />
-    <Content Include="TheThemeMachineDesigner\Styles\Less\TheThemeMachine-Designer.less" />
+    <Content Include="TheThemeMachineDesigner\Styles\Less\orchard\_TheThemeMachine-Original.less" />
+    <Content Include="TheThemeMachineDesigner\Styles\Less\site\_TheThemeMachine-Designer.less" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\TheThemeMachine-Designer.less" />
-    <Content Include="TheThemeMachineDesigner\Styles\Less\Site.less" />
+    <Content Include="TheThemeMachineDesigner\Styles\Site.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />
