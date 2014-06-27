@@ -2,13 +2,35 @@
 Theme: The Theme Machine Designer
 Author: shaun @ bigfont.ca
 */
-[id*="layout-"],
-.zone {
-  margin-top: 0;
+div,
+article,
+header,
+footer,
+aside,
+div [id*="layout-"],
+article [id*="layout-"],
+header [id*="layout-"],
+footer [id*="layout-"],
+aside [id*="layout-"],
+div .zone,
+article .zone,
+header .zone,
+footer .zone,
+aside .zone,
+div #layout-navigation,
+article #layout-navigation,
+header #layout-navigation,
+footer #layout-navigation,
+aside #layout-navigation {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: none;
+  border-top: none;
   margin-bottom: 0;
-  padding-top: 0;
+  margin-top: 0;
   padding-bottom: 0;
-  border: none !important;
+  padding-top: 0;
 }
 body {
   background: #000000;
@@ -41,10 +63,7 @@ div#layout-wrapper .credits {
 div#layout-wrapper h1#branding {
   display: block;
 }
-div#layout-wrapper .widget-navigation:first-child {
-  height: 60px;
-}
-div#layout-wrapper .widget-navigation:first-child ul.menu.menu-main-menu {
+div#layout-wrapper ul.menu.menu-main-menu {
   display: block;
 }
 div#layout-wrapper div.user-display span.user-actions:nth-child(2) {
@@ -60,14 +79,16 @@ div#layout-wrapper div.user-display span.user-actions:nth-child(2) a {
 div#layout-wrapper a,
 div#layout-wrapper li > a,
 div#layout-wrapper h1 > a {
-  color: #0000ff;
-  text-decoration: underline;
-  display: block;
   background: #ffffff;
+  color: #0000ff;
+  display: block;
 }
 div#layout-wrapper a:hover,
 div#layout-wrapper li > a:hover,
 div#layout-wrapper h1 > a:hover {
+  background: #ffff00;
+}
+div#layout-wrapper li.current > a {
   background: #ffff00;
 }
 div#layout-wrapper,
@@ -90,20 +111,20 @@ div#layout-wrapper article[class]:before,
 div#layout-wrapper header[class]:before,
 div#layout-wrapper aside[class]:before,
 div#layout-wrapper footer[class]:before {
-  content: "#" attr(id) "." attr(class);
-  padding: 10px;
-  display: block;
   color: #ffff00;
+  content: "#" attr(id) "." attr(class);
+  display: block;
+  padding: 10px;
 }
 div#layout-wrapper > [id],
 div#layout-wrapper > [class] {
-  background: #333333;
+  background: #262626;
 }
 div#layout-wrapper > [id] > [id],
 div#layout-wrapper > [class] > [id],
 div#layout-wrapper > [id] > [class],
 div#layout-wrapper > [class] > [class] {
-  background: #4d4d4d;
+  background: #333333;
 }
 div#layout-wrapper > [id] > [id] > [id],
 div#layout-wrapper > [class] > [id] > [id],
@@ -113,7 +134,7 @@ div#layout-wrapper > [id] > [id] > [class],
 div#layout-wrapper > [class] > [id] > [class],
 div#layout-wrapper > [id] > [class] > [class],
 div#layout-wrapper > [class] > [class] > [class] {
-  background: #666666;
+  background: #404040;
 }
 div#layout-wrapper > [id] > [id] > [id] > [id],
 div#layout-wrapper > [class] > [id] > [id] > [id],
@@ -131,7 +152,7 @@ div#layout-wrapper > [id] > [id] > [class] > [class],
 div#layout-wrapper > [class] > [id] > [class] > [class],
 div#layout-wrapper > [id] > [class] > [class] > [class],
 div#layout-wrapper > [class] > [class] > [class] > [class] {
-  background: #808080;
+  background: #4d4d4d;
 }
 div#layout-wrapper > [id] > [id] > [id] > [id] > [id],
 div#layout-wrapper > [class] > [id] > [id] > [id] > [id],
@@ -165,7 +186,7 @@ div#layout-wrapper > [id] > [id] > [class] > [class] > [class],
 div#layout-wrapper > [class] > [id] > [class] > [class] > [class],
 div#layout-wrapper > [id] > [class] > [class] > [class] > [class],
 div#layout-wrapper > [class] > [class] > [class] > [class] > [class] {
-  background: #999999;
+  background: #595959;
 }
 div#layout-wrapper > [id] > [id] > [id] > [id] > [id] > [id],
 div#layout-wrapper > [class] > [id] > [id] > [id] > [id] > [id],
@@ -231,7 +252,7 @@ div#layout-wrapper > [id] > [id] > [class] > [class] > [class] > [class],
 div#layout-wrapper > [class] > [id] > [class] > [class] > [class] > [class],
 div#layout-wrapper > [id] > [class] > [class] > [class] > [class] > [class],
 div#layout-wrapper > [class] > [class] > [class] > [class] > [class] > [class] {
-  background: #b3b3b3;
+  background: #666666;
 }
 div#layout-wrapper .zone {
   margin-bottom: 10px;
@@ -239,6 +260,9 @@ div#layout-wrapper .zone {
 }
 div#layout-wrapper .zone .widget,
 div#layout-wrapper .zone .content-item {
+  border: 2px dashed red;
+  display: table;
   margin-bottom: 10px;
-  border: thin dashed red;
+  padding: 10px;
+  width: 100%;
 }

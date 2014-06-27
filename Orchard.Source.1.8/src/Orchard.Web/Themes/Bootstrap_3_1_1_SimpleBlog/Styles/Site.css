@@ -1,8 +1,9 @@
-/*
+﻿/*
 Theme: Bootstrap 3.1.1 Simple Blog
 Author: Shaun Luttin @ www.bigfont.ca
 Copyright: N/A
 */
+/*External Libs*/
 /*!
  *  Font Awesome 4.1.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -11,8 +12,8 @@ Copyright: N/A
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('font-awesome-4.1.0/fonts/fontawesome-webfont.eot?v=4.1.0');
-  src: url('font-awesome-4.1.0/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('font-awesome-4.1.0/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('font-awesome-4.1.0/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('font-awesome-4.1.0/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  src: url('../fonts//fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts//fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts//fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts//fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts//fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -7351,6 +7352,100 @@ button.close {
     display: none !important;
   }
 }
+/*Internal Libs*/
+/* APA Style Headings
+
+CSS styles for the American Psychological Association headings.
+See also: https://owl.english.purdue.edu/owl/resource/560/16/
+
+Level   Format
+  1     Centered, Boldface, Uppercase and Lowercase Headings
+  2     Left-aligned, Boldface, Uppercase and Lowercase Heading
+  3     Indented, boldface, lowercase heading with a period. Begin body text after the period.
+  4     Indented, boldface, italicized, lowercase heading with a period. Begin body text after the period.
+  5     Indented, italicized, lowercase heading with a period. Begin body text after the period.
+
+*/
+div.zone > article.blog-post {
+  /* Aspects of the article.content-item that are NOT part of APA-Style. */
+  margin-top: 40px;
+  padding: 20px;
+  border: thin solid #eeeeee;
+  border-radius: 4px;
+}
+div.zone > article.blog-post h1,
+div.zone > article.blog-post h2,
+div.zone > article.blog-post h3,
+div.zone > article.blog-post h4,
+div.zone > article.blog-post h5,
+div.zone > article.blog-post p,
+div.zone > article.blog-post ol,
+div.zone > article.blog-post ul,
+div.zone > article.blog-post blockquote,
+div.zone > article.blog-post pre,
+div.zone > article.blog-post div.run-in {
+  margin: 10px 0;
+  padding: 0;
+  font-family: arial;
+  font-size: 1em;
+  text-align: left;
+  border: none;
+  font-weight: normal;
+}
+div.zone > article.blog-post h3,
+div.zone > article.blog-post h4,
+div.zone > article.blog-post h5,
+div.zone > article.blog-post h3 + p,
+div.zone > article.blog-post h4 + p,
+div.zone > article.blog-post h5 + p {
+  display: inline;
+}
+div.zone > article.blog-post h1,
+div.zone > article.blog-post h2,
+div.zone > article.blog-post h3,
+div.zone > article.blog-post h4 {
+  font-weight: bold;
+}
+div.zone > article.blog-post h1 {
+  text-align: center;
+}
+div.zone > article.blog-post header {
+  margin-bottom: 40px;
+}
+div.zone > article.blog-post header * {
+  text-align: center;
+  margin: 0;
+}
+div.zone > article.blog-post header h1 {
+  font-size: 1.4em;
+}
+div.zone > article.blog-post h3,
+div.zone > article.blog-post h4,
+div.zone > article.blog-post h5 {
+  margin-left: 25px;
+  margin-right: 5px;
+}
+div.zone > article.blog-post h4,
+div.zone > article.blog-post h5 {
+  font-style: italic;
+}
+div.zone > article.blog-post blockquote {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+div.zone > article.blog-post pre {
+  border: thin dashed black;
+  padding: 15px;
+  font-family: 'Courier New';
+}
+div.zone > article.blog-post ol {
+  /* Override to 40px bootstrap padding b/c it's too wide for portrait mobile. */
+  padding-left: 25px;
+}
+div.zone > article.blog-post ul {
+  /* Override to 40px bootstrap padding b/c it's too wide for portrait mobile. */
+  padding-left: 20px;
+}
 /*IE 10 see http://getbootstrap.com/getting-started/#support-ie10-width */
 @-webkit-viewport {
   width: device-width;
@@ -7367,102 +7462,27 @@ button.close {
 @viewport {
   width: device-width;
 }
-/* APA Style Headings
-
-CSS styles for the American Psychological Association headings.
-See also: https://owl.english.purdue.edu/owl/resource/560/16/
-
-Level   Format
-  1     Centered, Boldface, Uppercase and Lowercase Headings
-  2     Left-aligned, Boldface, Uppercase and Lowercase Heading
-  3     Indented, boldface, lowercase heading with a period. Begin body text after the period.
-  4     Indented, boldface, italicized, lowercase heading with a period. Begin body text after the period.
-  5     Indented, italicized, lowercase heading with a period. Begin body text after the period.
-
-*/
-.blog-post h1,
-.blog-post h2,
-.blog-post h3,
-.blog-post h4,
-.blog-post h5,
-.blog-post p,
-.blog-post ol,
-.blog-post ul,
-.blog-post blockquote,
-.blog-post pre,
-.blog-post div.run-in {
-  margin: 10px 0;
-  padding: 0;
-  font-family: arial;
-  font-size: 1em;
-  text-align: left;
-  border: none;
-  font-weight: normal;
-}
-.blog-post h3,
-.blog-post h4,
-.blog-post h5,
-.blog-post h3 + p,
-.blog-post h4 + p,
-.blog-post h5 + p {
-  display: inline;
-}
-.blog-post h1,
-.blog-post h2,
-.blog-post h3,
-.blog-post h4 {
-  font-weight: bold;
-}
-.blog-post h1 {
-  text-align: center;
-}
-.blog-post header * {
-  text-align: center;
-  margin: 0;
-}
-.blog-post header h1 {
-  font-size: 1.4em;
-}
-.blog-post h3,
-.blog-post h4,
-.blog-post h5 {
-  margin-left: 25px;
-  margin-right: 5px;
-}
-.blog-post h4,
-.blog-post h5 {
-  font-style: italic;
-}
-.blog-post blockquote {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.blog-post pre {
-  border: thin dashed black;
-  padding: 15px;
-  font-family: 'Courier New';
-}
-.blog-post ol,
-.blog-post ul {
-  /* Override to 40px bootstrap padding b/c it's too wide for portrait mobile. */
-  padding-left: 0px;
-}
-/*#region Overides for .blog-post summary displays */
-.list-group-item * {
-  text-align: left !important;
-}
-/*#endregion*/
-/* Reset
+/*CSS section recommendations from Orchard */
+/* Reset - Definitions that are used to normalize settings across browsers. 
 ***************************************************************/
 /* Bootstrap 3 already has a reset. */
-/* Clearing Float
+/* Clearing Floats - Definitions that are used to clear parent items that contain children that float. 
 ***************************************************************/
-/* Typography (Optional)
+/* Typography - (Optional) Contains CSS code or a reference to a typography reset framework (such as YUI Fonts) that normalizes font sizes across browsers. 
 ***************************************************************/
-/* Included in Layout.cshtml. */
-/* General
+/* General - Definitions for global HTML elements such as <body>, headings, links, and any other elements where you want to apply a different style and override the reset. This can include styles for elements like <ul>, <p>, etc. 
 ***************************************************************/
-/* Structure
+header {
+  margin-bottom: 20px;
+}
+h1,
+h2,
+h3 {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+/* Structure - Layout definitions for major structural components of your templates, such as containers, headers, footers, etc. This section can be subdivided with comments into sections such as navigation, header, etc. 
 ***************************************************************/
 #layout-wrapper > [id^="layout-"] {
   margin-right: auto;
@@ -7497,7 +7517,7 @@ Level   Format
     margin-left: 0;
   }
 }
-/* Main
+/* Main - Main styles related to your theme. This can contain definitions for blog posts, tags, etc. 
 ***************************************************************/
 #layout-main {
   margin-left: -15px;
@@ -7553,15 +7573,17 @@ aside {
     width: 50%;
   }
 }
-/* Secondary
+/* Secondary - Secondary styles related to your theme for things like stylized text, errors, etc. 
 ***************************************************************/
-/* Forms
+/* Forms - All styling related to form items.
 ***************************************************************/
-fieldset {
+#layout-wrapper form li {
   margin-bottom: 15px;
 }
-input,
-textarea {
+#layout-wrapper form input[type="text"],
+#layout-wrapper form input[type="password"],
+#layout-wrapper form input[type="email"],
+#layout-wrapper form textarea {
   display: block;
   width: 100%;
   height: 34px;
@@ -7578,44 +7600,63 @@ textarea {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-input:focus,
-textarea:focus {
+#layout-wrapper form input[type="text"]:focus,
+#layout-wrapper form input[type="password"]:focus,
+#layout-wrapper form input[type="email"]:focus,
+#layout-wrapper form textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-input::-moz-placeholder,
-textarea::-moz-placeholder {
+#layout-wrapper form input[type="text"]::-moz-placeholder,
+#layout-wrapper form input[type="password"]::-moz-placeholder,
+#layout-wrapper form input[type="email"]::-moz-placeholder,
+#layout-wrapper form textarea::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+#layout-wrapper form input[type="text"]:-ms-input-placeholder,
+#layout-wrapper form input[type="password"]:-ms-input-placeholder,
+#layout-wrapper form input[type="email"]:-ms-input-placeholder,
+#layout-wrapper form textarea:-ms-input-placeholder {
   color: #999999;
 }
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
+#layout-wrapper form input[type="text"]::-webkit-input-placeholder,
+#layout-wrapper form input[type="password"]::-webkit-input-placeholder,
+#layout-wrapper form input[type="email"]::-webkit-input-placeholder,
+#layout-wrapper form textarea::-webkit-input-placeholder {
   color: #999999;
 }
-input[disabled],
-textarea[disabled],
-input[readonly],
-textarea[readonly],
-fieldset[disabled] input,
-fieldset[disabled] textarea {
+#layout-wrapper form input[type="text"][disabled],
+#layout-wrapper form input[type="password"][disabled],
+#layout-wrapper form input[type="email"][disabled],
+#layout-wrapper form textarea[disabled],
+#layout-wrapper form input[type="text"][readonly],
+#layout-wrapper form input[type="password"][readonly],
+#layout-wrapper form input[type="email"][readonly],
+#layout-wrapper form textarea[readonly],
+fieldset[disabled] #layout-wrapper form input[type="text"],
+fieldset[disabled] #layout-wrapper form input[type="password"],
+fieldset[disabled] #layout-wrapper form input[type="email"],
+fieldset[disabled] #layout-wrapper form textarea {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-textareainput,
-textareatextarea {
+textarea#layout-wrapper form input[type="text"],
+textarea#layout-wrapper form input[type="password"],
+textarea#layout-wrapper form input[type="email"],
+textarea#layout-wrapper form textarea {
   height: auto;
 }
-textarea {
+#layout-wrapper form input[type="checkbox"] {
+  margin-right: 10px;
+}
+#layout-wrapper form textarea {
   height: auto;
 }
-button {
+#layout-wrapper form button {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -7637,28 +7678,28 @@ button {
   background-color: #ffffff;
   border-color: #cccccc;
 }
-button:focus,
-button:active:focus,
-button.active:focus {
+#layout-wrapper form button:focus,
+#layout-wrapper form button:active:focus,
+#layout-wrapper form button.active:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-button:hover,
-button:focus {
+#layout-wrapper form button:hover,
+#layout-wrapper form button:focus {
   color: #333333;
   text-decoration: none;
 }
-button:active,
-button.active {
+#layout-wrapper form button:active,
+#layout-wrapper form button.active {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-button.disabled,
-button[disabled],
-fieldset[disabled] button {
+#layout-wrapper form button.disabled,
+#layout-wrapper form button[disabled],
+fieldset[disabled] #layout-wrapper form button {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -7666,76 +7707,96 @@ fieldset[disabled] button {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-button:hover,
-button:focus,
-button:active,
-button.active,
-.open .dropdown-togglebutton {
+#layout-wrapper form button:hover,
+#layout-wrapper form button:focus,
+#layout-wrapper form button:active,
+#layout-wrapper form button.active,
+.open .dropdown-toggle#layout-wrapper form button {
   color: #333333;
   background-color: #ebebeb;
   border-color: #adadad;
 }
-button:active,
-button.active,
-.open .dropdown-togglebutton {
+#layout-wrapper form button:active,
+#layout-wrapper form button.active,
+.open .dropdown-toggle#layout-wrapper form button {
   background-image: none;
 }
-button.disabled,
-button[disabled],
-fieldset[disabled] button,
-button.disabled:hover,
-button[disabled]:hover,
-fieldset[disabled] button:hover,
-button.disabled:focus,
-button[disabled]:focus,
-fieldset[disabled] button:focus,
-button.disabled:active,
-button[disabled]:active,
-fieldset[disabled] button:active,
-button.disabled.active,
-button[disabled].active,
-fieldset[disabled] button.active {
+#layout-wrapper form button.disabled,
+#layout-wrapper form button[disabled],
+fieldset[disabled] #layout-wrapper form button,
+#layout-wrapper form button.disabled:hover,
+#layout-wrapper form button[disabled]:hover,
+fieldset[disabled] #layout-wrapper form button:hover,
+#layout-wrapper form button.disabled:focus,
+#layout-wrapper form button[disabled]:focus,
+fieldset[disabled] #layout-wrapper form button:focus,
+#layout-wrapper form button.disabled:active,
+#layout-wrapper form button[disabled]:active,
+fieldset[disabled] #layout-wrapper form button:active,
+#layout-wrapper form button.disabled.active,
+#layout-wrapper form button[disabled].active,
+fieldset[disabled] #layout-wrapper form button.active {
   background-color: #ffffff;
   border-color: #cccccc;
 }
-button .badge {
+#layout-wrapper form button .badge {
   color: #ffffff;
   background-color: #333333;
 }
-ol {
-  padding-left: 0;
+#layout-wrapper form ol {
   list-style: none;
+  padding-left: 0;
 }
-/* Misc
+/* Misc - Miscellaneous definitions that are needed to render the look of your template. 
 ***************************************************************/
-/*#region Tag Cloud*/
-ul.tag-cloud > li {
+ul.content-items {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+ul.content-items li {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+ul.content-items li:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+ul.content-items li:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+ul.content-items li > .badge {
+  float: right;
+}
+ul.content-items li > .badge + .badge {
+  margin-right: 5px;
+}
+ul.content-items li h1,
+ul.content-items li h2,
+ul.content-items li h3 {
+  font-size: 1.1em;
+  margin: 0;
+  border: none;
+}
+ul.tag-cloud li {
   /*one line each*/
   width: 140px;
   white-space: nowrap;
   overflow: hidden;
 }
-/*#endregion*/
-/*#region Cursor*/
 .cursor-pointer {
   cursor: pointer;
 }
-/*#endregion*/
-/*#region content article header */
-div.zone-content > article > header {
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid silver;
-}
-/* content article img */
-div.zone-content > article.blog-post > p > a > img {
-  border: 1px solid silver;
-  padding: 4px;
-  border-radius: 5px;
-}
-/*#endregion*/
 #footer {
-  border-top: thin solid silver;
+  border-top: thin solid #eeeeee;
   margin-top: 100px;
   padding: 40px 0;
 }
+/*Print*/
+/* Print
+***************************************************************/

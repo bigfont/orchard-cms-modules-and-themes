@@ -74,81 +74,71 @@
     <Content Include="Scripts\APA-Style.js" />
     <Content Include="Scripts\IE-10.js" />
     <Content Include="packages.config" />
-    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.svg" />
-    <Content Include="Styles\font-awesome-4.1.0\less\variables.css">
-      <DependentUpon>variables.less</DependentUpon>
-    </Content>
-    <Content Include="Styles\font-awesome-4.1.0\less\variables.min.css">
-      <DependentUpon>variables.css</DependentUpon>
-    </Content>
-    <Content Include="Styles\site\apa-style.css">
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Readme\Todo.txt" />
+    <Content Include="Styles\less\site\apa-style.css">
       <DependentUpon>apa-style.less</DependentUpon>
     </Content>
-    <Content Include="Styles\site\apa-style.min.css">
-      <DependentUpon>apa-style.css</DependentUpon>
+    <Content Include="Styles\less\site\clearing-float.css">
+      <DependentUpon>clearing-float.less</DependentUpon>
     </Content>
-    <Content Include="Styles\site\ie-10.css">
-      <DependentUpon>ie-10.less</DependentUpon>
+    <Content Include="Styles\less\site\general.css">
+      <DependentUpon>general.less</DependentUpon>
     </Content>
-    <Content Include="Styles\site\ie-10.min.css">
-      <DependentUpon>ie-10.css</DependentUpon>
+    <Content Include="Styles\less\site\reset.css">
+      <DependentUpon>reset.less</DependentUpon>
     </Content>
-    <Content Include="Styles\site.css">
-      <DependentUpon>site.less</DependentUpon>
+    <Content Include="Styles\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
     </Content>
-    <Content Include="Styles\site.min.css">
-      <DependentUpon>site.css</DependentUpon>
-    </Content>
-    <Content Include="Readme\Todo.txt" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
     <Content Include="Placement.info" />
-    <Content Include="Styles\bootstrap-3.1.1\alerts.less" />
-    <Content Include="Styles\bootstrap-3.1.1\badges.less" />
-    <Content Include="Styles\bootstrap-3.1.1\bootstrap.less" />
-    <Content Include="Styles\bootstrap-3.1.1\breadcrumbs.less" />
-    <Content Include="Styles\bootstrap-3.1.1\button-groups.less" />
-    <Content Include="Styles\bootstrap-3.1.1\buttons.less" />
-    <Content Include="Styles\bootstrap-3.1.1\carousel.less" />
-    <Content Include="Styles\bootstrap-3.1.1\close.less" />
-    <Content Include="Styles\bootstrap-3.1.1\code.less" />
-    <Content Include="Styles\bootstrap-3.1.1\component-animations.less" />
-    <Content Include="Styles\bootstrap-3.1.1\dropdowns.less" />
-    <Content Include="Styles\bootstrap-3.1.1\forms.less" />
-    <Content Include="Styles\bootstrap-3.1.1\glyphicons.less" />
-    <Content Include="Styles\bootstrap-3.1.1\grid.less" />
-    <Content Include="Styles\bootstrap-3.1.1\input-groups.less" />
-    <Content Include="Styles\bootstrap-3.1.1\jumbotron.less" />
-    <Content Include="Styles\bootstrap-3.1.1\labels.less" />
-    <Content Include="Styles\bootstrap-3.1.1\list-group.less" />
-    <Content Include="Styles\bootstrap-3.1.1\media.less" />
-    <Content Include="Styles\bootstrap-3.1.1\mixins.less" />
-    <Content Include="Styles\bootstrap-3.1.1\modals.less" />
-    <Content Include="Styles\bootstrap-3.1.1\navbar.less" />
-    <Content Include="Styles\bootstrap-3.1.1\navs.less" />
-    <Content Include="Styles\bootstrap-3.1.1\normalize.less" />
-    <Content Include="Styles\bootstrap-3.1.1\pager.less" />
-    <Content Include="Styles\bootstrap-3.1.1\pagination.less" />
-    <Content Include="Styles\bootstrap-3.1.1\panels.less" />
-    <Content Include="Styles\bootstrap-3.1.1\popovers.less" />
-    <Content Include="Styles\bootstrap-3.1.1\print.less" />
-    <Content Include="Styles\bootstrap-3.1.1\progress-bars.less" />
-    <Content Include="Styles\bootstrap-3.1.1\responsive-utilities.less" />
-    <Content Include="Styles\bootstrap-3.1.1\scaffolding.less" />
-    <Content Include="Styles\bootstrap-3.1.1\tables.less" />
-    <Content Include="Styles\bootstrap-3.1.1\theme.less" />
-    <Content Include="Styles\bootstrap-3.1.1\thumbnails.less" />
-    <Content Include="Styles\bootstrap-3.1.1\tooltip.less" />
-    <Content Include="Styles\bootstrap-3.1.1\type.less" />
-    <Content Include="Styles\bootstrap-3.1.1\utilities.less" />
-    <Content Include="Styles\bootstrap-3.1.1\variables.less" />
-    <Content Include="Styles\bootstrap-3.1.1\wells.less" />
-    <Content Include="Styles\site.less" />
-    <Content Include="Styles\site\apa-style.less" />
-    <Content Include="Styles\site\ie-10.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\alerts.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\badges.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\bootstrap.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\breadcrumbs.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\button-groups.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\buttons.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\carousel.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\close.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\code.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\component-animations.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\dropdowns.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\forms.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\glyphicons.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\grid.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\input-groups.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\jumbotron.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\labels.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\list-group.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\media.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\mixins.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\modals.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\navbar.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\navs.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\normalize.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\pager.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\pagination.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\panels.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\popovers.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\print.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\progress-bars.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\responsive-utilities.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\scaffolding.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\tables.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\theme.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\thumbnails.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\tooltip.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\type.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\utilities.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\variables.less" />
+    <Content Include="Styles\less\bootstrap-3.1.1\wells.less" />
+    <Content Include="Styles\less\site\apa-style.less" />
+    <Content Include="Styles\less\site\ie-10.less" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -165,34 +155,65 @@
     <Compile Include="ResourceManifest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Content.cshtml" />
-    <Content Include="Views\List-Bootstrap-ListGroup.cshtml" />
     <Content Include="Views\Parts.TagCloud.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="OrchardGalleryImages\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.eot" />
-    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Styles\font-awesome-4.1.0\fonts\fontawesome-webfont.woff" />
-    <Content Include="Styles\font-awesome-4.1.0\fonts\FontAwesome.otf" />
-    <Content Include="Styles\font-awesome-4.1.0\less\bordered-pulled.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\core.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\fixed-width.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\font-awesome.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\icons.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\larger.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\list.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\mixins.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\path.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\rotated-flipped.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\spinning.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\stacked.less" />
-    <Content Include="Styles\font-awesome-4.1.0\less\variables.less" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Styles\less\font-awesome-4.1.0\bordered-pulled.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\core.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\fixed-width.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\font-awesome.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\icons.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\larger.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\list.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\mixins.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\path.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\rotated-flipped.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\spinning.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\stacked.less" />
+    <Content Include="Styles\less\font-awesome-4.1.0\variables.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Site.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\BadgeOfHonor.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\reset.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\clearing-float.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\typography.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\general.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\structure.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\_main.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\_secondary.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\_forms.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\_misc.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\site\_print.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

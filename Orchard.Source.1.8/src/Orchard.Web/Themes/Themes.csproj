@@ -256,10 +256,10 @@
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\TheThemeMachine-Original.less" />
-    <Content Include="TheThemeMachineDesigner\Styles\Less\Site.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Less\TheThemeMachine-Original.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Less\TheThemeMachine-Designer.less" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\TheThemeMachine-Designer.less" />
+    <Content Include="TheThemeMachineDesigner\Styles\Less\Site.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />

@@ -1,4 +1,4 @@
-﻿@functions {
+@functions {
     // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
     string CalcuClassify(string[] zoneNames, string classNamePrefix)
     {
@@ -75,6 +75,24 @@
     var tag = Tag(Model, "div"); // using Tag so the layout div gets the classes, id and other attributes added to the Model
 }
 @tag.StartElement
+
+
+<style>
+.ad-sense-02-responsive { width: 320px; height: 50px; max-width: 100%; overflow:hidden; display:block !important; margin:auto !important; margin-top:25px !important; }
+@@media(min-width: 500px) { .ad-sense-02-responsive { width: 468px; height: 60px; } }
+@@media(min-width: 800px) { .ad-sense-02-responsive { width: 728px; height: 90px; } }
+</style>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- AD_SENSE_02_Responsive -->
+<ins class="adsbygoogle ad-sense-02-responsive"
+     style="display:inline-block"
+     data-ad-client="ca-pub-6542429488011130"
+     data-ad-slot="9782767204"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 @if (Model.Header != null)
 {
     <header id="layout-header" class="group">

@@ -1,0 +1,56 @@
+﻿/* Misc - Miscellaneous definitions that are needed to render the look of your template. 
+***************************************************************/
+
+ul.content-items {
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+ul.content-items li {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+}
+ul.content-items li:first-child {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+ul.content-items li:last-child {
+  margin-bottom: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+ul.content-items li > .badge {
+  float: right;
+}
+ul.content-items li > .badge + .badge {
+  margin-right: 5px;
+}
+ul.content-items li h1,
+ul.content-items li h2,
+ul.content-items li h3 {
+  font-size: 1.1em;
+  margin: 0;
+  border: none;
+}
+
+
+
+ul.tag-cloud li {
+    /*one line each*/
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#footer {
+    border-top: thin solid @page-header-border-color;
+    margin-top: 100px;
+    padding: 40px 0;
+}

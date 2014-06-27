@@ -1,122 +1,38 @@
 ﻿/*
 Theme: Bootstrap 3.1.1 Simple Blog
-Author: Shaun Luttin @ www.bigfont.ca
+Author: Shaun Luttin, bigfont.ca
 Copyright: N/A
 */
 
-@import 'font-awesome-4.1.0/less/font-awesome.less';
-@import 'bootstrap-3.1.1/bootstrap.less';
-@import 'site/ie-10.less';
-@import 'site/apa-style.less'; // optional
+/*External Libs*/
+@import 'less/font-awesome-4.1.0/font-awesome.less';
+@import 'less/bootstrap-3.1.1/bootstrap.less';
+@import 'less/bigfont/_apa-style.less';// optional
+@import 'less/bigfont/_ie-10.less';
+/*CSS section recommendations from Orchard */
+@import 'less/orchard/_reset.less';
+@import 'less/orchard/_clearing-float.less';
+@import 'less/orchard/_typography.less';
+@import 'less/orchard/_general.less';
+@import 'less/orchard/_structure.less';
+@import 'less/orchard/_main.less';
+@import 'less/orchard/_secondary.less';
+@import 'less/orchard/_forms.less';
+@import 'less/orchard/_misc.less';
+/*Print*/
+@import 'less/site/_print';
 
-/* Reset
-***************************************************************/
 
-/* Bootstrap 3 already has a reset. */
 
-/* Clearing Float
-***************************************************************/
 
-/* Typography (Optional)
-***************************************************************/
 
-/* Included in Layout.cshtml. */
 
-/* General
-***************************************************************/
 
-/* Structure
-***************************************************************/
 
-#layout-wrapper > [id^="layout-"] {
-    .container;
-}
 
-/* Main
-***************************************************************/
 
-#layout-main {
-    .make-row;
-}
 
-aside {
-    .make-md-column(3);
-}
 
-#layout-content {
-    .make-md-column(12);
-}
 
-#layout-wrapper {
 
-    &.aside-2, &.aside-1 {
-        #layout-content {
-            .make-md-column(9);
-        }
-    }
 
-    &.aside-12 {
-        #layout-content {
-            .make-md-column(6);
-        }
-    }
-}
-
-/* Secondary
-***************************************************************/
-/* Forms
-***************************************************************/
-fieldset {
-    .form-group;
-}
-
-input,
-textarea {
-    .form-control;
-}
-
-textarea {
-    height: auto; // to override the form-control height
-}
-
-button {
-    .btn;
-    .btn-default;
-}
-
-ol {
-    .list-unstyled;
-}
-/* Misc
-***************************************************************/
-/*#region Tag Cloud*/
-ul.tag-cloud > li {
-    /*one line each*/
-    width: 140px;
-    white-space: nowrap;
-    overflow: hidden;
-}
-/*#endregion*/
-/*#region Cursor*/
-.cursor-pointer {
-    cursor: pointer;
-}
-/*#endregion*/
-/*#region content article header */
-div.zone-content > article > header {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid silver;
-}
-/* content article img */
-div.zone-content > article.blog-post > p > a > img {
-    border: 1px solid silver;
-    padding: 4px;
-    border-radius: 5px;
-}
-/*#endregion*/
-#footer {
-    border-top: thin solid silver;
-    margin-top: 100px;
-    padding: 40px 0;
-}

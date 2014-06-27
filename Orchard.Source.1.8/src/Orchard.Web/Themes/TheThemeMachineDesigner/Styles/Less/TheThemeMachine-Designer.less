@@ -9,14 +9,28 @@ Author: shaun @ bigfont.ca
 @link-color: blue;
 @link-background: white;
 
-[id*="layout-"],
-.zone {
-    // vertical reset
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none !important;
+div,
+article,
+header,
+footer,
+aside {
+
+    &,
+    [id*="layout-"],
+    .zone,
+    #layout-navigation {
+        // box sizing
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        // vertical reset
+        border-bottom: none;
+        border-top: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
 }
 
 body {
@@ -47,12 +61,8 @@ div#layout-wrapper {
         display: block;
     }
 
-    .widget-navigation:first-child {
-        height: 60px;
-
-        ul.menu.menu-main-menu {
-            display: block;
-        }
+    ul.menu.menu-main-menu {
+        display: block;
     }
 
     div.user-display span.user-actions:nth-child(2) {
@@ -69,14 +79,17 @@ div#layout-wrapper {
     a,
     li > a,
     h1 > a {
-        color: @link-color;
-        text-decoration: underline;
-        display: block;
         background: @link-background;
+        color: @link-color;
+        display: block;
 
         &:hover {
             background: @font-color;
         }
+    }
+
+    li.current > a {
+        background: @font-color;
     }
     /*#endregion*/
     /*#region Show id and class names for key structural elements*/
@@ -91,10 +104,10 @@ div#layout-wrapper {
         &[id],
         &[class] {
             &:before {
-                content: "#"attr(id)"."attr(class);
-                padding: @element-spacing;
-                display: block;
                 color: @font-color;
+                content: "#"attr(id)"."attr(class);
+                display: block;
+                padding: @element-spacing;
             }
         }
     }
@@ -105,27 +118,27 @@ div#layout-wrapper {
 
         > [id],
         > [class] {
-            background: lighten(@topology-base, 20);
+            background: lighten(@topology-base, 15);
 
             > [id],
             > [class] {
-                background: lighten(@topology-base, 30);
+                background: lighten(@topology-base, 20);
 
                 > [id],
                 > [class] {
-                    background: lighten(@topology-base, 40);
+                    background: lighten(@topology-base, 25);
 
                     > [id],
                     > [class] {
-                        background: lighten(@topology-base, 50);
+                        background: lighten(@topology-base, 30);
 
                         > [id],
                         > [class] {
-                            background: lighten(@topology-base, 60);
+                            background: lighten(@topology-base, 35);
 
                             > [id],
                             > [class] {
-                                background: lighten(@topology-base, 70);
+                                background: lighten(@topology-base, 40);
                             }
                         }
                     }
@@ -139,8 +152,11 @@ div#layout-wrapper {
 
         .widget,
         .content-item {
+            border: 2px dashed red;
+            display: table;
             margin-bottom: @element-spacing;
-            border: thin dashed red;
+            padding: @element-spacing;
+            width: 100%;
         }
         /*#endregion*/
     }
