@@ -1,8 +1,8 @@
-Name: Bootstrap 3.1.1 - Base Theme
-Author: Shaun @ bigfont.ca
-Website: http://bootstrap-3-1-1-base-theme.azurewebsite.net
+Name: Bootstrap 3.1.1 - Base
+Author: Shaun Luttin, bigfont.ca
+Website: http://bootstrap-3-1-1-base.azurewebsite.net
 Description: The Bootstrap 3.1.1 - Base Theme leaves TheThemeMachine's markup unchanged while adding the Bootstrap responsive grid through LESS Mixins.
-Version: 1.0
+Version: 1.1
 BaseTheme: TheThemeMachine
 Zones: Header
-Tags: Bootstrap
+Tags: Bootstrap Base

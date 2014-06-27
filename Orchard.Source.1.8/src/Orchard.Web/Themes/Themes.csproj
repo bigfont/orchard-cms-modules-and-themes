@@ -61,8 +61,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\TheThemeMachine-Bootstrap-Scaffolding.css" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
     <Content Include="TheThemeMachineDesigner\Styles\Site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
@@ -75,14 +76,13 @@
     <Content Include="TheThemeMachineDesigner\Placement.info" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Theme.css" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Scripts\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Content\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Theme.txt" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Theme.png" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Placement.info" />
+    <Content Include="Bootstrap_3_1_1_Base\Web.config" />
+    <Content Include="Bootstrap_3_1_1_Base\Scripts\Web.config" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Web.config" />
+    <Content Include="Bootstrap_3_1_1_Base\Content\Web.config" />
+    <Content Include="Bootstrap_3_1_1_Base\Theme.txt" />
+    <Content Include="Bootstrap_3_1_1_Base\Theme.png" />
+    <Content Include="Bootstrap_3_1_1_Base\Placement.info" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.css" />
@@ -206,63 +206,61 @@
     <Content Include="TheAdmin\Views\ErrorPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\TheThemeMachine-Bootstrap-Scaffolding.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\alerts.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\badges.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\bootstrap.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\breadcrumbs.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\button-groups.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\buttons.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\carousel.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\close.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\code.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\component-animations.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\dropdowns.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\forms.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\glyphicons.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\grid.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\input-groups.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\jumbotron.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\labels.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\list-group.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\media.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\mixins.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\modals.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\navbar.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\navs.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\normalize.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\pager.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\pagination.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\panels.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\popovers.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\print.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\progress-bars.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\responsive-utilities.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\scaffolding.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\tables.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\theme.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\thumbnails.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\tooltip.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\type.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\utilities.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\variables.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Bootstrap\wells.less" />
-    <None Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Site.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Scaffolding.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\alerts.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\badges.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\bootstrap.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\breadcrumbs.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\button-groups.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\buttons.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\carousel.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\close.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\code.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\component-animations.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\dropdowns.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\forms.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\glyphicons.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\grid.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\input-groups.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\jumbotron.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\labels.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\list-group.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\media.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\mixins.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\modals.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\navbar.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\navs.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\normalize.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\pager.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\pagination.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\panels.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\popovers.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\print.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\progress-bars.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\responsive-utilities.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\scaffolding.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\tables.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\theme.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\thumbnails.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\tooltip.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\type.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\utilities.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\variables.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\wells.less" />
+    <None Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Theme.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\TheThemeMachine-Original.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Less\orchard\_TheThemeMachine-Original.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Less\site\_TheThemeMachine-Designer.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\TheThemeMachine-Designer.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Site.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />
+    <Content Include="Bootstrap_3_1_1_Base\Views\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />

@@ -1,0 +1,7 @@
+﻿Name: The Theme Machine Designer
+AntiForgery: enabled
+Author: Shaun Luttin, bigfont.ca
+Website: http://www.bigfont.ca
+Version: 1.0
+OrchardVersion: 1.8
+Description: Description for the module
