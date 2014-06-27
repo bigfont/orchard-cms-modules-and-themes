@@ -111,7 +111,7 @@
     menuitem create /MenuPosition:"23" /MenuText:"Quad-234" /Url:"~/Quad-234" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-1234" /Title:"Quad-1234" /Path:"Quad-1234" /Homepage:false /Publish:true /Text:"Welcome To Quad-1234"
-    menuitem create /MenuPosition:24" /MenuText:"Quad-1234" /Url:"~/Quad-1234" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"24" /MenuText:"Quad-1234" /Url:"~/Quad-1234" /MenuName:"Main Menu"
 
     <!--
     page create /Slug:"ReplaceMe" /Title:"ReplaceMe" /Path:"ReplaceMe" /Homepage:false /Publish:true /Text:"Welcome To ReplaceMe"
