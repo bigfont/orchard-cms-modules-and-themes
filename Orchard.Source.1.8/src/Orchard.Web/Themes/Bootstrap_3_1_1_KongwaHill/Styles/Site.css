@@ -2367,8 +2367,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(fonts/glyphicons-halflings-regular.eot);
-  src: url(fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(fonts/glyphicons-halflings-regular.woff) format('woff'), url(fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5772,6 +5772,22 @@ button.close {
     display: none !important;
   }
 }
+/*IE 10 see http://getbootstrap.com/getting-started/#support-ie10-width */
+@-webkit-viewport {
+  width: device-width;
+}
+@-moz-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
 /*
 Theme: Bootstrap 3.1.1 - KongwaHill
 Author: Shaun Luttin @ bigfont.ca
@@ -5795,7 +5811,7 @@ img {
 /*#region Structure
 ***************************************************************/
 html {
-  background-image: url(../../../Media/Default/cssimgs/homepage-background-section.JPG);
+  background-image: url("../../../../Media/Default/cssimgs/homepage-background-section.JPG");
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -5878,7 +5894,7 @@ div.zone-footer {
   position: relative;
 }
 div.zone-footer > .widget-sticky-footer {
-  background-image: url(../../../Media/Default/cssimgs/footer.PNG);
+  background-image: url("../../../../Media/Default/cssimgs/footer.PNG");
   background-origin: border-box;
   background-position: center bottom;
   background-repeat: no-repeat;

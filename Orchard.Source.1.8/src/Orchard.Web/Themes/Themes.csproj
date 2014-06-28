@@ -64,6 +64,11 @@
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Readme\Todo.txt" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Scripts\IE-10.js" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\Site.css" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Theme.png" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Theme.txt" />
     <Content Include="TheThemeMachineDesigner\Styles\Site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
@@ -97,6 +102,7 @@
     <Content Include="ThemeWithoutProject\Placement.info" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap_3_1_1_KongwaHill\ResourceManifest.txt" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -258,6 +264,59 @@
     <Content Include="TheThemeMachineDesigner\Styles\Less\orchard\_TheThemeMachine-Original.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Less\site\_TheThemeMachine-Designer.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Site.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Placement.info" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Scripts\Web.config" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bigfont\_apa-style.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bigfont\_ie-10.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bigfont\_print.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bigfont\_responsive-adwords.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\alerts.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\badges.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\bootstrap.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\breadcrumbs.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\button-groups.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\buttons.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\carousel.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\close.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\code.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\component-animations.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\dropdowns.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\forms.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\glyphicons.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\grid.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\input-groups.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\jumbotron.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\labels.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\list-group.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\media.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\mixins.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\modals.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\navbar.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\navs.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\normalize.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\pager.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\pagination.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\panels.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\popovers.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\print.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\progress-bars.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\responsive-utilities.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\scaffolding.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\tables.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\theme.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\thumbnails.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\tooltip.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\type.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\utilities.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\variables.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\wells.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\Site.less" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\Web.config" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Views\Layout.cshtml" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Views\Menu.cshtml" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Views\MenuItem.cshtml" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Views\MenuItemLink.cshtml" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_Base\Views\Layout.cshtml" />

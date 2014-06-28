@@ -15,16 +15,14 @@
     /* Global includes for the theme
     ***************************************************************/
 
+    Script.Require("jQuery");
     Script.Require("ShapesBase");
-    Script.Require("IE-10");
-    Script.Require("html5shiv").AtHead().UseCondition("lt ie 9");
-    Script.Require("respondJS").AtHead().UseCondition("lt ie 9");
-    Script.Require("Bootstrap");
+    Script.Include("IE-10.js");
+    Script.Include("//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js").AtHead().UseCondition("lt ie 9");
+    Script.Include("//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js").AtHead().UseCondition("lt ie 9");
+    Script.Include("//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js");
 
-    //Style.Require("Bootstrap");
-    Style.Require("FontAwesome");
-    Style.Require("Site");
-    Style.Require("IE-10");
+    Style.Include("Site.css");
 
     /* Some useful shortcuts or settings
     ***************************************************************/
