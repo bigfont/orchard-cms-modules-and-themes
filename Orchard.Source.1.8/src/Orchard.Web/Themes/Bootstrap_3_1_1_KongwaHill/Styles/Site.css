@@ -3970,7 +3970,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: #7b1905;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888888;
+  background-color: #ffffff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -5822,10 +5822,6 @@ body {
 /*#endregion*/
 /*#region Forms
 ***************************************************************/
-input,
-button {
-  color: black;
-}
 /*#endregion*/
 /*#region Misc
 ***************************************************************/
