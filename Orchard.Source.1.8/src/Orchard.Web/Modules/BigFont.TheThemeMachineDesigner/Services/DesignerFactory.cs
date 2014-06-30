@@ -1,4 +1,5 @@
 ﻿using Orchard;
+using Orchard.DisplayManagement.Descriptors;
 using Orchard.DisplayManagement.Implementation;
 using Orchard.DisplayManagement.Shapes;
 using Orchard.Environment.Extensions;
@@ -17,6 +18,9 @@ namespace BigFont.TheThemeMachineDesigner
     {
         private readonly WorkContext _workContext;
         private readonly IAuthorizer _authorizer;
+        private readonly IShapeTableManager _shapeTableManager;
+        private bool _processing;
+        private bool _done = false;
 
         private bool IsActivable()
         {
@@ -31,31 +35,39 @@ namespace BigFont.TheThemeMachineDesigner
             return true;
         }
 
-        public DesignerFactory(IWorkContextAccessor workContextAccessor, IAuthorizer authorizer)
+        public DesignerFactory(IWorkContextAccessor workContextAccessor, IAuthorizer authorizer, IShapeTableManager shapeTableManager)
         {
             _workContext = workContextAccessor.GetContext();
             _authorizer = authorizer;
+            _shapeTableManager = shapeTableManager;
         }
 
         public void Creating(ShapeCreatingContext context) { }
         public void Created(ShapeCreatedContext context)
         {
+            if (_done)
+            {
+                return;
+            }
+
             if (!IsActivable())
             {
                 return;
-            }            
-
-            if (context.ShapeType != "Layout"
-                && context.ShapeType != "DocumentZone"
-                && context.ShapeType != "PlaceChildContent"
-                && context.ShapeType != "ContentZone"
-                && context.ShapeType != "ShapeTracingMeta"
-                && context.ShapeType != "ShapeTracingTemplates"
-                && context.ShapeType != "DateTimeRelative")
-            {
-                var shapeMetadata = (ShapeMetadata)context.Shape.Metadata;
-                shapeMetadata.Wrappers.Add("ThemeMachineDesignerWrapper");
             }
+
+            // prevent reentrance as some methods could create new shapes, and trigger this event
+            if (_processing)
+            {
+                return;
+            }
+
+            _processing = true;
+
+            // wrap the first shape we come across, just so we can add JavaScript to the html document head
+            context.Shape.Metadata.Wrappers.Add("ThemeMachineDesignerWrapper");
+            _done = true;
+
+            _processing = false;
         }
         public void Displaying(ShapeDisplayingContext context) { }
         public void Displayed(ShapeDisplayedContext context) { }

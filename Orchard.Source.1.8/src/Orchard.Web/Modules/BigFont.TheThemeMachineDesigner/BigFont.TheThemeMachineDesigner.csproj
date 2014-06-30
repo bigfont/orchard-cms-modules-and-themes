@@ -67,7 +67,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\The-Theme-Machine-Designer.css" />
+    <Content Include="Scripts\CssLoader.js" />
+    <Content Include="Styles\module.css">
+      <DependentUpon>module.less</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -93,6 +96,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\ThemeMachineDesignerWrapper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\_TheThemeMachine-Designer.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\module.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
