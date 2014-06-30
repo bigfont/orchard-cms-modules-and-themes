@@ -70,6 +70,9 @@
     </Content>
     <Content Include="Bootstrap_3_1_1_KongwaHill\Readme\Todo.txt" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Scripts\IE-10.js" />
+    <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\variables.css">
+      <DependentUpon>variables.less</DependentUpon>
+    </Content>
     <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\Site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>

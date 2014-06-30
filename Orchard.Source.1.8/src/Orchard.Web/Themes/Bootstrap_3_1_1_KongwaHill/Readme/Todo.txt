@@ -10,10 +10,12 @@
 - Share modules (x2) in Orchard gallery.
 - Categorize the modules
 - Categories the themes.
+- Inherit the Bootstrap_3_1_1_Base theme once it is completed.
+- Use the bootstrap variables instead of overriding theme.
 
 # Nice to have
 
-- Footer with Emelda's image.
+- Footer with Emelda's image. Done.
 - humans.txt file.
 - Affix on on the AsideFirst.
 - Recipe to install the default modules.

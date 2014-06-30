@@ -87,11 +87,12 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DesignerFactory.cs" />
+    <Compile Include="Services\DesignerFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ThemeMachineDesignerWrapper.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
