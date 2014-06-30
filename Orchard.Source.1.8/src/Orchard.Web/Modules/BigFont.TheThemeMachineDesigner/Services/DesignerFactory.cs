@@ -43,7 +43,21 @@ namespace BigFont.TheThemeMachineDesigner
         }
 
         public void Creating(ShapeCreatingContext context) { }
+
         public void Created(ShapeCreatedContext context)
+        {
+            WrapFirstShape(context);
+        }
+        public void Displaying(ShapeDisplayingContext context) { }
+        public void Displayed(ShapeDisplayedContext context) { }
+
+        /// <summary>
+        /// Wrap the first shape we come across so the wrapper can add JavaScript to the document head.
+        /// </summary>
+        /// <remarks>
+        /// The shape that we wrap tends to be the Page ContentItem
+        /// </remarks>
+        public void WrapFirstShape(ShapeCreatedContext context)
         {
             if (_done)
             {
@@ -69,7 +83,5 @@ namespace BigFont.TheThemeMachineDesigner
 
             _processing = false;
         }
-        public void Displaying(ShapeDisplayingContext context) { }
-        public void Displayed(ShapeDisplayedContext context) { }
     }
 }
