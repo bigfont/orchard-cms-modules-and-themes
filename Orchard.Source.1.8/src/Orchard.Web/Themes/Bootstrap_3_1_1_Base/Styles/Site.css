@@ -694,8 +694,23 @@
 }
 /*rows*/
 #layout-wrapper > .group,
-[id$="-container"] > .group,
-#footer > .group {
+[id$="-container"] > .group {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+#layout-footer.group > #footer {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-footer.group > #footer {
+    float: left;
+    width: 100%;
+  }
+}
+#layout-footer.group > #footer .group {
   margin-left: -15px;
   margin-right: -15px;
 }

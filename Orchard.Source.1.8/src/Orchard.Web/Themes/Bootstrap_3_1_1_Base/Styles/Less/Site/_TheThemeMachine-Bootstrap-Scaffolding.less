@@ -16,9 +16,18 @@
 
 /*rows*/
 #layout-wrapper,
-[id$="-container"],
-#footer {
+[id$="-container"]
+{
     > .group {
+        .make-row();
+    }
+}
+
+#layout-footer.group > #footer
+{    
+    .make-md-column(12); // because the #layout-footer is a row
+    .group
+    {
         .make-row();
     }
 }
