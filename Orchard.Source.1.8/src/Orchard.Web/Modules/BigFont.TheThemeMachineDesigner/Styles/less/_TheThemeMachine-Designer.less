@@ -3,11 +3,43 @@ Theme: The Theme Machine Designer
 Author: shaun @ bigfont.ca
 */
 
-@topology-base: black;
-@element-spacing: 10px;
-@font-color: yellow;
+/*topo*/
+@topography-base-color: black;
+@topography-increment: 20;
+/*links*/
 @link-color: blue;
 @link-background: white;
+/*highlights*/
+@zone-color: aqua;
+@widget-border-color:red;
+/*misc*/
+@element-spacing: 10px;
+@dark-font: black;
+
+/*mixins*/
+.topography(@level) {
+    @background-color: lighten(@topography-base-color, @topography-increment * @level);
+    @foreground-color: contrast(@background-color);
+
+    &,
+    &:before {
+        background-color: @background-color;
+        color: @foreground-color;
+    }
+
+    &.zone,
+    &.zone:before {
+        background-color: @zone-color;
+        color: contrast(@zone-color);
+    }
+
+    &.widget,
+    &.content-item,
+    &.widget:before,
+    &.content-item:before {
+        background-color: transparent;
+    }
+}
 
 div,
 article,
@@ -34,8 +66,7 @@ aside {
 }
 
 body {
-    // part of the topology
-    background: lighten(@topology-base, 0);
+    .topography(0);
 }
 
 div#layout-wrapper {
@@ -56,17 +87,13 @@ div#layout-wrapper {
         display: none;
     }
     /*#endregion*/
-    /*#region Display relevant elements */
-    h1#branding {
-        display: block;
-    }
-
+    /*#region Display specific relevant elements */
     ul.menu.menu-main-menu {
         display: block;
     }
 
-    div.user-display span.user-actions:nth-child(2) {
-        color: @font-color;
+    div.user-display span.user-actions {
+        color: @dark-font;
 
         &, a {
             display: inline-block;
@@ -77,22 +104,16 @@ div#layout-wrapper {
     }
 
     a,
-    li > a,
-    h1 > a {
+    li > a {
         background: @link-background;
         color: @link-color;
         display: block;
-
-        &:hover {
-            background: @font-color;
-        }
     }
 
     li.current > a {
-        background: @font-color;
+        background: darken(@link-background, 30);
     }
     /*#endregion*/
-    /*#region Show id and class names for key structural elements*/
     &,
     div,
     article,
@@ -100,68 +121,47 @@ div#layout-wrapper {
     aside,
     footer {
         display: block;
-
+        /*#region Show id and class names for key structural elements*/
         &[id],
         &[class] {
             &:before {
-                color: @font-color;
                 content: "#"attr(id)"."attr(class);
                 display: block;
                 padding: @element-spacing;
             }
         }
-    }
-
-    &[id]:before {
-        text-decoration:underline;
-    }
-    /*#endregion*/
-    /*#region Show topography */
-    & {
-        background: lighten(@topology-base, 10);
-
-        > [id],
-        > [class] {
-            background: lighten(@topology-base, 15);
+        /*#endregion*/
+        /*#region Show topography, excluding zones and widgets */
+        & {
+            .topography(1);
 
             > [id],
             > [class] {
-                background: lighten(@topology-base, 20);
+                .topography(2);
 
                 > [id],
                 > [class] {
-                    background: lighten(@topology-base, 25);
+                    .topography(3);
 
                     > [id],
                     > [class] {
-                        background: lighten(@topology-base, 30);
-
-                        > [id],
-                        > [class] {
-                            background: lighten(@topology-base, 35);
-
-                            > [id],
-                            > [class] {
-                                background: lighten(@topology-base, 40);
-                            }
-                        }
+                        .topography(4);
                     }
                 }
             }
         }
-    }
-
-    .zone {
-        margin-bottom: @element-spacing;
-
-        .widget,
-        .content-item {
-            border: 2px dashed red;
-            display: table;
-            margin-bottom: @element-spacing;
-            padding: @element-spacing;
-            width: 100%;
-        }
         /*#endregion*/
+        .zone {
+            margin-bottom: @element-spacing;
+
+            .widget,
+            .content-item {
+                border: 2px dashed @widget-border-color;
+                display: table;
+                margin-bottom: @element-spacing;
+                padding: @element-spacing;
+                width: 100%;
+            }
+        }
     }
 }
