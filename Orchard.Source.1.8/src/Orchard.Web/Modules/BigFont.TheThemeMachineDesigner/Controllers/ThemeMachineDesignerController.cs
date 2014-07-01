@@ -42,7 +42,7 @@ namespace BigFont.TheThemeMachineDesigner.Controllers
         [HttpPost]
         public ActionResult Activate(string themeId, string returnUrl)
         {
-            //todo - add code contract
+            //todo - add code contracts
 
             _themeService.EnableThemeFeatures(themeId);
             _siteThemeService.SetSiteTheme(themeId);

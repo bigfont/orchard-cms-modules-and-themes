@@ -1668,13 +1668,16 @@ div#layout-wrapper footer .zone .content-item {
 }
 #theme-select {
   position: absolute;
-  top: 0;
+  top: 100px;
   left: 0;
+  border: 2px dashed red;
+  padding: 5px;
 }
 #theme-select span,
 #theme-select input,
 #theme-select button {
   display: block;
+  margin: 5px;
 }
 #theme-select button,
 #theme-select select {

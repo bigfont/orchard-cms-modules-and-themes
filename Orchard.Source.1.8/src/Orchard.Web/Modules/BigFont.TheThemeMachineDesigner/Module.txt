@@ -2,11 +2,11 @@
 AntiForgery: enabled
 Author: Shaun Luttin, bigfont.ca
 Website: http://www.bigfont.ca
-Version: 1.5
+Version: 1.6
 OrchardVersion: 1.8
 Dependencies: Orchard.jQuery
 Category: Designer
-Description: View the nuts & bolts of The Theme Machine's Layout.cshtml file. Ease the development of your theme's structure. Note: This module only works on The Theme Machine, or themes based on it, if you have not 'significantly' altered the markup of its Layout.cshtml file.
+Description: (Pre-Alpha) View the nuts & bolts of The Theme Machine's Layout.cshtml file. Ease the development of theme structure. Note: This module only works on The Theme Machine, or themes based on it, if the Layout.cshtml file is not 'significantly' altered. Warning: Do NOT enable this module on a live site, unless you know what you're doing.
 
 
 # package create BigFont.TheThemeMachineDesigner C:/temp
