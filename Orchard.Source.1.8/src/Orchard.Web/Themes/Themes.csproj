@@ -68,6 +68,9 @@
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css">
       <DependentUpon>Site.less</DependentUpon>
     </Content>
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.css">
+      <DependentUpon>Theme.less</DependentUpon>
+    </Content>
     <Content Include="Bootstrap_3_1_1_KongwaHill\Readme\Todo.txt" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Scripts\IE-10.js" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\variables.css">
@@ -375,9 +378,7 @@
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
