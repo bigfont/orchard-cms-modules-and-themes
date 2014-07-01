@@ -28,10 +28,6 @@ namespace BigFont.TheThemeMachineDesigner
             if (AdminFilter.IsApplied(new RequestContext(_workContext.HttpContext, new RouteData())))
                 return false;
 
-            // if not logged as a site owner, still activate if it's a local request (development machine)
-            if (!_authorizer.Authorize(StandardPermissions.SiteOwner))
-                return _workContext.HttpContext.Request.IsLocal;
-
             return true;
         }
 
