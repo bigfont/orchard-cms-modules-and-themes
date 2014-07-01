@@ -1,0 +1,7 @@
+Name: The Theme Machine Designer
+Author: Shaun Luttin, bigfont.ca
+Website: http://orchard-theme-machine-designer.azurewebsites.net
+Description: A learning theme to help people understand and extend The Theme Machine. It hides all content except for layout elements, shows the layout elements' ids and classes, and indicates layout topology. Use it as a reference when extending The Theme Machine. 
+Version: 1.7
+BaseTheme:TheThemeMachine
+Tags: Developer Designer Learning

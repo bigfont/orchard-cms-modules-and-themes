@@ -1,0 +1,167 @@
+﻿/*
+Theme: The Theme Machine Designer
+Author: shaun @ bigfont.ca
+*/
+
+/*topo*/
+@topography-base-color: black;
+@topography-increment: 20;
+/*links*/
+@link-color: blue;
+@link-background: white;
+/*highlights*/
+@zone-color: aqua;
+@widget-border-color:red;
+/*misc*/
+@element-spacing: 10px;
+@dark-font: black;
+
+/*mixins*/
+.topography(@level) {
+    @background-color: lighten(@topography-base-color, @topography-increment * @level);
+    @foreground-color: contrast(@background-color);
+
+    &,
+    &:before {
+        background-color: @background-color;
+        color: @foreground-color;
+    }
+
+    &.zone,
+    &.zone:before {
+        background-color: @zone-color;
+        color: contrast(@zone-color);
+    }
+
+    &.widget,
+    &.content-item,
+    &.widget:before,
+    &.content-item:before {
+        background-color: transparent;
+    }
+}
+
+div,
+article,
+header,
+footer,
+aside {
+
+    &,
+    [id*="layout-"],
+    .zone,
+    #layout-navigation {
+        // box sizing
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        // vertical reset
+        border-bottom: none;
+        border-top: none;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}
+
+body {
+    .topography(0);
+}
+
+div#layout-wrapper {
+    /*#region Hide irrelevant elements*/
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    span,
+    .metadata,
+    .copyright,
+    .poweredby,
+    .credits {
+        display: none;
+    }
+    /*#endregion*/
+    /*#region Display specific relevant elements */
+    ul.menu.menu-main-menu {
+        display: block;
+    }
+
+    div.user-display span.user-actions {
+        color: @dark-font;
+
+        &, a {
+            display: inline-block;
+            line-height: 24px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    a,
+    li > a {
+        background: @link-background;
+        color: @link-color;
+        display: block;
+    }
+
+    li.current > a {
+        background: darken(@link-background, 30);
+    }
+    /*#endregion*/
+    &,
+    div,
+    article,
+    header,
+    aside,
+    footer {
+        display: block;
+        /*#region Show id and class names for key structural elements*/
+        &[id],
+        &[class] {
+            &:before {
+                content: "#"attr(id)"."attr(class);
+                display: block;
+                padding: @element-spacing;
+            }
+        }
+        /*#endregion*/
+        /*#region Show topography, excluding zones and widgets */
+        & {
+            .topography(1);
+
+            > [id],
+            > [class] {
+                .topography(2);
+
+                > [id],
+                > [class] {
+                    .topography(3);
+
+                    > [id],
+                    > [class] {
+                        .topography(4);
+                    }
+                }
+            }
+        }
+        /*#endregion*/
+        .zone {
+            margin-bottom: @element-spacing;
+
+            .widget,
+            .content-item {
+                border: 2px dashed @widget-border-color;
+                display: table;
+                margin-bottom: @element-spacing;
+                padding: @element-spacing;
+                width: 100%;
+            }
+        }
+    }
+}
