@@ -1,6 +1,10 @@
-﻿@{
+﻿@* 
+    The purpose of this wrapper is simply to add JavaScript to the document HEAD.
+*@
+
+@{
     Script.Require("jQueryUI").AtHead();
     Script.Include("CssLoader.js").AtHead();
 }
 
-    @Display(Model.Metadata.ChildContent)
+@Display(Model.Metadata.ChildContent)
