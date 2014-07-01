@@ -351,6 +351,7 @@
     <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
     <Folder Include="TheThemeMachineDesigner\Views\" />
   </ItemGroup>
+  <ItemGroup>
     <Content Include="BigFont.GardenFaire\Content\Web.config" />
     <Content Include="BigFont.GardenFaire\Placement.info" />
     <Content Include="BigFont.GardenFaire\Scripts\Web.config" />
