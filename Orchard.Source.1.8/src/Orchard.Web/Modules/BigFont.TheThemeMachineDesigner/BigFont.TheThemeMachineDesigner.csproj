@@ -70,6 +70,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Module-Todo.txt" />
     <Content Include="Scripts\CssLoader.js" />
     <Content Include="Styles\module.css">
       <DependentUpon>module.less</DependentUpon>

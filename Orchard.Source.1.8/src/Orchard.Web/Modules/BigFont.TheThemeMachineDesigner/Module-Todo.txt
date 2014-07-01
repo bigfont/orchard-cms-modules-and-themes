@@ -1,0 +1,10 @@
+﻿# Must Have
+
+- Change theme activation to theme previewing, because activation will break if multiple people use it at once, and preview appears to be session specific.
+
+# Should Have
+
+- Position the Current Theme selector more subtly, because it currently blocks a lot of the UI.
+
+# Nice to Have
+

@@ -8,6 +8,7 @@ using Orchard.Mvc.Filters;
 using Orchard.Environment.Features;
 using Orchard.Environment.Extensions.Models;
 using Orchard.DisplayManagement;
+using Orchard.Themes;
 using Orchard.Themes.Services;
 using Orchard.Themes.Models;
 
@@ -18,23 +19,31 @@ namespace BigFont.TheThemeMachineDesigner.Filters
         private readonly IFeatureManager _featureManager;
         private readonly IWorkContextAccessor _workContextAccessor;
         private readonly dynamic _shapeFactory;
-        private ISiteThemeService _siteThemeService;
-
+        private readonly ISiteThemeService _siteThemeService;
+        private readonly IOrchardServices _services;
 
         public SelectThemeFilter(
-            IFeatureManager featureManager, 
-            IWorkContextAccessor workContextAccessor, 
-            IShapeFactory shapeFactory, 
-            ISiteThemeService siteThemeService)
+            IFeatureManager featureManager,
+            IWorkContextAccessor workContextAccessor,
+            IShapeFactory shapeFactory,
+            ISiteThemeService siteThemeService,
+            IOrchardServices services)
         {
             _featureManager = featureManager;
             _workContextAccessor = workContextAccessor;
             _shapeFactory = shapeFactory;
             _siteThemeService = siteThemeService;
+            _services = services;
         }
 
         public void OnResultExecuting(ResultExecutingContext filterContext)
         {
+            // only let authorized users apply themes
+            if (!_services.Authorizer.Authorize(Permissions.ApplyTheme))
+            {
+                return;
+            }
+
             var currentTheme = GetCurrentThemeEntry();
 
             var installedThemes = _featureManager.GetEnabledFeatures()
