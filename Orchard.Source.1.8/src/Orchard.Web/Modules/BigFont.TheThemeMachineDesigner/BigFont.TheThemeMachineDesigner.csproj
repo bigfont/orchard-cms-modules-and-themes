@@ -92,6 +92,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Filters\SelectThemeFilter.cs" />
     <Compile Include="Services\DesignerFactory.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\module.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ThemeSelect.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

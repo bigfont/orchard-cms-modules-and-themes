@@ -5,13 +5,13 @@ Author: shaun @ bigfont.ca
 
 /*topo*/
 @topography-base-color: black;
-@topography-increment: 20;
+@topography-increment: 15;
 /*links*/
 @link-color: blue;
 @link-background: white;
 /*highlights*/
 @zone-color: aqua;
-@widget-border-color:red;
+@widget-border-color: red;
 /*misc*/
 @element-spacing: 10px;
 @dark-font: black;
@@ -28,16 +28,13 @@ Author: shaun @ bigfont.ca
     }
 
     &.zone,
-    &.zone:before {
+    &.zone:before,
+    &.widget,
+    &.widget:before,
+    &.content-item,
+    &.content-item:before {
         background-color: @zone-color;
         color: contrast(@zone-color);
-    }
-
-    &.widget,
-    &.content-item,
-    &.widget:before,
-    &.content-item:before {
-        background-color: transparent;
     }
 }
 
@@ -131,7 +128,7 @@ div#layout-wrapper {
             }
         }
         /*#endregion*/
-        /*#region Show topography, excluding zones and widgets */
+        /*#region Show topography */
         & {
             .topography(1);
 
@@ -146,6 +143,11 @@ div#layout-wrapper {
                     > [id],
                     > [class] {
                         .topography(4);
+
+                        > [id],
+                        > [class] {
+                            .topography(5);
+                        }
                     }
                 }
             }
