@@ -46,8 +46,7 @@ namespace BigFont.TheThemeMachineDesigner.Filters
                 .Select(theme => new SelectListItem
                 {
                     Text = theme.Name,
-                    Value = theme.Id,
-                    Selected = theme.Name == currentTheme.Name
+                    Value = theme.Id
                 })
                 .ToList();
 
