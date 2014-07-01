@@ -1666,3 +1666,17 @@ div#layout-wrapper footer .zone .content-item {
   padding: 10px;
   width: 100%;
 }
+#theme-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#theme-select span,
+#theme-select input,
+#theme-select button {
+  display: block;
+}
+#theme-select button,
+#theme-select select {
+  color: black;
+}
