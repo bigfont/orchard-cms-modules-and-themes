@@ -1,0 +1,19 @@
+﻿@{
+    var themes = (IEnumerable<SelectListItem>)Model.Themes;
+    var currentTheme = Model.CurrentTheme;
+}
+<div id="theme-select">
+    @using (Html.BeginFormAntiForgeryPost(
+        Url.Action("Trace", new { Controller = "Home", Area = "BigFont.TheThemeMachineDesigner" }),
+        FormMethod.Post))
+    {
+        <fieldset>
+            <span>@T("Currently Tracing: ")</span>
+            @Html.DropDownList("ThemeId", themes)
+            @Html.Hidden("ReturnUrl", Context.Request.RawUrl)
+            <button type="submit">
+                @T("Trace this theme")
+            </button>
+        </fieldset>
+    }
+</div>

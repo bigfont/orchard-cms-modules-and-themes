@@ -93,27 +93,29 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="Views\ThemeMachineDesigner\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ThemeMachineDesignerController.cs" />
-    <Compile Include="Filters\SelectThemeFilter.cs" />
-    <Compile Include="Services\DesignerFactory.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\TraceThemeFilter.cs" />
+    <Compile Include="Services\TraceTheme.cs" />
+    <Compile Include="Services\TraceThemeSelector.cs" />
+    <Compile Include="Services\ITraceTheme.cs" />
+    <Compile Include="Services\TraceThemeFactory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\ThemeMachineDesignerWrapper.cshtml" />
+    <Content Include="Views\TraceThemeWrapper.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\_TheThemeMachine-Designer.less" />
+    <Content Include="Styles\less\_TraceTheme.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\module.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\ThemeSelect.cshtml" />
+    <Content Include="Styles\less\_TraceThemeControls.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\_ThemeSelect.less" />
+    <Content Include="Views\TraceThemeControls.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

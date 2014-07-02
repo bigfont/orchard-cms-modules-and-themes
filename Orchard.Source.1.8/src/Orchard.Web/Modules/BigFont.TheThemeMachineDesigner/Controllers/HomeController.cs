@@ -13,6 +13,7 @@ using Orchard.Environment.Extensions.Models;
 using Orchard.Environment.Configuration;
 using Orchard.Mvc;
 using Orchard.Mvc.Extensions;
+using BigFont.TheThemeMachineDesigner.Services;
 
 namespace BigFont.TheThemeMachineDesigner.Controllers
 {
@@ -23,6 +24,7 @@ namespace BigFont.TheThemeMachineDesigner.Controllers
         private readonly IExtensionManager _extensionManager;
         private readonly ISiteThemeService _siteThemeService;
         private readonly Localizer T = NullLocalizer.Instance;
+        private readonly ITraceTheme _traceTheme;
         private readonly ShellSettings _shellSettings;
 
         public HomeController(
@@ -30,22 +32,34 @@ namespace BigFont.TheThemeMachineDesigner.Controllers
             IExtensionManager extensionManager,
             IThemeService themeService,
             ISiteThemeService siteThemeService,
+            ITraceTheme traceTheme,
             ShellSettings shellSettings)
         {
             _services = services;
             _themeService = themeService;
             _extensionManager = extensionManager;
             _siteThemeService = siteThemeService;
+            _traceTheme = traceTheme;
             _shellSettings = shellSettings;
         }
 
         [HttpPost]
-        public ActionResult Activate(string themeId, string returnUrl)
+        public ActionResult Apply(string themeId, string returnUrl)
         {
             //todo - add code contracts
 
             _themeService.EnableThemeFeatures(themeId);
             _siteThemeService.SetSiteTheme(themeId);
+            return this.RedirectLocal(returnUrl);
+        }
+
+        [HttpPost]
+        public ActionResult Trace(string themeId, string returnUrl)
+        {
+            //todo - add code contracts
+
+            _themeService.EnableThemeFeatures(themeId);
+            _traceTheme.SetTraceTheme(themeId);
             return this.RedirectLocal(returnUrl);
         }
     }

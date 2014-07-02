@@ -74,7 +74,7 @@ namespace BigFont.TheThemeMachineDesigner
             _processing = true;
 
             // wrap the first shape we come across, just so we can add JavaScript to the html document head
-            context.Shape.Metadata.Wrappers.Add("ThemeMachineDesignerWrapper");
+            context.Shape.Metadata.Wrappers.Add("TraceThemeWrapper");
             _done = true;
 
             _processing = false;
