@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme: The Theme Machine Designer
 Author: shaun @ bigfont.ca
 */
@@ -1666,23 +1666,26 @@ div#layout-wrapper footer .zone .content-item {
   padding: 10px;
   width: 100%;
 }
-#theme-select {
-  position: absolute;
+html {
+  margin-top: 30px;
+}
+#theme-designer-control-bar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
   top: 0;
-  right: 0;
-  border: 2px dashed red;
-  padding: 5px;
-  z-index: 999999;
-  background: black;
-  width: 200px;
+  position: fixed;
+  left: 0;
+  height: 30px;
+  color: #000000;
+  border-bottom: 1px solid #717171;
+  background: #f0f0f0;
+  padding: 1px 0;
 }
-#theme-select span,
-#theme-select input,
-#theme-select button {
-  display: block;
-  margin: 5px;
+#theme-designer-control-bar label,
+#theme-designer-control-bar input,
+#theme-designer-control-bar button {
+  margin: 0 5px;
 }
-#theme-select button,
-#theme-select select {
-  color: black;
-}
+/*# sourceMappingURL=module.css.map */

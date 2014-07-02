@@ -1,19 +1,28 @@
-﻿#theme-select {
-    position: absolute;
+﻿
+@control-bar-height: 30px;
+@control-bar-background:#F0F0F0;
+@control-bar-font-color:black;
+
+html
+{
+    margin-top:@control-bar-height;
+}
+
+#theme-designer-control-bar {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
     top: 0;
-    right: 0;
-    border: 2px dashed red;
-    padding: 5px;
-    z-index: 999999;
-    background: black;
-    width: 200px;
+    position: fixed;
+    left: 0;
+    height: @control-bar-height;
+    color: @control-bar-font-color;
+    border-bottom: 1px solid darken(@control-bar-background, 50);
+    background: @control-bar-background;
+    padding:1px 0;
 
-    span, input, button {
-        display: block;
-        margin: 5px;
-    }
-
-    button, select {
-        color: black;
+    label, input, button {
+        margin: 0 5px;
     }
 }

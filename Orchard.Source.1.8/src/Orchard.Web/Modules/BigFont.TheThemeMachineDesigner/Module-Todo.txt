@@ -1,10 +1,11 @@
 ﻿# Must Have
 
-- Change theme activation to theme previewing, because activation will break if multiple people use it at once, and preview appears to be session specific.
+- Change theme activation to theme tracing, because the latter is session not application in scope.
 
 # Should Have
 
 - Position the Current Theme selector more subtly, because it currently blocks a lot of the UI.
+- Add a way to toggle tracing.
 
 # Nice to Have
 
