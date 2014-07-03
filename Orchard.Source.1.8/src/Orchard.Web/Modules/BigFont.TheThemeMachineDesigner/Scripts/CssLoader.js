@@ -1,19 +1,26 @@
-﻿(function () {
+﻿/*global $: false*/
+
+(function () {
 
     "use strict";
 
-    function AddTracing() {
+    function addTracing() {
 
-        function AddControls(id) {
-            var text = id.replace('trace-', '');
-            var label = $('<label/>', { for: id, text: text });
-            var input = $('<input/>', { id: id, type: 'checkbox' });
+        function addControls(id) {
+
+            var text,
+                label,
+                input;
+
+            text = id.replace('trace-', '');
+            label = $('<label/>', { for: id, text: text });
+            input = $('<input/>', { id: id, type: 'checkbox' });
             $("#theme-designer-control-bar > form")
                 .append(input)
                 .append(label);
         }
 
-        function AddEvents(id) {
+        function addEvents(id) {
             $("#" + id).change(function () {
                 if (this.checked) {
                     $("body").addClass(id);
@@ -30,19 +37,21 @@
                 "trace-topography",
                 "trace-class-and-id"];
 
+        /*jslint unparam: true*/
         $.each(trace, function (index, value) {
 
-            AddControls(value);
-            AddEvents(value);
+            addControls(value);
+            addEvents(value);
 
         });
+        /*jslint unparam: false*/
 
     }
 
     $(function () {
 
-        AddTracing();
+        addTracing();
 
     });
 
-}(location));
+}());
