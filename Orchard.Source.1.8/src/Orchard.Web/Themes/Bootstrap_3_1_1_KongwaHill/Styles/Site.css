@@ -5807,7 +5807,7 @@ img {
   height: auto;
   /*prevent height attributes from working*/
 }
-/*#endregion*/
+/*# sourceMappingURL=Site.css.map */
 /*#region Structure
 ***************************************************************/
 html {
@@ -5819,17 +5819,17 @@ body {
   margin-top: 20px;
   background-color: transparent;
 }
-/*#endregion*/
+/*# sourceMappingURL=Site.css.map */
 /*#region Forms
 ***************************************************************/
-/*#endregion*/
+/*# sourceMappingURL=Site.css.map */
 /*#region Misc
 ***************************************************************/
 div.zone > article > p > img {
   box-shadow: 0 0 5px 5px #A1A2B9;
   margin: 25px auto;
 }
-/*#endregion*/
+/*# sourceMappingURL=Site.css.map */
 /*#region Zone Featured
 ***************************************************************/
 div.zone-featured > article.widget-featured {
@@ -5862,7 +5862,7 @@ div.zone-featured > article.widget-featured > h2 {
   font-size: 16px;
   line-height: 16px;
 }
-/*#endregion*/
+/*# sourceMappingURL=Site.css.map */
 /*#region Carousel
 ***************************************************************/
 #myCarousel {
@@ -5883,7 +5883,7 @@ div.zone-featured > article.widget-featured > h2 {
 #myCarousel a.carousel-control {
   font-size: 90px;
 }
-/*#endregion*/
+/*# sourceMappingURL=Site.css.map */
 /*#region Footer 
 ***************************************************************/
 div.zone-footer {
@@ -5904,4 +5904,5 @@ div.zone-footer > .user-display {
   text-align: right;
   padding-right: 8px;
 }
-/*#endregion*/
+/*# sourceMappingURL=Site.css.map */
+/*# sourceMappingURL=Site.css.map */

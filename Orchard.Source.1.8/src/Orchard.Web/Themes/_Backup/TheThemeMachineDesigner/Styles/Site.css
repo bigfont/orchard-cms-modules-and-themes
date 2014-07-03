@@ -1076,13 +1076,13 @@ body {
   background: #000000;
 }
 div#layout-wrapper {
-  /*#region Hide irrelevant elements*/
-  /*#endregion*/
-  /*#region Display relevant elements */
-  /*#endregion*/
-  /*#region Show id and class names for key structural elements*/
-  /*#endregion*/
-  /*#region Show topography */
+  /*# sourceMappingURL=Site.css.map */
+  /*# sourceMappingURL=Site.css.map */
+  /*# sourceMappingURL=Site.css.map */
+  /*# sourceMappingURL=Site.css.map */
+  /*# sourceMappingURL=Site.css.map */
+  /*# sourceMappingURL=Site.css.map */
+  /*# sourceMappingURL=Site.css.map */
   background: #1a1a1a;
 }
 div#layout-wrapper p,
@@ -1299,7 +1299,7 @@ div#layout-wrapper > [class] > [class] > [class] > [class] > [class] > [class] {
 }
 div#layout-wrapper .zone {
   margin-bottom: 10px;
-  /*#endregion*/
+  /*# sourceMappingURL=Site.css.map */
 }
 div#layout-wrapper .zone .widget,
 div#layout-wrapper .zone .content-item {
@@ -1309,3 +1309,4 @@ div#layout-wrapper .zone .content-item {
   padding: 10px;
   width: 100%;
 }
+/*# sourceMappingURL=Site.css.map */

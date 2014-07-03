@@ -29,6 +29,7 @@ Author: shaun @ bigfont.ca
 
 body.trace-class-and-id {
 
+    #layout-wrapper:before,
     .zone:before,
     .widget:before,
     .content-item:before {
@@ -36,6 +37,12 @@ body.trace-class-and-id {
         font-size: @annotation-font-size !important;
         line-height: @annotation-font-size;
         background-color: @annotation-background-color;
+    }
+
+    #layout-wrapper:before {
+        position: absolute;
+        top: 50px;
+        right: 50px;
     }
 
     .zone:before {

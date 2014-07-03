@@ -5,6 +5,7 @@ Author: shaun @ bigfont.ca
 /*topo*/
 /*links*/
 /*mixins*/
+body.trace-class-and-id #layout-wrapper:before,
 body.trace-class-and-id .zone:before,
 body.trace-class-and-id .widget:before,
 body.trace-class-and-id .content-item:before {
@@ -12,6 +13,11 @@ body.trace-class-and-id .content-item:before {
   font-size: 1em !important;
   line-height: 1em;
   background-color: #ffffff;
+}
+body.trace-class-and-id #layout-wrapper:before {
+  position: absolute;
+  top: 50px;
+  right: 50px;
 }
 body.trace-class-and-id .zone:before {
   color: #ff0000;

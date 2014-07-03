@@ -18,16 +18,31 @@
             $("#theme-designer-control-bar > form")
                 .append(input)
                 .append(label);
+
+
         }
 
         function addEvents(id) {
             $("#" + id).change(function () {
                 if (this.checked) {
-                    $("body").addClass(id);
+                    $("body").addClass(id);                    
                 } else {
                     $("body").removeClass(id);
                 }
+
+                // persist
+                localStorage.setItem(id, this.checked);
             });
+        }
+
+        function loadPersisted(id)
+        {
+            // persist
+            if (localStorage.getItem(id) === "true") {
+                $("#" + id)
+                    .prop("checked", true)
+                    .change();
+            }
         }
 
         var trace = [
@@ -42,6 +57,7 @@
 
             addControls(value);
             addEvents(value);
+            loadPersisted(value);
 
         });
         /*jslint unparam: false*/

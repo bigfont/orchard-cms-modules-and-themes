@@ -54,10 +54,10 @@ body.content-item:before {
   background-color: transparent;
 }
 div#layout-wrapper {
-  /*#region Hide irrelevant elements*/
-  /*#endregion*/
-  /*#region Display specific relevant elements */
-  /*#endregion*/
+  /*# sourceMappingURL=module.css.map */
+  /*# sourceMappingURL=module.css.map */
+  /*# sourceMappingURL=module.css.map */
+  /*# sourceMappingURL=module.css.map */
 }
 div#layout-wrapper p,
 div#layout-wrapper h1,
@@ -103,10 +103,10 @@ div#layout-wrapper header,
 div#layout-wrapper aside,
 div#layout-wrapper footer {
   display: block;
-  /*#region Show id and class names for key structural elements*/
-  /*#endregion*/
-  /*#region Show topography, excluding zones and widgets */
-  /*#endregion*/
+  /*# sourceMappingURL=module.css.map */
+  /*# sourceMappingURL=module.css.map */
+  /*# sourceMappingURL=module.css.map */
+  /*# sourceMappingURL=module.css.map */
 }
 div#layout-wrapper[id]:before,
 div#layout-wrapper div[id]:before,
@@ -902,3 +902,4 @@ div#layout-wrapper footer .zone .content-item {
   padding: 10px;
   width: 100%;
 }
+/*# sourceMappingURL=module.css.map */

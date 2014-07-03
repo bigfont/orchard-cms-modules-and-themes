@@ -5848,7 +5848,7 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
   margin-left: -15px;
   margin-right: -15px;
 }
-/*columns*/
+/*default columns*/
 #layout-wrapper > .group > div,
 .zone-footer {
   position: relative;
@@ -5863,61 +5863,71 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
     width: 100%;
   }
 }
-[id^="aside"],
+/*[id^="aside"],
 #footer-quad > div {
+    .make-md-column(3);
+}
+
+#layout-content {
+    .make-md-column(6);
+}
+
+#layout-tripel > div {
+    .make-md-column(4);
+}
+
+#layout-main-container {
+    .clearfix;
+}*/
+/*switch: layout-main*/
+#layout-wrapper.aside-12 .zone-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  [id^="aside"],
-  #footer-quad > div {
+  #layout-wrapper.aside-12 .zone-content {
+    float: left;
+    width: 75%;
+  }
+}
+#layout-wrapper.aside-12 [id^="aside"] {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-wrapper.aside-12 [id^="aside"] {
     float: left;
     width: 25%;
   }
 }
-#layout-content {
+#layout-wrapper.aside-1 .zone-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-content {
+  #layout-wrapper.aside-1 .zone-content {
     float: left;
-    width: 50%;
+    width: 75%;
   }
 }
-#layout-tripel > div {
+#layout-wrapper.aside-1 .zone-aside-first {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-tripel > div {
+  #layout-wrapper.aside-1 .zone-aside-first {
     float: left;
-    width: 33.33333333%;
+    width: 25%;
   }
 }
-#layout-main-container:before,
-#layout-main-container:after {
-  content: " ";
-  display: table;
-}
-#layout-main-container:after {
-  clear: both;
-}
-#layout-main-container:before,
-#layout-main-container:after {
-  content: " ";
-  display: table;
-}
-#layout-main-container:after {
-  clear: both;
-}
-/*switch: layout-main*/
 /*switch: layout-tripel*/
 /*switch: footer-quad*/
 /* 
@@ -6016,3 +6026,4 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
 div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-link:hover {
   color: #333333;
 }
+/*# sourceMappingURL=Site.css.map */

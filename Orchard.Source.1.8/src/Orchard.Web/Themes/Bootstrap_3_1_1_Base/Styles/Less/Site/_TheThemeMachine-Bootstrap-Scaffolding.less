@@ -32,13 +32,13 @@
     }
 }
 
-/*columns*/
+/*default columns*/
 #layout-wrapper > .group > div,
 .zone-footer {
     .make-md-column(12);
 }
 
-[id^="aside"],
+/*[id^="aside"],
 #footer-quad > div {
     .make-md-column(3);
 }
@@ -53,7 +53,7 @@
 
 #layout-main-container {
     .clearfix;
-}
+}*/
 
 //
 // Switches
@@ -62,12 +62,23 @@
 /*switch: layout-main*/
 #layout-wrapper {
     &.aside-12 {
-    }
+        .zone-content
+        {
+            .make-md-column(9);
+        }
+        [id^="aside"] {
+            .make-md-column(3);
+        }    }
 
-    &.aside-1 {
-    }
-
+    &.aside-1,
     &.aside-2 {
+        .zone-content
+        {
+            .make-md-column(9);
+        }
+        [id^="aside"] {
+            .make-md-column(3);
+        }
     }
 }
 
