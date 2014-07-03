@@ -2,7 +2,7 @@
 AntiForgery: enabled
 Author: Shaun Luttin, bigfont.ca
 Website: http://www.bigfont.ca
-Version: 1.9
+Version: 1.10
 OrchardVersion: 1.8
 Dependencies: Orchard.jQuery
 Category: Designer

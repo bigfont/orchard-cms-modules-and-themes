@@ -7,7 +7,6 @@
     @using (Html.BeginFormAntiForgeryPost(
         Url.Action("Trace", new { Controller = "Home", Area = "BigFont.TheThemeMachineDesigner" }), FormMethod.Post))
     {
-        <label for="themes">@T("Currently Viewing: ")</label>
         @Html.DropDownList("ThemeId", themes, new { id = "themes", onchange = "this.form.submit()" })
         @Html.Hidden("ReturnUrl", Context.Request.RawUrl)
     }

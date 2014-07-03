@@ -4,7 +4,7 @@
 
         function AddControls(id)
         {
-            var text = id.replace('-', ' ');
+            var text = id.replace('trace-', '');
             var label = $('<label/>', { for: id, text: text });
             var input = $('<input/>', { id: id, type: 'checkbox' });
             $("#theme-designer-control-bar > form")

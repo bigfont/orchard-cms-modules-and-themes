@@ -1,8 +1,8 @@
 ﻿# Must Have
 
-- Hide or do something appropriate with the control on small devices, because it looks nasty.
+- Hide or do something appropriate with the control on small devices, because it looks nasty. Done.
 
-- Fix the toggle sync bugs or remove them, because that functionality is broken.
+- Fix the toggle sync bugs or remove them, because that functionality is broken. Done.
 
 - Change theme activation to theme tracing, because the latter is session not application in scope. Done.
 
@@ -12,10 +12,10 @@
 
 - Add a way to toggle tracing. Done.
 
-- Specify that it shows "main structural classes and id" not just "classes and ids"
+- Specify that it shows "main structural classes and id" not just "classes and ids".  Done.
 
 # Nice to Have
 
 - Make the background color (and border) the same as in the shape tracing background UI.
 
-- Align the control vertically in the middle.
+- Align the control vertically in the middle. Done.
