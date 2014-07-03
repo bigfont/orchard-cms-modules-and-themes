@@ -5,24 +5,6 @@ Author: shaun @ bigfont.ca
 /*topo*/
 /*links*/
 /*mixins*/
-.show-zone {
-  margin-bottom: 4px;
-  background-color: #ffff00;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffff00), to(#ffffff));
-  background-image: -webkit-linear-gradient(left, #ffff00, #ffffff);
-  background-image: -moz-linear-gradient(left, #ffff00, #ffffff);
-  background-image: -ms-linear-gradient(left, #ffff00, #ffffff);
-  background-image: -o-linear-gradient(left, #ffff00, #ffffff);
-}
-.show-widget {
-  margin-bottom: 4px;
-  background-color: #00ffff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00ffff), to(#ffffff));
-  background-image: -webkit-linear-gradient(left, #00ffff, #ffffff);
-  background-image: -moz-linear-gradient(left, #00ffff, #ffffff);
-  background-image: -ms-linear-gradient(left, #00ffff, #ffffff);
-  background-image: -o-linear-gradient(left, #00ffff, #ffffff);
-}
 body.trace-topography,
 body.trace-topography:before {
   background-color: #000000;
@@ -118,46 +100,47 @@ body.trace-class-and-id div#layout-wrapper header[class]:before,
 body.trace-class-and-id div#layout-wrapper aside[class]:before,
 body.trace-class-and-id div#layout-wrapper footer[class]:before {
   content: "#" attr(id) "." attr(class);
-  line-height: 12px;
-  font-size: 12px;
-  background: black;
-  color: yellow;
+  line-height: 1em;
+  font-size: 1em;
 }
-body.trace-zones-and-widgets .zone {
+body.trace-zones .zone {
   margin-bottom: 4px;
-  background-color: #ffff00;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffff00), to(#ffffff));
-  background-image: -webkit-linear-gradient(left, #ffff00, #ffffff);
-  background-image: -moz-linear-gradient(left, #ffff00, #ffffff);
-  background-image: -ms-linear-gradient(left, #ffff00, #ffffff);
-  background-image: -o-linear-gradient(left, #ffff00, #ffffff);
+  background-color: #89c6ac;
+  background-image: -webkit-gradient(linear, left top, right top, from(#89c6ac), to(#ffffff));
+  background-image: -webkit-linear-gradient(left, #89c6ac, #ffffff);
+  background-image: -moz-linear-gradient(left, #89c6ac, #ffffff);
+  background-image: -ms-linear-gradient(left, #89c6ac, #ffffff);
+  background-image: -o-linear-gradient(left, #89c6ac, #ffffff);
 }
-body.trace-zones-and-widgets .widget,
-body.trace-zones-and-widgets .content-item {
+body.trace-widgets .widget,
+body.trace-widgets .content-item {
   margin-bottom: 4px;
-  background-color: #00ffff;
-  background-image: -webkit-gradient(linear, left top, right top, from(#00ffff), to(#ffffff));
-  background-image: -webkit-linear-gradient(left, #00ffff, #ffffff);
-  background-image: -moz-linear-gradient(left, #00ffff, #ffffff);
-  background-image: -ms-linear-gradient(left, #00ffff, #ffffff);
-  background-image: -o-linear-gradient(left, #00ffff, #ffffff);
+  background-color: #face62;
+  background-image: -webkit-gradient(linear, left top, right top, from(#face62), to(#ffffff));
+  background-image: -webkit-linear-gradient(left, #face62, #ffffff);
+  background-image: -moz-linear-gradient(left, #face62, #ffffff);
+  background-image: -ms-linear-gradient(left, #face62, #ffffff);
+  background-image: -o-linear-gradient(left, #face62, #ffffff);
 }
 html {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 #theme-designer-control-bar {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  background: #f0f0f0;
-  width: 100%;
-  top: 0;
-  position: fixed;
-  padding: 1px 0;
-  left: 0;
-  height: 40px;
-  color: #000000;
+  background-image: -webkit-linear-gradient(top, #ecf1f2 0%, #fafbfb 100%);
+  background-image: linear-gradient(to bottom, #ecf1f2 0%, #fafbfb 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffecf1f2', endColorstr='#fffafbfb', GradientType=0);
+  border-bottom: 1px solid #b6bcbd;
   box-sizing: border-box;
-  border-bottom: 1px solid #717171;
+  color: #000000;
+  height: 40px;
+  left: 0;
+  padding: 1px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 99999;
 }
 #theme-designer-control-bar label,
@@ -165,7 +148,12 @@ html {
 #theme-designer-control-bar button,
 #theme-designer-control-bar select {
   display: inline;
-  margin: 0  0  0 5px;
+  margin: 0 0 0 5px;
+  line-height: 40px;
   vertical-align: middle;
   width: auto;
+}
+#theme-designer-control-bar input[type="checkbox"] {
+  position: relative;
+  bottom: 2px;
 }

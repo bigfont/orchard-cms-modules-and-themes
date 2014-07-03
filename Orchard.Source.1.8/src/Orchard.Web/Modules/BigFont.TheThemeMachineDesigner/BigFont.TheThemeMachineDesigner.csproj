@@ -118,10 +118,7 @@
     <Content Include="Views\TraceThemeControls.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\MenuItem.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Menu.cshtml" />
+    <Content Include="Styles\less\_mixins.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

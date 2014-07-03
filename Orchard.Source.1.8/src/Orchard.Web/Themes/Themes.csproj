@@ -348,7 +348,9 @@
     <Content Include="Bootstrap_3_1_1_KongwaHill\Views\MenuItemLink.cshtml" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Web.config" />
     <Content Include="Bootstrap_3_1_1_Base\Views\Widget-MenuWidget.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Views\Parts.MenuWidget-MenuWidget.cshtml" />
+    <Content Include="Bootstrap_3_1_1_Base\Views\MenuItem.cshtml" />
+    <Content Include="Bootstrap_3_1_1_Base\Views\Menu.cshtml" />
+    <Content Include="Bootstrap_3_1_1_Base\Views\Parts\MenuWidget-MenuWidget.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_Base\Views\Layout.cshtml" />

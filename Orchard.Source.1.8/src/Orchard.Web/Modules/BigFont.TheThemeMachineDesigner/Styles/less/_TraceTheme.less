@@ -6,9 +6,9 @@ Author: shaun @ bigfont.ca
 /*topo*/
 @topography-base-color: black;
 @topography-increment: 15;
-@zone-background: yellow;
-@widget-background: aqua;
-@annotation-font-size: 12px;
+@zone-background: #89c6ac;
+@widget-background: #face62;
+@annotation-font-size: 1em;
 /*links*/
 
 /*mixins*/
@@ -24,22 +24,12 @@ Author: shaun @ bigfont.ca
 }
 
 .horizontal-gradient (@startColor: #eee, @endColor: white) {
- 	background-color: @startColor;
-	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
-	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
-	background-image: -moz-linear-gradient(left, @startColor, @endColor);
-	background-image: -ms-linear-gradient(left, @startColor, @endColor);
-	background-image: -o-linear-gradient(left, @startColor, @endColor);
-}
-
-.show-zone {    
-    margin-bottom:4px;
-    .horizontal-gradient(@zone-background);
-}
-
-.show-widget {    
-    margin-bottom:4px;
-    .horizontal-gradient(@widget-background);
+    background-color: @startColor;
+    background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+    background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+    background-image: -moz-linear-gradient(left, @startColor, @endColor);
+    background-image: -ms-linear-gradient(left, @startColor, @endColor);
+    background-image: -o-linear-gradient(left, @startColor, @endColor);
 }
 
 body.trace-topography {
@@ -86,22 +76,24 @@ body.trace-class-and-id {
                     content: "#"attr(id)"."attr(class);
                     line-height: @annotation-font-size;
                     font-size: @annotation-font-size;
-                    background:black;
-                    color:yellow;
                 }
             }
         }
     }
 }
 
-body.trace-zones-and-widgets {
+body.trace-zones {
 
     .zone {
-        .show-zone
+        margin-bottom: 4px;
+        .horizontal-gradient(@zone-background);
     }
+}
 
+body.trace-widgets {
     .widget,
     .content-item {
-        .show-widget;
+        margin-bottom: 4px;
+        .horizontal-gradient(@widget-background);
     }
 }

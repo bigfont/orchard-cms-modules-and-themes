@@ -24,14 +24,31 @@
     }
 
     function AddTracing() {
-        var cssPath = getBaseURL() + "/Modules/BigFont.TheThemeMachineDesigner/Styles/module.css";
-        $('head').append('<link rel="stylesheet" href=' + cssPath + ' type="text/css" data-trace />');
 
-        var trace = ["trace-zones-and-widgets", "trace-topography", "trace-class-and-id"];
+        function LinkStyleSheet() {
+            var cssPath = getBaseURL() + "/Modules/BigFont.TheThemeMachineDesigner/Styles/module.css";
+            $('head').append('<link rel="stylesheet" href=' + cssPath + ' type="text/css" data-trace />');
+        }
 
-        $.each(trace, function (index, value) {
-            $("input#" + value).change(function (e) { $("body").toggleClass(value); });
-        });
+        function AddEventListeners() {
+            var trace = ["trace-zones", "trace-widgets", "trace-topography", "trace-class-and-id"];
+
+            $.each(trace, function (index, value) {
+                $("#" + value).change(function (e) { $("body").toggleClass(value); });
+            });
+        }
+
+        function SynchronizeSomeFunctionality() {
+            $("#trace-class-and-id").change(function (e) {
+                $("#trace-topography")
+                    .prop("checked", this.checked)
+                    .change();
+            });
+        }
+
+        LinkStyleSheet();
+        AddEventListeners();
+        SynchronizeSomeFunctionality();
     }
 
     $(function () {

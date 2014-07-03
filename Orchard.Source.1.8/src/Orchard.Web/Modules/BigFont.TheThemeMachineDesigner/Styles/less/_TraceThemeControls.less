@@ -1,31 +1,40 @@
-﻿
+﻿@import '_mixins.less';
+
 @control-bar-height: 40px;
-@control-bar-background: #F0F0F0;
+@control-bar-background-end: #FAFBFB;
+@control-bar-background-start: #ECF1F2;
+@control-bar-border: 1px solid #B6BCBD;
 @control-bar-font-color: black;
 
 html {
-    margin-top: @control-bar-height;
+    margin-top: @control-bar-height + 5px;
 }
 
 #theme-designer-control-bar {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background: @control-bar-background;
-    width: 100%;
-    top: 0;
-    position: fixed;
-    padding: 1px 0;
-    left: 0;
-    height: @control-bar-height;
-    color: @control-bar-font-color;
+    #gradient > .vertical(@control-bar-background-start, @control-bar-background-end);
+    border-bottom: @control-bar-border;
     box-sizing: border-box;
-    border-bottom: 1px solid darken(@control-bar-background, 50);
-    z-index:99999;
+    color: @control-bar-font-color;
+    height: @control-bar-height;
+    left: 0;
+    padding: 1px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
 
     label, input, button, select {
         display: inline;
-        margin: 0  0  0 5px;
-        vertical-align:middle;
-        width:auto;
+        margin: 0 0 0 5px;
+        line-height: @control-bar-height;
+        vertical-align: middle;
+        width: auto;
+    }
+
+    input[type="checkbox"] {
+        position: relative;
+        bottom: 2px;
     }
 }
