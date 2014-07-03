@@ -282,6 +282,7 @@
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\utilities.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\variables.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\wells.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Navigation.less" />
     <None Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info" />
@@ -346,6 +347,8 @@
     <Content Include="Bootstrap_3_1_1_KongwaHill\Views\MenuItem.cshtml" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Views\MenuItemLink.cshtml" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Web.config" />
+    <Content Include="Bootstrap_3_1_1_Base\Views\Widget-MenuWidget.cshtml" />
+    <Content Include="Bootstrap_3_1_1_Base\Views\Parts.MenuWidget-MenuWidget.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_Base\Views\Layout.cshtml" />

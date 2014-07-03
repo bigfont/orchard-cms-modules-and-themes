@@ -8,5 +8,10 @@
 
 - Add a way to toggle tracing. Done.
 
+- Specify that it shows "main structural classes and id" not just "classes and ids"
+
 # Nice to Have
 
+- Make the background color (and border) the same as in the shape tracing background UI.
+
+- Align the control vertically in the middle.
