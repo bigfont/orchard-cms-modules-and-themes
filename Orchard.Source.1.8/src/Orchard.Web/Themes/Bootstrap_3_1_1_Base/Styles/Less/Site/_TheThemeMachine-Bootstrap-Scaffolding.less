@@ -56,8 +56,8 @@
 // Switches
 // --------------------------------------------------
 
-/*switch: layout-main*/
 #layout-wrapper {
+    /*switch: layout-main*/
     &.aside-12 {
         .zone-content {
             .make-md-column(6);
@@ -78,10 +78,7 @@
             .make-md-column(4);
         }
     }
-}
-
-/*switch: layout-tripel*/
-#layout-wrapper {
+    /*switch: layout-tripel*/
     &.tripel-123 {
         #layout-tripel > div {
             .make-md-column(4);
@@ -104,10 +101,7 @@
             .make-md-column-offset(1);
         }
     }
-}
-
-/*switch: footer-quad*/
-#layout-wrapper.split-1234 {
+    /*switch: footer-quad*/
     &.split-1234 {
     }
 
@@ -116,7 +110,37 @@
 
     &.split-12 {
     }
+    // split-n
+    .make-footer-quad-n-columns(@counter) when (@counter > 0) {
+        .make-footer-quad-n-columns((@counter - 1));
 
-    &.split-1 {
+        &.split-@{counter} {
+            #footer-quad > div {
+                .make-md-column(12);
+            }
+        }
     }
+
+    .make-footer-quad-nn-columns(@counter) when (@counter > 0) {
+        .make-footer-quad-nn-columns((@counter - 1));
+
+        .inner(@inner) when (@counter < @inner) {
+            .inner((@inner - 1));
+
+            #hello-inner:before {
+                content: @counter @inner;
+            }
+
+            &.split-@{counter}@{inner} {
+                #footer-quad > div {
+                    .make-md-column(6);
+                }
+            }
+        }
+
+        .inner(4);
+    }
+
+    .make-footer-quad-nn-columns(4); // launch the loop
+    .make-footer-quad-n-columns(4); // launch the loop
 }
