@@ -72,7 +72,6 @@
   <ItemGroup>
     <Content Include="Module-Todo.txt" />
     <Content Include="Scripts\CssLoader.js" />
-    <Content Include="Styles\testing.css" />
     <Content Include="Styles\theme-designer.css">
       <DependentUpon>theme-designer.less</DependentUpon>
     </Content>

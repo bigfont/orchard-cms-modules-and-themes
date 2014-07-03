@@ -5889,7 +5889,7 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
 @media (min-width: 992px) {
   #layout-wrapper.aside-12 .zone-content {
     float: left;
-    width: 75%;
+    width: 50%;
   }
 }
 #layout-wrapper.aside-12 [id^="aside"] {
@@ -5904,31 +5904,80 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
     width: 25%;
   }
 }
-#layout-wrapper.aside-1 .zone-content {
+#layout-wrapper.aside-1 .zone-content,
+#layout-wrapper.aside-2 .zone-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-wrapper.aside-1 .zone-content {
+  #layout-wrapper.aside-1 .zone-content,
+  #layout-wrapper.aside-2 .zone-content {
     float: left;
-    width: 75%;
+    width: 66.66666667%;
   }
 }
-#layout-wrapper.aside-1 .zone-aside-first {
+#layout-wrapper.aside-1 [id^="aside"],
+#layout-wrapper.aside-2 [id^="aside"] {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-wrapper.aside-1 .zone-aside-first {
+  #layout-wrapper.aside-1 [id^="aside"],
+  #layout-wrapper.aside-2 [id^="aside"] {
     float: left;
-    width: 25%;
+    width: 33.33333333%;
   }
 }
 /*switch: layout-tripel*/
+#layout-wrapper.tripel-123 #layout-tripel > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-wrapper.tripel-123 #layout-tripel > div {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+#layout-wrapper.tripel-12 #layout-tripel > div,
+#layout-wrapper.tripel-13 #layout-tripel > div,
+#layout-wrapper.tripel-23 #layout-tripel > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-wrapper.tripel-12 #layout-tripel > div,
+  #layout-wrapper.tripel-13 #layout-tripel > div,
+  #layout-wrapper.tripel-23 #layout-tripel > div {
+    float: left;
+    width: 50%;
+  }
+}
+#layout-wrapper.tripel-1 #layout-tripel > div {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-wrapper.tripel-1 #layout-tripel > div {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  #layout-wrapper.tripel-1 #layout-tripel > div {
+    margin-left: 8.33333333%;
+  }
+}
 /*switch: footer-quad*/
 /* 
     Somes classes really need to be in the markup 

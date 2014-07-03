@@ -16,18 +16,15 @@
 
 /*rows*/
 #layout-wrapper,
-[id$="-container"]
-{
+[id$="-container"] {
     > .group {
         .make-row();
     }
 }
 
-#layout-footer.group > #footer
-{    
+#layout-footer.group > #footer {
     .make-md-column(12); // because the #layout-footer is a row
-    .group
-    {
+    .group {
         .make-row();
     }
 }
@@ -62,22 +59,23 @@
 /*switch: layout-main*/
 #layout-wrapper {
     &.aside-12 {
-        .zone-content
-        {
-            .make-md-column(9);
+        .zone-content {
+            .make-md-column(6);
         }
+
         [id^="aside"] {
             .make-md-column(3);
-        }    }
+        }
+    }
 
     &.aside-1,
     &.aside-2 {
-        .zone-content
-        {
-            .make-md-column(9);
+        .zone-content {
+            .make-md-column(8);
         }
+
         [id^="aside"] {
-            .make-md-column(3);
+            .make-md-column(4);
         }
     }
 }
@@ -85,12 +83,26 @@
 /*switch: layout-tripel*/
 #layout-wrapper {
     &.tripel-123 {
+        #layout-tripel > div {
+            .make-md-column(4);
+        }
     }
 
-    &.tripel-12 {
+    &.tripel-12,
+    &.tripel-13,
+    &.tripel-23 {
+        #layout-tripel > div {
+            .make-md-column(6);
+        }
     }
 
-    &.tripel-1 {
+    &.tripel-1,
+    &.tripel-2,
+    &.tripel-3 {
+        #layout-tripel > div {
+            .make-md-column(10);
+            .make-md-column-offset(1);
+        }
     }
 }
 
