@@ -1,6 +1,7 @@
 ﻿@import '../Bootstrap/variables.less';
 @import '../Bootstrap/grid.less';
 @import '../Bootstrap/mixins.less';
+@import '_TheThemeMachine-Bootstrap-Mixins.less';
 
 /*
     - content must be within columns
@@ -8,56 +9,35 @@
     - avoid nesting containers
 */
 
-@max-cols: 12;
-
-/*container*/
-#layout-wrapper {
-    .container;
-}
-
-/*rows*/
-#layout-wrapper,
-[id$="-container"] {
-    > .group {
-        .make-row();
-    }
-}
-
-#layout-footer.group > #footer {
+#footer {
     .make-md-column(12); // because the #layout-footer is a row
     .group {
         .make-row();
     }
 }
 
-/*default columns*/
-#layout-wrapper > .group > div,
-.zone-footer {
-    .make-md-column(12);
-}
-
-/*[id^="aside"],
-#footer-quad > div {
-    .make-md-column(3);
-}
-
-#layout-content {
-    .make-md-column(6);
-}
-
-#layout-tripel > div {
-    .make-md-column(4);
-}
-
 #layout-main-container {
     .clearfix;
-}*/
+}
 
 //
 // Switches
 // --------------------------------------------------
 
 #layout-wrapper {
+    .container;
+    /*rows*/
+    &,
+    [id$="-container"] {
+        > .group {
+            .make-row();
+        }
+    }
+    /*default columns*/
+    & > .group > div,
+    .zone-footer {
+        .make-md-column(12);
+    }
     /*switch: layout-main*/
     &.aside-12 {
         .zone-content {
@@ -79,109 +59,13 @@
             .make-md-column(4);
         }
     }
-    /*switch: layout-tripel*/
-    &.tripel-123 {
-        #layout-tripel > div {
-            .make-md-column(4);
-        }
-    }
-
-    &.tripel-12,
-    &.tripel-13,
-    &.tripel-23 {
-        #layout-tripel > div {
-            .make-md-column(6);
-        }
-    }
-
-    &.tripel-1,
-    &.tripel-2,
-    &.tripel-3 {
-        #layout-tripel > div {
-            .make-md-column(10);
-            .make-md-column-offset(1);
-        }
-    }
-    /*switch: footer-quad*/
-
-    .make-n-columns(@counter, @selector, @cols:1) when (@counter > 0) {
-        .make-n-columns((@counter - 1), @selector);
-
-        &.split-@{counter} {
-            @{selector} {
-                .make-md-column(@max-cols / @cols);
-            }
-        }
-    }
-
-    .make-nn-columns(@counter, @selector, @highestN, @cols: 2) when (@counter > 0) {
-        .make-nn-columns((@counter - 1), @selector, @highestN, @cols);
-
-        .inner(@inner) when (@counter < @inner) {
-            .inner((@inner - 1));
-
-            &.split-@{counter}@{inner} {
-                @{selector} {
-                    .make-md-column(@max-cols / @cols);
-                }
-            }
-        }
-
-        .inner(@highestN);
-    }
-
-    .make-nnn-columns(@counter, @selector, @highestN, @cols: 3) when (@counter > 0) {
-        .make-nnn-columns((@counter - 1), @selector, @highestN, @cols);
-
-        .inner(@inner) when (@counter < @inner) {
-            .inner((@inner - 1));
-
-            .deep(@deep) when (@inner < @deep) {
-                .deep((@deep - 1));
-
-                &.split-@{counter}@{inner}@{deep} {
-                    @{selector} {
-                        .make-md-column(@max-cols / @cols);
-                    }
-                }
-            }
-
-            .deep(@highestN);
-        }
-
-        .inner(@highestN);
-    }
-
-    .make-nnnn-columns(@counter, @selector, @highestN, @cols: 4) when (@counter > 0) {
-        .make-nnnn-columns((@counter - 1), @selector, @highestN, @cols);
-
-        .inner(@inner) when (@counter < @inner) {
-            .inner((@inner - 1));
-
-            .deep(@deep) when (@inner < @deep) {
-                .deep((@deep - 1));
-
-                .abyss(@abyss) when (@deep < @abyss) {
-                    .abyss((@abyss - 1));
-
-                    &.split-@{counter}@{inner}@{deep}@{abyss} {
-                        @{selector} {
-                            .make-md-column(@max-cols / @cols);
-                        }
-                    }
-                }
-
-                .abyss(@highestN)
-            }
-
-            .deep(@highestN);
-        }
-
-        .inner(@highestN);
-    }
-    //split-nnn
-    .make-n-columns(4, ~'#footer-quad > div', 4);
-    .make-nn-columns(4, ~'#footer-quad > div', 4);
-    .make-nnn-columns(4, ~'#footer-quad > div', 4);
-    .make-nnnn-columns(4, ~'#footer-quad > div', 4);
+    /*layout-tripel*/
+    .make-n-columns(3, ~'tripel-', ~'#layout-tripel > div');
+    .make-nn-columns(3, ~'tripel-', ~'#layout-tripel > div');
+    .make-nnn-columns(3, ~'tripel-', ~'#layout-tripel > div');
+    /*footer-quad*/
+    .make-n-columns(4, ~'split-', ~'#footer-quad > div');
+    .make-nn-columns(4, ~'split-', ~'#footer-quad > div');
+    .make-nnn-columns(4, ~'split-', ~'#footer-quad > div');
+    .make-nnnn-columns(4, ~'split-', ~'#footer-quad > div');
 }
