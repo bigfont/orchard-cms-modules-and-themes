@@ -8,6 +8,7 @@
     - avoid nesting containers
 */
 
+@max-cols: 12;
 
 /*container*/
 #layout-wrapper {
@@ -102,45 +103,85 @@
         }
     }
     /*switch: footer-quad*/
-    &.split-1234 {
-    }
 
-    &.split-123 {
-    }
-
-    &.split-12 {
-    }
-    // split-n
-    .make-footer-quad-n-columns(@counter) when (@counter > 0) {
-        .make-footer-quad-n-columns((@counter - 1));
+    .make-n-columns(@counter, @selector, @cols:1) when (@counter > 0) {
+        .make-n-columns((@counter - 1), @selector);
 
         &.split-@{counter} {
-            #footer-quad > div {
-                .make-md-column(12);
+            @{selector} {
+                .make-md-column(@max-cols / @cols);
             }
         }
     }
 
-    .make-footer-quad-nn-columns(@counter) when (@counter > 0) {
-        .make-footer-quad-nn-columns((@counter - 1));
+    .make-nn-columns(@counter, @selector, @highestN, @cols: 2) when (@counter > 0) {
+        .make-nn-columns((@counter - 1), @selector, @highestN, @cols);
 
         .inner(@inner) when (@counter < @inner) {
             .inner((@inner - 1));
 
-            #hello-inner:before {
-                content: @counter @inner;
-            }
-
             &.split-@{counter}@{inner} {
-                #footer-quad > div {
-                    .make-md-column(6);
+                @{selector} {
+                    .make-md-column(@max-cols / @cols);
                 }
             }
         }
 
-        .inner(4);
+        .inner(@highestN);
     }
 
-    .make-footer-quad-nn-columns(4); // launch the loop
-    .make-footer-quad-n-columns(4); // launch the loop
+    .make-nnn-columns(@counter, @selector, @highestN, @cols: 3) when (@counter > 0) {
+        .make-nnn-columns((@counter - 1), @selector, @highestN, @cols);
+
+        .inner(@inner) when (@counter < @inner) {
+            .inner((@inner - 1));
+
+            .deep(@deep) when (@inner < @deep) {
+                .deep((@deep - 1));
+
+                &.split-@{counter}@{inner}@{deep} {
+                    @{selector} {
+                        .make-md-column(@max-cols / @cols);
+                    }
+                }
+            }
+
+            .deep(@highestN);
+        }
+
+        .inner(@highestN);
+    }
+
+    .make-nnnn-columns(@counter, @selector, @highestN, @cols: 4) when (@counter > 0) {
+        .make-nnnn-columns((@counter - 1), @selector, @highestN, @cols);
+
+        .inner(@inner) when (@counter < @inner) {
+            .inner((@inner - 1));
+
+            .deep(@deep) when (@inner < @deep) {
+                .deep((@deep - 1));
+
+                .abyss(@abyss) when (@deep < @abyss) {
+                    .abyss((@abyss - 1));
+
+                    &.split-@{counter}@{inner}@{deep}@{abyss} {
+                        @{selector} {
+                            .make-md-column(@max-cols / @cols);
+                        }
+                    }
+                }
+
+                .abyss(@highestN)
+            }
+
+            .deep(@highestN);
+        }
+
+        .inner(@highestN);
+    }
+    //split-nnn
+    .make-n-columns(4, ~'#footer-quad > div', 4);
+    .make-nn-columns(4, ~'#footer-quad > div', 4);
+    .make-nnn-columns(4, ~'#footer-quad > div', 4);
+    .make-nnnn-columns(4, ~'#footer-quad > div', 4);
 }
