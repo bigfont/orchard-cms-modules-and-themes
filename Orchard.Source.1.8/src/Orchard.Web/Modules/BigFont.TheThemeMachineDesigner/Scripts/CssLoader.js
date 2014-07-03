@@ -1,9 +1,10 @@
 ﻿(function () {
 
+    "use strict";
+
     function AddTracing() {
 
-        function AddControls(id)
-        {
+        function AddControls(id) {
             var text = id.replace('trace-', '');
             var label = $('<label/>', { for: id, text: text });
             var input = $('<input/>', { id: id, type: 'checkbox' });
@@ -12,8 +13,7 @@
                 .append(label);
         }
 
-        function AddEvents(id)
-        {
+        function AddEvents(id) {
             $("#" + id).change(function () {
                 if (this.checked) {
                     $("body").addClass(id);
@@ -33,7 +33,7 @@
         $.each(trace, function (index, value) {
 
             AddControls(value);
-            AddEvents(value);            
+            AddEvents(value);
 
         });
 
