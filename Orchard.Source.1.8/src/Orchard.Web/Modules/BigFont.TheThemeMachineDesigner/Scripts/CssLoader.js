@@ -32,10 +32,6 @@
         $.each(trace, function (index, value) {
             $("input#" + value).change(function (e) { $("body").toggleClass(value); });
         });
-
-        $("input#trace-zones-and-widgets")
-            .change()
-            .prop('checked', true);
     }
 
     $(function () {

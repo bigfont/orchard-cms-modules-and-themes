@@ -1,6 +1,5 @@
-﻿@{
-    // the article.widget-navigation.widget-menu-widget.widget 
-    var collapseId = "navbar-collapse-" + DateTime.Now.Ticks;
+﻿@{    
+    var collapseId = "navbar-collapse-" + DateTime.Now.Ticks;            
     foreach (var item in Model.Content.Items)
     {
         // todo make this more specific
@@ -8,7 +7,7 @@
     }
 }
 
-<div class="navbar">
+<div class="container-fluid">
 
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#@collapseId">
@@ -21,4 +20,5 @@
     </div>
 
     @Display(Model.Content)
+
 </div>

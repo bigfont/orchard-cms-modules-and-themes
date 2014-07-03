@@ -5614,7 +5614,9 @@ button.close {
 [id$="-container"] > .group:before,
 [id$="-container"] > .group:after,
 #layout-footer.group > #footer .group:before,
-#layout-footer.group > #footer .group:after {
+#layout-footer.group > #footer .group:after,
+div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget:before,
+div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget:after {
   content: " ";
   display: table;
 }
@@ -5635,7 +5637,8 @@ button.close {
 #layout-wrapper:after,
 #layout-wrapper > .group:after,
 [id$="-container"] > .group:after,
-#layout-footer.group > #footer .group:after {
+#layout-footer.group > #footer .group:after,
+div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget:after {
   clear: both;
 }
 .center-block {
@@ -5917,31 +5920,22 @@ button.close {
 /*switch: layout-main*/
 /*switch: layout-tripel*/
 /*switch: footer-quad*/
-/*
-ORCHARD
-
-    div#layout-navigation.group > 
-    div.zone.zone-navigation > 
-    article.widget-navigation.widget-menu-widget.widget > 
-    nav > 
-    ul.menu.menu-main-menu > 
-
-    li.current.first >  
-    a
-
-BOOTSTRAP
-
-    div.navbar.navbar-default > 
-    div.container-fluid > 
-    div#bs-example-navbar-collapse-1.collapse.navbar-collapse > 
-    ul.nav.navbar-nav > 
-
-    li.active > 
-    a
+/* 
+    Somes classes really need to be in the markup 
+    for bootstrap selectors to work.
 */
 div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+}
+@media (min-width: 768px) {
+  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget {
+    border-radius: 4px;
+  }
 }
 div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-brand {
   color: #777777;

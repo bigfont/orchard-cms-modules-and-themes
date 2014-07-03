@@ -1,56 +1,17 @@
-﻿@import '../Bootstrap/bootstrap.less';
+﻿@import '../Bootstrap/variables.less';
+@import '../Bootstrap/bootstrap.less';
 
-/*
-ORCHARD
-
-    div#layout-navigation.group > 
-    div.zone.zone-navigation > 
-    article.widget-navigation.widget-menu-widget.widget > 
-    nav > 
-    ul.menu.menu-main-menu > 
-
-    li.current.first >  
-    a
-
-BOOTSTRAP
-
-    div.navbar.navbar-default > 
-    div.container-fluid > 
-    div#bs-example-navbar-collapse-1.collapse.navbar-collapse > 
-    ul.nav.navbar-nav > 
-
-    li.active > 
-    a
+/* 
+    Somes classes really need to be in the markup 
+    for bootstrap selectors to work.
 */
-
-// some classes must be in the markup for bootstrap selectors
 div#layout-navigation.group {
 
     > div.zone.zone-navigation {
 
         > article.widget-navigation.widget-menu-widget.widget {
-            // .navbar 
+            .navbar;
             .navbar-default;
-
-            > div {
-                // .container-fluid;
-
-                > nav {
-                    // .collapse;
-                    // .navbar-collapse;
-
-                    > ul.menu.menu-main-menu {
-                        // .nav;
-                        // .navbar-nav;
-
-                        li.current.first {
-
-                            a {
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }
