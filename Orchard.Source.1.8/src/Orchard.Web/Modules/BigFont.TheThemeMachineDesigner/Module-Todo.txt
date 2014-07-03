@@ -1,12 +1,12 @@
 ﻿# Must Have
 
-- Change theme activation to theme tracing, because the latter is session not application in scope.
+- Change theme activation to theme tracing, because the latter is session not application in scope. Done.
 
 # Should Have
 
 - Position the Current Theme selector more subtly, because it currently blocks a lot of the UI. Done.
 
-- Add a way to toggle tracing.
+- Add a way to toggle tracing. Done.
 
 # Nice to Have
 
