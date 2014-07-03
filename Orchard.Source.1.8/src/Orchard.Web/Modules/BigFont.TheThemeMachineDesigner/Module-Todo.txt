@@ -4,7 +4,8 @@
 
 # Should Have
 
-- Position the Current Theme selector more subtly, because it currently blocks a lot of the UI.
+- Position the Current Theme selector more subtly, because it currently blocks a lot of the UI. Done.
+
 - Add a way to toggle tracing.
 
 # Nice to Have

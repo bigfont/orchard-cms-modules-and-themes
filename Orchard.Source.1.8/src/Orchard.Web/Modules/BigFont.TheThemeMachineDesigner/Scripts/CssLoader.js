@@ -23,12 +23,25 @@
 
     }
 
-    $(function () {
+    function AddTracing() {
         var cssPath = getBaseURL() + "/Modules/BigFont.TheThemeMachineDesigner/Styles/module.css";
+        $('head').append('<link rel="stylesheet" href=' + cssPath + ' type="text/css" data-trace />');
 
-        $('head').append('<link rel="stylesheet" href=' + cssPath + ' type="text/css" />');
+        var trace = ["trace-zones-and-widgets", "trace-topography", "trace-class-and-id"];
 
-        console.log('Appended to head: ' + cssPath);
+        $.each(trace, function (index, value) {
+            $("input#" + value).change(function (e) { $("body").toggleClass(value); });
+        });
+
+        $("input#trace-zones-and-widgets")
+            .change()
+            .prop('checked', true);
+    }
+
+    $(function () {
+
+        AddTracing();
+
     });
 
 }(location));

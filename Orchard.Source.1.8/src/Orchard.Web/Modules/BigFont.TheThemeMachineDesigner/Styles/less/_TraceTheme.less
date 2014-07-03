@@ -6,15 +6,10 @@ Author: shaun @ bigfont.ca
 /*topo*/
 @topography-base-color: black;
 @topography-increment: 15;
+@zone-background: yellow;
+@widget-background: aqua;
+@annotation-font-size: 12px;
 /*links*/
-@link-color: blue;
-@link-background: white;
-/*highlights*/
-@zone-color: aqua;
-@widget-border-color: red;
-/*misc*/
-@element-spacing: 10px;
-@dark-font: black;
 
 /*mixins*/
 .topography(@level) {
@@ -26,144 +21,86 @@ Author: shaun @ bigfont.ca
         background-color: @background-color;
         color: @foreground-color;
     }
-
-    &.zone,
-    &.zone:before,
-    &.widget,
-    &.widget:before,
-    &.content-item,
-    &.content-item:before {
-        background-color: @zone-color;
-        color: contrast(@zone-color);
-    }
 }
 
-div,
-article,
-header,
-footer,
-aside {
-
-    &,
-    [id*="layout-"],
-    .zone,
-    #layout-navigation {
-        // box sizing
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        // vertical reset
-        border-bottom: none;
-        border-top: none;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 0;
-        padding-top: 0;
-    }
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+ 	background-color: @startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+	background-image: -moz-linear-gradient(left, @startColor, @endColor);
+	background-image: -ms-linear-gradient(left, @startColor, @endColor);
+	background-image: -o-linear-gradient(left, @startColor, @endColor);
 }
 
-body {
+.show-zone {    
+    margin-bottom:4px;
+    .horizontal-gradient(@zone-background);
+}
+
+.show-widget {    
+    margin-bottom:4px;
+    .horizontal-gradient(@widget-background);
+}
+
+body.trace-topography {
     .topography(0);
-}
 
-div#layout-wrapper {
-    /*#region Hide irrelevant elements*/
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    ul,
-    span,
-    .metadata,
-    .copyright,
-    .poweredby,
-    .credits {
-        display: none;
-    }
-    /*#endregion*/
-    /*#region Display specific relevant elements */
-    ul.menu.menu-main-menu {
-        display: block;
-    }
+    & {
+        .topography(1);
 
-    div.user-display span.user-actions {
-        color: @dark-font;
-
-        &, a {
-            display: inline-block;
-            line-height: 24px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-    }
-
-    a,
-    li > a {
-        background: @link-background;
-        color: @link-color;
-        display: block;
-    }
-
-    li.current > a {
-        background: darken(@link-background, 30);
-    }
-    /*#endregion*/
-    &,
-    div,
-    article,
-    header,
-    aside,
-    footer {
-        display: block;
-        /*#region Show id and class names for key structural elements*/
-        &[id],
-        &[class] {
-            &:before {
-                content: "#"attr(id)"."attr(class);
-                display: block;
-                padding: @element-spacing;
-            }
-        }
-        /*#endregion*/
-        /*#region Show topography */
-        & {
-            .topography(1);
+        > [id],
+        > [class] {
+            .topography(2);
 
             > [id],
             > [class] {
-                .topography(2);
+                .topography(3);
 
                 > [id],
                 > [class] {
-                    .topography(3);
+                    .topography(4);
 
                     > [id],
                     > [class] {
-                        .topography(4);
-
-                        > [id],
-                        > [class] {
-                            .topography(5);
-                        }
+                        .topography(5);
                     }
                 }
             }
         }
-        /*#endregion*/
-        .zone {
-            margin-bottom: @element-spacing;
+    }
+}
 
-            .widget,
-            .content-item {
-                border: 2px dashed @widget-border-color;
-                display: table;
-                margin-bottom: @element-spacing;
-                padding: @element-spacing;
-                width: 100%;
+body.trace-class-and-id {
+
+    div#layout-wrapper {
+
+        &,
+        div,
+        article,
+        header,
+        aside,
+        footer {
+            &[id],
+            &[class] {
+                &:before {
+                    content: "#"attr(id)"."attr(class);
+                    display: block;
+                    line-height: @annotation-font-size;
+                    font-size: @annotation-font-size;
+                }
             }
         }
+    }
+}
+
+body.trace-zones-and-widgets {
+
+    .zone {
+        .show-zone
+    }
+
+    .widget,
+    .content-item {
+        .show-widget;
     }
 }

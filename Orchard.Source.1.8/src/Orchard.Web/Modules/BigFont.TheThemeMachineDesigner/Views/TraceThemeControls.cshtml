@@ -2,18 +2,28 @@
     var themes = (IEnumerable<SelectListItem>)Model.Themes;
     var currentTheme = Model.CurrentTheme;
 }
+
 <div id="theme-designer-control-bar">
     @using (Html.BeginFormAntiForgeryPost(
-        Url.Action("Trace", new { Controller = "Home", Area = "BigFont.TheThemeMachineDesigner" }),
-        FormMethod.Post))
+        Url.Action("Trace", new { Controller = "Home", Area = "BigFont.TheThemeMachineDesigner" }), FormMethod.Post))
     {
-        <fieldset>
-            <label for="themes">@T("Currently Tracing: ")</label>
-            @Html.DropDownList("ThemeId", themes, new { id ="themes"})
-            @Html.Hidden("ReturnUrl", Context.Request.RawUrl)
-            <button type="submit">
-                @T("Trace this theme.")
-            </button>
-        </fieldset>
+        <label for="themes">@T("Currently Viewing: ")</label>
+        @Html.DropDownList("ThemeId", themes, new { id = "themes", onchange = "this.form.submit()" })
+        @Html.Hidden("ReturnUrl", Context.Request.RawUrl)
+        <label for="trace-topography">
+            <input type="checkbox" id="trace-topography" />
+            Topograhy
+
+        </label>
+        <label for="trace-class-and-id">
+            <input type="checkbox" id="trace-class-and-id" />
+            Classes and Ids
+
+        </label>
+        <label for="trace-zones-and-widgets">
+            <input type="checkbox" id="trace-zones-and-widgets" />
+            Zones & Widgets
+
+        </label>
     }
 </div>
