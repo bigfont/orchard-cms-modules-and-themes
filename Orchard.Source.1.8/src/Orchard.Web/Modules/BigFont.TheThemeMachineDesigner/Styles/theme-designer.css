@@ -1,0 +1,119 @@
+﻿/*
+Theme: The Theme Machine Designer
+Author: shaun @ bigfont.ca 
+*/
+/*topo*/
+/*links*/
+/*mixins*/
+body.trace-class-and-id .zone:before,
+body.trace-class-and-id .widget:before,
+body.trace-class-and-id .content-item:before {
+  content: "#" attr(id) "." attr(class) !important;
+  font-size: 1em !important;
+  line-height: 1em;
+  background-color: #ffffff;
+}
+body.trace-class-and-id .zone:before {
+  color: #ff0000;
+}
+body.trace-class-and-id .widget:before {
+  color: #008000;
+}
+body.trace-class-and-id .content-item:before {
+  color: #0000ff;
+}
+body.trace-zones .zone {
+  outline: 1px solid #ff0000;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+body.trace-widgets .widget {
+  outline: 1px solid #008000;
+  background-color: rgba(0, 128, 0, 0.1);
+}
+body.trace-content-items .content-item {
+  outline: 1px solid #0000ff;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+body.trace-topography {
+  background-color: #000000;
+  background-color: #262626;
+  color: #ffffff;
+}
+body.trace-topography > [id],
+body.trace-topography > [class] {
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+body.trace-topography > [id] > [id],
+body.trace-topography > [class] > [id],
+body.trace-topography > [id] > [class],
+body.trace-topography > [class] > [class] {
+  background-color: #737373;
+  color: #ffffff;
+}
+body.trace-topography > [id] > [id] > [id],
+body.trace-topography > [class] > [id] > [id],
+body.trace-topography > [id] > [class] > [id],
+body.trace-topography > [class] > [class] > [id],
+body.trace-topography > [id] > [id] > [class],
+body.trace-topography > [class] > [id] > [class],
+body.trace-topography > [id] > [class] > [class],
+body.trace-topography > [class] > [class] > [class] {
+  background-color: #999999;
+  color: #ffffff;
+}
+body.trace-topography > [id] > [id] > [id] > [id],
+body.trace-topography > [class] > [id] > [id] > [id],
+body.trace-topography > [id] > [class] > [id] > [id],
+body.trace-topography > [class] > [class] > [id] > [id],
+body.trace-topography > [id] > [id] > [class] > [id],
+body.trace-topography > [class] > [id] > [class] > [id],
+body.trace-topography > [id] > [class] > [class] > [id],
+body.trace-topography > [class] > [class] > [class] > [id],
+body.trace-topography > [id] > [id] > [id] > [class],
+body.trace-topography > [class] > [id] > [id] > [class],
+body.trace-topography > [id] > [class] > [id] > [class],
+body.trace-topography > [class] > [class] > [id] > [class],
+body.trace-topography > [id] > [id] > [class] > [class],
+body.trace-topography > [class] > [id] > [class] > [class],
+body.trace-topography > [id] > [class] > [class] > [class],
+body.trace-topography > [class] > [class] > [class] > [class] {
+  background-color: #bfbfbf;
+  color: #000000;
+}
+html {
+  margin-top: 45px;
+}
+#theme-designer-control-bar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-linear-gradient(top, #ecf1f2 0%, #fafbfb 100%);
+  background-image: linear-gradient(to bottom, #ecf1f2 0%, #fafbfb 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffecf1f2', endColorstr='#fffafbfb', GradientType=0);
+  border-bottom: 1px solid #b6bcbd;
+  color: #000000;
+  height: 40px;
+  left: 0;
+  padding: 1px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+#theme-designer-control-bar label,
+#theme-designer-control-bar input,
+#theme-designer-control-bar button,
+#theme-designer-control-bar select {
+  display: inline;
+  margin: 0 0 0 5px;
+  line-height: 40px;
+  vertical-align: middle;
+  width: auto;
+}
+#theme-designer-control-bar input[type="checkbox"] {
+  position: relative;
+  bottom: 1px;
+}
+/*# sourceMappingURL=theme-designer.css.map */

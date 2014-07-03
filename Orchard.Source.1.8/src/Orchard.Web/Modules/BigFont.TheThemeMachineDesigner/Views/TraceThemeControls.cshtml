@@ -10,21 +10,5 @@
         <label for="themes">@T("Currently Viewing: ")</label>
         @Html.DropDownList("ThemeId", themes, new { id = "themes", onchange = "this.form.submit()" })
         @Html.Hidden("ReturnUrl", Context.Request.RawUrl)
-        <label for="trace-topography">
-            <input type="checkbox" id="trace-topography" />
-            Topograhy
-        </label>
-        <label for="trace-class-and-id">
-            <input type="checkbox" id="trace-class-and-id" />
-            Structural Classes and Ids
-        </label>
-        <label for="trace-zones">
-            <input type="checkbox" id="trace-zones" />
-            Zones
-        </label>
-        <label for="trace-widgets">
-            <input type="checkbox" id="trace-widgets" />
-            Widgets
-        </label>
     }
 </div>

@@ -1,14 +1,16 @@
 ﻿/*
 Theme: The Theme Machine Designer
-Author: shaun @ bigfont.ca
+Author: shaun @ bigfont.ca 
 */
 
 /*topo*/
 @topography-base-color: black;
 @topography-increment: 15;
-@zone-background: #89c6ac;
-@widget-background: #face62;
+@zone-highlight: red;
+@widget-highlight: green;
+@content-item-highlight: blue;
 @annotation-font-size: 1em;
+@annotation-background-color: white;
 /*links*/
 
 /*mixins*/
@@ -16,20 +18,55 @@ Author: shaun @ bigfont.ca
     @background-color: lighten(@topography-base-color, @topography-increment * @level);
     @foreground-color: contrast(@background-color);
 
-    &,
-    &:before {
-        background-color: @background-color;
-        color: @foreground-color;
+    background-color: @background-color;
+    color: @foreground-color;
+}
+
+.hightlight-me(@highlight-color) {
+    outline: 1px solid @highlight-color;
+    background-color: fade(@highlight-color, 10);
+}
+
+body.trace-class-and-id {
+
+    .zone:before,
+    .widget:before,
+    .content-item:before {
+        content: "#"attr(id)"."attr(class) !important;
+        font-size: @annotation-font-size !important;
+        line-height: @annotation-font-size;
+        background-color: @annotation-background-color;
+    }
+
+    .zone:before {
+        color: @zone-highlight;
+    }
+
+    .widget:before {
+        color: @widget-highlight;
+    }
+
+    .content-item:before {
+        color: @content-item-highlight;
     }
 }
 
-.horizontal-gradient (@startColor: #eee, @endColor: white) {
-    background-color: @startColor;
-    background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
-    background-image: -webkit-linear-gradient(left, @startColor, @endColor);
-    background-image: -moz-linear-gradient(left, @startColor, @endColor);
-    background-image: -ms-linear-gradient(left, @startColor, @endColor);
-    background-image: -o-linear-gradient(left, @startColor, @endColor);
+body.trace-zones {
+    .zone {
+        .hightlight-me(@zone-highlight);
+    }
+}
+
+body.trace-widgets {
+    .widget {
+        .hightlight-me(@widget-highlight);
+    }
+}
+
+body.trace-content-items {
+    .content-item {
+        .hightlight-me(@content-item-highlight);
+    }
 }
 
 body.trace-topography {
@@ -57,43 +94,5 @@ body.trace-topography {
                 }
             }
         }
-    }
-}
-
-body.trace-class-and-id {
-
-    div#layout-wrapper {
-
-        &,
-        div,
-        article,
-        header,
-        aside,
-        footer {
-            &[id],
-            &[class] {
-                &:before {
-                    content: "#"attr(id)"."attr(class);
-                    line-height: @annotation-font-size;
-                    font-size: @annotation-font-size;
-                }
-            }
-        }
-    }
-}
-
-body.trace-zones {
-
-    .zone {
-        margin-bottom: 4px;
-        .horizontal-gradient(@zone-background);
-    }
-}
-
-body.trace-widgets {
-    .widget,
-    .content-item {
-        margin-bottom: 4px;
-        .horizontal-gradient(@widget-background);
     }
 }

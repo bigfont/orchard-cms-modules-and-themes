@@ -1,54 +1,42 @@
 ﻿(function () {
 
-    // see http://www.gotknowhow.com/articles/how-to-get-the-base-url-with-javascript
-    function getBaseURL() {
-        var url = location.href;  // entire url including querystring - also: window.location.href;
-        var baseURL = url.substring(0, url.indexOf('/', 14));
-
-
-        if (baseURL.indexOf('http://localhost') != -1) {
-            // Base Url for localhost
-            var url = location.href;  // window.location.href;
-            var pathname = location.pathname;  // window.location.pathname;
-            var index1 = url.indexOf(pathname);
-            var index2 = url.indexOf("/", index1 + 1);
-            var baseLocalUrl = url.substr(0, index2);
-
-            return baseLocalUrl + "/";
-        }
-        else {
-            // Root Url for domain name
-            return baseURL + "/";
-        }
-
-    }
-
     function AddTracing() {
 
-        function LinkStyleSheet() {
-            var cssPath = getBaseURL() + "/Modules/BigFont.TheThemeMachineDesigner/Styles/module.css";
-            $('head').append('<link rel="stylesheet" href=' + cssPath + ' type="text/css" data-trace />');
+        function AddControls(id)
+        {
+            var text = id.replace('-', ' ');
+            var label = $('<label/>', { for: id, text: text });
+            var input = $('<input/>', { id: id, type: 'checkbox' });
+            $("#theme-designer-control-bar > form")
+                .append(input)
+                .append(label);
         }
 
-        function AddEventListeners() {
-            var trace = ["trace-zones", "trace-widgets", "trace-topography", "trace-class-and-id"];
-
-            $.each(trace, function (index, value) {
-                $("#" + value).change(function (e) { $("body").toggleClass(value); });
+        function AddEvents(id)
+        {
+            $("#" + id).change(function () {
+                if (this.checked) {
+                    $("body").addClass(id);
+                } else {
+                    $("body").removeClass(id);
+                }
             });
         }
 
-        function SynchronizeSomeFunctionality() {
-            $("#trace-class-and-id").change(function (e) {
-                $("#trace-topography")
-                    .prop("checked", this.checked)
-                    .change();
-            });
-        }
+        var trace = [
+                "trace-zones",
+                "trace-widgets",
+                "trace-content-items",
+                "trace-topography",
+                "trace-class-and-id"];
 
-        LinkStyleSheet();
-        AddEventListeners();
-        SynchronizeSomeFunctionality();
+        $.each(trace, function (index, value) {
+
+            AddControls(value);
+            AddEvents(value);            
+
+        });
+
     }
 
     $(function () {
@@ -58,4 +46,3 @@
     });
 
 }(location));
-
