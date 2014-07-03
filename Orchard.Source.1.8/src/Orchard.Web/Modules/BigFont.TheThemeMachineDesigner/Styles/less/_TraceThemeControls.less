@@ -1,5 +1,5 @@
 ﻿
-@control-bar-height: 26px;
+@control-bar-height: 40px;
 @control-bar-background: #F0F0F0;
 @control-bar-font-color: black;
 
@@ -20,10 +20,12 @@ html {
     color: @control-bar-font-color;
     box-sizing: border-box;
     border-bottom: 1px solid darken(@control-bar-background, 50);
+    z-index:99999;
 
-    label, input, button {
+    label, input, button, select {
         display: inline;
         margin: 0  0  0 5px;
-        vertical-align:middle;        
+        vertical-align:middle;
+        width:auto;
     }
 }

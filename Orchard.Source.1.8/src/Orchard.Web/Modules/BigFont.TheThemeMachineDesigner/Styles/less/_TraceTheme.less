@@ -84,9 +84,10 @@ body.trace-class-and-id {
             &[class] {
                 &:before {
                     content: "#"attr(id)"."attr(class);
-                    display: block;
                     line-height: @annotation-font-size;
                     font-size: @annotation-font-size;
+                    background:black;
+                    color:yellow;
                 }
             }
         }
