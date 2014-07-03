@@ -1,5 +1,9 @@
 ﻿# Must Have
 
+- Hide or do something appropriate with the control on small devices, because it looks nasty.
+
+- Fix the toggle sync bugs or remove them, because that functionality is broken.
+
 - Change theme activation to theme tracing, because the latter is session not application in scope. Done.
 
 # Should Have
