@@ -33,6 +33,7 @@ Author: shaun @ bigfont.ca
 }
 #layout-wrapper.trace-class-and-id:before {
   content: '#' attr(id) '.' attr(class);
+  background: #fcb097;
   position: absolute;
   top: 50px;
   right: 50px;
