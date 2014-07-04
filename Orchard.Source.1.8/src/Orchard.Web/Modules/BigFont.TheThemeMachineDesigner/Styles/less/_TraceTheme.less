@@ -3,18 +3,6 @@ Theme: The Theme Machine Designer
 Author: shaun @ bigfont.ca 
 */
 
-/*topo*/
-@topography-base-color: black;
-@topography-increment: 15;
-@zone-highlight: #FFB414;
-@widget-highlight: #7FB903;
-@content-item-highlight: #00A2E3;
-@other-highlight: #F8531B;
-@annotation-font-size: 14px;
-@annotation-background-color: white;
-@massive-z-index: 99999;
-/*links*/
-
 /*mixins*/
 .topography(@level) {
     @background-color: lighten(@topography-base-color, @topography-increment * @level);
@@ -43,7 +31,7 @@ Author: shaun @ bigfont.ca
     [class]:before,
     [id][class]:before {
         font-size: @annotation-font-size;
-        background: @other-highlight;
+        background: @highlight-other;
         z-index: @massive-z-index;
     }
     // just id
@@ -67,40 +55,40 @@ Author: shaun @ bigfont.ca
     &:before {
         .show-id;
         .show-class;
-        background:lighten(@other-highlight, 25);
+        background:lighten(@highlight-other, 25);
         position: absolute;
         top: 50px;
         right: 50px;
     }
 
     .zone:before {
-        background: @zone-highlight;
+        background: @highlight-zone;
     }
 
     .widget:before {
-        background: @widget-highlight;
+        background: @highlight-widget;
     }
 
     .content-item:before {
-        background: @content-item-highlight;
+        background: @highlight-content-item;
     }
 }
 
 #layout-wrapper.trace-zones {
     .zone {
-        .hightlight-me(@zone-highlight);
+        .hightlight-me(@highlight-zone);
     }
 }
 
 #layout-wrapper.trace-widgets {
     .widget {
-        .hightlight-me(@widget-highlight);
+        .hightlight-me(@highlight-widget);
     }
 }
 
 #layout-wrapper.trace-content-items {
     .content-item {
-        .hightlight-me(@content-item-highlight);
+        .hightlight-me(@highlight-content-item);
     }
 }
 

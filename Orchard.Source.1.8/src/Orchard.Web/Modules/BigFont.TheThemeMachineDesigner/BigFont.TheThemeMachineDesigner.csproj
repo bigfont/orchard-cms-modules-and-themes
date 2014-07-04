@@ -108,7 +108,7 @@
     <Content Include="Views\TraceThemeControls.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\less\_mixins.less" />
+    <Content Include="Styles\less\bootstrap\_mixins.less" />
     <Content Include="Styles\less\_TraceTheme.less" />
     <Content Include="Styles\less\_TraceThemeControls.less" />
   </ItemGroup>
@@ -122,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\_Variables.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

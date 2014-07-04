@@ -1,35 +1,30 @@
-﻿@import '_mixins.less';
-
-@control-bar-height: 40px;
-@control-bar-background-end: #FAFBFB;
-@control-bar-background-start: #ECF1F2;
-@control-bar-border: 1px solid #B6BCBD;
-@control-bar-font-color: black;
-
-html {
-    margin-top: @control-bar-height + 5px;
-}
+﻿/*html {
+    margin-top: @control-bar-height + 5px !important;
+}*/
 
 #theme-designer-control-bar {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    #gradient > .vertical(@control-bar-background-start, @control-bar-background-end);
-    border-bottom: @control-bar-border;
-    color: @control-bar-font-color;
-    height: @control-bar-height;
     left: 0;
-    overflow:hidden;
-    padding: 1px 0;
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 99999;
+    z-index: @massive-z-index;
+
+    & > form {
+        background: @control-bar-background;
+        .opacity(.1);
+        color: @control-bar-font-color;
+        margin: 5px;
+        overflow: hidden;
+        padding: 5px;
+        border-radius: 4px;
+    }
+
+    &:hover > form {
+        .opacity(0.9);
+    }
 
     label, input, button, select {
         display: inline;
-        margin: 0 0 0 5px;
-        line-height: @control-bar-height;
+        margin: 0 2.5px;
         vertical-align: middle;
         width: auto;
     }

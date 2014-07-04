@@ -1,25 +1,32 @@
 ﻿# Must Have
 
+- Give a fixed height to the class-and-id annotations, because sometimes the bottom text is hidden.
+
 - Hide or do something appropriate with the control on small devices, because it looks nasty. Done.
-
 - Fix the toggle sync bugs or remove them, because that functionality is broken. Done.
-
 - Change theme activation to theme tracing, because the latter is session not application in scope. Done.
 
 # Should Have
 
+- Remove the absolute positioning from the layout-wrapper:before, because it currenlty looks funny (keep the high z-index, though).
+
 - Enhace the topography to show ALL layers including widgets and zones. Done.
-
-- Show all ids and classes. 
-
+- Show all ids and classes below #layout-wrapper. Done.
 - Position the Current Theme selector more subtly, because it currently blocks a lot of the UI. Done.
-
 - Add a way to toggle tracing. Done.
-
 - Specify that it shows "main structural classes and id" not just "classes and ids".  Done.
 
 # Nice to Have
 
+- Add the ability to add and remove zones with a click. 
+
+- Add the ability to add and remove widgets with a click. 
+
+- Add the name of the current theme to the Orchard title.
+
+- Remove what might be unecessary !important css properties, because this is poor form.
+
 - Make the background color (and border) the same as in the shape tracing background UI.
 
 - Align the control vertically in the middle. Done.
+
