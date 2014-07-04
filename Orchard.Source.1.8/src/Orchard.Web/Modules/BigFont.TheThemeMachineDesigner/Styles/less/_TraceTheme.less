@@ -35,7 +35,7 @@ Author: shaun @ bigfont.ca
     }
 
     .show-class {
-        content +_: '.' attr(class) !important; // todo - determine what overrides this on .widget-navigation
+        content +_: '.' attr(class);
     }
 
     &:before,
@@ -59,7 +59,11 @@ Author: shaun @ bigfont.ca
         .show-id;
         .show-class;
     }
-    // special case
+    // special cases
+    .widget-navigation:before {
+        content: '.' attr(class) !important; // todo - why does this require !important?
+    }
+
     &:before {
         .show-id;
         .show-class;

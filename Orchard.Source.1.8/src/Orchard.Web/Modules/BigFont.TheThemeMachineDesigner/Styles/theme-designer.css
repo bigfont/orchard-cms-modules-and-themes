@@ -9,7 +9,7 @@ Author: shaun @ bigfont.ca
   content: '#' attr(id);
 }
 #layout-wrapper.trace-class-and-id .show-class {
-  content: '.' attr(class) !important;
+  content: '.' attr(class);
 }
 #layout-wrapper.trace-class-and-id:before,
 #layout-wrapper.trace-class-and-id [id]:before,
@@ -23,15 +23,16 @@ Author: shaun @ bigfont.ca
   content: '#' attr(id);
 }
 #layout-wrapper.trace-class-and-id [class]:before {
-  content: '.' attr(class) !important;
+  content: '.' attr(class);
 }
 #layout-wrapper.trace-class-and-id [id][class]:before {
-  content: '#' attr(id);
+  content: '#' attr(id) '.' attr(class);
+}
+#layout-wrapper.trace-class-and-id .widget-navigation:before {
   content: '.' attr(class) !important;
 }
 #layout-wrapper.trace-class-and-id:before {
-  content: '#' attr(id);
-  content: '.' attr(class) !important;
+  content: '#' attr(id) '.' attr(class);
   position: absolute;
   top: 50px;
   right: 50px;
