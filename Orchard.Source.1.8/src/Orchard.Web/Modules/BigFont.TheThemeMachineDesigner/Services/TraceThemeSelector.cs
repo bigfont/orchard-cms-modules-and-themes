@@ -19,7 +19,7 @@ namespace BigFont.TheThemeMachineDesigner.Services
 
         public ThemeSelectorResult GetTheme(RequestContext context)
         {
-            var traceThemeName = _traceTheme.GetTraceTheme();
+            var traceThemeName = _traceTheme.GetTraceThemeId();
 
             return string.IsNullOrEmpty(traceThemeName) ?
                 null :

@@ -10,6 +10,10 @@
 
 - Remove the absolute positioning from the layout-wrapper:before, because it currenlty looks funny (keep the high z-index, though).
 
+- List all themes that inherit from TheThemeMachine.
+
+- Run the super theme recipe from this module rather than from setup.
+
 - Enhace the topography to show ALL layers including widgets and zones. Done.
 - Show all ids and classes below #layout-wrapper. Done.
 - Position the Current Theme selector more subtly, because it currently blocks a lot of the UI. Done.

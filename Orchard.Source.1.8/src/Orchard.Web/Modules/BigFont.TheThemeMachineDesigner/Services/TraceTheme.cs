@@ -16,7 +16,7 @@ namespace BigFont.TheThemeMachineDesigner.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public string GetTraceTheme()
+        public string GetTraceThemeId()
         {
             var httpContext = _httpContextAccessor.Current();
             if (httpContext.Session != null)

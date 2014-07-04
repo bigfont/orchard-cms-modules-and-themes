@@ -3,7 +3,7 @@ namespace BigFont.TheThemeMachineDesigner.Services
 {
     public interface ITraceTheme : IDependency
     {
-        string GetTraceTheme();
+        string GetTraceThemeId();
 
         void SetTraceTheme(string themeName);
     }
