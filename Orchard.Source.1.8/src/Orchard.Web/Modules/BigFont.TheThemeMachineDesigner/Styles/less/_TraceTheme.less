@@ -6,80 +6,104 @@ Author: shaun @ bigfont.ca
 /*topo*/
 @topography-base-color: black;
 @topography-increment: 15;
-@zone-highlight: red;
-@widget-highlight: green;
-@content-item-highlight: blue;
-@annotation-font-size: 1em;
+@zone-highlight: #FFB414;
+@widget-highlight: #7FB903;
+@content-item-highlight: #00A2E3;
+@other-highlight: #F8531B;
+@annotation-font-size: 14px;
 @annotation-background-color: white;
+@massive-z-index: 99999;
 /*links*/
 
 /*mixins*/
 .topography(@level) {
     @background-color: lighten(@topography-base-color, @topography-increment * @level);
-    @foreground-color: contrast(@background-color);
-
-    background-color: @background-color;
-    color: @foreground-color;
+    background-color: @background-color !important; // todo - determine what overrides this on .widget-navigation
+    //@foreground-color: contrast(@background-color);
+    // color: @foreground-color;
 }
 
 .hightlight-me(@highlight-color) {
-    outline: 1px solid @highlight-color;
-    background-color: fade(@highlight-color, 10);
+    outline: 1.5px inset @highlight-color;
+    background-color: fade(@highlight-color, 25);
 }
 
-body.trace-class-and-id {
+#layout-wrapper.trace-class-and-id {
 
-    #layout-wrapper:before,
-    .zone:before,
-    .widget:before,
-    .content-item:before {
-        content: "#"attr(id)"."attr(class) !important;
-        font-size: @annotation-font-size !important;
-        line-height: @annotation-font-size;
-        background-color: @annotation-background-color;
+    .show-id {
+        content +_: '#' attr(id);
     }
 
-    #layout-wrapper:before {
+    .show-class {
+        content +_: '.' attr(class) !important; // todo - determine what overrides this on .widget-navigation
+    }
+
+    &:before,
+    [id]:before,
+    [class]:before,
+    [id][class]:before {
+        font-size: @annotation-font-size;
+        background: @other-highlight;
+        z-index: @massive-z-index;
+    }
+    // just id
+    [id]:before {
+        .show-id
+    }
+    // just class
+    [class]:before {
+        .show-class;
+    }
+    // both id and class
+    [id][class]:before {
+        .show-id;
+        .show-class;
+    }
+    // special case
+    &:before {
+        .show-id;
+        .show-class;
         position: absolute;
         top: 50px;
         right: 50px;
     }
 
     .zone:before {
-        color: @zone-highlight;
+        background: @zone-highlight;
     }
 
     .widget:before {
-        color: @widget-highlight;
+        background: @widget-highlight;
     }
 
     .content-item:before {
-        color: @content-item-highlight;
+        background: @content-item-highlight;
     }
 }
 
-body.trace-zones {
+#layout-wrapper.trace-zones {
     .zone {
         .hightlight-me(@zone-highlight);
     }
 }
 
-body.trace-widgets {
+#layout-wrapper.trace-widgets {
     .widget {
         .hightlight-me(@widget-highlight);
     }
 }
 
-body.trace-content-items {
+#layout-wrapper.trace-content-items {
     .content-item {
         .hightlight-me(@content-item-highlight);
     }
 }
 
-body.trace-topography {
+#layout-wrapper.trace-topography {
     .topography(0);
 
-    & {
+    > [id],
+    > [class] {
         .topography(1);
 
         > [id],
@@ -97,6 +121,11 @@ body.trace-topography {
                     > [id],
                     > [class] {
                         .topography(5);
+
+                        > [id],
+                        > [class] {
+                            .topography(6);
+                        }
                     }
                 }
             }

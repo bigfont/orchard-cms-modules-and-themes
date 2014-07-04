@@ -65,9 +65,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css">
-      <DependentUpon>Site.less</DependentUpon>
-    </Content>
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.css">
       <DependentUpon>Theme.less</DependentUpon>
     </Content>
@@ -283,11 +281,7 @@
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\variables.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\wells.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Navigation.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css.map">
-      <DependentUpon>Site.css</DependentUpon>
-    </Content>
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Mixins.less" />
-    <None Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
@@ -392,6 +386,8 @@
     <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Theme.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
+    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css.map" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />

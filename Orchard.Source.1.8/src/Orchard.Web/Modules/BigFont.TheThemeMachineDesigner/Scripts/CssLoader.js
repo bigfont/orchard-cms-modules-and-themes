@@ -25,9 +25,9 @@
         function addEvents(id) {
             $("#" + id).change(function () {
                 if (this.checked) {
-                    $("body").addClass(id);                    
+                    $("#layout-wrapper").addClass(id);                    
                 } else {
-                    $("body").removeClass(id);
+                    $("#layout-wrapper").removeClass(id);
                 }
 
                 // persist

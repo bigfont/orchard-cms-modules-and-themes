@@ -1,7 +1,4 @@
-﻿@import '../Bootstrap/mixins.less';
-
-@max-cols: 12;
-
+﻿@max-cols: 12;
 
 .make-n-columns(@counter, @layout-prefix, @selector, @cols: 1) when (@counter > 0) {
     .make-n-columns((@counter - 1), @layout-prefix, @selector);
@@ -13,11 +10,11 @@
     }
 }
 
-.make-nn-columns(@counter, @layout-prefix, @selector, @cols: 2) when (@counter > 0) {
-    .make-nn-columns((@counter - 1), @layout-prefix, @selector, @cols);
+.make-nn-columns(@counter, @max-n, @layout-prefix, @selector, @cols: 2) when (@counter > 0) {
+    .make-nn-columns((@counter - 1), @max-n, @layout-prefix, @selector, @cols);
 
-    .inner(@inner) when (@counter < @inner) {
-        .inner((@inner - 1));
+    .inner(@inner, @max-n) when (@counter < @inner) {
+        .inner((@inner - 1), @max-n);
 
         &.@{layout-prefix}@{counter}@{inner} {
             @{selector} {
@@ -25,18 +22,24 @@
             }
         }
     }
-
-    .inner(@counter);
+    
+    .inner(@max-n, @max-n);
 }
 
-.make-nnn-columns(@counter, @layout-prefix, @selector, @cols: 3) when (@counter > 0) {
-    .make-nnn-columns((@counter - 1), @layout-prefix, @selector, @cols);
+.make-nnn-columns(@counter, @max-n, @layout-prefix, @selector, @cols: 3) when (@counter > 0) {
+    .make-nnn-columns((@counter - 1), @max-n, @layout-prefix, @selector, @cols);
 
-    .inner(@inner) when (@counter < @inner) {
-        .inner((@inner - 1));
+    #hello-counter { content: @counter; }
 
-        .deep(@deep) when (@inner < @deep) {
-            .deep((@deep - 1));
+    .inner(@inner, @max-n) when (@counter < @inner) {
+        .inner((@inner - 1), @max-n);
+
+        #hello-counter { content: @inner; }
+
+        .deep(@deep, @max-n) when (@inner < @deep) {
+            .deep((@deep - 1), @max-n);
+
+            #hello-counter { content: @deep; }
 
             &.@{layout-prefix}@{counter}@{inner}@{deep} {
                 @{selector} {
@@ -45,23 +48,23 @@
             }
         }
 
-        .deep(@counter);
+        .deep(@max-n, @max-n);
     }
 
-    .inner(@counter);
+    .inner(@max-n, @max-n);
 }
 
-.make-nnnn-columns(@counter, @layout-prefix, @selector, @cols: 4) when (@counter > 0) {
-    .make-nnnn-columns((@counter - 1), @layout-prefix, @selector, @cols);
+.make-nnnn-columns(@counter, @max-n, @layout-prefix, @selector, @cols: 4) when (@counter > 0) {
+    .make-nnnn-columns((@counter - 1), @max-n, @layout-prefix, @selector, @cols);
 
-    .inner(@inner) when (@counter < @inner) {
-        .inner((@inner - 1));
+    .inner(@inner, @max-n) when (@counter < @inner) {
+        .inner((@inner - 1), @max-n);
 
-        .deep(@deep) when (@inner < @deep) {
-            .deep((@deep - 1));
+        .deep(@deep, @max-n) when (@inner < @deep) {
+            .deep((@deep - 1), @max-n);
 
-            .abyss(@abyss) when (@deep < @abyss) {
-                .abyss((@abyss - 1));
+            .abyss(@abyss, @max-n) when (@deep < @abyss) {
+                .abyss((@abyss - 1), @max-n);
 
                 &.@{layout-prefix}@{counter}@{inner}@{deep}@{abyss} {
                     @{selector} {
@@ -70,11 +73,11 @@
                 }
             }
 
-            .abyss(@counter)
+            .abyss(@max-n, @max-n)
         }
 
-        .deep(@counter);
+        .deep(@max-n, @max-n);
     }
 
-    .inner(@counter);
+    .inner(@max-n, @max-n);
 }

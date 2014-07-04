@@ -1,11 +1,6 @@
-﻿@import '../Bootstrap/variables.less';
-@import '../Bootstrap/grid.less';
-@import '../Bootstrap/mixins.less';
-@import '_TheThemeMachine-Bootstrap-Mixins.less';
-
-/*
+﻿/*
     - content must be within columns
-    - columns must be within rows
+    - columns must be within rows 
     - avoid nesting containers
 */
 
@@ -40,7 +35,7 @@
     }
     /*switch: layout-main*/
     &.aside-12 {
-        .zone-content {
+        #layout-content {
             .make-md-column(6);
         }
 
@@ -61,11 +56,11 @@
     }
     /*layout-tripel*/
     .make-n-columns(3, ~'tripel-', ~'#layout-tripel > div');
-    .make-nn-columns(3, ~'tripel-', ~'#layout-tripel > div');
-    .make-nnn-columns(3, ~'tripel-', ~'#layout-tripel > div');
+    .make-nn-columns(3, 3, ~'tripel-', ~'#layout-tripel > div');
+    .make-nnn-columns(3, 3, ~'tripel-', ~'#layout-tripel > div');
     /*footer-quad*/
     .make-n-columns(4, ~'split-', ~'#footer-quad > div');
-    .make-nn-columns(4, ~'split-', ~'#footer-quad > div');
-    .make-nnn-columns(4, ~'split-', ~'#footer-quad > div');
-    .make-nnnn-columns(4, ~'split-', ~'#footer-quad > div');
+    .make-nn-columns(4, 4, ~'split-', ~'#footer-quad > div');
+    .make-nnn-columns(4, 4, ~'split-', ~'#footer-quad > div');
+    .make-nnnn-columns(4, 4, ~'split-', ~'#footer-quad > div');
 }

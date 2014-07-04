@@ -8,6 +8,10 @@
 
 # Should Have
 
+- Enhace the topography to show ALL layers including widgets and zones. Done.
+
+- Show all ids and classes. 
+
 - Position the Current Theme selector more subtly, because it currently blocks a lot of the UI. Done.
 
 - Add a way to toggle tracing. Done.
