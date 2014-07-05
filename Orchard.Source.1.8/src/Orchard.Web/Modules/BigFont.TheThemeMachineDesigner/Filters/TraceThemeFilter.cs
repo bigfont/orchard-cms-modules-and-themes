@@ -61,18 +61,18 @@ namespace BigFont.TheThemeMachineDesigner.Filters
             var installedThemesList = this.ConvertExtensionDescriptorsToSelectList(installedThemes, tracedThemeId);
 
             // themes from gallery
-            var allThemes = this.GetThemesFromGallery();
-            var allThemesList = this.ConvertPackagingEntriesToSelectList(allThemes, tracedThemeId);
+            ////var allThemes = this.GetThemesFromGallery();
+            ////var allThemesList = this.ConvertPackagingEntriesToSelectList(allThemes, tracedThemeId);
 
             // combine
-            allThemesList.AddRange(installedThemesList);
+            ////allThemesList.AddRange(installedThemesList);
 
             // render
             _workContextAccessor
                 .GetContext(filterContext)
                 .Layout
                 .Zones["Body"]
-                .Add(_shapeFactory.TraceThemeControls(Themes: allThemesList), ":before");
+                .Add(_shapeFactory.TraceThemeControls(Themes: installedThemesList), ":before");
         }
 
 
