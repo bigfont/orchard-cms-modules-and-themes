@@ -388,6 +388,7 @@
     <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css.map" />
+    <Content Include="Bootstrap_3_1_1_Base\Views\MenuItemLink.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />
