@@ -43,7 +43,7 @@
     menuitem create /MenuPosition:"2" /MenuText:"OnlyFullWidth" /Url:"~/OnlyFullWidth" /MenuName:"Main Menu"
 
     <!--asides-->
-    menuitem create /MenuPosition:"3" /MenuText:"Asides" /Url:"" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"3" /MenuText:"Asides" /Url:"#" /MenuName:"Main Menu"
 
     page create /Slug:"Aside-1" /Title:"Aside-1" /Path:"Aside-1" /Homepage:false /Publish:true /Text:"Welcome To Aside-1"
     menuitem create /MenuPosition:"3.1" /MenuText:"Aside-1" /Url:"~/Aside-1" /MenuName:"Main Menu"
@@ -55,7 +55,7 @@
     menuitem create /MenuPosition:"3.3" /MenuText:"Aside-2" /Url:"~/Aside-2" /MenuName:"Main Menu"
 
     <!--tripels-->
-    menuitem create /MenuPosition:"4" /MenuText:"Tripels" /Url:"" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"4" /MenuText:"Tripels" /Url:"#" /MenuName:"Main Menu"
 
     page create /Slug:"Tripel-1" /Title:"Tripel-1" /Path:"Tripel-1" /Homepage:false /Publish:true /Text:"Welcome To Tripel-1"
     menuitem create /MenuPosition:"4.1" /MenuText:"Tripel-1" /Url:"~/Tripel-1" /MenuName:"Main Menu"
@@ -79,7 +79,7 @@
     menuitem create /MenuPosition:"4.7" /MenuText:"Tripel-3" /Url:"~/Tripel-3" /MenuName:"Main Menu"
 
     <!--quads-->
-    menuitem create /MenuPosition:"5" /MenuText:"Quads" /Url:"" /MenuName:"Main Menu"
+    menuitem create /MenuPosition:"5" /MenuText:"Quads" /Url:"#" /MenuName:"Main Menu"
 
     page create /Slug:"Quad-1" /Title:"Quad-1" /Path:"Quad-1" /Homepage:false /Publish:true /Text:"Welcome To Quad-1"
     menuitem create /MenuPosition:"5.1" /MenuText:"Quad-1" /Url:"~/Quad-1" /MenuName:"Main Menu"
