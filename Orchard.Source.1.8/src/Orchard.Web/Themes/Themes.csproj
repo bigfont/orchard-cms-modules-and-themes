@@ -69,6 +69,10 @@
     <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.css">
       <DependentUpon>Theme.less</DependentUpon>
     </Content>
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\bigfont.css" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.css" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Theme.png" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Theme.txt" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Readme\Todo.txt" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Scripts\IE-10.js" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\less\bootstrap-3.1.1\variables.css">
@@ -333,13 +337,23 @@
     <Content Include="Bootstrap_3_1_1_Base\Views\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
     <Folder Include="TheThemeMachineDesigner\Views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
     <Content Include="Bootstrap_3_1_1_Base\Views\MenuItemLink.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Web.config" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.less" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
