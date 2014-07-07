@@ -100,9 +100,6 @@
     <Content Include="Bootstrap_3_1_1_Base\Placement.info" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.css" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Theme.png" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Theme.txt" />
     <Content Include="ThemeWithoutProject\Web.config" />
     <Content Include="ThemeWithoutProject\Scripts\Web.config" />
     <Content Include="ThemeWithoutProject\Styles\Web.config" />
@@ -264,11 +261,6 @@
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\wells.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Navigation.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Mixins.less" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Less\orchard\_TheThemeMachine-Original.less" />
     <Content Include="TheThemeMachineDesigner\Styles\Less\site\_TheThemeMachine-Designer.less" />
@@ -330,9 +322,6 @@
     <Content Include="Bootstrap_3_1_1_Base\Views\MenuItem.cshtml" />
     <Content Include="Bootstrap_3_1_1_Base\Views\Menu.cshtml" />
     <Content Include="Bootstrap_3_1_1_Base\Views\Parts\MenuWidget-MenuWidget.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.css.map">
-      <DependentUpon>Theme.css</DependentUpon>
-    </Content>
     <Content Include="TheThemeMachineDesigner\Styles\Site.css.map">
       <DependentUpon>Site.css</DependentUpon>
     </Content>
@@ -344,21 +333,10 @@
     <Content Include="Bootstrap_3_1_1_Base\Views\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
     <Folder Include="TheThemeMachineDesigner\Views\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info">
-      <SubType>
-      </SubType>
-    </Content>
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css.map" />
     <Content Include="Bootstrap_3_1_1_Base\Views\MenuItemLink.cshtml" />
   </ItemGroup>
   <ItemGroup />
