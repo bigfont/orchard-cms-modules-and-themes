@@ -76,7 +76,9 @@
 
         setupAdminSignIn();
 
-        wrapElementWithLink('article.widget-mouat-park-hero-unit img', '/Media/Default/OtherImages/mouat_park_trails_900x600.jpg');
+        wrapElementWithLink(
+            'article.widget-mouat-park-hero-unit img',
+            '/Media/Default/OtherImages/mouat_park_trails_900x600.jpg');
     });
 
 }());
