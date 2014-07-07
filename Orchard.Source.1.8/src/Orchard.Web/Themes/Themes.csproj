@@ -98,15 +98,6 @@
     <Content Include="Bootstrap_3_1_1_Base\Theme.txt" />
     <Content Include="Bootstrap_3_1_1_Base\Theme.png" />
     <Content Include="Bootstrap_3_1_1_Base\Placement.info" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Site.css" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Theme.css" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Scripts\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Content\Web.config" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Theme.txt" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Theme.png" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Placement.info" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.css" />
@@ -124,15 +115,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BigFont.GardenFaire\Content\hero-unit-background-1.png" />
-    <Content Include="BigFont.GardenFaire\Scripts\bigfont.js" />
-    <Content Include="BigFont.GardenFaire\Scripts\bigfont.min.js" />
-    <Content Include="BigFont.GardenFaire\Scripts\jsmin.exe" />
-    <Content Include="BigFont.GardenFaire\Styles\bigfont.css" />
-    <Content Include="BigFont.GardenFaire\Styles\bigfont.min.css" />
-    <Content Include="BigFont.GardenFaire\Theme.png" />
-    <Content Include="BigFont.GardenFaire\Theme.txt" />
-    <Content Include="BigFont.GardenFaire\Web.config" />
     <Content Include="TheAdmin\Scripts\admin.js" />
     <Content Include="TheAdmin\Styles\ie.css" />
     <Content Include="TheAdmin\Styles\ie7.css" />
@@ -283,7 +265,6 @@
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Navigation.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Mixins.less" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
@@ -367,31 +348,18 @@
     <Folder Include="TheThemeMachineDesigner\Views\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BigFont.GardenFaire\Content\Web.config" />
-    <Content Include="BigFont.GardenFaire\Placement.info" />
-    <Content Include="BigFont.GardenFaire\Scripts\Web.config" />
-    <Content Include="BigFont.GardenFaire\Styles\Web.config" />
-    <Content Include="BigFont.GardenFaire\Views\BadgeOfHonor.cshtml" />
-    <Content Include="BigFont.GardenFaire\Views\Layout.cshtml" />
-    <Content Include="BigFont.GardenFaire\Views\User.cshtml" />
-    <Content Include="BigFont.GardenFaire\Views\Widget.cshtml" />
-    <Content Include="BigFont.GardenFaire\Views\Widget.Wrapper.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Site.less" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
-    <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info" />
+    <Content Include="Bootstrap_3_1_1_GardenFaire\Placement.info">
+      <SubType>
+      </SubType>
+    </Content>
     <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Less\Theme.less" />
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Styles\Less\Theme.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css.map" />
     <Content Include="Bootstrap_3_1_1_Base\Views\MenuItemLink.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_BaseTheme\Views\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
