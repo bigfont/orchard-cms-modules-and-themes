@@ -74,6 +74,7 @@
     <Content Include="Module-Todo.txt" />
     <Content Include="Scripts\CssLoader.js" />
     <Content Include="Scripts\DragAndDrop.js" />
+    <Content Include="Scripts\JSON2.js" />
     <Content Include="Styles\theme-designer.css">
       <DependentUpon>theme-designer.less</DependentUpon>
     </Content>

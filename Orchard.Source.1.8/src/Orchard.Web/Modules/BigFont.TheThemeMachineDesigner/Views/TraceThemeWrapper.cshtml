@@ -1,8 +1,9 @@
 ﻿@{
     // The purpose of this wrapper is simply to add JavaScript and CSS.
     // We add CSS through JavaScript.    
-    Script.Include("CssLoader.js").AtHead();
-    Script.Include("DragAndDrop.js").AtHead();
+    Script.Include("JSON2.js").AtFoot();
+    Script.Include("CssLoader.js").AtFoot();
+    Script.Include("DragAndDrop.js").AtFoot();
     Style.Include("theme-designer.css");
 }
 

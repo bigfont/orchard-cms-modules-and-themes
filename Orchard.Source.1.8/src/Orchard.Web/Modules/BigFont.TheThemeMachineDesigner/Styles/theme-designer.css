@@ -206,10 +206,10 @@ Author: shaun @ bigfont.ca
   border-radius: 4px;
   color: #000000;
   cursor: move;
-  left: 0;
+  left: 5px;
   padding-left: 40px;
   position: fixed;
-  top: 0;
+  top: 5px;
   z-index: 99999;
 }
 #theme-designer-control-bar > form {

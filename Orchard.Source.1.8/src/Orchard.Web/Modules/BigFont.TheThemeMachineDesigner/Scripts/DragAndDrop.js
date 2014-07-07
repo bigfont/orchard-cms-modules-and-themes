@@ -4,7 +4,17 @@
 
     "use strict";
 
-    var draggedElementId = 'theme-designer-control-bar';
+    var draggedElementId,
+        draggedElement,
+        localStorageId;
+
+    draggedElementId = 'theme-designer-control-bar';
+    localStorageId = 'data-' + draggedElementId;
+
+    function moveElement(element, point) {
+        element.style.left = point.left + 'px';
+        element.style.top = point.top + 'px';
+    }
 
     function drag_start(event) {
         var style, top, left, startPoint;
@@ -13,36 +23,54 @@
         // get the original position
         top = (parseInt(style.getPropertyValue("top"), 10) - event.clientY);
         left = (parseInt(style.getPropertyValue("left"), 10) - event.clientX);
-        startPoint = left + ',' + top;
+        startPoint = {
+            top: top,
+            left: left
+        }
 
         // send it to the drop event
-        event.dataTransfer.setData("text/plain", startPoint);
+        event.dataTransfer.setData("text/plain", JSON.stringify(startPoint));
     }
     function drag_over(event) {
         event.preventDefault();
         return false;
     }
     function drop(event) {
-        var startPoint, dm, top, left;
+        var startPoint, endPoint, top, left;
 
-        startPoint = event.dataTransfer.getData("text/plain").split(',');
-        dm = document.getElementById(draggedElementId);
+        startPoint = JSON.parse(event.dataTransfer.getData("text/plain"));
 
-        // calculate and set the new position
-        left = (event.clientX + parseInt(startPoint[0], 10));
-        top = (event.clientY + parseInt(startPoint[1], 10));
-        dm.style.left = left + 'px';
-        dm.style.top = top + 'px';
+        // calculate new position
+        left = (event.clientX + parseInt(startPoint.left, 10));
+        top = (event.clientY + parseInt(startPoint.top, 10));
+        endPoint = {
+            left: left,
+            top: top
+        }
+
+        // move        
+        moveElement(draggedElement, endPoint);
+
+        // save
+        localStorage.setItem(localStorageId, JSON.stringify(endPoint));
 
         // prevent default
         event.preventDefault();
         return false;
     }
-
     $(function () {
-        var dm = document.getElementById(draggedElementId);
-        dm.addEventListener('dragstart', drag_start, false);
-        document.body.addEventListener('dragover', drag_over, false);
-        document.body.addEventListener('drop', drop, false);
+        var dropArea, savedPosition;
+
+        draggedElement = document.getElementById(draggedElementId);
+        draggedElement.addEventListener('dragstart', drag_start, false);
+
+        dropArea = document.body;
+        dropArea.addEventListener('dragover', drag_over, false);
+        dropArea.addEventListener('drop', drop, false);
+
+        savedPosition = JSON.parse(localStorage.getItem(localStorageId));
+        if (savedPosition) {
+            moveElement(draggedElement, savedPosition);
+        }
     });
 }(window, document));
