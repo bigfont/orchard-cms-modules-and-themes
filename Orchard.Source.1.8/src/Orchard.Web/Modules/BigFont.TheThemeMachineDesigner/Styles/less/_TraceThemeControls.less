@@ -1,21 +1,25 @@
-﻿/*html {
-    margin-top: @control-bar-height + 5px !important;
-}*/
-
-#theme-designer-control-bar {
+﻿#theme-designer-control-bar {
+    background-image: url(../../Images/orchard-logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: @border-radius;
+    color: @font-color;
+    cursor: move;
     left: 0;
+    padding-left: @icon-width;
     position: fixed;
     top: 0;
     z-index: @massive-z-index;
 
     & > form {
-        background: @control-bar-background;
         .opacity(.1);
-        color: @control-bar-font-color;
-        margin: 5px;
+        background: @control-bar-form-background;
+        border: @control-bar-form-border;
+        border-radius: @border-radius;
         overflow: hidden;
-        padding: 5px;
-        border-radius: 4px;
+        padding: @control-bar-form-padding;
+        white-space: nowrap;
     }
 
     &:hover > form {
@@ -32,5 +36,13 @@
     input[type="checkbox"] {
         position: relative;
         bottom: 1px;
+    }
+}
+
+@media (max-width: @hide-max-width)
+{
+    #theme-designer-control-bar
+    {
+        display:none;
     }
 }

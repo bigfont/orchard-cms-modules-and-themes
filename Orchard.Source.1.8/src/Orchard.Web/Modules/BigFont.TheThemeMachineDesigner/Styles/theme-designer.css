@@ -198,24 +198,29 @@ Author: shaun @ bigfont.ca
 #layout-wrapper.trace-topography > [class] > [class] > [class] > [class] > [class] > [class] {
   background-color: #e6e6e6 !important;
 }
-/*html {
-    margin-top: @control-bar-height + 5px !important;
-}*/
 #theme-designer-control-bar {
+  background-image: url(../Images/orchard-logo.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 4px;
+  color: #000000;
+  cursor: move;
   left: 0;
+  padding-left: 40px;
   position: fixed;
   top: 0;
   z-index: 99999;
 }
 #theme-designer-control-bar > form {
-  background: #e8e6e6;
   opacity: 0.1;
   filter: alpha(opacity=10);
-  color: #000000;
-  margin: 5px;
+  background: #00a2e3;
+  border: 1px solid #004763;
+  border-radius: 4px;
   overflow: hidden;
   padding: 5px;
-  border-radius: 4px;
+  white-space: nowrap;
 }
 #theme-designer-control-bar:hover > form {
   opacity: 0.9;
@@ -233,5 +238,10 @@ Author: shaun @ bigfont.ca
 #theme-designer-control-bar input[type="checkbox"] {
   position: relative;
   bottom: 1px;
+}
+@media (max-width: 800px) {
+  #theme-designer-control-bar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=theme-designer.css.map */

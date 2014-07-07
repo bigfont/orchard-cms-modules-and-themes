@@ -70,6 +70,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\orchard-logo.png" />
     <Content Include="Module-Todo.txt" />
     <Content Include="Scripts\CssLoader.js" />
     <Content Include="Scripts\DragAndDrop.js" />

@@ -8,7 +8,7 @@
 
 # Should Have
 
-- Make the control bar dragable because it sometimes gets in the way.
+- Make the control bar dragable because it sometimes gets in the way. Done.
 
 - Remove the absolute positioning from the layout-wrapper:before, because it currenlty looks funny (keep the high z-index, though).
 
