@@ -13,7 +13,7 @@ Author: shaun @ bigfont.ca
 
 .hightlight-me(@highlight-color) {
     outline: 1.5px inset @highlight-color;
-    background-color: fade(@highlight-color, 25);
+    background-color: fade(@highlight-color, 15);
 }
 
 #layout-wrapper.trace-class-and-id {
@@ -26,41 +26,43 @@ Author: shaun @ bigfont.ca
         content +_: '.' attr(class);
     }
 
-    &:before,
-    [id]:before,
-    [class]:before,
-    [id][class]:before {
-        font-size: @annotation-font-size;
-        background: @highlight-other;
-        z-index: @massive-z-index;
-    }
-    // just id
-    [id]:before {
-        .show-id
-    }
-    // just class
-    [class]:before {
-        .show-class;
-    }
-    // both id and class
-    [id][class]:before {
-        .show-id;
-        .show-class;
-    }
-    // special cases
-    .widget-navigation:before {
-        content: '.' attr(class) !important; // todo - why does this require !important?
-    }
+    &,
+    .zone,
+    .widget,
+    .content-item {
 
+        :before {
+            display: block;
+            font-size: @annotation-font-size;
+            line-height: @annotation-font-size * 1.25;
+            margin-bottom: 1px;
+            overflow: hidden;
+            white-space: nowrap;
+            width:100%;
+            z-index: @massive-z-index;
+        }
+        // just id
+        &[id]:before {
+            .show-id
+        }
+        // just class
+        &[class]:before {
+            .show-class;
+        }
+        // both id and class
+        &[id][class]:before {
+            .show-id;
+            .show-class;
+        }
+        // special case
+        &.widget-navigation:before {
+            content: '.' attr(class) !important; // todo - why does this require !important?
+        }
+    }
+    // specific types
     &:before {
-        .show-id;
-        .show-class;
-        background:lighten(@highlight-other, 25);
-        position: absolute;
-        top: 50px;
-        right: 50px;
+        background:@highlight-other;
     }
-
     .zone:before {
         background: @highlight-zone;
     }

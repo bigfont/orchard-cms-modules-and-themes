@@ -9,32 +9,45 @@ Author: shaun @ bigfont.ca
 #layout-wrapper.trace-class-and-id .show-class {
   content: '.' attr(class);
 }
-#layout-wrapper.trace-class-and-id:before,
-#layout-wrapper.trace-class-and-id [id]:before,
-#layout-wrapper.trace-class-and-id [class]:before,
-#layout-wrapper.trace-class-and-id [id][class]:before {
+#layout-wrapper.trace-class-and-id :before,
+#layout-wrapper.trace-class-and-id .zone :before,
+#layout-wrapper.trace-class-and-id .widget :before,
+#layout-wrapper.trace-class-and-id .content-item :before {
+  display: block;
   font-size: 14px;
-  background: #f8531b;
+  line-height: 17.5px;
+  margin-bottom: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
   z-index: 99999;
 }
-#layout-wrapper.trace-class-and-id [id]:before {
+#layout-wrapper.trace-class-and-id[id]:before,
+#layout-wrapper.trace-class-and-id .zone[id]:before,
+#layout-wrapper.trace-class-and-id .widget[id]:before,
+#layout-wrapper.trace-class-and-id .content-item[id]:before {
   content: '#' attr(id);
 }
-#layout-wrapper.trace-class-and-id [class]:before {
+#layout-wrapper.trace-class-and-id[class]:before,
+#layout-wrapper.trace-class-and-id .zone[class]:before,
+#layout-wrapper.trace-class-and-id .widget[class]:before,
+#layout-wrapper.trace-class-and-id .content-item[class]:before {
   content: '.' attr(class);
 }
-#layout-wrapper.trace-class-and-id [id][class]:before {
+#layout-wrapper.trace-class-and-id[id][class]:before,
+#layout-wrapper.trace-class-and-id .zone[id][class]:before,
+#layout-wrapper.trace-class-and-id .widget[id][class]:before,
+#layout-wrapper.trace-class-and-id .content-item[id][class]:before {
   content: '#' attr(id) '.' attr(class);
 }
-#layout-wrapper.trace-class-and-id .widget-navigation:before {
+#layout-wrapper.trace-class-and-id.widget-navigation:before,
+#layout-wrapper.trace-class-and-id .zone.widget-navigation:before,
+#layout-wrapper.trace-class-and-id .widget.widget-navigation:before,
+#layout-wrapper.trace-class-and-id .content-item.widget-navigation:before {
   content: '.' attr(class) !important;
 }
 #layout-wrapper.trace-class-and-id:before {
-  content: '#' attr(id) '.' attr(class);
   background: #fcb097;
-  position: absolute;
-  top: 50px;
-  right: 50px;
 }
 #layout-wrapper.trace-class-and-id .zone:before {
   background: #ffb414;
@@ -47,15 +60,15 @@ Author: shaun @ bigfont.ca
 }
 #layout-wrapper.trace-zones .zone {
   outline: 1.5px inset #ffb414;
-  background-color: rgba(255, 180, 20, 0.25);
+  background-color: rgba(255, 180, 20, 0.15);
 }
 #layout-wrapper.trace-widgets .widget {
   outline: 1.5px inset #7fb903;
-  background-color: rgba(127, 185, 3, 0.25);
+  background-color: rgba(127, 185, 3, 0.15);
 }
 #layout-wrapper.trace-content-items .content-item {
   outline: 1.5px inset #00a2e3;
-  background-color: rgba(0, 162, 227, 0.25);
+  background-color: rgba(0, 162, 227, 0.15);
 }
 #layout-wrapper.trace-topography {
   background-color: #000000 !important;
