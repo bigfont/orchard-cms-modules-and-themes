@@ -19,7 +19,6 @@ Author: shaun @ bigfont.ca
   margin-bottom: 1px;
   overflow: hidden;
   white-space: nowrap;
-  width: 100%;
   z-index: 99999;
 }
 #layout-wrapper.trace-class-and-id[id]:before,
@@ -226,8 +225,8 @@ Author: shaun @ bigfont.ca
   z-index: 99999;
 }
 #theme-designer-control-bar > form {
-  opacity: 0.1;
-  filter: alpha(opacity=10);
+  opacity: 0.025;
+  filter: alpha(opacity=2.5);
   background: #00a2e3;
   border: 1px solid #004763;
   border-radius: 4px;
