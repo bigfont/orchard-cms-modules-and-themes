@@ -1,6 +1,6 @@
-﻿/*global $:false, window: false, document: false */
+﻿/*global $:false, window: false, document: false, localStorage: false */
 
-(function (window, document) {
+(function (window, document, localStorage) {
 
     "use strict";
 
@@ -26,7 +26,7 @@
         startPoint = {
             top: top,
             left: left
-        }
+        };
 
         // send it to the drop event
         event.dataTransfer.setData("text/plain", JSON.stringify(startPoint));
@@ -46,7 +46,7 @@
         endPoint = {
             left: left,
             top: top
-        }
+        };
 
         // move        
         moveElement(draggedElement, endPoint);
@@ -73,4 +73,4 @@
             moveElement(draggedElement, savedPosition);
         }
     });
-}(window, document));
+}(window, document, localStorage));

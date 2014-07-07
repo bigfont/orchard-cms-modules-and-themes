@@ -2,7 +2,7 @@
 AntiForgery: enabled
 Author: Shaun Luttin, bigfont.ca
 Website: http://orchard-theme-machine-designer.azurewebsites.net
-Version: 2.1
+Version: 2.5
 OrchardVersion: 1.8
 Dependencies: Orchard.jQuery
 Category: Designer
