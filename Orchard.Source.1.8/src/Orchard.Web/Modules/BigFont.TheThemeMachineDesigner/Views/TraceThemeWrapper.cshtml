@@ -3,8 +3,9 @@
     // We add CSS through JavaScript.
     Script.Require("jQueryUI").AtHead();
     Script.Include("CssLoader.js").AtHead();
-    Style.Include("theme-designer.css");
-    
+    Script.Include("DragAndDrop.js").AtHead();
+    Style.Include("theme-designer.css");    
 }
 
 @Display(Model.Metadata.ChildContent)
+

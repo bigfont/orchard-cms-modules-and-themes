@@ -3,7 +3,7 @@
     var currentTheme = Model.CurrentTheme;
 }
 
-<div id="theme-designer-control-bar">
+<div id="theme-designer-control-bar" draggable="true">
     @using (Html.BeginFormAntiForgeryPost(
         Url.Action("Trace", new { Controller = "Home", Area = "BigFont.TheThemeMachineDesigner" }), FormMethod.Post))
     {
