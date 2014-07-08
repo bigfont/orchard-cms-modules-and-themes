@@ -1,0 +1,162 @@
+﻿<?xml version="1.0"?>
+<Orchard>
+  <Recipe>
+    <Name>TheThemeMachineDesigner</Name>
+    <Description>A reciple that helps with extending the TheThemeMachine.</Description>
+    <Author>Shaun @ bigfont.ca</Author>
+    <WebSite>http://www.bigfont.ca</WebSite>
+    <Tags>developer</Tags>
+    <Version>1.0</Version>
+  </Recipe>
+
+  <!--
+  setup /SiteName:"The Theme Machine Designer" /AdminUsername:admin /AdminPassword:password /DatabaseProvider:SqlCe /Recipe:TheThemeMachineDesigner
+  -->
+
+  <Feature enable="Orchard.Alias,Orchard.Autoroute,TinyMce,
+                   Orchard.jQuery,Orchard.Widgets,Orchard.ContentTypes,
+                   Orchard.Scripting,Orchard.Scripting.Lightweight,PackagingServices,Orchard.Packaging,
+                   Orchard.Projections,Orchard.Fields,Orchard.OutputCache,Orchard.Taxonomies,Orchard.Workflows,
+                   Orchard.CodeGeneration, BigFont.TheThemeMachineDesigner,
+                   TheThemeMachine" />
+
+  <Metadata />
+
+  <Settings />
+
+  <Migration features="*" />
+
+  <Command>
+
+    site setting set baseurl
+    theme activate "The Theme Machine"
+
+    <!--Create menu and all pages-->
+    layer create Default /LayerRule:"true" /Description:"The widgets in this layer are displayed on all pages."
+    menu create /MenuName:"Main Menu"
+    widget create MenuWidget /Title:"Main Menu" /RenderTitle:false /Zone:"Navigation" /Position:"1" /Layer:"Default" /Identity:"MenuWidget1" /MenuName:"Main Menu"
+
+    page create /Slug:"welcome-to-orchard" /Title:"Welcome to Orchard!" /Path:"welcome-to-orchard" /Homepage:true /Publish:true /Text:"Welcome To Orchard!"
+    menuitem create /MenuPosition:"1" /MenuText:"AllZones" /Url:"~/" /MenuName:"Main Menu"
+
+    page create /Slug:"OnlyFullWidth" /Title:"OnlyFullWidth" /Path:"OnlyFullWidth" /Homepage:false /Publish:true /Text:"OnlyFullWidth"
+    menuitem create /MenuPosition:"2" /MenuText:"OnlyFullWidth" /Url:"~/OnlyFullWidth" /MenuName:"Main Menu"
+
+    <!--asides-->
+    menuitem create /MenuPosition:"3" /MenuText:"Asides" /Url:"#" /MenuName:"Main Menu"
+
+    page create /Slug:"Aside-1" /Title:"Aside-1" /Path:"Aside-1" /Homepage:false /Publish:true /Text:"Welcome To Aside-1"
+    menuitem create /MenuPosition:"3.1" /MenuText:"Aside-1" /Url:"~/Aside-1" /MenuName:"Main Menu"
+
+    page create /Slug:"Aside-12" /Title:"Aside-12" /Path:"Aside-12" /Homepage:false /Publish:true /Text:"Welcome To Aside-12"
+    menuitem create /MenuPosition:"3.2" /MenuText:"Aside-12" /Url:"~/Aside-12" /MenuName:"Main Menu"
+
+    page create /Slug:"Aside-2" /Title:"Aside-2" /Path:"Aside-2" /Homepage:false /Publish:true /Text:"Welcome To Aside-2"
+    menuitem create /MenuPosition:"3.3" /MenuText:"Aside-2" /Url:"~/Aside-2" /MenuName:"Main Menu"
+
+    <!--tripels-->
+    menuitem create /MenuPosition:"4" /MenuText:"Tripels" /Url:"#" /MenuName:"Main Menu"
+
+    page create /Slug:"Tripel-1" /Title:"Tripel-1" /Path:"Tripel-1" /Homepage:false /Publish:true /Text:"Welcome To Tripel-1"
+    menuitem create /MenuPosition:"4.1" /MenuText:"Tripel-1" /Url:"~/Tripel-1" /MenuName:"Main Menu"
+
+    page create /Slug:"Tripel-12" /Title:"Tripel-12" /Path:"Tripel-12" /Homepage:false /Publish:true /Text:"Welcome To Tripel-12"
+    menuitem create /MenuPosition:"4.2" /MenuText:"Tripel-12" /Url:"~/Tripel-12" /MenuName:"Main Menu"
+
+    page create /Slug:"Tripel-123" /Title:"Tripel-123" /Path:"Tripel-123" /Homepage:false /Publish:true /Text:"Welcome To Tripel-123"
+    menuitem create /MenuPosition:"4.3" /MenuText:"Tripel-123" /Url:"~/Tripel-123" /MenuName:"Main Menu"
+
+    page create /Slug:"Tripel-13" /Title:"Tripel-13" /Path:"Tripel-13" /Homepage:false /Publish:true /Text:"Welcome To Tripel-13"
+    menuitem create /MenuPosition:"4.4" /MenuText:"Tripel-13" /Url:"~/Tripel-13" /MenuName:"Main Menu"
+
+    page create /Slug:"Tripel-2" /Title:"Tripel-2" /Path:"Tripel-2" /Homepage:false /Publish:true /Text:"Welcome To Tripel-2"
+    menuitem create /MenuPosition:"4.5" /MenuText:"Tripel-2" /Url:"~/Tripel-2" /MenuName:"Main Menu"
+
+    page create /Slug:"Tripel-23" /Title:"Tripel-23" /Path:"Tripel-23" /Homepage:false /Publish:true /Text:"Welcome To Tripel-23"
+    menuitem create /MenuPosition:"4.6" /MenuText:"Tripel-23" /Url:"~/Tripel-23" /MenuName:"Main Menu"
+
+    page create /Slug:"Tripel-3" /Title:"Tripel-3" /Path:"Tripel-3" /Homepage:false /Publish:true /Text:"Welcome To Tripel-3"
+    menuitem create /MenuPosition:"4.7" /MenuText:"Tripel-3" /Url:"~/Tripel-3" /MenuName:"Main Menu"
+
+    <!--quads-->
+    menuitem create /MenuPosition:"5" /MenuText:"Quads" /Url:"#" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-1" /Title:"Quad-1" /Path:"Quad-1" /Homepage:false /Publish:true /Text:"Welcome To Quad-1"
+    menuitem create /MenuPosition:"5.1" /MenuText:"Quad-1" /Url:"~/Quad-1" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-2" /Title:"Quad-2" /Path:"Quad-2" /Homepage:false /Publish:true /Text:"Welcome To Quad-2"
+    menuitem create /MenuPosition:"5.2" /MenuText:"Quad-2" /Url:"~/Quad-2" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-3" /Title:"Quad-3" /Path:"Quad-3" /Homepage:false /Publish:true /Text:"Welcome To Quad-3"
+    menuitem create /MenuPosition:"5.3" /MenuText:"Quad-3" /Url:"~/Quad-3" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-4" /Title:"Quad-4" /Path:"Quad-4" /Homepage:false /Publish:true /Text:"Welcome To Quad-4"
+    menuitem create /MenuPosition:"5.4" /MenuText:"Quad-4" /Url:"~/Quad-4" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-12" /Title:"Quad-12" /Path:"Quad-12" /Homepage:false /Publish:true /Text:"Welcome To Quad-12"
+    menuitem create /MenuPosition:"5.5" /MenuText:"Quad-12" /Url:"~/Quad-12" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-13" /Title:"Quad-13" /Path:"Quad-13" /Homepage:false /Publish:true /Text:"Welcome To Quad-13"
+    menuitem create /MenuPosition:"5.6" /MenuText:"Quad-13" /Url:"~/Quad-13" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-14" /Title:"Quad-14" /Path:"Quad-14" /Homepage:false /Publish:true /Text:"Welcome To Quad-14"
+    menuitem create /MenuPosition:"5.7" /MenuText:"Quad-14" /Url:"~/Quad-14" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-23" /Title:"Quad-23" /Path:"Quad-23" /Homepage:false /Publish:true /Text:"Welcome To Quad-23"
+    menuitem create /MenuPosition:"5.8" /MenuText:"Quad-23" /Url:"~/Quad-23" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-24" /Title:"Quad-24" /Path:"Quad-24" /Homepage:false /Publish:true /Text:"Welcome To Quad-24"
+    menuitem create /MenuPosition:"5.9" /MenuText:"Quad-24" /Url:"~/Quad-24" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-34" /Title:"Quad-34" /Path:"Quad-34" /Homepage:false /Publish:true /Text:"Welcome To Quad-34"
+    menuitem create /MenuPosition:"5.10" /MenuText:"Quad-34" /Url:"~/Quad-34" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-123" /Title:"Quad-123" /Path:"Quad-123" /Homepage:false /Publish:true /Text:"Welcome To Quad-123"
+    menuitem create /MenuPosition:"5.11" /MenuText:"Quad-123" /Url:"~/Quad-123" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-234" /Title:"Quad-234" /Path:"Quad-234" /Homepage:false /Publish:true /Text:"Welcome To Quad-234"
+    menuitem create /MenuPosition:"5.12" /MenuText:"Quad-234" /Url:"~/Quad-234" /MenuName:"Main Menu"
+
+    page create /Slug:"Quad-1234" /Title:"Quad-1234" /Path:"Quad-1234" /Homepage:false /Publish:true /Text:"Welcome To Quad-1234"
+    menuitem create /MenuPosition:"5.13" /MenuText:"Quad-1234" /Url:"~/Quad-1234" /MenuName:"Main Menu"
+
+    <!--Create specific layers-->
+    layer create FullWidthZones /LayerRule:"url('~/') or url('~/OnlyFullWidth')"
+    layer create Aside-1 /LayerRule:"url('~/') or url('~/Aside-1') or url('~/Aside-12')"
+    layer create Aside-2 /LayerRule:"url('~/') or url('~/Aside-2') or url('~/Aside-12')"
+    layer create Tripel-1 /LayerRule:"url('~/') or url('~/Tripel-1') or url('~/Tripel-12') or url('~/Tripel-13') or url('~/Tripel-123')"
+    layer create Tripel-2 /LayerRule:"url('~/') or url('~/Tripel-2') or url('~/Tripel-12') or url('~/Tripel-23') or url('~/Tripel-123')"
+    layer create Tripel-3 /LayerRule:"url('~/') or url('~/Tripel-3') or url('~/Tripel-13') or url('~/Tripel-23') or url('~/Tripel-123')"
+    layer create Quad-1 /LayerRule:"url('~/') or url('~/Quad-1') or url('~/Quad-12') or url('~/Quad-13') or url('~/Quad-14') or url('~/Quad-123') or url('~/Quad-124') or url('~/Quad-134') or url('~/Quad-1234')"
+    layer create Quad-2 /LayerRule:"url('~/') or url('~/Quad-2') or url('~/Quad-12') or url('~/Quad-23') or url('~/Quad-24') or url('~/Quad-123') or url('~/Quad-124') or url('~/Quad-234') or url('~/Quad-1234')"
+    layer create Quad-3 /LayerRule:"url('~/') or url('~/Quad-3') or url('~/Quad-13') or url('~/Quad-23') or url('~/Quad-34') or url('~/Quad-123') or url('~/Quad-134') or url('~/Quad-234') or url('~/Quad-1234')"
+    layer create Quad-4 /LayerRule:"url('~/') or url('~/Quad-4') or url('~/Quad-14') or url('~/Quad-24') or url('~/Quad-34') or url('~/Quad-124') or url('~/Quad-134') or url('~/Quad-234') or url('~/Quad-1234')"
+
+    <!--Full Width Widgets-->
+    widget create HtmlWidget /Title:"Header" /Zone:"Header" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Featured" /Zone:"Featured" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"BeforeMain" /Zone:"BeforeMain" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Messages" /Zone:"Messages" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"BeforeContent" /Zone:"BeforeContent" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Content" /Zone:"Content" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"AfterContent" /Zone:"AfterContent" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"AfterMain" /Zone:"AfterMain" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"Footer" /Zone:"Footer" /Layer:"FullWidthZones" /UseLoremIpsumText:true /Position:1
+
+    <!--Aside Widgets-->
+    widget create HtmlWidget /Title:"AsideFirst" /Zone:"AsideFirst" /Layer:"Aside-1" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"AsideSecond" /Zone:"AsideSecond" /Layer:"Aside-2" /UseLoremIpsumText:true /Position:1
+    
+    <!--Tripel Widgets-->
+    widget create HtmlWidget /Title:"TripelFirst" /Zone:"TripelFirst" /Layer:"Tripel-1" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"TripelSecond" /Zone:"TripelSecond" /Layer:"Tripel-2" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"TripelThird" /Zone:"TripelThird" /Layer:"Tripel-3" /UseLoremIpsumText:true /Position:1
+
+    <!--Quad Widgets-->
+    widget create HtmlWidget /Title:"QuadFirst" /Zone:"FooterQuadFirst" /Layer:"Quad-1" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"QuadSecond" /Zone:"FooterQuadSecond" /Layer:"Quad-2" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"QuadThird" /Zone:"FooterQuadThird" /Layer:"Quad-3" /UseLoremIpsumText:true /Position:1
+    widget create HtmlWidget /Title:"QuadFourth" /Zone:"FooterQuadFourth" /Layer:"Quad-4" /UseLoremIpsumText:true /Position:1
+
+  </Command>
+</Orchard>

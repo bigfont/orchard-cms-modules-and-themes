@@ -1,0 +1,9 @@
+<Placement>
+  <Match DisplayType="Summary" ContentType="BlogPost">
+    <Place Parts_Title_Summary="Content:1"/>
+    <Place Parts_Tags_ShowTags="Content:2"/>
+    <Place Parts_Common_Metadata_Summary="Content:3" />
+    <Place Parts_Comments_Count="-" />
+    <Place Parts_Common_Body_Summary="-" />
+  </Match>
+</Placement>

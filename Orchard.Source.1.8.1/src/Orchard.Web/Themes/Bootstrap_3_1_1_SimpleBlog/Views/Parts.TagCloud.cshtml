@@ -1,0 +1,39 @@
+﻿@using Orchard.Tags.Models
+
+@helper Content(string name, int count)
+{
+    var href = Url.Action(controllerName: "Home", actionName: "Search", routeValues: new
+    {
+        area = "Orchard.Tags",
+        tagName = name
+    });
+
+    <a href="@href"><span class="badge">@count</span> @name</a>
+}
+
+<div class="panel panel-info">
+
+    <div class="panel-heading pointer cursor-pointer" data-toggle="collapse" data-target="#tags">
+        Show/Hide Topics
+    </div>
+
+    <div id="tags" class="panel-collapse collapse">
+        <div class="panel-body">
+            <ul class="tag-cloud list-unstyled list-inline">
+
+                @{
+                    //Sort by tag count
+                    Model.TagCounts.Sort((Comparison<dynamic>)((tag1, tag2) => tag2.Count - tag1.Count));
+                }
+
+                @for (int i = 0; i < Model.TagCounts.Count; i += 1)
+                {
+                    <li>
+                        @Content(Model.TagCounts[i].TagName, Model.TagCounts[i].Count)
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</div>

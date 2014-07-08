@@ -1,0 +1,8 @@
+Name: Bootstrap_3_1_1_GardenFaire
+Author: The Orchard Team
+Website: http://www.orchardproject.net
+Description: Description for the theme
+Version: 1.0
+BaseTheme: Bootstrap_3_1_1_Base
+# todo: provide tags
+# Tags: Classic, Serif

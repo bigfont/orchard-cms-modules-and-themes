@@ -1,0 +1,86 @@
+﻿@{
+    /* Responsive Design Metas
+    ***************************************************************/
+
+    //
+    // Notes:
+    // <meta charset="utf-8" /> is defined in Document.cshtml
+    //
+
+    SetMeta(name: "", content: "IE=edge", httpEquiv: "X-UA-Compatible", charset: "");
+    SetMeta(name: "viewport", content: "width=device-width, initial-scale=1.0", httpEquiv: "", charset: "");
+
+    /* Global includes for the theme
+    ***************************************************************/
+
+    Script.Require("jQuery");
+    Script.Require("ShapesBase");
+    Script.Include("IE-10.js");
+    Script.Include("//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js").AtHead().UseCondition("lt ie 9");
+    Script.Include("//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js").AtHead().UseCondition("lt ie 9");
+    Script.Include("//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js");
+
+    Style.Include("Site.css");
+
+    /* Some useful shortcuts or settings
+    ***************************************************************/
+
+    // Zone as an alias for Display to help make it obvious when we're displaying zones
+    Func<dynamic, dynamic> Zone = x => Display(x);
+
+    /* Inserting some ad hoc shapes
+    ***************************************************************/
+
+    // Login and dashboard links
+    WorkContext.Layout.Footer.Add(New.User(), "10");
+
+    /* Last bit of code to prep the layout wrapper
+    ***************************************************************/
+
+    Model.Id = "layout-wrapper";
+
+    // using Tag so the layout div gets the classes, id and other attributes added to the Model
+    var tag = Tag(Model, "div");
+}
+@tag.StartElement
+
+<div class="container">
+
+    @Zone(Model.Navigation)
+
+    @Zone(Model.Featured)
+
+    <div class="row">
+
+        @if (Model.AsideFirst != null)
+        {
+            <div class="col-md-6">
+
+                @Zone(Model.AsideFirst)
+
+            </div>
+
+            <div class="col-md-6">
+
+                @Zone(Model.Content)
+
+            </div>
+        }
+        else
+        {
+            <div class="col-md-12">
+
+                @Zone(Model.Content)
+
+            </div>
+        }
+
+    </div>
+
+    @Zone(Model.AfterMain)
+
+    @Zone(Model.Footer)
+
+</div>
+
+@tag.EndElement

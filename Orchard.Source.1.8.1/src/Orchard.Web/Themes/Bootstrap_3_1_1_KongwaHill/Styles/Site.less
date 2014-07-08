@@ -1,0 +1,173 @@
+﻿@import "less/bootstrap-3.1.1/bootstrap.less";
+@import "less/bigfont/_ie-10.less";
+
+/*
+Theme: Bootstrap 3.1.1 - KongwaHill
+Author: Shaun Luttin @ bigfont.ca
+Copyright: 
+*/
+
+
+/*#region General
+***************************************************************/
+
+a:hover {
+    text-decoration: underline;
+}
+
+em {
+    color: #C89431;
+    font-weight: 900;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /*prevent height attributes from working*/
+}
+
+/*#endregion*/
+
+
+/*#region Structure
+***************************************************************/
+
+html {
+    background-image: url("../../../../Media/Default/cssimgs/homepage-background-section.JPG");
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+body
+{
+    margin-top:20px;
+    background-color:transparent;
+}
+
+/*#endregion*/
+
+
+/*#region Forms
+***************************************************************/
+
+
+
+/*#endregion*/
+
+
+/*#region Misc
+***************************************************************/
+
+div.zone > article > p > img {
+    box-shadow: 0 0 5px 5px #A1A2B9;
+    margin: 25px auto;
+}
+
+/*#endregion*/
+
+
+/*#region Zone Featured
+***************************************************************/
+
+div.zone-featured > article.widget-featured {
+    background-color: #986120;
+    background-image: linear-gradient(to bottom, #CC9933, #490E03);
+    background-repeat: repeat-x;
+    border-bottom: thin solid #490E03;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+div.zone-featured > article.widget-featured > h1 {
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+div.zone-featured > article.widget-featured > h1 > em {
+    color: #FFCC99;
+    font-size: 54px;
+    font-style: normal;
+    line-height: 54px;
+}
+
+div.zone-featured > article.widget-featured > p {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+div.zone-featured > article.widget-featured > h2 {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/*#endregion*/
+
+
+
+/*#region Carousel
+***************************************************************/
+
+#myCarousel {
+    margin-top: 20px; /*for now*/
+    border: thin solid #BC882D;
+    padding: 8px;
+}
+
+#myCarousel div.carousel-inner {
+}
+
+#myCarousel div.carousel-inner div.item {
+}
+
+#myCarousel div.carousel-inner div.item img {
+    margin: auto;
+    max-height: 420px;
+}
+
+#myCarousel ol.carousel-indicators {
+    bottom: -40px;
+    display: none; /*for now*/
+}
+
+#myCarousel a.carousel-control {
+    font-size: 90px;
+}
+
+#myCarousel a.carousel-control.left {
+}
+
+#myCarousel a.carousel-control.right {
+}
+
+
+/*#endregion*/
+
+
+/*#region Footer 
+***************************************************************/
+div.zone-footer {
+    position: relative;
+}
+
+div.zone-footer > .widget-sticky-footer {
+    background-image: url("../../../../Media/Default/cssimgs/footer.PNG");
+    background-origin: border-box;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+div.zone-footer > .user-display {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    text-align: right;
+    padding-right: 8px;
+}
+
+/*#endregion*/
+
