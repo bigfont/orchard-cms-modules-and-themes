@@ -1,0 +1,48 @@
+﻿#theme-designer-control-bar {
+    background-image: url(../../Images/orchard-logo.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: @border-radius;
+    color: @font-color;
+    cursor: move;
+    left: 5px;
+    padding-left: @icon-width;
+    position: fixed;
+    top: 5px;
+    z-index: @massive-z-index;
+
+    & > form {
+        .opacity(@control-bar-form-opacity);
+        background: @control-bar-form-background;
+        border: @control-bar-form-border;
+        border-radius: @border-radius;
+        overflow: hidden;
+        padding: @control-bar-form-padding;
+        white-space: nowrap;
+    }
+
+    &:hover > form {
+        .opacity(0.9);
+    }
+
+    label, input, button, select {
+        display: inline;
+        margin: 0 2.5px;
+        vertical-align: middle;
+        width: auto;
+    }
+
+    input[type="checkbox"] {
+        position: relative;
+        bottom: 1px;
+    }
+}
+
+@media (max-width: @hide-max-width)
+{
+    #theme-designer-control-bar
+    {
+        display:none;
+    }
+}

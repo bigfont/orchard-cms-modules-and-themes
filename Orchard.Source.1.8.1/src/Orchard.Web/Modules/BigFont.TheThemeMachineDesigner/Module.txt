@@ -1,0 +1,11 @@
+﻿Name: The Theme Machine Designer
+AntiForgery: enabled
+Author: Shaun Luttin, bigfont.ca
+Website: http://orchard-theme-machine-designer.azurewebsites.net
+Version: 2.6
+OrchardVersion: 1.8
+Dependencies: Orchard.jQuery
+Category: Designer
+Description: (Pre-Alpha) View the nuts & bolts of The Theme Machine's Layout. Ease the development of theme structure. Note: This module only works on The Theme Machine, or themes based on it, if the Layout.cshtml file is not 'significantly' altered. Warning: Do NOT enable this module on a live site, because the tracing is viewable to anonymous users. Tested on FireFox and Chrome.
+
+# package create BigFont.TheThemeMachineDesigner C:/temp

@@ -1,0 +1,128 @@
+﻿/*
+Theme: The Theme Machine Designer
+Author: shaun @ bigfont.ca 
+*/
+
+/*mixins*/
+.topography(@level) {
+    @background-color: lighten(@topography-base-color, @topography-increment * @level);
+    background-color: @background-color !important; // todo - determine what overrides this on .widget-navigation
+    //@foreground-color: contrast(@background-color);
+    // color: @foreground-color;
+}
+
+.hightlight-me(@highlight-color) {
+    outline: 1.5px inset @highlight-color;
+    background-color: fade(@highlight-color, 15);
+}
+
+#layout-wrapper.trace-class-and-id {
+
+    .show-id {
+        content +_: '#' attr(id);
+    }
+
+    .show-class {
+        content +_: '.' attr(class);
+    }
+
+    &,
+    .zone,
+    .widget,
+    .content-item {
+
+        :before {
+            display: block;
+            font-size: @annotation-font-size;
+            line-height: @annotation-font-size * 1.25;
+            margin-bottom: 1px;
+            overflow: hidden;
+            white-space: nowrap;
+            z-index: @massive-z-index;
+        }
+        // just id
+        &[id]:before {
+            .show-id
+        }
+        // just class
+        &[class]:before {
+            .show-class;
+        }
+        // both id and class
+        &[id][class]:before {
+            .show-id;
+            .show-class;
+        }
+        // special case
+        &.widget-navigation:before {
+            content: '.' attr(class) !important; // todo - why does this require !important?
+        }
+    }
+    // specific types
+    &:before {
+        background:@highlight-other;
+    }
+    .zone:before {
+        background: @highlight-zone;
+    }
+
+    .widget:before {
+        background: @highlight-widget;
+    }
+
+    .content-item:before {
+        background: @highlight-content-item;
+    }
+}
+
+#layout-wrapper.trace-zones {
+    .zone {
+        .hightlight-me(@highlight-zone);
+    }
+}
+
+#layout-wrapper.trace-widgets {
+    .widget {
+        .hightlight-me(@highlight-widget);
+    }
+}
+
+#layout-wrapper.trace-content-items {
+    .content-item {
+        .hightlight-me(@highlight-content-item);
+    }
+}
+
+#layout-wrapper.trace-topography {
+    .topography(0);
+
+    > [id],
+    > [class] {
+        .topography(1);
+
+        > [id],
+        > [class] {
+            .topography(2);
+
+            > [id],
+            > [class] {
+                .topography(3);
+
+                > [id],
+                > [class] {
+                    .topography(4);
+
+                    > [id],
+                    > [class] {
+                        .topography(5);
+
+                        > [id],
+                        > [class] {
+                            .topography(6);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

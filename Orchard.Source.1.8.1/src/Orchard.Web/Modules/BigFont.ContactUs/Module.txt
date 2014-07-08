@@ -1,0 +1,8 @@
+﻿Name: BigFont Contact Us
+AntiForgery: enabled
+Author: Shaun Luttin at BigFont.ca
+Website: http://www.bigfont.ca
+Version: 1.1
+OrchardVersion: 1.8
+Description: Simple Widget for showing contact information to the end user. Emded the widget into an unordered list.
+Category: Widgets

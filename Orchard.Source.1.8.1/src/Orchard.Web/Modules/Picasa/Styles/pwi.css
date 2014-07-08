@@ -1,0 +1,28 @@
+.pwi_container {
+}
+
+.pwi_album_description {
+    padding: 10px 10px;
+    background:black;  
+    margin-bottom:50px;  
+    margin-top:20px;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* IE8 and lower */
+    zoom: 1; /* set "zoom", "width" or "height" to trigger "hasLayout" in IE 7 and lower */
+}
+
+    .pwi_album_description .details {
+        font-style: italic;
+    }
+
+.pwi_photo {
+    float: left;
+    text-align: center;
+    margin:0 50px 50px 0;
+}
+
+    .pwi_photo img {
+        padding: 4px;
+        border: thin solid gray;
+        border-radius: 4px;
+    }

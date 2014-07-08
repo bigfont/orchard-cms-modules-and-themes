@@ -1,0 +1,259 @@
+/*
+Theme: The Theme Machine Designer
+Author: shaun @ bigfont.ca 
+*/
+/*mixins*/
+#layout-wrapper.trace-class-and-id .show-id {
+  content: '#' attr(id);
+}
+#layout-wrapper.trace-class-and-id .show-class {
+  content: '.' attr(class);
+}
+#layout-wrapper.trace-class-and-id :before,
+#layout-wrapper.trace-class-and-id .zone :before,
+#layout-wrapper.trace-class-and-id .widget :before,
+#layout-wrapper.trace-class-and-id .content-item :before {
+  display: block;
+  font-size: 14px;
+  line-height: 17.5px;
+  margin-bottom: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 99999;
+}
+#layout-wrapper.trace-class-and-id[id]:before,
+#layout-wrapper.trace-class-and-id .zone[id]:before,
+#layout-wrapper.trace-class-and-id .widget[id]:before,
+#layout-wrapper.trace-class-and-id .content-item[id]:before {
+  content: '#' attr(id);
+}
+#layout-wrapper.trace-class-and-id[class]:before,
+#layout-wrapper.trace-class-and-id .zone[class]:before,
+#layout-wrapper.trace-class-and-id .widget[class]:before,
+#layout-wrapper.trace-class-and-id .content-item[class]:before {
+  content: '.' attr(class);
+}
+#layout-wrapper.trace-class-and-id[id][class]:before,
+#layout-wrapper.trace-class-and-id .zone[id][class]:before,
+#layout-wrapper.trace-class-and-id .widget[id][class]:before,
+#layout-wrapper.trace-class-and-id .content-item[id][class]:before {
+  content: '#' attr(id) '.' attr(class);
+}
+#layout-wrapper.trace-class-and-id.widget-navigation:before,
+#layout-wrapper.trace-class-and-id .zone.widget-navigation:before,
+#layout-wrapper.trace-class-and-id .widget.widget-navigation:before,
+#layout-wrapper.trace-class-and-id .content-item.widget-navigation:before {
+  content: '.' attr(class) !important;
+}
+#layout-wrapper.trace-class-and-id:before {
+  background: #fcb097;
+}
+#layout-wrapper.trace-class-and-id .zone:before {
+  background: #ffb414;
+}
+#layout-wrapper.trace-class-and-id .widget:before {
+  background: #7fb903;
+}
+#layout-wrapper.trace-class-and-id .content-item:before {
+  background: #00a2e3;
+}
+#layout-wrapper.trace-zones .zone {
+  outline: 1.5px inset #ffb414;
+  background-color: rgba(255, 180, 20, 0.15);
+}
+#layout-wrapper.trace-widgets .widget {
+  outline: 1.5px inset #7fb903;
+  background-color: rgba(127, 185, 3, 0.15);
+}
+#layout-wrapper.trace-content-items .content-item {
+  outline: 1.5px inset #00a2e3;
+  background-color: rgba(0, 162, 227, 0.15);
+}
+#layout-wrapper.trace-topography {
+  background-color: #000000 !important;
+}
+#layout-wrapper.trace-topography > [id],
+#layout-wrapper.trace-topography > [class] {
+  background-color: #262626 !important;
+}
+#layout-wrapper.trace-topography > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] {
+  background-color: #4d4d4d !important;
+}
+#layout-wrapper.trace-topography > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] {
+  background-color: #737373 !important;
+}
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [class] {
+  background-color: #999999 !important;
+}
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [class] > [class] {
+  background-color: #bfbfbf !important;
+}
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [id] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [class] > [id] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [id] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [class] > [class] > [id],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [id] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [class] > [id] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [id] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [id] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [id] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [id] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [id] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [id] > [class] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [id] > [class] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [id] > [class] > [class] > [class] > [class] > [class],
+#layout-wrapper.trace-topography > [class] > [class] > [class] > [class] > [class] > [class] {
+  background-color: #e6e6e6 !important;
+}
+#theme-designer-control-bar {
+  background-image: url(../Images/orchard-logo.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 4px;
+  color: #000000;
+  cursor: move;
+  left: 5px;
+  padding-left: 40px;
+  position: fixed;
+  top: 5px;
+  z-index: 99999;
+}
+#theme-designer-control-bar > form {
+  opacity: 0.025;
+  filter: alpha(opacity=2.5);
+  background: #00a2e3;
+  border: 1px solid #004763;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 5px;
+  white-space: nowrap;
+}
+#theme-designer-control-bar:hover > form {
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+#theme-designer-control-bar label,
+#theme-designer-control-bar input,
+#theme-designer-control-bar button,
+#theme-designer-control-bar select {
+  display: inline;
+  margin: 0 2.5px;
+  vertical-align: middle;
+  width: auto;
+}
+#theme-designer-control-bar input[type="checkbox"] {
+  position: relative;
+  bottom: 1px;
+}
+@media (max-width: 800px) {
+  #theme-designer-control-bar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=theme-designer.css.map */
