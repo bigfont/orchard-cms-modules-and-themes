@@ -262,6 +262,8 @@
     <Content Include="TheAdmin\Styles\images\menuOpen.gif" />
     <Content Include="TheAdmin\Styles\images\menuOpenHover.gif" />
     <Content Include="TheAdmin\Styles\images\vinesBackgroundBottom.gif" />
+    <Content Include="ThemeWithoutProject\Theme.png" />
+    <Content Include="ThemeWithoutProject\Theme.txt" />
     <Content Include="TheThemeMachine\Styles\Site.css" />
     <Content Include="TheThemeMachine\Theme.png" />
     <Content Include="TheThemeMachine\Theme.txt" />
@@ -280,6 +282,12 @@
     <Content Include="TheAdmin\Views\Menu.cshtml" />
     <Content Include="TheThemeMachine\Views\Branding.cshtml" />
     <Content Include="TheThemeMachine\Views\BadgeOfHonor.cshtml" />
+    <Content Include="ThemeWithoutProject\Content\Web.config" />
+    <Content Include="ThemeWithoutProject\Placement.info" />
+    <Content Include="ThemeWithoutProject\Scripts\Web.config" />
+    <Content Include="ThemeWithoutProject\Styles\Web.config" />
+    <Content Include="ThemeWithoutProject\Views\Layout.cshtml" />
+    <Content Include="ThemeWithoutProject\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TheAdmin\Styles\images\icons.png" />

@@ -72,6 +72,7 @@
   <ItemGroup>
     <Content Include="Images\orchard-logo.png" />
     <Content Include="Module-Todo.txt" />
+    <Content Include="Recipes\theme-machine-designer.recipe.xml" />
     <Content Include="Scripts\CssLoader.js" />
     <Content Include="Scripts\DragAndDrop.js" />
     <Content Include="Scripts\JSON2.js" />
