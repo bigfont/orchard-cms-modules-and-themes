@@ -1,10 +1,7 @@
 ﻿Name: Bootstrap_3_1_1
 AntiForgery: enabled
-Author: The Orchard Team
-Website: http://orchardproject.net
+Author: Shaun Luttin, bigfont.ca
+Website: 
 Version: 1.0
-OrchardVersion: 1.0
-Description: Description for the module
-Features:
-    Bootstrap_3_1_1:
-        Description: Description for feature Bootstrap_3_1_1.
+OrchardVersion: 1.8.1
+Description: Bootstrap components such as thumbnails.
