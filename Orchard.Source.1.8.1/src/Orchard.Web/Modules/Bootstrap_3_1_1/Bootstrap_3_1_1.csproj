@@ -225,16 +225,19 @@
     <Compile Include="ResourceManifest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Fields\MediaLibraryPicker.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Fields\MediaLibraryPicker.Summary.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Fields\MediaLibraryPicker.SummaryAdmin.cshtml" />
+    <Content Include="Views\Fields\MediaLibraryPicker-ThumbnailImages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\Image.Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fields\MediaLibraryPicker-IntroImage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\Image.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -7,11 +7,12 @@
     string name = field.DisplayName;
     var contents = field.MediaParts;
 }
-<section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
+<section class="@Bootstrap.Row media-library-picker-field media-library-picker-field-@name.HtmlClassify()">    
     @foreach(var content in contents) {
     <div class="@Bootstrap.Column(12, 12, 6, 6)">
         @Display(BuildDisplay(content, "Summary"))
     </div>
     }
+    <div class="clearfix"></div>
 </section>
 

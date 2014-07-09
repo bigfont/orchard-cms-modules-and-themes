@@ -1,0 +1,18 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Fields
+@using Orchard.Utility.Extensions;
+
+@{
+    var field = (MediaLibraryPickerField)Model.ContentField;
+    string name = field.DisplayName;
+    var contents = field.MediaParts;
+}
+<section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
+
+    <div class="@Bootstrap.Row">
+        <div class="@Bootstrap.Column(12, 12, 12, 12)">
+            @Display(BuildDisplay(contents.First(), "Detail"))
+        </div>
+    </div>
+</section>
+

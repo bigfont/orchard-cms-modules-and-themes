@@ -51,5 +51,25 @@ namespace Bootstrap_3_1_1
 
             return 2;
         }
+
+        public int UpdateFrom2()
+        {
+            ContentDefinitionManager.AlterPartDefinition("BootstrapThumbnails",
+                builder => builder.WithField("IntroImage",
+                    fieldBuilder => fieldBuilder
+                        .OfType("MediaLibraryPickerField")
+                        .WithDisplayName("Intro Image")
+                        .WithSetting("MediaLibraryPickerFieldSettings.Hint", string.Empty)
+                        .WithSetting("MediaLibraryPickerFieldSettings.Required", string.Empty)
+                        .WithSetting("MediaLibraryPickerFieldSettings.Multiple", false.ToString(CultureInfo.InvariantCulture))
+                        .WithSetting("MediaLibraryPickerFieldSettings.DisplayedContentTypes", string.Empty)
+            ));
+
+            ContentDefinitionManager.AlterTypeDefinition("BootstrapThumbnails",
+                builder => builder
+                    .WithPart("BodyPart"));
+
+            return 3;
+        }
     }
 }
