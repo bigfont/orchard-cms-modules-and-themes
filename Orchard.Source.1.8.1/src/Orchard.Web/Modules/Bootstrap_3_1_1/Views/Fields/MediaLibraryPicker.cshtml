@@ -4,11 +4,9 @@
 
 @{
     var field = (MediaLibraryPickerField) Model.ContentField;
-    string name = field.DisplayName;
     var contents = field.MediaParts;
 }
 <section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
-    <h3>@name</h3>
     @foreach(var content in contents) {
     <div class="@Bootstrap.Column(12, 12, 6, 6)">
         @Display(BuildDisplay(content, "Summary"))
