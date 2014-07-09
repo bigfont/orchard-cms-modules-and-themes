@@ -1,6 +1,7 @@
 using Orchard.UI.Resources;
 
-namespace Bootstrap_3_1_1 {
+namespace BigFont.Bootstrap.Components
+{
     public class ResourceManifest : IResourceManifestProvider {
         public void BuildManifests(ResourceManifestBuilder builder) {
             var manifest = builder.Add();

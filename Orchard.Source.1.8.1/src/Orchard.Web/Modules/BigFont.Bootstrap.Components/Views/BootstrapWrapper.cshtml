@@ -1,0 +1,8 @@
+﻿@{
+    // The purpose of this wrapper is simply to add JavaScript and CSS.
+    Script.Require("Bootstrap").AtFoot();
+    Style.Require("Bootstrap").AtHead();
+}
+
+@Display(Model.Metadata.ChildContent)
+

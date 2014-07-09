@@ -8,7 +8,7 @@ using Orchard.Core.Contents.Extensions;
 using Orchard.Data.Migration;
 using System.Globalization;
 
-namespace Bootstrap_3_1_1
+namespace BigFont.Bootstrap.Components
 {
     public class Migrations : DataMigrationImpl
     {

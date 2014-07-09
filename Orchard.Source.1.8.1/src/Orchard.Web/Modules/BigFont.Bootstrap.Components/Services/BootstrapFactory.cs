@@ -11,9 +11,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Routing;
 
-namespace Bootstrap_3_1_1.Services
+namespace BigFont.Bootstrap.Components.Services
 {
-    [OrchardFeature("Bootstrap_3_1_1")]
+    [OrchardFeature("BigFont.Bootstrap.Components")]
     public class BootstrapFactory : IShapeFactoryEvents, IShapeDisplayEvents
     {
         private bool _processing;

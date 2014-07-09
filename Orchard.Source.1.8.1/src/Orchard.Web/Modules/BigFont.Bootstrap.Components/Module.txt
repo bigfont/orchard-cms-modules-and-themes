@@ -1,0 +1,9 @@
+﻿Name: Bootstrap Components
+AntiForgery: enabled
+Author: Shaun Luttin, bigfont.ca
+Website: 
+Version: 1.0
+OrchardVersion: 1.8.1
+Description: Bootstrap CSS, JavaScript, and Components implemented as widgets (e.g. thumbnails).
+
+# package create BigFont.Bootstrap.Components c:/temppackage 

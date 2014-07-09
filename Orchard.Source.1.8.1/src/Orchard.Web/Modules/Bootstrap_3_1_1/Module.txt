@@ -1,7 +1,0 @@
-﻿Name: Bootstrap_3_1_1
-AntiForgery: enabled
-Author: Shaun Luttin, bigfont.ca
-Website: 
-Version: 1.0
-OrchardVersion: 1.8.1
-Description: Bootstrap components such as thumbnails.

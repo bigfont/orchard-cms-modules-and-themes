@@ -1,0 +1,6 @@
+﻿
+Implement the bootstrap components with alterates and classes not lessc mixins, because using mixins leads to css duplication. For instance, if we style the thumbnails with the .thumbnails mixin, then the .thumbnails properties will occur twice in css.
+
+Use the @Bootstrap extension class, because then it's clear when we're using Bootstrap in views.
+
+Use a resource manifest with Bootstrap JS and CSS, because this lets other modules/themes use the resources and might prevent linking them twice.
