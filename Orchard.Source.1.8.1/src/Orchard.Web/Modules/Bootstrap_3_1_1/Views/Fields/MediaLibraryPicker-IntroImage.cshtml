@@ -7,12 +7,14 @@
     string name = field.DisplayName;
     var contents = field.MediaParts;
 }
-<section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
 
-    <div class="@Bootstrap.Row">
-        <div class="@Bootstrap.Column(12, 12, 12, 12)">
-            @Display(BuildDisplay(contents.First(), "Detail"))
+@if (contents.Count() > 0)
+{
+    <section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
+        <div class="@Bootstrap.Row">
+            <div class="@Bootstrap.Column(12, 12, 12, 12)">
+                @Display(BuildDisplay(contents.First(), "Detail"))
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
+}
