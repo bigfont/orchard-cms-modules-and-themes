@@ -1,0 +1,4 @@
+﻿
+Implement the bootstrap components with altnerates instead of lessc mixins, because using lessc mixins leads to a lot of css duplication. For instance, if we style the thumbnails with the .thumbnails mixin, then the .thumbnails properties will occur twice in css.
+
+Use the @Bootstrap extension class, because then it's clear when we're using Bootstrap.
