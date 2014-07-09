@@ -13,10 +13,10 @@
 
     SetMeta(httpEquiv: "X-UA-Compatible", content: "IE=edge,chrome=1");
     Script.Require("jQuery").AtFoot();
-    Script.Include("//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js").AtFoot();
+    Script.Include("Bootstrap").AtFoot();
     Script.Include("theme.js").AtFoot();
     Style.Include("//fonts.googleapis.com/css?family=Lobster&subset=latin");
-    Style.Include("//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css");
+    Style.Require("Bootstrap");
     Style.Include("site.css");
     Style.Include("theme.css");
 
@@ -144,26 +144,26 @@
     <div id="layout-tripel-container">
         <div id="layout-tripel" class="group">
             @* as in beer *@
-        @if (Model.TripelFirst != null)
-        {
-            <div id="tripel-first">
-                @Zone(Model.TripelFirst)
-            </div>
-        }
-        @if (Model.TripelSecond != null)
-        {
-            <div id="tripel-second">
-                @Zone(Model.TripelSecond)
-            </div>
-        }
-        @if (Model.TripelThird != null)
-        {
-            <div id="tripel-third">
-                @Zone(Model.TripelThird)
-            </div>
-        }
+            @if (Model.TripelFirst != null)
+            {
+                <div id="tripel-first">
+                    @Zone(Model.TripelFirst)
+                </div>
+            }
+            @if (Model.TripelSecond != null)
+            {
+                <div id="tripel-second">
+                    @Zone(Model.TripelSecond)
+                </div>
+            }
+            @if (Model.TripelThird != null)
+            {
+                <div id="tripel-third">
+                    @Zone(Model.TripelThird)
+                </div>
+            }
+        </div>
     </div>
-</div>
 }
 <div id="layout-footer" class="group">
     <footer id="footer">

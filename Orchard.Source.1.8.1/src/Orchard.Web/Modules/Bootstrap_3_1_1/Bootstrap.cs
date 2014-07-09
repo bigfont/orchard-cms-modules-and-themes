@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using System.Web;
 
-
 public class Bootstrap
 { 
     // note: html css classes are case sensitive

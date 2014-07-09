@@ -72,13 +72,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_Base\Documentation\BootstrapComponents.txt" />
-    <Content Include="Bootstrap_3_1_1_Base\Scripts\theme.js" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\bootstrap.css" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.css" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.css" />
-    <Content Include="Bootstrap_3_1_1_Base\Theme.png" />
-    <Content Include="Bootstrap_3_1_1_Base\Theme.txt" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\theme.js" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.css" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Theme.png" />
@@ -261,64 +254,6 @@
     <Content Include="TheAdmin\Views\ErrorPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_Base\Content\Web.config" />
-    <Content Include="Bootstrap_3_1_1_Base\Placement.info" />
-    <Content Include="Bootstrap_3_1_1_Base\Scripts\Web.config" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\alerts.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\badges.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\bootstrap.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\breadcrumbs.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\button-groups.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\buttons.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\carousel.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\close.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\code.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\component-animations.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\dropdowns.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\forms.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\glyphicons.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\grid.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\input-groups.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\jumbotron.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\labels.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\list-group.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\media.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\mixins.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\modals.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\navbar.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\navs.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\normalize.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\pager.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\pagination.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\panels.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\popovers.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\print.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\progress-bars.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\responsive-utilities.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\scaffolding.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\tables.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\theme.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\thumbnails.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\tooltip.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\type.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\utilities.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\variables.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\wells.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Mixins.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Navigation.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Scaffolding.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Site.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Theme.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Web.config" />
-    <Content Include="Bootstrap_3_1_1_Base\Views\Layout.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Views\Menu.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Views\MenuItem.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Views\MenuItemLink.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Views\Parts\MenuWidget-MenuWidget.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Views\Widget-MenuWidget.cshtml" />
-    <Content Include="Bootstrap_3_1_1_Base\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Bootstrap_3_1_1_GardenFaire\Content\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Scripts\Web.config" />
     <Content Include="Bootstrap_3_1_1_GardenFaire\Styles\Theme.less" />
@@ -465,7 +400,6 @@
     <Content Include="Bootstrap_3_1_1_SimpleBlog\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Bootstrap_3_1_1_Base\Views\Fields\" />
     <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Debug\TempPE\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Release\TempPE\" />
