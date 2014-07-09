@@ -4,6 +4,7 @@
 
 @{
     var field = (MediaLibraryPickerField) Model.ContentField;
+    string name = field.DisplayName;
     var contents = field.MediaParts;
 }
 <section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
