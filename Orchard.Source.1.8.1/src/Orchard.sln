@@ -273,6 +273,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_3_1_1_Base", "Orc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFont.Bootstrap.Components", "Orchard.Web\Modules\BigFont.Bootstrap.Components\BigFont.Bootstrap.Components.csproj", "{8021A833-EDBB-4F57-AFB0-BEA5571539F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_FreshModule", "Orchard.Web\Modules\_FreshModule\_FreshModule.csproj", "{29D273F2-6764-488F-8794-08142447930F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU
@@ -1171,6 +1173,13 @@ Global
 		{8021A833-EDBB-4F57-AFB0-BEA5571539F4}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{8021A833-EDBB-4F57-AFB0-BEA5571539F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8021A833-EDBB-4F57-AFB0-BEA5571539F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29D273F2-6764-488F-8794-08142447930F}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{29D273F2-6764-488F-8794-08142447930F}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{29D273F2-6764-488F-8794-08142447930F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D273F2-6764-488F-8794-08142447930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D273F2-6764-488F-8794-08142447930F}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{29D273F2-6764-488F-8794-08142447930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D273F2-6764-488F-8794-08142447930F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1263,5 +1272,6 @@ Global
 		{0C7BD5E7-763A-4E1A-B2E1-AE4746C64911} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 		{B7F63E83-5608-41CD-84F2-FEA3312993F6} = {74492CBC-7201-417E-BC29-28B4C25A58B0}
 		{8021A833-EDBB-4F57-AFB0-BEA5571539F4} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
+		{29D273F2-6764-488F-8794-08142447930F} = {E9C9F120-07BA-4DFB-B9C3-3AFB9D44C9D5}
 	EndGlobalSection
 EndGlobal
