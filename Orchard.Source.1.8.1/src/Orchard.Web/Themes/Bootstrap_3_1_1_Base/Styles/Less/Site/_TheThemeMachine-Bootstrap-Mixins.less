@@ -29,17 +29,11 @@
 .make-nnn-columns(@counter, @max-n, @layout-prefix, @selector, @cols: 3) when (@counter > 0) {
     .make-nnn-columns((@counter - 1), @max-n, @layout-prefix, @selector, @cols);
 
-    #hello-counter { content: @counter; }
-
     .inner(@inner, @max-n) when (@counter < @inner) {
         .inner((@inner - 1), @max-n);
 
-        #hello-counter { content: @inner; }
-
         .deep(@deep, @max-n) when (@inner < @deep) {
             .deep((@deep - 1), @max-n);
-
-            #hello-counter { content: @deep; }
 
             &.@{layout-prefix}@{counter}@{inner}@{deep} {
                 @{selector} {
