@@ -1,0 +1,10 @@
+﻿<Placement>
+  <Place Parts_ZenGallery_Edit="Content:3"/>
+  <Place Parts_ZenGallery="Content:3"/>
+  <Match DisplayType="SummaryAdmin">
+    <Place Parts_ZenGallery="Content:1;Alternate=Parts_ZenGallery_SummaryAdmin"/>
+  </Match>
+  <Match DisplayType="Summary">
+    <Place Parts_ZenGallery="Content:1;Alternate=Parts_ZenGallery_Summary"/>
+  </Match>
+</Placement>

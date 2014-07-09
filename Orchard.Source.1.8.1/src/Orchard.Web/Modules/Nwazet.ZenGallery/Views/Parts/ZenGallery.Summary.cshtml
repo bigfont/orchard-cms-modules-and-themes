@@ -1,0 +1,10 @@
+﻿@using System.Linq;
+@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Models
+@{
+    var images = (IEnumerable<MediaPart>) Model.Images;
+    if (images != null && images.Any()) {
+        var firstImage = images.First();
+        <a href="@Url.ItemDisplayUrl((IContent)Model.ContentPart)" class="gallery summary"><img src="@Display.ResizeMediaUrl(Path: firstImage.MediaUrl, Width: 400)" class="main" alt="@firstImage.AlternateText" title="@firstImage.Title"/></a>
+    }
+}

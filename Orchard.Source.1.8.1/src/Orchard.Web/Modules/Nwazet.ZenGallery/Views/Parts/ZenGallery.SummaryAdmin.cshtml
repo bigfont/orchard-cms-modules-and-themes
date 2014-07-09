@@ -1,0 +1,10 @@
+﻿@using System.Linq;
+ @using Orchard.MediaLibrary.Models
+@{
+    Style.Include("zengallery.css");
+    var images = (IEnumerable<MediaPart>) Model.Images;
+    if (images != null && images.Any()) {
+        var firstImage = images.First();
+        <span class="gallery"><img src="@Display.ResizeMediaUrl(Path: firstImage.MediaUrl, Width: 100)" class="gallery thumbnail summary-admin" alt="@firstImage.AlternateText" title="@firstImage.Title"/></span>
+    }
+}

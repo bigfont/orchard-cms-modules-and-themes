@@ -1,0 +1,21 @@
+﻿@using System.Linq;
+@using Orchard.MediaLibrary.Models
+
+@{
+    Style.Include("zengallery.css");
+    var images = (IEnumerable<MediaPart>)Model.Images;
+    var count = images.Count();
+    if (images != null && count > 0) {
+        var firstImage = images.First();
+        <a href="@firstImage.MediaUrl" target="_blank"><img src="@Display.ResizeMediaUrl(Path: firstImage.MediaUrl, Width: 400)" class="gallery main" alt="@firstImage.AlternateText" title="@firstImage.Title"/></a>
+        if (count > 1) {
+            <ul class="gallery">
+                @foreach (var img in images.Skip(1)) {
+                    <li>
+                        <a href="@img.MediaUrl" target="_blank"><img src="@Display.ResizeMediaUrl(Path: img.MediaUrl, Width: 100)" class="thumbnail" alt="@img.AlternateText" title="@img.Title"/></a>
+                    </li>
+                }
+            </ul>
+        }
+    }
+}
