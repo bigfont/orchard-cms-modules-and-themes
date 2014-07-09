@@ -266,7 +266,6 @@
     <Content Include="Bootstrap_3_1_1_Base\Scripts\Web.config" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\alerts.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\badges.less" />
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\bootstrap.css.map" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\bootstrap.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\breadcrumbs.less" />
     <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Bootstrap\button-groups.less" />
@@ -470,9 +469,6 @@
     <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Debug\TempPE\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Release\TempPE\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Bootstrap_3_1_1_Base\Styles\Less\Site\_TheThemeMachine-Bootstrap-Thumbnails.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

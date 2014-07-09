@@ -266,6 +266,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nwazet.ZenGallery", "Orchar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootstrap_3_1_1", "Orchard.Web\Modules\Bootstrap_3_1_1\Bootstrap_3_1_1.csproj", "{8021A833-EDBB-4F57-AFB0-BEA5571539F4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9938DEBA-FED0-4AE3-A5CF-3AFE23A8AD2E}"
+	ProjectSection(SolutionItems) = preProject
+		WebEssentials-Settings.json = WebEssentials-Settings.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		CodeCoverage|Any CPU = CodeCoverage|Any CPU

@@ -303,9 +303,7 @@ img {
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
-.carousel-inner > .item > a > img,
-.media-library-picker-field article.media-item > img,
-.media-library-picker-field article.media-item a > img {
+.carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -5883,63 +5881,6 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
   color: #777777;
 }
 div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-link:hover {
-  color: #333333;
-}
-.media-library-picker-field:before,
-.media-library-picker-field:after {
-  content: " ";
-  display: table;
-}
-.media-library-picker-field:after {
-  clear: both;
-}
-.media-library-picker-field:before,
-.media-library-picker-field:after {
-  content: " ";
-  display: table;
-}
-.media-library-picker-field:after {
-  clear: both;
-}
-.media-library-picker-field > div {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 992px) {
-  .media-library-picker-field > div {
-    float: left;
-    width: 50%;
-  }
-}
-.media-library-picker-field article.media-item {
-  display: block;
-  padding: 4px;
-  margin-bottom: 20px;
-  line-height: 1.42857143;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-.media-library-picker-field article.media-item > img,
-.media-library-picker-field article.media-item a > img {
-  margin-left: auto;
-  margin-right: auto;
-}
-a.media-library-picker-field article.media-item:hover,
-a.media-library-picker-field article.media-item:focus,
-a.media-library-picker-field article.media-item.active {
-  border-color: #428bca;
-}
-.media-library-picker-field article.media-item .caption {
-  padding: 9px;
-  color: #333333;
-}
-.media-library-picker-field article.media-item footer {
-  padding: 9px;
   color: #333333;
 }
 /*

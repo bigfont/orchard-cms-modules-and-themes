@@ -1,11 +1,10 @@
-﻿#jobs-table {
-    width: auto !important;
+#jobs-table {
+  width: auto !important;
 }
-
 #jobs-table tbody tr td:last-child {
-    text-align: center;
+  text-align: center;
 }
-
 #jobs-table .progress-bar {
-    margin-top: 2px;
+  margin-top: 2px;
 }
+/*# sourceMappingURL=cloudmedia-edit-jobs.css.map */

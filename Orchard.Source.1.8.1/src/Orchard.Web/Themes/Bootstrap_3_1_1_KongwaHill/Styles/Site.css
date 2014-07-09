@@ -1,4 +1,4 @@
-﻿/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5807,7 +5807,7 @@ img {
   height: auto;
   /*prevent height attributes from working*/
 }
-/*# sourceMappingURL=Site.css.map */
+/*#endregion*/
 /*#region Structure
 ***************************************************************/
 html {
@@ -5819,17 +5819,17 @@ body {
   margin-top: 20px;
   background-color: transparent;
 }
-/*# sourceMappingURL=Site.css.map */
+/*#endregion*/
 /*#region Forms
 ***************************************************************/
-/*# sourceMappingURL=Site.css.map */
+/*#endregion*/
 /*#region Misc
 ***************************************************************/
 div.zone > article > p > img {
   box-shadow: 0 0 5px 5px #A1A2B9;
   margin: 25px auto;
 }
-/*# sourceMappingURL=Site.css.map */
+/*#endregion*/
 /*#region Zone Featured
 ***************************************************************/
 div.zone-featured > article.widget-featured {
@@ -5862,7 +5862,7 @@ div.zone-featured > article.widget-featured > h2 {
   font-size: 16px;
   line-height: 16px;
 }
-/*# sourceMappingURL=Site.css.map */
+/*#endregion*/
 /*#region Carousel
 ***************************************************************/
 #myCarousel {
@@ -5883,7 +5883,7 @@ div.zone-featured > article.widget-featured > h2 {
 #myCarousel a.carousel-control {
   font-size: 90px;
 }
-/*# sourceMappingURL=Site.css.map */
+/*#endregion*/
 /*#region Footer 
 ***************************************************************/
 div.zone-footer {
@@ -5904,5 +5904,5 @@ div.zone-footer > .user-display {
   text-align: right;
   padding-right: 8px;
 }
-/*# sourceMappingURL=Site.css.map */
+/*#endregion*/
 /*# sourceMappingURL=Site.css.map */

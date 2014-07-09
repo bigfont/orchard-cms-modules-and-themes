@@ -1,0 +1,8 @@
+﻿
+cd C:\Users\BigFont\Documents\GitHub\orchard-cms-modules-and-themes\Orchard.Source.1.8.1\src\Orchard.Web\Modules\Bootstrap_3_1_1\Styles
+    
+lessc Module\less\module.less > Module\module.min.css -x
+
+lessc Bootstrap\less\bootstrap.less > Bootstrap\bootstrap.min.css -x
+
+lessc 
