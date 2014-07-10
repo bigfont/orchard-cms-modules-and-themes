@@ -71,5 +71,19 @@ namespace BigFont.Bootstrap.Components
 
             return 3;
         }
+
+        public int UpdateFrom3()
+        {
+            ContentDefinitionManager.AlterTypeDefinition("SubnavMenuItem",
+                cfg => cfg
+                    .WithPart("MenuPart")
+                    .WithPart("CommonPart")
+                    .DisplayedAs("Subnav Menu Item")
+                    .WithSetting("Description", "Todo")
+                    .WithSetting("Stereotype", "MenuItem")
+                );
+
+            return 4;
+        }
     }
 }
