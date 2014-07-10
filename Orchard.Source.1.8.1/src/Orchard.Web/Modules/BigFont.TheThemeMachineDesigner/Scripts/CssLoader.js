@@ -6,7 +6,7 @@
 
     function addTracing() {
 
-        function addControls(id) {
+        function addCheckboxes(id) {
 
             var text,
                 label,
@@ -18,8 +18,6 @@
             $("#theme-designer-control-bar > form")
                 .append(input)
                 .append(label);
-
-
         }
 
         function addEvents(id) {
@@ -55,7 +53,7 @@
         /*jslint unparam: true*/
         $.each(trace, function (index, value) {
 
-            addControls(value);
+            addCheckboxes(value);
             addEvents(value);
             loadPersisted(value);
 
