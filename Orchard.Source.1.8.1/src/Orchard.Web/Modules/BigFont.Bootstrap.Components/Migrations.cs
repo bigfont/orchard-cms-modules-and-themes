@@ -120,9 +120,8 @@ namespace BigFont.Bootstrap.Components
         {
             ContentDefinitionManager.AlterPartDefinition("WidgetPart",
                 builder => builder.WithField("DisplayInSubnav", fieldBuilder => fieldBuilder
-            .OfType("BooleanField")
-            .WithDisplayName("Display in Subnav")
-            .WithSetting("DisplayInSubnavSettings.Hint", "This is the hint.")));
+                    .OfType("BooleanField")
+                    .WithDisplayName("Display in Subnav")));
             return 10;
         }
     }
