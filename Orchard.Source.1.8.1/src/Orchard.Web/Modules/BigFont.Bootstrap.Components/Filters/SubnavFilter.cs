@@ -23,7 +23,7 @@ namespace BigFont.Bootstrap.Components.Filters
             {
                 if (item.Content != null && item.Content.ContentItem.ContentType == "SubnavMenuItem")
                 {
-                    var widgets = GetWidgets();
+                    var widgets = GetWidgetsThatAppearInSubnav();
 
                     var menuPosition = item.Position;
                     int index = 0;
@@ -47,9 +47,14 @@ namespace BigFont.Bootstrap.Components.Filters
             }
         }
 
-        private IEnumerable<WidgetPart> GetWidgets()
+        private IEnumerable<WidgetPart> GetWidgetsThatAppearInSubnav()
         {
-            IEnumerable<WidgetPart> widgets = _widgetService.GetWidgets();
+            IEnumerable<WidgetPart> widgets = _widgetService
+                .GetWidgets()
+                .Where(w => (w as dynamic).DisplayInSubnav.Value == true)
+                .Select(w => { 
+                    return w; 
+                });
             return widgets;
         }
     }

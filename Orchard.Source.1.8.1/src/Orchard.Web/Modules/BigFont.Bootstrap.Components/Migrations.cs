@@ -85,5 +85,45 @@ namespace BigFont.Bootstrap.Components
 
             return 4;
         }
+
+        public int UpdateFrom4()
+        {
+            return 5;
+        }
+
+        public int UpdateFrom5()
+        {
+            return 6;
+        }
+
+        public int UpdateFrom6()
+        {
+            return 7;
+        }
+
+        public int UpdateFrom7()
+        {
+            return 8;
+        }
+
+        public int UpdateFrom8()
+        {
+            ContentDefinitionManager.AlterPartDefinition("WidgetPart",
+                builder => builder.WithField("DisplayInSubnav", fieldBuilder => fieldBuilder
+            .OfType("BooleanField")
+            .WithDisplayName("Display in Subnav")
+            .WithSetting("DisplayInSubnavSettings.Hint", "This is the hint.")));
+            return 9;
+        }
+
+        public int UpdateFrom9()
+        {
+            ContentDefinitionManager.AlterPartDefinition("WidgetPart",
+                builder => builder.WithField("DisplayInSubnav", fieldBuilder => fieldBuilder
+            .OfType("BooleanField")
+            .WithDisplayName("Display in Subnav")
+            .WithSetting("DisplayInSubnavSettings.Hint", "This is the hint.")));
+            return 10;
+        }
     }
 }
