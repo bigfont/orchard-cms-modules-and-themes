@@ -32,7 +32,7 @@ namespace BigFont.Bootstrap.Components.Filters
                         var inserted = new MenuItem
                         {
                             Text = new LocalizedString(w.Title),
-                            Url = string.Format("#", w.Title.ToLowerInvariant()),
+                            Url = string.Format("#{0}", w.Title.ToLowerInvariant()), // todo make this the html id
                             Items = new MenuItem[0],
                             Position = menuPosition + ":" + index++,
                         };
@@ -51,10 +51,7 @@ namespace BigFont.Bootstrap.Components.Filters
         {
             IEnumerable<WidgetPart> widgets = _widgetService
                 .GetWidgets()
-                .Where(w => (w as dynamic).DisplayInSubnav.Value == true)
-                .Select(w => { 
-                    return w; 
-                });
+                .Where(w => (w as dynamic).DisplayInSubnav.Value == true));
             return widgets;
         }
     }
