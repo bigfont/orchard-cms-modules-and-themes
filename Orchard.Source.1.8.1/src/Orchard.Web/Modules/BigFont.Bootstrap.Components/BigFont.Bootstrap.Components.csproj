@@ -67,6 +67,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Module.txt" />
     <Content Include="Scripts\Bootstrap\affix.js" />
     <Content Include="Scripts\Bootstrap\alert.js" />
     <Content Include="Scripts\Bootstrap\bootstrap.min.js" />
@@ -88,7 +89,6 @@
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
     <Content Include="Properties\AssemblyInfo.cs" />
-    <Content Include="Module.txt" />
     <Content Include="_Documentation\DesignDecisions.txt" />
   </ItemGroup>
   <ItemGroup>

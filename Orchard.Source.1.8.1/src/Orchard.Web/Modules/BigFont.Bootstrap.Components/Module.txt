@@ -2,16 +2,10 @@
 AntiForgery: enabled
 Author: Shaun Luttin, bigfont.ca
 Website: 
-Version: 1.2
+Version: 1.3
 OrchardVersion: 1.8.1
 Description: (Pre-Alpha) Bootstrap CSS, JavaScript, and Components implemented as widgets (e.g. thumbnails). While you may find this module useful, please keep in mind that it isn't yet complete.
-FeatureDescription: Core Boostrap CSS, JavaScript, and Components
-Category: Content
-Features: 
-	Bootstrap.ContactUs: 
-		Name: Bootstrap Contact Us
-		Description: Contact fields (email, phone, address) rendered as ul and address elements.
-		Category: Content
+
 
 
 # package create BigFont.Bootstrap.Components c:/temp
