@@ -1,0 +1,17 @@
+﻿@{
+    // Model is Model.Menu from the layout (Layout.Menu)
+    var menu = Model.Menu;
+    var collapseId = Model.Id;
+
+    var tag = Tag(menu, "ul");
+    var items = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
+
+    if (items.Any())
+    {
+        items[0].Classes.Add("first");
+        items[items.Count - 1].Classes.Add("last");
+    }
+}
+@tag.StartElement
+    @DisplayChildren(menu)
+@tag.EndElement
