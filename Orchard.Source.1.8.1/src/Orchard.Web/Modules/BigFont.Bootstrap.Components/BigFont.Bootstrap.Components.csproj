@@ -10,8 +10,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Bootstrap_3_1_1</RootNamespace>
-    <AssemblyName>Bootstrap_3_1_1</AssemblyName>
+    <RootNamespace>BigFont.Bootstrap.Components</RootNamespace>
+    <AssemblyName>BigFont.Bootstrap.Components</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <FileUpgradeFlags>
@@ -118,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\Bootstrap\less\alerts.less" />
@@ -242,9 +241,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap.cs" />
+    <Compile Include="Drivers\DisplayInSubnavFieldDriver.cs" />
     <Compile Include="Filters\SubnavFilter.cs" />
     <Compile Include="Handlers\WidgetPartHandler.cs" />
     <Compile Include="Migrations.cs" />
+    <Compile Include="Models\DisplayInSubnavField.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Services\BootstrapFactory.cs" />
   </ItemGroup>
@@ -269,7 +270,13 @@
     <Content Include="Views\BootstrapWrapper.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Widget-BootstrapAffixSubnav.cshtml" />
+    <Content Include="Views\EditorTemplates\Fields\DisplayInSubnav.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget-SubnavMenuWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\MenuWidget-SubnavMenuWidget.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

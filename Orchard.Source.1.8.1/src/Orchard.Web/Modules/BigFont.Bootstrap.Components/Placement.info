@@ -14,4 +14,13 @@
     <Place Parts_Contents_Publish="-" />
   </Match>
 
+
+
+
+
+
+  <Placement>
+    <Place Fields_DisplayInSubnav_Edit="Content:3"/>
+  </Placement>
+
 </Placement>

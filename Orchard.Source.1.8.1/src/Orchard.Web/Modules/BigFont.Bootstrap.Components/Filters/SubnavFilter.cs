@@ -51,7 +51,11 @@ namespace BigFont.Bootstrap.Components.Filters
         {
             IEnumerable<WidgetPart> widgets = _widgetService
                 .GetWidgets()
-                .Where(w => (w as dynamic).DisplayInSubnav.Value == true);
+                .Where(w =>
+                    {
+                        var value = (w as dynamic).DisplayInSubnav.Value;
+                        return value != false;
+                    });
             return widgets;
         }
     }

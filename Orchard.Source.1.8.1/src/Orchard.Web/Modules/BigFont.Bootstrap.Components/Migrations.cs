@@ -81,7 +81,7 @@ namespace BigFont.Bootstrap.Components
                     .DisplayedAs("Subnav Menu Item")
                     .WithSetting("Description", "Todo")
                     .WithSetting("Stereotype", "MenuItem")
-                );
+                );            
 
             return 4;
         }
@@ -123,6 +123,59 @@ namespace BigFont.Bootstrap.Components
                     .OfType("BooleanField")
                     .WithDisplayName("Display in Subnav")));
             return 10;
+        }
+
+        public int UpdateFrom10()
+        {
+            ContentDefinitionManager.AlterPartDefinition("WidgetPart",
+                builder => builder.RemoveField("DisplayInSubnav"));
+            return 11;
+        }
+
+        public int UpdateFrom11()
+        {
+            ContentDefinitionManager.DeleteTypeDefinition("SubnavMenuItem");
+
+            return 12;
+        }
+
+        public int UpdateFrom12()
+        {
+
+            ContentDefinitionManager.AlterTypeDefinition("BootstrapSubnav",
+                builder => builder
+                    .WithPart("CommonPart")
+                    .WithPart("WidgetPart")
+                    .WithSetting("Stereotype", "Widget")
+                );
+
+            return 13;
+        }
+
+        public int UpdateFrom13()
+        {
+            ContentDefinitionManager.AlterTypeDefinition("SubnavMenuItem",
+                cfg => cfg
+                    .WithPart("MenuPart")
+                    .WithPart("CommonPart")
+                    .DisplayedAs("Subnav Menu Item")
+                    .WithSetting("Description", "Todo")
+                    .WithSetting("Stereotype", "MenuItem")
+                );
+            return 14;
+        }
+
+        public int UpdateFrom14()
+        {
+            ContentDefinitionManager.AlterTypeDefinition("SubnavMenuWidget", cfg => cfg
+                .WithPart("CommonPart")
+                .WithPart("IdentityPart")
+                .WithPart("WidgetPart")
+                .WithPart("MenuWidgetPart")
+                .WithSetting("Stereotype", "Widget")
+            );
+
+            return 15;
         }
     }
 }

@@ -15,8 +15,8 @@ namespace BigFont.Bootstrap.Components.Handlers
     public class WidgetPartHandler : ContentHandler
     {
         public WidgetPartHandler(IRepository<WidgetPartRecord> widgetsRepository) {
-            OnInitializing<WidgetPart>((context, part) => (part as dynamic).ShowInSubnav.Value = true);
-            OnLoading<WidgetPart>((context, part) => (part as dynamic).ShowInSubnav.Value = true);
+            ////OnInitializing<WidgetPart>((context, part) => (part as dynamic).ShowInSubnav.Value = true);
+            ////OnLoading<WidgetPart>((context, part) => (part as dynamic).ShowInSubnav.Value = true);
         }
     }
 }
