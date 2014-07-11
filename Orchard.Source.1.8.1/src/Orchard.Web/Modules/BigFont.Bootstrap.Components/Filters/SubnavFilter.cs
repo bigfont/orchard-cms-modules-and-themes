@@ -56,8 +56,10 @@ namespace BigFont.Bootstrap.Components.Filters
                 .GetWidgets()
                 .Where(w =>
                     {
-                        var value = (w as dynamic).DisplayInSubnav.Value;
-                        return value != false;
+                        var dw = (w as dynamic);
+                        var displayInSubnav = dw.DisplayInSubnav.Value;
+                        var renderTitle = dw.RenderTitle;
+                        return (displayInSubnav != false) && renderTitle;
                     });
             return widgets;
         }
