@@ -3,9 +3,6 @@
     var menu = Model.Menu;
     var collapseId = Model.Id;
 
-    ////menu.Classes.Add("nav");
-    ////menu.Classes.Add("navbar-nav");
-
     var tag = Tag(menu, "ul");
     var items = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
 
@@ -15,12 +12,6 @@
         items[items.Count - 1].Classes.Add("last");
     }
 }
-@*<div>
-    <nav id="@collapseId" class="collapse navbar-collapse">*@
-        Hello
-        @tag.StartElement
-        @* see MenuItem shape template *@
-        @DisplayChildren(menu)
-        @tag.EndElement
-    @*</nav>
-</div>*@
+@tag.StartElement
+    @DisplayChildren(menu)
+@tag.EndElement

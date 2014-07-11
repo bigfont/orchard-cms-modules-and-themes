@@ -12,7 +12,6 @@ namespace BigFont.Bootstrap.Components
 {
     public class Migrations : DataMigrationImpl
     {
-
         public int Create()
         {
             /* 
@@ -74,6 +73,7 @@ namespace BigFont.Bootstrap.Components
 
         public int UpdateFrom3()
         {
+            // Removed below and then added again
             ContentDefinitionManager.AlterTypeDefinition("SubnavMenuItem",
                 cfg => cfg
                     .WithPart("MenuPart")
@@ -108,6 +108,7 @@ namespace BigFont.Bootstrap.Components
 
         public int UpdateFrom8()
         {
+            // Again, deprecated
             ContentDefinitionManager.AlterPartDefinition("WidgetPart",
                 builder => builder.WithField("DisplayInSubnav", fieldBuilder => fieldBuilder
             .OfType("BooleanField")
@@ -118,6 +119,8 @@ namespace BigFont.Bootstrap.Components
 
         public int UpdateFrom9()
         {
+            // Deprecated and replaced with field
+            // When do I add the field to the widget, though?
             ContentDefinitionManager.AlterPartDefinition("WidgetPart",
                 builder => builder.WithField("DisplayInSubnav", fieldBuilder => fieldBuilder
                     .OfType("BooleanField")
@@ -127,6 +130,7 @@ namespace BigFont.Bootstrap.Components
 
         public int UpdateFrom10()
         {
+            // Did I remove this, really? Aha. It's replace with the DisplayInSubnav field.
             ContentDefinitionManager.AlterPartDefinition("WidgetPart",
                 builder => builder.RemoveField("DisplayInSubnav"));
             return 11;
@@ -141,7 +145,7 @@ namespace BigFont.Bootstrap.Components
 
         public int UpdateFrom12()
         {
-
+            // bootstrap subnav is deprecated
             ContentDefinitionManager.AlterTypeDefinition("BootstrapSubnav",
                 builder => builder
                     .WithPart("CommonPart")
@@ -177,5 +181,6 @@ namespace BigFont.Bootstrap.Components
 
             return 15;
         }
+
     }
 }
