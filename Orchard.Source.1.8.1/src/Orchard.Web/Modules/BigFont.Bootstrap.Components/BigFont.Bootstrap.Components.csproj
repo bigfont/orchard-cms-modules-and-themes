@@ -241,10 +241,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap.cs" />
+    <Compile Include="Drivers\ContactUsDriver.cs" />
     <Compile Include="Drivers\DisplayInSubnavFieldDriver.cs" />
     <Compile Include="Filters\SubnavFilter.cs" />
+    <Compile Include="Handlers\ContactUsHandler.cs" />
     <Compile Include="Handlers\WidgetPartHandler.cs" />
     <Compile Include="Migrations.cs" />
+    <Compile Include="Models\ContactUs.cs" />
     <Compile Include="Models\DisplayInSubnavField.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Services\BootstrapFactory.cs" />
@@ -277,6 +280,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\MenuWidget-SubnavMenuWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\ContactUs.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Fields\ContactUs.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

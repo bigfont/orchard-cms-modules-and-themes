@@ -59,7 +59,7 @@ namespace BigFont.Bootstrap.Components.Filters
                         var dw = (w as dynamic);
                         var displayInSubnav = dw.DisplayInSubnav.Value;
                         var renderTitle = dw.RenderTitle;
-                        return (displayInSubnav != false) && renderTitle;
+                        return (displayInSubnav != false) && renderTitle; // how is the default value set for renderTitle? 
                     });
             return widgets;
         }

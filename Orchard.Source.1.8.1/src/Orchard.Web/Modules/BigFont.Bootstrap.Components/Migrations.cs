@@ -7,6 +7,7 @@ using Orchard.ContentManagement.MetaData.Builders;
 using Orchard.Core.Contents.Extensions;
 using Orchard.Data.Migration;
 using System.Globalization;
+using BigFont.Bootstrap.Components.Models;
 
 namespace BigFont.Bootstrap.Components
 {
@@ -82,6 +83,35 @@ namespace BigFont.Bootstrap.Components
                 builder => builder.OfType("DisplayInSubnavField")));
 
             return 23;
+        }
+
+        public int UpdateFrom29()
+        {
+            // are these calls still necessary?
+            ContentDefinitionManager.DeleteTypeDefinition("ContactUs");
+            SchemaBuilder.DropTable("ContactUsRecord");
+            // end
+
+            SchemaBuilder.CreateTable("ContactUsRecord", table => table
+                .ContentPartRecord()
+                .Column("PhoneNumber", DbType.String)
+                .Column("EmailAddress", DbType.String)
+                .Column("StreetAddress", DbType.String)
+                .Column("City", DbType.String)
+                .Column("Province", DbType.String)
+                .Column("Country", DbType.String)
+                .Column("PostalCode", DbType.String)
+            );
+
+            ContentDefinitionManager.AlterPartDefinition("ContactUsPart", cfg => cfg.Attachable());
+
+            ContentDefinitionManager.AlterTypeDefinition("BootstrapContactUs", cfg => cfg
+                .WithPart("ContactUsPart")
+                .WithPart("WidgetPart")
+                .WithPart("CommonPart")
+                .WithSetting("Stereotype", "Widget"));
+
+            return 30;
         }
     }
 }

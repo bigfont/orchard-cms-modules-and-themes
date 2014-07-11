@@ -14,10 +14,10 @@
     <Place Parts_Contents_Publish="-" />
   </Match>
 
-
-
-
-
+  <Placement>
+    <Place Parts_ContactUs="Content:10"/>
+    <Place Parts_ContactUs_Edit="Content:7.5"/>
+  </Placement>
 
   <Placement>
     <Place Fields_DisplayInSubnav_Edit="Content:3"/>
