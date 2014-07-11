@@ -1,9 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.Records;
+using Orchard.Environment.Extensions;
 
 namespace BigFont.Bootstrap.Components.Models
 {
+    [OrchardFeature("Bootstrap.ContactUs")]
     public class ContactUsRecord : ContentPartRecord
     {
         public virtual string EmailAddress { get; set; }
@@ -14,10 +16,10 @@ namespace BigFont.Bootstrap.Components.Models
         public virtual string Country { get; set; }
         public virtual string PostalCode { get; set; }
     }
-
+    [OrchardFeature("Bootstrap.ContactUs")]
     public class ContactUsPart : ContentPart<ContactUsRecord>
     {
-        [Required]        
+        [Required]
         public string EmailAddress { get { return Record.EmailAddress; } set { Record.EmailAddress = value; } }
         [Required]
         public string PhoneNumber { get { return Record.PhoneNumber; } set { Record.PhoneNumber = value; } }

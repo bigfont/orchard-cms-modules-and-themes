@@ -5,6 +5,7 @@ using Orchard.Environment.Extensions;
 
 namespace BigFont.Bootstrap.Components.Drivers
 {
+    [OrchardFeature("Bootstrap.ContactUs")]
     public class ContactUsDriver : ContentPartDriver<ContactUsPart>
     {
         protected override DriverResult Display(

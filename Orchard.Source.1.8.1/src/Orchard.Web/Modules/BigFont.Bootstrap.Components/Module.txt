@@ -1,11 +1,15 @@
 ﻿Name: Bootstrap Components
 AntiForgery: enabled
 Author: Shaun Luttin, bigfont.ca
-Website: 
-Version: 1.4
+Website: http://www.bigfont.ca
+Version: 1.5
 OrchardVersion: 1.8.1
 Description: (Pre-Alpha) Bootstrap CSS, JavaScript, and Components implemented as widgets (e.g. thumbnails). While you may find this module useful, please keep in mind that it isn't yet complete.
-
-
-# package create BigFont.Bootstrap.Components c:/temp
-# Todo Add "Features" using Vandelay.Industries as an example
+FeatureName: Bootstrap Components
+Category: Content
+FeatureDescription: Bootstrap Component core files.
+Features: 
+	Bootstrap.ContactUs:
+		Name: Some name
+		Description: Some description
+		Category: Content

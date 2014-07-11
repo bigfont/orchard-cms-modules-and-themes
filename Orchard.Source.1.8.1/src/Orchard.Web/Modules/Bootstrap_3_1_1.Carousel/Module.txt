@@ -6,4 +6,3 @@ Version: 1.0
 OrchardVersion: 1.8
 Description: A carousel that reads images from a Media slideshow folder
 
-# package create Bootstrap_3_1_1.Carousel c:\temp
