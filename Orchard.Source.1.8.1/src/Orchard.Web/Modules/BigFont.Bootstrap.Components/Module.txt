@@ -2,8 +2,11 @@
 AntiForgery: enabled
 Author: Shaun Luttin, bigfont.ca
 Website: 
-Version: 1.0
+Version: 1.1
 OrchardVersion: 1.8.1
-Description: Bootstrap CSS, JavaScript, and Components implemented as widgets (e.g. thumbnails).
+Description: (Pre-Alpha) Bootstrap CSS, JavaScript, and Components implemented as widgets (e.g. thumbnails). While you may find this module useful, please keep in mind that it isn't yet complete.
+FeatureDescription: Core Boostrap CSS, JavaScript, and Components
+Category: Content
 
-# package create BigFont.Bootstrap.Components c:/temppackage 
+
+# package create BigFont.Bootstrap.Components c:/temp
