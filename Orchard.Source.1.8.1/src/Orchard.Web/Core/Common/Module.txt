@@ -8,8 +8,4 @@ Description: The common module introduces content parts that are going to be use
 FeatureDescription: Core content parts.
 Dependencies: Settings
 Category: Core
-Features: 
-	Bootstrap.ContactUs: 
-		Name: Bootstrap Contact Us
-		Description: Provides contact fields rendered ul and address elements.
-		Category: Content
+
