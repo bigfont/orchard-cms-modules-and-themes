@@ -23,6 +23,9 @@ namespace BigFont.Bootstrap.Components.Filters
             {
                 if (item.Content != null && item.Content.ContentItem.ContentType == "SubnavMenuItem")
                 {
+
+                    // todo also retrieve content items in addition to widgets
+
                     var widgets = GetWidgetsThatAppearInSubnav();
 
                     var menuPosition = item.Position;
