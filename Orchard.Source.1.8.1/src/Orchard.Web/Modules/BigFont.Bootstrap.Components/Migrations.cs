@@ -56,6 +56,11 @@ namespace BigFont.Bootstrap.Components
             return 2;
         }
 
+        public int UpdateFrom2()
+        {
+            return 22;
+        }
+
         // we previously ran the other updates during development
         // then consolidated them into one
 
@@ -85,13 +90,13 @@ namespace BigFont.Bootstrap.Components
             return 23;
         }
 
+        public int UpdateFrom23()
+        {
+            return 29;
+        }
+
         public int UpdateFrom29()
         {
-            // are these calls still necessary?
-            ContentDefinitionManager.DeleteTypeDefinition("ContactUs");
-            SchemaBuilder.DropTable("ContactUsRecord");
-            // end
-
             SchemaBuilder.CreateTable("ContactUsRecord", table => table
                 .ContentPartRecord()
                 .Column("PhoneNumber", DbType.String)
@@ -112,6 +117,27 @@ namespace BigFont.Bootstrap.Components
                 .WithSetting("Stereotype", "Widget"));
 
             return 30;
+        }
+
+        public int UpdateFrom30()
+        {
+            // Creating table PicasaRecord
+            SchemaBuilder.CreateTable("PicasaRecord", table => table
+                .ContentPartRecord()
+                .Column("Username", DbType.String)
+            );
+
+            ContentDefinitionManager.AlterPartDefinition(
+                typeof(PicasaRecord).Name, cfg => cfg.Attachable());
+
+            // Create a new widget content type with our map
+            ContentDefinitionManager.AlterTypeDefinition("Picasa", cfg => cfg
+                .WithPart("PicasaPart")
+                .WithPart("WidgetPart")
+                .WithPart("CommonPart")
+                .WithSetting("Stereotype", "Widget"));
+
+            return 31;
         }
     }
 }
