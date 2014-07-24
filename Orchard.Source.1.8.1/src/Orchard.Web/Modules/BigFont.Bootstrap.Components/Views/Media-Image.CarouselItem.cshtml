@@ -1,0 +1,14 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Models
+
+@{
+    var mediaPart = ((ContentItem)Model.ContentItem).As<MediaPart>();
+    var imagePart = ((ContentItem)Model.ContentItem).As<ImagePart>();
+}
+
+
+<img width="@imagePart.Width" height="@imagePart.Height" alt="@mediaPart.AlternateText" src="@Url.Content(mediaPart.MediaUrl)" />
+<div class="carousel-caption">
+    <h1>@mediaPart.Title</h1>
+    <p>@mediaPart.Caption</p>
+</div>

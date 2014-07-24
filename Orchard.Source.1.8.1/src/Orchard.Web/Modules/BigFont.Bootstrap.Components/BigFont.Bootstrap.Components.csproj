@@ -81,10 +81,13 @@
     <Content Include="Scripts\Bootstrap\tab.js" />
     <Content Include="Scripts\Bootstrap\tooltip.js" />
     <Content Include="Scripts\Bootstrap\transition.js" />
+    <Content Include="Scripts\jquery.pwi-min.js" />
     <Content Include="Styles\Bootstrap\bootstrap.min.css" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\compile-lessc.txt" />
     <Content Include="Styles\Module\module.css" />
     <Content Include="Styles\Module\module.min.css" />
+    <Content Include="Styles\v1-pwi.css" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -243,12 +246,15 @@
     <Compile Include="Bootstrap.cs" />
     <Compile Include="Drivers\ContactUsDriver.cs" />
     <Compile Include="Drivers\DisplayInSubnavFieldDriver.cs" />
+    <Compile Include="Drivers\PicasaDriver.cs" />
     <Compile Include="Filters\SubnavFilter.cs" />
     <Compile Include="Handlers\ContactUsHandler.cs" />
+    <Compile Include="Handlers\PicasaHandler.cs" />
     <Compile Include="Handlers\WidgetPartHandler.cs" />
     <Compile Include="Migrations.cs" />
     <Compile Include="Models\ContactUs.cs" />
     <Compile Include="Models\DisplayInSubnavField.cs" />
+    <Compile Include="Models\Picasa.cs" />
     <Compile Include="ResourceManifest.cs" />
     <Compile Include="Services\BootstrapFactory.cs" />
   </ItemGroup>
@@ -292,6 +298,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Widget-BootstrapSubnav.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\Picasa.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\Picasa.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Widget-BootstrapCarousel.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fields\MediaLibraryPicker-CarouselImages.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Media-Image.CarouselIndicator.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Media.CarouselItem.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

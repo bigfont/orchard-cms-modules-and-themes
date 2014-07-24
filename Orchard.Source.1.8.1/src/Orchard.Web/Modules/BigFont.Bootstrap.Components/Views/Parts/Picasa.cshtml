@@ -1,0 +1,55 @@
+﻿@{
+    Script.Require("jQuery").AtHead();
+    Script.Include("jquery.pwi-min.js").AtHead();
+    Style.Include("v1-pwi.css");
+    //Requires bootstrap.tab.js
+
+    var albumName1 = "KongwaConnected";
+    var albumName2 = "Miscellaneous";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var settings = {
+            username: '@Model.Username',
+            thumbCrop: 1,
+            thumbCss: '',
+            maxResults: 300,
+            thumbSize: 160,
+            mode: 'album'
+        }
+
+        // remove the tab-pane class, because it sets display:none,
+        // and pwi cannot inject content into elements with display:none.
+        $(".tab-content").children().removeClass('tab-pane');
+
+        settings.album = '@albumName1';
+        $("#@albumName1").pwi(settings);
+
+        settings.album = '@albumName2';
+        $("#@albumName2").pwi(settings);
+
+        // reapply the tab-pane class once pwi has injected content
+        $(".tab-content").children().addClass('tab-pane');
+    });
+
+</script>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#@albumName1" data-toggle="tab">@albumName1</a></li>
+    <li><a href="#@albumName2" data-toggle="tab">@albumName2</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div class="tab-pane active" id="@albumName1">
+        <div id="picasa-container-1"></div>
+    </div>
+    <div class="tab-pane" id="@albumName2">
+        <div id="picasa-container-2"></div>
+    </div>
+</div>
+
+
+

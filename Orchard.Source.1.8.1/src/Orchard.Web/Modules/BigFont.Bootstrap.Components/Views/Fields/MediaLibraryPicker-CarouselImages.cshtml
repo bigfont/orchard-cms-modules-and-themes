@@ -1,0 +1,56 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Fields
+@using Orchard.Utility.Extensions;
+
+@{
+    var field = (MediaLibraryPickerField)Model.ContentField;
+    string name = field.DisplayName;
+    var mediaParts = field.MediaParts;
+    var carouselId = DateTime.Now.Ticks; // todo change this to something more appropriate
+}
+
+<section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
+    <h3>@name</h3>
+
+    <!--carousel-->
+    <div id="@carouselId" class="carousel slide" data-ride="carousel">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <!-- Indicators -->
+
+                <ul class="list-unstyled">
+                    @foreach (var mediaPart in mediaParts.Select((value, index) => new { index, value }))
+                    {
+                        var indicatorClass = mediaPart.index == 0 ? "active" : string.Empty;
+
+                        <li data-target="#@carouselId" data-slide-to="@mediaPart.index" class="@indicatorClass">
+                            @Display(BuildDisplay(mediaPart.value, "CarouselIndicator"))
+                        </li>
+                    }
+                </ul>
+
+            </div>
+
+            <div class="col-md-9">
+                <!-- Wrapper for slides -->
+
+                <div class="carousel-inner">
+
+                    @foreach (var mediaPart in mediaParts.Select((value, index) => new { index, value }))
+                    {
+                        var itemClass = mediaPart.index == 0 ? "item active" : "item";
+
+                        <div class="@itemClass">
+                            @Display(BuildDisplay(mediaPart.value, "CarouselItem"))
+                        </div>
+                    }
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+

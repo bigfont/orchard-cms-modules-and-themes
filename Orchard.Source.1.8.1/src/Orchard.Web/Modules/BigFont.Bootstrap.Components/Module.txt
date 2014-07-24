@@ -2,14 +2,9 @@
 AntiForgery: enabled
 Author: Shaun Luttin, bigfont.ca
 Website: http://www.bigfont.ca
-Version: 1.5
+Version: 1.6
 OrchardVersion: 1.8.1
-Description: (Pre-Alpha) Bootstrap CSS, JavaScript, and Components implemented as widgets (e.g. thumbnails). While you may find this module useful, please keep in mind that it isn't yet complete.
+Description: (Pre-Alpha) Bootstrap CSS, JavaScript, and Components implemented as widgets. While you may find this module useful, keep in mind that it isn't complete.
 FeatureName: Bootstrap Components
 Category: Content
 FeatureDescription: Bootstrap Component core files.
-Features: 
-	Bootstrap.ContactUs:
-		Name: Some name
-		Description: Some description
-		Category: Content

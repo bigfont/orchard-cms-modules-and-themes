@@ -23,4 +23,9 @@
     <Place Fields_DisplayInSubnav_Edit="Content:3"/>
   </Placement>
 
+  <Placement>
+    <Place Parts_Picasa="Content:10"/>
+    <Place Parts_Picasa_Edit="Content:7.5"/>
+  </Placement>
+
 </Placement>

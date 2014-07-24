@@ -1,0 +1,9 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Models
+
+@{
+    var mediaPart = ((ContentItem)Model.ContentItem).As<MediaPart>();
+    var imagePart = ((ContentItem)Model.ContentItem).As<ImagePart>();
+}
+
+<img src="@Display.ResizeMediaUrl(Width: 100, Height: 50, Mode: "crop", Alignment: "middlecenter", Path: mediaPart.MediaUrl)" />

@@ -1,0 +1,14 @@
+﻿@model BigFont.Bootstrap.Components.Models.PicasaPart
+
+<fieldset>
+
+  <legend>Picasa</legend>
+  <div class="editor-label">
+    @Html.LabelFor(Model => Model.Username)
+  </div>
+  <div class="editor-field">
+    @Html.TextBoxFor(Model => Model.Username)
+    @Html.ValidationMessageFor(Model => Model.Username)
+  </div>
+            
+</fieldset>

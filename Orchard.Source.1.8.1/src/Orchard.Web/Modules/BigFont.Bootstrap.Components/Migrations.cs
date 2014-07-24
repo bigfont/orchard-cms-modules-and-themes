@@ -24,7 +24,7 @@ namespace BigFont.Bootstrap.Components
 
             return 1;
         }
-     
+
         public int UpdateFrom1()
         {
             ContentDefinitionManager.AlterPartDefinition("BootstrapThumbnails", builder => builder
@@ -75,7 +75,7 @@ namespace BigFont.Bootstrap.Components
                     .WithSetting("Stereotype", "MenuItem")
                 );
 
-            ContentDefinitionManager.AlterTypeDefinition("BootstrapSubnav", 
+            ContentDefinitionManager.AlterTypeDefinition("BootstrapSubnav",
                 cfg => cfg
                 .WithPart("CommonPart")
                 .WithPart("IdentityPart")
@@ -84,7 +84,7 @@ namespace BigFont.Bootstrap.Components
                 .WithSetting("Stereotype", "Widget")
             );
 
-            ContentDefinitionManager.AlterPartDefinition("WidgetPart", cfg => cfg.WithField("DisplayInSubnav", 
+            ContentDefinitionManager.AlterPartDefinition("WidgetPart", cfg => cfg.WithField("DisplayInSubnav",
                 builder => builder.OfType("DisplayInSubnavField")));
 
             return 23;
@@ -138,6 +138,29 @@ namespace BigFont.Bootstrap.Components
                 .WithSetting("Stereotype", "Widget"));
 
             return 31;
+        }
+
+        public int UpdateFrom31()
+        {
+            ContentDefinitionManager.AlterPartDefinition("BootstrapCarousel", builder => builder
+                .WithField("CarouselImages", fieldBuilder => fieldBuilder
+                    .OfType("MediaLibraryPickerField")
+                    .WithDisplayName("Carousel Images")
+                    .WithSetting("MediaLibraryPickerFieldSettings.Hint", string.Empty)
+                    .WithSetting("MediaLibraryPickerFieldSettings.Required", string.Empty)
+                    .WithSetting("MediaLibraryPickerFieldSettings.Multiple", true.ToString(CultureInfo.InvariantCulture))
+                    .WithSetting("MediaLibraryPickerFieldSettings.DisplayedContentTypes", string.Empty)
+                    ));
+
+            ContentDefinitionManager.AlterTypeDefinition("BootstrapCarousel",
+                builder => builder
+                    .WithPart("CommonPart")
+                    .WithPart("WidgetPart")                    
+                    .WithSetting("Stereotype", "Widget")
+                    .WithPart("BootstrapCarousel")
+                );
+
+            return 32;
         }
     }
 }
