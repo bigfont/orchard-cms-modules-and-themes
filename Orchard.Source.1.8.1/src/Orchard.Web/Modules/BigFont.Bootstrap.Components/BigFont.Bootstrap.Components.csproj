@@ -92,7 +92,12 @@
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
     <Content Include="Properties\AssemblyInfo.cs" />
-    <Content Include="_Documentation\DesignDecisions.txt" />
+    <Content Include="_Documentation\Carousel.txt" />
+    <Content Include="_Documentation\ContactUs.txt" />
+    <Content Include="_Documentation\_DesignDecisions.txt" />
+    <Content Include="_Documentation\Picasa.txt" />
+    <Content Include="_Documentation\Subnav.txt" />
+    <Content Include="_Documentation\Thumbnails.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -320,7 +325,7 @@
     <Content Include="Views\Media-Image.CarouselIndicator.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Media.CarouselItem.cshtml" />
+    <Content Include="Views\Media-Image.CarouselItem.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
