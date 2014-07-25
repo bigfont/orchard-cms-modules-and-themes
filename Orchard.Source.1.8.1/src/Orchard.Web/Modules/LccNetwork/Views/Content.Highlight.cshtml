@@ -1,0 +1,11 @@
+﻿@*@foreach (var part in Model.ContentItem.Parts)
+    {
+        var type = part.GetType();
+        <p>@type.Name</p>
+    }*@
+
+<h1>@Model.ContentItem.TitlePart.Title</h1>
+<div>
+    @Html.Raw(@Model.ContentItem.BodyPart.Text)
+</div>
+
