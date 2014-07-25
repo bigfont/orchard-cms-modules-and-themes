@@ -7,6 +7,7 @@ using System.Web;
 
 namespace LccNetwork.Models
 {
+    // todo maybe Change the name of this to HighlightedItemWidget
     public class HighlightedItemPart : ContentPart<HighlightedItemPartRecord>
     {
     }

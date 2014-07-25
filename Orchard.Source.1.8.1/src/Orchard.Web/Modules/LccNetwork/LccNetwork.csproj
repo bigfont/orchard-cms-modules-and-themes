@@ -84,9 +84,12 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drivers\HighlightableItemPartDriver.cs" />
     <Compile Include="Drivers\HighlightedItemPartDriver.cs" />
+    <Compile Include="Handlers\HighlightableItemPartHandler.cs" />
     <Compile Include="Handlers\HighlightedItemPartHandler.cs" />
     <Compile Include="Migrations.cs" />
+    <Compile Include="Models\HighlightableItemPart.cs" />
     <Compile Include="Models\HighlightedItemPart.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +105,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Content.Highlight.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\HighlightableItemPart.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
