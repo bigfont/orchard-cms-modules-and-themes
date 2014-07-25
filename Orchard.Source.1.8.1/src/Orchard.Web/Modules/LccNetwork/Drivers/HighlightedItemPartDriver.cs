@@ -28,21 +28,21 @@ namespace LccNetwork.Drivers
         {
             var contentItem = GetHighlightedContentItem(null);
 
-            return ContentShape("Parts_HighlightedItemPart", () => shapeHelper.Parts_HighlightedItemPart(
-                item: contentItem
-                ));
+            return ContentShape("Parts_HighlightedItemPart", () => shapeHelper.Parts_HighlightedItemPart(item: contentItem));
         }
 
         private ContentItem GetHighlightedContentItem(string highlightArea)
         {
             // get createable types
             string[] contentTypeNames = _contentDefinitionManager
-                .ListTypeDefinitions()
+                .ListTypeDefinitions()                
                 .Where(ctd => ctd.Settings.GetModel<ContentTypeSettings>().Creatable)
                 .Select(ctd => ctd.Name).ToArray<string>();
 
             var contentItem = _contentManager
-                .Query(contentTypeNames)                
+                .Query(contentTypeNames)
+                .Join<HighlightableItemPartRecord>()
+                .Where(h => h.IsHighlighted)
                 .List()
                 .FirstOrDefault();
 
