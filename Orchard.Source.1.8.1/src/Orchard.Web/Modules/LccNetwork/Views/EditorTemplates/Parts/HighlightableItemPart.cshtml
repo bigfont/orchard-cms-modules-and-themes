@@ -1,9 +1,16 @@
 ﻿@model LccNetwork.Models.HighlightableItemPart
 
-<fieldset>
-    <span class="checkbox-and-label">
-        @Html.EditorFor(m => m.IsHighlighted)
-        <label for="@Html.FieldIdFor(m => m.IsHighlighted)" class="forcheckbox">@T("Set as a highlighted")</label>
-    </span>
-    <span class="hint">@T("Check to promote this content as a highlighted item")</span>
-</fieldset>
+@if (!Model.IsHighlighted)
+{
+    <fieldset>
+        <span class="checkbox-and-label">
+            @Html.EditorFor(m => m.IsHighlighted)
+            <label for="@Html.FieldIdFor(m => m.IsHighlighted)" class="forcheckbox">@T("Set as a highlighted")</label>
+        </span>
+        <span class="hint">@T("Check to promote this content as a highlighted item")</span>
+    </fieldset>
+}
+else
+{
+    <span>@T("This content is the current home page")</span>
+}
