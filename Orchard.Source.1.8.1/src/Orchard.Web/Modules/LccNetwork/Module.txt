@@ -1,9 +1,9 @@
 ﻿Name: LccNetwork
 AntiForgery: enabled
-Author: The Orchard Team
-Website: http://orchardproject.net
-Version: 1.0
-OrchardVersion: 1.0
+Author: Shaun Luttin
+Website: http://www.lccnetwork.org
+Version: 1.2
+OrchardVersion: 1.8.1
 Description: Description for the module
 Features:
     LccNetwork:
