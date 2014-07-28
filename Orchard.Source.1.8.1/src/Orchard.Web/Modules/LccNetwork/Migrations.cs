@@ -17,6 +17,24 @@ namespace LccNetwork
         private Action<ContentPartFieldDefinitionBuilder> LearnMore;
         private Action<ContentPartFieldDefinitionBuilder> SingleImage;
 
+        private void Reset()
+        {
+            SchemaBuilder.DropTable(typeof(HighlightedItemPartRecord).Name);
+            SchemaBuilder.DropTable(typeof(HighlightableItemPartRecord).Name);
+            //
+            ContentDefinitionManager.DeletePartDefinition(typeof(HighlightedItemPart).Name);
+            ContentDefinitionManager.DeletePartDefinition(typeof(HighlightableItemPart).Name);
+            ContentDefinitionManager.DeletePartDefinition(typeof(HighlightableItemPart).Name);
+            ContentDefinitionManager.DeletePartDefinition("NewsItem");
+            ContentDefinitionManager.DeletePartDefinition("Event");
+            ContentDefinitionManager.DeletePartDefinition("Spotlight");
+            //
+            ContentDefinitionManager.DeleteTypeDefinition("HighlightedItemWidget");
+            ContentDefinitionManager.DeleteTypeDefinition("NewsItem");
+            ContentDefinitionManager.DeleteTypeDefinition("Event");
+            ContentDefinitionManager.DeleteTypeDefinition("Spotlight");            
+        }
+
         // the ctor is for code reuse
         public Migrations()
         {            
@@ -39,7 +57,7 @@ namespace LccNetwork
 
         public int Create()
         {
-            SchemaBuilder.DropTable(typeof(HighlightedItemPartRecord).Name);
+            Reset();
 
             SchemaBuilder.CreateTable(typeof(HighlightedItemPartRecord).Name, table => table.ContentPartRecord());
 
@@ -49,7 +67,7 @@ namespace LccNetwork
             ContentDefinitionManager.AlterTypeDefinition("HighlightedItemWidget", builder => builder
                 .WithPart("WidgetPart")
                 .WithPart("CommonPart")
-                .WithPart("HighlightedItemPart")
+                .WithPart(typeof(HighlightedItemPart).Name)
                 .WithSetting("Stereotype", "Widget"));
 
             return 1;
@@ -57,8 +75,6 @@ namespace LccNetwork
 
         public int UpdateFrom1()
         {
-            SchemaBuilder.DropTable(typeof(HighlightableItemPartRecord).Name);
-
             SchemaBuilder.CreateTable(typeof(HighlightableItemPartRecord).Name, table => table
                 .ContentPartRecord()
                 .Column<bool>("IsHighlighted", c => c.WithDefault(false)));
@@ -187,7 +203,6 @@ namespace LccNetwork
                 .WithPart("BodyPart")
                 .WithPart(typeName)
                 .WithPart(typeof(HighlightableItemPart).Name));
-
 
             return 5;
         }

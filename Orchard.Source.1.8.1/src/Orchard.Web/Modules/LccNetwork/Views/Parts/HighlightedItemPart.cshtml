@@ -1,1 +1,12 @@
-﻿@Display(BuildDisplay(Model.item, "Highlight"))
+﻿@if (Model != null && Model.item != null)
+{
+    @Display(BuildDisplay(Model.item, "Highlight"))
+}
+else
+{
+    <div class="alert alert-error">
+        <p>There is no highlighted item for this content type.</p>
+    </div>
+}
+
+
