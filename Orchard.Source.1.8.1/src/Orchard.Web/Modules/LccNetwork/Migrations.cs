@@ -72,7 +72,9 @@ namespace LccNetwork
 
         public int UpdateFrom2()
         {
-            ContentDefinitionManager.AlterPartDefinition("NewsItem", builder => builder
+            var typeName = "NewsItem";
+
+            ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                .WithDescription("Contains fields for the News Item Content Type.")
                .WithField("LearnMore", LearnMore)
                .WithField("Image", SingleImage)
@@ -101,13 +103,13 @@ namespace LccNetwork
                    .WithSetting("DateTimeFieldSettings.Required", true.ToString(CultureInfo.InvariantCulture)))
                );
 
-            ContentDefinitionManager.AlterTypeDefinition("NewsItem", builder => builder
+            ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
                 .Creatable()
                 .Draftable()
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
                 .WithPart("CommonPart")
-                .WithPart("NewsItem")
+                .WithPart(typeName)
                 .WithPart(typeof(HighlightableItemPart).Name));
 
             return 3;
@@ -115,7 +117,9 @@ namespace LccNetwork
 
         public int UpdateFrom3()
         {
-            ContentDefinitionManager.AlterPartDefinition("Event", builder => builder
+            var typeName = "Event";
+
+            ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                .WithDescription("Contains fields for the Event Content Type.")
                .WithField("LearnMore", LearnMore)
                 .WithField("StartDate", field => field
@@ -155,13 +159,13 @@ namespace LccNetwork
                    .WithSetting("InputFieldSettings.Pattern", string.Empty))
                 );
 
-            ContentDefinitionManager.AlterTypeDefinition("Event", builder => builder
+            ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
                 .Creatable()
                 .Draftable()
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
                 .WithPart("CommonPart")
-                .WithPart("Event")
+                .WithPart(typeName)
                 .WithPart(typeof(HighlightableItemPart).Name));
 
             return 4;
@@ -169,17 +173,19 @@ namespace LccNetwork
 
         public int UpdateFrom4()
         {
-            ContentDefinitionManager.AlterPartDefinition("Spotlight", builder => builder
+            var typeName = "Spotlight";
+
+            ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("This is often an Lcc to highlight on the home page")
                 .WithField("LearnMore", LearnMore)
                 .WithField("Image", SingleImage));
 
-            ContentDefinitionManager.AlterTypeDefinition("Spotlight", builder => builder
+            ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
                 .Creatable()
                 .Draftable()
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
-                .WithPart("Spotlight")
+                .WithPart(typeName)
                 .WithPart(typeof(HighlightableItemPart).Name));
 
 
