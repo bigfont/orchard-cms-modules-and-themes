@@ -14,10 +14,17 @@ namespace LccNetwork.Models
             get { return Retrieve(x => x.IsHighlighted); }
             set { Store(x => x.IsHighlighted, value); }
         }
+
+        public string HighlightGroup
+        {
+            get { return Retrieve(x => x.HighlightGroup); }
+            set { Store(x => x.HighlightGroup, value); }
+        }
     }
 
     public class HighlightableItemPartRecord : ContentPartRecord
     {
         public virtual bool IsHighlighted { get; set; }
+        public virtual string HighlightGroup { get; set; }
     }
 }

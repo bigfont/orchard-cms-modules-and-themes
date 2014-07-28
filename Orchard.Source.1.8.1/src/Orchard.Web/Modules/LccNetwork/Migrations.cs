@@ -1,3 +1,5 @@
+#define RESET
+
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -57,7 +59,9 @@ namespace LccNetwork
 
         public int Create()
         {
+#if RESET
             Reset();
+#endif
 
             SchemaBuilder.CreateTable(typeof(HighlightedItemPartRecord).Name, table => table.ContentPartRecord());
 
@@ -77,6 +81,7 @@ namespace LccNetwork
         {
             SchemaBuilder.CreateTable(typeof(HighlightableItemPartRecord).Name, table => table
                 .ContentPartRecord()
+                .Column<string>("HighlightGroup")
                 .Column<bool>("IsHighlighted", c => c.WithDefault(false)));
 
             ContentDefinitionManager.AlterPartDefinition(typeof(HighlightableItemPart).Name, builder => builder

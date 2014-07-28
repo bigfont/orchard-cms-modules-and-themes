@@ -11,10 +11,8 @@ namespace LccNetwork.Drivers
     public class HighlightableItemPartDriver : ContentPartDriver<HighlightableItemPart>
     {
         //GET
-        protected override DriverResult Editor(
-            HighlightableItemPart part, dynamic shapeHelper)
+        protected override DriverResult Editor(HighlightableItemPart part, dynamic shapeHelper)
         {
-
             return ContentShape("Parts_HighlightableItemPart_Edit",
                 () => shapeHelper.EditorTemplate(
                     TemplateName: "Parts/HighlightableItemPart",
