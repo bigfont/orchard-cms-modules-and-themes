@@ -16,8 +16,8 @@
         <span class="checkbox-and-label">
             @Html.EditorFor(m => m.IsHighlighted)
             <label for="@Html.FieldIdFor(m => m.IsHighlighted)" class="forcheckbox">@T("Set as the highlighted item for: ")</label>
-        </span>
-        @Html.DropDownListFor(m => m.HighlightGroup, highlightOptions)
+            @Html.DropDownListFor(m => m.HighlightGroup, highlightOptions) content items.
+        </span>        
         <span class="hint">@T("Check to promote this content as a highlighted item.")</span>
     </fieldset>
 }
