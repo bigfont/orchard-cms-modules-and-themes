@@ -1,7 +1,8 @@
 ﻿<Placement>
 
-  <Place Parts_HighlightedItemPart="Content:1" />
-
   <Place Parts_HighlightableItemPart_Edit="Content:1"/>
+
+  <Place Parts_HighlightedItemPart="Content:1" />
+  <Place Parts_HighlightedItemPart_Edit="Content:5"/>
 
 </Placement>

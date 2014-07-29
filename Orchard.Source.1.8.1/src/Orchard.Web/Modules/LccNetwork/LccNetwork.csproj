@@ -95,10 +95,10 @@
     <Compile Include="Migrations.cs" />
     <Compile Include="Models\HighlightableItemPart.cs" />
     <Compile Include="Models\HighlightedItemPart.cs" />
+    <Compile Include="ViewModels\HighlightedItemPartViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Placement.info">
@@ -113,6 +113,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\EditorTemplates\Parts\HighlightableItemPart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts\HighlightedItemPart.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

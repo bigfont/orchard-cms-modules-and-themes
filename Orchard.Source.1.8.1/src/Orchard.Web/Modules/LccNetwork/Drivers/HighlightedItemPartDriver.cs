@@ -10,6 +10,8 @@ using System;
 using Orchard.ContentManagement.MetaData.Models;
 using Orchard.ContentManagement.MetaData;
 using Orchard.Core.Contents.Settings;
+using LccNetwork.ViewModels;
+using System.Web.Mvc;
 
 namespace LccNetwork.Drivers
 {
@@ -31,22 +33,61 @@ namespace LccNetwork.Drivers
             return ContentShape("Parts_HighlightedItemPart", () => shapeHelper.Parts_HighlightedItemPart(item: contentItem));
         }
 
-        private ContentItem GetHighlightedContentItem(string highlightArea)
+        protected override DriverResult Editor(HighlightedItemPart part, dynamic shapeHelper)
         {
-            // get createable types
-            string[] contentTypeNames = _contentDefinitionManager
-                .ListTypeDefinitions()                
-                .Where(ctd => ctd.Settings.GetModel<ContentTypeSettings>().Creatable)
-                .Select(ctd => ctd.Name).ToArray<string>();
+            HighlightedItemPartViewModel viewModel = new HighlightedItemPartViewModel()
+            {
+                HighlightGroup = part.HighlightGroup,
+                HighlightGroups = GetHighlightableTypeNames().Select(name => new SelectListItem() { Text = name, Value = name }).ToList()
+            };
 
-            var contentItem = _contentManager
-                .Query(contentTypeNames)
+            return ContentShape("Parts_HighlightedItemPart_Edit", 
+                () => shapeHelper.EditorTemplate(
+                    TemplateName: "Parts/HighlightedItemPart",
+                    Model: viewModel, 
+                    Prefix: Prefix ));
+        }
+
+        private List<ContentItem> GetHighlightableContentItems()
+        {
+            string[] createableTypeNames = GetCreateableTypeNames();
+
+            var highlightableContentItems = _contentManager
+                .Query(createableTypeNames)
+                .List()
+                .ToList();
+
+            return highlightableContentItems;
+        }
+
+        private ContentItem GetHighlightedContentItem(string highlightGroup)
+        {            
+            string[] createableTypeNames = GetCreateableTypeNames();
+
+            var highlightedContentItem = _contentManager
+                .Query(createableTypeNames)
                 .Join<HighlightableItemPartRecord>()
                 .Where(h => h.IsHighlighted)
                 .List()
                 .FirstOrDefault();
 
-            return contentItem;
+            return highlightedContentItem;
+        }
+
+        private string[] GetHighlightableTypeNames()
+        {
+            return _contentDefinitionManager
+                .ListTypeDefinitions()
+                .Where(ctd => ctd.Parts.Any(cpd => cpd.PartDefinition.Name.Equals("HighlightableItemPart")))
+                .Select(ctd => ctd.Name).ToArray<string>();
+        }
+
+        private string[] GetCreateableTypeNames()
+        {
+            return _contentDefinitionManager
+                .ListTypeDefinitions()
+                .Where(ctd => ctd.Settings.GetModel<ContentTypeSettings>().Creatable)
+                .Select(ctd => ctd.Name).ToArray<string>();
         }
     }
 }

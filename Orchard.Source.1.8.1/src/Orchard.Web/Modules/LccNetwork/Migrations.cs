@@ -63,7 +63,9 @@ namespace LccNetwork
             Reset();
 #endif
 
-            SchemaBuilder.CreateTable(typeof(HighlightedItemPartRecord).Name, table => table.ContentPartRecord());
+            SchemaBuilder.CreateTable(typeof(HighlightedItemPartRecord).Name, table => table
+                .ContentPartRecord()
+                .Column<string>("HighlightGroup"));
 
             ContentDefinitionManager.AlterPartDefinition(typeof(HighlightedItemPart).Name, builder => builder
                 .WithDescription("Displays content items that the end user has chosen to highlight."));
