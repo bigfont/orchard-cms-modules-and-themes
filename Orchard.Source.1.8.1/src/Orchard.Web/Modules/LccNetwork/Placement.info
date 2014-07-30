@@ -16,7 +16,6 @@
       <Place Fields_Common_Text="Content:3" />
       <Place Parts_Common_Body="Content:4" />
       <Place Fields_MediaLibraryPicker="Content:5" />
-      <!--These only work from a placement.info that's in a theme-->
       <Place Fields_Input="Content:6" />
       <Place Fields_DateTime="Content:8" />
       <Place Fields_Link="Content:7" />
@@ -28,7 +27,6 @@
       <Place Fields_Common_Text="Content:3" />
       <Place Parts_Common_Body="Content:4" />
       <Place Fields_MediaLibraryPicker="Content:5" />
-      <!--These only work from a placement.info that's in a theme-->
       <Place Fields_Input="Content:6" />
       <Place Fields_DateTime="Content:8" />
       <Place Fields_Link="Content:7" />
@@ -40,7 +38,6 @@
       <Place Fields_Common_Text="Content:3" />
       <Place Parts_Common_Body="Content:4" />
       <Place Fields_MediaLibraryPicker="Content:5" />
-      <!--These only work from a placement.info that's in a theme-->
       <Place Fields_Input="Content:6" />
       <Place Fields_DateTime="Content:8" />
       <Place Fields_Link="Content:7" />

@@ -8,6 +8,7 @@ Description: A collection of modules for the LccNetwork site.
 Category: Content
 FeatureName: LccNetwork Content Types
 FeatureDescription: Some content types that are part of the LccNetwork web site (e.g. NewsItem, Event, Spotlight).
+Dependencies: Orchard.Fields
 Features:
 	Highlightable:
 		Name: Highlightable Content Items
