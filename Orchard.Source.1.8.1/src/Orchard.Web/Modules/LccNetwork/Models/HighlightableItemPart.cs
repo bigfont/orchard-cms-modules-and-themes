@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 
 namespace LccNetwork.Models
-{
+{    
     public class HighlightableItemPart : ContentPart<HighlightableItemPartRecord>
     {
         public bool IsHighlighted

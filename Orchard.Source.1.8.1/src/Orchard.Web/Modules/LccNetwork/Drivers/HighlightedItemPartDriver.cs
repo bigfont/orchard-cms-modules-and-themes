@@ -12,9 +12,11 @@ using Orchard.ContentManagement.MetaData;
 using Orchard.Core.Contents.Settings;
 using LccNetwork.ViewModels;
 using System.Web.Mvc;
+using Orchard.Environment.Extensions;
 
 namespace LccNetwork.Drivers
 {
+    [OrchardFeature("Highlightable")]
     public class HighlightedItemPartDriver : ContentPartDriver<HighlightedItemPart>
     {
         private readonly IContentManager _contentManager;
@@ -28,17 +30,19 @@ namespace LccNetwork.Drivers
 
         protected override DriverResult Display(HighlightedItemPart part, string displayType, dynamic shapeHelper)
         {
-            var contentItem = GetHighlightedContentItem(null);
+            var contentItem = GetHighlightedContentItem(part.HighlightGroup);
+            var display = _contentManager.BuildDisplay(contentItem, "Highlight");
+            
+            return ContentShape("Parts_HighlightedItemPart", () => shapeHelper.Parts_HighlightedItemPart(item: display));
 
-            return ContentShape("Parts_HighlightedItemPart", () => shapeHelper.Parts_HighlightedItemPart(item: contentItem));
         }
 
         protected override DriverResult Editor(HighlightedItemPart part, dynamic shapeHelper)
-        {
+        {                        
             HighlightedItemPartViewModel viewModel = new HighlightedItemPartViewModel()
             {
                 HighlightGroup = part.HighlightGroup,
-                HighlightGroups = GetHighlightableTypeNames().Select(name => new SelectListItem() { Text = name, Value = name }).ToList()
+                HighlightGroups = GetHighlightableTypeNamesAsSelectList()                    
             };
 
             return ContentShape("Parts_HighlightedItemPart_Edit", 
@@ -46,6 +50,19 @@ namespace LccNetwork.Drivers
                     TemplateName: "Parts/HighlightedItemPart",
                     Model: viewModel, 
                     Prefix: Prefix ));
+        }        
+
+        protected override DriverResult Editor(HighlightedItemPart part, IUpdateModel updater, dynamic shapeHelper)
+        {
+            updater.TryUpdateModel(part, Prefix, null, null);
+            return Editor(part, shapeHelper);
+        }
+
+        private List<SelectListItem> GetHighlightableTypeNamesAsSelectList()
+        {
+            return GetHighlightableTypeNames()
+                .Select(name => new SelectListItem() { Text = name, Value = name })
+                .ToList();
         }
 
         private List<ContentItem> GetHighlightableContentItems()
@@ -60,26 +77,31 @@ namespace LccNetwork.Drivers
             return highlightableContentItems;
         }
 
-        private ContentItem GetHighlightedContentItem(string highlightGroup)
+        private ContentItem GetHighlightedContentItem(string targetHighlightGroup)
         {            
             string[] createableTypeNames = GetCreateableTypeNames();
 
             var highlightedContentItem = _contentManager
                 .Query(createableTypeNames)
                 .Join<HighlightableItemPartRecord>()
-                .Where(h => h.IsHighlighted)
+                .Where(h => h.IsHighlighted && h.HighlightGroup.Equals(targetHighlightGroup)) // todo Use a int compare not a string compare for performance
                 .List()
                 .FirstOrDefault();
 
             return highlightedContentItem;
         }
 
-        private string[] GetHighlightableTypeNames()
+        private List<string> GetHighlightableTypeNames()
         {
-            return _contentDefinitionManager
+            var highlightableTypeNames = _contentDefinitionManager
                 .ListTypeDefinitions()
                 .Where(ctd => ctd.Parts.Any(cpd => cpd.PartDefinition.Name.Equals("HighlightableItemPart")))
-                .Select(ctd => ctd.Name).ToArray<string>();
+                .Select(ctd => ctd.Name)
+                .ToList<string>();
+
+            highlightableTypeNames.Add("All");
+
+            return highlightableTypeNames;
         }
 
         private string[] GetCreateableTypeNames()
@@ -87,7 +109,8 @@ namespace LccNetwork.Drivers
             return _contentDefinitionManager
                 .ListTypeDefinitions()
                 .Where(ctd => ctd.Settings.GetModel<ContentTypeSettings>().Creatable)
-                .Select(ctd => ctd.Name).ToArray<string>();
+                .Select(ctd => ctd.Name)
+                .ToArray<string>();
         }
     }
 }

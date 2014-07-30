@@ -1,6 +1,7 @@
 ﻿@if (Model != null && Model.item != null)
 {
-    @Display(BuildDisplay(Model.item, "Highlight"))
+    var contentItem = Model.item;
+    @Display(contentItem)
 }
 else
 {
@@ -8,5 +9,3 @@ else
         <p>There is no highlighted item for this content type.</p>
     </div>
 }
-
-

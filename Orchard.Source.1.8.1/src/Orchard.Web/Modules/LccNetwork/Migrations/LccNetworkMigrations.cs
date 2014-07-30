@@ -1,5 +1,3 @@
-#define RESET
-
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -11,34 +9,29 @@ using Orchard.Data.Migration;
 using LccNetwork.Models;
 using System.Globalization;
 using Orchard.Fields.Settings;
+using Orchard.Environment.Extensions;
 
 namespace LccNetwork
 {
-    public class Migrations : DataMigrationImpl
+    [OrchardFeature("LccNetwork")]
+    public class LccNetworkMigrations : DataMigrationImpl
     {
         private Action<ContentPartFieldDefinitionBuilder> LearnMore;
         private Action<ContentPartFieldDefinitionBuilder> SingleImage;
 
         private void Reset()
         {
-            SchemaBuilder.DropTable(typeof(HighlightedItemPartRecord).Name);
-            SchemaBuilder.DropTable(typeof(HighlightableItemPartRecord).Name);
-            //
-            ContentDefinitionManager.DeletePartDefinition(typeof(HighlightedItemPart).Name);
-            ContentDefinitionManager.DeletePartDefinition(typeof(HighlightableItemPart).Name);
-            ContentDefinitionManager.DeletePartDefinition(typeof(HighlightableItemPart).Name);
             ContentDefinitionManager.DeletePartDefinition("NewsItem");
             ContentDefinitionManager.DeletePartDefinition("Event");
             ContentDefinitionManager.DeletePartDefinition("Spotlight");
-            //
-            ContentDefinitionManager.DeleteTypeDefinition("HighlightedItemWidget");
+            
             ContentDefinitionManager.DeleteTypeDefinition("NewsItem");
             ContentDefinitionManager.DeleteTypeDefinition("Event");
             ContentDefinitionManager.DeleteTypeDefinition("Spotlight");            
         }
 
-        // the ctor is for code reuse
-        public Migrations()
+        // ctor for code reuse
+        public LccNetworkMigrations()
         {            
             LearnMore = new Action<ContentPartFieldDefinitionBuilder>(field => field
                 .OfType("LinkField")
@@ -59,41 +52,12 @@ namespace LccNetwork
 
         public int Create()
         {
-#if RESET
             Reset();
-#endif
-
-            SchemaBuilder.CreateTable(typeof(HighlightedItemPartRecord).Name, table => table
-                .ContentPartRecord()
-                .Column<string>("HighlightGroup"));
-
-            ContentDefinitionManager.AlterPartDefinition(typeof(HighlightedItemPart).Name, builder => builder
-                .WithDescription("Displays content items that the end user has chosen to highlight."));
-
-            ContentDefinitionManager.AlterTypeDefinition("HighlightedItemWidget", builder => builder
-                .WithPart("WidgetPart")
-                .WithPart("CommonPart")
-                .WithPart(typeof(HighlightedItemPart).Name)
-                .WithSetting("Stereotype", "Widget"));
 
             return 1;
         }
 
         public int UpdateFrom1()
-        {
-            SchemaBuilder.CreateTable(typeof(HighlightableItemPartRecord).Name, table => table
-                .ContentPartRecord()
-                .Column<string>("HighlightGroup")
-                .Column<bool>("IsHighlighted", c => c.WithDefault(false)));
-
-            ContentDefinitionManager.AlterPartDefinition(typeof(HighlightableItemPart).Name, builder => builder
-                .Attachable()
-                .WithDescription("Lets a user add a content item to the Highlighted Item Widget."));
-
-            return 2;
-        }
-
-        public int UpdateFrom2()
         {
             var typeName = "NewsItem";
 
@@ -132,13 +96,13 @@ namespace LccNetwork
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
                 .WithPart("CommonPart")
-                .WithPart(typeName)
-                .WithPart(typeof(HighlightableItemPart).Name));
+                .WithPart("HighlightableItemPart")
+                .WithPart(typeName));
 
-            return 3;
+            return 2;
         }
 
-        public int UpdateFrom3()
+        public int UpdateFrom2()
         {
             var typeName = "Event";
 
@@ -188,13 +152,13 @@ namespace LccNetwork
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
                 .WithPart("CommonPart")
-                .WithPart(typeName)
-                .WithPart(typeof(HighlightableItemPart).Name));
+                .WithPart("HighlightableItemPart")
+                .WithPart(typeName));
 
-            return 4;
+            return 3;
         }
 
-        public int UpdateFrom4()
+        public int UpdateFrom3()
         {
             var typeName = "Spotlight";
 
@@ -208,10 +172,10 @@ namespace LccNetwork
                 .Draftable()
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
-                .WithPart(typeName)
-                .WithPart(typeof(HighlightableItemPart).Name));
+                .WithPart("HighlightableItemPart")
+                .WithPart(typeName));
 
-            return 5;
+            return 4;
         }
     }
 }

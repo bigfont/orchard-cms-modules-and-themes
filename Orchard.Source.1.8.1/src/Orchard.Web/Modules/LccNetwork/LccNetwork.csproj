@@ -92,7 +92,8 @@
     <Compile Include="Drivers\HighlightedItemPartDriver.cs" />
     <Compile Include="Handlers\HighlightableItemPartHandler.cs" />
     <Compile Include="Handlers\HighlightedItemPartHandler.cs" />
-    <Compile Include="Migrations.cs" />
+    <Compile Include="Migrations\LccNetworkMigrations.cs" />
+    <Compile Include="Migrations\HighlightableMigrations.cs" />
     <Compile Include="Models\HighlightableItemPart.cs" />
     <Compile Include="Models\HighlightedItemPart.cs" />
     <Compile Include="ViewModels\HighlightedItemPartViewModel.cs" />
@@ -109,13 +110,13 @@
     <Content Include="Views\Parts\HighlightedItemPart.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Content.Highlight.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\EditorTemplates\Parts\HighlightableItemPart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\EditorTemplates\Parts\HighlightedItemPart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Content.Highlight.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

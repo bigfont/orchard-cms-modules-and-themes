@@ -2,9 +2,14 @@
 AntiForgery: enabled
 Author: Shaun Luttin
 Website: http://www.lccnetwork.org
-Version: 1.2
+Version: 1.5
 OrchardVersion: 1.8.1
-Description: Description for the module
+Description: A collection of modules for the LccNetwork site.
+Category: Content
+FeatureName: LccNetwork Content Types
+FeatureDescription: Some content types that are part of the LccNetwork web site (e.g. NewsItem, Event, Spotlight).
 Features:
-    LccNetwork:
-        Description: Description for feature LccNetwork.
+	Highlightable:
+		Name: Highlightable Content Items
+		Description: Adds a content part that lets a content item be featured in a special featured content item widget.
+		Category:Content

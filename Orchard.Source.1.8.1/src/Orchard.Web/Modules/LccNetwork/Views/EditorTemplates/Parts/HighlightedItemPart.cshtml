@@ -2,9 +2,7 @@
 
 @{
     
-    //var m = Model;
-    //System.Diagnostics.Debugger.Break();
-    
 }
 
+<label for="@Html.FieldIdFor(m => m.HighlightGroup)">Choose type of content that you want to display in this highlight area.</label>
 @Html.DropDownListFor(m => m.HighlightGroup, Model.HighlightGroups)
