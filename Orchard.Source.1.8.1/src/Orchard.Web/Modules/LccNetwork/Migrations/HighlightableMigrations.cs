@@ -28,8 +28,9 @@ namespace LccNetwork.Migrations
 
         public int Create()
         {
+#if RESET_THE_DATABASE
             Reset();
-
+#endif
             SchemaBuilder.CreateTable(typeof(HighlightedItemPartRecord).Name, table => table
                 .ContentPartRecord()
                 .Column<string>("HighlightGroup"));

@@ -16,24 +16,24 @@ namespace LccNetwork
     [OrchardFeature("LccNetwork")]
     public class LccNetworkMigrations : DataMigrationImpl
     {
-        private Action<ContentPartFieldDefinitionBuilder> LearnMore;
-        private Action<ContentPartFieldDefinitionBuilder> SingleImage;
+        private Action<ContentPartFieldDefinitionBuilder> LearnMoreField;
+        private Action<ContentPartFieldDefinitionBuilder> SingleImageField;
 
         private void Reset()
         {
             ContentDefinitionManager.DeletePartDefinition("NewsItem");
             ContentDefinitionManager.DeletePartDefinition("Event");
             ContentDefinitionManager.DeletePartDefinition("Spotlight");
-            
+
             ContentDefinitionManager.DeleteTypeDefinition("NewsItem");
             ContentDefinitionManager.DeleteTypeDefinition("Event");
-            ContentDefinitionManager.DeleteTypeDefinition("Spotlight");            
+            ContentDefinitionManager.DeleteTypeDefinition("Spotlight");
         }
 
         // ctor for code reuse
         public LccNetworkMigrations()
-        {            
-            LearnMore = new Action<ContentPartFieldDefinitionBuilder>(field => field
+        {
+            LearnMoreField = new Action<ContentPartFieldDefinitionBuilder>(field => field
                 .OfType("LinkField")
                 .WithSetting("LinkFieldSettings.Hint", "A website address associated with this item.")
                 .WithSetting("LinkFieldSettings.Required", false.ToString(CultureInfo.InvariantCulture))
@@ -41,7 +41,7 @@ namespace LccNetwork
                 .WithSetting("LinkFieldSettings.LinkTextMode", LinkTextMode.Optional.ToString())
                 .WithSetting("LinkFieldSettings.StaticText", string.Empty));
 
-            SingleImage = new Action<ContentPartFieldDefinitionBuilder>(field => field
+            SingleImageField = new Action<ContentPartFieldDefinitionBuilder>(field => field
                 .OfType("MediaLibraryPickerField")
                 .WithDisplayName("Image")
                 .WithSetting("MediaLibraryPickerFieldSettings.Hint", "An image to display with this item.")
@@ -52,7 +52,9 @@ namespace LccNetwork
 
         public int Create()
         {
+#if RESET_THE_DATABASE
             Reset();
+#endif
 
             return 1;
         }
@@ -63,8 +65,8 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                .WithDescription("Contains fields for the News Item Content Type.")
-               .WithField("LearnMore", LearnMore)
-               .WithField("Image", SingleImage)
+               .WithField("LearnMoreField", LearnMoreField)
+               .WithField("Image", SingleImageField)
                .WithField("Summary", field => field
                    .OfType("TextField")
                    .WithDisplayName("Summary")
@@ -82,7 +84,7 @@ namespace LccNetwork
                    .WithSetting("InputFieldSettings.PlaceHolder", string.Empty)
                    .WithSetting("InputFieldSettings.EditorCssClass", string.Empty)
                    .WithSetting("InputFieldSettings.MaxLength", "0")
-                   .WithSetting("InputFieldSettings.Pattern", string.Empty))               
+                   .WithSetting("InputFieldSettings.Pattern", string.Empty))
                .WithField("Date", field => field
                    .OfType("DateTimeField")
                    .WithSetting("DateTimeFieldSettings.Display", DateTimeFieldDisplays.DateAndTime.ToString())
@@ -108,14 +110,14 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                .WithDescription("Contains fields for the Event Content Type.")
-               .WithField("LearnMore", LearnMore)
+               .WithField("LearnMoreField", LearnMoreField)
                 .WithField("StartDate", field => field
-                   .OfType("DateTimeField")                                
+                   .OfType("DateTimeField")
                    .WithSetting("DateTimeFieldSettings.Display", DateTimeFieldDisplays.DateAndTime.ToString())
                    .WithSetting("DateTimeFieldSettings.Hint", "The date the event starts.")
                    .WithSetting("DateTimeFieldSettings.Required", true.ToString(CultureInfo.InvariantCulture)))
                 .WithField("EndDate", field => field
-                   .OfType("DateTimeField")                   
+                   .OfType("DateTimeField")
                    .WithSetting("DateTimeFieldSettings.Display", DateTimeFieldDisplays.DateAndTime.ToString())
                    .WithSetting("DateTimeFieldSettings.Hint", "The date the event ends.")
                    .WithSetting("DateTimeFieldSettings.Required", true.ToString(CultureInfo.InvariantCulture)))
@@ -164,8 +166,8 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("This is often an Lcc to highlight on the home page")
-                .WithField("LearnMore", LearnMore)
-                .WithField("Image", SingleImage));
+                .WithField("LearnMoreField", LearnMoreField)
+                .WithField("Image", SingleImageField));
 
             ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
                 .Creatable()
@@ -176,6 +178,80 @@ namespace LccNetwork
                 .WithPart(typeName));
 
             return 4;
+        }
+
+        public int UpdateFrom4()
+        {
+            var typeName = "Staff";
+
+            ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
+                .WithDescription("A staff member of an LCC")
+                .WithField("FirstName", field => field
+                    .OfType("InputField")
+                   .WithSetting("InputFieldSettings.Type", "Text")
+                   .WithSetting("InputFieldSettings.Title", "First Name")
+                   .WithSetting("InputFieldSettings.Hint", "Add the staff member's first name.")
+                   .WithSetting("InputFieldSettings.Required", true.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoFocus", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoComplete", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.PlaceHolder", string.Empty)
+                   .WithSetting("InputFieldSettings.EditorCssClass", string.Empty)
+                   .WithSetting("InputFieldSettings.MaxLength", "0")
+                   .WithSetting("InputFieldSettings.Pattern", string.Empty))
+                .WithField("LastName", field => field
+                    .OfType("InputField")
+                   .WithSetting("InputFieldSettings.Type", "Text")
+                   .WithSetting("InputFieldSettings.Title", "Last Name")
+                   .WithSetting("InputFieldSettings.Hint", "Add the staff member's last name.")
+                   .WithSetting("InputFieldSettings.Required", true.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoFocus", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoComplete", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.PlaceHolder", string.Empty)
+                   .WithSetting("InputFieldSettings.EditorCssClass", string.Empty)
+                   .WithSetting("InputFieldSettings.MaxLength", "0")
+                   .WithSetting("InputFieldSettings.Pattern", string.Empty))
+                .WithField("Position", field => field
+                    .OfType("InputField")
+                   .WithSetting("InputFieldSettings.Type", "Text")
+                   .WithSetting("InputFieldSettings.Title", "Position")
+                   .WithSetting("InputFieldSettings.Hint", "Add the staff member's position.")
+                   .WithSetting("InputFieldSettings.Required", true.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoFocus", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoComplete", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.PlaceHolder", string.Empty)
+                   .WithSetting("InputFieldSettings.EditorCssClass", string.Empty)
+                   .WithSetting("InputFieldSettings.MaxLength", "0")
+                   .WithSetting("InputFieldSettings.Pattern", string.Empty))
+                .WithField("Email", field => field
+                    .OfType("InputField")
+                   .WithSetting("InputFieldSettings.Type", "Email")
+                   .WithSetting("InputFieldSettings.Title", "Email")
+                   .WithSetting("InputFieldSettings.Hint", "Add the staff member's email.")
+                   .WithSetting("InputFieldSettings.Required", true.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoFocus", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.AutoComplete", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("InputFieldSettings.PlaceHolder", string.Empty)
+                   .WithSetting("InputFieldSettings.EditorCssClass", string.Empty)
+                   .WithSetting("InputFieldSettings.MaxLength", "0")
+                   .WithSetting("InputFieldSettings.Pattern", string.Empty))
+                .WithField("Lcc", field => field
+                    .OfType("TaxonomyField")
+                   .WithSetting("TaxonomyFieldSettings.AllowCustomTerms", true.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("TaxonomyFieldSettings.Taxonomy", "Lcc")
+                   .WithSetting("TaxonomyFieldSettings.LeavesOnly", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("TaxonomyFieldSettings.SingleChoice", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("TaxonomyFieldSettings.AutoComplete", false.ToString(CultureInfo.InvariantCulture))
+                   .WithSetting("TaxonomyFieldSettings.Hint", string.Empty)
+                   .WithSetting("TaxonomyFieldSettings.Taxonomies", string.Empty)
+                   .WithSetting("TaxonomyFieldSettings.Required", false.ToString(CultureInfo.InvariantCulture)))
+                   );
+
+            ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
+                .Creatable()
+                .Draftable()             
+                .WithPart(typeName));
+
+            return 5;
         }
     }
 }
