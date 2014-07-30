@@ -174,6 +174,7 @@ namespace LccNetwork
                 .Draftable()
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
+                .WithPart("CommonPart")
                 .WithPart("HighlightableItemPart")
                 .WithPart(typeName));
 
@@ -248,7 +249,8 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
                 .Creatable()
-                .Draftable()             
+                .Draftable()       
+                .WithPart("Common")
                 .WithPart(typeName));
 
             return 5;
