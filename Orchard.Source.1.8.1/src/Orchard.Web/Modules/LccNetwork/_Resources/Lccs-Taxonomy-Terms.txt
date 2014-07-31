@@ -1,0 +1,23 @@
+﻿National;national
+Aleutian and Bering Sea Islands;aleutian-and-bering-sea-islands
+Appalachian;appalachian
+Arctic;arctic
+California;california
+Caribbean;caribbean
+Desert;desert
+Eastern Tallgrass Prairie and Big Rivers;eastern-tallgrass-prairie-and-big-rivers
+Great Basin;great-basin
+Great Northern;great-northern
+Great Plains;great-plains
+Gulf Coastal Plains and Ozarks;gulf-coastal-plains-and-ozarks
+Gulf Coast Prairie;gulf-coast-prairie
+North Atlantic;north-atlantic
+North Pacific;north-pacific
+Northwest Boreal;northwest-boreal
+Pacific Islands;pacific-islands
+Peninsular Florida;peninsular-florida
+Plains and Prairie Potholes;plains-and-prairie-potholes
+South Atlantic;south-atlantic
+Southern Rockies;southern-rockies
+Upper Midwest and Great Lakes;upper-midwest-and-great-lakes
+Western Alaska;western-alaska

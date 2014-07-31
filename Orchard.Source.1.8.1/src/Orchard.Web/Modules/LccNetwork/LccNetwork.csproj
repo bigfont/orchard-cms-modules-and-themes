@@ -72,6 +72,10 @@
     <Content Include="Styles\Web.config" />
     <Content Include="Properties\AssemblyInfo.cs" />
     <Content Include="Module.txt" />
+    <Content Include="_Resources\Lccs-Taxonomy-Terms.txt" />
+    <Content Include="_Resources\Resources-Taxonomy-Terms.txt" />
+    <Content Include="_Resources\WorkAreas-Taxonomy-Terms.txt" />
+    <Content Include="_Resources\Recipe-Requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -100,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Recipes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Placement.info">

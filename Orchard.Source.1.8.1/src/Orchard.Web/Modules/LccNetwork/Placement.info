@@ -1,8 +1,5 @@
 ﻿<Placement>
 
-  <Place Fields_DateTime_Edit="-"/>
-  <Place Fields_DateTime="-"/>
-
   <Place Parts_HighlightableItemPart_Edit="Content:1"/>
 
   <Place Parts_HighlightedItemPart="Content:1" />
