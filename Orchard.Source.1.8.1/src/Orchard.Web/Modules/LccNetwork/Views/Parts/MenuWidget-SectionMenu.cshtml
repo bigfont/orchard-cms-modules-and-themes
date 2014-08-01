@@ -1,11 +1,12 @@
 ﻿@using Orchard.UI.Navigation;
-@using Humanizer;
+@using System.Globalization;
 
 @helper RenderMenuItem(dynamic shape, bool top = false)
 {
+    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
     MenuItem item = shape.Item as MenuItem;
     var text = top ?         
-        CasingExtensions.ApplyCase(item.Href.Substring(1), LetterCasing.Title) : // use the Href
+        textInfo.ToTitleCase(item.Href.Substring(1)) : // use the Href
         item.Text.Text;
     var href = item.Href;
     var attr = new { @class = item.Selected };
