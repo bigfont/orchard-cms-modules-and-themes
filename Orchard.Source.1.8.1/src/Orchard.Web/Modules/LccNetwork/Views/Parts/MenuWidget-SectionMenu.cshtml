@@ -30,7 +30,7 @@
 <div>
     <h1>@selectedMenuItem.Text</h1>
     @tag.StartElement
-    @RenderMenuItem(selectedMenuItem)
+    @RenderMenuItem(selectedMenuItem,true)
     @foreach (var i in subItems)
     {
         @RenderMenuItem(i)        

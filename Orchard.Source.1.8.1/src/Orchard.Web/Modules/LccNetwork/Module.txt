@@ -2,7 +2,7 @@
 AntiForgery: enabled
 Author: Shaun Luttin
 Website: http://www.lccnetwork.org
-Version: 1.6
+Version: 1.7
 OrchardVersion: 1.8.1
 Description: A collection of modules for the LccNetwork site.
 Category: Content
