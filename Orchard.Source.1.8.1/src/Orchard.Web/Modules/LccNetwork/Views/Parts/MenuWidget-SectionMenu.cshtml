@@ -1,9 +1,12 @@
 ﻿@using Orchard.UI.Navigation;
+@using Humanizer;
 
 @helper RenderMenuItem(dynamic shape, bool top = false)
 {
     MenuItem item = shape.Item as MenuItem;
-    var text = top ? item.Href.Substring(1) : item.Text.Text;
+    var text = top ?         
+        CasingExtensions.ApplyCase(item.Href.Substring(1), LetterCasing.Title) : // use the Href
+        item.Text.Text;
     var href = item.Href;
     var attr = new { @class = item.Selected };
     var tag = Tag(Model, "li");
