@@ -14,3 +14,7 @@ Features:
 		Name: Highlightable Content Items
 		Description: Adds a content part that lets a content item be featured in a special featured content item widget.
 		Category:Content
+	SectionNavigation:
+		Name: Section Navigation
+		Description: Adds a widget for showing a menu of pages that are underneath the current part.
+		Category:Content

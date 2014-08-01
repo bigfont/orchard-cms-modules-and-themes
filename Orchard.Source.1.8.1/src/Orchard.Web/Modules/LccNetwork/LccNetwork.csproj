@@ -99,6 +99,7 @@
     <Compile Include="Handlers\HighlightedItemPartHandler.cs" />
     <Compile Include="Migrations\LccNetworkMigrations.cs" />
     <Compile Include="Migrations\HighlightableMigrations.cs" />
+    <Compile Include="Migrations\NavigationMigrations.cs" />
     <Compile Include="Models\HighlightableItemPart.cs" />
     <Compile Include="Models\HighlightedItemPart.cs" />
     <Compile Include="ViewModels\HighlightedItemPartViewModel.cs" />
@@ -123,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Content.Highlight.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\MenuWidget-SectionMenu.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

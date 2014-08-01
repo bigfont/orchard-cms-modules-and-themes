@@ -1,0 +1,39 @@
+﻿@using Orchard.UI.Navigation;
+
+@helper RenderMenuItem(dynamic shape, bool top = false)
+{
+    MenuItem item = shape.Item as MenuItem;
+    var text = top ? item.Href.Substring(1) : item.Text.Text;
+    var href = item.Href;
+    var attr = new { @class = item.Selected };
+    var tag = Tag(Model, "li");
+    @tag.StartElement
+    @: @Html.Link(text, href, attr)
+    @tag.EndElement
+}
+
+@{
+    var menu = Model.Menu;
+    var collapseId = Model.Id;
+
+    var tag = Tag(menu, "ul");
+    var items = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
+
+    // get the first, selected, top level item
+    var selectedMenuItem = items.First(i => i.Item.Selected);
+
+    // check if any of its children are selected
+    var subItems = (IList<dynamic>)Enumerable.Cast<dynamic>(selectedMenuItem.Items);
+    selectedMenuItem.Selected = !subItems.Any(i => i.Selected);
+}
+
+<div>
+    <h1>@selectedMenuItem.Text</h1>
+    @tag.StartElement
+    @RenderMenuItem(selectedMenuItem)
+    @foreach (var i in subItems)
+    {
+        @RenderMenuItem(i)        
+    }
+    @tag.EndElement
+</div>
