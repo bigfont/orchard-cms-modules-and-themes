@@ -1,6 +1,6 @@
 ﻿@{
     var contentItems = Model.ContentItems;
-    var carouselUniqueId = DateTime.Now.Ticks; // it's okay to change this to something else
+    var carouselUniqueId = DateTime.Now.Ticks; // it's okay to change this to something else unique
     List<dynamic> carouselItems = new List<dynamic>();
     List<string> processedWorkAreas = new List<string>();
 
@@ -59,7 +59,7 @@
                 <div class="carousel-caption">
                     <h3><a href="@item.WorkAreaSlug">@item.WorkAreaTerm</a></h3>
                     @Html.Raw(item.SummaryValue)
-                    <a href="@item.LearnMoreValue">>@item.LearnMoreText</a>
+                    <a href="@item.LearnMoreValue">@item.LearnMoreText</a>
                 </div>
             </div>
         }
