@@ -1,0 +1,306 @@
+<!--Exported from Orchard-->
+<Orchard>
+  <Recipe>
+    <Name>LccNetwork Metadata</Name>
+    <Description>A reciple that adds types and parts to the Lcc Network website.</Description>
+    <Author>Shaun Luttin</Author>
+    <WebSite>http://www.bigfont.ca</WebSite>
+    <Tags>End User</Tags>
+    <Version>1.0</Version>
+    <ExportUtc>2014-08-05T18:34:52.3508882Z</ExportUtc>
+  </Recipe>
+  <Metadata>
+    <Types>
+      <Site DisplayName="Site" />
+      <ContainerWidget Stereotype="Widget" DisplayName="Container Widget">
+        <CommonPart />
+        <WidgetPart />
+        <ContainerWidgetPart />
+      </ContainerWidget>
+      <MenuItem Description="Represents a simple custom link with a text and an url." Stereotype="MenuItem" DisplayName="Custom Link">
+        <MenuPart />
+        <IdentityPart />
+        <CommonPart />
+      </MenuItem>
+      <Menu DisplayName="Menu">
+        <CommonPart OwnerEditorSettings.ShowOwnerEditor="false" />
+        <TitlePart />
+        <IdentityPart />
+      </Menu>
+      <MenuWidget Stereotype="Widget" DisplayName="Menu Widget">
+        <CommonPart />
+        <IdentityPart />
+        <WidgetPart />
+        <MenuWidgetPart />
+      </MenuWidget>
+      <HtmlMenuItem Description="Renders some custom HTML in the menu." BodyPartSettings.FlavorDefault="html" Stereotype="MenuItem" DisplayName="Html Menu Item">
+        <MenuPart />
+        <BodyPart />
+        <CommonPart />
+        <IdentityPart />
+      </HtmlMenuItem>
+      <ShapeMenuItem Description="Injects menu items from a Shape" Stereotype="MenuItem" DisplayName="Shape Link">
+        <ShapeMenuItemPart />
+        <MenuPart />
+        <CommonPart />
+      </ShapeMenuItem>
+      <ContentMenuItem Description="Adds a Content Item to the menu." Stereotype="MenuItem" DisplayName="Content Menu Item">
+        <MenuPart />
+        <CommonPart />
+        <IdentityPart />
+        <ContentMenuItemPart />
+      </ContentMenuItem>
+      <Page ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" TypeIndexing.Indexes="Main" DisplayName="Page">
+        <CommonPart DateEditorSettings.ShowDateEditor="True" OwnerEditorSettings.ShowOwnerEditor="True" />
+        <PublishLaterPart />
+        <TitlePart />
+        <AutoroutePart AutorouteSettings.AllowCustomPattern="True" AutorouteSettings.AutomaticAdjustmentOnEdit="False" AutorouteSettings.PatternDefinitions="[{&quot;Name&quot;:&quot;Title&quot;,&quot;Pattern&quot;:&quot;{Content.Slug}&quot;,&quot;Description&quot;:&quot;my-page&quot;}]" AutorouteSettings.DefaultPatternIndex="0" AutorouteSettings.PerItemConfiguration="False" />
+        <BodyPart BodyTypePartSettings.Flavor="html" />
+        <TagsPart />
+        <LocalizationPart />
+        <Page />
+      </Page>
+      <User ContentTypeSettings.Creatable="False" DisplayName="User" />
+      <Image Stereotype="Media" DisplayName="Image">
+        <CommonPart />
+        <MediaPart />
+        <ImagePart />
+        <TitlePart />
+        <IdentityPart />
+      </Image>
+      <Layer DisplayName="Layer">
+        <LayerPart />
+        <CommonPart OwnerEditorSettings.ShowOwnerEditor="false" />
+      </Layer>
+      <HtmlWidget Stereotype="Widget" DisplayName="Html Widget">
+        <WidgetPart />
+        <BodyPart />
+        <CommonPart />
+        <IdentityPart />
+      </HtmlWidget>
+      <Query DisplayName="Query">
+        <QueryPart />
+        <TitlePart />
+        <IdentityPart />
+      </Query>
+      <ProjectionWidget Stereotype="Widget" DisplayName="Projection Widget">
+        <WidgetPart />
+        <CommonPart />
+        <IdentityPart />
+        <ProjectionPart />
+      </ProjectionWidget>
+      <ProjectionPage ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="False" DisplayName="Projection">
+        <CommonPart DateEditorSettings.ShowDateEditor="False" OwnerEditorSettings.ShowOwnerEditor="True" />
+        <TitlePart />
+        <AutoroutePart AutorouteSettings.AllowCustomPattern="True" AutorouteSettings.AutomaticAdjustmentOnEdit="False" AutorouteSettings.PatternDefinitions="[{&quot;Name&quot;:&quot;Title&quot;,&quot;Pattern&quot;:&quot;{Content.Slug}&quot;,&quot;Description&quot;:&quot;my-projections&quot;}]" AutorouteSettings.DefaultPatternIndex="0" AutorouteSettings.PerItemConfiguration="False" />
+        <MenuPart />
+        <ProjectionPart />
+        <AdminMenuPart AdminMenuPartTypeSettings.DefaultPosition="5" />
+        <ProjectionPage />
+      </ProjectionPage>
+      <NavigationQueryMenuItem Description="Injects menu items from a Query" Stereotype="MenuItem" DisplayName="Query Link">
+        <NavigationQueryPart />
+        <MenuPart />
+        <CommonPart />
+      </NavigationQueryMenuItem>
+      <Taxonomy DisplayName="Taxonomy">
+        <TaxonomyPart />
+        <CommonPart />
+        <TitlePart />
+        <AutoroutePart AutorouteSettings.AllowCustomPattern="true" AutorouteSettings.AutomaticAdjustmentOnEdit="false" AutorouteSettings.PatternDefinitions="[{Name:'Title', Pattern: '{Content.Slug}', Description: 'my-taxonomy'}]" AutorouteSettings.DefaultPatternIndex="0" />
+      </Taxonomy>
+      <TaxonomyNavigationMenuItem Description="Injects menu items from a Taxonomy" Stereotype="MenuItem" DisplayName="Taxonomy Link">
+        <TaxonomyNavigationPart />
+        <MenuPart />
+        <CommonPart />
+      </TaxonomyNavigationMenuItem>
+      <NewsItem ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="News Item">
+        <TitlePart />
+        <BodyPart />
+        <CommonPart />
+        <HighlightableItemPart />
+        <NewsItem />
+      </NewsItem>
+      <Event ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="Event">
+        <TitlePart />
+        <BodyPart />
+        <CommonPart />
+        <HighlightableItemPart />
+        <Event />
+      </Event>
+      <Spotlight ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="Spotlight">
+        <TitlePart />
+        <BodyPart />
+        <CommonPart />
+        <HighlightableItemPart />
+        <Spotlight />
+      </Spotlight>
+      <Staff ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="Staff">
+        <Common />
+        <Staff />
+        <CommonPart />
+      </Staff>
+      <CouncilMeeting ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="Council Meeting">
+        <TitlePart />
+        <Common />
+        <CouncilMeeting />
+        <CommonPart />
+      </CouncilMeeting>
+      <WorkItem ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="Work Item">
+        <TitlePart />
+        <BodyPart />
+        <Common />
+        <WorkItem />
+        <CommonPart />
+      </WorkItem>
+      <Resource ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="Resource">
+        <TitlePart />
+        <BodyPart />
+        <Common />
+        <Resource />
+        <CommonPart />
+      </Resource>
+      <FundingOpportunity ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" DisplayName="Funding Opportunity">
+        <TitlePart />
+        <BodyPart />
+        <Common />
+        <FundingOpportunity />
+        <CommonPart />
+      </FundingOpportunity>
+      <HighlightedItemWidget Stereotype="Widget" DisplayName="Highlighted Item Widget">
+        <WidgetPart />
+        <CommonPart />
+        <HighlightedItemPart />
+      </HighlightedItemWidget>
+      <BootstrapCarousel Stereotype="Widget" DisplayName="Bootstrap Carousel">
+        <CommonPart />
+        <WidgetPart />
+        <BootstrapCarousel />
+      </BootstrapCarousel>
+      <LccsTerm Taxonomy="Lccs" DisplayName="Lccs Term">
+        <TermPart />
+        <TitlePart />
+        <AutoroutePart AutorouteSettings.AllowCustomPattern="true" AutorouteSettings.AutomaticAdjustmentOnEdit="false" AutorouteSettings.PatternDefinitions="[{Name:'Taxonomy and Title', Pattern: '{Content.Container.Path}/{Content.Slug}', Description: 'my-taxonomy/my-term/sub-term'}]" AutorouteSettings.DefaultPatternIndex="0" />
+        <CommonPart />
+      </LccsTerm>
+      <ResourcesTerm Taxonomy="Resources" DisplayName="Resources Term">
+        <TermPart />
+        <TitlePart />
+        <AutoroutePart AutorouteSettings.AllowCustomPattern="true" AutorouteSettings.AutomaticAdjustmentOnEdit="false" AutorouteSettings.PatternDefinitions="[{Name:'Taxonomy and Title', Pattern: '{Content.Container.Path}/{Content.Slug}', Description: 'my-taxonomy/my-term/sub-term'}]" AutorouteSettings.DefaultPatternIndex="0" />
+        <CommonPart />
+      </ResourcesTerm>
+      <WorkAreasTerm Taxonomy="Work Areas" DisplayName="Work Areas Term">
+        <TermPart />
+        <TitlePart />
+        <AutoroutePart AutorouteSettings.AllowCustomPattern="true" AutorouteSettings.AutomaticAdjustmentOnEdit="false" AutorouteSettings.PatternDefinitions="[{Name:'Taxonomy and Title', Pattern: '{Content.Container.Path}/{Content.Slug}', Description: 'my-taxonomy/my-term/sub-term'}]" AutorouteSettings.DefaultPatternIndex="0" />
+        <CommonPart />
+      </WorkAreasTerm>
+      <SectionMenu Stereotype="Widget" DisplayName="Section Menu">
+        <CommonPart />
+        <IdentityPart />
+        <WidgetPart />
+        <MenuWidgetPart />
+      </SectionMenu>
+      <SearchForm Stereotype="Widget" DisplayName="Search Form">
+        <SearchFormPart />
+        <CommonPart />
+        <WidgetPart />
+      </SearchForm>
+      <Newsletter ContentTypeSettings.Creatable="True" ContentTypeSettings.Draftable="True" TypeIndexing.Indexes="Main" DisplayName="Network Newsletter">
+        <CommonPart DateEditorSettings.ShowDateEditor="False" OwnerEditorSettings.ShowOwnerEditor="True" />
+        <AutoroutePart AutorouteSettings.PerItemConfiguration="False" AutorouteSettings.AllowCustomPattern="True" AutorouteSettings.AutomaticAdjustmentOnEdit="False" AutorouteSettings.PatternDefinitions="[{&quot;Name&quot;:&quot;Title&quot;,&quot;Pattern&quot;:&quot;{Content.Slug}&quot;,&quot;Description&quot;:&quot;my-title&quot;}]" AutorouteSettings.DefaultPatternIndex="0" />
+        <BodyPart BodyTypePartSettings.Flavor="html" />
+        <TitlePart />
+      </Newsletter>
+    </Types>
+    <Parts>
+      <CommonPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Provides common information about a content item, such as Owner, Date Created, Date Published and Date Modified." />
+      <WidgetPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Turns a content type into a Widget. Note: you need to set the stereotype to &quot;Widget&quot; as well.">
+        <DisplayInSubnav.DisplayInSubnavField />
+      </WidgetPart>
+      <ContainerWidgetPart />
+      <MenuPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Provides an easy way to create a ContentMenuItem from the content editor." />
+      <IdentityPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Automatically generates a unique identity for the content item, which is required in import/export scenarios where one content item references another." />
+      <TitlePart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Provides a Title for your content item." />
+      <MenuWidgetPart />
+      <BodyPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Allows the editing of text using an editor provided by the configured flavor (e.g. html, text, markdown)." BodyPartSettings.FlavorDefault="html" />
+      <ShapeMenuItemPart />
+      <ContentMenuItemPart />
+      <PublishLaterPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Adds the ability to delay the publication of a content item to a later date and time." />
+      <AutoroutePart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Adds advanced url configuration options to your content type to completely customize the url pattern for a content item." />
+      <TagsPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Allows to describe your content using non-hierarchical keywords." />
+      <LocalizationPart />
+      <Page ContentPartSettings.Attachable="True" />
+      <MediaPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Turns a content type into a Media. Note: you need to set the stereotype to &quot;Media&quot; as well." />
+      <ImagePart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Provides common metadata for an Image Media." />
+      <LayerPart />
+      <QueryPart />
+      <ProjectionPart />
+      <AdminMenuPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Adds a menu item to the Admin menu that links to this content item." />
+      <ProjectionPage ContentPartSettings.Attachable="True">
+        <Section.TaxonomyField DisplayName="Section" TaxonomyFieldSettings.Taxonomy="Sections" TaxonomyFieldSettings.LeavesOnly="False" TaxonomyFieldSettings.Required="False" TaxonomyFieldSettings.SingleChoice="True" TaxonomyFieldSettings.Autocomplete="False" TaxonomyFieldSettings.AllowCustomTerms="False" />
+      </ProjectionPage>
+      <NavigationQueryPart />
+      <TaxonomyPart />
+      <TaxonomyNavigationPart />
+      <HighlightableItemPart ContentPartSettings.Attachable="True" ContentPartSettings.Description="Lets a user add a content item to the Highlighted Item Widget." />
+      <NewsItem ContentPartSettings.Description="Contains fields for the News Item Content Type.">
+        <LearnMoreField.LinkField DisplayName="Learn More" LinkFieldSettings.Hint="An external link to learn more about this item." LinkFieldSettings.Required="False" LinkFieldSettings.TargetMode="NewWindow" LinkFieldSettings.LinkTextMode="Optional" LinkFieldSettings.StaticText="" />
+        <Image.MediaLibraryPickerField DisplayName="Image" MediaLibraryPickerFieldSettings.Hint="An image to display with this item." MediaLibraryPickerFieldSettings.Required="False" MediaLibraryPickerFieldSettings.Multiple="False" MediaLibraryPickerFieldSettings.DisplayedContentTypes="Image" />
+        <Summary.TextField DisplayName="Summary" TextFieldSettings.Flavor="Text" TextFieldSettings.Required="False" TextFieldSettings.Hint="A summary of this item." />
+        <ShortTitle.InputField DisplayName="Short Title" InputFieldSettings.Type="Text" InputFieldSettings.Title="Short Title" InputFieldSettings.Hint="A shorter version of the news item's title." InputFieldSettings.Required="True" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <Date.DateTimeField DisplayName="Date" DateTimeFieldSettings.DateTimeFieldDisplays="DateAndTime" DateTimeFieldSettings.Hint="The publish date of the news item." DateTimeFieldSettings.Required="False" />
+      </NewsItem>
+      <Event ContentPartSettings.Description="Contains fields for the Event Content Type.">
+        <LearnMoreField.LinkField DisplayName="Learn More" LinkFieldSettings.Hint="An external link to learn more about this item." LinkFieldSettings.Required="False" LinkFieldSettings.TargetMode="NewWindow" LinkFieldSettings.LinkTextMode="Optional" LinkFieldSettings.StaticText="" />
+        <StartDate.DateTimeField DisplayName="Start Date" DateTimeFieldSettings.DateTimeFieldDisplays="DateAndTime" DateTimeFieldSettings.Hint="The date the event starts." DateTimeFieldSettings.Required="False" />
+        <EndDate.DateTimeField DisplayName="End Date" DateTimeFieldSettings.DateTimeFieldDisplays="DateAndTime" DateTimeFieldSettings.Hint="The date the event starts." DateTimeFieldSettings.Required="False" />
+        <City.InputField DisplayName="City" InputFieldSettings.Type="Text" InputFieldSettings.Title="City" InputFieldSettings.Hint="Add the event's city." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <State.InputField DisplayName="State" InputFieldSettings.Type="Text" InputFieldSettings.Title="State" InputFieldSettings.Hint="Add the event's State." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+      </Event>
+      <Spotlight ContentPartSettings.Description="This is often an Lcc to highlight on the home page">
+        <LearnMoreField.LinkField DisplayName="Learn More" LinkFieldSettings.Hint="An external link to learn more about this item." LinkFieldSettings.Required="False" LinkFieldSettings.TargetMode="NewWindow" LinkFieldSettings.LinkTextMode="Optional" LinkFieldSettings.StaticText="" />
+        <Image.MediaLibraryPickerField DisplayName="Image" MediaLibraryPickerFieldSettings.Hint="An image to display with this item." MediaLibraryPickerFieldSettings.Required="False" MediaLibraryPickerFieldSettings.Multiple="False" MediaLibraryPickerFieldSettings.DisplayedContentTypes="Image" />
+      </Spotlight>
+      <Common />
+      <Staff ContentPartSettings.Description="A staff member of an LCC">
+        <FirstName.InputField DisplayName="First Name" InputFieldSettings.Type="Text" InputFieldSettings.Title="First Name" InputFieldSettings.Hint="Add the staff member's first name." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <LastName.InputField DisplayName="Last Name" InputFieldSettings.Type="Text" InputFieldSettings.Title="Last Name" InputFieldSettings.Hint="Add the staff member's last name." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <Position.InputField DisplayName="Position" InputFieldSettings.Type="Text" InputFieldSettings.Title="Position" InputFieldSettings.Hint="Add the staff member's position." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <Email.InputField DisplayName="Email" InputFieldSettings.Type="Email" InputFieldSettings.Title="Email" InputFieldSettings.Hint="Add the staff member's email." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <Lcc.TaxonomyField DisplayName="Associated Lcc" TaxonomyFieldSettings.AllowCustomTerms="True" TaxonomyFieldSettings.Taxonomy="Lccs" TaxonomyFieldSettings.LeavesOnly="False" TaxonomyFieldSettings.SingleChoice="False" TaxonomyFieldSettings.AutoComplete="False" TaxonomyFieldSettings.Hint="" TaxonomyFieldSettings.Taxonomies="" TaxonomyFieldSettings.Required="False" />
+      </Staff>
+      <CouncilMeeting ContentPartSettings.Description="An LCC meeting">
+        <City.InputField DisplayName="City" InputFieldSettings.Type="Text" InputFieldSettings.Title="City" InputFieldSettings.Hint="Add the city." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <State.InputField DisplayName="State" InputFieldSettings.Type="Text" InputFieldSettings.Title="State" InputFieldSettings.Hint="Add the state." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <StartDate.DateTimeField DisplayName="Start Date" DateTimeFieldSettings.DateTimeFieldDisplays="DateAndTime" DateTimeFieldSettings.Hint="Add the meeting start date." DateTimeFieldSettings.Required="False" />
+        <EndDate.DateTimeField DisplayName="End Date" DateTimeFieldSettings.DateTimeFieldDisplays="DateAndTime" DateTimeFieldSettings.Hint="Add the meeting end date." DateTimeFieldSettings.Required="False" />
+        <Link.LinkField DisplayName="Link" LinkFieldSettings.Hint="An internal address associated with this meeting." LinkFieldSettings.Required="False" LinkFieldSettings.TargetMode="None" LinkFieldSettings.LinkTextMode="Optional" LinkFieldSettings.StaticText="" />
+        <MeetingOutcome.TextField DisplayName="Meeting Outcome" TextFieldSettings.Flavor="Html" TextFieldSettings.Required="False" TextFieldSettings.Hint="Give a sense of the meeting outcome." />
+        <Documents.MediaLibraryPickerField DisplayName="Documents" MediaLibraryPickerFieldSettings.Hint="Add documents associated with this item." MediaLibraryPickerFieldSettings.Required="False" MediaLibraryPickerFieldSettings.Multiple="True" MediaLibraryPickerFieldSettings.DisplayedContentTypes="Document" />
+      </CouncilMeeting>
+      <WorkItem ContentPartSettings.Description="A work item">
+        <LearnMoreField.LinkField DisplayName="Learn More" LinkFieldSettings.Hint="An external link to learn more about this item." LinkFieldSettings.Required="False" LinkFieldSettings.TargetMode="NewWindow" LinkFieldSettings.LinkTextMode="Optional" LinkFieldSettings.StaticText="" />
+        <Image.MediaLibraryPickerField DisplayName="Image" MediaLibraryPickerFieldSettings.Hint="An image to display with this item." MediaLibraryPickerFieldSettings.Required="False" MediaLibraryPickerFieldSettings.Multiple="False" MediaLibraryPickerFieldSettings.DisplayedContentTypes="Image" />
+        <Summary.TextField DisplayName="Summary" TextFieldSettings.Flavor="Text" TextFieldSettings.Required="False" TextFieldSettings.Hint="A summary of this item." />
+        <Area.TaxonomyField DisplayName="Work Area" TaxonomyFieldSettings.AllowCustomTerms="True" TaxonomyFieldSettings.Taxonomy="Work Areas" TaxonomyFieldSettings.LeavesOnly="False" TaxonomyFieldSettings.SingleChoice="False" TaxonomyFieldSettings.AutoComplete="False" TaxonomyFieldSettings.Hint="" TaxonomyFieldSettings.Taxonomies="" TaxonomyFieldSettings.Required="False" />
+      </WorkItem>
+      <Resource ContentPartSettings.Description="A resource item">
+        <Documents.MediaLibraryPickerField DisplayName="Documents" MediaLibraryPickerFieldSettings.Hint="Add documents associated with this item." MediaLibraryPickerFieldSettings.Required="False" MediaLibraryPickerFieldSettings.Multiple="True" MediaLibraryPickerFieldSettings.DisplayedContentTypes="Document" />
+        <Lcc.TaxonomyField DisplayName="Associated Lcc" TaxonomyFieldSettings.AllowCustomTerms="True" TaxonomyFieldSettings.Taxonomy="Lccs" TaxonomyFieldSettings.LeavesOnly="False" TaxonomyFieldSettings.SingleChoice="False" TaxonomyFieldSettings.AutoComplete="False" TaxonomyFieldSettings.Hint="" TaxonomyFieldSettings.Taxonomies="" TaxonomyFieldSettings.Required="False" />
+        <Resource_x0020_Type.TaxonomyField DisplayName="Resource Type" TaxonomyFieldSettings.AllowCustomTerms="True" TaxonomyFieldSettings.Taxonomy="Resources" TaxonomyFieldSettings.LeavesOnly="False" TaxonomyFieldSettings.SingleChoice="False" TaxonomyFieldSettings.AutoComplete="False" TaxonomyFieldSettings.Hint="" TaxonomyFieldSettings.Taxonomies="" TaxonomyFieldSettings.Required="False" />
+      </Resource>
+      <FundingOpportunity ContentPartSettings.Description="A funding opportunity item">
+        <DueDate.DateTimeField DisplayName="Due Date" DateTimeFieldSettings.DateTimeFieldDisplays="DateAndTime" DateTimeFieldSettings.Hint="The application deadline." DateTimeFieldSettings.Required="False" />
+        <DueDateCaption.InputField DisplayName="Due Date Caption" InputFieldSettings.Type="Text" InputFieldSettings.Title="Due Date Caption" InputFieldSettings.Hint="An explaination of the due date." InputFieldSettings.Required="False" InputFieldSettings.AutoFocus="False" InputFieldSettings.AutoComplete="False" InputFieldSettings.PlaceHolder="" InputFieldSettings.EditorCssClass="" InputFieldSettings.MaxLength="150" InputFieldSettings.Pattern="" />
+        <Link.LinkField DisplayName="Link" LinkFieldSettings.Hint="A link to more information about the opportunity." LinkFieldSettings.Required="False" LinkFieldSettings.TargetMode="None" LinkFieldSettings.LinkTextMode="Optional" LinkFieldSettings.StaticText="" />
+      </FundingOpportunity>
+      <HighlightedItemPart ContentPartSettings.Description="Displays content items that the end user has chosen to highlight." />
+      <BootstrapCarousel>
+        <CarouselImages.MediaLibraryPickerField DisplayName="Carousel Images" MediaLibraryPickerFieldSettings.Hint="" MediaLibraryPickerFieldSettings.Required="" MediaLibraryPickerFieldSettings.Multiple="True" MediaLibraryPickerFieldSettings.DisplayedContentTypes="" />
+      </BootstrapCarousel>
+      <TermPart />
+      <SearchFormPart />
+    </Parts>
+  </Metadata>
+</Orchard>

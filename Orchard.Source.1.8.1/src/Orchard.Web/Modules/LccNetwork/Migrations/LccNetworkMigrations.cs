@@ -153,7 +153,7 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("Contains fields for the News Item Content Type.")
-                .WithField("LearnMoreField", this.LearnMoreLinkField)
+                .WithField("LearnMore", this.LearnMoreLinkField)
                 .WithField("Image", this.SingleImageField)
                 .WithField("Summary", this.SummaryTextAreaField)
                 .WithField("ShortTitle", this.BuildInputField("Short Title", "Text", "Short Title", "A shorter version of the news item's title.", true, false, false, string.Empty, string.Empty, 150, string.Empty))
@@ -179,7 +179,7 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                .WithDescription("Contains fields for the Event Content Type.")
-                .WithField("LearnMoreField", this.LearnMoreLinkField)
+                .WithField("LearmMore", this.LearnMoreLinkField)
                 .WithField("StartDate", this.BuildDateTimeField("Start Date", DateTimeFieldDisplays.DateAndTime, "The date the event starts.", false))
                 .WithField("EndDate", this.BuildDateTimeField("End Date", DateTimeFieldDisplays.DateAndTime, "The date the event starts.", false))
                 // todo maybe - replace the following with a single LocationPart that has settings
@@ -206,7 +206,7 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("This is often an Lcc to highlight on the home page")
-                .WithField("LearnMoreField", this.LearnMoreLinkField)
+                .WithField("LearmMore", this.LearnMoreLinkField)
                 .WithField("Image", this.SingleImageField));
 
             ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
@@ -277,7 +277,7 @@ namespace LccNetwork
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("A work item")
-                .WithField("LearnMoreField", this.LearnMoreLinkField)
+                .WithField("LearmMore", this.LearnMoreLinkField)
                 .WithField("Image", this.SingleImageField)
                 .WithField("Summary", this.SummaryTextAreaField)
                 .WithField("Area", this.WorkAreasTaxonomyField)

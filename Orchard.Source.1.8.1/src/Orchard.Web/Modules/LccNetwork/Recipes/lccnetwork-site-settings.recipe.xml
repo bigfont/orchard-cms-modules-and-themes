@@ -1,0 +1,20 @@
+<!--Exported from Orchard-->
+<Orchard>
+  <Recipe>
+    <Name>LccNetwork Site Settings</Name>
+    <Description>A reciple that adds Site Settings to the Lcc Network website.</Description>
+    <Author>Shaun Luttin</Author>
+    <WebSite>http://www.bigfont.ca</WebSite>
+    <Tags>End User</Tags>
+    <Version>1.0</Version>
+    <ExportUtc>2014-08-05T18:34:52.3508882Z</ExportUtc>
+  </Recipe>
+  <Settings>
+    <SearchSettingsPart SearchedFields="body,title" FilterCulture="false" SearchIndex="Main" />
+    <SiteSettingsPart PageTitleSeparator=" - " SiteName="Lcc Network" SiteSalt="ff010797b079458895cb89345b635799" SuperUser="admin" SiteCulture="en-US" PageSize="10" MaxPageSize="0" SiteTimeZone="UTC" BaseUrl="http://lccnetwork-test.azurewebsites.net" />
+    <CacheSettingsPart DefaultCacheDuration="300" DefaultMaxAge="0" ApplyCulture="false" DebugMode="false" IgnoreNoCache="false" />
+    <ThemeSiteSettingsPart CurrentThemeName="TheThemeMachine" />
+    <CommentSettingsPart ModerateComments="false" ClosedCommentsDelay="0" />
+    <RegistrationSettingsPart UsersCanRegister="false" UsersMustValidateEmail="false" UsersAreModerated="false" NotifyModeration="false" EnableLostPassword="false" />
+  </Settings>
+</Orchard>

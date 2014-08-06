@@ -10,7 +10,7 @@ using Orchard.Environment.Extensions;
 
 namespace LccNetwork.Migrations
 {
-    [OrchardFeature("SectionNavigation")]
+    [OrchardFeature("fea")]
     public class NavigationMigrations : DataMigrationImpl
     {
         public int Create()

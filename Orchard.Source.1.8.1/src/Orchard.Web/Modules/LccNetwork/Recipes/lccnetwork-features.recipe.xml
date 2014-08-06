@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<Orchard>
+  <Recipe>
+    <Name>LccNetwork Features</Name>
+    <Description>A reciple to enable the features of the Lcc Network website.</Description>
+    <Author>Shaun Luttin</Author>
+    <WebSite>http://www.bigfont.ca</WebSite>
+    <Tags>End User</Tags>
+    <Version>1.0</Version>
+  </Recipe>
+
+  <Feature enable="
+           Orchard.Alias,
+           Orchard.Autoroute,
+           TinyMce,
+           Orchard.MediaLibrary,
+           Orchard.ContentPicker,
+           Orchard.PublishLater,
+           Orchard.jQuery,
+           Orchard.Widgets,
+           Orchard.ContentTypes,
+           Orchard.Scripting,
+           Orchard.Scripting.Lightweight,
+           PackagingServices,
+           Orchard.Packaging,
+           Orchard.Projections,
+           Orchard.Fields,
+           Orchard.OutputCache,
+           Orchard.Taxonomies,
+           LccNetwork,
+           Highlightable,
+           SectionNavigation,
+           BigFont.Bootstrap.Components,
+           TheThemeMachine" />
+  
+</Orchard>
+
+
+
+
+
+
+
+

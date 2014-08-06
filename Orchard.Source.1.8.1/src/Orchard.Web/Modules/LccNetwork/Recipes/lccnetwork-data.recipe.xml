@@ -1,0 +1,747 @@
+<!--Exported from Orchard-->
+<Orchard>
+  <Recipe>
+    <Name>LccNetwork Data</Name>
+    <Description>A reciple that adds data to the Lcc Network website.</Description>
+    <Author>Shaun Luttin</Author>
+    <WebSite>http://www.bigfont.ca</WebSite>
+    <Tags>End User</Tags>
+    <Version>1.0</Version>
+    <ExportUtc>2014-08-05T18:34:52.3508882Z</ExportUtc>
+  </Recipe>
+  <Data>
+    <BootstrapCarousel Id="" Status="Published">
+      <MediaLibraryPickerField.CarouselImages ContentItems="/Identifier=46cfad58202047fdae6ffe036d78657d,/Identifier=a41c19bc75874fdf9a38cc17e5cc2ddc,/Identifier=72dcddd13c674b1a89835f776d080dfb,/Identifier=cd50dabb148e47c4990dace653c36f05" />
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2014-07-31T01:12:49.1103383Z" PublishedUtc="2014-07-31T01:12:49.5946733Z" ModifiedUtc="2014-08-04T19:52:35.0167533Z" />
+      <WidgetPart Title="Carousel" Position="3" Zone="Featured" RenderTitle="false" Name="Carousel" />
+    </BootstrapCarousel>
+    <ContentMenuItem Id="/Identifier=59341996ca29426f90e4fdc190181870" Status="Published">
+      <IdentityPart Identifier="59341996ca29426f90e4fdc190181870" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:28:18.3473986Z" PublishedUtc="2014-08-01T04:28:18.3943129Z" ModifiedUtc="2014-08-01T04:28:18.3473986Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Organizational Structure" MenuPosition="2.1" />
+      <ContentMenuItemPart ContentItem="/alias=organizational-structure" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=df81442910dd4bb188431b33c74c90e4" Status="Published">
+      <IdentityPart Identifier="df81442910dd4bb188431b33c74c90e4" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:33:04.6650536Z" PublishedUtc="2014-08-01T04:33:04.727577Z" ModifiedUtc="2014-08-01T04:33:04.6806938Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Staff" MenuPosition="2.2" />
+      <ContentMenuItemPart ContentItem="/alias=staff" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=ec40197574b44a418c2339f69fd89f85" Status="Published">
+      <IdentityPart Identifier="ec40197574b44a418c2339f69fd89f85" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:34:19.4054524Z" PublishedUtc="2014-08-01T09:26:33.4039499Z" ModifiedUtc="2014-08-01T09:26:33.2321983Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="About LCCs" MenuPosition="2" />
+      <ContentMenuItemPart ContentItem="/alias=about" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=a0e475f3f70a45cf956481d55ca70aef" Status="Published">
+      <IdentityPart Identifier="a0e475f3f70a45cf956481d55ca70aef" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:35:05.8199225Z" PublishedUtc="2014-08-01T04:35:05.8824339Z" ModifiedUtc="2014-08-01T04:35:05.8199225Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="News &amp; Events" MenuPosition="6" />
+      <ContentMenuItemPart ContentItem="/alias=news" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=20543b7b6b884d9daf4bc4efc67df620" Status="Published">
+      <IdentityPart Identifier="20543b7b6b884d9daf4bc4efc67df620" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:36:17.6715452Z" PublishedUtc="2014-08-01T04:36:17.7496865Z" ModifiedUtc="2014-08-01T04:36:17.6871651Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Events" MenuPosition="6.1" />
+      <ContentMenuItemPart ContentItem="/alias=events" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=914f0bb85f22458ab8834d9f4f31e7d0" Status="Published">
+      <IdentityPart Identifier="914f0bb85f22458ab8834d9f4f31e7d0" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:37:15.7690234Z" PublishedUtc="2014-08-01T04:37:15.8784538Z" ModifiedUtc="2014-08-01T04:37:15.7690234Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="LCC Council" MenuPosition="3" />
+      <ContentMenuItemPart ContentItem="/alias=Council" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=db7a2e7b62fd4d44901feb82b6fa1a6f" Status="Published">
+      <IdentityPart Identifier="db7a2e7b62fd4d44901feb82b6fa1a6f" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:39:08.0351862Z" PublishedUtc="2014-08-01T04:39:08.1757661Z" ModifiedUtc="2014-08-01T04:39:08.0507571Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Convening the Council" MenuPosition="3.1" />
+      <ContentMenuItemPart ContentItem="/alias=convening-the-council" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=d2c9579ba3f144528a6f39c7e4b511fc" Status="Published">
+      <IdentityPart Identifier="d2c9579ba3f144528a6f39c7e4b511fc" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:40:59.0500042Z" PublishedUtc="2014-08-01T04:40:59.174998Z" ModifiedUtc="2014-08-01T04:40:59.0500042Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Council Meetings" MenuPosition="3.2" />
+      <ContentMenuItemPart ContentItem="/alias=council-meetings" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=0f172dc986a44e94990672b6d49e1263" Status="Published">
+      <IdentityPart Identifier="0f172dc986a44e94990672b6d49e1263" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:42:21.5166406Z" PublishedUtc="2014-08-01T04:42:21.6260449Z" ModifiedUtc="2014-08-01T04:42:21.5166406Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Our Work" MenuPosition="4" />
+      <ContentMenuItemPart ContentItem="/alias=a-shared-science-approach" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=fefe0fc1d501400f8016db2449b792f9" Status="Published">
+      <IdentityPart Identifier="fefe0fc1d501400f8016db2449b792f9" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:47:49.2012116Z" PublishedUtc="2014-08-01T04:47:49.3418578Z" ModifiedUtc="2014-08-01T04:47:49.2012116Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Funding Opportunities" MenuPosition="4.2" />
+      <ContentMenuItemPart ContentItem="/alias=funding-opportunities" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=0b85981ef13d4bc1a9388caf057a0255" Status="Published">
+      <IdentityPart Identifier="0b85981ef13d4bc1a9388caf057a0255" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:49:01.4348277Z" PublishedUtc="2014-08-01T04:49:01.5910721Z" ModifiedUtc="2014-08-01T04:49:01.4348277Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Resources" MenuPosition="7" />
+      <ContentMenuItemPart ContentItem="/alias=resourses" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=732e39a7f83f49eabd4a8c989f9a7e05" Status="Published">
+      <IdentityPart Identifier="732e39a7f83f49eabd4a8c989f9a7e05" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T05:03:13.5016167Z" PublishedUtc="2014-08-01T05:03:13.8141128Z" ModifiedUtc="2014-08-01T05:03:13.5172596Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Science Assessments" MenuPosition="7.1" />
+      <ContentMenuItemPart ContentItem="/alias=Assessments" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=fcc6116e278c4bf1982fc170a9fcc907" Status="Published">
+      <IdentityPart Identifier="fcc6116e278c4bf1982fc170a9fcc907" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T11:05:54.4918343Z" PublishedUtc="2014-08-01T11:05:54.6949516Z" ModifiedUtc="2014-08-01T11:05:54.4918343Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Projects" MenuPosition="4.1" />
+      <ContentMenuItemPart ContentItem="/alias=projects" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=c6d49e2fd2e740618d8deb6a2da3f95b" Status="Published">
+      <IdentityPart Identifier="c6d49e2fd2e740618d8deb6a2da3f95b" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T11:07:30.8639074Z" PublishedUtc="2014-08-01T11:07:31.1294838Z" ModifiedUtc="2014-08-01T11:07:30.8796833Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Find an LCC" MenuPosition="5" />
+      <ContentMenuItemPart ContentItem="/alias=find-an-lcc" />
+    </ContentMenuItem>
+    <ContentMenuItem Id="/Identifier=2494837d05ca4c6eb391dc063764495e" Status="Published">
+      <IdentityPart Identifier="2494837d05ca4c6eb391dc063764495e" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T11:09:11.4184439Z" PublishedUtc="2014-08-01T11:09:11.6059334Z" ModifiedUtc="2014-08-01T11:09:11.4340765Z" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="National Academy of Sciences Review of LCCs" MenuPosition="6.2" />
+      <ContentMenuItemPart ContentItem="/alias=national-academy-of-sciences-review-of-lccs" />
+    </ContentMenuItem>
+    <CouncilMeeting Id="" Status="Published">
+      <TextField.MeetingOutcome Text="&lt;p&gt;This is the outcome.&lt;/p&gt;" />
+      <InputField.City Value="Salt Spring" />
+      <InputField.State Value="BC" />
+      <CouncilMeeting.StartDate Value="2014-07-09T19:18:00Z" />
+      <CouncilMeeting.EndDate Value="2014-07-24T18:18:00Z" />
+      <LinkField.Link Text="Click Me" Url="http://www.enviroissues.com" />
+      <MediaLibraryPickerField.Documents ContentItems="/Identifier=75a50e698b9c40ef993beb078e3c2bf9" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:56:27.1758879Z" ModifiedUtc="2014-07-31T01:56:27.1758879Z" />
+      <TitlePart Title="Council Meeting Title" />
+    </CouncilMeeting>
+    <CouncilMeeting Id="" Status="Published">
+      <TextField.MeetingOutcome Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <InputField.City Value="TEST" />
+      <InputField.State Value="TEST" />
+      <CouncilMeeting.StartDate Value="2014-07-01T18:40:00Z" />
+      <CouncilMeeting.EndDate Value="2014-07-03T18:40:00Z" />
+      <LinkField.Link Text="TEST" Url="http://orchardproject.net" />
+      <MediaLibraryPickerField.Documents ContentItems="/Identifier=75a50e698b9c40ef993beb078e3c2bf9" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:40:52.7723876Z" PublishedUtc="2014-07-31T01:47:47.1169364Z" ModifiedUtc="2014-07-31T01:47:47.0700731Z" />
+      <TitlePart Title="TEST" />
+    </CouncilMeeting>
+    <Event Id="" Status="Published">
+      <InputField.City Value="TEST" />
+      <InputField.State Value="TEST" />
+      <Event.StartDate Value="2014-07-03T18:30:00Z" />
+      <Event.EndDate Value="2014-07-25T18:30:00Z" />
+      <LinkField.LearnMoreField Text="TEST" Url="http://orchardproject.net" Target="_blank" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:30:15.63905Z" PublishedUtc="2014-07-31T01:30:15.7796833Z" ModifiedUtc="2014-07-31T01:30:15.685925Z" />
+      <TitlePart Title="TEST" />
+    </Event>
+    <FundingOpportunity Id="" Status="Published">
+      <InputField.DueDateCaption Value="TEST" />
+      <FundingOpportunity.DueDate Value="2014-07-03T19:30:00Z" />
+      <LinkField.Link Text="TEST" Url="http://orchardproject.net" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:56:27.1758879Z" ModifiedUtc="2014-07-31T01:56:27.1758879Z" />
+      <TitlePart Title="TEST" />
+    </FundingOpportunity>
+    <FundingOpportunity Id="" Status="Published">
+      <InputField.DueDateCaption Value="TEST" />
+      <FundingOpportunity.DueDate Value="2014-07-02T18:41:00Z" />
+      <LinkField.Link Text="TEST" Url="http://orchardproject.net" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:41:39.4863901Z" PublishedUtc="2014-07-31T01:41:39.5488998Z" ModifiedUtc="2014-07-31T01:41:39.5176342Z" />
+      <TitlePart Title="TEST" />
+    </FundingOpportunity>
+    <HighlightedItemWidget Id="" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2014-07-31T01:13:50.9046888Z" PublishedUtc="2014-07-31T01:13:50.9900408Z" ModifiedUtc="2014-07-31T01:51:35.3751285Z" />
+      <WidgetPart Title="Featured Content Item" Position="1" Zone="BeforeMain" RenderTitle="false" Name="FeaturedContentItem" />
+    </HighlightedItemWidget>
+    <HighlightedItemWidget Id="" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=TheHomepage" CreatedUtc="2014-07-31T01:14:29.4447648Z" PublishedUtc="2014-07-31T01:14:29.4916178Z" ModifiedUtc="2014-07-31T01:51:57.7379159Z" />
+      <WidgetPart Title="Featured Spotlight Item" Position="2" Zone="AsideFirst" RenderTitle="false" Name="FeaturedSpotlightItem" />
+    </HighlightedItemWidget>
+    <HtmlWidget Id="/Identifier=b00c2a11f1504a4e94d532f501d6428e" Status="Published">
+      <IdentityPart Identifier="b00c2a11f1504a4e94d532f501d6428e" />
+      <BodyPart Text="" />
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Three Columns" CreatedUtc="2014-07-31T02:28:00.9516905Z" PublishedUtc="2014-07-31T02:28:00.9673143Z" ModifiedUtc="2014-07-31T02:28:00.9829401Z" />
+      <WidgetPart Title="Extra Content" Position="1" Zone="AsideSecond" RenderTitle="false" Name="" />
+    </HtmlWidget>
+    <Image Id="/Identifier=72dcddd13c674b1a89835f776d080dfb" Status="Published">
+      <IdentityPart Identifier="72dcddd13c674b1a89835f776d080dfb" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:45:55.9612877Z" PublishedUtc="2014-07-31T01:45:56.2894127Z" ModifiedUtc="2014-07-31T01:45:55.9612877Z" />
+      <TitlePart Title="Appalachian_data_slider-1" />
+      <ImagePart Height="379" Width="735" />
+      <MediaPart MimeType="image/jpeg" Caption="" AlternateText="" FolderPath="MainCarousel" FileName="Appalachian_data_slider-1.jpg" />
+    </Image>
+    <Image Id="/Identifier=cd50dabb148e47c4990dace653c36f05" Status="Published">
+      <IdentityPart Identifier="cd50dabb148e47c4990dace653c36f05" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:45:56.3988269Z" PublishedUtc="2014-07-31T01:45:56.4300501Z" ModifiedUtc="2014-07-31T01:45:56.3988269Z" />
+      <TitlePart Title="NAtlantic_plover_slider-1" />
+      <ImagePart Height="379" Width="735" />
+      <MediaPart MimeType="image/jpeg" Caption="" AlternateText="" FolderPath="MainCarousel" FileName="NAtlantic_plover_slider-1.jpg" />
+    </Image>
+    <Image Id="/Identifier=a41c19bc75874fdf9a38cc17e5cc2ddc" Status="Published">
+      <IdentityPart Identifier="a41c19bc75874fdf9a38cc17e5cc2ddc" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:45:58.3831467Z" PublishedUtc="2014-07-31T01:45:58.4144322Z" ModifiedUtc="2014-07-31T01:45:58.3831467Z" />
+      <TitlePart Title="GreatNorthern_Cutthroat_slider-1" />
+      <ImagePart Height="379" Width="735" />
+      <MediaPart MimeType="image/jpeg" Caption="" AlternateText="" FolderPath="MainCarousel" FileName="GreatNorthern_Cutthroat_slider-1.jpg" />
+    </Image>
+    <Image Id="/Identifier=46cfad58202047fdae6ffe036d78657d" Status="Published">
+      <IdentityPart Identifier="46cfad58202047fdae6ffe036d78657d" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:45:58.992512Z" PublishedUtc="2014-07-31T01:45:59.0237665Z" ModifiedUtc="2014-07-31T01:45:58.992512Z" />
+      <TitlePart Title="NPacific_Wetlands_slider-1" />
+      <ImagePart Height="379" Width="735" />
+      <MediaPart MimeType="image/jpeg" Caption="" AlternateText="" FolderPath="MainCarousel" FileName="NPacific_Wetlands_slider-1.jpg" />
+    </Image>
+    <Layer Id="/Layer.LayerName=Default" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:28.4870408Z" PublishedUtc="2014-07-31T01:01:28.721426Z" ModifiedUtc="2014-07-31T01:01:28.4870408Z" />
+      <LayerPart Name="Default" Description="The widgets in this layer are displayed on all pages" LayerRule="true" />
+    </Layer>
+    <Layer Id="/Layer.LayerName=Authenticated" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:28.9089537Z" PublishedUtc="2014-07-31T01:01:28.9245384Z" ModifiedUtc="2014-07-31T01:01:28.9089537Z" />
+      <LayerPart Name="Authenticated" Description="The widgets in this layer are displayed when the user is authenticated" LayerRule="authenticated" />
+    </Layer>
+    <Layer Id="/Layer.LayerName=Anonymous" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:28.9714177Z" PublishedUtc="2014-07-31T01:01:28.9870646Z" ModifiedUtc="2014-07-31T01:01:28.9714177Z" />
+      <LayerPart Name="Anonymous" Description="The widgets in this layer are displayed when the user is anonymous" LayerRule="not authenticated" />
+    </Layer>
+    <Layer Id="/Layer.LayerName=Disabled" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:29.01833Z" PublishedUtc="2014-07-31T01:01:29.0339068Z" ModifiedUtc="2014-07-31T01:01:29.01833Z" />
+      <LayerPart Name="Disabled" Description="The widgets in this layer are never displayed" LayerRule="false" />
+    </Layer>
+    <Layer Id="/Layer.LayerName=TheHomepage" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:29.0652121Z" PublishedUtc="2014-07-31T01:01:29.0807918Z" ModifiedUtc="2014-07-31T01:01:29.0652121Z" />
+      <LayerPart Name="TheHomepage" Description="The widgets in this layer are displayed on the home page" LayerRule="url '~/'" />
+    </Layer>
+    <Layer Id="/Layer.LayerName=Three Columns" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T02:26:49.0181653Z" PublishedUtc="2014-07-31T02:26:49.0337463Z" ModifiedUtc="2014-07-31T02:26:49.0493724Z" />
+      <LayerPart Name="Three Columns" Description="Subnav on the left, content in the middle, addition content to the right." LayerRule="not url(&quot;~/&quot;)" />
+    </Layer>
+    <LccsTerm Id="/alias=national" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.2959797Z" PublishedUtc="2014-07-31T01:43:32.3740956Z" ModifiedUtc="2014-07-31T01:43:32.2959797Z" />
+      <AutoroutePart Alias="national" UseCustomPattern="false" />
+      <TitlePart Title="National" />
+      <TermPart Count="1" Selectable="true" Weight="9" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=aleutian-and-bering-sea-islands" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.420978Z" PublishedUtc="2014-07-31T01:43:32.4365954Z" ModifiedUtc="2014-07-31T01:43:32.420978Z" />
+      <AutoroutePart Alias="aleutian-and-bering-sea-islands" UseCustomPattern="false" />
+      <TitlePart Title="Aleutian and Bering Sea Islands" />
+      <TermPart Count="0" Selectable="true" Weight="8" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=appalachian" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.4990861Z" PublishedUtc="2014-07-31T01:43:32.5303363Z" ModifiedUtc="2014-07-31T01:43:32.4990861Z" />
+      <AutoroutePart Alias="appalachian" UseCustomPattern="false" />
+      <TitlePart Title="Appalachian" />
+      <TermPart Count="2" Selectable="true" Weight="7" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=arctic" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.5928466Z" PublishedUtc="2014-07-31T01:43:32.6085037Z" ModifiedUtc="2014-07-31T01:43:32.5928466Z" />
+      <AutoroutePart Alias="arctic" UseCustomPattern="false" />
+      <TitlePart Title="Arctic" />
+      <TermPart Count="1" Selectable="true" Weight="6" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=california" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.6709627Z" PublishedUtc="2014-07-31T01:43:32.6866053Z" ModifiedUtc="2014-07-31T01:43:32.6709627Z" />
+      <AutoroutePart Alias="california" UseCustomPattern="false" />
+      <TitlePart Title="California" />
+      <TermPart Count="1" Selectable="true" Weight="5" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=caribbean" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.7490985Z" PublishedUtc="2014-07-31T01:43:32.764716Z" ModifiedUtc="2014-07-31T01:43:32.7490985Z" />
+      <AutoroutePart Alias="caribbean" UseCustomPattern="false" />
+      <TitlePart Title="Caribbean" />
+      <TermPart Count="0" Selectable="true" Weight="4" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=desert" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.8115885Z" PublishedUtc="2014-07-31T01:43:32.8428399Z" ModifiedUtc="2014-07-31T01:43:32.8115885Z" />
+      <AutoroutePart Alias="desert" UseCustomPattern="false" />
+      <TitlePart Title="Desert" />
+      <TermPart Count="0" Selectable="true" Weight="3" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=eastern-tallgrass-prairie-and-big-rivers" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.9053382Z" PublishedUtc="2014-07-31T01:43:32.9210161Z" ModifiedUtc="2014-07-31T01:43:32.9053382Z" />
+      <AutoroutePart Alias="eastern-tallgrass-prairie-and-big-rivers" UseCustomPattern="false" />
+      <TitlePart Title="Eastern Tallgrass Prairie and Big Rivers" />
+      <TermPart Count="0" Selectable="true" Weight="2" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=great-basin" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:32.9834621Z" PublishedUtc="2014-07-31T01:43:32.9990872Z" ModifiedUtc="2014-07-31T01:43:32.9834621Z" />
+      <AutoroutePart Alias="great-basin" UseCustomPattern="false" />
+      <TitlePart Title="Great Basin" />
+      <TermPart Count="0" Selectable="true" Weight="1" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=great-northern" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.0655034Z" PublishedUtc="2014-07-31T01:43:33.0811138Z" ModifiedUtc="2014-07-31T01:43:33.0655034Z" />
+      <AutoroutePart Alias="great-northern" UseCustomPattern="false" />
+      <TitlePart Title="Great Northern" />
+      <TermPart Count="0" Selectable="true" Weight="0" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=great-plains" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.1592456Z" PublishedUtc="2014-07-31T01:43:33.190496Z" ModifiedUtc="2014-07-31T01:43:33.1592456Z" />
+      <AutoroutePart Alias="great-plains" UseCustomPattern="false" />
+      <TitlePart Title="Great Plains" />
+      <TermPart Count="0" Selectable="true" Weight="-1" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=gulf-coastal-plains-and-ozarks" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.2529968Z" PublishedUtc="2014-07-31T01:43:33.2686125Z" ModifiedUtc="2014-07-31T01:43:33.2529968Z" />
+      <AutoroutePart Alias="gulf-coastal-plains-and-ozarks" UseCustomPattern="false" />
+      <TitlePart Title="Gulf Coastal Plains and Ozarks" />
+      <TermPart Count="0" Selectable="true" Weight="-2" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=gulf-coast-prairie" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.3327604Z" PublishedUtc="2014-07-31T01:43:33.3467843Z" ModifiedUtc="2014-07-31T01:43:33.3327604Z" />
+      <AutoroutePart Alias="gulf-coast-prairie" UseCustomPattern="false" />
+      <TitlePart Title="Gulf Coast Prairie" />
+      <TermPart Count="0" Selectable="true" Weight="-3" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=north-atlantic" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.4248737Z" PublishedUtc="2014-07-31T01:43:33.4404985Z" ModifiedUtc="2014-07-31T01:43:33.4248737Z" />
+      <AutoroutePart Alias="north-atlantic" UseCustomPattern="false" />
+      <TitlePart Title="North Atlantic" />
+      <TermPart Count="0" Selectable="true" Weight="-4" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=north-pacific" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.5029896Z" PublishedUtc="2014-07-31T01:43:33.5342465Z" ModifiedUtc="2014-07-31T01:43:33.5029896Z" />
+      <AutoroutePart Alias="north-pacific" UseCustomPattern="false" />
+      <TitlePart Title="North Pacific" />
+      <TermPart Count="0" Selectable="true" Weight="-5" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=northwest-boreal" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.5967462Z" PublishedUtc="2014-07-31T01:43:33.6279896Z" ModifiedUtc="2014-07-31T01:43:33.5967462Z" />
+      <AutoroutePart Alias="northwest-boreal" UseCustomPattern="false" />
+      <TitlePart Title="Northwest Boreal" />
+      <TermPart Count="0" Selectable="true" Weight="-6" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=pacific-islands" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.7061137Z" PublishedUtc="2014-07-31T01:43:33.7217473Z" ModifiedUtc="2014-07-31T01:43:33.7061137Z" />
+      <AutoroutePart Alias="pacific-islands" UseCustomPattern="false" />
+      <TitlePart Title="Pacific Islands" />
+      <TermPart Count="0" Selectable="true" Weight="-7" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=peninsular-florida" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.8155009Z" PublishedUtc="2014-07-31T01:43:33.8311241Z" ModifiedUtc="2014-07-31T01:43:33.8155009Z" />
+      <AutoroutePart Alias="peninsular-florida" UseCustomPattern="false" />
+      <TitlePart Title="Peninsular Florida" />
+      <TermPart Count="0" Selectable="true" Weight="-8" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=plains-and-prairie-potholes" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:33.9092497Z" PublishedUtc="2014-07-31T01:43:33.9404907Z" ModifiedUtc="2014-07-31T01:43:33.9092497Z" />
+      <AutoroutePart Alias="plains-and-prairie-potholes" UseCustomPattern="false" />
+      <TitlePart Title="Plains and Prairie Potholes" />
+      <TermPart Count="0" Selectable="true" Weight="-9" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=south-atlantic" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:34.0186225Z" PublishedUtc="2014-07-31T01:43:34.0498783Z" ModifiedUtc="2014-07-31T01:43:34.0186225Z" />
+      <AutoroutePart Alias="south-atlantic" UseCustomPattern="false" />
+      <TitlePart Title="South Atlantic" />
+      <TermPart Count="0" Selectable="true" Weight="-10" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=southern-rockies" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:34.1748732Z" PublishedUtc="2014-07-31T01:43:34.206124Z" ModifiedUtc="2014-07-31T01:43:34.1748732Z" />
+      <AutoroutePart Alias="southern-rockies" UseCustomPattern="false" />
+      <TitlePart Title="Southern Rockies" />
+      <TermPart Count="0" Selectable="true" Weight="-11" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=upper-midwest-and-great-lakes" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:34.2686125Z" PublishedUtc="2014-07-31T01:43:34.2998712Z" ModifiedUtc="2014-07-31T01:43:34.2686125Z" />
+      <AutoroutePart Alias="upper-midwest-and-great-lakes" UseCustomPattern="false" />
+      <TitlePart Title="Upper Midwest and Great Lakes" />
+      <TermPart Count="0" Selectable="true" Weight="-12" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <LccsTerm Id="/alias=western-alaska" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=lccs" CreatedUtc="2014-07-31T01:43:34.3936124Z" PublishedUtc="2014-07-31T01:43:34.4248633Z" ModifiedUtc="2014-07-31T01:43:34.3936124Z" />
+      <AutoroutePart Alias="western-alaska" UseCustomPattern="false" />
+      <TitlePart Title="Western Alaska" />
+      <TermPart Count="0" Selectable="true" Weight="-13" TaxonomyId="/alias=lccs" Path="" />
+    </LccsTerm>
+    <Menu Id="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" Status="Published">
+      <IdentityPart Identifier="e5a5dca0c5ad4d5088af0e4943de9479" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:29.4714111Z" PublishedUtc="2014-07-31T01:01:29.5027067Z" ModifiedUtc="2014-07-31T01:01:29.4714111Z" />
+      <TitlePart Title="Main Menu" />
+    </Menu>
+    <MenuItem Id="/Identifier=49ba9512af624d0cab7f5fce2a507cae" Status="Published">
+      <IdentityPart Identifier="49ba9512af624d0cab7f5fce2a507cae" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:30.1120705Z" PublishedUtc="2014-07-31T01:01:30.1589153Z" ModifiedUtc="2014-07-31T01:01:30.1120705Z" />
+      <MenuItemPart Url="~/" />
+      <MenuPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" MenuText="Home" MenuPosition="1" />
+    </MenuItem>
+    <MenuWidget Id="/Identifier=3f18dda0d4ad46cd9dad26f48ea367ad" Status="Published">
+      <IdentityPart Identifier="3f18dda0d4ad46cd9dad26f48ea367ad" />
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Default" CreatedUtc="2014-08-01T06:18:14.1536816Z" PublishedUtc="2014-08-01T06:18:14.1692721Z" ModifiedUtc="2014-08-01T09:14:37.3243306Z" />
+      <WidgetPart Title="Main Menu" Position="1" Zone="Navigation" RenderTitle="false" Name="" />
+      <MenuWidgetPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" StartLevel="1" Levels="1" Breadcrumb="false" AddCurrentPage="false" AddHomePage="false" ShowFullMenu="false" />
+    </MenuWidget>
+    <NewsItem Id="" Status="Published">
+      <TextField.Summary Text="TEST" />
+      <InputField.ShortTitle Value="TEST" />
+      <NewsItem.Date Value="2014-07-05T18:31:00Z" />
+      <LinkField.LearnMoreField Text="TEST" Url="http://orchardproject.net" Target="_blank" />
+      <MediaLibraryPickerField.Image ContentItems="/Identifier=a41c19bc75874fdf9a38cc17e5cc2ddc" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:31:21.7455974Z" PublishedUtc="2014-07-31T02:13:00.8676524Z" ModifiedUtc="2014-07-31T02:13:00.8208112Z" />
+      <TitlePart Title="TEST 1" />
+    </NewsItem>
+    <NewsItem Id="" Status="Published">
+      <TextField.Summary />
+      <InputField.ShortTitle Value="TEST 3" />
+      <NewsItem.Date Value="0001-01-01T00:00:00Z" />
+      <LinkField.LearnMoreField Target="_blank" />
+      <BodyPart Text="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T02:10:34.0481272Z" PublishedUtc="2014-07-31T02:12:49.5114993Z" ModifiedUtc="2014-07-31T02:12:09.9233729Z" />
+      <TitlePart Title="TEST 2" />
+    </NewsItem>
+    <NewsItem Id="" Status="Published">
+      <TextField.Summary Text="TEST" />
+      <InputField.ShortTitle Value="TEST" />
+      <NewsItem.Date Value="2014-07-05T18:31:00Z" />
+      <LinkField.LearnMoreField Text="TEST" Url="http://orchardproject.net" Target="_blank" />
+      <MediaLibraryPickerField.Image ContentItems="/Identifier=a41c19bc75874fdf9a38cc17e5cc2ddc" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:31:21.7455974Z" PublishedUtc="2014-07-31T02:12:43.8763183Z" ModifiedUtc="2014-07-31T01:46:39.3908562Z" />
+      <TitlePart Title="TEST" />
+    </NewsItem>
+    <Page Id="/alias=" Status="Published">
+      <BodyPart Text="&lt;p&gt;You've successfully setup your Orchard Site and this is the homepage of your new site.&#xD;&#xA;Here are a few things you can look at to get familiar with the application.&#xD;&#xA;Once you feel confident you don't need this anymore, you can&#xD;&#xA;&lt;a href=&quot;Admin/Contents/Edit/12&quot;&gt;remove it by going into editing mode&lt;/a&gt;&#xD;&#xA;and replacing it with whatever you want.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;First things first - You'll probably want to &lt;a href=&quot;Admin/Settings&quot;&gt;manage your settings&lt;/a&gt;&#xD;&#xA;and configure Orchard to your liking. After that, you can head over to&#xD;&#xA;&lt;a href=&quot;Admin/Themes&quot;&gt;manage themes to change or install new themes&lt;/a&gt;&#xD;&#xA;and really make it your own. Once you're happy with a look and feel, it's time for some content.&#xD;&#xA;You can start creating new custom content types or start from the built-in ones by&#xD;&#xA;&lt;a href=&quot;Admin/Contents/Create/Page&quot;&gt;adding a page&lt;/a&gt;, or &lt;a href=&quot;Admin/Navigation&quot;&gt;managing your menus.&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Finally, Orchard has been designed to be extended. It comes with a few built-in&#xD;&#xA;modules such as pages and blogs or themes. If you're looking to add additional functionality,&#xD;&#xA;you can do so by creating your own module or by installing one that somebody else built.&#xD;&#xA;Modules are created by other users of Orchard just like you so if you feel up to it,&#xD;&#xA;&lt;a href=&quot;http://orchardproject.net/contribution&quot;&gt;please consider participating&lt;/a&gt;.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Thanks for using Orchard – The Orchard Team &lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:01:29.627664Z" PublishedUtc="2014-07-31T01:01:29.627664Z" ModifiedUtc="2014-07-31T01:01:29.5652131Z" />
+      <AutoroutePart Alias="/" CustomPattern="/" UseCustomPattern="true" />
+      <TitlePart Title="Welcome to Orchard!" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=about" Status="Published">
+      <BodyPart Text="&lt;p&gt;Protecting natural and cultural resources is essential to sustaining our health and quality of life. We, along with fish and wildlife, rely on clean water and the benefits of having healthy rivers, streams, wetlands, forests, grasslands, and coastal areas in order to thrive. Managing the landscapes that provide our natural and cultural resources has become increasingly challenging. With the signing of &lt;a href=&quot;https://nccwsc.usgs.gov/sites/default/files/documents/other/SO_3289_Amended.pdf&quot;&gt;Secretarial Order No. 3289&lt;/a&gt;, the Department of the Interior launched the Landscape Conservation Cooperatives (LCCs) to better integrate science and management to address climate change and other landscape scale issues. By building a network that is holistic, collaborative, adaptive, and grounded in science, LCCs are working to ensure the sustainability of our economy, land, water, wildlife, and cultural resources.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The 22 LCCs collectively form a network of resource managers and scientists who share a common need for scientific information and interest in conservation. Each LCC brings together federal, state, and local governments along with Tribes and First Nations, non-governmental organizations, universities, and interested public and private organizations. Our partners work collaboratively to identify best practices, connect efforts, identify science gaps, and avoid duplication through conservation planning and design.&lt;/p&gt;&#xD;&#xA;&lt;section&gt;&#xD;&#xA;&lt;h2&gt;Vision&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Landscapes capable of sustaining natural and cultural resources for current and future generations.&lt;/p&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;section&gt;&#xD;&#xA;&lt;h2&gt;Mission&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;A network of cooperatives depends on LCCs to:&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;Develop and provide integrated science-based information about the implications of climate change and other stressors for the sustainability of natural and cultural resources;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Develop shared, landscape-level, conservation objectives and inform conservation strategies that are based on a shared scientific understanding about the landscape, including the implications of current and future environmental stressors;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Facilitate the exchange of applied science in the implementation of conservation strategies and products developed by the Cooperative or their partners;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Monitor and evaluate the effectiveness of LCC conservation strategies in meeting shared objectives;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Develop appropriate linkages that connect LCCs to ensure an effective network.&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;p&gt;See LCC Network Vision, Mission and Guiding Principles &lt;a href=&quot;http://lccnetwork.org/Content/documents/2012_0709_LCC-NetworkVMGP_Adopted.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T02:16:00Z" PublishedUtc="2014-08-01T06:11:47.0288256Z" ModifiedUtc="2014-08-01T06:11:46.8881851Z" />
+      <AutoroutePart Alias="about" UseCustomPattern="false" />
+      <TitlePart Title="About the LCC Network" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=Council" Status="Published">
+      <BodyPart Text="&lt;section class=&quot;main&quot;&gt;&#xD;&#xA;&lt;p&gt;A Council of interagency, tribal and non-governmental representatives has been named to provide national-level coordination and support for Landscape Conservation Cooperatives (LCC). &lt;strong&gt;See list of &lt;a href=&quot;http://lccnetwork.org/Content/documents/2014_0115_CouncilMembers_updated.pdf&quot;&gt;Council members&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The LCC Council (the Council) will serve the LCC Network by learning from it and helping to identify the ecological and institutional challenges faced by the LCCs that are appropriate to be addressed across the Network. Serving as a collective voice for the LCC Network, the Council will seek to support changes that can be made throughout the Network to facilitate the work of the individual LCCs. The Council will provide a platform for highlighting LCC successes and challenges and will help strengthen the Network by engaging appropriate new partners. Sustained funding is needed for the LCC Network and the Council will work to ensure that local and regional partnership efforts are supported. To achieve these goals, the Council will identify high-priority issues, consider a range of solutions, and make recommendations to support the LCC Network.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;LCCs combine the collective science, capacity, creativity, and resources of partners and programs to conserve our land, air, and water. This cooperation helps ensure a healthy world for future generations. The Council will help the LCC Network achieve this goal and follow the legacy of President Theodore Roosevelt who said &amp;ldquo;Of all the questions which can come before this nation, short of the actual preservation of its existence in a great war, there is none which compares in importance with the great central task of leaving this land even a better land for our descendants than it is for us.&amp;rdquo;&lt;/p&gt;&#xD;&#xA;&lt;section&gt;&#xD;&#xA;&lt;h2&gt;Purpose&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The purpose of the Council is to support the cooperative conservation and sustainable resource management efforts of the LCC Network, to assist the LCC Network in achieving its goals, to contribute to building a constituency of partners, and to help sustain the LCC initiative.&lt;/p&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;section&gt;&#xD;&#xA;&lt;h2&gt;Membership&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The LCC Council consists of twenty-seven participants as outlined below:&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;6 Federal agency directors&lt;/li&gt;&#xD;&#xA;&lt;li&gt;3 U.S. Federally-recognized Tribal participants&lt;/li&gt;&#xD;&#xA;&lt;li&gt;1 Indigenous participant&lt;/li&gt;&#xD;&#xA;&lt;li&gt;4 State agency directors&lt;/li&gt;&#xD;&#xA;&lt;li&gt;4 Non-governmental organization (NGO) participants&lt;/li&gt;&#xD;&#xA;&lt;li&gt;1 LCC participant&lt;/li&gt;&#xD;&#xA;&lt;li&gt;2 &quot;Major partnership&quot; participants&lt;/li&gt;&#xD;&#xA;&lt;li&gt;4 International participants&lt;/li&gt;&#xD;&#xA;&lt;li&gt;2 &quot;At Large&quot; participants&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p&gt;For more details, see the &lt;a href=&quot;http://lccnetwork.org/Content/documents/LCC_Council_Charter_June2014.pdf&quot;&gt;LCC Council Charter&lt;/a&gt;.&lt;/p&gt;&#xD;&#xA;&lt;/section&gt;&#xD;&#xA;&lt;/section&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T02:18:00Z" PublishedUtc="2014-08-01T09:20:48.0093649Z" ModifiedUtc="2014-08-01T09:20:47.9156106Z" />
+      <AutoroutePart Alias="Council" UseCustomPattern="false" />
+      <TitlePart Title="LCC Council" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=a-shared-science-approach" Status="Published">
+      <BodyPart Text="&lt;p&gt;Landscape Conservation Cooperatives (LCCs) use a collaborative approach to identify landscape scale conservation solutions. LCCs work across jurisdictional and political boundaries to work with partners to: meet unfilled conservation needs, develop decision support tools, share data and knowledge, and facilitate and foster partnerships.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;As part of a shared science strategy, LCCs coordinate closely with the &lt;a href=&quot;http://nccwsc.usgs.gov&quot;&gt;National Climate Change and Wildlife Center&lt;/a&gt; and the eight regional Climate Science Centers.&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T02:20:00Z" PublishedUtc="2014-08-01T03:29:45.1834481Z" ModifiedUtc="2014-08-01T03:29:45.0116342Z" />
+      <AutoroutePart Alias="a-shared-science-approach" UseCustomPattern="false" />
+      <TitlePart Title="A Shared Science Approach" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=organizational-structure" Status="Published">
+      <BodyPart Text="&lt;p&gt;&lt;strong&gt;LCC National Council:&lt;/strong&gt; Once formally convened and seated, the National Council will coordinate, collaborate, and provide strategic guidance to the LCC network and all its partners and engage other organizations to further support collaborative landscape-scale conservation.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;LCCs:&lt;/strong&gt; There are 22 individual, self-directed LCCs. Each LCC is governed by a voluntary steering committee with members typically representing conservation and resource management partners from a wide variety of federal, state, territorial and international agencies; tribal and other indigenous governments, non-governmental organizations, and others located within the LCC geographic region. Each LCC also has a staff Coordinator and Science Coordinator. At the national level, there is a National LCC Coordinator and an Assistant National LCC Coordinator.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;LCT:&lt;/strong&gt; The LCC Coordinators Team, or LCT, is comprised of all the Coordinators from each of the 22 LCCs and the National LCC Coordinators. The LCT works on aspects of LCC network operations, and other matters as appropriate, while respecting individual LCC steering committee governance authority.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;&lt;strong&gt;LSCT:&lt;/strong&gt; The LCC Network Science Coordinators Team, or LSCT, is comprised of all the Science Coordinators from each of the 22 LCCs and the National LCC Coordinators. The LSCT serves as a forum for communication and collaboration on technical and scientific matters among the LCCs, and between the LCC Network and other science partners.&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T03:43:00Z" PublishedUtc="2014-08-01T06:09:14.2284465Z" ModifiedUtc="2014-08-01T06:09:14.0565273Z" />
+      <AutoroutePart Alias="organizational-structure" UseCustomPattern="false" />
+      <TitlePart Title="Organizational Structure" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=convening-the-council" Status="Published">
+      <BodyPart Text="&lt;p&gt;Since the creation of the Landscape Conservation Cooperative (LCC) network, multiple parties have pointed toward the need for a national body to maintain broad national-level support and coordination. In 2011, the DOI requested the U.S. Institute for Environmental Conflict Resolution (USIECR) to conduct a neutral third-party &lt;a href=&quot;http://lccnetwork.org/Content/documents/2011_1201_Natl_LCC_Assessment_Findings_Report.pdf&quot;&gt;assessment&lt;/a&gt; of the DOI and national LCC partners to gauge potential support, concerns, and recommendations for convening an LCC Council. Findings indicated that there were national-level needs that could not be met through the existing LCC enterprise but were critical to the long-term viability of the LCC network. Respondents recommended that:&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;the Council should not be driven by a single agency/entity;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;the Council should help to coordinate and better define and focus the LCC enterprise;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;this Council must respect the self-governing, self-directed nature of the individual LCCs.&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p&gt;Given the strong support for a Council identified through the assessment, the U.S. Institute for Environmental Conflict Resolution neutrally convened a &amp;ldquo;&lt;a href=&quot;http://lccnetwork.org/Content/documents/2013_0729_StrategyTeamList.pdf&quot;&gt;strategy team&lt;/a&gt;&amp;rdquo; broadly representing all the key stakeholders to collaboratively develop a path forward and create a proposal for a national body that would balance the need to preserve and protect the self-directed nature of the LCCs with the need for an integrated, interdependent network.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Over the course of about 18 months, the LCC national strategy team held a series of in-person meetings, webinars and conference calls. They identified key needs for a Council, including:&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;overarching coordination of LCC efforts;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;consistency in coordination and communication between LCCs to support a cohesive purpose;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;articulation of shared outcomes;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;support for collaboration across geographies;&lt;/li&gt;&#xD;&#xA;&lt;li&gt;advocacy for LCCs.&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p&gt;The strategy team determined how a national body would best be constituted, and developed a charter for the LCC Council that identifies proposed structure, membership, purpose, goals, and objectives for the Council.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;In late 2012, the LCC national strategy team sought feedback on the draft charter for the Council. After reviewing and incorporating &lt;a href=&quot;http://lccnetwork.org/Content/documents/2013_LCCNationalCouncilReview_CommentResponse_FINAL.pdf&quot;&gt;feedback&lt;/a&gt; from the larger LCC network, they unanimously adopted the &lt;a href=&quot;http://lccnetwork.org/Content/documents/2013_LCCNationalCouncil_Charter_FINAL.pdf&quot;&gt;charter&lt;/a&gt; and a recruitment process to establish the LCC Council.&lt;/p&gt;&#xD;&#xA;&lt;h2&gt;Recruitment Process&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;In general, the recruitment process consisted of:&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;Sending out recruitment materials&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Gathering applications and nominations&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Strategy team sub-groups (augmented by volunteer reviewers from across the landscape) reviewing and ranking the nominees and providing recommendations to the full strategy team and the U.S. Institute (sub-groups reviewed applications in the NGO, indigenous, tribal, and international membership categories)&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Affirmation of Council members by strategy team from the recommended nominees&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Formal invitation to join Council&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p&gt;Individuals selected for the council were collectively evaluated relative to these required characteristics:&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;Be an active participant and an advocate for the LCC mission.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Have a commitment and willingness to collaborate.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Be able to think beyond the boundaries of his/her agency, organization, or tribe.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Be able to represent a broad array of natural and cultural resources.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Have decision-making authority/influence within their agency, organization, or tribe.&lt;/li&gt;&#xD;&#xA;&lt;li&gt;Be involved with an agency, organization, or tribe that:&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p style=&quot;padding-left: 15px;&quot;&gt;Is engaged in the LCC enterprise.&lt;br /&gt; Has resources and/or a mission that aligns with the LCC mission.&lt;br /&gt; Has science knowledge/capacity and/or is actively engaged in resource management activities.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;Additional criteria such as topical focus, expertise, geography, and other factors, were taken into account during the review and application processes for these positions.&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:38:47.5339762Z" PublishedUtc="2014-08-01T04:38:47.5339762Z" ModifiedUtc="2014-08-01T04:38:47.3777314Z" />
+      <AutoroutePart Alias="convening-the-council" UseCustomPattern="false" />
+      <TitlePart Title="Convening the Council" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=Assessments" Status="Published">
+      <BodyPart Text="&lt;p&gt;LCC Science Assessments are conducted to appraise the current spectrum of scientific knowledge surrounding shared resource priorities, and to identify and prioritize management questions and related research and technical assistance gaps and needs. They explore potential approaches for utilizing existing information, developing scientific tools, and improving the state of knowledge. LCC Science Assessments identify common needs for science among the various partners and partnerships to meet their conservation priorities and goals, and are developed in coordination with Climate Science Centers.&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The list below contains links to current LCC Science Assessments and related documents. It was last updated in April, 2014.&lt;/p&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Aleutian and Bering Sea Islands LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;https://absilcc.org/science/SitePages/Strategic%20Science%20Plan.aspx&quot;&gt;Strategic Science Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Appalachian LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://applcc.org/the-cooperative/science-need-portfolio&quot;&gt;2013 Science Needs Portfolio&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Arctic LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://arcticlcc.org/assets/about/scienceplan/ALCC_Strategic_Science_Plan_draft_Feb2013_fulltext.pdf&quot;&gt;Strategic Science Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://arcticlcc.org/assets/products/ALCC2012-03/reports/ArcticLCCFutureNeedsAssessmentFeb2013.pdf&quot;&gt;Future Needs Assessment&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;California LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://californialcc.org/sites/default/files/basic/CA%20LCC%20Scientific%20Management%20Framework%20hyperlink%20single%20pages%20FINAL.pdf&quot;&gt;Science-Management Framework&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://lccnetwork.org/Content/documents/CA_LCC_Strategic_Plan.pdf&quot;&gt;Five Year Strategic Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Caribbean LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://caribbeanlcc.org/projects/&quot;&gt;Projects&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Desert LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.usbr.gov/dlcc/science/priorities.cfm&quot;&gt;Science Priorities&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Eastern Tallgrass Prairie and Big Rivers LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.tallgrassprairielcc.org/what-we-do/&quot;&gt;Overview&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.tallgrassprairielcc.org/research-projects&quot;&gt;Conservation Research&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.tallgrassprairielcc.org/wp-content/uploads/2013/03/ETPBR-LCC-Strategic-Plan-1-2-14.pdf&quot;&gt;Operations and Strategic Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.tallgrassprairielcc.org/wp-content/uploads/2013/03/ETPBR-LCC-FY14-Business-Plan_draft-3-26-14.pdf&quot;&gt;Business Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Great Basin LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.blm.gov/pgdata/etc/medialib/blm/nv/Great_basin_lcc/meeting_summaries.Par.11323.File.dat/Dec%202013.pdf&quot;&gt;Steering Committee Meeting Summary&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Great Northern LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://greatnorthernlcc.org/sites/default/files/documents/gnlcc_framework_final_small.pdf&quot;&gt;Strategic Conservation Framework&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://greatnorthernlcc.org/sites/default/files/documents/draft_gnlcc_science_plan.docx&quot;&gt;Draft Science Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Great Plains LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.greatplainslcc.org/science/&quot;&gt;Science&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Gulf Coast Prairie LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://gulfcoastprairielcc.org/science/&quot;&gt;Science&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Gulf Coastal Plains and Ozarks LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://api.ning.com/files/TvzVEaQaNnkZCjmsu5Ss1NiAMxySGsT-HdOy0Wor6Yz7oDt6qNaAg6VYl2YJ2xhX*RqS9Tp*1oyDiKBlWYL65gzEA3lFTHPA/DRAFTScienceAgendav45613.pdf&quot;&gt;Integrated Science Agenda&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;North Atlantic LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.northatlanticlcc.org/resources/pdfs/handouts-4-12-13/handout-12b-need-summaries&quot;&gt;High Priority Science Needs Summary&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.northatlanticlcc.org/resources/pdfs/TechComm_meeting_3-14-12/handouts/North%20Atlantic%20LCC%20Science%20Strategy%20final.docx/view?searchterm=science+strategy&quot;&gt;Science Strategy&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;North Pacific LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://northpacificlcc.org/documents/S-TEK%20Strategy_%20Final_11-2012.pdf&quot;&gt;Strategy for Science and Traditional Ecological Knowledge&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;https://nplcc.s3.amazonaws.com/NPLCC+S-TEK+IP_final_3-29-13.pdf&quot;&gt;Technical Supplement&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.northpacificlcc.org/documents/NPLCC%20S-TEK%20IP_Updated_Nov2013.pdf&quot;&gt;Implementation Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Northwestern Boreal LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://nwblcc.org/?page_id=21&quot;&gt;Science&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Pacific Islands LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://piccc.net/projects-and-publications.htm&quot;&gt;Projects and Publications&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://lccnetwork.org/Content/documents/PICCC_research_priorities_FY13.pdf&quot;&gt;Highest Priority Science Needs 2013&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Peninsular Florida LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://edis.ifas.ufl.edu/pdffiles/UW/UW32700.pdf&quot;&gt;Planning for Climate Change in South Florida&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Plains and Prairie Potholes LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.plainsandprairiepotholeslcc.org/research-projects/&quot;&gt;Conservation Research&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;South Atlantic LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.southatlanticlcc.org/page/science-assessment-1&quot;&gt;Science Assessment 2012&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Southern Rockies LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://southernrockieslcc.org/workshops-to-determine-conservation-objectives-strategic-synthesis/&quot;&gt;Conservation Objectives - Strategic Synthesis&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.usbr.gov/WaterSMART/lcc/docs/srlcc/Identified%20FY12%20Science%20Needs%20for%20SRLCC.pdf&quot;&gt;Science Needs for 2012&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Upper Midwest and Great Lakes LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://greatlakeslcc.org/research-projects/&quot;&gt;Conservation Research&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.greatlakeslcc.org/wp-content/uploads/2013/03/SciencePrioritiesFinal.pdf&quot;&gt;Science Priorities&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;http://www.greatlakeslcc.org/wp-content/uploads/2012/01/Jan2012-Draft-2012-UMGL-LCC-Action-Plan-12-22-111.pdf&quot;&gt;2012 Action Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;div class=&quot;lcc&quot;&gt;&#xD;&#xA;&lt;h2&gt;Western Alaska LCC&lt;/h2&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;https://westernalaskalcc.org/science/SitePages/sciencewkshp.aspx&quot;&gt;Shared Science Needs&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;https://westernalaskalcc.org/science/SitePages/sciencestrategy.aspx&quot;&gt;10 Year Science Framework&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;p class=&quot;doc&quot;&gt;&lt;a href=&quot;https://westernalaskalcc.org/science/Shared%20Documents/FY14-15%20Sci%20and%20Op%20Plan%20Final.pdf&quot;&gt;FY 2012-2013 Operating Plan&lt;/a&gt;&lt;/p&gt;&#xD;&#xA;&lt;/div&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T05:02:41.3844919Z" PublishedUtc="2014-08-01T05:02:41.3844919Z" ModifiedUtc="2014-08-01T05:02:41.275169Z" />
+      <AutoroutePart Alias="Assessments" UseCustomPattern="false" />
+      <TitlePart Title="LCC Science Assessments and Related Documents" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=projects" Status="Published">
+      <BodyPart Text="&lt;p&gt;&lt;iframe style=&quot;width: 920px; height: 700px; border: 0; position: relative; top: 70px; right: 210px; margin-bottom: 70px;&quot; src=&quot;http://lccprojects.org/&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T11:05:20.337793Z" PublishedUtc="2014-08-01T11:05:20.337793Z" ModifiedUtc="2014-08-01T11:05:19.9471791Z" />
+      <AutoroutePart Alias="projects" UseCustomPattern="false" />
+      <TitlePart Title="Projects" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=find-an-lcc" Status="Published">
+      <BodyPart Text="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T11:07:09.3511507Z" PublishedUtc="2014-08-01T11:07:09.3511507Z" ModifiedUtc="2014-08-01T11:07:09.2730221Z" />
+      <AutoroutePart Alias="find-an-lcc" UseCustomPattern="false" />
+      <TitlePart Title="Find an LCC" />
+      <TagsPart Tags="" />
+    </Page>
+    <Page Id="/alias=national-academy-of-sciences-review-of-lccs" Status="Published">
+      <BodyPart Text="&lt;p&gt;In the FY 2014 appropriations language, Congress requested a National Academy of Sciences review of the Landscape Conservation Cooperatives. The summary of the review is below and the full contract can be viewed &lt;a href=&quot;http://lccnetwork.org/Content/documents/National%20Academy%20of%20Sciences%20LCC%20Contract_F14PC00112%202014.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xD;&#xA;&lt;h2 style=&quot;text-align: center;&quot;&gt;THE NATIONAL ACADEMIES&lt;/h2&gt;&#xD;&#xA;&lt;h2 style=&quot;text-align: center;&quot;&gt;DIVISION ON EARTH AND LIFE STUDIES&lt;/h2&gt;&#xD;&#xA;&lt;h2 style=&quot;text-align: center;&quot;&gt;BOARD ON ATMOSPHERIC SCIENCES AND CLIMATE&lt;/h2&gt;&#xD;&#xA;&lt;h3 style=&quot;text-align: center;&quot;&gt;Evaluation of the Landscape Conservation Cooperatives&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;&lt;/p&gt;&#xD;&#xA;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;Statement of Task&lt;/b&gt;&lt;/p&gt;&#xD;&#xA;&lt;p&gt;The National Academy of Sciences will convene an ad hoc committee to examine the Landscape Conservation Cooperatives (LCC). This committee will evaluate the purpose, goals, and scientific merits of the program within the context of similar programs, and whether the LCC program has resulted in measurable improvements in the health of fish, wildlife, and their habitats. This will include:&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;An evaluation of the scientific merit of the LCC program and its goals.&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p&gt;&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;A comparison of the stated purpose and goals of the LCC with other similar programs. How are these programs similar, and how do they differ? Is there substantial overlap in their mission and purpose? If so, is there rationale for and benefit from this overlap? Is there sufficient coordination with these related programs?&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p&gt;&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;A comparison of the types of projects supported by LCC and related programs.&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p style=&quot;padding-left: 15px;&quot;&gt;o Do the projects supported by the LCC program overlap significantly with the traditional portfolio of other FWS programs? If so, is there rationale for and benefit from this overlap? Is there sufficient coordination with these related programs? What benefit, if any, is gained by moving and/or consolidating this work within the LCC program? What effectiveness or efficiency is lost, if any, by housing this work within the LCC program? &lt;br /&gt;&lt;br /&gt; o Do the projects supported by the LCC program overlap significantly with the portfolio of related programs in other agencies? If so, is there rationale for and benefit from this overlap? Is there sufficient coordination with these related programs?&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;An examination of the evaluation process for the LCC program. What is FWS&amp;rsquo;s strategy to assess the effectiveness of the LCC program? What are reasonable short, medium, and long-term metrics for the effectiveness of the LCC program in achieving its stated purpose and goals?&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;/ul&gt;&#xD;&#xA;&lt;p&gt;&lt;/p&gt;&#xD;&#xA;&lt;ul&gt;&#xD;&#xA;&lt;li&gt;An assessment of the impacts of the LCC program. What goals have been achieved? What improvements in managing habitat and fish and wildlife species might be reasonable to expect from the LCC program in the timeframe it has existed? What longer-term impacts are likely to be realized?&lt;/li&gt;&#xD;&#xA;&lt;/ul&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T11:08:51.8778745Z" PublishedUtc="2014-08-01T11:08:51.8778745Z" ModifiedUtc="2014-08-01T11:08:51.7841111Z" />
+      <AutoroutePart Alias="national-academy-of-sciences-review-of-lccs" UseCustomPattern="false" />
+      <TitlePart Title="National Academy of Sciences Review of LCCs" />
+      <TagsPart Tags="" />
+    </Page>
+    <ProjectionPage Id="/alias=news" Status="Published">
+      <TaxonomyField.Section Terms="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T02:07:03.4202881Z" PublishedUtc="2014-08-01T04:26:41.8741631Z" ModifiedUtc="2014-08-01T04:26:41.6397929Z" />
+      <AutoroutePart Alias="news" UseCustomPattern="false" />
+      <TitlePart Title="News around the Network" />
+      <AdminMenuPart AdminMenuPosition="5.1" OnAdminMenu="false" />
+      <ProjectionPart Items="0" ItemsPerPage="0" Offset="0" PagerSuffix="" MaxItems="20" DisplayPager="false" Query="/Identifier=1b9df4746559430980ae72c5be712013" LayoutIndex="-1" />
+    </ProjectionPage>
+    <ProjectionPage Id="/alias=resourses" Status="Published">
+      <TaxonomyField.Section Terms="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T02:14:57.0482648Z" PublishedUtc="2014-07-31T02:14:57.4857742Z" ModifiedUtc="2014-07-31T02:14:57.0638881Z" />
+      <AutoroutePart Alias="resourses" UseCustomPattern="false" />
+      <TitlePart Title="Resourses" />
+      <AdminMenuPart AdminMenuPosition="5.1" OnAdminMenu="false" />
+      <ProjectionPart Items="0" ItemsPerPage="0" Offset="0" PagerSuffix="" MaxItems="20" DisplayPager="false" Query="/Identifier=578c1aed454f4c0a922a7c32a6a8c2ec" LayoutIndex="-1" />
+    </ProjectionPage>
+    <ProjectionPage Id="/alias=events" Status="Published">
+      <TaxonomyField.Section Terms="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:12:38.818417Z" PublishedUtc="2014-08-01T04:12:39.1472077Z" ModifiedUtc="2014-08-01T04:12:38.8340687Z" />
+      <AutoroutePart Alias="events" UseCustomPattern="false" />
+      <TitlePart Title="Events" />
+      <AdminMenuPart AdminMenuPosition="5.1" OnAdminMenu="false" />
+      <ProjectionPart Items="0" ItemsPerPage="0" Offset="0" PagerSuffix="" MaxItems="20" DisplayPager="false" Query="/Identifier=4fa3b0845ff94b1d8f64c90359c4bfd3" LayoutIndex="-1" />
+    </ProjectionPage>
+    <ProjectionPage Id="/alias=staff" Status="Published">
+      <TaxonomyField.Section Terms="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:32:34.2691854Z" PublishedUtc="2014-08-04T19:34:33.2513918Z" ModifiedUtc="2014-08-04T19:34:32.8141121Z" />
+      <AutoroutePart Alias="staff" UseCustomPattern="false" />
+      <TitlePart Title="Staff" />
+      <AdminMenuPart AdminMenuPosition="5.1" OnAdminMenu="false" />
+      <ProjectionPart Items="0" ItemsPerPage="0" Offset="0" PagerSuffix="" MaxItems="20" DisplayPager="false" Query="/Identifier=50911ae821ad445884e43e5a31d1f430" LayoutIndex="-1" />
+    </ProjectionPage>
+    <ProjectionPage Id="/alias=council-meetings" Status="Published">
+      <TaxonomyField.Section Terms="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:40:37.6645359Z" PublishedUtc="2014-08-01T04:40:37.9770384Z" ModifiedUtc="2014-08-01T04:40:37.6801553Z" />
+      <AutoroutePart Alias="council-meetings" UseCustomPattern="false" />
+      <TitlePart Title="Council Meetings" />
+      <AdminMenuPart AdminMenuPosition="5.1" OnAdminMenu="false" />
+      <ProjectionPart Items="0" ItemsPerPage="0" Offset="0" PagerSuffix="" MaxItems="20" DisplayPager="false" Query="/Identifier=dac96adb8c5f4bec8fb724cd740743ba" LayoutIndex="-1" />
+    </ProjectionPage>
+    <ProjectionPage Id="/alias=funding-opportunities" Status="Published">
+      <TaxonomyField.Section Terms="" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:47:28.4541405Z" PublishedUtc="2014-08-01T04:47:28.7353796Z" ModifiedUtc="2014-08-01T04:47:28.4697604Z" />
+      <AutoroutePart Alias="funding-opportunities" UseCustomPattern="false" />
+      <TitlePart Title="Funding Opportunities" />
+      <AdminMenuPart AdminMenuPosition="5.1" OnAdminMenu="false" />
+      <ProjectionPart Items="0" ItemsPerPage="0" Offset="0" PagerSuffix="" MaxItems="20" DisplayPager="false" Query="/Identifier=60c37bd872214ecb9ecb233d88c39854" LayoutIndex="-1" />
+    </ProjectionPage>
+    <Query Id="/Identifier=1b9df4746559430980ae72c5be712013" Status="Published">
+      <IdentityPart Identifier="1b9df4746559430980ae72c5be712013" />
+      <TitlePart Title="News Items" />
+      <QueryPart>
+        <FilterGroups>
+          <FilterGroup>
+            <Filter Category="Content" Description="All News Items" Position="0" State="&lt;Form&gt;&lt;Description&gt;All News Items&lt;/Description&gt;&lt;ContentTypes&gt;NewsItem&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+          </FilterGroup>
+        </FilterGroups>
+        <SortCriteria />
+        <Layouts />
+      </QueryPart>
+    </Query>
+    <Query Id="/Identifier=578c1aed454f4c0a922a7c32a6a8c2ec" Status="Published">
+      <IdentityPart Identifier="578c1aed454f4c0a922a7c32a6a8c2ec" />
+      <TitlePart Title="Resources" />
+      <QueryPart>
+        <FilterGroups>
+          <FilterGroup>
+            <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Resource&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+          </FilterGroup>
+        </FilterGroups>
+        <SortCriteria />
+        <Layouts />
+      </QueryPart>
+    </Query>
+    <Query Id="/Identifier=4fa3b0845ff94b1d8f64c90359c4bfd3" Status="Published">
+      <IdentityPart Identifier="4fa3b0845ff94b1d8f64c90359c4bfd3" />
+      <TitlePart Title="Events" />
+      <QueryPart>
+        <FilterGroups>
+          <FilterGroup>
+            <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Event&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+          </FilterGroup>
+        </FilterGroups>
+        <SortCriteria />
+        <Layouts />
+      </QueryPart>
+    </Query>
+    <Query Id="/Identifier=50911ae821ad445884e43e5a31d1f430" Status="Published">
+      <IdentityPart Identifier="50911ae821ad445884e43e5a31d1f430" />
+      <TitlePart Title="Staff" />
+      <QueryPart>
+        <FilterGroups>
+          <FilterGroup>
+            <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;Staff&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+          </FilterGroup>
+        </FilterGroups>
+        <SortCriteria />
+        <Layouts />
+      </QueryPart>
+    </Query>
+    <Query Id="/Identifier=dac96adb8c5f4bec8fb724cd740743ba" Status="Published">
+      <IdentityPart Identifier="dac96adb8c5f4bec8fb724cd740743ba" />
+      <TitlePart Title="Council Meetings" />
+      <QueryPart>
+        <FilterGroups>
+          <FilterGroup>
+            <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;CouncilMeeting&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+          </FilterGroup>
+        </FilterGroups>
+        <SortCriteria />
+        <Layouts />
+      </QueryPart>
+    </Query>
+    <Query Id="/Identifier=60c37bd872214ecb9ecb233d88c39854" Status="Published">
+      <IdentityPart Identifier="60c37bd872214ecb9ecb233d88c39854" />
+      <TitlePart Title="Funding Opportunities" />
+      <QueryPart>
+        <FilterGroups>
+          <FilterGroup>
+            <Filter Category="Content" Description="" Position="0" State="&lt;Form&gt;&lt;Description&gt;&lt;/Description&gt;&lt;ContentTypes&gt;FundingOpportunity&lt;/ContentTypes&gt;&lt;/Form&gt;" Type="ContentTypes" />
+          </FilterGroup>
+        </FilterGroups>
+        <SortCriteria />
+        <Layouts />
+      </QueryPart>
+    </Query>
+    <Resource Id="" Status="Published">
+      <TaxonomyField.Lcc Terms="" />
+      <TaxonomyField.Resource_x0020_Type Terms="" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:56:27.1915126Z" PublishedUtc="2014-08-01T04:52:14.6800145Z" ModifiedUtc="2014-08-01T04:52:14.3049628Z" />
+      <TitlePart Title="TEST 2" />
+    </Resource>
+    <Resource Id="" Status="Published">
+      <MediaLibraryPickerField.Documents ContentItems="/Identifier=75a50e698b9c40ef993beb078e3c2bf9" />
+      <TaxonomyField.Lcc Terms="/alias=appalachian,/alias=arctic,/alias=california" />
+      <TaxonomyField.Resource_x0020_Type Terms="/alias=annual-report" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:42:04.2666913Z" PublishedUtc="2014-08-01T04:50:29.5576303Z" ModifiedUtc="2014-07-31T01:50:14.8714047Z" />
+      <TitlePart Title="TEST" />
+    </Resource>
+    <ResourcesTerm Id="/alias=uncategorized" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=resources" CreatedUtc="2014-07-31T01:44:00.4179517Z" PublishedUtc="2014-07-31T01:44:00.4648787Z" ModifiedUtc="2014-07-31T01:44:00.4179517Z" />
+      <AutoroutePart Alias="uncategorized" UseCustomPattern="false" />
+      <TitlePart Title="Uncategorized" />
+      <TermPart Count="0" Selectable="true" Weight="9" TaxonomyId="/alias=resources" Path="" />
+    </ResourcesTerm>
+    <ResourcesTerm Id="/alias=annual-report" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=resources" CreatedUtc="2014-07-31T01:44:00.5273357Z" PublishedUtc="2014-07-31T01:44:00.543002Z" ModifiedUtc="2014-07-31T01:44:00.5273357Z" />
+      <AutoroutePart Alias="annual-report" UseCustomPattern="false" />
+      <TitlePart Title="Annual Report" />
+      <TermPart Count="1" Selectable="true" Weight="8" TaxonomyId="/alias=resources" Path="" />
+    </ResourcesTerm>
+    <ResourcesTerm Id="/alias=science-assessment" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=resources" CreatedUtc="2014-07-31T01:44:00.6210815Z" PublishedUtc="2014-07-31T01:44:00.6367185Z" ModifiedUtc="2014-07-31T01:44:00.6210815Z" />
+      <AutoroutePart Alias="science-assessment" UseCustomPattern="false" />
+      <TitlePart Title="Science Assessment" />
+      <TermPart Count="0" Selectable="true" Weight="7" TaxonomyId="/alias=resources" Path="" />
+    </ResourcesTerm>
+    <SearchForm Id="" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Default" CreatedUtc="2014-08-01T11:11:32.0517097Z" PublishedUtc="2014-08-01T11:11:32.1142656Z" ModifiedUtc="2014-08-01T11:11:45.0892551Z" />
+      <WidgetPart Title="Search" Position="2" Zone="Featured" RenderTitle="false" Name="" />
+    </SearchForm>
+    <SectionMenu Id="/Identifier=46639995c078424c8c8bf7d4444320fc" Status="Published">
+      <IdentityPart Identifier="46639995c078424c8c8bf7d4444320fc" />
+      <CommonPart Owner="/User.UserName=admin" Container="/Layer.LayerName=Three Columns" CreatedUtc="2014-08-01T09:12:11.232782Z" PublishedUtc="2014-08-01T09:12:11.3264693Z" ModifiedUtc="2014-08-01T09:12:11.3889688Z" />
+      <WidgetPart Title="Section Menu" Position="1" Zone="AsideFirst" RenderTitle="false" Name="" />
+      <MenuWidgetPart Menu="/Identifier=e5a5dca0c5ad4d5088af0e4943de9479" StartLevel="1" Levels="0" Breadcrumb="false" AddCurrentPage="false" AddHomePage="false" ShowFullMenu="false" />
+    </SectionMenu>
+    <Site Id="" Status="Published">
+      <SearchSettingsPart SearchedFields="body,title" />
+    </Site>
+    <Spotlight Id="" Status="Published">
+      <LinkField.LearnMoreField Text="TEST" Url="http://orchardproject.net" Target="_blank" />
+      <MediaLibraryPickerField.Image ContentItems="/Identifier=46cfad58202047fdae6ffe036d78657d" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:32:35.5943748Z" PublishedUtc="2014-07-31T01:47:13.2869969Z" ModifiedUtc="2014-07-31T01:47:13.2244919Z" />
+      <TitlePart Title="TEST" />
+    </Spotlight>
+    <Staff Id="" Status="Published">
+      <InputField.FirstName Value="TEST 1" />
+      <InputField.LastName Value="TEST" />
+      <InputField.Position Value="TEST" />
+      <InputField.Email Value="TEST@TEST.TEST" />
+      <TaxonomyField.Lcc Terms="/alias=national" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:56:27.2071342Z" PublishedUtc="2014-08-01T09:16:59.7827928Z" ModifiedUtc="2014-08-01T09:16:59.6109433Z" />
+    </Staff>
+    <Staff Id="" Status="Published">
+      <InputField.FirstName Value="TEST 2" />
+      <InputField.LastName Value="TEST" />
+      <InputField.Position Value="TEST" />
+      <InputField.Email Value="TEST@TEST.TEST" />
+      <TaxonomyField.Lcc Terms="/alias=appalachian" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:42:26.9931789Z" PublishedUtc="2014-08-01T09:17:37.1461299Z" ModifiedUtc="2014-08-01T09:17:37.0367481Z" />
+    </Staff>
+    <Taxonomy Id="/alias=lccs" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:43:25.1974365Z" PublishedUtc="2014-07-31T01:43:25.5724357Z" ModifiedUtc="2014-07-31T01:43:25.2443046Z" />
+      <AutoroutePart Alias="lccs" UseCustomPattern="false" />
+      <TitlePart Title="Lccs" />
+      <TaxonomyPart TermTypeName="LccsTerm" />
+    </Taxonomy>
+    <Taxonomy Id="/alias=resources" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:43:52.5477494Z" PublishedUtc="2014-07-31T01:43:52.6415372Z" ModifiedUtc="2014-07-31T01:43:52.5633712Z" />
+      <AutoroutePart Alias="resources" UseCustomPattern="false" />
+      <TitlePart Title="Resources" />
+      <TaxonomyPart TermTypeName="ResourcesTerm" />
+    </Taxonomy>
+    <Taxonomy Id="/alias=work-areas" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:44:16.7546598Z" PublishedUtc="2014-07-31T01:44:16.8484002Z" ModifiedUtc="2014-07-31T01:44:16.7702934Z" />
+      <AutoroutePart Alias="work-areas" UseCustomPattern="false" />
+      <TitlePart Title="Work Areas" />
+      <TaxonomyPart TermTypeName="WorkAreasTerm" />
+    </Taxonomy>
+    <User Id="/User.UserName=admin" Status="Published">
+      <UserPart Email="" EmailChallengeToken="" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="admin" Password="tmQ7dIU3oSUyjaQqqLBykDkZZdk=" PasswordFormat="Hashed" PasswordSalt="5Ps6JjEK4fWA/QAW+MUceg==" RegistrationStatus="Approved" UserName="admin" />
+      <UserRolesPart Roles="" />
+    </User>
+    <User Id="/User.UserName=justin" Status="Published">
+      <UserPart Email="jhaight@enviroissues.com" EmailChallengeToken="" EmailStatus="Approved" HashAlgorithm="SHA1" NormalizedUserName="justin" Password="b3tavKYEtfA621QHVXCjwbb+O2U=" PasswordFormat="Hashed" PasswordSalt="FxsWlD9s5TdziQI8Iob/tg==" RegistrationStatus="Approved" UserName="justin" />
+      <UserRolesPart Roles="Administrator" />
+    </User>
+    <WorkAreasTerm Id="/alias=meeting-unfilled-conservation-needs" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=work-areas" CreatedUtc="2014-07-31T01:44:24.7324403Z" PublishedUtc="2014-07-31T01:44:24.7637141Z" ModifiedUtc="2014-07-31T01:44:24.7324403Z" />
+      <AutoroutePart Alias="meeting-unfilled-conservation-needs" UseCustomPattern="false" />
+      <TitlePart Title="Meeting unfilled conservation needs" />
+      <TermPart Count="1" Selectable="true" Weight="9" TaxonomyId="/alias=work-areas" Path="" />
+    </WorkAreasTerm>
+    <WorkAreasTerm Id="/alias=developing-decision-support-tools" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=work-areas" CreatedUtc="2014-07-31T01:44:24.8574319Z" PublishedUtc="2014-07-31T01:44:24.8730633Z" ModifiedUtc="2014-07-31T01:44:24.8574319Z" />
+      <AutoroutePart Alias="developing-decision-support-tools" UseCustomPattern="false" />
+      <TitlePart Title="Developing decision support tools" />
+      <TermPart Count="1" Selectable="true" Weight="8" TaxonomyId="/alias=work-areas" Path="" />
+    </WorkAreasTerm>
+    <WorkAreasTerm Id="/alias=sharing-data-and-knowledge" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=work-areas" CreatedUtc="2014-07-31T01:44:24.9511821Z" PublishedUtc="2014-07-31T01:44:24.9668045Z" ModifiedUtc="2014-07-31T01:44:24.9511821Z" />
+      <AutoroutePart Alias="sharing-data-and-knowledge" UseCustomPattern="false" />
+      <TitlePart Title="Sharing data and knowledge" />
+      <TermPart Count="0" Selectable="true" Weight="7" TaxonomyId="/alias=work-areas" Path="" />
+    </WorkAreasTerm>
+    <WorkAreasTerm Id="/alias=facilitating-and-fostering-collaboration" Status="Published">
+      <CommonPart Owner="/User.UserName=admin" Container="/alias=work-areas" CreatedUtc="2014-07-31T01:44:25.0293112Z" PublishedUtc="2014-07-31T01:44:25.0449356Z" ModifiedUtc="2014-07-31T01:44:25.0293112Z" />
+      <AutoroutePart Alias="facilitating-and-fostering-collaboration" UseCustomPattern="false" />
+      <TitlePart Title="Facilitating and fostering collaboration" />
+      <TermPart Count="0" Selectable="true" Weight="6" TaxonomyId="/alias=work-areas" Path="" />
+    </WorkAreasTerm>
+    <WorkItem Id="" Status="Published">
+      <TextField.Summary Text="TEST" />
+      <LinkField.LearnMoreField Text="TEST" Url="http://orchardproject.net" Target="_blank" />
+      <TaxonomyField.Area Terms="" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:56:27.2071342Z" ModifiedUtc="2014-07-31T01:56:27.2071342Z" />
+      <TitlePart Title="TEST" />
+    </WorkItem>
+    <WorkItem Id="" Status="Published">
+      <TextField.Summary Text="TEST" />
+      <LinkField.LearnMoreField Text="TEST" Url=" http://orchardproject.net" Target="_blank" />
+      <MediaLibraryPickerField.Image ContentItems="/Identifier=72dcddd13c674b1a89835f776d080dfb" />
+      <TaxonomyField.Area Terms="/alias=developing-decision-support-tools" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-07-31T01:42:51.7690633Z" PublishedUtc="2014-07-31T01:49:45.4912661Z" ModifiedUtc="2014-07-31T01:49:45.397516Z" />
+      <TitlePart Title="TEST" />
+    </WorkItem>
+    <WorkItem Id="" Status="Published">
+      <TextField.Summary Text="TEST" />
+      <LinkField.LearnMoreField Text="TEST" Url="http://orchardproject.net" Target="_blank" />
+      <TaxonomyField.Area Terms="/alias=meeting-unfilled-conservation-needs" />
+      <BodyPart Text="&lt;p&gt;TEST&lt;/p&gt;" />
+      <CommonPart Owner="/User.UserName=admin" CreatedUtc="2014-08-01T04:59:00.1567509Z" PublishedUtc="2014-08-01T04:59:00.3130106Z" ModifiedUtc="2014-08-01T04:59:00.1724209Z" />
+      <TitlePart Title="TEST" />
+    </WorkItem>
+  </Data>
+</Orchard>
