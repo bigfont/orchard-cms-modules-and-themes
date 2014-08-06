@@ -1,0 +1,97 @@
+﻿#layout-wrapper {
+
+    max-width:960px;    
+    outline:thin solid gray;
+
+}
+
+.zone-featured {
+    background: #685046;
+}
+
+.zone-featured .widget
+{    
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.carousel {
+    width: 935px;
+    margin: auto;
+    clear:both;
+}
+
+.carousel-indicators,
+.carousel-inner,
+.carousel-inner img,
+.carousel-caption {
+    height: 379px;
+}
+
+.carousel-indicators {
+    background: #a9d157;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    top: 0;
+    width: 200px;
+}
+
+    .carousel-indicators div,
+    .carousel-indicators div.active {
+        background: transparent;
+        display: block;
+        float: none;
+        height: auto;
+        margin-top: 20px;
+        width: auto;
+    }
+
+.carousel-inner {
+    left: 200px;
+    width: 735px;
+}
+
+    .carousel-inner > .item > img {
+        width: 735px;
+    }
+
+    .carousel-inner > .item > .carousel-caption {
+        background-color: rgba(0,0,0,0.5);
+        left: auto;
+        margin: 0;
+        padding: 20px;
+        right: 0;
+        text-align: left;
+        top: 0;
+        width: 250px;
+    }
+
+        .carousel-inner > .item > .carousel-caption > h3 {
+            color: #a9d157;
+            font-weight:bolder;
+            font-size: 2.1em;
+            line-height: 1.1em;
+            margin: 0;
+            text-transform: none;
+            margin-bottom:10px;
+        }
+
+        .carousel-inner > .item > .carousel-caption > a {
+            display: block;
+            color: #DA8639;
+            margin: 0;
+            margin-top:15px;
+            text-transform: uppercase;
+            font-size:16px;
+            font-weight:bolder;
+        }
+
+            .carousel-inner > .item > .carousel-caption > a::after {
+                content: " > ";
+            }
+
+            .carousel-inner > .item > .carousel-caption > a:hover {
+                text-decoration: none;
+            }

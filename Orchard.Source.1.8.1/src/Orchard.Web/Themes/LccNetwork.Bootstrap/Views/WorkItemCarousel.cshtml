@@ -1,0 +1,88 @@
+﻿@{
+    var contentItems = Model.ContentItems;
+    var carouselUniqueId = DateTime.Now.Ticks; // it's okay to change this to something else
+    List<dynamic> carouselItems = new List<dynamic>();
+    List<string> processedWorkAreas = new List<string>();
+
+    foreach (var contentItem in contentItems)
+    {
+        dynamic carouselItem = new System.Dynamic.ExpandoObject();
+        dynamic workItemPart = contentItem.WorkItem;
+        
+        // learn more link field
+        var learnMore = workItemPart.LearnMoreField;
+        carouselItem.LearnMoreText = learnMore.Text;
+        carouselItem.LearnMoreValue = learnMore.Value;
+        // summary text field
+        var summary = workItemPart.Summary;
+        carouselItem.SummaryValue = summary.Value;
+        // work area taxonomy term field
+        var workArea = workItemPart.Area.Terms[0];
+        carouselItem.WorkAreaTerm = workArea.Name;
+        carouselItem.WorkAreaSlug = workArea.Slug;
+        // title part
+        carouselItem.title = contentItem.TitlePart.Title;
+        // media library picker field
+        var mediaPart =
+            workItemPart.Image != null &&
+            workItemPart.Image.MediaParts != null &&
+            workItemPart.Image.MediaParts.Count > 0 ? workItemPart.Image.MediaParts[0] : null;
+        carouselItem.ImgAlt = mediaPart != null ? mediaPart.AlternateText : null;
+        carouselItem.ImgSrc = mediaPart != null ? mediaPart.MediaUrl : null;
+
+        // ensure that we only display one item per work area
+        if (processedWorkAreas.Any(s => s.Equals(carouselItem.WorkAreaTerm)))
+        {
+            continue;
+        }
+
+        // ensure none of the values are null
+        if ((carouselItem as IDictionary<string, object>).Any((pair) => pair.Value == null))
+        {
+            continue;
+        }
+
+        processedWorkAreas.Add(carouselItem.WorkAreaTerm);
+        carouselItems.Add(carouselItem);
+    }
+}
+
+@helper CreateCarouselItems(List<dynamic> items, int width, int height)
+{
+    <div class="carousel-inner">
+        @for (var i = 0; i < items.Count; ++i)
+        {
+            var item = items[i];
+            <div class="item @(i == 0 ? "active" : string.Empty)">
+                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "crop", Alignment: "middlecenter", Path: item.ImgSrc)"
+                     alt="@item.ImgAlt">
+                <div class="carousel-caption">
+                    <h3><a href="@item.WorkAreaSlug">@item.WorkAreaTerm</a></h3>
+                    @Html.Raw(item.SummaryValue)
+                    <a href="@item.LearnMoreValue">>@item.LearnMoreText</a>
+                </div>
+            </div>
+        }
+    </div>
+}
+
+@helper CreateCarouselIndicators(List<dynamic> items, long carouselUniqueId, int width, int height)
+{
+    <div class="carousel-indicators">
+        @for (var i = 0; i < items.Count; ++i)
+        {
+            var item = items[i];
+            <div data-target="#@carouselUniqueId" data-slide-to="@i" class="@(i == 0 ? "active" : string.Empty)">
+                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "crop", Alignment: "middlecenter", Path: item.ImgSrc)"
+                     alt="@item.ImgAlt">
+            </div>
+        }
+    </div>
+}
+
+<div id="@carouselUniqueId" class="carousel slide" data-ride="carousel">
+
+    @CreateCarouselIndicators(carouselItems, carouselUniqueId, 129, 65)
+    @CreateCarouselItems(carouselItems, 735, 379)
+
+</div>

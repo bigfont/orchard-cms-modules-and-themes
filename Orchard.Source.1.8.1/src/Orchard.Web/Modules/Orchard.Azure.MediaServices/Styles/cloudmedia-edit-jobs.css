@@ -1,4 +1,4 @@
-#jobs-table {
+﻿#jobs-table {
   width: auto !important;
 }
 #jobs-table tbody tr td:last-child {
@@ -7,4 +7,3 @@
 #jobs-table .progress-bar {
   margin-top: 2px;
 }
-/*# sourceMappingURL=cloudmedia-edit-jobs.css.map */

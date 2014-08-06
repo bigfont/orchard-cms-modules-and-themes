@@ -1,4 +1,4 @@
-#results > li,
+﻿#results > li,
 #pinned-items > li {
   display: inline-block;
   position: relative;
@@ -70,4 +70,3 @@
   display: inline;
   margin: 4px;
 }
-/*# sourceMappingURL=admin-custom-sort.css.map */
