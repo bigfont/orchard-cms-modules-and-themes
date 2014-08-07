@@ -1,112 +1,169 @@
-﻿#layout-wrapper {
-    max-width: 960px;
-    outline: thin solid gray;
-}
+﻿// bootstrap
+@import 'Bootstrap/Less/variables.less';
+@import 'Bootstrap/Less/mixins.less';
+@import 'Bootstrap/Less/utilities.less';
+@import 'Bootstrap/Less/grid.less';
 
-.zone-featured {
-    background: #685046;
-}
-
-.zone-featured .widget {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-@carousel-width: 935px;
-@carousel-height: 379px;
-@carousel-indicators-width: 200px;
-@carousel-inner-width: @carousel-width - @carousel-indicators-width;
-@carousel-caption-width: 250px;
-@carousel-base-padding: 20px;
 @green: #a9d157;
 @orange: #DA8639;
+@brown: #685046;
+@white: white;
+@gray: #D2DABC;
+@blue: #48AFD2;
 
-.carousel {
-    width: @carousel-width;
-    margin: auto;
-    clear: both;
+// site
+@import "Site/Less/_workitem-carousel.less";
 
-    .carousel-indicators,
-    .carousel-inner,
-    .carousel-inner img,
-    .carousel-caption {
-        height: @carousel-height;
-    }
+[id^="layout-"] {
+    /*padding-left: 40px;
+    padding-right: 40px;*/
+}
 
-    .carousel-indicators {
-        background: @green;
-        left: 0;
-        list-style: none;
-        margin: 0;
-        text-align: center;
-        top: 0;
-        width: @carousel-indicators-width;
+#layout-wrapper {
+}
 
-        div,
-        div.active {
-            background: transparent;
-            display: block;
-            float: none;
-            height: auto;
-            margin-top: @carousel-base-padding;
-            width: auto;
+#layout-featured {
+    background: @brown;
+
+    .zone-featured {
+
+        .widget {
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
+}
 
-    .carousel-inner {
-        left: @carousel-indicators-width;
-        width: @carousel-inner-width;
+#layout-before-main {
+    background: @orange;
 
-        > .item {
+    .zone-before-main {
 
-            > img {
-                width: @carousel-inner-width;
+        .widget {
+
+            &, a {
+                color: @white;
+                text-transform: uppercase;
             }
 
-            > .carousel-caption {
-                background-color: rgba(0,0,0,0.5);
-                left: auto;
-                margin: 0;
-                padding: @carousel-base-padding;
-                right: 0;
-                text-align: left;
+            a {
+                text-decoration: underline;
+            }
+
+            position: relative;
+            padding: 20px;
+            padding-right: 200px;
+
+            h2 {
+                margin: 15px;
+                font-size: 16px;
+                font-weight: bolder;
+            }
+
+            img {
+                padding: 10px;
+                position: absolute;
                 top: 0;
-                width: @carousel-caption-width;
+                right: 0;
+            }
+        }
+    }
+}
 
-                > h3 {
-                    color: @green;
-                    font-weight: bolder;
-                    font-size: 2.1em;
-                    line-height: 1.1em;
-                    margin: 0;
-                    text-transform: none;
-                    margin-bottom: @carousel-base-padding / 2;
+#layout-main-container {
+    padding: 0; // exception to the [id^="layout-"] rule
+    #layout-main.group { // is a row from base theme
+        background: @gray;
+
+        > #layout-content.group { // is a col from base theme
+            padding-top: 40px;
+
+            .zone {
+                padding-bottom: 40px;
+            }
+
+            > #before-content {
+                > .zone-before-content {
+                    .make-row();
+
+                    .widget {
+                        height: 250px;
+                        overflow: hidden;
+
+                        &:nth-child(1) {
+                            .make-md-column-offset(1);
+                            .make-md-column(6);
+                            background: @green;
+                            color: @white;
+                            font-size: 32px;
+
+                            a:last-child {
+                                font-size: 16px;
+
+                                &::after {
+                                    content: " >";
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            .make-md-column-offset(1);
+                            .make-md-column(15);
+                            background: @white;
+
+                            ul {
+                                padding: 0;
+
+                                > li {
+                                    float: left;
+                                    width: 33%;
+                                    list-style: none;
+                                }
+                            }
+                        }
+                    }
                 }
+            }
 
-                a:hover {
-                    text-decoration: none;
-                }
+            > #content {
+                > .zone-content {
+                    .make-row();
 
-                > a {
-                    display: block;
-                    color: @orange;
-                    margin: 0;
-                    margin-top: @carousel-base-padding / 1.5;
-                    text-transform: uppercase;
-                    font-size: 16px;
-                    font-weight: bolder;
+                    .widget {
+                        &:nth-child(2) {
+                            .make-md-column-offset(1);
+                            .make-md-column(5);
+                            background: @white;
+                        }
 
-                    &::after {
-                        content: " > ";
+                        &:nth-child(3) {
+                            .make-md-column-offset(1);
+                            .make-md-column(9);
+                            background: @white;
+                        }
+
+                        &:nth-child(4),
+                        &:nth-child(5),
+                        &:nth-child(6) {
+                            .make-md-column-offset(1);
+                            .make-md-column(6);
+                            margin-bottom:20px;
+                        }
+
+                        &:nth-child(4) {
+                            background: @orange;
+                        }
+
+                        &:nth-child(5) {
+                            background: @blue;
+                        }
+
+                        &:nth-child(6) {
+                            background: @white;
+                        }
                     }
                 }
             }
         }
     }
-}
-
-div.zone.zone-before-main,
-article.widget-before-main.widget-html-widget.widget {
-    background: #DB8739;
-    color: white;
 }

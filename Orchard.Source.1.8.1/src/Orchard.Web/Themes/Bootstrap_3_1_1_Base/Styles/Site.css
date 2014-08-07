@@ -1764,6 +1764,18 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
     width: 100%;
   }
 }
+#layout-wrapper #layout-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  #layout-wrapper #layout-content {
+    float: left;
+    width: 100%;
+  }
+}
 #layout-wrapper.aside-12 #layout-content {
   position: relative;
   min-height: 1px;
