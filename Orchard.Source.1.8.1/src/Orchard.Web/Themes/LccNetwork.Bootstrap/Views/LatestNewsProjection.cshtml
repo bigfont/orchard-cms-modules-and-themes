@@ -1,0 +1,47 @@
+﻿@{
+    var contentItems = Model.ContentItems;
+    List<dynamic> newsItems = new List<dynamic>();
+
+
+    foreach (dynamic contentItem in contentItems)
+    {
+        dynamic newsItemPart = contentItem.NewsItem; // can we make this generic to whatever content type?
+        dynamic newsItem = new System.Dynamic.ExpandoObject();
+
+        // media library picker field
+        var mediaPart =
+            newsItemPart.Image != null &&
+            newsItemPart.Image.MediaParts != null &&
+            newsItemPart.Image.MediaParts.Count > 0 ? newsItemPart.Image.MediaParts[0] : null;
+        newsItem.Img = new
+        {
+            Src = mediaPart != null ? mediaPart.MediaUrl : null,
+            Alt = mediaPart != null ? mediaPart.AlternateText : null
+        };
+        ;
+        // link fields
+        newsItem.Link = new
+        {
+            Value = newsItemPart.LearnMoreField.Value,
+            Text = newsItemPart.LearnMoreField.Text
+        };
+        // simple fields
+        newsItem.ShortTitle = newsItemPart.ShortTitle.Value;
+        newsItem.Summary = newsItemPart.Summary.Value;
+
+
+        newsItems.Add(newsItem);
+    }
+}
+
+<div class="row">
+    @foreach (var item in newsItems)
+    {
+        <div class="col-md-6">
+            <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: item.Img.Src)">
+            <h2>@item.ShortTitle</h2>
+            <p>@item.Summary</p>
+            <a href="@item.Link.Value">@item.Link.Text</a>
+        </div>
+    }
+</div>

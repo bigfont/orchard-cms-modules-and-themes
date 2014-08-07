@@ -1,10 +1,9 @@
 ﻿<Placement>
 
   <Place Parts_HighlightableItemPart_Edit="Content:1"/>
-
   <Place Parts_HighlightedItemPart="Content:1" />
-  <Place Parts_HighlightedItemPart_Edit="Content:5"/>
-
+  <Place Parts_HighlightedItemPart_Edit="Content:5"/>    
+  
   <Match DisplayType="Highlight">
 
     <Match ContentType="NewsItem">
@@ -40,14 +39,6 @@
       <Place Fields_Link="Content:7" />
     </Match>
 
-  </Match>
-
-  <Match Path="/">
-    <Match ContentType="Page">
-      <Place Parts_Title="-"/>
-      <Place Parts_Common_Metadata="-"/>
-      <Place Parts_Common_Body="-"/>
-    </Match>
-  </Match>
+  </Match>  
 
 </Placement>

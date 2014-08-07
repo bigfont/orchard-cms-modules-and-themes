@@ -1,0 +1,34 @@
+﻿@using Orchard.ContentManagement;
+@using Orchard.Widgets.Models;
+@{
+    var widgetPart = ((IContent)Model.ContentItem).As<WidgetPart>();
+    var tag = Tag(Model, "article");
+}
+
+@helper SuperTitle(string title)
+{
+    var separator = title.LastIndexOf(' ');
+    var lead = title.Substring(0, separator);
+    var theRest = title.Substring(separator, title.Length - separator);
+    <small>@lead</small>@theRest
+}
+
+@tag.StartElement
+@if ((widgetPart.RenderTitle && HasText(widgetPart.Title)) || Model.Header != null)
+{
+    <header>
+        @if ((widgetPart.RenderTitle && HasText(widgetPart.Title)))
+        {
+            <h1>@SuperTitle(@widgetPart.Title)</h1>
+        }
+        @Display(Model.Header)
+    </header>
+}
+@Display(Model.Child)
+@if (Model.Footer != null)
+{
+    <footer>
+        @Display(Model.Footer)
+    </footer>
+}
+@tag.EndElement
