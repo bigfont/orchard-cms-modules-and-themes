@@ -1,8 +1,6 @@
 Name: LccNetwork.Bootstrap
-Author: The Orchard Team
-Website: http://www.orchardproject.net
-Description: Description for the theme
-Version: 1.1
+Author: Shaun Luttin, EnviroIssues
+Website: http://www.lccnetwork.org
+Description: A highly specialized Bootstrap theme for the Lcc Network website.
+Version: 1.2
 BaseTheme: Bootstrap_3_1_1_Base
-# todo: provide tags
-# Tags: Classic, Serif

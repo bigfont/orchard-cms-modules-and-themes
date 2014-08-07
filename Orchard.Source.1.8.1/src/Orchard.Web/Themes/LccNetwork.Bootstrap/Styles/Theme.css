@@ -1368,9 +1368,31 @@
 .carousel .carousel-inner > .item > .carousel-caption > a::after {
   content: " > ";
 }
-[id^="layout-"] {
-  /*padding-left: 40px;
-    padding-right: 40px;*/
+.widget > header {
+  border-top: thin solid #685046;
+  border-bottom: thin solid #685046;
+  padding: 5px 0;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+.widget > header h1,
+.widget > header h2,
+.widget > header h3,
+.widget > header h4,
+.widget > header h5,
+.widget > header h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+}
+.widget > header h1 small,
+.widget > header h2 small,
+.widget > header h3 small,
+.widget > header h4 small,
+.widget > header h5 small,
+.widget > header h6 small {
+  font-size: 14px;
 }
 #layout-featured {
   background: #685046;

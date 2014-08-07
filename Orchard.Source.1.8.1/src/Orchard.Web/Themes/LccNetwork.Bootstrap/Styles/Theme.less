@@ -14,9 +14,29 @@
 // site
 @import "Site/Less/_workitem-carousel.less";
 
-[id^="layout-"] {
-    /*padding-left: 40px;
-    padding-right: 40px;*/
+.widget {
+    > header {
+
+        h1, h2, h3, h4, h5, h6 {
+            // reset
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+            line-height: 30px;
+
+            small {
+                font-size: 14px;
+            }
+        }
+
+        & {
+            border-top: thin solid @brown;
+            border-bottom: thin solid @brown;
+            padding: 5px 0;
+            margin: 10px 0;
+            margin-top:20px;
+        }
+    }
 }
 
 #layout-wrapper {
@@ -147,7 +167,7 @@
                         &:nth-child(6) {
                             .make-md-column-offset(1);
                             .make-md-column(6);
-                            margin-bottom:20px;
+                            margin-bottom: 20px;
                         }
 
                         &:nth-child(4) {
