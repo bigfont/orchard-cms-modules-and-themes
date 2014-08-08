@@ -1,15 +1,16 @@
 ﻿@{
-    var contentItems = Model.ContentItems;           
+    var contentItems = Model.ContentItems;
+    var cssClass = "spotlight-projection";
     dynamic firstItem = System.Linq.Enumerable.First(contentItems);
 
-    var spotlightPart = firstItem.Spotlight;    
+    var spotlightPart = firstItem.Spotlight;
     var mediaPart =
         spotlightPart.Image != null &&
         spotlightPart.Image.MediaParts != null &&
         spotlightPart.Image.MediaParts.Count > 0 ? spotlightPart.Image.MediaParts[0] : null;
-    
-    var viewModel = new 
-    {       
+
+    var viewModel = new
+    {
         Title = firstItem.TitlePart.Title,
         Body = firstItem.BodyPart.Text,
         Link = new
@@ -22,10 +23,12 @@
             Src = mediaPart != null ? mediaPart.MediaUrl : null,
             Alt = mediaPart != null ? mediaPart.AlternateText : null
         }
-    };                                                
+    };
 }
 
-<h2>@viewModel.Title</h2>
-<img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: viewModel.Img.Src)">
-<a href="@viewModel.Link.Value">@viewModel.Link.Text</a>
-@Html.Raw(viewModel.Body)
+<div class="@cssClass">
+    <h2>@viewModel.Title</h2>
+    <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: viewModel.Img.Src)">
+    @Html.Raw(viewModel.Body)
+    <a href="@viewModel.Link.Value">@viewModel.Link.Text</a>
+</div>

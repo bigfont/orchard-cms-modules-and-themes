@@ -1,8 +1,9 @@
 ﻿// bootstrap
-@import 'Bootstrap/Less/variables.less';
-@import 'Bootstrap/Less/mixins.less';
-@import 'Bootstrap/Less/utilities.less';
-@import 'Bootstrap/Less/grid.less';
+
+@import 'Bootstrap/less/variables.less';
+@import 'Bootstrap/less/mixins.less';
+@import 'Bootstrap/less/utilities.less';
+@import 'Bootstrap/less/grid.less';
 
 @green: #a9d157;
 @orange: #DA8639;
@@ -14,27 +15,122 @@
 // site
 @import "Site/Less/_workitem-carousel.less";
 
-.widget {
-    > header {
+// mixins
 
-        h1, h2, h3, h4, h5, h6 {
+.link-arrow-right(@c) when (@c = @white) {
+    &::after {
+        background-image: url('Site/Imgs/icon_arrow_w.png');
+    }
+}
+
+.link-arrow-right(@c) when (@c = @brown) {
+    &::after {
+        background-image: url('Site/Imgs/icon_arrow_br.png');
+    }
+}
+
+.link-arrow-right(@c) {
+    &::after {
+        height: 20px;
+        width: 20px;
+        top: 6px;
+        left: 6px;
+        position: relative;
+        display: inline-block;
+        content: '';
+        background-repeat: no-repeat;
+    }
+}
+
+body {
+    background: url('Site/Imgs/banner_graphic.jpg') no-repeat;
+    background-position: 50% 0;
+}
+
+
+
+.widget-before-content,
+.widget-content {
+    padding: 25px 0; // horizontal padding will sometime be overrided by make-column
+    > header {
+        border-top: thin solid @brown;
+        border-bottom: thin solid @brown;
+        margin: 0 5px 10px 5px;
+
+        h1, h1 > small {
             // reset
             margin: 0;
             padding: 0;
             font-size: 30px;
-            line-height: 30px;
+            line-height: 40px;
+            color: @brown;
+            font-weight: bolder;
+            text-transform: uppercase;
 
             small {
+                font-weight: bold;
                 font-size: 14px;
+                line-height: 26px;
             }
         }
+    }
 
-        & {
-            border-top: thin solid @brown;
-            border-bottom: thin solid @brown;
-            padding: 5px 0;
-            margin: 10px 0;
-            margin-top:20px;
+    [class$="-projection"] {
+        margin: 0 5px 0 5px;
+
+        h2 {
+            color: @orange;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 17px;
+            text-transform: uppercase;
+            margin: 4px 0;
+        }
+    }
+}
+
+div#layout-navigation.group {
+
+    > div.zone.zone-navigation {
+        padding: 0;
+
+        > article.widget-navigation.widget-menu-widget.widget {
+            margin-bottom: 0;
+            background-color: transparent;
+            border: none;
+
+            div.container-fluid {
+                position: relative;
+
+                div.navbar-header {
+                    margin-left: -15px;
+
+                    a.navbar-brand {
+                        background-image: url('Site/Imgs/lcc-logo.png');
+                        background-repeat: no-repeat;
+                        width: 400px;
+                        height: 120px;
+                        background-color: @white;
+                        display: block;
+                        color: white;
+                        text-decoration: none;
+                        padding: 0;
+                        margin: 0;
+                        float: left;
+                    }
+                }
+
+                nav.navbar-collapse {
+                    float: left;
+                    padding: 0;
+
+                    ul {
+                        background-color: #BFBFBF;
+                        position: absolute;
+                        bottom: 0;
+                    }
+                }
+            }
         }
     }
 }
@@ -107,10 +203,11 @@
                     .make-row();
 
                     .widget {
-                        height: 250px;
+                        height: 275px;
                         overflow: hidden;
 
                         &:nth-child(1) {
+                            // green about
                             .make-md-column-offset(1);
                             .make-md-column(6);
                             background: @green;
@@ -119,25 +216,32 @@
 
                             a:last-child {
                                 font-size: 16px;
-
-                                &::after {
-                                    content: " >";
-                                }
+                                font-weight: 400;
+                                color: @brown;
+                                .link-arrow-right(@brown);
                             }
                         }
 
                         &:nth-child(2) {
+                            // lastest news
                             .make-md-column-offset(1);
                             .make-md-column(15);
-                            background: @white;
+                            background-color: @white;
 
-                            ul {
-                                padding: 0;
+                            .latest-news-projection {
 
-                                > li {
-                                    float: left;
-                                    width: 33%;
-                                    list-style: none;
+                                p, a {
+                                    margin: 4px 0;
+                                    color: @blue;
+                                    font-size: 11.5px;
+                                }
+
+                                a::after {
+                                    position: relative;
+                                    bottom: 2px;
+                                    left: 2px;
+                                    font-size: 12px;
+                                    content: '\00BB'; // &raquo;
                                 }
                             }
                         }
@@ -151,15 +255,46 @@
 
                     .widget {
                         &:nth-child(2) {
+                            // lcc in the spotlight
                             .make-md-column-offset(1);
                             .make-md-column(5);
                             background: @white;
+
+                            > header > h1 > small {
+                                display: block;
+                            }
+
+                            .spotlight-projection {
+                                img {
+                                    display: block;
+                                }
+
+                                p, a {
+                                    display: inline;
+                                }
+                            }
                         }
 
                         &:nth-child(3) {
+                            // upcoming events
                             .make-md-column-offset(1);
                             .make-md-column(9);
                             background: @white;
+
+                            > header > h1 > small {
+                                display: block;
+                            }
+
+                            .upcoming-events-projection {
+                                h2 {
+                                    color: @blue;
+                                    text-transform: none;
+                                }
+
+                                ul.list-unstyled {
+                                    margin-bottom: 0;
+                                }
+                            }
                         }
 
                         &:nth-child(4),
@@ -168,6 +303,22 @@
                             .make-md-column-offset(1);
                             .make-md-column(6);
                             margin-bottom: 20px;
+
+                            p {
+                                margin: 10px;
+                                font-size: 18px;
+                                line-height: 25px;
+                                font-weight: bolder;
+                                text-indent: each-line;
+                                color: @white;
+                                .link-arrow-right(@white);
+
+                                strong {
+                                    margin-left: -6px; //
+                                    font-size: 40px;
+                                    text-transform: uppercase;
+                                }
+                            }
                         }
 
                         &:nth-child(4) {
@@ -180,10 +331,22 @@
 
                         &:nth-child(6) {
                             background: @white;
+
+                            p {
+                                color: @brown;
+                                .link-arrow-right(@brown);
+                            }
                         }
                     }
                 }
             }
         }
     }
+}
+
+#layout-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: @orange;
+    min-height: 200px;
 }

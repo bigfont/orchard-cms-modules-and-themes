@@ -65,7 +65,13 @@
     <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\variables.css">
       <DependentUpon>variables.less</DependentUpon>
     </Content>
+    <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\banner_graphic.jpg" />
+    <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\icon_arrow_br.png" />
+    <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\icon_arrow_w.png" />
+    <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\lcc-logo.png" />
     <Content Include="LccNetwork.Bootstrap\Styles\Theme.css" />
+    <Content Include="LccNetwork.Bootstrap\Views\Branding.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\BadgeOfHonor.cshtml" />
     <None Include="LccNetwork.Bootstrap\Views\SpotlightProjection.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Web.config" />
     <Content Include="LccNetwork.Bootstrap\Scripts\Web.config" />

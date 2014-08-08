@@ -1,11 +1,15 @@
-﻿@{
+﻿@using System.Dynamic;
+@using System.Linq;
+
+@{
     var contentItems = Model.ContentItems;
+    var cssClass = "latest-news-projection";
     List<dynamic> newsItems = new List<dynamic>();
 
     foreach (dynamic contentItem in contentItems)
     {
         dynamic newsItemPart = contentItem.NewsItem; // can we make this generic to whatever content type?
-        dynamic newsItem = new System.Dynamic.ExpandoObject();
+        dynamic newsItem = new ExpandoObject();
 
         // media library picker field
         var mediaPart =
@@ -27,20 +31,24 @@
         // simple fields
         newsItem.ShortTitle = newsItemPart.ShortTitle.Value;
         newsItem.Summary = newsItemPart.Summary.Value;
-
-
+        // collect
         newsItems.Add(newsItem);
     }
 }
 
-<div class="row">
-    @foreach (var item in newsItems)
-    {
-        <div class="col-md-6">
-            <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: item.Img.Src)">
-            <h2>@item.ShortTitle</h2>
-            <p>@item.Summary</p>
-            <a href="@item.Link.Value">@item.Link.Text</a>
-        </div>
-    }
+<div class="@cssClass">
+
+    <div class="row">
+        @foreach (var item in newsItems)
+        {
+            //Keep in mind we have a grid with 24 columns
+            <div class="col-md-6">
+                <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: item.Img.Src)">
+                <h2>@item.ShortTitle</h2>
+                <p>@item.Summary</p>
+                <a href="@item.Link.Value">@item.Link.Text</a>
+            </div>
+        }
+    </div>
+
 </div>

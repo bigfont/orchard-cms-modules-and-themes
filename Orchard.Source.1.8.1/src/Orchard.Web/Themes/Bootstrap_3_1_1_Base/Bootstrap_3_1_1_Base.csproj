@@ -73,6 +73,10 @@
     <Content Include="Scripts\Bootstrap\transition.js" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Bootstrap\bootstrap.min.css" />
+    <Content Include="Styles\Bootstrap\less\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\Bootstrap\less\alerts.less" />
     <Content Include="Styles\Bootstrap\less\badges.less" />
     <Content Include="Styles\Bootstrap\less\bootstrap.less" />
@@ -126,6 +130,9 @@
     <Content Include="Views\Parts\MenuWidget-MenuWidget.cshtml" />
     <Content Include="Views\Widget-MenuWidget.cshtml" />
     <Content Include="Placement.info" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
