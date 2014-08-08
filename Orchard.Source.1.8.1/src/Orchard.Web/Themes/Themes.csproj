@@ -66,6 +66,7 @@
       <DependentUpon>variables.less</DependentUpon>
     </Content>
     <Content Include="LccNetwork.Bootstrap\Styles\Theme.css" />
+    <None Include="LccNetwork.Bootstrap\Views\SpotlightProjection.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Web.config" />
     <Content Include="LccNetwork.Bootstrap\Scripts\Web.config" />
     <Content Include="LccNetwork.Bootstrap\Styles\Web.config" />
@@ -73,15 +74,6 @@
     <Content Include="LccNetwork.Bootstrap\Theme.txt" />
     <Content Include="LccNetwork.Bootstrap\Theme.png" />
     <Content Include="LccNetwork.Bootstrap\Placement.info" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="LccNetworkTheme\Web.config" />
-    <Content Include="LccNetworkTheme\Scripts\Web.config" />
-    <Content Include="LccNetworkTheme\Styles\Web.config" />
-    <Content Include="LccNetworkTheme\Content\Web.config" />
-    <Content Include="LccNetworkTheme\Theme.txt" />
-    <Content Include="LccNetworkTheme\Theme.png" />
-    <Content Include="LccNetworkTheme\Placement.info" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrap_3_1_1_SimpleBlog\ListShapeProvider.cs" />
@@ -430,7 +422,6 @@
     <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Debug\TempPE\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Release\TempPE\" />
-    <Folder Include="LccNetworkTheme\Views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="LccNetwork.Bootstrap\Views\WorkItemCarousel.cshtml" />
@@ -480,6 +471,7 @@
     <None Include="LccNetwork.Bootstrap\Styles\Theme.less" />
     <Content Include="LccNetwork.Bootstrap\Views\LatestNewsProjection.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\Widget.Wrapper.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\UpcomingEventsProjection.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

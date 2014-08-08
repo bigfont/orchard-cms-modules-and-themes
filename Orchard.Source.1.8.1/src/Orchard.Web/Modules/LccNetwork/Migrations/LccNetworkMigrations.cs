@@ -12,6 +12,7 @@ using LccNetwork.Models;
 using System.Globalization;
 using Orchard.Fields.Settings;
 using Orchard.Environment.Extensions;
+using System.Text.RegularExpressions;
 
 namespace LccNetwork
 {
@@ -27,11 +28,11 @@ namespace LccNetwork
             ResourcesTaxonomyField,
             LccTaxonomyField;
 
-        private List<string> ContentTypes = new List<string>();
+        private List<string> LccContentTypesNames = new List<string>();
 
         private void Reset()
         {
-            ContentTypes.ForEach(s =>
+            LccContentTypesNames.ForEach(s =>
             {
 
                 ContentDefinitionManager.DeletePartDefinition(s);
@@ -43,7 +44,7 @@ namespace LccNetwork
         // ctor for code reuse
         public LccNetworkMigrations()
         {
-            LearnMoreLinkField = BuildLinkField("Learn More", "An external link to learn more about this item.", false, TargetMode.NewWindow, LinkTextMode.Optional, string.Empty);
+            LearnMoreLinkField = BuildLinkField("Learn More", "An external link to learn more about this item.", false, TargetMode.NewWindow, LinkTextMode.Static, "Learn More");
 
             SummaryTextAreaField = BuildTextField("Summary", "Text", false, "A summary of this item.");
 
@@ -58,7 +59,22 @@ namespace LccNetwork
             WorkAreasTaxonomyField = BuildTaxonomyField("Work Area", true, "Work Areas", false, false, false, string.Empty, string.Empty, false);
         }
 
-        #region FieldHelpers
+        #region Field and Part Helpers
+        private string Slugify(string s)
+        {
+            return Regex.Replace(s, "(?<!^)([A-Z])", "-$1").ToLower();
+        }
+
+        private Action<ContentTypePartDefinitionBuilder> BuildAutorouteSettings(bool allowCustomPattern, bool autoAdjustOnEdit,
+            string patternName, string pattern, string patternDescription, int defaultPatternIndex)
+        {
+            string patternDefinition = string.Format(@"Name:'{0}', Pattern:'{1}', Description:'{2}'", patternName, pattern, patternDescription);
+            return new Action<ContentTypePartDefinitionBuilder>(part => part
+                        .WithSetting("AutorouteSettings.AllowCustomPattern", allowCustomPattern.ToString())
+                        .WithSetting("AutorouteSettings.AutomaticAdjustmentOnEdit", autoAdjustOnEdit.ToString())
+                        .WithSetting("AutorouteSettings.PatternDefinitions", "[{" + patternDefinition + "}]")
+                        .WithSetting("AutorouteSettings.DefaultPatternIndex", defaultPatternIndex.ToString()));
+        }
 
         private Action<ContentPartFieldDefinitionBuilder> BuildLinkField(string displayName, string hint, bool required, TargetMode targetMode, LinkTextMode linkTextMode, string staticText)
         {
@@ -149,7 +165,7 @@ namespace LccNetwork
         public int UpdateFrom1()
         {
             var typeName = "NewsItem";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("Contains fields for the News Item Content Type.")
@@ -166,7 +182,7 @@ namespace LccNetwork
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
                 .WithPart("CommonPart")
-                .WithPart("HighlightableItemPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                 .WithPart(typeName));
 
             return 2;
@@ -175,7 +191,7 @@ namespace LccNetwork
         public int UpdateFrom2()
         {
             var typeName = "Event";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                .WithDescription("Contains fields for the Event Content Type.")
@@ -193,7 +209,7 @@ namespace LccNetwork
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
                 .WithPart("CommonPart")
-                .WithPart("HighlightableItemPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                 .WithPart(typeName));
 
             return 3;
@@ -202,7 +218,7 @@ namespace LccNetwork
         public int UpdateFrom3()
         {
             var typeName = "Spotlight";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("This is often an Lcc to highlight on the home page")
@@ -215,7 +231,7 @@ namespace LccNetwork
                 .WithPart("TitlePart")
                 .WithPart("BodyPart")
                 .WithPart("CommonPart")
-                .WithPart("HighlightableItemPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                 .WithPart(typeName));
 
             return 4;
@@ -224,7 +240,7 @@ namespace LccNetwork
         public int UpdateFrom4()
         {
             var typeName = "Staff";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("A staff member of an LCC")
@@ -239,6 +255,7 @@ namespace LccNetwork
                 .Creatable()
                 .Draftable()
                 .WithPart("CommonPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                 .WithPart(typeName));
 
             return 5;
@@ -247,7 +264,7 @@ namespace LccNetwork
         public int UpdateFrom5()
         {
             var typeName = "CouncilMeeting";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("An LCC meeting")
@@ -263,8 +280,9 @@ namespace LccNetwork
             ContentDefinitionManager.AlterTypeDefinition(typeName, builder => builder
                     .Creatable()
                     .Draftable()
-                    .WithPart("TitlePart")                
+                    .WithPart("TitlePart")
                     .WithPart("CommonPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                     .WithPart(typeName));
 
             return 6;
@@ -273,7 +291,7 @@ namespace LccNetwork
         public int UpdateFrom6()
         {
             var typeName = "WorkItem";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("A work item")
@@ -289,6 +307,7 @@ namespace LccNetwork
                     .WithPart("TitlePart")
                     .WithPart("BodyPart")
                     .WithPart("CommonPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                     .WithPart(typeName));
 
             return 7;
@@ -297,7 +316,7 @@ namespace LccNetwork
         public int UpdateFrom7()
         {
             var typeName = "Resource";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("A resource item")
@@ -312,6 +331,7 @@ namespace LccNetwork
                     .WithPart("TitlePart")
                     .WithPart("BodyPart")
                     .WithPart("CommonPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                     .WithPart(typeName));
 
             return 8;
@@ -320,7 +340,7 @@ namespace LccNetwork
         public int UpdateFrom8()
         {
             var typeName = "FundingOpportunity";
-            this.ContentTypes.Add(typeName);
+            this.LccContentTypesNames.Add(typeName);
 
             ContentDefinitionManager.AlterPartDefinition(typeName, builder => builder
                 .WithDescription("A funding opportunity item")
@@ -335,9 +355,11 @@ namespace LccNetwork
                     .WithPart("TitlePart")
                     .WithPart("BodyPart")
                     .WithPart("CommonPart")
+                    .WithPart("AutoroutePart", this.BuildAutorouteSettings(true, true, typeName, Slugify(typeName) + "/{Content.Slug}", "Type/Slug", 0))
                     .WithPart(typeName));
 
             return 9;
         }
     }
+
 }

@@ -7,9 +7,15 @@
 
 @helper SuperTitle(string title)
 {
-    var separator = title.LastIndexOf(' ');
-    var lead = title.Substring(0, separator);
-    var theRest = title.Substring(separator, title.Length - separator);
+    var separatorIndex = title.LastIndexOf(' ');
+    var lead = string.Empty;
+    var theRest = string.Empty;
+    if (separatorIndex > 0)
+    {
+        lead = title.Substring(0, separatorIndex);
+        theRest =
+            title.Substring(separatorIndex, title.Length - separatorIndex);
+    }
     <small>@lead</small>@theRest
 }
 

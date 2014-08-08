@@ -1,0 +1,27 @@
+﻿@{
+    var contentItems = Model.ContentItems; // contentItems is a WhereSelectListIterator
+    List<dynamic> eventItems = new List<dynamic>();
+    
+    foreach (dynamic contentItem in contentItems)
+    { 
+        // get the part that is synonomous with the type,
+        // so we can access fields.
+        dynamic itemPart = contentItem.Event;
+
+        // create a convenient 'view model'
+        dynamic eventItem = new System.Dynamic.ExpandoObject();
+        eventItem.Title = contentItem.TitlePart.Title;
+        eventItem.StartDate = itemPart.StartDate.DateTime.ToString(@"MM\/dd");
+        eventItem.EndDate = itemPart.EndDate.DateTime.ToString(@"MM\/dd\/yyyy"); ;
+        eventItem.InternalLink = Url.ItemDisplayUrl((Orchard.ContentManagement.IContent)contentItem);
+        
+        // add it to the collection of 'view models'
+        eventItems.Add(eventItem);
+    }
+}
+
+@foreach (var item in eventItems)
+{
+    <h2><a href="@item.InternalLink">@item.Title</a></h2>
+    <span>@Html.Raw(@item.StartDate)</span><span> - </span><span>@item.EndDate</span>
+}
