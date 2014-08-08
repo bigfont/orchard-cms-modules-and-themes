@@ -1372,49 +1372,6 @@ body {
   background: url('Site/Imgs/banner_graphic.jpg') no-repeat;
   background-position: 50% 0;
 }
-.widget-before-content,
-.widget-content {
-  padding: 25px 0;
-}
-.widget-before-content > header,
-.widget-content > header {
-  border-top: thin solid #685046;
-  border-bottom: thin solid #685046;
-  margin: 0 5px 10px 5px;
-}
-.widget-before-content > header h1,
-.widget-content > header h1,
-.widget-before-content > header h1 > small,
-.widget-content > header h1 > small {
-  margin: 0;
-  padding: 0;
-  font-size: 30px;
-  line-height: 40px;
-  color: #685046;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-.widget-before-content > header h1 small,
-.widget-content > header h1 small,
-.widget-before-content > header h1 > small small,
-.widget-content > header h1 > small small {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-}
-.widget-before-content [class$="-projection"],
-.widget-content [class$="-projection"] {
-  margin: 0 5px 0 5px;
-}
-.widget-before-content [class$="-projection"] h2,
-.widget-content [class$="-projection"] h2 {
-  color: #da8639;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 17px;
-  text-transform: uppercase;
-  margin: 4px 0;
-}
 div#layout-navigation.group > div.zone.zone-navigation {
   padding: 0;
 }
@@ -1484,6 +1441,49 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
   position: absolute;
   top: 0;
   right: 0;
+}
+.widget-before-content,
+.widget-content {
+  padding: 25px 0;
+}
+.widget-before-content > header,
+.widget-content > header {
+  border-top: thin solid #685046;
+  border-bottom: thin solid #685046;
+  margin: 0 5px 10px 5px;
+}
+.widget-before-content > header h1,
+.widget-content > header h1,
+.widget-before-content > header h1 > small,
+.widget-content > header h1 > small {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 40px;
+  color: #685046;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.widget-before-content > header h1 small,
+.widget-content > header h1 small,
+.widget-before-content > header h1 > small small,
+.widget-content > header h1 > small small {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+.widget-before-content [class$="-projection"],
+.widget-content [class$="-projection"] {
+  margin: 0 5px 0 5px;
+}
+.widget-before-content [class$="-projection"] h2,
+.widget-content [class$="-projection"] h2 {
+  color: #da8639;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  margin: 4px 0;
 }
 #layout-main-container {
   padding: 0;
