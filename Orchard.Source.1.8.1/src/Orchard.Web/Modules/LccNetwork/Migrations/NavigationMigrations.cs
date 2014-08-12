@@ -10,7 +10,7 @@ using Orchard.Environment.Extensions;
 
 namespace LccNetwork.Migrations
 {
-    [OrchardFeature("fea")]
+    [OrchardFeature("SectionNavigation")]
     public class NavigationMigrations : DataMigrationImpl
     {
         public int Create()
@@ -34,7 +34,21 @@ namespace LccNetwork.Migrations
                     .WithSetting("Stereotype", "Widget")
                 );
 
-            return 3;
+            return 4;
+        }
+
+        public int UpdateFrom4()
+        {
+            ContentDefinitionManager.AlterTypeDefinition("FooterMenu",
+                    cfg => cfg
+                    .WithPart("CommonPart")
+                    .WithPart("IdentityPart")
+                    .WithPart("WidgetPart")
+                    .WithPart("MenuWidgetPart") // why cannot we add MenuWidgetPart through the UI?
+                    .WithSetting("Stereotype", "Widget")
+                );
+
+            return 5;
         }
     }
 }
