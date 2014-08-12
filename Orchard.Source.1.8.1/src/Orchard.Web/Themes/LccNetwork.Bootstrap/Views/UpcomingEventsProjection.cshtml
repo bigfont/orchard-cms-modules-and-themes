@@ -27,7 +27,7 @@
         @foreach (var item in eventItems)
         {
             <li>
-                <h2><a href="@item.InternalLink">@item.Title</a></h2>
+                <h6><a href="@item.InternalLink">@item.Title</a></h6>
                 <span>@Html.Raw(@item.StartDate)</span><span> - </span><span>@item.EndDate</span>
             </li>
         }

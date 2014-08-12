@@ -1,5 +1,6 @@
 ﻿@using System.Dynamic;
 @using System.Linq;
+@using Orchard.ContentManagement;
 
 @{
     var contentItems = Model.ContentItems;
@@ -22,11 +23,11 @@
             Alt = mediaPart != null ? mediaPart.AlternateText : null
         };
         ;
-        // link fields
+        // link fields - note: use internal links
         newsItem.Link = new
         {
-            Value = newsItemPart.LearnMoreField.Value,
-            Text = newsItemPart.LearnMoreField.Text
+            Value = Url.ItemDisplayUrl((IContent)contentItem), // newsItemPart.LearnMoreField.Value,
+            Text = "View" // newsItemPart.LearnMoreField.Text
         };
         // simple fields
         newsItem.ShortTitle = newsItemPart.ShortTitle.Value;
@@ -44,7 +45,7 @@
             //Keep in mind we have a grid with 24 columns
             <div class="col-md-6">
                 <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: item.Img.Src)">
-                <h2>@item.ShortTitle</h2>
+                <h6>@item.ShortTitle</h6>
                 <p>@item.Summary</p>
                 <a href="@item.Link.Value">@item.Link.Text</a>
             </div>

@@ -61,17 +61,18 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\bootstrap.min.css" />
     <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\variables.css">
       <DependentUpon>variables.less</DependentUpon>
     </Content>
     <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\banner_graphic.jpg" />
     <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\icon_arrow_br.png" />
+    <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\icon_arrow_or.png" />
     <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\icon_arrow_w.png" />
     <Content Include="LccNetwork.Bootstrap\Styles\Site\Imgs\lcc-logo.png" />
     <Content Include="LccNetwork.Bootstrap\Styles\Theme.css" />
     <Content Include="LccNetwork.Bootstrap\Views\Branding.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\BadgeOfHonor.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Styles\Site\Less\_mixins.less" />
     <None Include="LccNetwork.Bootstrap\Views\SpotlightProjection.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Web.config" />
     <Content Include="LccNetwork.Bootstrap\Scripts\Web.config" />
@@ -434,46 +435,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LccNetwork.Bootstrap\Styles\Site\Less\_workitem-carousel.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\alerts.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\badges.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\bootstrap.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\breadcrumbs.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\button-groups.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\buttons.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\carousel.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\close.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\code.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\component-animations.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\dropdowns.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\forms.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\glyphicons.less" />
     <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\grid.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\input-groups.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\jumbotron.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\labels.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\list-group.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\media.less" />
     <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\mixins.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\modals.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\navbar.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\navs.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\normalize.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\pager.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\pagination.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\panels.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\popovers.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\print.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\progress-bars.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\responsive-utilities.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\scaffolding.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\tables.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\theme.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\thumbnails.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\tooltip.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\type.less" />
     <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\utilities.less" />
     <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\variables.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\wells.less" />
     <None Include="LccNetwork.Bootstrap\Styles\Theme.less" />
     <Content Include="LccNetwork.Bootstrap\Views\LatestNewsProjection.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\Widget.Wrapper.cshtml" />

@@ -1,0 +1,40 @@
+﻿.link-arrow-right(@c) when (@c = @white) {
+    &::after {
+        background-image: url('../Imgs/icon_arrow_w.png');
+    }
+}
+
+.link-arrow-right(@c) when (@c = @brown) {
+    &::after {
+        background-image: url('../Imgs/icon_arrow_br.png');
+    }
+}
+
+.link-arrow-right(@c) when (@c = @orange) {
+    &::after {
+        background-image: url('../Imgs/icon_arrow_or.png');
+    }
+}
+
+.link-arrow-right(@c) {
+    &::after {
+        background-repeat: no-repeat;
+        content: '';
+        display: inline-block;
+        height: 20px;
+        left: 6px;
+        position: relative;
+        top: 6px;
+        width: 20px;
+    }
+}
+
+.link-double-arrow-right {
+
+    &::after {
+        position: relative;
+        left: 2px;
+        font-size: @font-size-base;
+        content: '\00BB'; // &raquo; >>
+    }
+}
