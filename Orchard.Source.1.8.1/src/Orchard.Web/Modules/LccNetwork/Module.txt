@@ -2,7 +2,7 @@
 AntiForgery: enabled
 Author: Shaun Luttin
 Website: http://www.lccnetwork.org
-Version: 1.7.1
+Version: 1.8
 OrchardVersion: 1.8.1
 Description: A collection of modules for the LccNetwork site.
 Category: Content
@@ -11,10 +11,10 @@ FeatureDescription: Some content types that are part of the LccNetwork web site 
 Dependencies: Orchard.Fields
 Features:
 	Highlightable:
-		Name: Highlightable Content Items
+		Name: (Deprecated) Highlightable Content Items
 		Description: Adds a content part that lets a content item be featured in a special featured content item widget.
 		Category:Content
 	SectionNavigation:
 		Name: Section Navigation
-		Description: Adds a widget for showing a menu of pages that are underneath the current part.
+		Description: Adds two widgets for showing a menu of pages.
 		Category:Content

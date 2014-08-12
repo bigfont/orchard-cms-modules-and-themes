@@ -6,7 +6,7 @@
     TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
     MenuItem item = shape.Item as MenuItem;
     var text = top ?
-        textInfo.ToTitleCase(item.Href.Substring(1)) : // use the Href
+        textInfo.ToTitleCase(item.Href.Substring(1)).Replace('-', ' ') : // use the Href
         item.Text.Text;
     var href = item.Href;
     var attr = new { @class = item.Selected };
@@ -21,6 +21,7 @@
     var collapseId = Model.Id;
 
     var tag = Tag(menu, "ul");
+    tag.AddCssClass("list-unstyled");
     var items = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
 
     // get the first, selected, top level item

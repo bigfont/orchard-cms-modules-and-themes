@@ -1,0 +1,83 @@
+﻿@using Orchard.UI.Navigation;
+@using System.Globalization;
+
+@helper RenderMenuHeader(dynamic shape)
+{
+    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+    MenuItem item = shape.Item as MenuItem;
+    if (item.Href.Equals("/"))
+    {
+        // don't render the home page link
+        return;
+    }
+    var text = item.Text.Text.ToUpper();
+    var href = item.Href;
+    var attr = new { @class = item.Selected };
+    var tag = Tag(Model, "li");
+    @tag.StartElement
+    <h6>
+        @Html.Raw(text)
+    </h6>
+    @tag.EndElement
+}
+
+
+@helper RenderMenuItem(dynamic shape)
+{
+    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+    MenuItem item = shape.Item as MenuItem;
+    if (item.Href.Equals("/"))
+    {
+        // don't render the home page link
+        return;
+    }
+    var text = textInfo.ToTitleCase(item.Href.Substring(1)).Replace('-', ' ');
+    var href = item.Href;
+    var attr = new { @class = item.Selected };
+    var tag = Tag(Model, "li");
+    @tag.StartElement
+    @: @Html.Link(text, href, attr)
+    @tag.EndElement
+}
+
+@helper RenderItem(dynamic item)
+{
+    var subItems = (IList<dynamic>)Enumerable.Cast<dynamic>(item.Value.Items);
+    <!-- Top level items are both headers and items. -->
+    @RenderMenuHeader(item.Value)
+    @RenderMenuItem(item.Value)
+    foreach (var subItem in subItems)
+    {
+        @RenderMenuItem(subItem)
+    }
+}
+
+@{
+    var menu = Model.Menu;
+    var allItems = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
+    var allItemsExceptHome = allItems.Where(i => !i.Href.Equals("/"));
+    var tag = Tag(menu, "ul");
+    tag.AddCssClass("list-unstyled");
+
+    <div>
+        @foreach (var item in allItemsExceptHome.Select((x, i) => new { Value = x, Index = i }))
+        {
+            // start column column
+            if (item.Index % 2 == 0)
+            {
+                //0, 2, 4, 6
+                @tag.StartElement
+            }
+
+            // render inside the column
+            @RenderItem(item);
+
+            // end column
+            if (item.Index % 2 == 1 || item.Index == allItemsExceptHome.Count())
+            {
+                // 1, 3, 5
+                @tag.EndElement
+            }
+        }
+    </div>
+}
