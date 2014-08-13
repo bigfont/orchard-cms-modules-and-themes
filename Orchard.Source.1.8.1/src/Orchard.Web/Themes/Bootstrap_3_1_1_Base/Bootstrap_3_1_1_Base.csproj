@@ -117,12 +117,26 @@
     <Content Include="Styles\Bootstrap\less\utilities.less" />
     <Content Include="Styles\Bootstrap\less\variables.less" />
     <Content Include="Styles\Bootstrap\less\wells.less" />
+    <Content Include="Styles\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
+    <Content Include="Styles\Site.min.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
     <Content Include="Styles\Site\less\_TheThemeMachine-Bootstrap-Mixins.less" />
     <Content Include="Styles\Site\less\_TheThemeMachine-Bootstrap-Navigation.less" />
     <Content Include="Styles\Site\less\_TheThemeMachine-Bootstrap-Scaffolding.less" />
     <Content Include="Styles\Site.less" />
+    <Content Include="Styles\Theme.css">
+      <DependentUpon>Theme.less</DependentUpon>
+    </Content>
     <Content Include="Styles\Theme.less" />
+    <Content Include="Styles\Theme.min.css">
+      <DependentUpon>Theme.less</DependentUpon>
+    </Content>
     <Content Include="Styles\Web.config" />
+    <Content Include="Theme.png" />
+    <Content Include="ThemeZonePreview.png" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Menu.cshtml" />
     <Content Include="Views\MenuItem.cshtml" />
@@ -142,9 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\theme.js" />
-    <Content Include="Styles\Site.css" />
-    <Content Include="Styles\Theme.css" />
-    <Content Include="Theme.png" />
     <Content Include="Theme.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
