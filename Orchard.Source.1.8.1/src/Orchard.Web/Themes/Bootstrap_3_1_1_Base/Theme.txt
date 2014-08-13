@@ -2,7 +2,7 @@ Name: Bootstrap 3.1.1 - Base
 Author: Shaun Luttin, bigfont.ca
 Website: http://orchard-theme-machine-designer.azurewebsites.net
 Description: (Pre-Alpha) The Bootstrap 3.1.1 - Base Theme leaves TheThemeMachine's Layout markup unchanged while adding the Bootstrap responsive grid through LESS Mixins. It also adds a shape alternate for the Bootstrap navbar. You can find further Bootstrap components, such as thumbnails, within a separate module named Bootstrap_3_1_1.
-Version: 2.0
+Version: 2.1
 BaseTheme: TheThemeMachine
 Zones: Header, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer
 Tags: Bootstrap Base
