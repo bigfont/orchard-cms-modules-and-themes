@@ -1,0 +1,59 @@
+﻿@using System.Dynamic;
+@using System.Linq;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+
+@functions
+{
+    dynamic GetMainPartFromContentItem(ContentItem item)
+    {
+        // get the ContentPart that has the same name as the ContentItem's ContentType
+        // so that we can access the ContentItems fields.
+        var contentType = item.TypeDefinition.Name;
+        var parts = item.Parts as List<Orchard.ContentManagement.ContentPart>;
+        dynamic mainPart = parts.First(p => p.PartDefinition.Name.Equals(contentType));
+        return mainPart;
+    }
+
+    dynamic GetMediaPartFromMediaLibraryPickerField(dynamic field, int index = 0)
+    {
+        var mediaPart = field != null &&
+            field.MediaParts != null &&
+            field.MediaParts.Count >= index ?
+            field.MediaParts[index] : null;
+
+        return mediaPart;
+    }
+}
+
+@helper CreateImgFromMediaPart(dynamic mediaPart)
+{
+    var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
+    var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
+    <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: imgSrc)">
+}
+
+@{
+    var items = (Model.ContentItems as IEnumerable<ContentItem>);
+    var cssClass = items.First().TypeDefinition.Name.HtmlClassify();
+    <div class="@cssClass">
+        <div class="row">
+            @foreach (ContentItem item in items)
+            {
+                var itemDisplayUrl = Url.ItemDisplayUrl(item);
+                // get the mainPart, so we can access the item's fields
+                dynamic mainPart = GetMainPartFromContentItem(item);
+                var mediaPart = GetMediaPartFromMediaLibraryPickerField(mainPart.Image, 0);
+                var shortTitle = mainPart.ShortTitle.Value;
+                var summary = mainPart.Summary.Value;
+                // keep in mind that our theme has a grid with 36 columns
+                <div class="col-md-6">
+                    @CreateImgFromMediaPart(mediaPart)
+                    <h6>@shortTitle</h6>
+                    <p>@summary</p>
+                    <a href="@itemDisplayUrl">View</a>
+                </div>
+            }
+        </div>
+    </div>
+}
