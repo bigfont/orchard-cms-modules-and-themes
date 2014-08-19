@@ -16,11 +16,10 @@
 
     dynamic GetMediaPartFromMediaLibraryPickerField(dynamic field, int index = 0)
     {
-        var mediaPart = field != null &&
+        return field != null &&
             field.MediaParts != null &&
             field.MediaParts.Count >= index ?
-            field.MediaParts[index] : null;
-        return mediaPart;
+            field.MediaParts[index] : null;        
     }
 }
 
