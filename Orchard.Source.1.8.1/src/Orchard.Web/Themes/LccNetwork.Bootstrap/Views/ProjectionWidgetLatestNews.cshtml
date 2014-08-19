@@ -19,7 +19,7 @@
         // get the mediaPart at index in the media library picker field
         return field != null &&
             field.MediaParts != null &&
-            field.MediaParts.Count >= index ?
+            field.MediaParts.Count > index ?
             field.MediaParts[index] : null;        
     }
 }
