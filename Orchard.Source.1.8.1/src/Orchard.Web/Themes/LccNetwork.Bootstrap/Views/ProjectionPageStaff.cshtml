@@ -1,0 +1,33 @@
+﻿@using System.Dynamic;
+@using System.Linq;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+
+@functions
+{
+    dynamic GetMainPartFromContentItem(ContentItem item)
+    {
+        // get the ContentPart that has the same name as the ContentItem's ContentType
+        // so that we can access the ContentItems fields.
+        var contentType = item.TypeDefinition.Name;
+        var parts = item.Parts as List<Orchard.ContentManagement.ContentPart>;
+        dynamic mainPart = parts.First(p => p.PartDefinition.Name.Equals(contentType));
+        return mainPart;
+    }
+}
+
+@{
+    var contentItems = (Model.ContentItems as IEnumerable<ContentItem>);
+    var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
+
+    <ul>
+        @foreach (ContentItem item in contentItems)
+        {
+        
+        }
+
+    </ul>
+
+
+
+}
