@@ -7,12 +7,11 @@
 {
     dynamic GetMainPartFromContentItem(ContentItem item)
     {
-        // get the ContentPart that has the same name as the ContentItem's ContentType
-        // so that we can access the ContentItems fields.
+        // get the ContentPart that has the same name as the item's ContentType
+        // so that we can access the item fields.
         var contentType = item.TypeDefinition.Name;
-        var parts = item.Parts as List<Orchard.ContentManagement.ContentPart>;
-        dynamic mainPart = parts.First(p => p.PartDefinition.Name.Equals(contentType));
-        return mainPart;
+        var parts = item.Parts as List<ContentPart>;
+        return parts.First(p => p.PartDefinition.Name.Equals(contentType));        return mainPart;
     }
 
     dynamic GetMediaPartFromMediaLibraryPickerField(dynamic field, int index = 0)
@@ -21,7 +20,6 @@
             field.MediaParts != null &&
             field.MediaParts.Count >= index ?
             field.MediaParts[index] : null;
-
         return mediaPart;
     }
 }

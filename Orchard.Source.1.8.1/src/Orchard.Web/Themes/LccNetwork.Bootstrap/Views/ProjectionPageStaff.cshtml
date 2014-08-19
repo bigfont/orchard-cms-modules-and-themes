@@ -10,7 +10,7 @@
         // get the ContentPart that has the same name as the ContentItem's ContentType
         // so that we can access the ContentItems fields.
         var contentType = item.TypeDefinition.Name;
-        var parts = item.Parts as List<Orchard.ContentManagement.ContentPart>;
+        var parts = item.Parts as List<ContentPart>;
         dynamic mainPart = parts.First(p => p.PartDefinition.Name.Equals(contentType));
         return mainPart;
     }
@@ -23,9 +23,14 @@
     <ul>
         @foreach (ContentItem item in contentItems)
         {
-        
+            var itemDisplayUrl = Url.ItemDisplayUrl(item);
+            // get the mainPart, so we can access the item's fields
+            dynamic mainPart = GetMainPartFromContentItem(item);
+            var firstName = mainPart.FirstName.Value;
+            <li>
+                <p>@firstName</p>
+            </li>
         }
-
     </ul>
 
 
