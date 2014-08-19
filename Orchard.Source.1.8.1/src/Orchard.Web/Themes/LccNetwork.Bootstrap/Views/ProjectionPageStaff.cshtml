@@ -13,6 +13,15 @@
         var parts = item.Parts as List<ContentPart>;
         return parts.First(p => p.PartDefinition.Name.Equals(contentType));  
     }
+
+    dynamic GetTermPartFromTaxonomyField(dynamic field, int index = 0)
+    {
+        // get the termPart at index in the taxonomy field
+        return field !=null &&
+            field.Terms != null &&
+            field.Terms.Count > index ? 
+            field.Terms[index] : null;
+    }
 }
 
 @{
@@ -29,9 +38,10 @@
             var lastName = mainPart.LastName.Value;
             var position = mainPart.Position.Value;
             var email = mainPart.Email.Value;
-            //var associatedLcc = mainPart.
+            var lccTermPart = GetTermPartFromTaxonomyField(mainPart.Lcc);
+            var associatedLcc = lccTermPart != null ? lccTermPart.Name : string.Empty;
             <li>
-                <p>@firstName @lastName @position</p>
+                <p>@firstName @lastName @position @email @associatedLcc</p>
             </li>
         }
     </ul>
