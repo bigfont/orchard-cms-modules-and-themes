@@ -3,29 +3,30 @@
 @import 'Bootstrap/less/variables.less';
 @import 'Bootstrap/less/mixins.less';
 @import 'Bootstrap/less/utilities.less';
+@import 'Bootstrap/less/buttons.less';
 @import 'Bootstrap/less/grid.less';
 
+// theme
 @green: #a9d157;
 @orange: #DA8639;
 @brown: #685046;
 @white: white;
 @gray: #D2DABC;
 @blue: #48AFD2;
+@img-directory: 'Theme/Imgs/';
 
-// site
-@import "Site/Less/_mixins.less";
-@import "Site/Less/_workitem-carousel.less";
+@import "Theme/Less/_mixins.less";
+@import "Theme/Less/_workitem-carousel.less";
 
 body {
-    background: url('Site/Imgs/banner_graphic.jpg') no-repeat;
+    background: url('@{img-directory}banner_graphic.jpg') no-repeat;
     background-position: 50% 0;
-    padding-top: 65px;    
-    margin:auto;
+    padding-top: 65px;
+    margin: auto;
 }
 
-div#layout-wrapper
-{
-    max-width:1104px; // this isn't important... it supports the original look and feel
+div#layout-wrapper {
+    max-width: 1104px; // this isn't important... it supports the original look and feel
 }
 
 div#layout-navigation.group {
@@ -45,7 +46,7 @@ div#layout-navigation.group {
                     margin-left: -15px;
 
                     a.navbar-brand {
-                        background-image: url('Site/Imgs/lcc-logo.png');
+                        background-image: url('@{img-directory}lcc-logo.png');
                         background-repeat: no-repeat;
                         width: 400px;
                         height: 120px;
@@ -56,6 +57,7 @@ div#layout-navigation.group {
                         padding: 0;
                         margin: 0;
                         float: left;
+                        max-width: 100%;
                     }
                 }
 
@@ -78,6 +80,84 @@ div#layout-navigation.group {
     background: @brown;
 
     .zone-featured {
+
+        .widget-compelling-link {
+            .make-md-column(12);
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            p.text-field-lead {
+                color: @orange;
+                font-size: @font-size-large;
+            }
+
+            p.text-field-message {
+                color: @white;
+                font-size: @font-size-base;
+            }
+
+            p.link-field-action {
+                position: absolute;
+                top: 20px;
+                left: 150px;
+
+                a {
+                    .btn;
+                    .btn-warning;
+                    background-color: @orange;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .widget-social-networking {
+
+            .make-md-column(12);
+
+            p {
+                float: left;
+            }
+
+            p.link-field > span > a {
+                background-repeat: no-repeat;
+                background-size: contain;
+                overflow: hidden;
+                display: block;
+                width: 28px;
+                height: 28px;
+                color: transparent;
+                margin: 0;
+                padding: 0;
+            }
+
+            p.link-field-flickr a {
+                background-image: url('@{img-directory}icon_flickr.png');
+            }
+
+            p.link-field-facebook a {
+                background-image: url('@{img-directory}icon_fb.png');
+            }
+
+            p.link-field-twitter a {
+                background-image: url('@{img-directory}icon_twitter.png');
+            }
+
+            p.link-field-r-s-s a {
+                background-image: url('@{img-directory}icon_rss.png');
+            }
+        }
+
+        .widget-search-form {
+            .make-md-column(12);            
+        }
+
+        .widget-carousel {
+            .make-md-column(36);
+        }
 
         .widget {
             padding-top: 20px;
@@ -122,44 +202,44 @@ div#layout-navigation.group {
     }
 }
 
-.widget-before-content,
-.widget-content {
-    padding: 25px 0; // horizontal padding will sometime be overrided by make-column
-    > header {
-        border-top: thin solid @brown;
-        border-bottom: thin solid @brown;
-        margin: 0 5px 10px 5px;
+#layout-main-container {
+    padding: 0; // exception to the [id^="layout-"] rule
+    .widget-before-content,
+    .widget-content {
+        padding: 25px 0; // horizontal padding will sometime be overrided by make-column
+        > header {
+            border-top: thin solid @brown;
+            border-bottom: thin solid @brown;
+            margin: 0 5px 10px 5px;
 
-        h1, h1 > small {
-            // reset
-            margin: 0;
-            padding: 0;
-            color: @brown;
-            font-weight: bolder;
-            text-transform: uppercase;
+            h1, h1 > small {
+                // reset
+                margin: 0;
+                padding: 0;
+                color: @brown;
+                font-weight: bolder;
+                text-transform: uppercase;
 
-            small {
-                font-weight: bold;
-                font-size: @font-size-base;
-                line-height: 26px;
+                small {
+                    font-weight: bold;
+                    font-size: @font-size-base;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        [class$="-projection"] {
+            margin: 0 5px 0 5px;
+
+            h6 {
+                color: @orange;
+                font-weight: bolder;
+                text-transform: uppercase;
+                margin: 4px 0;
             }
         }
     }
 
-    [class$="-projection"] {
-        margin: 0 5px 0 5px;
-
-        h6 {
-            color: @orange;
-            font-weight: bolder;
-            text-transform: uppercase;            
-            margin: 4px 0;
-        }
-    }
-}
-
-#layout-main-container {
-    padding: 0; // exception to the [id^="layout-"] rule
     #layout-main.group { // is a row from base theme
         background: @gray;
 
@@ -191,8 +271,8 @@ div#layout-navigation.group {
                                 font-size: @font-size-base;
                                 font-weight: @headings-font-weight;
                                 color: @brown;
-                                .link-arrow-right(@brown); 
-                            } 
+                                .link-arrow-right(@brown);
+                            }
                         }
                         //
                         // lastest news

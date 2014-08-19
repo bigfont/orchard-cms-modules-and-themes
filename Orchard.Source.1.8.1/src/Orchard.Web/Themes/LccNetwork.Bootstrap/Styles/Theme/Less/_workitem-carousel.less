@@ -1,0 +1,159 @@
+﻿.carousel {
+
+    .carousel-indicators {
+        bottom: 0;
+        display: table;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        div,
+        div.active {
+            float: left;
+            width: 25%;
+            overflow: hidden;
+            background-color: none;
+            height: auto;
+        }
+    }
+
+    .carousel-inner {
+        padding: 0;
+
+        > .item {
+
+            > img {
+                width: 100%;
+            }
+
+            > .carousel-caption {
+                background-color: rgba(0,0,0,0.5);
+                font-size: @font-size-small;
+                left: auto;
+                padding: 0;
+                right: 0;
+                text-align: left;
+                top: 0;
+
+                > h3 {
+                    color: @green;
+                    font-size: @font-size-small;
+                    font-weight: bolder;
+                    line-height: 1em;
+                    margin: 0;
+                    padding: 0;
+                    text-transform: none;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                }
+
+                > a {
+                    .link-arrow-right(@orange);
+                    color: @orange;
+                    display: block;
+                    font-size: @font-size-small;
+                    font-weight: bolder;
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: @container-desktop) {
+
+    @carousel-width: 935px;
+    @carousel-height: 379px;
+    @carousel-indicators-width: 200px;
+    @carousel-inner-width: @carousel-width - @carousel-indicators-width;
+    @carousel-caption-width: 250px;
+    @carousel-base-padding: 20px;
+
+    .carousel {
+        width: @carousel-width;
+        margin: auto;
+        clear: both;
+
+        .carousel-indicators,
+        .carousel-inner,
+        .carousel-inner img,
+        .carousel-caption {
+            height: @carousel-height;
+        }
+
+        .carousel-indicators {
+            background: @green;
+            left: 0;
+            list-style: none;
+            margin: 0;
+            text-align: center;
+            top: 0;
+            width: @carousel-indicators-width;
+
+            div,
+            div.active {
+                background: transparent;
+                display: block;
+                float: none;
+                height: auto;
+                margin-top: @carousel-base-padding;
+                width: auto;
+            }
+        }
+
+        .carousel-inner {
+            left: @carousel-indicators-width;
+            width: @carousel-inner-width;
+
+            > .item {
+
+                > img {
+                    width: @carousel-inner-width;
+                }
+
+                > .carousel-caption {
+                    left: auto;
+                    margin: 0;
+                    padding: @carousel-base-padding;
+                    right: 0;
+                    text-align: left;
+                    top: 0;
+                    width: @carousel-caption-width;
+
+                    > h3 {
+                        font-weight: bolder;
+                        font-size: 2.1em;
+                        line-height: 1.1em;
+                        margin: 0;
+                        text-transform: none;
+                        margin-bottom: @carousel-base-padding / 2;
+
+                        > a {
+                            color: @green;
+                        }
+                    }
+
+                    a:hover {
+                        text-decoration: none;
+                    }
+
+                    > a {
+                        display: block;
+                        color: @orange;
+                        margin: 0;
+                        margin-top: @carousel-base-padding / 1.5;
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-weight: bolder;
+                        .link-arrow-right(@orange);
+                    }
+                }
+            }
+        }
+    }
+}

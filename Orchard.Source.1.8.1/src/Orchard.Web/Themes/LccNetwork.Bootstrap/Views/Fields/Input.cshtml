@@ -1,0 +1,10 @@
+﻿@using Orchard.Fields.Settings;
+@using Orchard.Utility.Extensions;
+@{
+    string value = (string)Model.ContentField.Value;
+    string name = (string)Model.ContentField.DisplayName;
+    if (!string.IsNullOrEmpty(value))
+    {
+        <p class="text-field text-field-@name.HtmlClassify()">@value</p>
+    }
+}
