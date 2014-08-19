@@ -7,12 +7,11 @@
 {
     dynamic GetMainPartFromContentItem(ContentItem item)
     {
-        // get the ContentPart that has the same name as the ContentItem's ContentType
-        // so that we can access the ContentItems fields.
+        // get the ContentPart that has the same name as the item's ContentType
+        // so that we can access the item fields.
         var contentType = item.TypeDefinition.Name;
         var parts = item.Parts as List<ContentPart>;
-        dynamic mainPart = parts.First(p => p.PartDefinition.Name.Equals(contentType));
-        return mainPart;
+        return parts.First(p => p.PartDefinition.Name.Equals(contentType));  
     }
 }
 
@@ -27,8 +26,12 @@
             // get the mainPart, so we can access the item's fields
             dynamic mainPart = GetMainPartFromContentItem(item);
             var firstName = mainPart.FirstName.Value;
+            var lastName = mainPart.LastName.Value;
+            var position = mainPart.Position.Value;
+            var email = mainPart.Email.Value;
+            //var associatedLcc = mainPart.
             <li>
-                <p>@firstName</p>
+                <p>@firstName @lastName @position</p>
             </li>
         }
     </ul>

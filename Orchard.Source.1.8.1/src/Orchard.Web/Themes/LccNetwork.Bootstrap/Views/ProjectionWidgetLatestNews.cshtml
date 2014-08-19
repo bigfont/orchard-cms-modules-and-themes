@@ -11,7 +11,7 @@
         // so that we can access the item fields.
         var contentType = item.TypeDefinition.Name;
         var parts = item.Parts as List<ContentPart>;
-        return parts.First(p => p.PartDefinition.Name.Equals(contentType));        return mainPart;
+        return parts.First(p => p.PartDefinition.Name.Equals(contentType));
     }
 
     dynamic GetMediaPartFromMediaLibraryPickerField(dynamic field, int index = 0)
