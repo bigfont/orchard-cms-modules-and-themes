@@ -101,7 +101,7 @@
     <Content Include="Views\ProjectionPageEvents.cshtml" />
     <Content Include="Views\ProjectionPageFunding.cshtml" />
     <Content Include="Views\ProjectionPageCouncilMeetings.cshtml" />
-    <Content Include="Views\ProjectionPageNews.cshtml" />
+    <Content Include="Views\ProjectionPageNewsItems.cshtml" />
     <Content Include="Views\ProjectionPageResources.cshtml" />
     <Content Include="Views\ProjectionPageStaff.cshtml" />
     <Content Include="Views\ProjectionWidgetLatestNews.cshtml" />
@@ -111,7 +111,6 @@
     <Content Include="Views\Widget.Wrapper.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\Functions.cs" />
     <Compile Include="Extensions\MyFunctions.cs" />
   </ItemGroup>
   <PropertyGroup>

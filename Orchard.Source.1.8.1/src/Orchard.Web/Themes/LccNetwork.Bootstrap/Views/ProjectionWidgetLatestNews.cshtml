@@ -4,13 +4,6 @@
 @using Orchard.Utility.Extensions;
 @using LccNetwork.Bootstrap.Extensions;
 
-@helper CreateImgFromMediaPart(dynamic mediaPart)
-{
-    // todo Share this with other razor views.
-    var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
-    var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
-    <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: imgSrc)">
-}
 @{
     var items = (Model.ContentItems as IEnumerable<ContentItem>);
     var cssClass = items.First().TypeDefinition.Name.HtmlClassify();
@@ -24,9 +17,13 @@
                 var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Image, 0);
                 var shortTitle = mainPart.ShortTitle.Value;
                 var summary = mainPart.Summary.Value;
+                var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
+                var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
+
                 // keep in mind that our theme has a grid with 36 columns
                 <div class="col-md-6">
-                    @CreateImgFromMediaPart(mediaPart)
+                    <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "max", Alignment: "middlecenter", Path: imgSrc)">
+
                     <h6>@shortTitle</h6>
                     <p>@summary</p>
                     <a href="@itemDisplayUrl">View</a>

@@ -1,0 +1,34 @@
+﻿@using System.Dynamic;
+@using System.Linq;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+@using LccNetwork.Bootstrap.Extensions;
+
+@{
+    var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
+    var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
+
+    <ul class="list-unstyled @cssClass">
+        @foreach (dynamic item in contentItems)
+        {
+            var itemDisplayUrl = Url.ItemDisplayUrl((IContent)item);
+            // get the mainPart, so we can access the item's fields
+            dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
+            // get the fields
+            var date = mainPart.Date.DateTime.ToString("MMMM d, yyyy");
+            var learnMoreUrl = mainPart.LearnMoreField.Value;
+            var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Image);
+            var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
+            var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
+            var body = item.BodyPart.Text;
+
+            <li class="clearfix">
+                <h3>@item.TitlePart.Title</h3>
+                <h4>@date</h4>
+                <img src="@Display.ResizeMediaUrl(Width: 475, Height: 320, Mode: "max", Alignment: "middlecenter", Path: imgSrc)">
+                @Html.Raw(body)
+                <a class="pull-left" href="@learnMoreUrl">Learn more</a>
+            </li>
+        }
+    </ul>
+}
