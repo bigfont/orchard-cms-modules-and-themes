@@ -1,9 +1,31 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
+﻿@using System.Dynamic;
+@using System.Linq;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+@using LccNetwork.Bootstrap.Extensions;
 
-</body>
-</html>
+@{
+    var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
+    var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
+
+    <ul class="list-unstyled @cssClass">
+        @foreach (dynamic item in contentItems)
+        {
+            var itemDisplayUrl = Url.ItemDisplayUrl((IContent)item);
+            // get the mainPart, so we can access the item's fields
+            dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
+            // get the fields
+            var date = mainPart.DueDate.DateTime.ToString("MMMM d, yyyy");
+            var learnMoreUrl = mainPart.Link.Value; // todo - change this field name to LearnMore
+            var title = item.TitlePart.Title;
+            var body = item.BodyPart.Text;
+
+            <li class="clearfix">
+                <h3><a href="@learnMoreUrl">@title</a></h3>
+                <h4>Due: @date</h4>                
+                @Html.Raw(body)
+                <a class="pull-left" href="@learnMoreUrl">Learn more</a>
+            </li>
+        }
+    </ul>
+}

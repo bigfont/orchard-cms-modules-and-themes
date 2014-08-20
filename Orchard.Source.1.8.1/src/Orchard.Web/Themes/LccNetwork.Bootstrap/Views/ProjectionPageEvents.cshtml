@@ -17,18 +17,15 @@
             // get the fields
             var startDate = mainPart.StartDate.DateTime.ToString("MMMM d, yyyy");
             var endDate = mainPart.EndDate.DateTime.ToString("MMMM d, yyyy");
+            var city = mainPart.City.Value;
+            var state = mainPart.State.Value;
             var learnMoreUrl = mainPart.LearmMore.Value; // todo - fix spelling error in learm
             var title = item.TitlePart.Title;
-            var body = item.BodyPart.Text;
-
-            //StartDate;
-            //EndDate;
-            //City;
-            //State;
+            var body = item.BodyPart.Text;            
 
             <li class="clearfix">
                 <h3>@title</h3>
-                <h4>@startDate - @endDate</h4>
+                <h4>@startDate - @endDate @city, @state</h4>
                 @Html.Raw(body)
                 <a class="pull-left" href="@learnMoreUrl">Learn more</a>
             </li>
