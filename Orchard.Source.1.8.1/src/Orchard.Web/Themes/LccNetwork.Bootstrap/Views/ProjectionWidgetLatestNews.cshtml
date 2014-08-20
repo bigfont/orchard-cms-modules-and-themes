@@ -2,35 +2,15 @@
 @using System.Linq;
 @using Orchard.ContentManagement;
 @using Orchard.Utility.Extensions;
-
-@functions
-{
-    dynamic GetMainPartFromContentItem(ContentItem item)
-    {
-        // get the ContentPart that has the same name as the item's ContentType
-        // so that we can access the item fields.
-        var contentType = item.TypeDefinition.Name;
-        var parts = item.Parts as List<ContentPart>;
-        return parts.First(p => p.PartDefinition.Name.Equals(contentType));
-    }
-
-    dynamic GetMediaPartFromMediaLibraryPickerField(dynamic field, int index = 0)
-    {
-        // get the mediaPart at index in the media library picker field
-        return field != null &&
-            field.MediaParts != null &&
-            field.MediaParts.Count > index ?
-            field.MediaParts[index] : null;        
-    }
-}
+@using LccNetwork.Bootstrap.Extensions;
 
 @helper CreateImgFromMediaPart(dynamic mediaPart)
 {
+    // todo Share this with other razor views.
     var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
     var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
     <img src="@Display.ResizeMediaUrl(Width: 116, Height: 65, Mode: "crop", Alignment: "middlecenter", Path: imgSrc)">
 }
-
 @{
     var items = (Model.ContentItems as IEnumerable<ContentItem>);
     var cssClass = items.First().TypeDefinition.Name.HtmlClassify();
@@ -40,8 +20,8 @@
             {
                 var itemDisplayUrl = Url.ItemDisplayUrl(item);
                 // get the mainPart, so we can access the item's fields
-                dynamic mainPart = GetMainPartFromContentItem(item);
-                var mediaPart = GetMediaPartFromMediaLibraryPickerField(mainPart.Image, 0);
+                dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
+                var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Image, 0);
                 var shortTitle = mainPart.ShortTitle.Value;
                 var summary = mainPart.Summary.Value;
                 // keep in mind that our theme has a grid with 36 columns
