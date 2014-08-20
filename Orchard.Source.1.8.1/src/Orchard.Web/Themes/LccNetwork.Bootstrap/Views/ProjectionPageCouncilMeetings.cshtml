@@ -1,0 +1,25 @@
+﻿@using System.Dynamic;
+@using System.Linq;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+@using LccNetwork.Bootstrap.Extensions;
+
+@{
+    var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
+    var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
+
+    foreach (dynamic item in contentItems)
+    {
+        var itemDisplayUrl = Url.ItemDisplayUrl((IContent)item);
+        // get the mainPart, so we can access the item's fields
+        dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
+        // get the fields
+        var date = mainPart.StartDate.DateTime.ToString("MMMM d - d, yyyy");
+        
+        <h3>@item.TitlePart.Title</h3>
+        <ul class="list-unstyled">
+            <li>@date</li>
+            <li><a href="@itemDisplayUrl">View meeting details</a></li>
+        </ul>                
+    }
+}

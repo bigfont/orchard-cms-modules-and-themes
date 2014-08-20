@@ -100,7 +100,7 @@
     <Content Include="Views\Branding.cshtml" />
     <Content Include="Views\ProjectionPageEvents.cshtml" />
     <Content Include="Views\ProjectionPageFunding.cshtml" />
-    <Content Include="Views\ProjectionPageMeetings.cshtml" />
+    <Content Include="Views\ProjectionPageCouncilMeetings.cshtml" />
     <Content Include="Views\ProjectionPageNews.cshtml" />
     <Content Include="Views\ProjectionPageResources.cshtml" />
     <Content Include="Views\ProjectionPageStaff.cshtml" />
