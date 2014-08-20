@@ -1,11 +1,5 @@
 <Placement>
 
-  <Match Path="/">
-    <Match ContentType="Page">
-      <Place Parts_Title="-"/>
-      <Place Parts_Common_Metadata="-"/>
-      <Place Parts_Common_Body="-"/>
-    </Match>
-  </Match>
-  
+  <Place Parts_Common_Metadata="-"/>
+
 </Placement>
