@@ -20,10 +20,11 @@
             var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Image);
             var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
             var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
+            var title = item.TitlePart.Title;
             var body = item.BodyPart.Text;
 
             <li class="clearfix">
-                <h3>@item.TitlePart.Title</h3>
+                <h3>@title</h3>
                 <h4>@date</h4>
                 <img src="@Display.ResizeMediaUrl(Width: 475, Height: 320, Mode: "max", Alignment: "middlecenter", Path: imgSrc)">
                 @Html.Raw(body)
