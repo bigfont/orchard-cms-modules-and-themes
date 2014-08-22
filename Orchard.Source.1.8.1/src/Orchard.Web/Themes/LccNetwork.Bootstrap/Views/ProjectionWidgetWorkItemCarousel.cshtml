@@ -1,4 +1,5 @@
 ﻿@using Orchard.ContentManagement;
+@using LccNetwork.Bootstrap.Extensions;
 
 @{
     var contentItems = Model.ContentItems;
@@ -27,10 +28,7 @@
         };
 
         // image
-        var mediaPart =
-            workItemPart.Image != null &&
-            workItemPart.Image.MediaParts != null &&
-            workItemPart.Image.MediaParts.Count > 0 ? workItemPart.Image.MediaParts[0] : null;
+        var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(workItemPart.Image);
         carouselItem.Img = new
         {
             Alt = mediaPart != null ? mediaPart.AlternateText : null,
@@ -54,29 +52,28 @@
     }
 }
 
-@helper CreateCarouselIndicators(List<dynamic> items, long carouselUniqueId, int width, int height)
+@helper CreateCarouselIndicators(List<dynamic> items, long carouselUniqueId, int width)
 {
     <div class="carousel-indicators">
         @for (var i = 0; i < items.Count; ++i)
         {
             var item = items[i];
             <div data-target="#@carouselUniqueId" data-slide-to="@i" class="@(i == 0 ? "active" : string.Empty)">
-                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
+                <img src="@Display.ResizeMediaUrl(Width: width, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
                      alt="@item.Img.Alt">
             </div>
         }
     </div>
 }
 
-@helper CreateCarouselItems(List<dynamic> items, int width, int height)
+@helper CreateCarouselItems(List<dynamic> items)
 {
     <div class="carousel-inner">
         @for (var i = 0; i < items.Count; ++i)
         {
             var item = items[i];
             <div class="item @(i == 0 ? "active" : string.Empty)">
-                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
-                     alt="@item.Img.Alt">
+                <img src="@item.Img.Src" alt="@item.Img.Alt">
                 <div class="carousel-caption">
                     <h3><a href="@item.WorkArea.Slug">@item.WorkArea.Term</a></h3>
                     @Html.Raw(item.WorkItem.Summary)
@@ -89,7 +86,7 @@
 
 <div id="@carouselUniqueId" class="carousel slide" data-ride="carousel">
 
-    @CreateCarouselIndicators(carouselItems, carouselUniqueId, 129, 65)
-    @CreateCarouselItems(carouselItems, 735, 379)
+    @CreateCarouselIndicators(carouselItems, carouselUniqueId, 100)
+    @CreateCarouselItems(carouselItems)
 
 </div>
