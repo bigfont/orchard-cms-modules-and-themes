@@ -1,37 +1,19 @@
 ﻿@using Orchard.ContentManagement;
+@using LccNetwork.Bootstrap.Extensions;
 
 @{
     var contentItems = Model.ContentItems;
     var cssClass = "spotlight-projection";
     dynamic firstItem = System.Linq.Enumerable.First(contentItems);
-
     var spotlightPart = firstItem.Spotlight;
-    var mediaPart =
-        spotlightPart.Image != null &&
-        spotlightPart.Image.MediaParts != null &&
-        spotlightPart.Image.MediaParts.Count > 0 ? spotlightPart.Image.MediaParts[0] : null;
-
-    var viewModel = new
-    {
-        Title = firstItem.TitlePart.Title,
-        Body = firstItem.BodyPart.Text,
-        // note: user external links
-        Link = new
-        {
-            Value = spotlightPart.LearnMoreField.Value,
-            Text = "Continue Reading" // spotlightPart.LearnMoreField.Text
-        },
-        Img = new
-        {
-            Src = mediaPart != null ? mediaPart.MediaUrl : null,
-            Alt = mediaPart != null ? mediaPart.AlternateText : null
-        }
-    };
+    
+    var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(spotlightPart.Image);
+    ViewBag.ResizedThumbnailWidth = 200;
 }
 
 <div class="@cssClass">
-    <h6><a href="@viewModel.Link.Value">@viewModel.Title</a></h6>
-    <img src="@Display.ResizeMediaUrl(Width: 200, Height: 120, Mode: "crop", Alignment: "middlecenter", Path: viewModel.Img.Src)">
-    @Html.Raw(viewModel.Body)
-    <a href="@viewModel.Link.Value">@viewModel.Link.Text</a>
+    <h6><a href="@spotlightPart.LearnMoreField.Value">@firstItem.TitlePart.Title</a></h6>
+    @Display(BuildDisplay(mediaPart, "ResizedThumbnail"))
+    @Html.Raw(firstItem.BodyPart.Text)
+    <a href="@spotlightPart.LearnMoreField.Value">Continue Reading</a>
 </div>

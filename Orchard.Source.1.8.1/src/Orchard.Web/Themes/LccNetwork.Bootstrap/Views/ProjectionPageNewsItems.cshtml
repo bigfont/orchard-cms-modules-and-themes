@@ -17,16 +17,17 @@
             // get the fields
             var date = mainPart.Date.DateTime.ToString("MMMM d, yyyy");
             var learnMoreUrl = mainPart.LearnMoreField.Value;
+            
             var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Image);
-            var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
-            var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
+            ViewBag.ResizedThumbnailWidth = 200;
+            
             var title = item.TitlePart.Title;
             var body = item.BodyPart.Text;
 
             <li class="clearfix">
                 <h3>@title</h3>
                 <h4>@date</h4>
-                <img src="@Display.ResizeMediaUrl(Width: 475, Height: 320, Mode: "max", Alignment: "middlecenter", Path: imgSrc)">
+                @Display(BuildDisplay(mediaPart, "ResizedThumbnail"))
                 @Html.Raw(body)
                 <a class="pull-left" href="@learnMoreUrl">Learn more</a>
             </li>

@@ -101,6 +101,10 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.MediaLibrary\Orchard.MediaLibrary.csproj">
+      <Project>{73a7688a-5bd3-4f7e-adfa-ce36c5a10e3b}</Project>
+      <Name>Orchard.MediaLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Modules\Orchard.MediaProcessing\Orchard.MediaProcessing.csproj">
       <Project>{08191fcd-7258-4f19-95fb-aec3de77b2eb}</Project>
       <Name>Orchard.MediaProcessing</Name>
@@ -153,6 +157,12 @@
     <Content Include="Views\Parts\TermPart-LccsTerms.cshtml" />
     <Content Include="Views\Parts\TermPart-ResourcesTerm.cshtml" />
     <Content Include="Views\Parts\TermPart-WorkAreasTerm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\MyHelpers.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Media-Image.ResizedThumbnail.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

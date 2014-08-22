@@ -61,54 +61,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme.min.css">
-      <DependentUpon>Theme.less</DependentUpon>
-    </Content>
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\banner_graphic.jpg" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\icon_arrow_br.png" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\icon_arrow_or.png" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\icon_arrow_w.png" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\icon_fb.png" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\icon_flickr.png" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\icon_rss.png" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\icon_twitter.png" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Imgs\lcc-logo.png" />
-    <Content Include="LccNetwork.Bootstrap\Views\Branding.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\BadgeOfHonor.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Less\_mixins.less" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Boolean.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\DateTime.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Enumeration.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Input.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Link.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Numeric.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\buttons.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\scaffolding.less" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Link-facebook.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Link-flickr.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Link-rss.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Fields\Link-twitter.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageFunding.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageEvents.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageResources.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageCouncilMeetings.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageNewsItems.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageNewsletters.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Parts\TermPart-WorkAreasTerm.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Parts\TermPart-ResourcesTerm.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Parts\TermPart-LccsTerms.cshtml" />
-    <None Include="LccNetwork.Bootstrap\Views\ProjectionWidgetSpotlight.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Web.config" />
-    <Content Include="LccNetwork.Bootstrap\Scripts\Web.config" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Web.config" />
-    <Content Include="LccNetwork.Bootstrap\Content\Web.config" />
-    <Content Include="LccNetwork.Bootstrap\Theme.txt" />
-    <Content Include="LccNetwork.Bootstrap\Theme.png" />
-    <Content Include="LccNetwork.Bootstrap\Placement.info" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageStaff.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Bootstrap_3_1_1_SimpleBlog\ListShapeProvider.cs" />
     <Compile Include="Bootstrap_3_1_1_SimpleBlog\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="Bootstrap_3_1_1_SimpleBlog\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
@@ -459,19 +411,6 @@
     <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Debug\TempPE\" />
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Release\TempPE\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionWidgetWorkItemCarousel.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="LccNetwork.Bootstrap\Styles\Theme\Less\_workitem-carousel.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\grid.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\mixins.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\utilities.less" />
-    <Content Include="LccNetwork.Bootstrap\Styles\Bootstrap\less\variables.less" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionWidgetLatestNews.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\Widget.Wrapper.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionWidgetUpcomingEvents.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

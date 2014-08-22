@@ -11,33 +11,34 @@
     // and we want a collection of type "Work Item."
     // So, we cast Model.ContentItems to IEnumerable<dynamic>, so the compiler knows what to do with it
     // and then use Linq to select only its ContentItems
-    // and then turn it into a List<dynamic>, 
+    // and then turn it into a List<dynamic>,
     // and we use dynamic b/c we will be accessing the "Work Item" content parts
     List<dynamic> contentItems =
         (Model.ContentItems as IEnumerable<dynamic>)
         .Select(zh => zh.ContentItem)
         .ToList();
 
-        <ul class="list-unstyled">            
+        <ul class="list-unstyled">
             @foreach (dynamic item in contentItems)
             {
                 // case the Shape as an IContent, so we can retrieve its display Url
                 var itemDisplayUrl = Url.ItemDisplayUrl((IContent)item);
                 // get the mainPart, so we can access the Work Item's fields
                 var mainPart = MyFunctions.GetMainPartFromContentItem(item);
-                // get the fields                
+                // get the fields
+
                 var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Image);
-                var imgSrc = mediaPart != null ? mediaPart.MediaUrl : string.Empty;
-                var imgAlt = mediaPart != null ? mediaPart.AlternateText : string.Empty;
+                ViewBag.ResizedThumbnailWidth = 200;
+                
                 // access any parts
                 var title = item.TitlePart.Title;
-                var body = item.BodyPart.Text;                                                                                                
+                var body = item.BodyPart.Text;
                 // render
                 <li>
                     <h3>@title</h3>
-                    <img src="@Display.ResizeMediaUrl(Width: 475, Height: 320, Mode: "max", Alignment: "middlecenter", Path: imgSrc)">
+                    @Display(BuildDisplay(mediaPart, "ResizedThumbnail"))
                     @Html.Raw(body)
-                    <a href="@itemDisplayUrl">Learn More</a>                                        
+                    <a href="@itemDisplayUrl">Learn More</a>
                 </li>
             }
         </ul>

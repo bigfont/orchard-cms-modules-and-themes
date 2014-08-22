@@ -54,25 +54,6 @@
     }
 }
 
-@helper CreateCarouselItems(List<dynamic> items, int width, int height)
-{
-    <div class="carousel-inner">
-        @for (var i = 0; i < items.Count; ++i)
-        {
-            var item = items[i];
-            <div class="item @(i == 0 ? "active" : string.Empty)">
-                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "crop", Alignment: "middlecenter", Path: item.Img.Src)"
-                     alt="@item.Img.Alt">
-                <div class="carousel-caption">
-                    <h3><a href="@item.WorkArea.Slug">@item.WorkArea.Term</a></h3>
-                    @Html.Raw(item.WorkItem.Summary)
-                    <a href="@item.WorkItem.Slug">Learn More</a>
-                </div>
-            </div>
-        }
-    </div>
-}
-
 @helper CreateCarouselIndicators(List<dynamic> items, long carouselUniqueId, int width, int height)
 {
     <div class="carousel-indicators">
@@ -80,8 +61,27 @@
         {
             var item = items[i];
             <div data-target="#@carouselUniqueId" data-slide-to="@i" class="@(i == 0 ? "active" : string.Empty)">
-                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "crop", Alignment: "middlecenter", Path: item.Img.Src)"
+                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
                      alt="@item.Img.Alt">
+            </div>
+        }
+    </div>
+}
+
+@helper CreateCarouselItems(List<dynamic> items, int width, int height)
+{
+    <div class="carousel-inner">
+        @for (var i = 0; i < items.Count; ++i)
+        {
+            var item = items[i];
+            <div class="item @(i == 0 ? "active" : string.Empty)">
+                <img src="@Display.ResizeMediaUrl(Width: width, Height: height, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
+                     alt="@item.Img.Alt">
+                <div class="carousel-caption">
+                    <h3><a href="@item.WorkArea.Slug">@item.WorkArea.Term</a></h3>
+                    @Html.Raw(item.WorkItem.Summary)
+                    <a href="@item.WorkItem.Slug">Learn More</a>
+                </div>
             </div>
         }
     </div>

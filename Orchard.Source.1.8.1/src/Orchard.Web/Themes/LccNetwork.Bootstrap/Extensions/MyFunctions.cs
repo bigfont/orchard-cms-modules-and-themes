@@ -5,11 +5,22 @@ using System.Web;
 using System;
 using Orchard.ContentManagement;
 using Orchard.Utility.Extensions;
+using System.ComponentModel;
 
 namespace LccNetwork.Bootstrap.Extensions
 {
     public class MyFunctions
     {
+        public static dynamic ToDynamic(object value)
+        {
+            IDictionary<string, object> expando = new ExpandoObject();
+            foreach (PropertyDescriptor property in TypeDescriptor.GetProperties(value.GetType()))
+            {
+                expando.Add(property.Name, property.GetValue(value));
+            }
+            return expando as ExpandoObject;
+        }
+
         public static dynamic GetMainPartFromContentItem(ContentItem item)
         {
             // get the ContentPart that has the same name as the item's ContentType
