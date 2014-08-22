@@ -71,7 +71,19 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Styles\Bootstrap\less\variables.min.css">
+      <DependentUpon>variables.less</DependentUpon>
+    </Content>
     <Content Include="Styles\Theme.min.css" />
+    <Content Include="Styles\Theme\Imgs\banner_graphic.jpg" />
+    <Content Include="Styles\Theme\Imgs\icon_arrow_br.png" />
+    <Content Include="Styles\Theme\Imgs\icon_arrow_or.png" />
+    <Content Include="Styles\Theme\Imgs\icon_arrow_w.png" />
+    <Content Include="Styles\Theme\Imgs\icon_fb.png" />
+    <Content Include="Styles\Theme\Imgs\icon_flickr.png" />
+    <Content Include="Styles\Theme\Imgs\icon_rss.png" />
+    <Content Include="Styles\Theme\Imgs\icon_twitter.png" />
+    <Content Include="Styles\Theme\Imgs\lcc-logo.png" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -112,6 +124,35 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\MyFunctions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Bootstrap\less\buttons.less" />
+    <Content Include="Styles\Bootstrap\less\grid.less" />
+    <Content Include="Styles\Bootstrap\less\mixins.less" />
+    <Content Include="Styles\Bootstrap\less\scaffolding.less" />
+    <Content Include="Styles\Bootstrap\less\utilities.less" />
+    <Content Include="Styles\Bootstrap\less\variables.less" />
+    <Content Include="Styles\Theme\Imgs\Thumbs.db" />
+    <Content Include="Styles\Theme\Less\_mixins.less" />
+    <Content Include="Styles\Theme\Less\_workitem-carousel.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ProjectionPageNewsletters.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fields\Boolean.cshtml" />
+    <Content Include="Views\Fields\DateTime.cshtml" />
+    <Content Include="Views\Fields\Enumeration.cshtml" />
+    <Content Include="Views\Fields\Input.cshtml" />
+    <Content Include="Views\Fields\Link-facebook.cshtml" />
+    <Content Include="Views\Fields\Link-flickr.cshtml" />
+    <Content Include="Views\Fields\Link-rss.cshtml" />
+    <Content Include="Views\Fields\Link-twitter.cshtml" />
+    <Content Include="Views\Fields\Link.cshtml" />
+    <Content Include="Views\Fields\Numeric.cshtml" />
+    <Content Include="Views\Parts\TermPart-LccsTerms.cshtml" />
+    <Content Include="Views\Parts\TermPart-ResourcesTerm.cshtml" />
+    <Content Include="Views\Parts\TermPart-WorkAreasTerm.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

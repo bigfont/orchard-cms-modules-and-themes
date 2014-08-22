@@ -89,11 +89,15 @@
     <Content Include="LccNetwork.Bootstrap\Views\Fields\Link-flickr.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\Fields\Link-rss.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\Fields\Link-twitter.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageMeetings.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageFunding.cshtml" />
-    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageNews.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageEvents.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageResources.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageCouncilMeetings.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageNewsItems.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\ProjectionPageNewsletters.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\Parts\TermPart-WorkAreasTerm.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\Parts\TermPart-ResourcesTerm.cshtml" />
+    <Content Include="LccNetwork.Bootstrap\Views\Parts\TermPart-LccsTerms.cshtml" />
     <None Include="LccNetwork.Bootstrap\Views\ProjectionWidgetSpotlight.cshtml" />
     <Content Include="LccNetwork.Bootstrap\Web.config" />
     <Content Include="LccNetwork.Bootstrap\Scripts\Web.config" />

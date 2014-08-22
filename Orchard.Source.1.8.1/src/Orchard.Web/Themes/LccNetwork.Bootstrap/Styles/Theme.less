@@ -2,10 +2,10 @@
 // IMPORTANT
 // Theme.less uses a 36 column grid not the default bootstrap 12 column grid, 
 // because the LccNetwork layout requires smaller column increments.
+// So, if you want a column to span have the grid with, use col-md-18.
 // --------------------------------------------------
 
 // bootstrap
-
 @import 'Bootstrap/less/variables.less';
 @import 'Bootstrap/less/mixins.less';
 @import 'Bootstrap/less/utilities.less';
@@ -158,7 +158,7 @@ div#layout-navigation.group {
         }
 
         .widget-search-form {
-            .make-md-column(12);            
+            .make-md-column(12); // this is 1/3 of the grid width          
         }
 
         .widget-carousel {

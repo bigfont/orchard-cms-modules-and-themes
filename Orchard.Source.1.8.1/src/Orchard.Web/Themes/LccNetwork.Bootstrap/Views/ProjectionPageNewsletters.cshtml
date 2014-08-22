@@ -1,0 +1,22 @@
+﻿@using System.Dynamic;
+@using System.Linq;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+@using LccNetwork.Bootstrap.Extensions;
+
+@{
+    var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
+    var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
+
+    <ul class="list-unstyled @cssClass">
+        @foreach (dynamic item in contentItems)
+        {
+            var itemDisplayUrl = Url.ItemDisplayUrl((IContent)item);            
+            var title = item.TitlePart.Title;            
+
+            <li class="clearfix">
+                <h3><a href="@itemDisplayUrl">@title</a></h3>                
+            </li>
+        }
+    </ul>
+}
