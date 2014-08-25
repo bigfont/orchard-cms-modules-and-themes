@@ -4,35 +4,10 @@
 @using Orchard.Utility.Extensions;
 @using LccNetwork.Bootstrap.Extensions;
 
-@functions
-{
-    void SortContentItemsByAssociatedLcc(List<ContentItem> contentItems)
-    {
-        // sort by associated lcc
-        Comparison<ContentItem> comparison = (item1, item2) =>
-        {
-            // part
-            dynamic mainPart1 = MyFunctions.GetMainPartFromContentItem(item1);
-            dynamic mainPart2 = MyFunctions.GetMainPartFromContentItem(item2);
-            // term
-            var lccTermPart1 = MyFunctions.GetTermPartFromTaxonomyField(mainPart1.Lcc);
-            var lccTermPart2 = MyFunctions.GetTermPartFromTaxonomyField(mainPart2.Lcc);
-            // lcc
-            var associatedLcc1 = lccTermPart1 != null ? lccTermPart1.Name : string.Empty;
-            var associatedLcc2 = lccTermPart2 != null ? lccTermPart2.Name : string.Empty;
-
-            return string.Compare(associatedLcc1, associatedLcc2);
-
-        };
-
-        contentItems.Sort(comparison);
-    }
-}
-
 @{
     var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
     var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
-    SortContentItemsByAssociatedLcc(contentItems);
+    MyFunctions.SortContentItemsByAssociatedLcc(contentItems);
     var lastLcc = string.Empty;
     foreach (ContentItem item in contentItems)
     {
@@ -46,15 +21,17 @@
         var lccTermPart = MyFunctions.GetTermPartFromTaxonomyField(mainPart.Lcc);
         var associatedLcc = lccTermPart != null ? lccTermPart.Name : string.Empty;        
         if (!associatedLcc.Equals(lastLcc))
-        {
+        {            
             <h2>@associatedLcc</h2>
         }
         if (associatedLcc.Length == 0 && lastLcc.Length == 0)
         {
+            @* This is for staff without an associated LCC *@
             <p><a href="mailto:@email">@firstName @lastName</a> - <strong>@position</strong></p>
         }
         else
         {
+            @* This is for staff with an associated LCC *@
             <p><a href="mailto:@email">@firstName @lastName</a> - <span>@position</span></p>
         }
         lastLcc = associatedLcc;

@@ -1,0 +1,67 @@
+﻿@using System.Dynamic;
+@using System.Linq;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+@using LccNetwork.Bootstrap.Extensions;
+
+@helper Header(string lcc)
+{
+    <h2 data-toggle="collapse" data-target="#@lcc.HtmlClassify()">@lcc</h2>
+}
+
+@helper OpenList(string lcc)
+{
+    @: <ul id="@lcc.HtmlClassify()" class="collapse">
+    }
+
+@helper CloseList()
+{
+    @: </ul>
+    }
+
+@helper ListItem(string year, string url)
+{
+    <li>
+        <a href="@url">@year Annual Report</a>
+    </li>
+}
+
+@{
+    var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
+    var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
+    MyFunctions.SortContentItemsByAssociatedLcc(contentItems);
+    // loop flags
+    var lastLcc = string.Empty;
+    // loop
+    foreach (var item in contentItems)
+    {
+        var itemDisplayUrl = Url.ItemDisplayUrl(item);
+        // get the mainPart, so we can access the item's fields
+        dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
+        var lccTermPart = MyFunctions.GetTermPartFromTaxonomyField(mainPart.Lcc);
+        var associatedLcc = lccTermPart != null ? lccTermPart.Name : string.Empty;
+        var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Document);
+        var year = mainPart.Year.Value;
+        // render        
+        if (!associatedLcc.Equals(lastLcc))
+        {
+            // for a new lcc, start a new list
+            if (item != contentItems.First())
+            {
+                // close the last list first
+                @CloseList()
+            }
+            // add the header and start the new list
+            @Header(associatedLcc)
+            @OpenList(associatedLcc)
+        }
+        // add the list item
+        @ListItem(year, mediaPart.MediaUrl)
+        if (item == contentItems.Last())
+        { 
+            // close the current list
+            @CloseList()
+        }
+        lastLcc = associatedLcc;
+    }
+}

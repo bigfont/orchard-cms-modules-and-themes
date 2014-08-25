@@ -7,6 +7,8 @@ using Orchard.ContentManagement;
 using Orchard.Utility.Extensions;
 using System.ComponentModel;
 
+// these aren't really extention methods
+// because they don't take 'this' as the first argument
 namespace LccNetwork.Bootstrap.Extensions
 {
     public class MyFunctions
@@ -21,10 +23,32 @@ namespace LccNetwork.Bootstrap.Extensions
             return expando as ExpandoObject;
         }
 
+        public static void SortContentItemsByAssociatedLcc(List<ContentItem> contentItems)
+        {
+            // sort by associated lcc
+            Comparison<ContentItem> comparison = (item1, item2) =>
+            {
+                // part
+                dynamic mainPart1 = MyFunctions.GetMainPartFromContentItem(item1);
+                dynamic mainPart2 = MyFunctions.GetMainPartFromContentItem(item2);
+                // term
+                var lccTermPart1 = MyFunctions.GetTermPartFromTaxonomyField(mainPart1.Lcc);
+                var lccTermPart2 = MyFunctions.GetTermPartFromTaxonomyField(mainPart2.Lcc);
+                // lcc
+                var associatedLcc1 = lccTermPart1 != null ? lccTermPart1.Name : string.Empty;
+                var associatedLcc2 = lccTermPart2 != null ? lccTermPart2.Name : string.Empty;
+
+                return string.Compare(associatedLcc1, associatedLcc2);
+            };
+
+            contentItems.Sort(comparison);
+        }
+
         public static dynamic GetMainPartFromContentItem(ContentItem item)
         {
-            // get the ContentPart that has the same name as the item's ContentType
+            // Get the ContentPart that has the same name as the item's ContentType
             // so that we can access the item fields.
+            // This method just avoids having to use the .ContentTypeName notation that I found annoying.
             var contentType = item.TypeDefinition.Name;
             var parts = item.Parts as List<ContentPart>;
             return parts.First(p => p.PartDefinition.Name.Equals(contentType));
