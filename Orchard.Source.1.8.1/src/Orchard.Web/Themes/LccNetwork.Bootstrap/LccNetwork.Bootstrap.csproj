@@ -194,6 +194,12 @@
   <ItemGroup>
     <Content Include="Views\Fields\Common.Text.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\MenuWidget-FooterMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\MenuWidget-SectionMenu.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
