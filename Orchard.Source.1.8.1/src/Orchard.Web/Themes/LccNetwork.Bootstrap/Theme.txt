@@ -1,6 +1,6 @@
 Name: LccNetwork.Bootstrap
 Author: Shaun Luttin, EnviroIssues
 Website: http://www.lccnetwork.org
-Description: A highly specialized Bootstrap theme for the Lcc Network website.
-Version: 1.7
+Description: A specialized Bootstrap theme for the Lcc Network website.
+Version: 1.7.1
 BaseTheme: Bootstrap_3_1_1_Base

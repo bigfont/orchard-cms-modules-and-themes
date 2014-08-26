@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Exports\export-testData-20140730.xml" />
+    <Content Include="Content\Images\DOI_LCC_900_3_3.gif" />
     <Content Include="Recipes\lccnetwork-site-settings.recipe.xml" />
     <Content Include="Recipes\lccnetwork-data.recipe.xml" />
     <Content Include="Recipes\lccnetwork-metadata.recipe.xml" />
@@ -96,6 +97,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\FindAnLccController.cs" />
     <Compile Include="Drivers\HighlightableItemPartDriver.cs" />
     <Compile Include="Drivers\HighlightedItemPartDriver.cs" />
     <Compile Include="Handlers\HighlightableItemPartHandler.cs" />
@@ -105,10 +107,11 @@
     <Compile Include="Migrations\NavigationMigrations.cs" />
     <Compile Include="Models\HighlightableItemPart.cs" />
     <Compile Include="Models\HighlightedItemPart.cs" />
+    <Compile Include="Routes.cs" />
     <Compile Include="ViewModels\HighlightedItemPartViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <Content Include="Views\FindAnLcc\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Placement.info">
@@ -132,6 +135,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\MenuWidget-FooterMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,3 @@
+﻿
+- Avoid creating templates for content types. 
+- Instead, create templates for content parts (and fields) and change their order with placement.

@@ -2,19 +2,23 @@
 AntiForgery: enabled
 Author: Shaun Luttin
 Website: http://www.lccnetwork.org
-Version: 1.8
+Version: 1.9
 OrchardVersion: 1.8.1
 Description: A collection of modules for the LccNetwork site.
-Category: Content
-FeatureName: LccNetwork Content Types
-FeatureDescription: Some content types that are part of the LccNetwork web site (e.g. NewsItem, Event, Spotlight).
+Category: Lcc Network
+FeatureName: (Run Once) LccNetwork Content Types
+FeatureDescription: A migration that adds *draft* versions of most of the LccNetwork Content Types, Parts, and Fields.
 Dependencies: Orchard.Fields
 Features:
 	Highlightable:
 		Name: (Deprecated) Highlightable Content Items
 		Description: Adds a content part that lets a content item be featured in a special featured content item widget.
-		Category:Content
+		Category:Lcc Network
 	SectionNavigation:
 		Name: Section Navigation
 		Description: Adds two widgets for showing a menu of pages.
-		Category:Content
+		Category:Lcc Network
+	StaticPages:
+		Name: Static Pages
+		Description: Hard coded pages such as Find an LCC.
+		Category: Lcc Network

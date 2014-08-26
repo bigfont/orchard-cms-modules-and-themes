@@ -93,6 +93,8 @@
     <Content Include="Placement.info" />
     <Content Include="_ReadMe\Todo-DetailPages.txt" />
     <Content Include="_ReadMe\Todo-Misc.txt" />
+    <Content Include="_ReadMe\Todo-Refactoring.txt" />
+    <Content Include="_ReadMe\Todo-SpecialPages.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
