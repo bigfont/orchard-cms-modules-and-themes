@@ -1,9 +1,20 @@
 ﻿@using Orchard.Utility.Extensions;
+@using LccNetwork.Bootstrap.Extensions;
 
 @{
     string name = Model.ContentField.DisplayName;
 }
 <p class="date-time-field date-time-field-@name.HtmlClassify()">
     <span class="name">@name.CamelFriendly():</span>
-    <span class="value">@if (Model.Model.Editor.ShowDate) {<text>@Model.Model.Editor.Date</text>} @if (Model.Model.Editor.ShowTime) {<text>@Model.Model.Editor.Time</text>}</span>
+    <span class="value">
+        @if (Model.Model.Editor.ShowDate)
+        {
+            var date = Convert.ToDateTime(Model.Model.Editor.Date).ToString(MyConstants.DateFormat);
+            <text>@date</text>
+        }
+        @if (Model.Model.Editor.ShowTime)
+        {
+            <text>@Model.Model.Editor.Time</text>
+        }
+    </span>
 </p>

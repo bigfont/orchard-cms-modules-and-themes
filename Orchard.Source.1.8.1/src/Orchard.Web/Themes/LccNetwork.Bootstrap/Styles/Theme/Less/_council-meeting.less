@@ -1,0 +1,53 @@
+﻿article.council-meeting {
+
+    .date-time-field {
+        display: inline-block;
+        margin-bottom: 10px;
+
+        .name {
+            display: none;
+        }
+    }
+
+    .date-time-field-start-date {
+        &:after {
+            content: ' to ';
+            display: inline;
+        }
+    }
+
+    .link-field,
+    .text-field {
+        margin: 0;
+        padding: 0;
+
+        &.text-field-city:after {
+            content: ",";
+        }
+
+        &.text-field-city,
+        &.text-field-state,
+        &.text-field-postal-code {
+            display: inline;
+        }
+    }
+
+    .media-library-picker-field {
+        margin: 10px 0;
+
+        h3 {
+            display: none;
+        }
+
+        .media-item 
+        {
+            padding:2px 0;
+        }
+    }
+
+    .text-field {
+        .name {
+            display: block;
+        }
+    }
+}

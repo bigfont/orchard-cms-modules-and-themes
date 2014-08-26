@@ -1,0 +1,11 @@
+﻿@{
+    string name = Model.ContentField.DisplayName;
+}
+
+@if (HasText(name) && HasText(Model.Value))
+{
+    <p class="text-field">
+        <h3 class="name">@name</h3>
+        <span class="value">@Model.Value</span>
+    </p>
+}

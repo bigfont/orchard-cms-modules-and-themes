@@ -1,0 +1,5 @@
+﻿
+- Replace missing CSS images (e.g. the right arrows for links)
+- Make any CSS images into a single sprite (for performance)
+
+- Add the "About Us" to the Footer
