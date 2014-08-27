@@ -9,7 +9,12 @@
     <span class="value">
         @if (Model.Model.Editor.ShowDate)
         {
-            var date = Convert.ToDateTime(Model.Model.Editor.Date).ToString(MyConstants.DateFormat);
+            DateTime dateTime;
+            string date = Model.Model.Editor.Date;
+            if (DateTime.TryParse(date, out dateTime))
+            {
+                date = dateTime.ToString(MyConstants.DateFormat);
+            }
             <text>@date</text>
         }
         @if (Model.Model.Editor.ShowTime)

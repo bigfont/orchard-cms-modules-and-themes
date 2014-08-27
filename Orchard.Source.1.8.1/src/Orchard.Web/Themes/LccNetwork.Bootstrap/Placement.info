@@ -20,21 +20,34 @@
   </Match>
 
   <Match ContentType="Spotlight" DisplayType="Detail">
-    <Place Parts_Title="Content:0" />
-    <Place Fields_MediaLibraryPicker="Content:1" />
+    <Place Parts_Title="Content:0;Alternate=Parts_Title__h2" />
+    <Place Fields_MediaLibraryPicker="Content:1;Alternate=Fields_MediaLibraryPicker__Small" />
     <Place Parts_Common_Body="Content:2" />
     <Place Fields_Link="Content:3" />    
   </Match>
 
   <Match ContentType="WorkItem" DisplayType="Summary">
-    <Place Parts_Title="Content:0"/>    
+    <Place Parts_Title="Content:0;Alternate=Parts_Title__h2"/>    
     <Place Parts_Common_Body="Content:1" />    
-    <Place Fields_MediaLibraryPicker="Content:3" />
-    <Place Fields_Link="Content:4" />
+    <Place Fields_MediaLibraryPicker="Content:2;Alternate=Fields_MediaLibraryPicker__Large" />
+    <Place Fields_Link="Content:3" />
     <Place Parts_Title_Summary="-"/>
     <Place Parts_Common_Body_Summary="-" />
     <Place Fields_Common_Text="-" />
     <Place Fields_TaxonomyField="-" />
+  </Match>
+
+  <Match ContentType="NewsItem">    
+    <Place Parts_Title="Content:0;Alternate=Parts_Title__h2"/>
+    <Place Fields_DateTime-Date="Content:1" />
+    <Place Fields_MediaLibraryPicker="Content:2;Alternate=Fields_MediaLibraryPicker__Large" />
+    <Place Parts_Common_Body="Content:3" />
+    <Place Fields_Link="Content:4" />    
+    <Place Parts_Title_Summary="-"/>
+    <Place Parts_Common_Body_Summary="-" />
+    <Place Fields_Common_Text="-" />
+    <Place Fields_TaxonomyField="-" />
+    <Place Fields_Input-ShortTitle="-" />
   </Match>
 
   <Match ContentType="Document" Path="council-meeting/*">

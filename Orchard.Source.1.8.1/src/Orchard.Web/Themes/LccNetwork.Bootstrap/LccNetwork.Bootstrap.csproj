@@ -166,25 +166,21 @@
     <Content Include="Views\Fields\Link-twitter.cshtml" />
     <Content Include="Views\Fields\Link.cshtml" />
     <Content Include="Views\Fields\Numeric.cshtml" />
-    <Content Include="Views\Parts\-TermPart-WorkAreasTerm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\MyHelpers.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Media-Image.ResizedThumbnail.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\ProjectionPageAnnualReports.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Fields\DateTime.cshtml" />
+    <Content Include="Views\Fields\-DateTime.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\Document.Summary.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Fields\MediaLibraryPicker-Spotlight.cshtml" />
+    <Content Include="Views\Fields\MediaLibraryPicker-Small.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\Theme\Less\_council-meeting.less" />
@@ -199,13 +195,13 @@
     <Content Include="Views\Parts\MenuWidget-SectionMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Parts\Title-Spotlight.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Fields\MediaLibraryPicker-WorkItem.cshtml" />
+    <Content Include="Views\Parts\Title-h2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\_MediaImageHack.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fields\MediaLibraryPicker-Large.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
