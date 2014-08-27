@@ -1,5 +1,6 @@
 ﻿@using Orchard.ContentManagement;
 @using LccNetwork.Bootstrap.Extensions;
+@using Orchard.Mvc.Html;
 
 @{
     dynamic shapes = Model.BuildShapes;
@@ -10,7 +11,7 @@
     {
         <div class="col-md-9">
             @Display(shape)
-            <a href="#">Learn More</a>
+            <a class="latest-news" href="@Url.ItemDisplayUrl(shape.ContentItem as IContent)">Learn More</a>
         </div>
     }
 </div>

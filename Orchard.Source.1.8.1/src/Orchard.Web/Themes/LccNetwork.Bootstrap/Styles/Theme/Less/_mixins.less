@@ -31,10 +31,35 @@
 
 .link-double-arrow-right {
 
-    &::after {
+    &:after {
         position: relative;
         left: 2px;
         font-size: @font-size-base;
         content: '\00BB'; // &raquo; >>
+    }
+}
+
+.super-header {
+    > header {
+        border-top: thin solid @brown;
+        border-bottom: thin solid @brown;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+
+        h1, h1 > small {
+            // reset
+            margin: 0;
+            padding: 0;
+            color: @brown;
+            font-weight: bolder;
+            text-transform: uppercase;
+
+            small {
+                font-weight: bold;
+                font-size: @font-size-base;
+                line-height: 20px;
+            }
+        }
     }
 }

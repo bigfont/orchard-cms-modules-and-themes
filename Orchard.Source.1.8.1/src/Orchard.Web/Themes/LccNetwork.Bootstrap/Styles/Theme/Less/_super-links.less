@@ -1,0 +1,36 @@
+﻿#layout-main-container [class*="superlink"] {
+
+    p {
+        margin: @padding-small-vertical;
+        margin-right:30px;
+        font-size: @font-size-large;
+        line-height: @line-height-large;
+        font-weight: bolder;
+        color: @white;
+        .link-arrow-right(@white);                
+
+        strong {
+            margin-left: -1px;
+            font-size: @font-size-h1  * 1.15;
+            line-height: @line-height-large;
+            text-transform: uppercase;
+        }
+    }
+
+    &.widget-superlink1 {
+        background: @orange;
+    }
+
+    &.widget-superlink2 {
+        background: @blue;
+    }
+
+    &.widget-superlink3 {
+        background: @white;
+
+        p {
+            color: @brown;
+            .link-arrow-right(@brown);
+        }
+    }
+}

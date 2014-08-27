@@ -51,8 +51,8 @@
   </Match>
 
   <Match ContentType="NewsItem" DisplayType="Summary">
-    <Place Fields_Input-ShortTitle="Content:0" />    
-    <Place Fields_MediaLibraryPicker="Content:1;Alternate=Fields_MediaLibraryPicker__Small" />
+    <Place Fields_MediaLibraryPicker="Content:0;Alternate=Fields_MediaLibraryPicker__Small" />
+    <Place Fields_Input-ShortTitle="Content:1" />
     <Place Fields_Common_Text-Summary="Content:2" />        
     <Place Parts_Common_Body="-" />
     <Place Fields_DateTime-Date="-" />
@@ -61,6 +61,20 @@
     <Place Fields_TaxonomyField="-" />
     <Place Parts_Title="-"/>
     <Place Fields_Link="-" />
+  </Match>
+
+  <Match ContentType="Event" DisplayType="Summary">
+    <Place Parts_Title_Summary="Content:0;Alternate=Parts_Title_Summary__h3"/>
+    <!--Dates-->
+    <Place Fields_DateTime-StartDate="Content:0.0;Alternate=Fields_DateTime__Formatted" />
+    <Place Fields_DateTime-EndDate="Content:0.1;Alternate=Fields_DateTime__Formatted" />
+    <!-- Location -->
+    <Place Fields_Input-City="-" />
+    <Place Fields_Input-State="-" />
+    <!--Other-->
+    <Place Parts_Common_Body_Summary="-" />
+    <Place Fields_Link="-" />
+
   </Match>
 
   <Match ContentType="Document" Path="council-meeting/*">

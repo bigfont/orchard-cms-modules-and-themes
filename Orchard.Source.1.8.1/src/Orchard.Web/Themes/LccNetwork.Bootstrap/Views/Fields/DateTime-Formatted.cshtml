@@ -12,9 +12,15 @@
             string date = Model.Model.Editor.Date;
             if (DateTime.TryParse(date, out dateTime))
             {
-                date = dateTime.ToString(MyConstants.DateFormat);
+                // 03 Oct, 2014
+                <text>
+                    <span class="day">@dateTime.ToString("dd")</span>&nbsp;<span class="month">@dateTime.ToString("MMM")</span><span class="year">, @dateTime.ToString("yyyy")</span>
+                </text>
             }
-            <text>@date</text>
+            else
+            {
+                <text>@date</text>
+            }
         }
         @if (Model.Model.Editor.ShowTime)
         {

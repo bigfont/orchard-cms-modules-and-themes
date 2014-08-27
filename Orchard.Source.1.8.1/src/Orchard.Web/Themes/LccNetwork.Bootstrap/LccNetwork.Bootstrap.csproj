@@ -141,7 +141,6 @@
     <Content Include="Views\Widget.Wrapper.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions\MyConstants.cs" />
     <Compile Include="Extensions\MyFunctions.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +203,54 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Fields\Common.Text-Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Bootstrap\less\type.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\Title_Summary-h3.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_upcoming-events.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_latest-news.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_green-about.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_lcc-spotlight.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_layout.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_compelling-link.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_social-networking.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_orange-feature.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_super-links.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_widget-footer-menu.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Theme\Less\_datetime.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Bootstrap\less\navbar.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Bootstrap\less\navs.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Bootstrap\less\forms.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

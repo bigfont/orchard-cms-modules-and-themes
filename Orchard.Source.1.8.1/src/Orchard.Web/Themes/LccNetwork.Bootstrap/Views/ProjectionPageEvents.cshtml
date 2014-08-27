@@ -1,4 +1,17 @@
-﻿@using System.Dynamic;
+﻿@using Orchard.ContentManagement;
+@using LccNetwork.Bootstrap.Extensions;
+
+@{
+    dynamic shapes = Model.BuildShapes;
+}
+
+@foreach (dynamic shape in shapes())
+{
+    @Display(shape)
+}
+
+
+@*@using System.Dynamic;
 @using System.Linq;
 @using Orchard.ContentManagement;
 @using Orchard.Utility.Extensions;
@@ -31,4 +44,4 @@
             </li>
         }
     </ul>
-}
+}*@
