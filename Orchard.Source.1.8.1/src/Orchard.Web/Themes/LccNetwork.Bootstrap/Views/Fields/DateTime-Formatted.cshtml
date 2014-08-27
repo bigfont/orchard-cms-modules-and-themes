@@ -10,21 +10,29 @@
         {
             DateTime dateTime;
             string date = Model.Model.Editor.Date;
-            if (DateTime.TryParse(date, out dateTime))
+            if (date.Length > 0)
             {
-                // 03 Oct, 2014
-                <text>
-                    <span class="day">@dateTime.ToString("dd")</span>&nbsp;<span class="month">@dateTime.ToString("MMM")</span><span class="year">, @dateTime.ToString("yyyy")</span>
-                </text>
+                <span class="date">
+                    @if (DateTime.TryParse(date, out dateTime))
+                    {
+                        // 03 Oct, 2014
+                        <text>
+                            <span class="day">@dateTime.ToString("dd")</span>&nbsp;<span class="month">@dateTime.ToString("MMM")</span><span class="year">, @dateTime.ToString("yyyy")</span>
+                        </text>
+                    }
+                    else
+                    {
+                        <text>@date</text>
+                    }
+                </span>
             }
-            else
-            {
-                <text>@date</text>
-            }
+
         }
         @if (Model.Model.Editor.ShowTime)
         {
-            <text>@Model.Model.Editor.Time</text>
+            <span class="time">
+                @Model.Model.Editor.Time
+            </span>
         }
     </span>
 </p>

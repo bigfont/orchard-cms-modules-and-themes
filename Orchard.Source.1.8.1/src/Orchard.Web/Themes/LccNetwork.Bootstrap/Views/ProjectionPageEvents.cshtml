@@ -9,39 +9,3 @@
 {
     @Display(shape)
 }
-
-
-@*@using System.Dynamic;
-@using System.Linq;
-@using Orchard.ContentManagement;
-@using Orchard.Utility.Extensions;
-@using LccNetwork.Bootstrap.Extensions;
-
-@{
-    var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
-    var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
-
-    <ul class="list-unstyled @cssClass">
-        @foreach (dynamic item in contentItems)
-        {
-            var itemDisplayUrl = Url.ItemDisplayUrl((IContent)item);
-            // get the mainPart, so we can access the item's fields
-            dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
-            // get the fields
-            var startDate = mainPart.StartDate.DateTime.ToString("MMMM d, yyyy");
-            var endDate = mainPart.EndDate.DateTime.ToString("MMMM d, yyyy");
-            var city = mainPart.City.Value;
-            var state = mainPart.State.Value;
-            var learnMoreUrl = mainPart.LearmMore.Value; // todo - fix spelling error in learm
-            var title = item.TitlePart.Title;
-            var body = item.BodyPart.Text;            
-
-            <li class="clearfix">
-                <h3>@title</h3>
-                <h4>@startDate - @endDate @city, @state</h4>
-                @Html.Raw(body)
-                <a class="pull-left" href="@learnMoreUrl">Learn more</a>
-            </li>
-        }
-    </ul>
-}*@

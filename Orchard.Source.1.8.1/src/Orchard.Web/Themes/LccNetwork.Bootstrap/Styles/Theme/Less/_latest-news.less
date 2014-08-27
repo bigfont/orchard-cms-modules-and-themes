@@ -1,25 +1,27 @@
-﻿.news-item {
+﻿.widget-projection-widget {
 
-    img {
-        margin-top: 5px;
-        height: 60px; // must come after img-thumbnail
+    .news-item {
+
+        img {
+            margin-top: 5px;
+            height: 60px; // must come after img-thumbnail
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+
+        p, a {
+            margin: @padding-small-vertical 0;
+            color: @blue;
+            font-size: @font-size-small;
+        }
     }
-
-    h2 {
-        margin: 10px 0;
-    }
-
-    p, a {
-        margin: @padding-small-vertical 0;
+    // this is a hack
+    // because the link isn't inside the Display() call
+    a.latest-news {
         color: @blue;
         font-size: @font-size-small;
+        .link-double-arrow-right;
     }
-}
-
-// this is a hack
-// because the link isn't inside the Display() call
-a.latest-news {
-    color: @blue;
-    font-size: @font-size-small;
-    .link-double-arrow-right;
 }

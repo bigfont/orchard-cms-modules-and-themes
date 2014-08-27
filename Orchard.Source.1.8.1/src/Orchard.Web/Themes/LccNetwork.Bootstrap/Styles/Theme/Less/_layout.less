@@ -1,5 +1,5 @@
 ﻿
-/* #region shared rules */
+/* #region shared and miscellaneous rules */
 body {
     background: url('@{img-directory}banner_graphic.jpg') no-repeat;
     background-position: 50% 0;
@@ -14,10 +14,36 @@ a:hover {
 img {
     max-width: 100%;
 }
+
+.projection-page {
+
+    h2 {
+        font-weight: bolder;
+    }
+}
+
+.main {
+    // find an lcc
+    width: 90%;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+}
+
+.detail-widget-container #layout-main.group {
+    background: @gray-lcc;
+}
+.detail-page #layout-main.group {
+    background: @white;
+}
+
 /* #endregion */
 
 div#layout-wrapper {
     max-width: @layout-wrapper-max-width; // this isn't vital... it supports the original look and feel
+    .box-shadow(0px 0px 40px #CCC);
 }
 
 div#layout-navigation.group {
@@ -29,8 +55,8 @@ div#layout-navigation.group {
             .navbar;
             .navbar-default;
             margin-bottom: 0;
-            border-top:none;
-            border-bottom:none;
+            border-top: none;
+            border-bottom: none;
 
             div.container-fluid {
                 padding: 0;
@@ -125,11 +151,7 @@ div#layout-navigation.group {
     }
 
     #layout-main.group { // is a row from base theme
-        background: @gray-lcc;
-
         > #layout-content.group { // is a col from base theme
-            padding-top: @layout-main-zone-spacing;
-
             .zone {
                 padding-bottom: @layout-main-zone-spacing;
             }
@@ -139,6 +161,7 @@ div#layout-navigation.group {
                     .make-row();
 
                     .widget {
+                        margin-top: 40px;
                         height: @layout-main-first-row-height;
 
                         &:nth-child(1) {
