@@ -1,0 +1,18 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Fields
+@using System.Dynamic
+@using Orchard.Utility.Extensions;
+
+@{
+    var field = (MediaLibraryPickerField)Model.ContentField;
+    var contents = field.MediaParts;
+    // explicitly type so we can call HtmlClassify    
+    string name = field.DisplayName;
+}
+<section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
+    @foreach (var content in contents)
+    {      
+        @Html.Partial("_MediaPartHack", content)
+    }
+</section>
+

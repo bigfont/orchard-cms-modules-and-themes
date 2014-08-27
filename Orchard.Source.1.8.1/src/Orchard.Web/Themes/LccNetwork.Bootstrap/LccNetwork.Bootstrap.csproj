@@ -166,9 +166,7 @@
     <Content Include="Views\Fields\Link-twitter.cshtml" />
     <Content Include="Views\Fields\Link.cshtml" />
     <Content Include="Views\Fields\Numeric.cshtml" />
-    <Content Include="Views\Parts\TermPart-LccsTerms.cshtml" />
-    <Content Include="Views\Parts\TermPart-ResourcesTerm.cshtml" />
-    <Content Include="Views\Parts\TermPart-WorkAreasTerm.cshtml" />
+    <Content Include="Views\Parts\-TermPart-WorkAreasTerm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\MyHelpers.cshtml" />
@@ -202,6 +200,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\Title-Spotlight.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fields\MediaLibraryPicker-WorkItem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\_MediaPartHack.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,6 +6,9 @@ using System;
 using Orchard.ContentManagement;
 using Orchard.Utility.Extensions;
 using System.ComponentModel;
+using System.Web.Mvc;
+using Orchard.MediaLibrary.Models;
+using System.Text;
 
 // these aren't really extention methods
 // because they don't take 'this' as the first argument
@@ -13,14 +16,16 @@ namespace LccNetwork.Bootstrap.Extensions
 {
     public class MyFunctions
     {
-        public static dynamic ToDynamic(object value)
+        public static ExpandoObject ToExpando(this object anonymousObject)
         {
             IDictionary<string, object> expando = new ExpandoObject();
-            foreach (PropertyDescriptor property in TypeDescriptor.GetProperties(value.GetType()))
+            foreach (PropertyDescriptor propertyDescriptor in TypeDescriptor.GetProperties(anonymousObject))
             {
-                expando.Add(property.Name, property.GetValue(value));
+                var obj = propertyDescriptor.GetValue(anonymousObject);
+                expando.Add(propertyDescriptor.Name, obj);
             }
-            return expando as ExpandoObject;
+
+            return (ExpandoObject)expando;
         }
 
         public static void SortContentItemsByAssociatedLcc(List<ContentItem> contentItems)

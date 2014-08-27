@@ -19,11 +19,6 @@
     <Place Fields_Common_Text="Content:2.1" />
   </Match>
 
-  <Match ContentType="Document" Path="council-meeting/*">
-    <Place Parts_Title_Summary="-" />
-  </Match>
-  
-  <!--Spotlight Projections Widget-->
   <Match ContentType="Spotlight" DisplayType="Detail">
     <Place Parts_Title="Content:0" />
     <Place Fields_MediaLibraryPicker="Content:1" />
@@ -31,9 +26,22 @@
     <Place Fields_Link="Content:3" />    
   </Match>
 
-  <Match ContentType="Image" DisplayType="Summary">
-    <Place Parts_Title_Summary="-"/>    
+  <Match ContentType="WorkItem" DisplayType="Summary">
+    <Place Parts_Title="Content:0"/>    
+    <Place Parts_Common_Body="Content:1" />
+    <Place Fields_Common_Text="Content:2" />
+    <Place Fields_MediaLibraryPicker="Content:3" />
+    <Place Fields_Link="Content:4" />
+    <Place Parts_Title_Summary="-"/>
+    <Place Parts_Common_Body_Summary="-" />
   </Match>
-  <!--End Spotlight Projections Widget-->
 
+  <Match ContentType="Document" Path="council-meeting/*">
+    <Place Parts_Title_Summary="-" />
+  </Match>
+
+  <Match ContentType="Image" DisplayType="Summary">
+    <Place Parts_Title_Summary="-"/>
+  </Match>
+  
 </Placement>
