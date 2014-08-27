@@ -186,7 +186,7 @@
     <Content Include="Views\Parts\Document.Summary.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Fields\MediaLibraryPicker.cshtml" />
+    <Content Include="Views\Fields\MediaLibraryPicker-Spotlight.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\Theme\Less\_council-meeting.less" />
@@ -199,6 +199,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\MenuWidget-SectionMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\Title-Spotlight.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

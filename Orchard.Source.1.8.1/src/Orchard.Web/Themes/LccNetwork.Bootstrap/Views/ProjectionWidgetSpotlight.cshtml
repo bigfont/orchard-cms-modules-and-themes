@@ -2,18 +2,10 @@
 @using LccNetwork.Bootstrap.Extensions;
 
 @{
-    var contentItems = Model.ContentItems;
-    var cssClass = "spotlight-projection";
-    dynamic firstItem = System.Linq.Enumerable.First(contentItems);
-    var spotlightPart = firstItem.Spotlight;
-    
-    var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(spotlightPart.Image);
-    ViewBag.ResizedThumbnailWidth = 200;
+    dynamic shapes = Model.BuildShapes;
 }
 
-<div class="@cssClass">
-    <h6><a href="@spotlightPart.LearnMoreField.Value">@firstItem.TitlePart.Title</a></h6>
-    @Display(BuildDisplay(mediaPart, "ResizedThumbnail"))
-    @Html.Raw(firstItem.BodyPart.Text)
-    <a href="@spotlightPart.LearnMoreField.Value">Continue Reading</a>
-</div>
+@foreach (dynamic shape in shapes())
+{
+    @Display(shape)
+}
