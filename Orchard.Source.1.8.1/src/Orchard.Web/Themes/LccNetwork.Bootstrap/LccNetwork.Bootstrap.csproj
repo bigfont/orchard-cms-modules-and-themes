@@ -205,7 +205,7 @@
     <Content Include="Views\Fields\MediaLibraryPicker-WorkItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\_MediaPartHack.cshtml" />
+    <Content Include="Views\_MediaImageHack.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

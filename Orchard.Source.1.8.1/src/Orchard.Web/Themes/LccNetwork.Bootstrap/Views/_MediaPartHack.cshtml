@@ -1,8 +1,0 @@
-﻿@using Orchard.MediaLibrary.Models
-@using Orchard.Utility.Extensions;
-
-@model MediaPart
-
-<div class="media-thumbnail media-thumbnail-@Model.ContentItem.ContentType.HtmlClassify() mime-type-@Model.MimeType.HtmlClassify()">
-    <img src="@Display.ResizeMediaUrl(Width: 475, Mode: "max", Alignment: "middlecenter", Path: Model.MediaUrl)" />
-</div>

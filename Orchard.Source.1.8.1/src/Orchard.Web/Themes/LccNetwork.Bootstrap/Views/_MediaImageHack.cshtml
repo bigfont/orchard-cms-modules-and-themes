@@ -1,0 +1,19 @@
+﻿@using Orchard.MediaLibrary.Models
+@using Orchard.Utility.Extensions;
+
+@model MediaPart
+
+@* I created this partial view
+    to get around having to call BuildDisplay
+    to render media image parts. *@
+
+@{
+    var contentType = Model.ContentItem.ContentType;
+    var mimeType = Model.MimeType;
+    var mediaUrl = Model.MediaUrl;
+    var mediaWidth = ViewData["Width"];
+}
+
+<div class="media-thumbnail media-thumbnail-@contentType.HtmlClassify() mime-type-@mimeType.HtmlClassify()">
+    <img src="@Display.ResizeMediaUrl(Width: mediaWidth, Mode: "max", Alignment: "middlecenter", Path: mediaUrl)" />
+</div>

@@ -11,8 +11,9 @@
 }
 <section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
     @foreach (var content in contents)
-    {      
-        @Html.Partial("_MediaPartHack", content)
+    {
+        @Html.Partial("_MediaImageHack", content, new ViewDataDictionary() { { "Width", 475 } })
+
     }
 </section>
 

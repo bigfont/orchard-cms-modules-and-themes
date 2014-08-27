@@ -28,12 +28,13 @@
 
   <Match ContentType="WorkItem" DisplayType="Summary">
     <Place Parts_Title="Content:0"/>    
-    <Place Parts_Common_Body="Content:1" />
-    <Place Fields_Common_Text="Content:2" />
+    <Place Parts_Common_Body="Content:1" />    
     <Place Fields_MediaLibraryPicker="Content:3" />
     <Place Fields_Link="Content:4" />
     <Place Parts_Title_Summary="-"/>
     <Place Parts_Common_Body_Summary="-" />
+    <Place Fields_Common_Text="-" />
+    <Place Fields_TaxonomyField="-" />
   </Match>
 
   <Match ContentType="Document" Path="council-meeting/*">

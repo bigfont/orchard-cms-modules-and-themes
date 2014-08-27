@@ -12,14 +12,8 @@
 <section class="media-library-picker-field media-library-picker-field-@name.HtmlClassify()">
     @foreach (var content in contents)
     {
-        <div>
-            @*
-                todo Refactor this into its own view.
-                I don't know how to do that, though, without calling BuildDisplay
-            *@
-            <div class="media-thumbnail media-thumbnail-@contentType.HtmlClassify() mime-type-@content.MimeType.HtmlClassify()">
-                <img src="@Display.ResizeMediaUrl(Width: 200, Mode: "max", Alignment: "middlecenter", Path: content.MediaUrl)" />
-            </div>
+        <div>            
+            @Html.Partial("_MediaImageHack", content, new ViewDataDictionary() { { "Width", 200 } })
         </div>
     }
 </section>

@@ -16,18 +16,6 @@ namespace LccNetwork.Bootstrap.Extensions
 {
     public class MyFunctions
     {
-        public static ExpandoObject ToExpando(this object anonymousObject)
-        {
-            IDictionary<string, object> expando = new ExpandoObject();
-            foreach (PropertyDescriptor propertyDescriptor in TypeDescriptor.GetProperties(anonymousObject))
-            {
-                var obj = propertyDescriptor.GetValue(anonymousObject);
-                expando.Add(propertyDescriptor.Name, obj);
-            }
-
-            return (ExpandoObject)expando;
-        }
-
         public static void SortContentItemsByAssociatedLcc(List<ContentItem> contentItems)
         {
             // sort by associated lcc
