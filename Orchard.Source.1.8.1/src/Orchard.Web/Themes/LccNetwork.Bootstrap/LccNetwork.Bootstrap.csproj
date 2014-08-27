@@ -90,7 +90,9 @@
     <Content Include="Content\Web.config" />
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
-    <Content Include="Placement.info" />
+    <Content Include="Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="_ReadMe\Todo-DetailPages.txt" />
     <Content Include="_ReadMe\Todo-Misc.txt" />
     <Content Include="_ReadMe\Todo-Refactoring.txt" />
@@ -157,15 +159,12 @@
     <Content Include="Views\ProjectionPageNewsletters.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Fields\Boolean.cshtml" />
-    <Content Include="Views\Fields\Enumeration.cshtml" />
     <Content Include="Views\Fields\Input.cshtml" />
     <Content Include="Views\Fields\Link-facebook.cshtml" />
     <Content Include="Views\Fields\Link-flickr.cshtml" />
     <Content Include="Views\Fields\Link-rss.cshtml" />
     <Content Include="Views\Fields\Link-twitter.cshtml" />
     <Content Include="Views\Fields\Link.cshtml" />
-    <Content Include="Views\Fields\Numeric.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\MyHelpers.cshtml" />
@@ -174,7 +173,7 @@
     <Content Include="Views\ProjectionPageAnnualReports.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Fields\-DateTime.cshtml" />
+    <Content Include="Views\Fields\DateTime-Formatted.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\Document.Summary.cshtml" />
@@ -184,9 +183,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\Theme\Less\_council-meeting.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Fields\Common.Text.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Parts\MenuWidget-FooterMenu.cshtml" />
@@ -202,6 +198,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Fields\MediaLibraryPicker-Large.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fields\Input-ShortTitle.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fields\Common.Text-Summary.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

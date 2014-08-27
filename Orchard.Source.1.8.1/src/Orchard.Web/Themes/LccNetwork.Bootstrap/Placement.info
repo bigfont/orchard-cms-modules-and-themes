@@ -5,8 +5,8 @@
 
   <Match ContentType="CouncilMeeting">
     <!--Dates-->
-    <Place Fields_DateTime-StartDate="Content:0.0" />
-    <Place Fields_DateTime-EndDate="Content:0.1" />
+    <Place Fields_DateTime-StartDate="Content:0.0;Alternate=Fields_DateTime__Formatted" />
+    <Place Fields_DateTime-EndDate="Content:0.1;Alternate=Fields_DateTime__Formatted" />
     <!--Address-->
     <Place Fields_Link-Link="Content:1.0" />
     <Place Fields_Input-StreetAddress="Content:1.1" />    
@@ -37,9 +37,9 @@
     <Place Fields_TaxonomyField="-" />
   </Match>
 
-  <Match ContentType="NewsItem">    
+  <Match ContentType="NewsItem" DisplayType="Detail">    
     <Place Parts_Title="Content:0;Alternate=Parts_Title__h2"/>
-    <Place Fields_DateTime-Date="Content:1" />
+    <Place Fields_DateTime-Date="Content:1;Alternate=Fields_DateTime__Formatted" />
     <Place Fields_MediaLibraryPicker="Content:2;Alternate=Fields_MediaLibraryPicker__Large" />
     <Place Parts_Common_Body="Content:3" />
     <Place Fields_Link="Content:4" />    
@@ -48,6 +48,19 @@
     <Place Fields_Common_Text="-" />
     <Place Fields_TaxonomyField="-" />
     <Place Fields_Input-ShortTitle="-" />
+  </Match>
+
+  <Match ContentType="NewsItem" DisplayType="Summary">
+    <Place Fields_Input-ShortTitle="Content:0" />    
+    <Place Fields_MediaLibraryPicker="Content:1;Alternate=Fields_MediaLibraryPicker__Small" />
+    <Place Fields_Common_Text-Summary="Content:2" />        
+    <Place Parts_Common_Body="-" />
+    <Place Fields_DateTime-Date="-" />
+    <Place Parts_Title_Summary="-"/>
+    <Place Parts_Common_Body_Summary="-" />    
+    <Place Fields_TaxonomyField="-" />
+    <Place Parts_Title="-"/>
+    <Place Fields_Link="-" />
   </Match>
 
   <Match ContentType="Document" Path="council-meeting/*">

@@ -1,35 +1,16 @@
-﻿@using System.Dynamic;
-@using System.Linq;
-@using Orchard.ContentManagement;
-@using Orchard.Utility.Extensions;
+﻿@using Orchard.ContentManagement;
 @using LccNetwork.Bootstrap.Extensions;
-@using Orchard.MediaLibrary.Models;
 
 @{
-    var items = (Model.ContentItems as IEnumerable<ContentItem>);
-    var cssClass = items.First().TypeDefinition.Name.HtmlClassify();
-    <div class="@cssClass">
-        <div class="row">
-            @foreach (ContentItem item in items)
-            {
-                var itemDisplayUrl = Url.ItemDisplayUrl(item);
-                // get the mainPart, so we can access the item's fields
-                dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
-                
-                var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Image, 0);
-                ViewBag.ResizedThumbnailWidth = 200;
-
-                var shortTitle = mainPart.ShortTitle.Value;
-                var summary = mainPart.Summary.Value;
-
-                // keep in mind that our theme has a grid with 36 columns
-                <div class="col-md-6">
-                    @Display(BuildDisplay(mediaPart, "ResizedThumbnail"))
-                    <h6>@shortTitle</h6>
-                    <p>@summary</p>
-                    <a href="@itemDisplayUrl">View</a>
-                </div>
-            }
-        </div>
-    </div>
+    dynamic shapes = Model.BuildShapes;
 }
+
+<div class="row">
+    @foreach (dynamic shape in shapes())
+    {
+        <div class="col-md-9">
+            @Display(shape)
+            <a href="#">Learn More</a>
+        </div>
+    }
+</div>
