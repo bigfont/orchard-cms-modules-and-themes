@@ -1,57 +1,4 @@
-﻿@using Orchard.UI.Navigation;
-@using System.Globalization;
-@using System.Collections;
-
-@helper RenderChildren(dynamic parentItem)
-{
-    // render children recursively
-    bool hasChildren = (parentItem.Items as ICollection<dynamic>).Any();
-    if (!hasChildren)
-    {
-        // base case
-        return;
-    }
-    else
-    {
-        // recursive step
-        var children = Enumerable.Cast<dynamic>(parentItem.Items);
-        foreach (var childItem in children)
-        {
-            @RenderMenuItem(childItem)
-            <ul>
-                @RenderChildren(childItem)
-            </ul>
-        }
-    }
-}
-
-@helper RenderMenuItem(dynamic shape, bool isTopLevelMenuItem = false)
-{
-    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
-    MenuItem item = shape.Item as MenuItem;
-    // Use the Href as the link text,
-    // if it's the top level menu item,
-    // because we want the subnav title to be different than the link
-    // While this is a bit odd, that is what the original site does, so we're doing it here too.
-    var text = isTopLevelMenuItem ?
-        textInfo.ToTitleCase(item.Href.Substring(1)).Replace('-', ' ') :
-        item.Text.Text;
-    var href = item.Href;
-    var attr = new { @class = item.Selected };
-    var tag = Tag(Model, "li");
-    @tag.StartElement
-    if (href.Equals("/"))
-    {
-        <span>@text</span>
-    }
-    else
-    {
-        @Html.Link(text, href, attr)
-    }
-    @tag.EndElement
-}
-
-@{
+﻿@{
     var menu = Model.Menu;
     var collapseId = Model.Id;
 
@@ -69,20 +16,19 @@
         // selectedMenuItem.Selected = !subItems.Any(i => i.Selected);
 
         // now render the item and its children
-        <div>
+        <nav>
             @*use the text of selected menu item as the title of the subnav*@
-            <h1>@selectedMenuItem.Text</h1>
+            <header>
+                <h2>@selectedMenuItem.Text</h2>
+            </header>
 
             @*then render the subnav*@
             @tag.StartElement
 
-            @*the subnav includes the selected menu item, and we use 'true' to *@
-            @RenderMenuItem(selectedMenuItem, true)
-
-            @*render the children of the selected menu item*@
-            @RenderChildren(selectedMenuItem)
+            @Display.SectionMenuItem(MenuItem: selectedMenuItem, IsTopLevel: true)
+            @Display.SectionMenuItemChildren(MenuItem: selectedMenuItem)
 
             @tag.EndElement
-        </div>
+        </nav>
     }
 }

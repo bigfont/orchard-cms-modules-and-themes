@@ -1,16 +1,16 @@
-﻿.link-arrow-right(@c) when (@c = @white) {
+﻿.link-arrow-right(@c) when (@c = #fff) {
     &::after {
         background-image: url('@{img-directory}icon_arrow_w.png');
     }
 }
 
-.link-arrow-right(@c) when (@c = @brown) {
+.link-arrow-right(@c) when (@c = @brown-lcc) {
     &::after {
         background-image: url('@{img-directory}icon_arrow_br.png');
     }
 }
 
-.link-arrow-right(@c) when (@c = @orange) {
+.link-arrow-right(@c) when (@c = @orange-lcc) {
     &::after {
         background-image: url('@{img-directory}icon_arrow_or.png');
     }
@@ -36,13 +36,41 @@
         left: 2px;
         font-size: @font-size-base;
         content: '\00BB'; // &raquo; >>
+        display:inline-block;
+        text-decoration:none;
     }
+}
+
+.link-flickr {
+    background-image: url('@{img-directory}icon_flickr.png');
+}
+
+.link-facebook {
+    background-image: url('@{img-directory}icon_fb.png');
+}
+
+.link-twitter {
+    background-image: url('@{img-directory}icon_twitter.png');
+}
+
+.link-rss {
+    background-image: url('@{img-directory}icon_rss.png');
+}
+
+.search-button(@dimensions) {
+    background-image: url('@{img-directory}icon_magnifying.png');
+    color:transparent;
+    width:@dimensions;
+    height:@dimensions;
+    background-size:(@dimensions/2);
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .super-header {
     > header {
-        border-top: thin solid @brown;
-        border-bottom: thin solid @brown;
+        border-top: thin solid @brown-lcc;
+        border-bottom: thin solid @brown-lcc;
         margin: 0;
         margin-bottom: 5px;
         padding: 0;
@@ -51,7 +79,7 @@
             // reset
             margin: 0;
             padding: 0;
-            color: @brown;
+            color: @brown-lcc;
             font-weight: bolder;
             text-transform: uppercase;
 

@@ -6,30 +6,41 @@
 // --------------------------------------------------
 
 // bootstrap
-@import 'Bootstrap/less/variables.less'; 
+@import 'Bootstrap/less/variables.less';   
 @import 'Bootstrap/less/mixins.less';
 @import 'Bootstrap/less/utilities.less';  
 @import 'Bootstrap/less/scaffolding.less';
 @import 'Bootstrap/less/buttons.less';
 @import 'Bootstrap/less/grid.less';            
 @import 'Bootstrap/less/type.less';
-@import 'Bootstrap/less/forms.less';  
+@import 'Bootstrap/less/forms.less';     
 @import 'Bootstrap/less/navs.less';  
 @import 'Bootstrap/less/navbar.less';  
 
-@layout-main-first-row-height: 240px;               
+// layout
+@layout-main-first-row-height: 240px;                
 @layout-main-second-row-height: 393px;
 @layout-main-widget-spacing: 15px;     
 @layout-main-zone-spacing: 40px;          
 @layout-wrapper-max-width: 960px;
+
+// logo
 @logo-width: 390px;
 
-// use a root-relative url,
+// search
+@search-form-background-color: darken(@brown-lcc, 15%);
+@search-form-border-color: #77706D;
+@search-form-width: 250px;
+@search-form-height: 34px;
+@search-form-font-color:  darken( #fff, 20%); // this seems like poor usability
+
+// use a root-relative url, 
 // because less files in child directories mess up file-relative paths.
 @img-directory: '/Themes/LccNetwork.Bootstrap/Styles/Theme/Imgs/';
 
 @import "Theme/Less/_mixins.less"; 
 @import "Theme/Less/_layout.less";
+@import "Theme/Less/_navbar.less";  
 @import "Theme/Less/_workitem-carousel.less";
 @import "Theme/Less/_council-meeting.less"; 
 @import "Theme/Less/_upcoming-events.less";
@@ -42,5 +53,7 @@
 @import "Theme/Less/_super-links.less";     
 @import "Theme/Less/_widget-footer-menu.less";      
 @import "Theme/Less/_datetime.less";
-
-                                                        
+@import "Theme/Less/_search-form.less";                   
+@import "Theme/Less/_section-menu.less";    
+@import "Theme/Less/_misc.less";                                            
+@import "Theme/Less/_text.less";

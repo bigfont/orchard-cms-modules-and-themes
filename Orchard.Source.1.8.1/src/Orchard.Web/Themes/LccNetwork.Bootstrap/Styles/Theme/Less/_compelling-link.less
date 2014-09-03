@@ -1,31 +1,36 @@
 ﻿.widget-compelling-link {
-    .make-md-column(12);
 
     p {
         margin: 0;
         padding: 0;
+        line-height: 0.95;
     }
 
     p.text-field-lead {
-        color: @orange;
-        font-size: @font-size-large;
+        color: @orange-lcc;
+        font-size: @font-size-h1;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     p.text-field-message {
-        color: @white;
+        color: #fff;
         font-size: @font-size-base;
+        font-style: normal;
+        font-weight: 700;
     }
 
     p.link-field-action {
+        left: 190px;
         position: absolute;
         top: 20px;
-        left: 150px;
 
         a {
             .btn;
             .btn-warning;
-            background-color: @orange;
-            font-weight: bolder;
+            background-color: @orange-lcc;
+            border-radius: 0;
+            font-size: @font-size-large;
             text-transform: uppercase;
         }
     }

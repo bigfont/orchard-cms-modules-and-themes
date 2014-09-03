@@ -1,0 +1,15 @@
+﻿@{
+    // render children recursively
+    bool hasChildren = (Model.MenuItem.Items as ICollection<dynamic>).Any();
+    if (hasChildren)
+    {
+        var children = Enumerable.Cast<dynamic>(Model.MenuItem.Items);
+        foreach (var childItem in children)
+        {
+            @Display.SectionMenuItem(MenuItem: childItem, IsTopLevel: false)
+            <ul>
+                @Display.SectionMenuItemChildren(MenuItem: childItem, IsTopLevel: false)
+            </ul>
+        }
+    }
+}

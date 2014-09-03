@@ -1,0 +1,36 @@
+﻿form.search-form {
+    text-align: right;
+
+    fieldset {
+        width: @search-form-width;
+        display: inline-block;
+        position: relative;
+        height: @search-form-height;
+    }
+
+    input[type=text],
+    button[type=submit] {
+        border: thin solid @search-form-border-color;
+        border-radius: 1px;
+        background-color: @search-form-background-color;
+        color: @search-form-font-color;
+        float: none;
+        font-size: @font-size-large;
+        height: @search-form-height;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: @search-form-width - @search-form-height;
+    }
+
+    input[type=text] {
+        padding: 4px;
+    }
+
+    button[type=submit] {
+        .search-button(@search-form-height);
+        border-left: none;
+        left: @search-form-width - @search-form-height;
+    }
+}

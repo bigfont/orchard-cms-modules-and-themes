@@ -7,25 +7,23 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
+@brown-lcc: #685046;     
+@gray-lcc: #D2DABC;
+@blue-lcc: #4A85A3;
+@light-blue-lcc: #48AFD2;
+@green-lcc: #a9d157;
+@orange-lcc: #DA8639;
 
-@green: #a9d157;
-@orange: #DA8639;
-@brown: #685046;    
-@white: white;    
-@gray-lcc:#D2DABC;
-@blue: #4A85A3;
+@gray-darker:            darken(@gray-lcc, 13.5%);
+@gray-dark:              darken(@gray-lcc, 20%);  
+@gray:                   @gray-lcc;
+@gray-light:             lighten(@gray-lcc, 60%);  
+@gray-lighter:           lighten(@gray-lcc, 93.5%);
 
-
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
-
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
+@brand-primary:         @blue-lcc; 
+@brand-success:         @green-lcc; 
+@brand-info:            @light-blue-lcc;
+@brand-warning:         @orange-lcc;
 @brand-danger:          #d9534f;
 
 
@@ -36,7 +34,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            #000;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -44,26 +42,31 @@
 @link-hover-color:      darken(@link-color, 15%);
 
 
+// These fonts come from the LCC Network Legacy Site
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.70)); // ~12px
+@font-size-base:          12.8px;
+@font-size-large:         (@font-size-base * 1.25); // 
+@font-size-small:         (@font-size-base * 0.90); // 11.52px
 
-@font-size-h1:            floor((@font-size-base * 2.00)); // ~36px
-@font-size-h2:            floor((@font-size-base * 1.00)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 0.75)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.15)); // ~18px
+@font-size-h1:            (@font-size-base * 2.00); // 25.6px
+@font-size-h2:            (@font-size-base * 1.10); // 
+@font-size-h3:            (@font-size-base * 0.75); // 
+@font-size-h4:            (@font-size-base * 1.15); // 
 @font-size-h5:            @font-size-base;
-@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h6:            (@font-size-base * 0.85); //
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
@@ -74,7 +77,7 @@
 @headings-font-family:    inherit;
 @headings-font-weight:    500;
 @headings-line-height:    1.1;
-@headings-color:          inherit;
+@headings-color:          @orange-lcc;
 
 
 //-- Iconography
@@ -342,16 +345,16 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             @blue;
+@navbar-default-color:             @light-blue-lcc;
 @navbar-default-bg:                #fff;
 @navbar-default-border:            transparent;
 
 // Navbar links
-@navbar-default-link-color:                @blue;
+@navbar-default-link-color:                @light-blue-lcc;
 @navbar-default-link-hover-color:          #fff;
-@navbar-default-link-hover-bg:             #48AFD2;
-@navbar-default-link-active-color:         @white;
-@navbar-default-link-active-bg:            #48AFD2;
+@navbar-default-link-hover-bg:             @light-blue-lcc;
+@navbar-default-link-active-color:         #fff;
+@navbar-default-link-active-bg:            @light-blue-lcc;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 

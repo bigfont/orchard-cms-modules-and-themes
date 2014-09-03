@@ -81,9 +81,15 @@
     <Content Include="Styles\Theme\Imgs\icon_arrow_w.png" />
     <Content Include="Styles\Theme\Imgs\icon_fb.png" />
     <Content Include="Styles\Theme\Imgs\icon_flickr.png" />
+    <Content Include="Styles\Theme\Imgs\icon_magnifying.png" />
     <Content Include="Styles\Theme\Imgs\icon_rss.png" />
     <Content Include="Styles\Theme\Imgs\icon_twitter.png" />
     <Content Include="Styles\Theme\Imgs\lcc-logo.png" />
+    <Content Include="Styles\Theme\Less\_navbar.less" />
+    <Content Include="Styles\Theme\Less\_misc.less" />
+    <Content Include="Styles\Theme\Less\_search-form.less" />
+    <Content Include="Styles\Theme\Less\_text.less" />
+    <Content Include="Styles\Theme\Less\_section-menu.less" />
     <None Include="Views\CarouselInner.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
@@ -98,6 +104,8 @@
     <Content Include="_ReadMe\Todo-Misc.txt" />
     <Content Include="_ReadMe\Todo-Refactoring.txt" />
     <Content Include="_ReadMe\Todo-SpecialPages.txt" />
+    <Content Include="Views\SectionMenuItem.cshtml" />
+    <Content Include="Views\SectionMenuItemChildren.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
