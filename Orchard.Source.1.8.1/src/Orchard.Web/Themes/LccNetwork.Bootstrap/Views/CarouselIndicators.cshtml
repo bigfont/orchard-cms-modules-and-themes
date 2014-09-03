@@ -1,0 +1,13 @@
+﻿<div class="carousel-indicators">
+    @{
+        var items = Model.CarouselItems;
+        for (var i = 0; i < items.Count; ++i)
+        {
+            var item = items[i];
+            <div data-target="#@Model.CarouselId" data-slide-to="@i" class="@(i == 0 ? "active" : string.Empty)">                
+                <img src="@Display.ResizeMediaUrl(Width: Model.IndicatorWidth, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
+                     alt="@item.Img.Alt">
+            </div>
+        }
+    }
+</div>

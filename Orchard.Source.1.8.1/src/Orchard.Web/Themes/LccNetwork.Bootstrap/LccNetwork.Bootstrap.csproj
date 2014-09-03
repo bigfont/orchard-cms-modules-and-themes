@@ -84,6 +84,7 @@
     <Content Include="Styles\Theme\Imgs\icon_rss.png" />
     <Content Include="Styles\Theme\Imgs\icon_twitter.png" />
     <Content Include="Styles\Theme\Imgs\lcc-logo.png" />
+    <None Include="Views\CarouselInner.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -166,9 +167,6 @@
     <Content Include="Views\Fields\Link.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\MyHelpers.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\ProjectionPageAnnualReports.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -193,7 +191,7 @@
     <Content Include="Views\Parts\Title-h2.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\_MediaImageHack.cshtml" />
+    <Content Include="Views\_MediaImage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Fields\MediaLibraryPicker-Large.cshtml" />
@@ -251,6 +249,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\Bootstrap\less\forms.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\CarouselIndicators.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

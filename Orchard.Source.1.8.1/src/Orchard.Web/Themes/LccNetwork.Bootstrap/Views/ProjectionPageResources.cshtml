@@ -16,10 +16,9 @@
             dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
             // get the fields 
             var title = item.TitlePart.Title;
-            var body = item.BodyPart.Text;            
-
+            var body = item.BodyPart.Text;         
             <li class="clearfix">
-                <h3>@title</h3>                
+                <h3>@title</h3>
                 @Html.Raw(body)                
             </li>
         }

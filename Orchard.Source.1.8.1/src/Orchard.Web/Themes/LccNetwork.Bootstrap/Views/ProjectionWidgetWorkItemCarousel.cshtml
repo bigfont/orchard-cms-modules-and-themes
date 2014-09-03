@@ -3,90 +3,61 @@
 
 @{
     var contentItems = Model.ContentItems;
-    var carouselUniqueId = DateTime.Now.Ticks; // it's okay to change this to something else unique
-    List<dynamic> carouselItems = new List<dynamic>();
-    List<string> processedWorkAreas = new List<string>();
+    var carouselUniqueId = Guid.NewGuid().ToString();
+    var items = new List<dynamic>();
+    var processedWorkAreas = new List<string>();
 
     foreach (var contentItem in contentItems)
     {
-        dynamic carouselItem = new System.Dynamic.ExpandoObject();
-
         // work item
         dynamic workItemPart = contentItem.WorkItem;
-        carouselItem.WorkItem = new
-        {
-            Summary = workItemPart.Summary.Value,
-            Slug = Url.ItemDisplayUrl((IContent)contentItem)
-        };
-
-        // work area
         var workArea = workItemPart.Area.Terms[0];
-        carouselItem.WorkArea = new
+        var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(workItemPart.Image);
+
+        // create a bag of properties
+        // consider refactoring this into a ViewModel
+        var item = new
         {
-            Term = workArea.Name,
-            Slug = workArea.Slug
+            WorkArea = new
+            {
+                Term = workArea.Name,
+                Slug = workArea.Slug
+
+            },
+            WorkItem = new
+            {
+                Summary = workItemPart.Summary.Value,
+                Slug = Url.ItemDisplayUrl((IContent)contentItem)
+            },
+            Img = new
+            {
+                Alt = mediaPart != null ? mediaPart.AlternateText : null,
+                Src = mediaPart != null ? mediaPart.MediaUrl : null
+            }
         };
 
-        // image
-        var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(workItemPart.Image);
-        carouselItem.Img = new
+        // ensure no properties are null
+        if (item.WorkArea.Term == null || item.WorkArea.Slug == null || item.WorkItem.Summary == null ||
+            item.WorkArea.Slug == null || item.Img.Alt == null || item.Img.Src == null)
         {
-            Alt = mediaPart != null ? mediaPart.AlternateText : null,
-            Src = mediaPart != null ? mediaPart.MediaUrl : null
-        };
+            continue;
+        }
 
         // ensure that we only display one item per work area
-        if (processedWorkAreas.Any(s => s.Equals(carouselItem.WorkArea.Term)))
+        if (processedWorkAreas.Any(s => s.Equals(item.WorkArea.Term)))
         {
             continue;
         }
 
-        // ensure none of the values are null
-        if ((carouselItem as IDictionary<string, object>).Any((pair) => pair.Value == null))
-        {
-            continue;
-        }
-
-        processedWorkAreas.Add(carouselItem.WorkArea.Term);
-        carouselItems.Add(carouselItem);
+        processedWorkAreas.Add(item.WorkArea.Term);
+        items.Add(item);
     }
-}
-
-@helper CreateCarouselIndicators(List<dynamic> items, long carouselUniqueId, int width)
-{
-    <div class="carousel-indicators">
-        @for (var i = 0; i < items.Count; ++i)
-        {
-            var item = items[i];
-            <div data-target="#@carouselUniqueId" data-slide-to="@i" class="@(i == 0 ? "active" : string.Empty)">
-                <img src="@Display.ResizeMediaUrl(Width: width, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
-                     alt="@item.Img.Alt">
-            </div>
-        }
-    </div>
-}
-
-@helper CreateCarouselItems(List<dynamic> items)
-{
-    <div class="carousel-inner">
-        @for (var i = 0; i < items.Count; ++i)
-        {
-            var item = items[i];
-            <div class="item @(i == 0 ? "active" : string.Empty)">
-                <img src="@item.Img.Src" alt="@item.Img.Alt">
-                <div class="carousel-caption">
-                    <h3><a href="@item.WorkArea.Slug">@item.WorkArea.Term</a></h3>
-                    @Html.Raw(item.WorkItem.Summary)
-                    <a href="@item.WorkItem.Slug">Learn More</a>
-                </div>
-            </div>
-        }
-    </div>
 }
 
 <div id="@carouselUniqueId" class="carousel slide" data-ride="carousel">
 
-    @CreateCarouselIndicators(carouselItems, carouselUniqueId, 100)
-    @CreateCarouselItems(carouselItems)
+    @* Note: We may tweak the indicator width and item width in CSS. *@
+    @Display.CarouselIndicators(CarouselItems: items, CarouselId: carouselUniqueId, IndicatorWidth: 200)
+    @Display.CarouselInner(CarouselItems: items, CarouselId: carouselUniqueId, ItemWidth: 735)
 
 </div>

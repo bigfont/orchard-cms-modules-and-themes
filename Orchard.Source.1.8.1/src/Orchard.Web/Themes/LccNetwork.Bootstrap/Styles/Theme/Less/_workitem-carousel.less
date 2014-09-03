@@ -1,4 +1,6 @@
-﻿.carousel {
+﻿/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+.carousel {
 
     .carousel-indicators {
         bottom: 0;
@@ -37,7 +39,7 @@
                 top: 0;
 
                 > h3 {
-                    color: @green;                    
+                    color: @green;
                     font-weight: bolder;
                     line-height: 1em;
                     margin: 0;
@@ -68,8 +70,9 @@
 
     @carousel-width: 935px;
     @carousel-height: 379px;
-    @carousel-indicators-width: 200px;
-    @carousel-inner-width: @carousel-width - @carousel-indicators-width;
+    @carousel-indicators-col-width: 200px;
+    @carousel-inner-col-width: @carousel-width - @carousel-indicators-col-width;
+    @carousel-indicator-width: 132px; // we limit this in the view to about 200px
     @carousel-caption-width: 250px;
     @carousel-base-padding: 20px;
 
@@ -92,7 +95,7 @@
             margin: 0;
             text-align: center;
             top: 0;
-            width: @carousel-indicators-width;
+            width: @carousel-indicators-col-width;
 
             div,
             div.active {
@@ -102,18 +105,25 @@
                 height: auto;
                 margin-top: @carousel-base-padding;
                 width: auto;
+
+                img {                    
+                    .box-sizing(border-box);                    
+                    width: @carousel-indicator-width;
+                }
+            }
+
+            div.active {
+                img {
+                    border: 3px solid @white;
+                }
             }
         }
 
         .carousel-inner {
-            left: @carousel-indicators-width;
-            width: @carousel-inner-width;
+            left: @carousel-indicators-col-width;
+            width: @carousel-inner-col-width;
 
             > .item {
-
-                > img {
-                    width: @carousel-inner-width;
-                }
 
                 > .carousel-caption {
                     left: auto;

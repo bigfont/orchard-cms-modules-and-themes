@@ -37,6 +37,17 @@
     <Place Fields_TaxonomyField="-" />
   </Match>
 
+  <Match ContentType="WorkItem" DisplayType="Detail">
+    <Place Parts_Title="Content:0"/>
+    <Place Parts_Common_Body="Content:1" />
+    <Place Fields_MediaLibraryPicker="Content:2;Alternate=Fields_MediaLibraryPicker__Large" />
+    <Place Fields_Link="Content:3" />
+    <Place Parts_Title_Summary="-"/>
+    <Place Parts_Common_Body_Summary="-" />
+    <Place Fields_Common_Text="-" />
+    <Place Fields_TaxonomyField="-" />
+  </Match>
+
   <Match ContentType="NewsItem" DisplayType="Summary">
     <Place Fields_MediaLibraryPicker="Content:0;Alternate=Fields_MediaLibraryPicker__Small" />
     <Place Fields_Input-ShortTitle="Content:1" />

@@ -1,0 +1,18 @@
+﻿<div class="carousel-inner">
+    @{
+        var items = Model.CarouselItems;
+    }
+    @for (var i = 0; i < items.Count; ++i)
+    {
+        var item = items[i];
+        <div class="item @(i == 0 ? "active" : string.Empty)">
+            <img src="@Display.ResizeMediaUrl(Width: Model.ItemWidth, Mode: "max", Alignment: "middlecenter", Path: item.Img.Src)"
+                 alt="@item.Img.Alt">            
+            <div class="carousel-caption">
+                <h3><a href="@item.WorkArea.Slug">@item.WorkArea.Term</a></h3>
+                @Html.Raw(item.WorkItem.Summary)
+                <a href="@item.WorkItem.Slug">Learn More</a>
+            </div>
+        </div>
+    }
+</div>

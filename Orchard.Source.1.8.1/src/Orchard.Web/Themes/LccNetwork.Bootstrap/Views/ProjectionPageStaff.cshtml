@@ -4,9 +4,14 @@
 @using Orchard.Utility.Extensions;
 @using LccNetwork.Bootstrap.Extensions;
 
+@* 
+    This is ugly.
+*@
+
 @{
     var contentItems = (Model.ContentItems as IEnumerable<ContentItem>).ToList();
     var cssClass = contentItems.First().TypeDefinition.Name.HtmlClassify();
+    //Sort this in query
     MyFunctions.SortContentItemsByAssociatedLcc(contentItems);
     var lastLcc = string.Empty;
     foreach (ContentItem item in contentItems)

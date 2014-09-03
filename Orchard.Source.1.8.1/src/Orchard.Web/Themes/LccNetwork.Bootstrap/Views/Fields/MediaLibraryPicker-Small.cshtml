@@ -5,14 +5,13 @@
 @{
     var field = (MediaLibraryPickerField)Model.ContentField;
     var contents = field.MediaParts;
-    // explicitly type these so we can call HtmlClassify
-    string contentType = Model.ContentItem.ContentType;
+    // explicitly type so we can call HtmlClassify    
     string name = field.DisplayName;
 }
 <section class="media-library-picker-field-small media-library-picker-field-@name.HtmlClassify()">
     @foreach (var content in contents)
     {
-        @Html.Partial("_MediaImageHack", content, new ViewDataDictionary() { { "Width", 200 } })
+        @Html.Partial("_MediaImage", content, new ViewDataDictionary() { { "Width", 200 } })
     }
 </section>
 

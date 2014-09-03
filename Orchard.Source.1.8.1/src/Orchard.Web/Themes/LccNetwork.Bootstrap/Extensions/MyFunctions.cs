@@ -16,6 +16,11 @@ namespace LccNetwork.Bootstrap.Extensions
 {
     public class MyFunctions
     {
+        // don't do this... make the sorting part of the query
+        // if you have a lot of items, and want pagination, this was brings down 
+        // way too many tables into memory and then you sort it in memory
+        // and then extract the page that you want... it's very wasteful.  
+        // Probably refactor this into a controller that does two queries
         public static void SortContentItemsByAssociatedLcc(List<ContentItem> contentItems)
         {
             // sort by associated lcc
