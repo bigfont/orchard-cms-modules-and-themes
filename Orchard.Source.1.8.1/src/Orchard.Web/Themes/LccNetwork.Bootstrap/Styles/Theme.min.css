@@ -4716,6 +4716,7 @@ form.search-form button[type=submit] {
   background-color: #da8639;
   color: #fff;
   font-weight: 700;
+  text-transform: capitalize;
 }
 .widget-section-menu nav ul > li > a {
   font-weight: 700;
@@ -4746,7 +4747,7 @@ img {
 .projection-page h2 {
   font-weight: bolder;
 }
-.main {
+#find-an-lcc {
   width: 90%;
   margin: auto;
 }

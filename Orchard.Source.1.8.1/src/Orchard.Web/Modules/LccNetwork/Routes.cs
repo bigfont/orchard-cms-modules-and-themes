@@ -9,7 +9,7 @@ using System.Web.Routing;
 
 namespace LccNetwork
 {
-    [OrchardFeature("FindAnLcc")]
+    [OrchardFeature("StaticPages")]
     public class Routes : IRouteProvider
     {
         public void GetRoutes(ICollection<RouteDescriptor> routes)

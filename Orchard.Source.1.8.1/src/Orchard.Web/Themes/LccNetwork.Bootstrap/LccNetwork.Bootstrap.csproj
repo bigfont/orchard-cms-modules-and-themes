@@ -90,6 +90,7 @@
     <Content Include="Styles\Theme\Less\_search-form.less" />
     <Content Include="Styles\Theme\Less\_text.less" />
     <Content Include="Styles\Theme\Less\_section-menu.less" />
+    <Content Include="Styles\Theme\Less\_content-item.less" />
     <None Include="Views\CarouselInner.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
