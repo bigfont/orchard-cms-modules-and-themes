@@ -1,0 +1,7 @@
+﻿@{
+    var subItems = (IList<dynamic>)Enumerable.Cast<dynamic>(Model.Items);
+    foreach (var subItem in subItems)
+    {
+        @Display.FooterMenuItem(Item: subItem.Item)
+    }
+}           

@@ -1,0 +1,15 @@
+﻿@using System.Globalization;
+@using Orchard.UI.Navigation;
+
+@{
+    MenuItem item = Model.Item as MenuItem;
+
+    var text = item.Text.Text;
+    var tag = Tag(Model, "li");
+    @tag.StartElement
+    <h6>
+        @Html.Raw(text)
+    </h6>
+    @tag.EndElement
+
+}

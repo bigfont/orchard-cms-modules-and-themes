@@ -108,6 +108,9 @@
     <Content Include="Views\SectionMenuItem.cshtml" />
     <Content Include="Views\SectionMenuItemChildren.cshtml" />
     <Content Include="Views\TaxonomyLinkDropDown.cshtml" />
+    <Content Include="Views\FooterMenuItem.cshtml" />
+    <Content Include="Views\FooterMenuHeader.cshtml" />
+    <Content Include="Views\FooterMenuChildren.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">

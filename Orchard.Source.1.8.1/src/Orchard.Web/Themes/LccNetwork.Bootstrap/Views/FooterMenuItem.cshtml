@@ -1,0 +1,15 @@
+﻿@using System.Globalization;
+@using Orchard.UI.Navigation;
+
+@{
+    TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+    MenuItem item = Model.Item as MenuItem;
+
+    var text = textInfo.ToTitleCase(item.Href.Substring(1)).Replace('-', ' ');
+    var href = item.Href;
+    var attr = new { @class = item.Selected };
+    var tag = Tag(Model, "li");
+    @tag.StartElement
+    @: @Html.Link(text, href, attr)
+    @tag.EndElement
+}    
