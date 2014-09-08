@@ -3,26 +3,32 @@
 @using Orchard.UI.Navigation;
 
 @{
-    var textInfo = new CultureInfo("en-US", false).TextInfo;
     var item = Model.MenuItem.Item as MenuItem;
-    // Use the Href as the link text,
+    
+    // Use the href as the link text,
     // if it's the top level menu item,
     // because we want the subnav title to be different than the link
     // While this is a bit odd, that is what the original site does, so we're doing it here too.
+    var textInfo = new CultureInfo("en-US", false).TextInfo;    
     var text = Model.IsTopLevel ?
         textInfo.ToTitleCase(item.Href.Substring(1)).Replace('-', ' ') :
         item.Text.Text;
     var href = item.Href;
+    
+    // the section menu requires that *some* child items are rendered as sibling items
+    // which means that if a child is selected, then two siblings can *appear* to be selected
+    // prevent this as follows
+    if (item.Items.Any(i => i.Selected))
+    {
+        item.Selected = false;
+    }    
     var attr = new { @class = item.Selected ? "active" : "" };
+    
+    // render the beast
     var tag = Tag(Model, "li");
     @tag.StartElement
-    if (href.Equals("/"))
-    {
-        <span>@text</span>
-    }
-    else
-    {
-        @Html.Link(text, href, attr)
-    }
+
+    @Html.Link(text, href, attr)
+
     @tag.EndElement
 }
