@@ -497,7 +497,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-lg {
   padding: 10px 16px;
-  font-size: 16px;
+  font-size: 16.64px;
   line-height: 1.33;
   border-radius: 6px;
 }
@@ -2862,15 +2862,15 @@ select[multiple].input-sm {
   height: auto;
 }
 .input-lg {
-  height: 44px;
+  height: 45px;
   padding: 10px 16px;
-  font-size: 16px;
+  font-size: 16.64px;
   line-height: 1.33;
   border-radius: 6px;
 }
 select.input-lg {
-  height: 44px;
-  line-height: 44px;
+  height: 45px;
+  line-height: 45px;
 }
 textarea.input-lg,
 select[multiple].input-lg {
@@ -3335,7 +3335,7 @@ select[multiple].input-lg {
 .navbar-brand {
   float: left;
   padding: 16px 10px;
-  font-size: 16px;
+  font-size: 16.64px;
   line-height: 18px;
   height: 50px;
 }
@@ -4349,7 +4349,7 @@ article.event .date-time-field-start-date .year {
   font-size: 32px;
 }
 #layout-main-container article.widget-greenabout a:last-child {
-  font-size: 16px;
+  font-size: 16.64px;
   font-weight: 500;
   color: #685046;
 }
@@ -4432,7 +4432,7 @@ article.event .date-time-field-start-date .year {
   border-color: #d27927;
   background-color: #da8639;
   border-radius: 0;
-  font-size: 16px;
+  font-size: 16.64px;
   text-transform: uppercase;
 }
 .widget-compelling-link p.link-field-action a:focus,
@@ -4583,7 +4583,7 @@ fieldset[disabled] .widget-compelling-link p.link-field-action a.active {
 #layout-main-container [class*="superlink"] p {
   margin: 5px;
   margin-right: 30px;
-  font-size: 16px;
+  font-size: 16.64px;
   line-height: 1.33;
   font-weight: bolder;
   color: #fff;
@@ -4603,7 +4603,7 @@ fieldset[disabled] .widget-compelling-link p.link-field-action a.active {
 }
 #layout-main-container [class*="superlink"] p strong {
   margin-left: -1px;
-  font-size: 29.44px;
+  font-size: 33.28px;
   line-height: 1.33;
   text-transform: uppercase;
 }
@@ -4689,7 +4689,7 @@ form.search-form button[type=submit] {
   background-color: #3a2d27;
   color: #cccccc;
   float: none;
-  font-size: 16px;
+  font-size: 16.64px;
   height: 34px;
   left: 0;
   margin: 0;
