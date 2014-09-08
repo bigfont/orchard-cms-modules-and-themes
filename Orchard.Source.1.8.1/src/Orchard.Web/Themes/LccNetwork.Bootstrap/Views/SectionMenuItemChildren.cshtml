@@ -12,13 +12,11 @@
             var childMenuItem = childMenuItems[i];
             if (childMenuItem.Content is TermPart)
             {
-                // render the taxonomy terms
-                // my method is a hack, that said it works                
-                // see also http://stackoverflow.com/questions/25732672/how-do-we-cause-orchard-to-render-a-taxonomy-links-menu-text
+                // hack - render taxonomy link menu text
+                // see http://stackoverflow.com/questions/25732672/how-do-we-cause-orchard-to-render-a-taxonomy-links-menu-text
                 var taxonomyName = childMenuItem.Content.Container.TaxonomyPart.Name;
                 var termMenuItems = (childMenuItems as ICollection<dynamic>).Where(c => c.Content is TermPart && c.Content.Container.TaxonomyPart.Name.Equals(taxonomyName));
                 i += termMenuItems.Count();
-
                 @Display.TaxonomyLinkDropDown(TaxonomyName: taxonomyName, TermMenuItems: termMenuItems);
             }
             else

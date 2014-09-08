@@ -1,7 +1,20 @@
-﻿@{
-    var subItems = (IList<dynamic>)Enumerable.Cast<dynamic>(Model.Items);
-    foreach (var subItem in subItems)
+﻿@using Orchard.Taxonomies.Models
+@using Orchard.Mvc.Extensions
+@using Orchard.ContentManagement;
+
+
+@{
+    var childMenuItems = Enumerable.Cast<dynamic>(Model.Items);
+    for (var i = 0; i < childMenuItems.Count; ++i)
     {
-        @Display.FooterMenuItem(Item: subItem.Item)
+        var childMenuItem = childMenuItems[i];
+        if (childMenuItem.Content is TermPart)
+        {
+            continue; // don't display taxonomy link items
+        }
+        else
+        {
+            @Display.FooterMenuItem(Item: childMenuItem.Item)
+        }
     }
 }           
