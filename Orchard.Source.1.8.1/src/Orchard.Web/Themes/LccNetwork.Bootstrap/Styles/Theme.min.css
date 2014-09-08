@@ -2447,7 +2447,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 9.6px;
+  font-size: 12.8px;
 }
 h4,
 .h4 {
@@ -4305,7 +4305,7 @@ article.council-meeting .text-field .name {
   display: block;
 }
 article.event {
-  font-size: 9.6px;
+  font-size: 12.8px;
 }
 article.event h3 {
   margin-top: 10px;
