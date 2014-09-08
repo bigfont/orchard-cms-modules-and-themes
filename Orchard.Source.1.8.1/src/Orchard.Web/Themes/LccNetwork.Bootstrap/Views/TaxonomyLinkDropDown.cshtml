@@ -1,0 +1,14 @@
+﻿@{
+    var selected = (Model.TermMenuItems as IEnumerable<dynamic>).Any(i => i.Selected);
+    
+}
+
+<li class="dropdown">
+    <a class="@(selected ? "active" : null)" data-toggle="dropdown" href="#">@Model.TaxonomyName</a>
+    <ul class="dropdown-menu" role="menu">
+        @foreach (var termMenuItem in Model.TermMenuItems)
+        {
+            @Display.SectionMenuItem(MenuItem: termMenuItem, IsTopLevel: false)
+        }
+    </ul>
+</li>

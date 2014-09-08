@@ -107,6 +107,7 @@
     <Content Include="_ReadMe\Todo-SpecialPages.txt" />
     <Content Include="Views\SectionMenuItem.cshtml" />
     <Content Include="Views\SectionMenuItemChildren.cshtml" />
+    <Content Include="Views\TaxonomyLinkDropDown.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -128,6 +129,10 @@
     <ProjectReference Include="..\..\Modules\Orchard.MediaProcessing\Orchard.MediaProcessing.csproj">
       <Project>{08191fcd-7258-4f19-95fb-aec3de77b2eb}</Project>
       <Name>Orchard.MediaProcessing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Modules\Orchard.Taxonomies\Orchard.Taxonomies.csproj">
+      <Project>{e649ea64-d213-461b-87f7-d67035801443}</Project>
+      <Name>Orchard.Taxonomies</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Modules\Orchard.Widgets\Orchard.Widgets.csproj">
       <Project>{194d3ccc-1153-474d-8176-fde8d7d0d0bd}</Project>
