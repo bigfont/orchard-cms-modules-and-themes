@@ -22,7 +22,7 @@ div#layout-navigation.group {
 
         .widget-compelling-link {
             .make-md-column(19);
-            padding-left:0;
+            padding-left: 0;
         }
 
         .widget-social-networking {
@@ -31,7 +31,7 @@ div#layout-navigation.group {
 
         .widget-search-form {
             .make-md-column(11);
-            padding-right:0;
+            padding-right: 0;
         }
 
         .widget-carousel {
@@ -149,9 +149,35 @@ div#layout-navigation.group {
         #footer-sig {
 
             .zone-footer {
+                padding-bottom:25px;
                 text-align: right;
                 font-size: @font-size-small;
                 color: #fff;
+                .make-row();
+
+                .widget {
+                    text-align: left;
+
+                    h1, h2, h3, h4, h5, h6, strong {
+                        text-transform: uppercase;
+                    }
+
+                    &.widget-footer-menu {
+                        .make-md-column-offset(1);
+                        .make-md-column(18); // half width
+                    }
+
+                    &.widget-html-widget {
+                        .make-md-column-offset(1);
+                        .make-md-column(9); // quarter width
+                    }
+                }
+
+                .badge-of-honor,
+                .user-display {
+                    float: right;
+                    clear: both;
+                }
             }
         }
     }

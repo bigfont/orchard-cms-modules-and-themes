@@ -1,0 +1,26 @@
+@using LccNetwork.Bootstrap.Extensions
+@using Orchard.ContentManagement
+@using Orchard.Utility.Extensions
+
+@{
+    var mainPart = MyFunctions.GetMainPartFromContentItem(Model.ContentItem);
+    var document = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Document);
+    var documentImg = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.DocumentImage);
+    var bag = new
+    {
+        // convenient bag-o-properties
+        DocUrl = document.MediaUrl,
+        ImgSrc = documentImg.MediaUrl,
+        ImgAlt = documentImg.AlternateText,
+        DocCaption = mainPart.DocumentCaption.Value
+    };
+}
+
+<figure>
+    <a href="@bag.DocUrl">
+        <img src="@Display.ResizeMediaUrl(Width: 400, Mode: "max", Alignment: "middlecenter", Path: bag.ImgSrc)"
+             alt="@bag.ImgAlt">
+    </a>
+    <figcaption>@bag.DocCaption</figcaption>
+</figure>
+

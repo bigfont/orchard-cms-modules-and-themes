@@ -91,6 +91,8 @@
     <Content Include="Styles\Theme\Less\_text.less" />
     <Content Include="Styles\Theme\Less\_section-menu.less" />
     <Content Include="Styles\Theme\Less\_content-item.less" />
+    <Content Include="Styles\Theme\Less\_footer-about.less" />
+    <None Include="Styles\Theme\Less\_featured-document.less" />
     <None Include="Views\CarouselInner.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
@@ -111,6 +113,7 @@
     <Content Include="Views\FooterMenuItem.cshtml" />
     <Content Include="Views\FooterMenuHeader.cshtml" />
     <Content Include="Views\FooterMenuChildren.cshtml" />
+    <Content Include="Views\Widget-FeaturedDocument.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -253,7 +256,7 @@
     <Content Include="Styles\Theme\Less\_super-links.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\Theme\Less\_widget-footer-menu.less" />
+    <Content Include="Styles\Theme\Less\_footer-menu.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\Theme\Less\_datetime.less" />
