@@ -108,11 +108,4 @@
     <Place Parts_Title_Summary="-"/>
   </Match>
 
-  <Match ContentType="FeaturedDocument">
-    <Place Fields_MediaLibraryPicker="-" />
-    <Match Path="about">
-      <Place Fields_MediaLibraryPicker="Content:1" />
-    </Match>
-  </Match>
-
 </Placement>
