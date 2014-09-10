@@ -7,7 +7,7 @@
     if (hasChildren)
     {
         var childMenuItems = Enumerable.Cast<dynamic>(Model.MenuItem.Items);
-        for (var i = 0; i < childMenuItems.Count; ++i)
+        for (var i = 0; i < childMenuItems.Length; ++i)
         {
             var childMenuItem = childMenuItems[i];
             if (childMenuItem.Content is TermPart)

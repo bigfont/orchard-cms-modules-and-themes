@@ -1,20 +1,52 @@
-﻿@{
+﻿@using Orchard.UI.Navigation;
+
+@functions
+{
+    void SetMenuItemsAsSelected(IEnumerable<MenuItem> menuItems, string currentUrl)
+    {
+        // this process assumes that a detail-page's url contains its projection-page's url in singular form        
+        // e.g.
+        // projection-page  http://www.mydomain.com/events
+        // detail-page      http://www.mydomain.com/event/5th-annual-pacific-northwest-climate-science-conference
+        foreach (var menuItem in menuItems)
+        {
+            // process child items first
+            SetMenuItemsAsSelected(menuItem.Items, currentUrl);
+
+            // then process current item
+            var menuItemUrl = menuItem.Href;
+            menuItem.Selected =
+                currentUrl.Contains(menuItemUrl) || // plural
+                currentUrl.Contains(menuItemUrl.TrimEnd('s')) || // singular
+                menuItem.Items.Any(i => i.Selected); // check children
+        }
+    }
+}
+
+@{
     var menu = Model.Menu;
     var collapseId = Model.Id;
 
     var tag = Tag(menu, "ul");
     tag.AddCssClass("list-unstyled");
-    var items = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
+
+    // get the menu item shapes
+    var shapeItems = (IList<dynamic>)Enumerable.Cast<dynamic>(menu.Items);
+
+    // get the menu shapeItems from the shapes
+    var menuItems = shapeItems.Select<dynamic, MenuItem>(i => i.Item);
+
+    // for pages that are not in the main menu
+    // check whether a parent is selected or not
+    SetMenuItemsAsSelected(menuItems, HttpContext.Current.Request.Url.AbsoluteUri);
 
     // get the first, selected, top level item
-    var selectedMenuItem = items.FirstOrDefault(i => i.Item.Selected);
+    var selectedMenuItem = menuItems.FirstOrDefault(i => i.Selected);
 
     // proceed only if there is a selected menu item
-    // otherwise we're probably on the hope page (or something odd has happened)
+    // otherwise we're probably on the home page (or something odd has happened)
     if (selectedMenuItem != null)
     {
-        // selectedMenuItem.Selected = !subItems.Any(i => i.Selected);
-
         // now render the item and its children
         <nav>
             @*use the text of selected menu item as the title of the subnav*@
