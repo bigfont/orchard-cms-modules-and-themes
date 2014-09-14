@@ -140,6 +140,7 @@
     <Content Include="Styles\Web.config" />
     <Content Include="Theme.png" />
     <Content Include="ThemeZonePreview.png" />
+    <None Include="Views\Bootstrap-MenuItem.cshtml" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Menu.cshtml" />
     <Content Include="Views\MenuItem.cshtml" />
@@ -150,6 +151,7 @@
     <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\MenuItemLink-ContentMenuItem.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,10 +1,1 @@
-﻿@{
-    var dropdownAttributes = string.Empty;
-    var dropdownIcon = string.Empty;
-    if(Model.Classes.Contains("dropdown"))
-    {
-        dropdownAttributes = "data-toggle='dropdown'";
-        dropdownIcon = "<span class='caret'></span>";
-    }
-}
-<a @Html.Raw(dropdownAttributes) href="@Model.Href">@Model.Text @Html.Raw(dropdownIcon)</a>
+﻿@Display.Bootstrap__MenuItem(Href: Model.Href, Text: Model.Text, BootstrapAttributes: Model.BootstrapAttributes, BootstrapIcon: Model.BootstrapIcon)

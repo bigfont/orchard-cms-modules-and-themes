@@ -18,6 +18,9 @@
         if (items.Any())
         {
             Model.Classes.Add("dropdown");
+            // for bootstrap and/or font-awesome            
+            Model.BootstrapAttributes = "data-toggle='dropdown'";
+            Model.BootstrapIcon = "<span class='caret'></span>";
         }
 
         @* morphing the shape to keep Model untouched*@
