@@ -9,9 +9,12 @@
 
     foreach (var contentItem in contentItems)
     {
-        // work item
+        // work area
         dynamic workItemPart = contentItem.WorkItem;
-        var workArea = workItemPart.Area.Terms[0];
+        var workArea = workItemPart != null && workItemPart.Area != null && workItemPart.Area.Terms != null && workItemPart.Area.Terms.Length > 0 ? 
+            workItemPart.Area.Terms[0] : string.Empty;
+        
+        // media part
         var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(workItemPart.Image);
 
         // create a bag of properties
