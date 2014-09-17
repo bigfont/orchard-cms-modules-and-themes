@@ -11,8 +11,8 @@
     {
         // work area
         dynamic workItemPart = contentItem.WorkItem;
-        var workArea = workItemPart != null && workItemPart.Area != null && workItemPart.Area.Terms != null && workItemPart.Area.Terms.Length > 0 ? 
-            workItemPart.Area.Terms[0] : string.Empty;
+        var workArea = workItemPart != null && workItemPart.Area != null && workItemPart.Area.Terms != null && workItemPart.Area.Terms.Count > 0 ? 
+            workItemPart.Area.Terms[0] : null;
         
         // media part
         var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(workItemPart.Image);
@@ -23,13 +23,13 @@
         {
             WorkArea = new
             {
-                Term = workArea.Name,
-                Slug = workArea.Slug
+                Term = workArea != null ? workArea.Name : string.Empty,
+                Slug = workArea != null ? workArea.Slug : string.Empty
 
             },
             WorkItem = new
             {
-                Summary = workItemPart.Summary.Value,
+                Summary = workItemPart != null && workItemPart.Summary != null ? workItemPart.Summary.Value : string.Empty,
                 Slug = Url.ItemDisplayUrl((IContent)contentItem)
             },
             Img = new
