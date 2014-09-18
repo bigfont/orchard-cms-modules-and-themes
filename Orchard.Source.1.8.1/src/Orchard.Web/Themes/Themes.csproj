@@ -74,6 +74,12 @@
     <Content Include="Bootstrap_3_1_1_KongwaHill\Styles\Site.css" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Theme.png" />
     <Content Include="Bootstrap_3_1_1_KongwaHill\Theme.txt" />
+    <Content Include="SingularBiogenics\Content\favicon.ico" />
+    <Content Include="SingularBiogenics\Content\Logo.jpg" />
+    <Content Include="SingularBiogenics\Styles\bootstrap-theme.min.css" />
+    <Content Include="SingularBiogenics\Styles\Site.css" />
+    <Content Include="SingularBiogenics\Theme.png" />
+    <Content Include="SingularBiogenics\Theme.txt" />
     <Content Include="TheAdmin\Scripts\admin.js" />
     <Content Include="TheAdmin\Styles\ie.css" />
     <Content Include="TheAdmin\Styles\ie7.css" />
@@ -257,6 +263,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bootstrap_3_1_1_GardenFaire\Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SingularBiogenics\Content\Web.config" />
+    <Content Include="SingularBiogenics\Placement.info" />
+    <Content Include="SingularBiogenics\Scripts\Web.config" />
+    <Content Include="SingularBiogenics\Styles\Web.config" />
+    <Content Include="SingularBiogenics\Views\Content.cshtml" />
+    <Content Include="SingularBiogenics\Views\Document.cshtml" />
+    <Content Include="SingularBiogenics\Views\Layout.cshtml" />
+    <Content Include="SingularBiogenics\Views\LogOn.cshtml" />
+    <Content Include="SingularBiogenics\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
