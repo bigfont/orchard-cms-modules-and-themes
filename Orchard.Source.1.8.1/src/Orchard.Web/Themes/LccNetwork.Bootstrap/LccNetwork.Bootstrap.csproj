@@ -75,6 +75,9 @@
     <Content Include="Styles\Bootstrap\less\variables.min.css">
       <DependentUpon>variables.less</DependentUpon>
     </Content>
+    <Content Include="Styles\Theme.css">
+      <DependentUpon>Theme.less</DependentUpon>
+    </Content>
     <Content Include="Styles\Theme.min.css" />
     <Content Include="Styles\Theme\Imgs\banner_graphic.jpg" />
     <Content Include="Styles\Theme\Imgs\icon_arrow_br.png" />
@@ -93,6 +96,9 @@
     <Content Include="Styles\Theme\Less\_section-menu.less" />
     <Content Include="Styles\Theme\Less\_content-item.less" />
     <Content Include="Styles\Theme\Less\_footer-about.less" />
+    <Content Include="Styles\Theme.css.map">
+      <DependentUpon>Theme.css</DependentUpon>
+    </Content>
     <None Include="Styles\Theme\Less\_featured-document.less" />
     <None Include="Views\CarouselInner.cshtml" />
     <Content Include="Web.config" />
