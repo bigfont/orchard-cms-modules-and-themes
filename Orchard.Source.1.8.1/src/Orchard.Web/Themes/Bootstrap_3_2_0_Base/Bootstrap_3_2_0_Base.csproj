@@ -82,18 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Web.config" />
-    <Content Include="Scripts\Bootstrap\affix.js" />
-    <Content Include="Scripts\Bootstrap\alert.js" />
-    <Content Include="Scripts\Bootstrap\button.js" />
-    <Content Include="Scripts\Bootstrap\carousel.js" />
-    <Content Include="Scripts\Bootstrap\collapse.js" />
-    <Content Include="Scripts\Bootstrap\dropdown.js" />
-    <Content Include="Scripts\Bootstrap\modal.js" />
-    <Content Include="Scripts\Bootstrap\popover.js" />
-    <Content Include="Scripts\Bootstrap\scrollspy.js" />
-    <Content Include="Scripts\Bootstrap\tab.js" />
-    <Content Include="Scripts\Bootstrap\tooltip.js" />
-    <Content Include="Scripts\Bootstrap\transition.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\theme.js" />
     <Content Include="Styles\Bootstrap\less\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
