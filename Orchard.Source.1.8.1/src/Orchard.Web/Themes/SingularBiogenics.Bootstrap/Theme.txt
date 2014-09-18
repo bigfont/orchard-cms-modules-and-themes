@@ -1,6 +1,7 @@
-Name: SingularBiogenics.Bootstrap
-Author: The Orchard Team
-Website: http://www.orchardproject.net
-Description: Description for the theme
+Name: Singular Biogenics - Bootstrap
+Author: Shaun Luttin @ bigfont.ca
+Website: www.singularbiogenics.com
+Description: A very simple default website using Bootstrap.
 Version: 1.0
-BaseTheme: Bootstrap_3_1_1_Base
+Tags: Bootstrap
+BaseTheme: Bootstrap_3_2_0_Base
