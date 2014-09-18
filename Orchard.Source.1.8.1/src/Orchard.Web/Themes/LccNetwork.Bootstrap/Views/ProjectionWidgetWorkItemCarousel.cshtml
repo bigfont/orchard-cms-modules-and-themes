@@ -2,13 +2,19 @@
 @using LccNetwork.Bootstrap.Extensions;
 
 @{
+    var maxCarouselItems = 4;
     var contentItems = Model.ContentItems;
     var carouselUniqueId = Guid.NewGuid().ToString();
     var items = new List<dynamic>();
-    var processedWorkAreas = new List<string>();
+    var processedWorkAreas = new List<string>();    
 
     foreach (var contentItem in contentItems)
     {
+        if (processedWorkAreas.Count == maxCarouselItems)
+        {
+            break;
+        }
+        
         // work area
         dynamic workItemPart = contentItem.WorkItem;
         var workArea = workItemPart != null && workItemPart.Area != null && workItemPart.Area.Terms != null && workItemPart.Area.Terms.Count > 0 ? 
@@ -23,25 +29,23 @@
         {
             WorkArea = new
             {
-                Term = workArea != null ? workArea.Name : string.Empty,
-                Slug = workArea != null ? workArea.Slug : string.Empty
-
+                Term = workArea != null && workArea.Name != null ? workArea.Name : "No Work Area Name",
+                Slug = workArea != null && workArea.Slug != null ? workArea.Slug : "No Work Area Slug"
             },
             WorkItem = new
             {
-                Summary = workItemPart != null && workItemPart.Summary != null ? workItemPart.Summary.Value : string.Empty,
+                Summary = workItemPart != null && workItemPart.Summary != null && workItemPart.Summary.Value != null ? workItemPart.Summary.Value : "No Work Item Summary",
                 Slug = Url.ItemDisplayUrl((IContent)contentItem)
             },
             Img = new
             {
-                Alt = mediaPart != null ? mediaPart.AlternateText : null,
-                Src = mediaPart != null ? mediaPart.MediaUrl : null
+                Alt = mediaPart != null && mediaPart.AlternateText != null ? mediaPart.AlternateText : "No Img Alt Text",
+                Src = mediaPart != null && mediaPart.MediaUrl != null ? mediaPart.MediaUrl : "No Img Src"
             }
         };
 
         // ensure no properties are null
-        if (item.WorkArea.Term == null || item.WorkArea.Slug == null || item.WorkItem.Summary == null ||
-            item.WorkArea.Slug == null || item.Img.Alt == null || item.Img.Src == null)
+        if (item.WorkArea.Term == null || item.WorkArea.Slug == null || item.WorkItem.Summary == null || item.Img.Alt == null || item.Img.Src == null)
         {
             continue;
         }
