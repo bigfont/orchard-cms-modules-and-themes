@@ -14,8 +14,6 @@
 .navbar-header:after,
 .navbar-collapse:before,
 .navbar-collapse:after,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget:before,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget:after,
 #footer .group:before,
 #footer .group:after,
 #layout-wrapper:before,
@@ -35,7 +33,6 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
 .navbar:after,
 .navbar-header:after,
 .navbar-collapse:after,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget:after,
 #footer .group:after,
 #layout-wrapper:after,
 #layout-wrapper > .group:after,
@@ -1574,102 +1571,6 @@ select[multiple].input-lg {
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
 }
-/* 
-    Somes classes really need to be in the markup 
-    for bootstrap selectors to work.
-*/
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget {
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
-}
-@media (min-width: 768px) {
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget {
-    border-radius: 4px;
-  }
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-brand {
-  color: #777777;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-brand:hover,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-brand:focus {
-  color: #5e5e5e;
-  background-color: transparent;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-text {
-  color: #777777;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > li > a {
-  color: #777777;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > li > a:hover,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > li > a:focus {
-  color: #333333;
-  background-color: transparent;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .active > a,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .active > a:hover,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .active > a:focus {
-  color: #555555;
-  background-color: #e7e7e7;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .disabled > a,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .disabled > a:hover,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .disabled > a:focus {
-  color: #cccccc;
-  background-color: transparent;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-toggle {
-  border-color: #dddddd;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-toggle:hover,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-toggle:focus {
-  background-color: #dddddd;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-toggle .icon-bar {
-  background-color: #888888;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-collapse,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-form {
-  border-color: #e7e7e7;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .open > a,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .open > a:hover,
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
-  color: #555555;
-}
-@media (max-width: 767px) {
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
-  }
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > li > a:hover,
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
-    background-color: transparent;
-  }
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > .active > a,
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > .active > a:hover,
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555555;
-    background-color: #e7e7e7;
-  }
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > .disabled > a,
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: #cccccc;
-    background-color: transparent;
-  }
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-link {
-  color: #777777;
-}
-div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigation.widget-menu-widget.widget .navbar-link:hover {
-  color: #333333;
-}
 /*
     - content must be within columns
     - columns must be within rows 
@@ -1764,26 +1665,26 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
     width: 100%;
   }
 }
-#layout-wrapper .zone-content {
+#layout-wrapper #layout-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-wrapper .zone-content {
+  #layout-wrapper #layout-content {
     float: left;
     width: 100%;
   }
 }
-#layout-wrapper.aside-12 .zone-content {
+#layout-wrapper.aside-12 #layout-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-wrapper.aside-12 .zone-content {
+  #layout-wrapper.aside-12 #layout-content {
     float: left;
     width: 50%;
   }
@@ -1800,16 +1701,16 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
     width: 25%;
   }
 }
-#layout-wrapper.aside-1 .zone-content,
-#layout-wrapper.aside-2 .zone-content {
+#layout-wrapper.aside-1 #layout-content,
+#layout-wrapper.aside-2 #layout-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  #layout-wrapper.aside-1 .zone-content,
-  #layout-wrapper.aside-2 .zone-content {
+  #layout-wrapper.aside-1 #layout-content,
+  #layout-wrapper.aside-2 #layout-content {
     float: left;
     width: 66.66666667%;
   }
@@ -5956,3 +5857,4 @@ div#layout-navigation.group > div.zone.zone-navigation > article.widget-navigati
     width: 25%;
   }
 }
+/*# sourceMappingURL=Site.css.map */

@@ -127,7 +127,6 @@
       <DependentUpon>Site.less</DependentUpon>
     </Content>
     <Content Include="Styles\Site\less\_TheThemeMachine-Bootstrap-Mixins.less" />
-    <Content Include="Styles\Site\less\_TheThemeMachine-Bootstrap-Navigation.less" />
     <Content Include="Styles\Site\less\_TheThemeMachine-Bootstrap-Scaffolding.less" />
     <Content Include="Styles\Site.less" />
     <Content Include="Styles\Theme.css">
@@ -140,6 +139,9 @@
     <Content Include="Styles\Web.config" />
     <Content Include="Theme.png" />
     <Content Include="ThemeZonePreview.png" />
+    <Content Include="Styles\Site.css.map">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
     <None Include="Views\Bootstrap-MenuItem.cshtml" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Menu.cshtml" />
