@@ -15,9 +15,9 @@
                 <span class="date">
                     @if (DateTime.TryParse(date, out dateTime))
                     {
-                        // 03 Oct, 2014
+                        // mm/dd/yyyy
                         <text>
-                            <span class="day">@dateTime.ToString("dd")</span>&nbsp;<span class="month">@dateTime.ToString("MMM")</span><span class="year">, @dateTime.ToString("yyyy")</span>
+                            <span class="day">@dateTime.ToString("d")</span>
                         </text>
                     }
                     else

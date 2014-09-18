@@ -11,15 +11,18 @@
     <ul class="list-unstyled @cssClass">
         @foreach (dynamic item in contentItems)
         {
+            //@Model.ContentItem.MediaPart.MediaUrl
             var itemDisplayUrl = Url.ItemDisplayUrl((IContent)item);
             // get the mainPart, so we can access the item's fields
             dynamic mainPart = MyFunctions.GetMainPartFromContentItem(item);
+            var mediaPart = MyFunctions.GetMediaPartFromMediaLibraryPickerField(mainPart.Documents);
             // get the fields 
             var title = item.TitlePart.Title;
-            var body = item.BodyPart.Text;         
+            var body = item.BodyPart.Text;
+            
             <li class="clearfix">
-                <h3>@title</h3>
-                @Html.Raw(body)                
+                <h3><a href="@mediaPart.MediaUrl">@title</a></h3>
+                @Html.Raw(body)
             </li>
         }
     </ul>
