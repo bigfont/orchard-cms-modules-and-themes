@@ -10,3 +10,83 @@ nav header,
 footer h2 {
     font-family: "Roboto";
 }
+
+ul.resource h3{
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size:14px;
+}
+article.event {
+    p {
+        margin: 0 0 9px;
+    }
+
+        p.text-field-city, p.text-field-state {
+            display: inline;
+        }
+
+        p.text-field-city {
+            &:before {
+                content: "- ";
+            }
+
+            &:after {
+                content: ", ";
+            }
+        }
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        color: black;
+        margin-bottom: 5px;
+    }
+    h3{
+        margin-bottom:0;
+    }
+}
+
+#layout-main-container .widget-projection-widget article.news-item {
+    h2{
+        font-size:12px;
+        margin-top:0;
+    }
+}
+
+article.projection-page{
+     h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+        color: black;
+        margin-bottom: 5px;
+    }
+}
+article.content-item {
+    h2.dpdn {
+        color: #4A94C2;
+        margin-top: 12px;
+    }
+
+    .lcc > h2 {
+        text-transform: none;
+        font-size: 13px;
+    }
+
+    p.doc {
+        margin-bottom: 3px;
+    }
+
+    ul.newsletter {
+        h3 {
+            margin-top: 0;
+
+            &:before {
+                content: '\0000BB  ';
+                color: #325a6e;
+            }
+        }
+    }
+}
+

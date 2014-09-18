@@ -28,9 +28,9 @@
 
   <Match ContentType="WorkItem" DisplayType="Summary">
     <Place Parts_Title="Content:0;Alternate=Parts_Title__h2"/>
-    <Place Parts_Common_Body="Content:1" />
+    <Place Parts_Common_Body="Content:3" />
     <Place Fields_MediaLibraryPicker="Content:2;Alternate=Fields_MediaLibraryPicker__Large" />
-    <Place Fields_Link="Content:3" />
+    <Place Fields_Link="Content:4" />
     <Place Parts_Title_Summary="-"/>
     <Place Parts_Common_Body_Summary="-" />
     <Place Fields_Common_Text="-" />
@@ -39,9 +39,9 @@
 
   <Match ContentType="WorkItem" DisplayType="Detail">
     <Place Parts_Title="Content:0"/>
-    <Place Parts_Common_Body="Content:1" />
+    <Place Parts_Common_Body="Content:3" />
     <Place Fields_MediaLibraryPicker="Content:2;Alternate=Fields_MediaLibraryPicker__Large" />
-    <Place Fields_Link="Content:3" />
+    <Place Fields_Link="Content:4" />
     <Place Parts_Title_Summary="-"/>
     <Place Parts_Common_Body_Summary="-" />
     <Place Fields_Common_Text="-" />
@@ -88,13 +88,13 @@
   </Match>
 
   <Match ContentType="Event" DisplayType="Detail">
-    <Place Parts_Title_Summary="Content:0;Alternate=Parts_Title_Summary__h3"/>
+    <Place Parts_Title_Summary="-"/>
     <!--Dates-->
     <Place Fields_DateTime-StartDate="Content:0.0;Alternate=Fields_DateTime__Formatted" />
     <Place Fields_DateTime-EndDate="Content:0.1;Alternate=Fields_DateTime__Formatted" />
     <!-- Location -->
-    <Place Fields_Input-City="-" />
-    <Place Fields_Input-State="-" />
+    <Place Fields_Input-City="Content:0.2" />
+    <Place Fields_Input-State="Content:0.3" />
     <!--Other-->
     <Place Parts_Common_Body_Summary="-" />
     <Place Fields_Link="-" />
