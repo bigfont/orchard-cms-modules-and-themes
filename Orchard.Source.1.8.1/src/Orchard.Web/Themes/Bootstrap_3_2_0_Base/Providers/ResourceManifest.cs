@@ -1,6 +1,7 @@
 using Orchard.UI.Resources;
 
-namespace Bootstrap_3_1_1_Base {
+namespace Bootstrap_3_1_1_Base.Providers
+{
     public class ResourceManifest : IResourceManifestProvider {
         public void BuildManifests(ResourceManifestBuilder builder) {
             var manifest = builder.Add();

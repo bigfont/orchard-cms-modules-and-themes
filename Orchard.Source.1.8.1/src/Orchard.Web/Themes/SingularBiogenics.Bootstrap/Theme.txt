@@ -2,6 +2,6 @@ Name: Singular Biogenics - Bootstrap
 Author: Shaun Luttin @ bigfont.ca
 Website: www.singularbiogenics.com
 Description: A very simple default website using Bootstrap.
-Version: 1.1
+Version: 1.2
 Tags: Bootstrap
 BaseTheme: Bootstrap_3_2_0_Base
