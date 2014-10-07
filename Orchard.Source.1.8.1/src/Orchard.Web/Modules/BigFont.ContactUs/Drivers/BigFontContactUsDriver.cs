@@ -86,5 +86,16 @@ namespace BigFont.ContactUs.Drivers
                 part.PostalCode = postalCode; 
             }
         }
+
+        protected override void Exporting(BigFontContactUsPart part, ExportContentContext context)
+        {
+            context.Element(part.PartDefinition.Name).SetAttributeValue("EmailAddress", part.EmailAddress);
+            context.Element(part.PartDefinition.Name).SetAttributeValue("PhoneNumber", part.PhoneNumber);
+            context.Element(part.PartDefinition.Name).SetAttributeValue("StreetAddress", part.StreetAddress);
+            context.Element(part.PartDefinition.Name).SetAttributeValue("City", part.City);
+            context.Element(part.PartDefinition.Name).SetAttributeValue("Province", part.Province);
+            context.Element(part.PartDefinition.Name).SetAttributeValue("Country", part.Country);
+            context.Element(part.PartDefinition.Name).SetAttributeValue("PostalCode", part.PostalCode);
+        }
     }
 }

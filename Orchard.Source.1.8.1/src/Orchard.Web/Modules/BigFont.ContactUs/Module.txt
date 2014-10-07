@@ -1,6 +1,6 @@
-﻿Name: BigFont Contact Us
+﻿Name: BigFont.ca | Contact Us Module
 AntiForgery: enabled
-Author: Shaun Luttin at BigFont.ca
+Author: Shaun Luttin BHK CT MCPD
 Website: http://www.bigfont.ca
 Version: 1.2
 OrchardVersion: 1.8.1
