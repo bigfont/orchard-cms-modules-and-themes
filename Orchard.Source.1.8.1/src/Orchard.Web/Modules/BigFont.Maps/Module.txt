@@ -3,7 +3,7 @@ AntiForgery: enabled
 Author: Shaun Luttin BHK CT MCPD
 Website: http://www.bigfont.ca
 Version: 1.1
-OrchardVersion: 1.8.1
+OrchardVersion: 1.8.2
 Description:  A Google Map with longitude and latitude markers.
 Category: Geolocation, Widgets
 
