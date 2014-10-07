@@ -1,0 +1,30 @@
+﻿@model BigFont.Maps.Models.BigFontMap_SingleMarkerPart
+
+<fieldset>
+    <legend>BigFontMap_SingleMarker Fields</legend>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.TextDirections)
+    </div>
+    <div class="editor-field">
+        @Html.TextAreaFor(model => model.TextDirections)
+        @Html.ValidationMessageFor(model => model.TextDirections)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Latitude)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Latitude)
+        @Html.ValidationMessageFor(model => model.Latitude)
+    </div>
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Longitude)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Longitude)
+        @Html.ValidationMessageFor(model => model.Longitude)
+    </div>
+
+</fieldset>

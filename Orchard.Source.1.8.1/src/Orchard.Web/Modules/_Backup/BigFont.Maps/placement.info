@@ -1,0 +1,6 @@
+﻿<Placement>
+    <Place Parts_BigFontMap_MultipleMarkers="Content:10"/>
+    <Place Parts_BigFontMap_MultipleMarkers_Edit="Content:7.5"/>
+  <Place Parts_BigFontMap_SingleMarker="Content:10"/>
+  <Place Parts_BigFontMap_SingleMarker_Edit="Content:7.5"/>
+</Placement>
