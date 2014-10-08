@@ -289,10 +289,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50B779EA-EC00-4699-84C0-03B395C365D2}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
 		{50B779EA-EC00-4699-84C0-03B395C365D2}.CodeCoverage|Any CPU.Build.0 = Release|Any CPU
 		{50B779EA-EC00-4699-84C0-03B395C365D2}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
@@ -1210,6 +1206,13 @@ Global
 		{5FFCE936-50F1-4D40-8935-F1CD3FAF60DD}.FxCop|Any CPU.Build.0 = Release|Any CPU
 		{5FFCE936-50F1-4D40-8935-F1CD3FAF60DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FFCE936-50F1-4D40-8935-F1CD3FAF60DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.CodeCoverage|Any CPU.ActiveCfg = Release|Any CPU
+		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Coverage|Any CPU.ActiveCfg = Release|Any CPU
+		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.FxCop|Any CPU.ActiveCfg = Release|Any CPU
+		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46FABAD9-7E35-4A47-B291-60BB2558E7CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

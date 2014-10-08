@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -19,6 +19,11 @@
     <OldToolsVersion>4.0</OldToolsVersion>
     <UpgradeBackupLocation />
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -62,6 +67,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Scripts\APA-Style.js" />
+    <Content Include="Scripts\IE-10.js" />
+    <Content Include="Styles\Site.css">
+      <DependentUpon>Site.less</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Scripts\Web.config" />
     <Content Include="Styles\Web.config" />
@@ -69,10 +80,6 @@
     <Content Include="Theme.txt" />
     <Content Include="Theme.png" />
     <Content Include="Placement.info" />
-    <Folder Include="Content" />
-    <Folder Include="Styles" />
-    <Folder Include="Scripts" />
-    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Orchard\Orchard.Framework.csproj">
@@ -83,6 +90,237 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\fontawesome-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bigfont\_apa-style.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bigfont\_ie-10.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bigfont\_print.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bigfont\_responsive-adwords.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\alerts.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\badges.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\bootstrap.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\breadcrumbs.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\button-groups.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\buttons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\carousel.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\close.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\code.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\component-animations.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\dropdowns.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\forms.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\glyphicons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\grid.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\input-groups.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\jumbotron.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\labels.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\list-group.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\media.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\modals.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\navbar.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\navs.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\normalize.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\pager.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\pagination.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\panels.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\popovers.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\print.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\progress-bars.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\responsive-utilities.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\scaffolding.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\tables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\theme.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\thumbnails.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\tooltip.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\type.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\utilities.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\bootstrap-3.1.1\wells.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\bordered-pulled.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\core.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\fixed-width.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\font-awesome.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\icons.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\larger.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\list.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\mixins.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\path.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\rotated-flipped.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\spinning.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\stacked.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\font-awesome-4.1.0\variables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_clearing-float.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_forms.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_general.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_main.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_misc.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_reset.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_secondary.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_structure.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\less\orchard\_typography.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Site.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\Site.css.map">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\BadgeOfHonor.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts.TagCloud.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ListShapeProvider.cs" />
+    <Compile Include="ResourceManifest.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
