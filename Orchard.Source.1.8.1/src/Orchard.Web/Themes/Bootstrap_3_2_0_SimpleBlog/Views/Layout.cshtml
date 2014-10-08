@@ -1,4 +1,4 @@
-﻿@functions {
+@functions {
     // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
     string CalcuClassify(string[] zoneNames, string classNamePrefix)
     {
@@ -76,16 +76,6 @@
 }
 @tag.StartElement
 
-@*
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- AD_SENSE_02_Responsive -->
-    <ins class="adsbygoogle ad-sense-02-responsive"
-         data-ad-client="ca-pub-6542429488011130"
-         data-ad-slot="9782767204"></ins>
-    <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-*@
 
 @if (Model.Header != null)
 {
@@ -188,8 +178,9 @@
     </div>
 </div>
 }
+
 <div id="layout-footer" class="group">
-    <footer id="footer">
+    <footer id="footer">           
         <div id="footer-quad" class="group">
             @if (Model.FooterQuadFirst != null)
             {
@@ -215,10 +206,22 @@
                     @Zone(Model.FooterQuadFourth)
                 </div>
             }
-        </div>
+        </div>            
         @if (Model.Footer != null)
         {
-            <div id="footer-sig" class="group">
+@*
+
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- AD_SENSE_02_Responsive -->
+      <ins class="adsbygoogle ad-sense-02-responsive"
+          data-ad-client="ca-pub-6542429488011130"
+          data-ad-slot="9782767204"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script> 
+      
+*@
+            <div id="footer-sig" class="group">                                         
                 @Zone(Model.Footer)
             </div>
         }

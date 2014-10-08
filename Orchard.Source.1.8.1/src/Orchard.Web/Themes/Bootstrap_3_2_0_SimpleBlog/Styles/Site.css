@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme: Bootstrap 3.1.1 Simple Blog
 Author: Shaun Luttin, bigfont.ca
 Copyright: N/A
@@ -7863,3 +7863,30 @@ ul.tag-cloud li {
     margin: 0 !important;
   }
 }
+
+/*23 August 2014 styling by Shaun Luttin*/
+#layout-wrapper article.widget-search-form
+{
+    float:none;    
+    margin:25px 0;
+}
+#layout-wrapper article.widget-search-form > form.search-form > fieldset
+{        
+    padding:0;
+}
+#layout-wrapper article.widget-search-form > form.search-form > fieldset > input
+{    
+    width:200px;
+    margin-right:5px;
+}
+#layout-wrapper article.widget-search-form > form.search-form > fieldset > button 
+{    
+    float:left;
+    margin:0;
+}
+
+.widget-aside-first
+{
+   margin-bottom:25px;  
+}
+
