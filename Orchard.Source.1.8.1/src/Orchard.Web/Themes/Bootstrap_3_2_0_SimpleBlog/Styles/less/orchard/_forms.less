@@ -1,0 +1,35 @@
+﻿/* Forms - All styling related to form items.
+***************************************************************/
+
+#layout-wrapper form {
+    // use div.zone form selector for css specificity
+    // to override other styles
+    li {
+        .form-group;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        .form-control;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    textarea {
+        height: auto; // to override the form-control height
+    }
+
+    button {
+        .btn;
+        .btn-default;
+    }
+
+    ol {
+        .list-unstyled;
+        padding-left: 0;
+    }
+}
