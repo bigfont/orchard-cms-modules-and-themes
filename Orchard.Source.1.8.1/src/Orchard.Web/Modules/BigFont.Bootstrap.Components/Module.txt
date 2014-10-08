@@ -1,10 +1,10 @@
-﻿Name: Bootstrap Components
+﻿Name: BigFont.ca | Bootstrap Components Module
 AntiForgery: enabled
-Author: Shaun Luttin, bigfont.ca
+Author: Shaun Luttin BHK CT MCPD
 Website: http://www.bigfont.ca
-Version: 1.6
+Version: 1.6.1
 OrchardVersion: 1.8.1
-Description: (Pre-Alpha) Bootstrap CSS, JavaScript, and Components implemented as widgets. While you may find this module useful, keep in mind that it isn't complete.
+Description: (Pre-Alpha) Bootstrap CSS, JavaScript, and Components implemented as widgets.
 FeatureName: Bootstrap Components
 Category: Content
 FeatureDescription: Bootstrap Component core files.

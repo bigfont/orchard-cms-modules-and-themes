@@ -1,10 +1,6 @@
-Name: Bootstrap 3.1.1 - KongwaHill
-Author: Shaun Luttin @ bigfont.ca
-Website: http://www.slopeofkongwahill.com
-Description: Bootstrap theme customized for The Slope of Kongwa Hill.
-Version: 1.2
-BaseTheme: TheThemeMachine
-Tags: Bootstrap
-Zones: Navigation, Featured, AsideFirst, AfterMain, Footer
-
-# package create Bootstrap_3_1_1_KongwaHill C:\Temp
+Name: Bigfont.ca | Bootstrap 3.1.1 KongwaHill Theme
+Author: Shaun Luttin BHK CT MCPD
+Website: http://www.bigfont.ca
+Description: (Pre-Alpha) Bootstrap theme customized for The Slope of Kongwa Hill website.
+Version: 1.2.1
+BaseTheme: Bootstrap_3_1_1_Base
