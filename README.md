@@ -2,7 +2,7 @@
 
 This is the repository at which BigFont develops Orchard CMS modules and themes.
 
-Its `origin` remote is `git@github.com:OrchardCMS/Orchard.git`, from which we clonedand regularly pull `master`.
+Its `origin` remote is `git@github.com:OrchardCMS/Orchard.git`, from which we cloned and regularly pull `master`.
 
     git clone -b master git@github.com:OrchardCMS/Orchard.git
     git fetch origin
