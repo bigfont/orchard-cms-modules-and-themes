@@ -1,0 +1,29 @@
+﻿/* Main - Main styles related to your theme. This can contain definitions for blog posts, tags, etc. 
+***************************************************************/
+
+#layout-main {
+    .make-row;
+}
+
+aside {
+    .make-md-column(3);
+}
+
+#layout-content {
+    .make-md-column(12);
+}
+
+#layout-wrapper {
+
+    &.aside-2, &.aside-1 {
+        #layout-content {
+            .make-md-column(9);
+        }
+    }
+
+    &.aside-12 {
+        #layout-content {
+            .make-md-column(6);
+        }
+    }
+}

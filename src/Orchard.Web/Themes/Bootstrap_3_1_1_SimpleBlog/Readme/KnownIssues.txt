@@ -1,0 +1,13 @@
+﻿
+# Windows Phone 8 Horizontal Scroll Bar
+
+On Windows Phone 8 htc, if we rotate from portrait to landscape, we get a horizontal scroll bar.  
+ 
+ - We have the metas
+
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+ - This only happens on rotate from portrait to landscape. 
+ - It does not happen if we start in landscape on a page load nor if we do a page refresh in landscape.
+ - It does not happen when we rotate using web developer tools in FireFox.

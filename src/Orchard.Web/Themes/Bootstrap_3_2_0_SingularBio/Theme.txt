@@ -1,0 +1,7 @@
+Name: BigFont.ca | Bootstrap 3.2.0 Singular Bio Theme
+Author: Shaun Luttin BHK CT MCPD
+Website: http://www.singularbiogenics.com
+Description: (Pre-Alpha) This is a very simple default website using Bootstrap.
+Version: 1.2.2.2
+Tags: Bootstrap
+BaseTheme: Bootstrap_3_2_0_Base

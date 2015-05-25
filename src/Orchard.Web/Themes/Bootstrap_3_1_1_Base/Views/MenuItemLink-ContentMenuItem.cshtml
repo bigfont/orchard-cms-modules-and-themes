@@ -1,0 +1,8 @@
+﻿@using Orchard.ContentManagement
+@{
+    ContentItem contentItem = Model.Content.ContentItem.ContentMenuItemPart.Content;
+}
+
+@if (contentItem != null) {    
+    @Display.Bootstrap__MenuItem(Href: Model.Href, Text: Model.Text, BootstrapAttributes: Model.BootstrapAttributes, BootstrapIcon: Model.BootstrapIcon)
+}
