@@ -2,7 +2,7 @@
 
 This is where [BigFont.ca]() develops modules and themes for Orchard.
 
-We regularly pull from the `master` branch at `git@github.com:OrchardCMS/Orchard.git`.
+We regularly pull from the `master` branch at `git@github.com:OrchardCMS/Orchard.git` to stay current.
 
 `git remote -v` displays this:
 
