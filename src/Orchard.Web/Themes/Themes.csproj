@@ -168,7 +168,13 @@
     <Content Include="Bootstrap_3_2_0_SingularBio\Styles\Theme.min.css" />
     <Content Include="Bootstrap_3_2_0_SingularBio\Theme.png" />
     <Content Include="Bootstrap_3_2_0_SingularBio\Theme.txt" />
-    <Content Include="Bootstrap_3_3_4_Base\Styles\app.css" />
+    <Content Include="Bootstrap_3_3_4_Base\Scripts\base.js" />
+    <Content Include="Bootstrap_3_3_4_Base\Styles\theme.css" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.css" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Theme.png" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Theme.txt" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\ThemeZonePreview.png" />
+    <Content Include="Bootstrap_3_3_4_Base\Styles\base.css" />
     <Content Include="TheAdmin\Scripts\admin.js" />
     <Content Include="TheAdmin\Styles\ie.css" />
     <Content Include="TheAdmin\Styles\ie7.css" />
@@ -190,7 +196,6 @@
     <Content Include="TheAdmin\Styles\images\menuOpenHover.gif" />
     <Content Include="TheAdmin\Styles\images\vinesBackgroundBottom.gif" />
     <Content Include="TheAdmin\Styles\images\menu-filter.png" />
-    <Content Include="Bootstrap_3_3_4_Base\Styles\Site.css" />
     <Content Include="Bootstrap_3_3_4_Base\Theme.png" />
     <Content Include="Bootstrap_3_3_4_Base\Theme.txt" />
     <Content Include="Bootstrap_3_3_4_Base\ThemeZonePreview.png" />
@@ -688,6 +693,12 @@
     <Content Include="Bootstrap_3_3_4_Base\Views\Pager.cshtml" />
     <Content Include="Bootstrap_3_3_4_Base\Views\Pager.First.cshtml" />
     <Content Include="Bootstrap_3_3_4_Base\Views\Pager.Last.cshtml" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Placement.info" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Views\Parts.TagCloud.cshtml" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Views\Parts.Search.SearchForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Bootstrap_3_1_1_Base\bin\" />
