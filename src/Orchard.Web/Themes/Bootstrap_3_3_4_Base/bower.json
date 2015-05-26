@@ -1,0 +1,19 @@
+{
+  "name": "Bootstrap_3_3_4_Base",
+  "version": "1.0.0",
+  "homepage": "",
+  "authors": [
+    "Shaun Luttin <shaunluttin@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
