@@ -1,7 +1,8 @@
-﻿Name: The Theme Machine
-Author: jowall, mibach, loudej, heskew
-Description: Orchard Theme Machine is a flexible multi-zone theme that provides a solid foundation to build your site. It features 20 collapsible widget zones and is flexible enough to cover a wide range of layouts.
-Version: 1.9.0
-Tags: Awesome
-Website: http://orchardproject.net
+﻿Name: BigFont.ca | Bootstrap 3.3.4 Base Theme
+Author: Shaun Luttin, bigfont.ca
+Website: http://orchard-theme-machine-designer.azurewebsites.net
+Description: (Alpha) The Bootstrap 3.2.0 Base Theme leaves TheThemeMachine's Layout.cshtml unchanged. It adds the Bootstrap responsive grid through LESS Mixins. It also adds the navbar.
+Version: 1.0
+BaseTheme: TheThemeMachine
 Zones: Header, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer
+Tags: Bootstrap Base
