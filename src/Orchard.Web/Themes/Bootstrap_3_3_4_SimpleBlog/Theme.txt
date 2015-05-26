@@ -2,7 +2,7 @@
 Author: Shaun Luttin, bigfont.ca
 Website: http://www.muddlingthru.ca
 Description: Depends on Bootstrap 3.3.4 Base. Adds a simple blog theme.
-Version: 1.0
+Version: 1.0.1
 BaseTheme: Bootstrap_3_3_4_Base
-Zones: Navigation, AsideFirst, Content, Footer
+Zones: AsideFirst, Content, Footer
 Tags: Bootstrap Base
