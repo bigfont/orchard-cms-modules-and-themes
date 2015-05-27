@@ -11,12 +11,11 @@
 
 @media print {
 
-    body
-    {
-        background-color:white !important;
-        color:black !important;
+    body {
+        background-color: white !important;
+        color: black !important;
     }
-    
+
     html,
     body,
     div,
@@ -36,11 +35,15 @@
         .super-hide();
     }
 
+    .tags > a[href]:after {
+        content: "";
+    }
+
     div#layout-content.group {
         width: 100% !important;
 
         article.blog-post.content-item {
-            border: none !important;            
+            border: none !important;
             margin: 0.5in !important;
             margin: 0 !important;
         }
