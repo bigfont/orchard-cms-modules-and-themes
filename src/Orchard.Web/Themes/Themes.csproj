@@ -170,6 +170,7 @@
     <Content Include="Bootstrap_3_2_0_SingularBio\Theme.txt" />
     <Content Include="Bootstrap_3_3_4_Base\Scripts\base.js" />
     <Content Include="Bootstrap_3_3_4_Base\Styles\theme.css" />
+    <None Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.less" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.css" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Theme.png" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Theme.txt" />
