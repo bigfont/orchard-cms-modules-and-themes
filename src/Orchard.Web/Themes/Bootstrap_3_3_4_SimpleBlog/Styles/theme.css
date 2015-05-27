@@ -1,64 +1,55 @@
-﻿body {
-    /* make it easier to read */
-    color: #2b2b2b;
-    background: #FAF6ED;
-    font-size: 20px;
+body {
+  /* make easier to read */
+  color: #2b2b2b;
+  background: #FAF6ED;
+  font-size: 20px;
 }
-
 #layout-header,
 #layout-main-container,
 #layout-footer {
-    padding: 20px 0;
+  padding: 20px 0;
 }
-
 #layout-main-container {
-    border-left: 0;
-    border-right: 0;
+  border-left: 0;
+  border-right: 0;
 }
-
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 article.content-item header {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: thin solid gray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: thin solid gray;
 }
-
 ul.content-items {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-    ul.content-items li article.content-item {
-        padding-bottom: 20px;
-        border: none;
-        border-bottom: thin solid gray;
-    }
-
-        ul.content-items li article.content-item header {
-            padding: 0;
-            border: none;
-        }
-
+ul.content-items li article.content-item {
+  padding-bottom: 20px;
+  border: none;
+  border-bottom: thin solid gray;
+}
+ul.content-items header {
+  padding: 0;
+  border: none;
+}
 code,
 pre {
-    background: black;
-    color: yellow;
-    font-size: 20px;
+  background: white;
+  color: green;
+  font-size: 20px;
 }
-
 img,
 video {
-    padding: 4px;
-    border: thin solid gray;
-    max-width: 100%;
-    height: auto;
+  padding: 4px;
+  border: thin solid gray;
+  /* make responsive */
+  max-width: 100%;
+  height: auto;
 }
-
 .zone-aside-first > * {
-    margin-top: 20px;
-    float: none;
+  margin-top: 20px;
+  float: none;
 }
