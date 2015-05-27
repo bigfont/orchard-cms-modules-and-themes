@@ -171,9 +171,18 @@
     <Content Include="Bootstrap_3_3_4_Base\Scripts\base.js" />
     <Content Include="Bootstrap_3_3_4_Base\Styles\theme.css" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\print.less" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\simple-blog.css">
+      <DependentUpon>simple-blog.less</DependentUpon>
+    </Content>
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\simple-blog.less" />
     <None Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.less" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\simple-blog.min.css">
+      <DependentUpon>simple-blog.css</DependentUpon>
+    </Content>
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.css" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.min.css">
+      <DependentUpon>theme.css</DependentUpon>
+    </Content>
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Theme.png" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Theme.txt" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\ThemeZonePreview.png" />
