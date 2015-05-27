@@ -1,7 +1,7 @@
 ﻿Name: BigFont.ca | Bootstrap 3.3.4 Base Theme
 Author: Shaun Luttin, bigfont.ca
 Website: http://www.muddlingthru.ca
-Description: Depends on The Theme Machine. Add the Bootstrap grid.
+Description: Depends on The Theme Machine. Adds the Bootstrap grid.
 Version: 1.0.1
 BaseTheme: TheThemeMachine
 Zones: Header, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer
