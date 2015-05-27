@@ -1,0 +1,48 @@
+﻿/* Print
+***************************************************************/
+
+.super-hide {
+    margin: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    display: none !important;
+    visibility: hidden !important;
+}
+
+@media print {
+
+    body
+    {
+        background-color:white !important;
+        color:black !important;
+    }
+    
+    html,
+    body,
+    div,
+    article,
+    header,
+    footer,
+    h1, h2, h3, h4, h5, h6 {
+        max-width: 100% !important;
+    }
+
+    form,
+    .comment-count,
+    .comment-form-beacon,
+    ins.adsbygoogle,
+    #layout-wrapper > .group,
+    #layout-main > aside {
+        .super-hide();
+    }
+
+    div#layout-content.group {
+        width: 100% !important;
+
+        article.blog-post.content-item {
+            border: none !important;            
+            margin: 0.5in !important;
+            margin: 0 !important;
+        }
+    }
+}

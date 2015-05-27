@@ -170,6 +170,8 @@
     <Content Include="Bootstrap_3_2_0_SingularBio\Theme.txt" />
     <Content Include="Bootstrap_3_3_4_Base\Scripts\base.js" />
     <Content Include="Bootstrap_3_3_4_Base\Styles\theme.css" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\print.less" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\simple-blog.less" />
     <None Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.less" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Styles\theme.css" />
     <Content Include="Bootstrap_3_3_4_SimpleBlog\Theme.png" />
@@ -218,6 +220,7 @@
     <Content Include="TheAdmin\Views\Menu.cshtml" />
     <Content Include="TheThemeMachine\Views\Branding.cshtml" />
     <Content Include="TheThemeMachine\Views\BadgeOfHonor.cshtml" />
+    <Content Include="Bootstrap_3_3_4_SimpleBlog\Views\BadgeOfHonor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TheAdmin\Styles\images\icons.png" />
@@ -708,6 +711,7 @@
     <Folder Include="Bootstrap_3_1_1_SimpleBlog\obj\Debug\TempPE\" />
     <Folder Include="Bootstrap_3_2_0_Base\obj\Debug\TempPE\" />
     <Folder Include="Bootstrap_3_2_0_SimpleBlog\obj\Debug\TempPE\" />
+    <Folder Include="Bootstrap_3_3_4_Base\app_components\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
