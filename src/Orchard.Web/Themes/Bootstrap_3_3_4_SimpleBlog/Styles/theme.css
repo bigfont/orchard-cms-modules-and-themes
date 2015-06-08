@@ -46,7 +46,7 @@ pre {
   font-size: 20px;
   max-width: 100%;
   display: block;
-  overflow: scroll;
+  overflow: auto;
   background: black;
   color: yellow;
   margin-bottom: 2px;
@@ -67,7 +67,7 @@ a {
   /* prevent long links from creating scrollbars */
   max-width: 100%;
   overflow: hidden;
-  display: inline-block;
+  display: inline;
 }
 /* Print
 ***************************************************************/
