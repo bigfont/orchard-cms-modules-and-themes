@@ -1,0 +1,10 @@
+{
+  "name": "Bootstrap_3_3_4_Base",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-less": "^3.0.3",
+    "gulp-uglify": "^1.2.0",
+    "less": "^2.5.1"
+  }
+}
