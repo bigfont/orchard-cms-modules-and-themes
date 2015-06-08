@@ -1,2 +1,0 @@
-﻿
-- Remove all attributes from LiveWriter generated blog posts.

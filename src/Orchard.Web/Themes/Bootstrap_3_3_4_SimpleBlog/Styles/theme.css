@@ -63,6 +63,12 @@ video {
   margin-top: 20px;
   float: none;
 }
+a {
+  /* prevent long links from creating scrollbars */
+  max-width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
 /* Print
 ***************************************************************/
 .super-hide {

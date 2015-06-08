@@ -52,13 +52,13 @@ ul.content-items {
 
 code,
 pre {
-	font-size:20px;
-	max-width:100%;
-	display:block;
-	overflow: scroll;
-	background:black;
-	color:yellow;
-	margin-bottom:2px;
+    font-size: 20px;
+    max-width: 100%;
+    display: block;
+    overflow: scroll;
+    background: black;
+    color: yellow;
+    margin-bottom: 2px;
 }
 
 img,
@@ -73,4 +73,11 @@ video {
 .zone-aside-first > * {
     margin-top: 20px;
     float: none;
+}
+
+a {
+    /* prevent long links from creating scrollbars */
+    max-width: 100%;
+    overflow: hidden;
+    display: inline-block;
 }
