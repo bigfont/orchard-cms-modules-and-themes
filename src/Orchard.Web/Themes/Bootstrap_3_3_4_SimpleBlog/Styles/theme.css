@@ -44,12 +44,11 @@ ul.content-items li article.content-item header {
 code,
 pre {
   font-size: 20px;
-  max-width: 100%;
-  display: block;
-  overflow: auto;
   background: black;
   color: yellow;
-  margin-bottom: 2px;
+  line-height: 1.6em;
+  padding: 0 10px;
+  margin-bottom: 1px;
 }
 img,
 video {
@@ -63,11 +62,14 @@ video {
   margin-top: 20px;
   float: none;
 }
+code,
+pre,
 a {
-  /* prevent long links from creating scrollbars */
+  /* prevent long links/code from creating scrollbars */
   max-width: 100%;
   overflow: hidden;
-  display: inline;
+  display: inline-block;
+  vertical-align: bottom;
 }
 /* Print
 ***************************************************************/
