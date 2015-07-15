@@ -63,7 +63,6 @@ video {
   float: none;
 }
 code,
-pre,
 a {
   /* prevent long links/code from creating scrollbars */
   max-width: 100%;
