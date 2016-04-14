@@ -41,14 +41,13 @@ ul.content-items li article.content-item header {
   padding: 0;
   border: none;
 }
-code,
-pre {
-  font-size: 20px;
-  background: black;
-  color: yellow;
-  line-height: 1.6em;
-  padding: 0 10px;
-  margin-bottom: 1px;
+code
+{
+  
+}
+pre, 
+code pre {
+  line-height:1em;
 }
 img,
 video {
