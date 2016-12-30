@@ -2,15 +2,20 @@
 
 This is where [BigFont.ca]() develops modules and themes for Orchard.
 
-We regularly pull from the `master` branch at `git@github.com:OrchardCMS/Orchard.git` to stay current.
+Here is a hack to package a theme, because packaging fails in this repository's build. 
 
-`git remote -v` displays this:
+1. Download Orchard CMS as a Zip: http://www.orchardproject.net/
+1. Expand the zip `Expand-Archive .\Orchard.Web.zip` 
+1. Bump the version in the theme's Theme.txt file.
+1. Copy the theme you want to build into the downloaded Orchard site:
+ * `copy -Recurse Bootstrap_3_1_1_KongwaHill ~\Downloads\Orchard.Web\Orchard\Themes\`
+ * `copy -Recurse Bootstrap_3_1_1_Base ~\Downloads\Orchard.Web\Orchard\Themes\`      
+1. Run `~\Downloads\Orchard.Web\Orchard\bin\orchard.exe`.
+1. At the orchard prompt, run these commands: 
 
-    bigfont git@github.com:bigfont/orchard-cms-modules-and-themes (fetch)
-    bigfont git@github.com:bigfont/orchard-cms-modules-and-themes (push)
-    origin  git@github.com:OrchardCMS/Orchard.git (fetch)
-    origin  git@github.com:OrchardCMS/Orchard.git (push)
+Orchard Prompt:
 
-Build from the command line with: 
-
-    msbuild /p:VisualStudioVersion=14.0 .\src\Orchard.Web\Orchard.Web.csproj
+    orchard> setup /SiteName:SITE /AdminUsername:USER /AdminPassword:PASS /DatabaseProvider:SQLCE
+    orchard> package create Bootstrap_3_1_1_KongwaHill C:/temp
+    
+Todo (maybe someday): Rebase this repository onto `git@github.com:OrchardCMS/Orchard.git` `tag:1.10.1`
