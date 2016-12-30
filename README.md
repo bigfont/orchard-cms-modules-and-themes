@@ -6,7 +6,7 @@ Here is a hack to package a theme, because packaging fails in this repositor's b
 
 1. Download Orchard CMS as a Zip: http://www.orchardproject.net/
 1. Expand the zip `Expand-Archive .\Orchard.Web.zip` 
-1. Copy the theme you want to build into `\Downloads\Orchard.Web\Orchard\Themes`.
+1. Copy the theme you want to build into the downloaded Orchard site:
  * `copy -Recurse Bootstrap_3_1_1_KongwaHill ~\Downloads\Orchard.Web\Orchard\Themes\`
  * `copy -Recurse Bootstrap_3_1_1_Base ~\Downloads\Orchard.Web\Orchard\Themes\`      
 1. Run `~\Downloads\Orchard.Web\Orchard\bin\orchard.exe`.
