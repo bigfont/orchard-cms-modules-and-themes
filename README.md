@@ -2,10 +2,11 @@
 
 This is where [BigFont.ca]() develops modules and themes for Orchard.
 
-Here is a hack to package a theme, because packaging fails in this repositor's build. 
+Here is a hack to package a theme, because packaging fails in this repository's build. 
 
 1. Download Orchard CMS as a Zip: http://www.orchardproject.net/
 1. Expand the zip `Expand-Archive .\Orchard.Web.zip` 
+1. Bump the version in the theme's Theme.txt file.
 1. Copy the theme you want to build into the downloaded Orchard site:
  * `copy -Recurse Bootstrap_3_1_1_KongwaHill ~\Downloads\Orchard.Web\Orchard\Themes\`
  * `copy -Recurse Bootstrap_3_1_1_Base ~\Downloads\Orchard.Web\Orchard\Themes\`      
@@ -16,3 +17,5 @@ Orchard Prompt:
 
     orchard> setup /SiteName:SITE /AdminUsername:USER /AdminPassword:PASS /DatabaseProvider:SQLCE
     orchard> package create Bootstrap_3_1_1_KongwaHill C:/temp
+    
+Todo (maybe someday): Rebase this repository onto `git@github.com:OrchardCMS/Orchard.git` `tag:1.10.1`
